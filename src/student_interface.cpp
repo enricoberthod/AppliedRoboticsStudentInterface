@@ -15,7 +15,6 @@ namespace student {
  }
 
  void genericImageListener(const cv::Mat& img_in, std::string topic, const std::string& config_folder){
-<<<<<<< HEAD
 	static int id = 0;
 	cv::imshow("test",img_in);
 	char key = (char)waitKey(30);
@@ -23,11 +22,6 @@ namespace student {
 		imwrite(config_folder+"/img-saved"+to_string(id)+".jpg", img_in);
 		std::cout << config_folder+"/img-saved"+to_string(id)+".jpg"<< std::endl;
 		id++;
-=======
-	char key = (char)waitKey(30);
-	if (key=='s') {
-		imwrite(config_folder+"img-saved.jpg", img_in);
->>>>>>> b25a97015f02b5d1cef1ee309aedb5cbe923da0f
 	}
 	//throw std::logic_error( "STUDENT FUNCTION NOT IMPLEMENTED" );
   }
