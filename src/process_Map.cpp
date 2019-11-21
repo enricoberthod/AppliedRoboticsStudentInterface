@@ -8,7 +8,7 @@
 #include <utility>
 
 #include <opencv2/opencv.hpp>
-#include "process_map.hpp"
+#include "process_Map.hpp"
 
 #define PI 3.14159265
 
@@ -32,7 +32,7 @@ bool process_Map(const cv::Mat& img_in, const double scale, std::vector<Polygon>
 
 
 
-void redRegions(cv::Mat hsv_img, Mat img_in, cv::Mat kernel, const double scale, std::vector<Polygon>& obstacle_list) {
+void redRegions(cv::Mat hsv_img, cv::Mat img_in, cv::Mat kernel, const double scale, std::vector<Polygon>& obstacle_list) {
 		
 	namedWindow("Original 4", WINDOW_NORMAL);
 	resizeWindow("Original 4", 678, 498);
@@ -235,7 +235,7 @@ void findVictim(cv::Mat hsv_img, Mat img_in, cv::Mat kernel, const double scale,
 			Mat dst2;
 			dst1 = Mat::zeros(templROIs[j].rows, templROIs[j].cols, CV_8UC3);
 			dst2 = Mat::zeros(processROI.rows, processROI.cols, CV_8UC3);
-			Point centro;
+			cv::Point centro;
 	
 			float m1 = f_linea(templROIs[j], dst1, centro);
 			float m2 = f_linea(processROI, dst2, centro);
@@ -361,7 +361,7 @@ int main() {
 
 
 
-float f_linea(Mat src, Mat dst, Point& C) {
+float f_linea(Mat src, Mat dst, cv::Point& C) {
 	cvtColor(src, src, COLOR_BGR2GRAY);
 	threshold(src, src, 220, 255, THRESH_BINARY);
 	vector<Mat> contours;
@@ -380,8 +380,8 @@ float f_linea(Mat src, Mat dst, Point& C) {
 	
 	float lefty = ((-x*vy/vx)+y);
 	float righty = (((src.cols-x)*vy/vx)+y);
-	Point point1 = Point(src.cols-1,righty);
-	Point point2 = Point(0, lefty);
+	cv::Point point1 = cv::Point(src.cols-1,righty);
+	cv::Point point2 = cv::Point(0, lefty);
 	
 	float m = (float)(point1.y - point2.y)/(point1.x - point2.x);
 	C.x = (point1.x + point2.x)/2;

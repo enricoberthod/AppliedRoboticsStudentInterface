@@ -3,6 +3,7 @@
 
 #include <cstring>
 #include <opencv2/core/mat.hpp>
+#include "utils.hpp"
 
 const double MIN_AREA_SIZE = 500; 
 
@@ -18,11 +19,11 @@ const int RHhr = 179, RHhg = 255, RHhb = 255;
 const int Glr = 45, Glg = 100, Glb = 40;
 const int Ghr = 75, Ghg = 255, Ghb = 255;
 
-std::string template_folder = "./new_template/";
+std::string template_folder = "/home/lar2019/Desktop/AppliedRoboticsStudentInterface/new_template/";
 
 float f_linea(cv::Mat src, cv::Mat dst, cv::Point& C);
-void findVictim(cv::Mat hsv_img, Mat img_in, cv::Mat kernel, const double scale, std::vector<std::pair<int,Polygon>>& victim_list);
-void findGate(cv::Mat hsv_img, Mat img_in, cv::Mat kernel, const double scale, Polygon& gate);
-void redRegions(cv::Mat hsv_img, Mat img_in, cv::Mat kernel, const double scale, std::vector<Polygon>& obstacle_list);
+void findVictim(cv::Mat hsv_img, cv::Mat img_in, cv::Mat kernel, const double scale, std::vector<std::pair<int,Polygon>>& victim_list);
+void findGate(cv::Mat hsv_img, cv::Mat img_in, cv::Mat kernel, const double scale, Polygon& gate);
+void redRegions(cv::Mat hsv_img, cv::Mat img_in, cv::Mat kernel, const double scale, std::vector<Polygon>& obstacle_list);
 bool process_Map(const cv::Mat& img_in, const double scale, std::vector<Polygon>& obstacle_list, std::vector<std::pair<int,Polygon>>& victim_list, Polygon& gate, const std::string& config_folder);
 #endif

@@ -23,32 +23,36 @@ add_library(undistort_img SHARED
    src/undistort_img.cpp
 )
 
+add_library(process_Map SHARED
+   src/process_Map.cpp
+)
+
 ## Add executables
 add_executable(calibrate
   src/camera_calibration.cpp
   src/undistort_img.cpp
-  src/process_map.cpp
+  src/process_Map.cpp
+  
   )
 
 ## Add shared library
 add_library(student SHARED
    src/student_interface.cpp
+   
 )
 
 
 
 ## Link with libraries 
 target_link_libraries(student
-  ${OpenCV_LIBRARIES}  
+  ${OpenCV_LIBRARIES}
+  undistort_img 
+  process_Map 
 )
 
 target_link_libraries(calibrate
   ${OpenCV_LIBRARIES}  
 )
-
-#target_link_libraries(student
-#  undistrort_img
-#)
 
 
 
