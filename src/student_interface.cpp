@@ -1,9 +1,12 @@
 #include "student_image_elab_interface.hpp"
 #include "student_planning_interface.hpp"
+#include "undistort_img.hpp"
+#include "pippo.hpp"
 
 #include <stdexcept>
 #include <sstream>
 #include <cstring>
+
 
 using namespace cv;
 using namespace std;
@@ -32,9 +35,32 @@ namespace student {
 
   void imageUndistort(const cv::Mat& img_in, cv::Mat& img_out, 
           const cv::Mat& cam_matrix, const cv::Mat& dist_coeffs, const std::string& config_folder){
+	
 
-    throw std::logic_error( "STUDENT FUNCTION NOT IMPLEMENTED" );  
+	pippo_function(img_in, img_out, cam_matrix, dist_coeffs, config_folder);
 
+
+	//undistort_img(img_in, img_out, cam_matrix, dist_coeffs, config_folder);
+
+/*
+	 //cv::undistort(img_in, img_out, cam_matrix, dist_coeffs);
+	 // OPTIMIZED VERSION
+	    static bool maps_initialized = false;
+	    static cv::Mat full_map1, full_map2;
+
+	    if(!maps_initialized){
+	      // Note: m1type=CV_16SC2 to use fast fixed-point maps (see cv::remap)
+	      cv::Mat R;
+	      cv::initUndistortRectifyMap(cam_matrix, dist_coeffs, R, cam_matrix, 
+			                img_in.size(), CV_16SC2, full_map1, full_map2);
+
+	      maps_initialized = true;
+	    }
+
+	    // Initialize output image    
+	    cv::remap(img_in, img_out, full_map1, full_map2, cv::INTER_LINEAR); 
+    //throw std::logic_error( "STUDENT FUNCTION NOT IMPLEMENTED" );  
+*/
   }
 
   //-------------------------------------------------------------------------
@@ -64,14 +90,15 @@ namespace student {
   }
 
   bool processMap(const cv::Mat& img_in, const double scale, std::vector<Polygon>& obstacle_list, std::vector<std::pair<int,Polygon>>& victim_list, Polygon& gate, const std::string& config_folder){
-    throw std::logic_error( "STUDENT FUNCTION NOT IMPLEMENTED" );   
+    //throw std::logic_error( "STUDENT FUNCTION NOT IMPLEMENTED" );   
+	process_Map(img_in, scale, obstacle_list, victim_list, gate, config_folder);
   }
 
   bool findRobot(const cv::Mat& img_in, const double scale, Polygon& triangle, double& x, double& y, double& theta, const std::string& config_folder){
     throw std::logic_error( "STUDENT FUNCTION NOT IMPLEMENTED" );    
   }
 
-  bool planPath(const Polygon& borders, const std::vector<Polygon>& obstacle_list, const std::vector<std::pair<int,Polygon>>& victim_list, const Polygon& gate, const float x, const float y, const float theta, Path& path){
+  bool planPath(const Polygon& borders, const std::vector<Polygon>& obstacle_list, const std::vector<std::pair<int,Polygon>>& victim_list, const Polygon& gate, const float x, const float y, const float theta, Path& path, const std::string& config_folder){
     throw std::logic_error( "STUDENT FUNCTION NOT IMPLEMENTED" );     
   }
 

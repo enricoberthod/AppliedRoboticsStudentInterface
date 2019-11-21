@@ -18,15 +18,24 @@ include_directories(
  ${project_interface_INCLUDE_DIRS}
 )
 
+
+add_library(undistort_img SHARED
+   src/undistort_img.cpp
+)
+
 ## Add executables
 add_executable(calibrate
   src/camera_calibration.cpp
+  src/undistort_img.cpp
+  src/process_map.cpp
   )
 
 ## Add shared library
 add_library(student SHARED
    src/student_interface.cpp
 )
+
+
 
 ## Link with libraries 
 target_link_libraries(student
@@ -36,3 +45,13 @@ target_link_libraries(student
 target_link_libraries(calibrate
   ${OpenCV_LIBRARIES}  
 )
+
+#target_link_libraries(student
+#  undistrort_img
+#)
+
+
+
+
+
+
