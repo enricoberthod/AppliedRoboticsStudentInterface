@@ -6,6 +6,7 @@
 #include <algorithm>
 #include <cmath>
 #include <utility>
+#include <vector>
 
 #include <opencv2/opencv.hpp>
 #include "process_Map.hpp"
@@ -13,9 +14,8 @@
 #define PI 3.14159265
 
 using namespace std;
-using namespace cv;
 
-bool process_Map(const cv::Mat& img_in, const double scale, std::vector<Polygon>& obstacle_list, std::vector<std::pair<int,Polygon>>& victim_list, Polygon& gate, const std::string& config_folder){
+bool processMap(const cv::Mat& img_in, const double scale, std::vector<Polygon>& obstacle_list, std::vector<std::pair<int,Polygon>>& victim_list, Polygon& gate, const std::string& config_folder){
 	
 	cv::Mat hsv_img;
 	cv::cvtColor(img_in, hsv_img, cv::COLOR_BGR2HSV);
@@ -34,8 +34,8 @@ bool process_Map(const cv::Mat& img_in, const double scale, std::vector<Polygon>
 
 void redRegions(cv::Mat hsv_img, cv::Mat img_in, cv::Mat kernel, const double scale, std::vector<Polygon>& obstacle_list) {
 		
-	namedWindow("Original 4", WINDOW_NORMAL);
-	resizeWindow("Original 4", 678, 498);
+	cv::namedWindow("Original 4", cv::WINDOW_NORMAL);
+	cv::resizeWindow("Original 4", 467, 350);
 	
 	std::vector<std::vector<cv::Point>> contours, contours_approx;
 	std::vector<cv::Point> approx_curve;
@@ -70,10 +70,10 @@ void redRegions(cv::Mat hsv_img, cv::Mat img_in, cv::Mat kernel, const double sc
 		}
 		
 		obstacle_list.emplace_back(p);
-		drawContours(contours_img, contours_approx, -1, cv::Scalar(0,170,220), 3, cv::LINE_AA);
+		cv::drawContours(contours_img, contours_approx, -1, cv::Scalar(0,170,220), 3, cv::LINE_AA);
 		std::cout << "   Approximated contour size: " << approx_curve.size() << std::endl;
-		imshow("Original 4", contours_img);
-		waitKey(0);
+		cv::imshow("Original 4", contours_img);
+		cv::waitKey(0);
 	}
 	
 	std::cout << "   Elements: " << obstacle_list.size() << std::endl;
@@ -82,16 +82,15 @@ void redRegions(cv::Mat hsv_img, cv::Mat img_in, cv::Mat kernel, const double sc
 }
 
 
-
-void findGate(cv::Mat hsv_img, Mat img_in, cv::Mat kernel, const double scale, Polygon& gate) {
-	cv::namedWindow("GATE_filter", WINDOW_NORMAL);
-	cv::resizeWindow("GATE_filter", 678, 498);
+void findGate(cv::Mat hsv_img, cv::Mat img_in, cv::Mat kernel, const double scale, Polygon& gate) {
+	cv::namedWindow("GATE_filter", cv::WINDOW_NORMAL);
+	cv::resizeWindow("GATE_filter", 467, 350);
 	
 	cv::Mat contours_img;
 	std::vector<std::vector<cv::Point>> contours, contours_approx;
 	std::vector<cv::Point> approx_curve;
 	cv::Mat gate_mask;
-	Mat victim_mask;
+	cv::Mat victim_mask;
 	cv::inRange(hsv_img, cv::Scalar(Glr, Glg, Glb), cv::Scalar(Ghr, Ghg, Ghb), gate_mask);
 	victim_mask = gate_mask.clone();
 	
@@ -118,7 +117,7 @@ void findGate(cv::Mat hsv_img, Mat img_in, cv::Mat kernel, const double scale, P
 			for (const auto& pt: approx_curve) {        
 				gate.emplace_back(pt.x/scale, pt.y/scale);
 			}
-			drawContours(contours_img, contours_approx, -1, cv::Scalar(0,170,220), 3, cv::LINE_AA);
+			cv::drawContours(contours_img, contours_approx, -1, cv::Scalar(0,170,220), 3, cv::LINE_AA);
 			std::cout << "   Approximated contour size: " << approx_curve.size() << std::endl;
 		}
 	}
@@ -129,9 +128,10 @@ void findGate(cv::Mat hsv_img, Mat img_in, cv::Mat kernel, const double scale, P
 	cv::waitKey(0);
 }
 
-void findVictim(cv::Mat hsv_img, Mat img_in, cv::Mat kernel, const double scale, std::vector<std::pair<int,Polygon>>& victim_list) {
-	//namedWindow("VICTIM_filter", WINDOW_NORMAL);
-	//resizeWindow("VICTIM_filter", 678, 498);
+
+void findVictim(cv::Mat hsv_img, cv::Mat img_in, cv::Mat kernel, const double scale, std::vector<std::pair<int,Polygon>>& victim_list) {
+	cv::namedWindow("VICTIM_filter", cv::WINDOW_NORMAL);
+	cv::resizeWindow("VICTIM_filter", 467, 350);
 	
 	// Find green regions
 	cv::Mat green_mask;
@@ -143,9 +143,9 @@ void findVictim(cv::Mat hsv_img, Mat img_in, cv::Mat kernel, const double scale,
 	kernel = cv::getStructuringElement(cv::MORPH_RECT, cv::Size((1*2) + 1, (1*2)+1));
 	// Dilate using the generated kernel
 	cv::dilate(green_mask, green_mask, kernel);
-    cv::dilate(green_mask, green_mask, kernel);
-	cv::dilate(green_mask, green_mask, kernel);
-	cv::dilate(green_mask, green_mask, kernel);
+    //cv::dilate(green_mask, green_mask, kernel);
+	//cv::dilate(green_mask, green_mask, kernel);
+	//cv::dilate(green_mask, green_mask, kernel);
 
 	// Find contours
 	std::vector<std::vector<cv::Point>> contours, contours_approx;  
@@ -159,8 +159,7 @@ void findVictim(cv::Mat hsv_img, Mat img_in, cv::Mat kernel, const double scale,
     
 	// create an array of rectangle (i.e. bounding box containing the green area contour)  
 	std::vector<cv::Rect> boundRect(contours.size());
-	for (int i=0; i<contours.size(); ++i)
-	{
+	for (int i=0; i<contours.size(); ++i) {
 		double area = cv::contourArea(contours[i]);
 		if (area < MIN_AREA_SIZE) continue; // filter too small contours to remove false positives
 
@@ -170,10 +169,13 @@ void findVictim(cv::Mat hsv_img, Mat img_in, cv::Mat kernel, const double scale,
 		contours_approx = {approx_curve};
 
 		// Draw the contours on image with a line color of BGR=(0,170,220) and a width of 3
-		drawContours(contours_img, contours_approx, -1, cv::Scalar(0,170,220), 3, cv::LINE_AA);
+		cv::drawContours(contours_img, contours_approx, -1, cv::Scalar(0,170,220), 3, cv::LINE_AA);
 
+		cv::imshow("VICTIM_filter", contours_img);
+		cv::waitKey(0);
+		
 		// find the bounding box of the green blob approx curve
-		boundRect[i] = boundingRect(cv::Mat(approx_curve)); 
+		boundRect[i] = cv::boundingRect(cv::Mat(approx_curve)); 
 	}
      
 	cv::Mat green_mask_inv;
@@ -199,8 +201,7 @@ void findVictim(cv::Mat hsv_img, Mat img_in, cv::Mat kernel, const double scale,
 	kernel = cv::getStructuringElement(cv::MORPH_RECT, cv::Size((2*2) + 1, (2*2)+1));
   
 	// For each green blob in the original image containing a digit
-	for (int i=0; i<boundRect.size(); ++i)
-	{
+	for (int i=0; i<boundRect.size(); ++i) {
 		// Constructor of mat, we pass the original image and the coordinate to copy and we obtain
 		// an image pointing to that subimage
 		cv::Mat processROI(filtered, boundRect[i]); // extract the ROI containing the digit
@@ -231,10 +232,10 @@ void findVictim(cv::Mat hsv_img, Mat img_in, cv::Mat kernel, const double scale,
 		for (int j=0; j<templROIs.size(); ++j) {
 			cv::Mat result1;
 			cv::Mat result2;
-			Mat dst1;
-			Mat dst2;
-			dst1 = Mat::zeros(templROIs[j].rows, templROIs[j].cols, CV_8UC3);
-			dst2 = Mat::zeros(processROI.rows, processROI.cols, CV_8UC3);
+			cv::Mat dst1;
+			cv::Mat dst2;
+			dst1 = cv::Mat::zeros(templROIs[j].rows, templROIs[j].cols, CV_8UC3);
+			dst2 = cv::Mat::zeros(processROI.rows, processROI.cols, CV_8UC3);
 			cv::Point centro;
 	
 			float m1 = f_linea(templROIs[j], dst1, centro);
@@ -243,18 +244,18 @@ void findVictim(cv::Mat hsv_img, Mat img_in, cv::Mat kernel, const double scale,
 			float n = fabs((m1-m2)/(1+m1*m2));
 			float angolo = atan(n) *180/PI;
 		
-			Mat dst3;
-			Mat rot1;
-			Mat dst4;
-			Mat rot2;
+			cv::Mat dst3;
+			cv::Mat rot1;
+			cv::Mat dst4;
+			cv::Mat rot2;
 			double score1;
 			double score2;
 			double score;
 			
-			rot1 = getRotationMatrix2D(centro, angolo, 1);
-			warpAffine(dst2, dst3, rot1, Size(processROI.cols,processROI.rows), 1, 0, Scalar(0, 0, 0));
-			rot2 = getRotationMatrix2D(centro, -angolo, 1);
-			warpAffine(dst2, dst4, rot2, Size(processROI.cols,processROI.rows), 1, 0, Scalar(0, 0, 0));
+			rot1 = cv::getRotationMatrix2D(centro, angolo, 1);
+			cv::warpAffine(dst2, dst3, rot1, cv::Size(processROI.cols,processROI.rows), 1, 0, cv::Scalar(0, 0, 0));
+			rot2 = cv::getRotationMatrix2D(centro, -angolo, 1);
+			cv::warpAffine(dst2, dst4, rot2, cv::Size(processROI.cols,processROI.rows), 1, 0, cv::Scalar(0, 0, 0));
 		
 			// Match the ROI with the templROIs j-th
 			cv::matchTemplate(dst3, dst1, result1, cv::TM_CCOEFF);
@@ -271,10 +272,10 @@ void findVictim(cv::Mat hsv_img, Mat img_in, cv::Mat kernel, const double scale,
 	  
 			angolo = 8;
 			for(int k=0; k <2; k++) {
-				rot1 = getRotationMatrix2D(centro, angolo, 1);
-				warpAffine(dst3, dst3, rot1, Size(processROI.cols,processROI.rows), 1, 0, Scalar(0, 0, 0));
-				rot2 = getRotationMatrix2D(centro, -angolo, 1);
-				warpAffine(dst4, dst4, rot2, Size(processROI.cols,processROI.rows), 1, 0, Scalar(0, 0, 0));
+				rot1 = cv::getRotationMatrix2D(centro, angolo, 1);
+				cv::warpAffine(dst3, dst3, rot1, cv::Size(processROI.cols,processROI.rows), 1, 0, cv::Scalar(0, 0, 0));
+				rot2 = cv::getRotationMatrix2D(centro, -angolo, 1);
+				cv::warpAffine(dst4, dst4, rot2, cv::Size(processROI.cols,processROI.rows), 1, 0, cv::Scalar(0, 0, 0));
 		
 				cv::matchTemplate(dst3, dst1, result1, cv::TM_CCOEFF);
 				cv::matchTemplate(dst4, dst1, result2, cv::TM_CCOEFF);
@@ -291,10 +292,10 @@ void findVictim(cv::Mat hsv_img, Mat img_in, cv::Mat kernel, const double scale,
 			}
 	
 			angolo = 24;
-			rot1 = getRotationMatrix2D(centro, -angolo, 1);
-			warpAffine(dst3, dst3, rot1, Size(processROI.cols,processROI.rows), 1, 0, Scalar(0, 0, 0));
-			rot2 = getRotationMatrix2D(centro, angolo, 1);
-			warpAffine(dst4, dst4, rot2, Size(processROI.cols,processROI.rows), 1, 0, Scalar(0, 0, 0));
+			rot1 = cv::getRotationMatrix2D(centro, -angolo, 1);
+			cv::warpAffine(dst3, dst3, rot1, cv::Size(processROI.cols,processROI.rows), 1, 0, cv::Scalar(0, 0, 0));
+			rot2 = cv::getRotationMatrix2D(centro, angolo, 1);
+			cv::warpAffine(dst4, dst4, rot2, cv::Size(processROI.cols,processROI.rows), 1, 0, cv::Scalar(0, 0, 0));
 	
 			cv::matchTemplate(dst3, dst1, result1, cv::TM_CCOEFF);
 			cv::matchTemplate(dst4, dst1, result2, cv::TM_CCOEFF);
@@ -310,10 +311,10 @@ void findVictim(cv::Mat hsv_img, Mat img_in, cv::Mat kernel, const double scale,
 			}
 		
 			angolo = 8;
-			rot1 = getRotationMatrix2D(centro, -angolo, 1);
-			warpAffine(dst3, dst3, rot1, Size(processROI.cols,processROI.rows), 1, 0, Scalar(0, 0, 0));
-			rot2 = getRotationMatrix2D(centro, angolo, 1);
-			warpAffine(dst4, dst4, rot2, Size(processROI.cols,processROI.rows), 1, 0, Scalar(0, 0, 0));
+			rot1 = cv::getRotationMatrix2D(centro, -angolo, 1);
+			cv::warpAffine(dst3, dst3, rot1, cv::Size(processROI.cols,processROI.rows), 1, 0, cv::Scalar(0, 0, 0));
+			rot2 = cv::getRotationMatrix2D(centro, angolo, 1);
+			cv::warpAffine(dst4, dst4, rot2, cv::Size(processROI.cols,processROI.rows), 1, 0, cv::Scalar(0, 0, 0));
 
 			cv::matchTemplate(dst3, dst1, result1, cv::TM_CCOEFF);
 			cv::matchTemplate(dst4, dst1, result2, cv::TM_CCOEFF);
@@ -335,43 +336,35 @@ void findVictim(cv::Mat hsv_img, Mat img_in, cv::Mat kernel, const double scale,
 		}
 	
 		// Display the best fitting number
-		std::cout << "Best fitting template: " << maxIdx << std::endl;    
+		std::cout << "Best fitting template: " << maxIdx << std::endl;
+		
+		cv::Point centro = cv::Point(boundRect[i].x+(boundRect[i].width/2),boundRect[i].y+(boundRect[i].height/2));
+		//cout << "C = (" << centro.x << ", " << centro.y << ")" << endl; 
+		cv::circle( contours_img, centro, 8, cv::Scalar(0,170,220), -1, 8, 0 );
+		
+		Polygon p;
+		p.emplace_back(centro.x/scale, centro.y/scale);
+		pair<int,Polygon> coppia (maxIdx, p);
+		victim_list.emplace_back(coppia);
+		
+		cv::imshow("VICTIM_filter", contours_img);
 		cv::waitKey(0);
 	}
+	cout << "   Elements: " << victim_list.size() << std::endl;
 }
 
-/*
 
-int main() {
-	//inizializzazione
-	string filename = "04.jpg";
-	Mat img = imread(filename.c_str());
-	double scale = 800/1.56;
-	vector<Polygon> obstacle_list;
-	vector<std::pair<int,Polygon>> victim_list;
-	Polygon gate;
-	string config_folder = "/cygdrive/d/Enrico/SCUOLA/Università/LABORATORY OF APPLIED ROBOTICS/fork";
+float f_linea(cv::Mat src, cv::Mat dst, cv::Point& C) {
+	cv::cvtColor(src, src, cv::COLOR_BGR2GRAY);
+	cv::threshold(src, src, 220, 255, cv::THRESH_BINARY);
+	vector<cv::Mat> contours;
+	cv::Mat hierarchy;
+	cv::Mat linea;
+	cv::findContours(src, contours, hierarchy, CV_RETR_CCOMP, cv::CHAIN_APPROX_SIMPLE);
+	cv::Mat cnt = contours[contours.size()-1];
 	
-	processMap(img, scale, obstacle_list, victim_list, gate, config_folder);
-	
-	return 0;
-} */
-
-
-
-
-
-float f_linea(Mat src, Mat dst, cv::Point& C) {
-	cvtColor(src, src, COLOR_BGR2GRAY);
-	threshold(src, src, 220, 255, THRESH_BINARY);
-	vector<Mat> contours;
-	Mat hierarchy;
-	Mat linea;
-	findContours(src, contours, hierarchy, CV_RETR_CCOMP, CHAIN_APPROX_SIMPLE);
-	Mat cnt = contours[contours.size()-1];
-	
-	fitLine(cnt, linea, CV_DIST_HUBER, 0, 0.01, 0.01);
-	drawContours(dst, contours, contours.size()-1, Scalar(0,255,0), 1, 8, hierarchy, 100);
+	cv::fitLine(cnt, linea, CV_DIST_HUBER, 0, 0.01, 0.01);
+	cv::drawContours(dst, contours, contours.size()-1, cv::Scalar(0,255,0), 1, 8, hierarchy, 100);
 	
 	float vx = linea.at<float>(0,0);
 	float vy = linea.at<float>(1,0);

@@ -1,3 +1,5 @@
+#include "find_robot.hpp"
+
 bool findRobot(const cv::Mat& img_in, const double scale, Polygon& triangle, double& x, double& y, double& theta, const std::string& config_folder){
 	#define FIND_ROBOT_DEBUG_PLOT 
 
@@ -69,17 +71,17 @@ bool findRobot(const cv::Mat& img_in, const double scale, Polygon& triangle, dou
 	
 	
 	//ritaglio robot
-	Rect boundRect = boundingRect(cv::Mat(approx_curve));
+	cv::Rect boundRect = cv::boundingRect(cv::Mat(approx_curve));
 	boundRect.x = boundRect.x - 100;
 	boundRect.y = boundRect.y - 100;
 	boundRect.width = boundRect.width + 200;
 	boundRect.height = boundRect.height + 200;
-	Mat filtered(img_in.rows, img_in.cols, CV_8UC3, cv::Scalar(255,255,255));
+	cv::Mat filtered(img_in.rows, img_in.cols, CV_8UC3, cv::Scalar(255,255,255));
 	img_in.copyTo(filtered);
-	Mat robot_pos(filtered, boundRect);
-	cv::namedWindow("robot_pos", WINDOW_AUTOSIZE);
+	cv::Mat robot_pos(filtered, boundRect);
+	cv::namedWindow("robot_pos", cv::WINDOW_AUTOSIZE);
 	cv::imshow("robot_pos", robot_pos);
-	waitKey(0);
+	cv::waitKey(0);
 	
 
 	// If we found the robot triangle set robot position and create the triangle poligon
