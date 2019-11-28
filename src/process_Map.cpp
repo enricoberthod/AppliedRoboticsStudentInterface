@@ -15,7 +15,7 @@
 
 using namespace std;
 
-bool processMap(const cv::Mat& img_in, const double scale, std::vector<Polygon>& obstacle_list, std::vector<std::pair<int,Polygon>>& victim_list, Polygon& gate, const std::string& config_folder){
+bool process_Map(const cv::Mat& img_in, const double scale, std::vector<Polygon>& obstacle_list, std::vector<std::pair<int,Polygon>>& victim_list, Polygon& gate, const std::string& config_folder){
 	
 	cv::Mat hsv_img;
 	cv::cvtColor(img_in, hsv_img, cv::COLOR_BGR2HSV);

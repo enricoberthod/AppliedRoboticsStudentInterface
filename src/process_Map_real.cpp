@@ -1,3 +1,4 @@
+/*
 #include <opencv2/core.hpp>
 #include <opencv2/videoio.hpp>
 #include <opencv2/highgui.hpp>
@@ -382,3 +383,4 @@ float f_linea(cv::Mat src, cv::Mat dst, cv::Point& C) {
 
 	return m;
 }
+*/
