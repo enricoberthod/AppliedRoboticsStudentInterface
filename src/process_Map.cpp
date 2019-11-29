@@ -34,8 +34,8 @@ bool process_Map(const cv::Mat& img_in, const double scale, std::vector<Polygon>
 
 void redRegions(cv::Mat hsv_img, cv::Mat img_in, cv::Mat kernel, const double scale, std::vector<Polygon>& obstacle_list) {
 		
-	cv::namedWindow("Original 4", cv::WINDOW_NORMAL);
-	cv::resizeWindow("Original 4", 467, 350);
+	//cv::namedWindow("Original 4", cv::WINDOW_NORMAL);
+	//cv::resizeWindow("Original 4", 467, 350);
 	
 	std::vector<std::vector<cv::Point>> contours, contours_approx;
 	std::vector<cv::Point> approx_curve;
@@ -72,19 +72,19 @@ void redRegions(cv::Mat hsv_img, cv::Mat img_in, cv::Mat kernel, const double sc
 		obstacle_list.emplace_back(p);
 		cv::drawContours(contours_img, contours_approx, -1, cv::Scalar(0,170,220), 3, cv::LINE_AA);
 		std::cout << "   Approximated contour size: " << approx_curve.size() << std::endl;
-		cv::imshow("Original 4", contours_img);
-		cv::waitKey(0);
+		//cv::imshow("Original 4", contours_img);
+		//cv::waitKey(0);
 	}
 	
 	std::cout << "   Elements: " << obstacle_list.size() << std::endl;
-	cv::imshow("Original 4", contours_img);
-	cv::waitKey(0);
+	//cv::imshow("Original 4", contours_img);
+	//cv::waitKey(0);
 }
 
 
 void findGate(cv::Mat hsv_img, cv::Mat img_in, cv::Mat kernel, const double scale, Polygon& gate) {
-	cv::namedWindow("GATE_filter", cv::WINDOW_NORMAL);
-	cv::resizeWindow("GATE_filter", 467, 350);
+	//cv::namedWindow("GATE_filter", cv::WINDOW_NORMAL);
+	//cv::resizeWindow("GATE_filter", 467, 350);
 	
 	cv::Mat contours_img;
 	std::vector<std::vector<cv::Point>> contours, contours_approx;
@@ -124,14 +124,14 @@ void findGate(cv::Mat hsv_img, cv::Mat img_in, cv::Mat kernel, const double scal
 	
 	std::cout << "   Elements: " << gate.size() << std::endl;
   
-	cv::imshow("GATE_filter", contours_img);
-	cv::waitKey(0);
+	//cv::imshow("GATE_filter", contours_img);
+	//cv::waitKey(0);
 }
 
 
 void findVictim(cv::Mat hsv_img, cv::Mat img_in, cv::Mat kernel, const double scale, std::vector<std::pair<int,Polygon>>& victim_list) {
-	cv::namedWindow("VICTIM_filter", cv::WINDOW_NORMAL);
-	cv::resizeWindow("VICTIM_filter", 467, 350);
+	//cv::namedWindow("VICTIM_filter", cv::WINDOW_NORMAL);
+	//cv::resizeWindow("VICTIM_filter", 467, 350);
 	
 	// Find green regions
 	cv::Mat green_mask;
@@ -171,8 +171,8 @@ void findVictim(cv::Mat hsv_img, cv::Mat img_in, cv::Mat kernel, const double sc
 		// Draw the contours on image with a line color of BGR=(0,170,220) and a width of 3
 		cv::drawContours(contours_img, contours_approx, -1, cv::Scalar(0,170,220), 3, cv::LINE_AA);
 
-		cv::imshow("VICTIM_filter", contours_img);
-		cv::waitKey(0);
+		//cv::imshow("VICTIM_filter", contours_img);
+		//cv::waitKey(0);
 		
 		// find the bounding box of the green blob approx curve
 		boundRect[i] = cv::boundingRect(cv::Mat(approx_curve)); 
@@ -224,7 +224,7 @@ void findVictim(cv::Mat hsv_img, cv::Mat img_in, cv::Mat kernel, const double sc
 
     
 		// Show the actual image used for the template matching
-		cv::imshow("ROI", processROI);
+		//cv::imshow("ROI", processROI);
     
 		// Find the template digit with the best matching
 		double maxScore = 0;
@@ -347,8 +347,8 @@ void findVictim(cv::Mat hsv_img, cv::Mat img_in, cv::Mat kernel, const double sc
 		pair<int,Polygon> coppia (maxIdx, p);
 		victim_list.emplace_back(coppia);
 		
-		cv::imshow("VICTIM_filter", contours_img);
-		cv::waitKey(0);
+		//cv::imshow("VICTIM_filter", contours_img);
+		//cv::waitKey(0);
 	}
 	cout << "   Elements: " << victim_list.size() << std::endl;
 }

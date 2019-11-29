@@ -2,6 +2,7 @@
 #include "student_planning_interface.hpp"
 #include "undistort_img.hpp"
 #include "process_Map.hpp"
+#include "PlanPath_Interface.h"
 
 #include <stdexcept>
 #include <sstream>
@@ -77,7 +78,8 @@ namespace student {
   }
 
   bool planPath(const Polygon& borders, const std::vector<Polygon>& obstacle_list, const std::vector<std::pair<int,Polygon>>& victim_list, const Polygon& gate, const float x, const float y, const float theta, Path& path, const std::string& config_folder){
-    throw std::logic_error( "STUDENT FUNCTION NOT IMPLEMENTED" );     
+    //throw std::logic_error( "STUDENT FUNCTION NOT IMPLEMENTED" );     
+    plan_Path123(borders, obstacle_list, victim_list, gate, x, y, theta, path, config_folder);
   }
 
 

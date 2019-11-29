@@ -27,11 +27,33 @@ add_library(process_Map SHARED
    src/process_Map.cpp
 )
 
+add_library(PlanPath_Interface SHARED
+   src/PlanPath_Interface.cpp
+)
+
+add_library(Voronoi SHARED
+   src/Voronoi.cpp
+)
+
+add_library(Dijkstra SHARED
+   src/Dijkstra.cpp
+)
+
+add_library(PathFinder SHARED
+   src/PathFinder.cpp
+)
+
 ## Add executables
 add_executable(calibrate
   src/camera_calibration.cpp
   src/undistort_img.cpp
   src/process_Map.cpp
+  src/Voronoi.cpp
+  src/PlanPath_Interface.cpp
+  src/Dijkstra.cpp
+  src/clipper.cpp
+  src/Dubins.cpp
+  src/PathFinder.cpp
   
   )
 
@@ -48,6 +70,10 @@ target_link_libraries(student
   ${OpenCV_LIBRARIES}
   undistort_img 
   process_Map 
+  PlanPath_Interface
+  Voronoi
+  PathFinder
+  Dijkstra
 )
 
 target_link_libraries(calibrate
