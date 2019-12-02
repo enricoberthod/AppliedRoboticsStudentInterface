@@ -3,6 +3,7 @@
 #include "undistort_img.hpp"
 #include "process_Map.hpp"
 #include "PlanPath_Interface.h"
+#include "DataStructure.h" 
 
 #include <stdexcept>
 #include <sstream>
@@ -12,7 +13,7 @@
 using namespace cv;
 using namespace std;
 
-const double MIN_AREA_SIZE = 1000; 
+const double MIN_AREA_SIZE_ST = 1000; 
 
 namespace student {
 
@@ -32,7 +33,7 @@ namespace student {
 	//throw std::logic_error( "STUDENT FUNCTION NOT IMPLEMENTED" );
   }
 
-  
+  /*
 //--Autodetection border's points
   vector<cv::Point2f> detectBorder(cv::Mat img_in){
 	cv::namedWindow("BORDER_filter", cv::WINDOW_NORMAL);
@@ -67,7 +68,7 @@ namespace student {
 		std::cout << (i+1) << ") Contour size: " << contours[i].size() << std::endl;
 		double area = cv::contourArea(contours[i]);
 		std::cout << "---- area = " << area << std::endl;
-		if (area < MIN_AREA_SIZE) continue; // filter too small contours to remove false positives
+		if (area < MIN_AREA_SIZE_ST) continue; // filter too small contours to remove false positives
 		approxPolyDP(contours[i], approx_curve, 20, true);
 		if(approx_curve.size() == 4) {
 			contours_approx = {approx_curve};
@@ -127,14 +128,14 @@ namespace student {
   
 	cv::imshow("BORDER_filter", contours_img);
 	cv::waitKey(0);
-	return b;
+	return b; 
   }
-  
+  */
 
   bool extrinsicCalib(const cv::Mat& img_in, std::vector<cv::Point3f> object_points, const cv::Mat& camera_matrix, cv::Mat& rvec, cv::Mat& tvec, const std::string& config_folder){
     //throw std::logic_error( "STUDENT FUNCTION NOT IMPLEMENTED" ); 
 
-	std::string file_path = config_folder + "/extrinsicCalib.csv";
+/*	std::string file_path = config_folder + "/extrinsicCalib.csv";
 
     std::vector<cv::Point2f> image_points;
 
@@ -190,7 +191,7 @@ namespace student {
 
     return ok;
 	
-	
+	*/
   }
 
   void imageUndistort(const cv::Mat& img_in, cv::Mat& img_out, 

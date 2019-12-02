@@ -21,7 +21,7 @@ using boost::polygon::y;
 using boost::polygon::low;
 using boost::polygon::high;
 
-bool isObstaclePoint(float, float, std::vector<VoronoiPoint>);
+bool isObstaclePoint(double, double, std::vector<VoronoiPoint>);
 void removeObstacles(std::vector<VoronoiPoint>, VoronoiResults*);
 void remove(std::vector<VoronoiPoint>, VoronoiResults*);
 int visited(std::vector<int>, int);
@@ -100,12 +100,11 @@ int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::vector<Vorono
   	int result = 0;
 	const voronoi_diagram<double>::vertex_type* startVertex;
 	const voronoi_diagram<double>::vertex_type* endVertex;
-	float xa,ya,xb,yb=0;
+	int xa,ya,xb,yb=0;
 	double prev_xa=-1;
 	double prev_ya=-1;
 	int id1,id2,longId=0;
 	std::vector<int> visitedIds;
-	
 	
     	const voronoi_diagram<double>::edge_type* edge;
 	
@@ -113,14 +112,14 @@ int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::vector<Vorono
 	{
     		const voronoi_diagram<double>::vertex_type& vertex = *it;
     		edge = vertex.incident_edge();
-		float x = vertex.x();
-		float y = vertex.y();
-		float len;
-		int mostId,lessId;
+		double x = vertex.x();
+		double y = vertex.y();
+		double len;
 		
 		//VoronoiPoint point(x,y);
 		//results->resultPoints.push_back(point);
     // This is convenient way to iterate edges around Voronoi vertex.
+		
 		
     		do {
       			if (edge->is_primary())
@@ -130,55 +129,55 @@ int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::vector<Vorono
 				endVertex=edge->vertex1();
 				if(startVertex!=NULL && endVertex!=NULL)
 				{
-					xa = (float)startVertex->x();
-					ya = (float)startVertex->y();
-					xb = (float)endVertex->x();  
-					yb = (float)endVertex->y();
-					len=sqrt(pow((xa-xb),2)+pow((ya-yb),2));
-					if(xa!=prev_xa || ya!=prev_ya)
+					xa = (int)startVertex->x();
+					ya = (int)startVertex->y();
+					if(!isObstaclePoint(xa,ya,*points))
 					{
-						mostId=(int)(xa*1000);
-						lessId=(int)(ya*1000);
-						if(ya<1)
+						xb = (int)endVertex->x();  
+						yb = (int)endVertex->y();
+						len=sqrt(pow((xa-xb),2)+pow((ya-yb),2));
+						if(xa!=prev_xa || ya!=prev_ya)
 						{
-											
-							longId=(mostId*1000)+lessId;
+							if(ya<1000)
+								longId=(xa*1000)+ya;
+							else
+								longId=(xa*10000)+ya;
+							id1=visited(visitedIds,longId);
+							if(id1==-1)
+							{
+								visitedIds.push_back(longId);
+								id1=(visitedIds.size()-1);
+							}
 						}
+					
+						if(yb<1000)
+							longId=(xb*1000)+yb;
 						else
-						{
-							
-							longId=(mostId*10000)+lessId;
-
-						}
-						id1=visited(visitedIds,longId);
-						if(id1==-1)
+							longId=(xb*10000)+yb;
+						id2=visited(visitedIds,longId);
+						if(id2==-1)
 						{
 							visitedIds.push_back(longId);
-							id1=(visitedIds.size()-1);
+							id2=(visitedIds.size()-1);
 						}
+						GraphEdge e(xa,ya,xb,yb,len,id1,id2);
+						results->resultEdges.push_back(e);
+						VoronoiPoint p(xa,ya);
+						results->resultPoints.push_back(p); 
 					}
-					mostId=(int)(xb*1000);
-					lessId=(int)(yb*1000);
-					if(yb<1)
-						longId=(mostId*1000)+lessId; 
-					else
-						longId=(mostId*10000)+lessId; 
-					id2=visited(visitedIds,longId);
-					if(id2==-1)
-					{
-						visitedIds.push_back(longId);
-						id2=(visitedIds.size()-1);
-					}
-					GraphEdge e(xa,ya,xb,yb,len,id1,id2);
-					results->resultEdges.push_back(e);
 					prev_xa=xa;
 					prev_ya=ya;
-					printf("vertex (%i, %i): (%f,%f),(%f,%f)  \n", id1,id2,xa,ya,xb,yb);
+					//printf("vertex (%i, %i): (%i,%i),(%i,%i)  \n", id1,id2,xa,ya,xb,yb);
 				}
 			}
       			edge = edge->rot_next();
 		} while (edge != vertex.incident_edge());
   	}
+	if(!isObstaclePoint(xb,yb,*points))
+	{
+		VoronoiPoint p(xb,yb);
+		results->resultPoints.push_back(p);
+	}
 	results->ids=visitedIds;	
 
   	return result;
@@ -192,7 +191,8 @@ int visited(std::vector<int> visitedIds, int num)
 	return -1;
 }
 
-void Voronoi(std::vector<VoronoiPoint>points, std::vector<Segment> segments, VoronoiResults *results)  // si può aggiungere un flag isObstaclePoint alla struttura di GraphEdge così da marchiare subito i vertici da togliere
+void Voronoi(std::vector<VoronoiPoint>points, std::vector<Segment> segments, VoronoiResults *results)
+// si può aggiungere un flag isObstaclePoint alla struttura di GraphEdge così da marchiare subito i vertici da togliere
 {
   
 	//printf("pppp %i\n",p.size());
@@ -207,17 +207,18 @@ void Voronoi(std::vector<VoronoiPoint>points, std::vector<Segment> segments, Vor
 		printf("pippo c'è \n");
     //printf("Number of visited primary edges using cell iterator: %d\n", iterate_primary_edges2(vd));
     printf("Number of visited primary edges using vertex iterator: %d\n", iterate_primary_edges3(vd, &points, results));
+    printf("before points size: %i \n",results->resultPoints.size());
     printf("before edge size: %i \n",results->resultEdges.size());
-//////////////////////////// check why the process dies in remove
-	removeObstacles(points,results);
 
-    printf("after edge size: %i \n",results->resultEdges.size());
+	//removeObstacles(points,results);
+
+    //printf("after edge size: %i \n",results->resultEdges.size());
   }
 	
 	
 }
 
-bool isObstaclePoint(float x, float y, std::vector<VoronoiPoint>points)
+bool isObstaclePoint(double x, double y, std::vector<VoronoiPoint>points)
 {
 	for(int i=0; i<points.size();i++)
 	{
@@ -227,54 +228,4 @@ bool isObstaclePoint(float x, float y, std::vector<VoronoiPoint>points)
 	return false;
 }
 
-void removeObstacles(std::vector<VoronoiPoint>obstPoints, VoronoiResults *results)
-{
-	std::vector<VoronoiPoint>obstacleVertices;
-	bool found=false;
-	obstacleVertices.clear();
-	 printf("removeObstacle %i\n",results->resultEdges.size());
-	for(int i=0;i<results->resultEdges.size() && !found;i++)
-	{
-		printf("i %i \n",i);
-		if(isObstaclePoint(results->resultEdges[i].p0.a,results->resultEdges[i].p0.b,obstPoints))
-		{
-			found=true;
-			printf("true\n");
-			obstacleVertices.push_back(VoronoiPoint(results->resultEdges[i].p1.a,results->resultEdges[i].p1.b));
-			printf("push\n");
-		}
-		else
-		{
-			printf("false\n");
-			results->resultPoints.push_back(results->resultEdges[i].p0);
-			printf("push\n");
-		}
-	}
-	
-	if(found==true)
-	{
-		remove(obstPoints, results);
-		printf("enrico dice che è qui\n");
-		removeObstacles(obstacleVertices, results);
-	}
-}
-
-void remove(std::vector<VoronoiPoint>points, VoronoiResults *results)
-{
-	std::vector<GraphEdge>::iterator it;
-	printf("remove %i\n",points.size());
-	for(int i=0; i<points.size();i++)
-	{
-		printf("i2 %i\n",i);
-		for(it=results->resultEdges.begin(); it!=results->resultEdges.end(); it++)
-		{
-			if((it->p0.a==points[i].a && it->p0.b==points[i].b) || (it->p1.a==points[i].a && it->p1.b==points[i].b))
-			{
-				//printf("erase \n");
-				results->resultEdges.erase(it);
-				//printf("erase 2 \n");
-			}
-		} 
-	}
-}
 

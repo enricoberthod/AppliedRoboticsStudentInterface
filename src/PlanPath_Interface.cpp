@@ -12,10 +12,12 @@
 void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_list, const std::vector<std::pair<int,Polygon>>& victim_list, 
 				const Polygon& gate, const float x, const float y, const float theta, Path& path, const std::string& config_folder)
 {
-	path.points.emplace_back(1,2,3,1,2);
+	const int floatToInt=1000;
+	//path.points.emplace_back(1,2,3,1,2);
 
 	//Robot center
-	VoronoiPoint start = VoronoiPoint(x,y);
+	VoronoiPoint start = VoronoiPoint((int)(x*floatToInt),(int)(y*floatToInt));
+	//VoronoiPoint start = VoronoiPoint((int)(0.2*floatToInt),(int)(0.1*floatToInt));
 	float x_tot=0,y_tot=0;
 	
 	for(int i=0;i<gate.size();i++)
@@ -24,7 +26,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		y_tot+=gate[i].y;
 	}
 	
-	VoronoiPoint end = VoronoiPoint(x_tot/4,y_tot/4); 
+	VoronoiPoint end = VoronoiPoint((int)((x_tot/4)*floatToInt),(int)((y_tot/4)*floatToInt)); 
 	
 	//data structure for results
 	VoronoiResults voronoiPaths;
@@ -37,25 +39,27 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 
 	//create a vector of points and obstacles edges
 	int vertexNumber;
-	float xa,xb,ya,yb;
+	
+	int xa,xb,ya,yb;
 	for(int i=0;i<obstacle_list.size();i++)
 	{
 		vertexNumber=obstacle_list[i].size();
 		for(int j=0;j<vertexNumber-1;j++)
 		{
-			printf("obsvertx: %f,%f\n",xa,ya);
-			xa=obstacle_list[i][j].x;
-			ya=obstacle_list[i][j].y;
-			xb=obstacle_list[i][j+1].x;
-			yb=obstacle_list[i][j+1].y;
+			printf("obsvertxf: %f,%f\n",obstacle_list[i][j].x,obstacle_list[i][j].y);
+			xa=(int)(obstacle_list[i][j].x*floatToInt);
+			ya=(int)(obstacle_list[i][j].y*floatToInt);
+			printf("obsvertx: %i,%i\n",xa,ya);
+			xb=(int)(obstacle_list[i][j+1].x*floatToInt);
+			yb=(int)(obstacle_list[i][j+1].y*floatToInt);
 			inputPoints.push_back(VoronoiPoint(xa,ya));
 			obstacles_edges.push_back(Segment(xa, ya, xb, yb));
 		}
 		//close the polygon with the last edge
-		xa=obstacle_list[i][vertexNumber-1].x;
-		ya=obstacle_list[i][vertexNumber-1].y;
-		xb=obstacle_list[i][0].x;
-		yb=obstacle_list[i][0].y;
+		xa=(int)(obstacle_list[i][vertexNumber-1].x*floatToInt);
+		ya=(int)(obstacle_list[i][vertexNumber-1].y*floatToInt);
+		xb=(int)(obstacle_list[i][0].x*floatToInt);
+		yb=(int)(obstacle_list[i][0].y*floatToInt);
 		inputPoints.push_back(VoronoiPoint(xa,ya));
 		obstacles_edges.push_back(Segment(xa, ya, xb, yb));
 	}
@@ -65,49 +69,59 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	//add borders
 	for(int i=0;i<3;i++)
 	{
-		xa=borders[i].x;
-		ya=borders[i].y;
-		xb=borders[i+1].x;
-		yb=borders[i+1].y;
-		printf("bordivertx: %f,%f\n",xa,ya);
+		xa=(int)((borders[i].x*floatToInt)>0?(borders[i].x*floatToInt):0);
+		ya=(int)((borders[i].y*floatToInt)>0?(borders[i].y*floatToInt):0);
+		xb=(int)((borders[i+1].x*floatToInt)>0?(borders[i+1].x*floatToInt):0);
+		yb=(int)((borders[i+1].y*floatToInt)>0?(borders[i+1].y*floatToInt):0);
+		
+		printf("bordivertxf: %f,%f\n",borders[i].x,borders[i].y);
+		printf("bordivertx: %i,%i\n",xa,ya);
 		inputPoints.push_back(VoronoiPoint(xa,ya));
 		obstacles_edges.push_back(Segment(xa, ya, xb, yb));
 	}
 	//close the borders
-	xa=borders[3].x;
-	ya=borders[3].y;
-	xb=borders[0].x;
-	yb=borders[0].y;
-	printf("bordivertx: %f,%f\n",xa,ya);
+	xa=(int)((borders[3].x*floatToInt)>0?(borders[3].x*floatToInt):0);
+	ya=(int)((borders[3].y*floatToInt)>0?(borders[3].y*floatToInt):0);
+	xb=(int)((borders[0].x*floatToInt)>0?(borders[0].x*floatToInt):0);
+	yb=(int)((borders[0].y*floatToInt)>0?(borders[0].y*floatToInt):0);	
+	
+	printf("bordivertxf: %f,%f\n",borders[3].x,borders[3].y);
+	printf("bordivertx: %i,%i\n",xa,ya);
 	inputPoints.push_back(VoronoiPoint(xa,ya));
 	obstacles_edges.push_back(Segment(xa, ya, xb, yb));
 
 	printf("size: %i", inputPoints.size());
 	printf("size2: %i",obstacles_edges.size());	
-	
+
+
+	//throw std::logic_error( "STOP" );
 
 	//Creates the Voronoi map
 	Voronoi(inputPoints, obstacles_edges, &voronoiPaths);
-	
+		
 
 
 	//data structure for results
 	std::vector<VoronoiPoint> rightPath;
 
-	printf("vectorvoronoiPath: %i\n", voronoiPaths.resultPoints.size());
+	printf("edgesAfterVoronoi: %i\n", voronoiPaths.resultEdges.size());
+	printf("pointsAfterVoronoi: %i\n", voronoiPaths.resultPoints.size());
 	
 	for(int j=0;j<voronoiPaths.resultPoints.size();j++)
 	{
-		printf("x: %f",voronoiPaths.resultPoints[j].a);
-		printf(", %f\n",voronoiPaths.resultPoints[j].b);
+		printf("x: %i",voronoiPaths.resultPoints[j].a);
+		printf(", %i\n",voronoiPaths.resultPoints[j].b);
 	}
 
-	throw std::logic_error( "STOP" );
+	//throw std::logic_error( "STOP" );
 	
 	//Direct path from robot center initial position to gate center
 	PathFinder(start, end, &voronoiPaths, &rightPath); 
 	
 	throw std::logic_error( "STOP" );
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////Tutto ok fino a qui //////////////////////////////////////////
 
 	///////////////////////////////ADD SAMPLING POINTS OF THE RIGHTPATH
 

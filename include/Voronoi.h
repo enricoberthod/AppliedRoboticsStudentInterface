@@ -5,25 +5,28 @@
 #include "DataStructure.h"
 
 struct VoronoiPoint {
-	float a;
-	float b;
-  	VoronoiPoint(float x, float y) : a(x), b(y) {}
+	int a;
+	int b;
+  	
+	int getA(){return a;};
+	int getB(){return b;};
+	VoronoiPoint(int x, int y) : a(x), b(y) {}
 };
 
 struct Segment {
   	VoronoiPoint p0;
  	VoronoiPoint p1;
-  	Segment(float x1, float y1, float x2, float y2) : p0(x1, y1), p1(x2, y2) {}
+  	Segment(int x1, int y1, int x2, int y2) : p0(x1, y1), p1(x2, y2) {}
 };
 
 struct GraphEdge{
   	VoronoiPoint p0;
  	VoronoiPoint p1;
-	float length;
+	double length;
 	int idFirstNode,idSecondNode;
-  	GraphEdge(float x1, float y1, float x2, float y2) : p0(x1, y1), p1(x2, y2), length(0), idFirstNode(0), idSecondNode(0) {}
-	GraphEdge(float x1, float y1, float x2, float y2, float len) : p0(x1, y1), p1(x2, y2), length(len), idFirstNode(0), idSecondNode(0) {}
-	GraphEdge(float x1, float y1, float x2, float y2, float len, float id1, float id2) : p0(x1, y1), p1(x2, y2), length(len), idFirstNode(id1), idSecondNode(id2) {}
+  	GraphEdge(int x1, int y1, int x2, int y2) : p0(x1, y1), p1(x2, y2), length(0), idFirstNode(0), idSecondNode(0) {}
+	GraphEdge(int x1, int y1, int x2, int y2, double len) : p0(x1, y1), p1(x2, y2), length(len), idFirstNode(0), idSecondNode(0) {}
+	GraphEdge(int x1, int y1, int x2, int y2, double len, int id1, int id2) : p0(x1, y1), p1(x2, y2), length(len), idFirstNode(id1), idSecondNode(id2) {}
 };
 
 

@@ -19,7 +19,6 @@ void PathFinder(VoronoiPoint start,VoronoiPoint end, VoronoiResults *voronoiPath
 	int endSize;
 	int startLongId;
 	int endLongId;
-	int lessId,mostId;
 	std::vector<GraphEdge> start_connection, end_connection;
 
 	connect(offset, start, end, voronoiPaths, true, true, &start_connection, &end_connection);
@@ -27,24 +26,18 @@ void PathFinder(VoronoiPoint start,VoronoiPoint end, VoronoiResults *voronoiPath
 	startSize=start_connection.size();
 	endSize=end_connection.size();
 
-	mostId=(int)(start.a*1000);
-	lessId=(int)(start.b*1000);
-	if(start.b<1)
-		startLongId=(mostId*1000)+lessId;
+	if(start.b<1000)
+		startLongId=(start.a*1000)+start.b;
 	else
-		startLongId=(mostId*10000)+lessId;
+		startLongId=(start.a*10000)+start.b;
 	voronoiPaths->ids.push_back(startLongId);
 	
-	mostId=(int)(end.a*1000);
-	lessId=(int)(end.b*1000);
-	if(end.b<1)
-		endLongId=(mostId*1000)+lessId;
+	if(end.b<1000)
+		endLongId=(end.a*1000)+end.b;
 	else
-		endLongId=(mostId*10000)+lessId;
+		endLongId=(end.a*10000)+end.b;
 	voronoiPaths->ids.push_back(endLongId);
 	
-	std::cout << "startsize" << startSize << std::endl;
-
 	while(startSize<=nConnection || endSize<=nConnection)
 	{
 		offset=offset+step;
@@ -72,7 +65,7 @@ void connect(int offset, VoronoiPoint startP, VoronoiPoint endP, VoronoiResults 
 	int a,b,c,d,o,x,y,endId,startId,id1;
 	int prev_x,prev_y=-1;
 	double len;
-	int longId,startLongId,endLongId,mostId,lessId;
+	int longId,startLongId,endLongId;
 
 	a=startP.a-offset;
 	b=startP.b-offset;
@@ -80,29 +73,23 @@ void connect(int offset, VoronoiPoint startP, VoronoiPoint endP, VoronoiResults 
 	d=endP.b-offset;
 	o=offset*2;
 
-	mostId=(int)(startP.a*1000);
-	lessId=(int)(startP.b*1000);
-	if(startP.b<1)
-		startLongId=(mostId*1000)+lessId;
+	if(startP.b<1000)
+		startLongId=(startP.a*1000)+startP.b;
 	else
-		startLongId=(mostId*10000)+lessId;
+		startLongId=(startP.a*10000)+startP.b;
 	//voronoiPaths->ids.push_back(startLongId);
 	startId=voronoiPaths->ids.size()-2;
 	
 	std::cout << "startID " << startId << " | startLongID " << startLongId << std::endl;
 	
-	mostId=(int)(endP.a*1000);
-	lessId=(int)(endP.b*1000);
-	if(endP.b<1)
-		endLongId=(mostId*1000)+lessId;
+	if(endP.b<1000)
+		endLongId=(endP.a*1000)+endP.b;
 	else
-		endLongId=(mostId*10000)+lessId;
+		endLongId=(endP.a*10000)+endP.b;
 	//voronoiPaths->ids.push_back(endLongId);
 	endId=voronoiPaths->ids.size()-1;
 
 	std::cout << "endID " << endId << " | endLongID " << endLongId << std::endl;
-
-	std::cout << "voronoiPaths->resultEdges.size() " << voronoiPaths->resultEdges.size()  << std::endl;
 
 	for(int i=0;i<voronoiPaths->resultEdges.size();i++)
 	{
@@ -114,12 +101,10 @@ void connect(int offset, VoronoiPoint startP, VoronoiPoint endP, VoronoiResults 
 			len=sqrt(pow((x-startP.a),2)+pow((y-startP.b),2));
 			if(x!=prev_x || y!=prev_y)
 			{
-				mostId=(int)(x*1000);
-				lessId=(int)(y*1000);
-				if(y<1)
-					longId=(mostId*1000)+lessId;
+				if(y<1000)
+					longId=(x*1000)+y;
 				else
-					longId=(mostId*10000)+lessId;
+					longId=(x*10000)+y;
 				std::cout << "longId " << longId << std::endl;
 				id1=-1;
 				for(int j=0;j<voronoiPaths->ids.size() && id1==-1;j++)
@@ -137,13 +122,11 @@ void connect(int offset, VoronoiPoint startP, VoronoiPoint endP, VoronoiResults 
 			len=sqrt(pow((x-endP.a),2)+pow((y-endP.b),2));
 			if(x!=prev_x || y!=prev_y)
 			{
-				mostId=(int)(x*1000);
-				lessId=(int)(y*1000);
-				if(y<1)
-					longId=(mostId*1000)+lessId;
+				if(y<1000)
+					longId=(x*1000)+y;
 				else
-					longId=(mostId*10000)+lessId;
-				//std::cout << "longId " << longId << std::endl;
+					longId=(x*10000)+y;
+				std::cout << "longId " << longId << std::endl;
 				id1=-1;
 				for(int k=0;k<voronoiPaths->ids.size() && id1==-1;k++)
 					if(voronoiPaths->ids[k]==longId)
@@ -170,20 +153,18 @@ void shortestPath(VoronoiPoint start,VoronoiPoint end, VoronoiResults *voronoiPa
 	int path[V];
 	int mapPosition[V];
 	int encodedCoord,x,y;
-	int encoder,mostId,lessId;
-	Graph* graph = createGraph(V); 
+	int encoder;
+	struct Graph* graph = createGraph(V); 
 	for(int i=0;i<voronoiPaths->resultEdges.size();i++)
 	{
 		std::cout << voronoiPaths->resultEdges[i].idFirstNode << " ; " << voronoiPaths->resultEdges[i].idSecondNode << "  ("<< voronoiPaths->resultEdges[i].p0.a << "," << voronoiPaths->resultEdges[i].p0.b << ")" << "  ("<< voronoiPaths->resultEdges[i].p1.a << "," << voronoiPaths->resultEdges[i].p1.b << ")  => " << voronoiPaths->resultEdges[i].length << std::endl;
 			
 		x=voronoiPaths->resultEdges[i].p0.a;
 		y=voronoiPaths->resultEdges[i].p0.b;
-		mostId=(int)(x*1000);
-		lessId=(int)(y*1000);
-		if(y<1)
-			encodedCoord=(mostId*1000)+lessId;
+		if(y<1000)
+			encodedCoord=(x*1000)+y;
 		else
-			encodedCoord=(mostId*10000)+lessId;
+			encodedCoord=(x*10000)+y;
 		
 		mapPosition[voronoiPaths->resultEdges[i].idFirstNode]=encodedCoord;
 		std::cout << "id " << voronoiPaths->resultEdges[i].idFirstNode << " coo " << encodedCoord << " coo2 " << mapPosition[voronoiPaths->resultEdges[i].idFirstNode] <<  std::endl; 
@@ -191,14 +172,15 @@ void shortestPath(VoronoiPoint start,VoronoiPoint end, VoronoiResults *voronoiPa
 		
 	}
 
-	dijkstra(graph,voronoiPaths->ids.size()-2,voronoiPaths->ids.size()-1,path); 
+	dijkstra(graph,voronoiPaths->ids.size()-2,voronoiPaths->ids.size()-1,path); //modificare aggiunendo il voronoiPaths->ids.size()-1 ossia l'id del nodo destinazione e tracciarlo in modo da avere la lista degli id dei nodi da visitare per arrivare da start a end
 	
 	std::cout << std::endl;
 	
 	std::vector<int> startEndPath;
 	startEndPath.push_back(voronoiPaths->ids.size()-2);
 	storePath(path,voronoiPaths->ids.size()-1,&startEndPath);
-		
+	
+	
 	std::cout << std::endl << "right path ";
 	for(int j=0;j<startEndPath.size();j++)
 		std::cout << " " << startEndPath[j];
@@ -221,7 +203,8 @@ void shortestPath(VoronoiPoint start,VoronoiPoint end, VoronoiResults *voronoiPa
 	
 		std::cout << "node: " << startEndPath[i] << " " << mapPosition[startEndPath[i]] << " x,y (" << x1 << "," << y1 << ")" << std::endl;
 	}
-	rightPath->push_back(end);	
+	rightPath->push_back(end);
+	
 }
 
 
