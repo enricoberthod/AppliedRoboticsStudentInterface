@@ -3,6 +3,7 @@
 #include <vector> 
 #include <string>
 #include <iostream>
+#include <unordered_map>
 #include "Voronoi.h"
 #include "PathFinder.h"
 #include "Dubins.h"
@@ -37,6 +38,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	std::vector<VoronoiPoint> inputPoints;
 	std::vector<Segment> obstacles_edges;
 
+/*
 	//create a vector of points and obstacles edges
 	int vertexNumber;
 	
@@ -63,7 +65,52 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		inputPoints.push_back(VoronoiPoint(xa,ya));
 		obstacles_edges.push_back(Segment(xa, ya, xb, yb));
 	}
+*/
+	//create an unordered_map of the obstacles' vertexes
 
+	int xa,xb,ya,yb,longId,vertexNumber;
+	VoronoiPoint p;
+	std::unordered_map<int,VoronoiPoint> obstaclesVertexes;
+
+	for(int i=0;i<obstacle_list.size();i++)
+	{
+		vertexNumber=obstacle_list[i].size();
+		for(int j=0;j<vertexNumber-1;j++)
+		{
+			printf("obsvertxf: %f,%f\n",obstacle_list[i][j].x,obstacle_list[i][j].y);
+			xa=(int)(obstacle_list[i][j].x*floatToInt);
+			ya=(int)(obstacle_list[i][j].y*floatToInt);
+			printf("obsvertx: %i,%i\n",xa,ya);
+			xb=(int)(obstacle_list[i][j+1].x*floatToInt);
+			yb=(int)(obstacle_list[i][j+1].y*floatToInt);
+			if(ya<floatToInt)
+				longId=(xa*floatToInt)+ya;
+			else
+				longId=(xa*floatToInt*10)+ya;
+			p=VoronoiPoint(xa,ya);
+			obstaclesVertexes[longId]=p;
+			inputPoints.push_back(VoronoiPoint(xa,ya));
+			obstacles_edges.push_back(Segment(xa, ya, xb, yb));
+		}
+		//close the polygon with the last edge
+		xa=(int)(obstacle_list[i][vertexNumber-1].x*floatToInt);
+		ya=(int)(obstacle_list[i][vertexNumber-1].y*floatToInt);
+		if(ya<floatToInt)
+			longId=(xa*floatToInt)+ya;
+		else
+			longId=(xa*floatToInt*10)+ya;
+		p=VoronoiPoint(xa,ya);
+		obstaclesVertexes[longId]=p;
+		xb=(int)(obstacle_list[i][0].x*floatToInt);
+		yb=(int)(obstacle_list[i][0].y*floatToInt);
+		inputPoints.push_back(VoronoiPoint(xa,ya));
+		obstacles_edges.push_back(Segment(xa, ya, xb, yb));
+	}
+
+	printf("hash %i\n",obstaclesVertexes.size());
+
+
+	//throw std::logic_error( "STOP" );
 	
 	
 	//add borders
@@ -71,6 +118,12 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	{
 		xa=(int)((borders[i].x*floatToInt)>0?(borders[i].x*floatToInt):0);
 		ya=(int)((borders[i].y*floatToInt)>0?(borders[i].y*floatToInt):0);
+		if(ya<floatToInt)
+			longId=(xa*floatToInt)+ya;
+		else
+			longId=(xa*floatToInt*10)+ya;
+		p=VoronoiPoint(xa,ya);
+		obstaclesVertexes[longId]=p;
 		xb=(int)((borders[i+1].x*floatToInt)>0?(borders[i+1].x*floatToInt):0);
 		yb=(int)((borders[i+1].y*floatToInt)>0?(borders[i+1].y*floatToInt):0);
 		
@@ -82,6 +135,12 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	//close the borders
 	xa=(int)((borders[3].x*floatToInt)>0?(borders[3].x*floatToInt):0);
 	ya=(int)((borders[3].y*floatToInt)>0?(borders[3].y*floatToInt):0);
+	if(ya<floatToInt)
+		longId=(xa*floatToInt)+ya;
+	else
+		longId=(xa*floatToInt*10)+ya;
+	p=VoronoiPoint(xa,ya);
+	obstaclesVertexes[longId]=p;
 	xb=(int)((borders[0].x*floatToInt)>0?(borders[0].x*floatToInt):0);
 	yb=(int)((borders[0].y*floatToInt)>0?(borders[0].y*floatToInt):0);	
 	
@@ -97,7 +156,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	//throw std::logic_error( "STOP" );
 
 	//Creates the Voronoi map
-	Voronoi(inputPoints, obstacles_edges, &voronoiPaths);
+	Voronoi(inputPoints, obstacles_edges, obstaclesVertexes, &voronoiPaths);
 		
 
 

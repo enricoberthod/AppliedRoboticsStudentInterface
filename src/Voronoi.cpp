@@ -12,6 +12,7 @@
 #include <cstdio>
 #include <vector>
 #include <cmath>
+#include <unordered_map>
 
 #include <boost/polygon/voronoi.hpp>
 using boost::polygon::voronoi_builder;
@@ -21,7 +22,7 @@ using boost::polygon::y;
 using boost::polygon::low;
 using boost::polygon::high;
 
-bool isObstaclePoint(double, double, std::vector<VoronoiPoint>);
+bool isObstaclePoint(double, double, std::unordered_map<int,VoronoiPoint>);
 void removeObstacles(std::vector<VoronoiPoint>, VoronoiResults*);
 void remove(std::vector<VoronoiPoint>, VoronoiResults*);
 int visited(std::vector<int>, int);
@@ -96,7 +97,7 @@ int iterate_primary_edges2(const voronoi_diagram<double> &vd) {
 // As opposite to the above two functions this one will not iterate through
 // edges without finite endpoints and will iterate only once through edges
 // with single finite endpoint.
-int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::vector<VoronoiPoint>* points, VoronoiResults *results) {
+int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::unordered_map<int,VoronoiPoint>*points_map, VoronoiResults *results) {
   	int result = 0;
 	const voronoi_diagram<double>::vertex_type* startVertex;
 	const voronoi_diagram<double>::vertex_type* endVertex;
@@ -131,7 +132,7 @@ int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::vector<Vorono
 				{
 					xa = (int)startVertex->x();
 					ya = (int)startVertex->y();
-					if(!isObstaclePoint(xa,ya,*points))
+					if(!isObstaclePoint(xa,ya,*points_map))
 					{
 						xb = (int)endVertex->x();  
 						yb = (int)endVertex->y();
@@ -173,7 +174,7 @@ int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::vector<Vorono
       			edge = edge->rot_next();
 		} while (edge != vertex.incident_edge());
   	}
-	if(!isObstaclePoint(xb,yb,*points))
+	if(!isObstaclePoint(xb,yb,*points_map))
 	{
 		VoronoiPoint p(xb,yb);
 		results->resultPoints.push_back(p);
@@ -191,7 +192,7 @@ int visited(std::vector<int> visitedIds, int num)
 	return -1;
 }
 
-void Voronoi(std::vector<VoronoiPoint>points, std::vector<Segment> segments, VoronoiResults *results)
+void Voronoi(std::vector<VoronoiPoint>points, std::vector<Segment> segments, std::unordered_map<int,VoronoiPoint>points_map, VoronoiResults *results)
 // si può aggiungere un flag isObstaclePoint alla struttura di GraphEdge così da marchiare subito i vertici da togliere
 {
   
@@ -206,7 +207,7 @@ void Voronoi(std::vector<VoronoiPoint>points, std::vector<Segment> segments, Vor
     //printf("Number of visited primary edges using edge iterator: %d\n", iterate_primary_edges1(vd));
 		printf("pippo c'è \n");
     //printf("Number of visited primary edges using cell iterator: %d\n", iterate_primary_edges2(vd));
-    printf("Number of visited primary edges using vertex iterator: %d\n", iterate_primary_edges3(vd, &points, results));
+    printf("Number of visited primary edges using vertex iterator: %d\n", iterate_primary_edges3(vd, &points_map, results));
     printf("before points size: %i \n",results->resultPoints.size());
     printf("before edge size: %i \n",results->resultEdges.size());
 
@@ -218,14 +219,27 @@ void Voronoi(std::vector<VoronoiPoint>points, std::vector<Segment> segments, Vor
 	
 }
 
-bool isObstaclePoint(double x, double y, std::vector<VoronoiPoint>points)
+bool isObstaclePoint(double x, double y, std::unordered_map<int,VoronoiPoint>points_map)
 {
+/*
 	for(int i=0; i<points.size();i++)
 	{
 		if(x==points[i].a && y==points[i].b)
 			return true;
-	}
-	return false;
+	} */
+	//return false;
+	VoronoiPoint p;
+	int longId;
+	if(y<1000)
+		longId=(x*1000)+y;
+	else
+		longId=(x*10000)+y;
+	if(points_map.find(longId)==points_map.end())
+		return false;
+	else
+		return true;
+	//return points_map.contains(longId);
+	
 }
 
 

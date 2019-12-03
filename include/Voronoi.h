@@ -3,6 +3,7 @@
 #ifndef Voronoi_H
 #define Voronoi_H
 #include "DataStructure.h"
+#include <unordered_map>
 
 struct VoronoiPoint {
 	int a;
@@ -10,7 +11,8 @@ struct VoronoiPoint {
   	
 	int getA(){return a;};
 	int getB(){return b;};
-	VoronoiPoint(int x, int y) : a(x), b(y) {}
+	VoronoiPoint(int x, int y) : a(x), b(y) {};
+	VoronoiPoint() : a(0), b(0) {};
 };
 
 struct Segment {
@@ -36,6 +38,6 @@ struct VoronoiResults {
 	std::vector<VoronoiPoint> resultPoints;
 };
 
-void Voronoi(std::vector<VoronoiPoint>,std::vector<Segment>, VoronoiResults*);
+void Voronoi(std::vector<VoronoiPoint>,std::vector<Segment>,std::unordered_map<int,VoronoiPoint>, VoronoiResults*);
 
 #endif
