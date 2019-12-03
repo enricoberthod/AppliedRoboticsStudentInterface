@@ -3,10 +3,13 @@
 #include <vector> 
 #include <string>
 #include <iostream>
+#include <cmath>
 #include <unordered_map>
 #include "Voronoi.h"
 #include "PathFinder.h"
 #include "Dubins.h"
+
+void angle_calculator(VoronoiPoint, VoronoiPoint, VoronoiPoint, double &,  double &);
 
 //using namespace std;
 
@@ -177,28 +180,43 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	//Direct path from robot center initial position to gate center
 	PathFinder(start, end, &voronoiPaths, &rightPath); 
 	
-	throw std::logic_error( "STOP" );
+	//throw std::logic_error( "STOP" );
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////Tutto ok fino a qui //////////////////////////////////////////
 
-	///////////////////////////////ADD SAMPLING POINTS OF THE RIGHTPATH
+	std::vector <double> angles;
+	double theta_in=0, theta_out=0; //the first theta_out (to assign in place of 0) is the robot angle at the starting point.	
+	angles.push_back(theta_out); 
+	for(int i=1;i<rightPath.size()-1;i++)
+	{
+		angle_calculator(rightPath[i-1], rightPath[i], rightPath[i+1], theta_in, theta_out);
+		angles.push_back(theta_in);
+		angles.push_back(theta_out);
+		printf("angle in %i: %f\n",i,theta_in);
+		printf("angle out %i: %f\n",i,theta_out);
+	}	
+	angles.push_back(0); //this is the last angle for entering the gate in the right way. only a theta_in
+
+	//throw std::logic_error( "STOP" );
+
+	for(int i=0;i<angles.size();i++)
+	{
+		if(angles[i]>M_PI)
+			angles[i]=-((2*M_PI)-angles[i]);
+		printf("angles for dubins: %f\n", angles[i]);
+	}
 
 	//Calculate dubins curves on the path initial_robot - gate	
 	int pidx;
 	D curve;
 	float s,pt_x,pt_y,pt_theta,kappa;
-	
-	for(int i=0; i<rightPath.size()-1; i++)
-	{	
-		//Calculate Dubins curve from one node to the next one
-		Dubins(rightPath[i].a,rightPath[i].b,rightPath[i+1].a,rightPath[i+1].b, &curve, &pidx); //add initial theta in and theta out.
-		
-		/*//Create a structure representing an arc of a Dubins curve (straight or circular)
-		struct C{ double x0,y0,th0,k,L,xf,yf,thf; };
-		
-		// Create a structure representing a Dubins curve (composed by three arcs)
-		struct D{ C a1,a2,a3; double L = a1.L+a2.L+a3.L; };*/
+	int j=0;
+	//for(int i=0; i<rightPath.size()-1; i++)
+	for(int i=0; i<5; i++)
+	{
+		printf("in loop dubins %i: \n",i);
+		Dubins(rightPath[i].a,rightPath[i].b,rightPath[i+1].a,rightPath[i+1].b, angles[j], angles[j+1], &curve, &pidx); //add initial theta in and theta out.
 		
 		pt_x = curve.a1.xf;
 		pt_y = curve.a1.yf;
@@ -220,6 +238,52 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		kappa = curve.a3.k;
 		s = curve.a3.L;
 		path.points.emplace_back(s,pt_x,pt_y,pt_theta,kappa);
-	} 
+
+		j+=2;
+	}
+	
+	//throw std::logic_error( "STOP" );
+}
+
+void angle_calculator(VoronoiPoint prev_p, VoronoiPoint point, VoronoiPoint next_p, double &theta_in,  double &theta_out)
+{
+	//compute some segments' lenght
+	double prev_next = sqrt(pow((prev_p.a - next_p.a),2) + pow((prev_p.b - next_p.b),2));
+	double prev_point = sqrt(pow((prev_p.a - point.a),2) + pow((prev_p.b - point.b),2));
+	double point_next = sqrt(pow((point.a - next_p.a),2) + pow((point.b - next_p.b),2));
+	double point_abscissa = sqrt(pow((point.a - (point.a+1)),2) + pow((point.b - point.b),2));
+	double next_abscissa = sqrt(pow((next_p.a - (point.a+1)),2) + pow((next_p.b - point.b),2));
+	//alpha is the angle between the segment of (prev_p, point) and (point, next_p)
+	double alpha = acos((pow(prev_point,2) + pow(point_next,2) - pow(prev_next,2)) / (2 * prev_point * point_next));
+	//beta is the complementary of alpha
+	double beta = M_PI-alpha;
+	//gamma is the angle between the segment (point, next_p) and abscissa
+	double gamma = acos((pow(point_abscissa,2) + pow(point_next,2) - pow(next_abscissa,2)) / (2 * point_abscissa * point_next));
+	//delta is the normalized angle wrt abscissa
+	double delta=0;
+	
+	//if is above the pararrel of the abscissa with y=y_of_the_point 
+	if(((point.a+1)-point.a)*(next_p.b-point.b)-(point.b-point.b)*(next_p.a-point.a))
+	{
+		if(gamma<=(M_PI/2) && gamma>=0)
+			delta = gamma;
+		else //gamma>(M_PI/2) && gamma<=M_PI
+			delta = gamma - beta;
+		theta_in=M_PI+gamma;
+	}
+	else //if is under the pararrel of the abscissa with y=y_of_the_point 
+	{	
+		if(gamma<=(M_PI/2) && gamma>=0) //check if acos is clockwise or not!!!!!!!
+			delta = (M_PI*2)-gamma;
+		else //gamma>(M_PI/2) && gamma<=M_PI
+			delta = (3/2)*beta + alpha;
+		theta_in=gamma+alpha;	
+	}	
+
+	//I assume as theta_in i take the prev_theta_out to have more uniformity in the movements 
+
+	theta_out=delta;	
+	
+	
 }
   

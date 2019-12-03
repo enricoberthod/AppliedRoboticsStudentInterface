@@ -4,7 +4,7 @@
 #define Dubins_H
 #include "DataStructure.h"
 
-void Dubins(double,double,double,double,D*,int *);
+void Dubins(double,double,double,double,double,double,D*,int *);
 
 //Auxiliary functions declaration
 double sinc(double);

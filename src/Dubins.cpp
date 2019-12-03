@@ -303,10 +303,11 @@ void dubins_shortest_path(double x0, double y0, double th0, double xf, double yf
 }
 
 //Main fuction called to compute optimal Dubins solution
-void Dubins(double x0,double y0,double xf,double yf, D *curve, int *pidx)
+void Dubins(double x0,double y0,double xf,double yf, double th0, double thf, D *curve, int *pidx)
 {
-	double th0 = (-(2.0/3.0))*M_PI; //DA PASSARE COME PARAMETRO
-   	double thf = M_PI/3.0; //DA PASSARE COME PARAMETRO
+	//double th0 = (-(2.0/3.0))*M_PI; //DA PASSARE COME PARAMETRO
+   	//double thf = M_PI/3.0; //DA PASSARE COME PARAMETRO
+	
         double Kmax = 3.0;
 
 	//Find optimal Dubins solution

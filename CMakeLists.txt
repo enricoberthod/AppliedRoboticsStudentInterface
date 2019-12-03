@@ -43,6 +43,11 @@ add_library(PathFinder SHARED
    src/PathFinder.cpp
 )
 
+add_library(Dubins SHARED
+   src/Dubins.cpp
+)
+
+
 ## Add executables
 add_executable(calibrate
   src/camera_calibration.cpp
@@ -74,6 +79,7 @@ target_link_libraries(student
   Voronoi
   PathFinder
   Dijkstra
+  Dubins
 )
 
 target_link_libraries(calibrate
