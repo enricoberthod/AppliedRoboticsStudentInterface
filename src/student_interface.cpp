@@ -13,7 +13,10 @@
 using namespace cv;
 using namespace std;
 
-const double MIN_AREA_SIZE_ST = 1000; 
+const double MIN_AREA_SIZE_ST = 1000;
+/////BLACK_MASK
+const int Nlr = 0, Nlg = 0, Nlb = 0;
+const int Nhr = 180, Nhg = 255, Nhb = 30; 
 
 namespace student {
 
@@ -33,7 +36,7 @@ namespace student {
 	//throw std::logic_error( "STUDENT FUNCTION NOT IMPLEMENTED" );
   }
 
-  /*
+
 //--Autodetection border's points
   vector<cv::Point2f> detectBorder(cv::Mat img_in){
 	cv::namedWindow("BORDER_filter", cv::WINDOW_NORMAL);
@@ -130,12 +133,12 @@ namespace student {
 	cv::waitKey(0);
 	return b; 
   }
-  */
+
 
   bool extrinsicCalib(const cv::Mat& img_in, std::vector<cv::Point3f> object_points, const cv::Mat& camera_matrix, cv::Mat& rvec, cv::Mat& tvec, const std::string& config_folder){
     //throw std::logic_error( "STUDENT FUNCTION NOT IMPLEMENTED" ); 
 
-/*	std::string file_path = config_folder + "/extrinsicCalib.csv";
+	std::string file_path = config_folder + "/extrinsicCalib.csv";
 
     std::vector<cv::Point2f> image_points;
 
@@ -191,7 +194,6 @@ namespace student {
 
     return ok;
 	
-	*/
   }
 
   void imageUndistort(const cv::Mat& img_in, cv::Mat& img_out, 
