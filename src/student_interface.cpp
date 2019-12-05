@@ -4,6 +4,7 @@
 #include "process_Map.hpp"
 #include "PlanPath_Interface.h"
 #include "DataStructure.h" 
+#include "find_robot.hpp"
 
 #include <stdexcept>
 #include <sstream>
@@ -39,7 +40,7 @@ namespace student {
 
 
 //--Autodetection border's points
-  vector<cv::Point2f> detectBorder(cv::Mat img_in){
+  vector<cv::Point2f> detectBorder(const cv::Mat &img_in){
 	cv::namedWindow("BORDER_filter", cv::WINDOW_NORMAL);
 	cv::resizeWindow("BORDER_filter", 467, 350);
 	
@@ -130,8 +131,8 @@ namespace student {
 	//bordo.size();
 	//std::cout << "   Elements: " << gate.size() << std::endl;
   
-	cv::imshow("BORDER_filter", contours_img);
-	cv::waitKey(0);
+	//cv::imshow("BORDER_filter", contours_img);
+	//cv::waitKey(0);
 	return b; 
   }
 
@@ -180,49 +181,47 @@ namespace student {
       input.close();
     }
     
+	
     cv::Mat dist_coeffs;
+	
     dist_coeffs   = (cv::Mat1d(1,4) << 0, 0, 0, 0, 0);
+	
     bool ok = cv::solvePnP(object_points, image_points, camera_matrix, dist_coeffs, rvec, tvec);
-
+	
     // cv::Mat Rt;
     // cv::Rodrigues(rvec_, Rt);
     // auto R = Rt.t();
     // auto pos = -R * tvec_;
-
+	
     if (!ok) {
       std::cerr << "FAILED SOLVE_PNP" << std::endl;
     }
 
     return ok;
-	
   }
 
   void imageUndistort(const cv::Mat& img_in, cv::Mat& img_out, 
           const cv::Mat& cam_matrix, const cv::Mat& dist_coeffs, const std::string& config_folder){
-
 	undistort_img(img_in, img_out, cam_matrix, dist_coeffs, config_folder);
-
   }
 
   //-------------------------------------------------------------------------
   //          FIND PLANE TRANSFORM
   //-------------------------------------------------------------------------
-  void findPlaneTransform(const cv::Mat& cam_matrix, const cv::Mat& rvec, const cv::Mat& tvec, const std::vector<cv::Point3f>& object_points_plane, cv::Mat& plane_transf, const std::string& config_folder){
+
+
+   void findPlaneTransform(const cv::Mat& cam_matrix, const cv::Mat& rvec, const cv::Mat& tvec, const std::vector<cv::Point3f>& object_points_plane, 
+                          const std::vector<cv::Point2f>& dest_image_points_plane, cv::Mat& plane_transf, const std::string& config_folder){
     
     cv::Mat image_points;
 
     // project points
     cv::projectPoints(object_points_plane, rvec, tvec, cam_matrix, cv::Mat(), image_points);
 
-    // find homography
-    std::vector<cv::Point2f> plane_points;
-    for (const auto pt: object_points_plane) {
-      plane_points.emplace_back(pt.x, pt.y);
-    }
-
-    plane_transf = cv::getPerspectiveTransform(image_points, plane_points);
+    plane_transf = cv::getPerspectiveTransform(image_points, dest_image_points_plane);
   }
 
+  
   //-------------------------------------------------------------------------
   //          UNWARP TRANSFORM
   //-------------------------------------------------------------------------
@@ -234,15 +233,21 @@ namespace student {
   bool processMap(const cv::Mat& img_in, const double scale, std::vector<Polygon>& obstacle_list, std::vector<std::pair<int,Polygon>>& victim_list, Polygon& gate, const std::string& config_folder){
     //throw std::logic_error( "STUDENT FUNCTION NOT IMPLEMENTED" );   
 	process_Map(img_in, scale, obstacle_list, victim_list, gate, config_folder);
+	return true;
   }
 
   bool findRobot(const cv::Mat& img_in, const double scale, Polygon& triangle, double& x, double& y, double& theta, const std::string& config_folder){
-    throw std::logic_error( "STUDENT FUNCTION NOT IMPLEMENTED" );    
+    	std::cout << "siamo qui 1" << std::endl;
+	find_Robot(img_in, scale, triangle, x, y, theta, config_folder);
+	//throw std::logic_error( "STUDENT FUNCTION NOT IMPLEMENTED" );    
+	std::cout << "siamo qui" << std::endl;
+	return true;
   }
 
   bool planPath(const Polygon& borders, const std::vector<Polygon>& obstacle_list, const std::vector<std::pair<int,Polygon>>& victim_list, const Polygon& gate, const float x, const float y, const float theta, Path& path, const std::string& config_folder){
     //throw std::logic_error( "STUDENT FUNCTION NOT IMPLEMENTED" );     
     plan_Path123(borders, obstacle_list, victim_list, gate, x, y, theta, path, config_folder);
+	return true;
   }
 
 

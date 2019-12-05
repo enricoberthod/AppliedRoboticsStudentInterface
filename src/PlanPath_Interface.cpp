@@ -212,10 +212,12 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	D curve;
 	float s,pt_x,pt_y,pt_theta,kappa;
 	int j=0;
-	//for(int i=0; i<rightPath.size()-1; i++)
-	for(int i=0; i<5; i++)
+	
+	for(int i=0; i<rightPath.size()-1; i++)
+	//int i=0;
 	{
 		printf("in loop dubins %i: \n",i);
+		printf(" (%i, %i) - (%i, %i)\n",(rightPath[i].a),(rightPath[i].b),(rightPath[i+1].a),(rightPath[i+1].b));
 		Dubins(rightPath[i].a,rightPath[i].b,rightPath[i+1].a,rightPath[i+1].b, angles[j], angles[j+1], &curve, &pidx); //add initial theta in and theta out.
 		
 		pt_x = curve.a1.xf;
@@ -223,21 +225,24 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		pt_theta = curve.a1.thf;
 		kappa = curve.a1.k;
 		s = curve.a1.L;
-		path.points.emplace_back(s,pt_x,pt_y,pt_theta,kappa);
+		printf(" (%f, %f) - %f, %f, %f\n",pt_x/1000.0,pt_y/1000.0,pt_theta,kappa,s/1000.0);
+		path.points.emplace_back(s/1000.0,pt_x/1000.0,pt_y/1000.0,pt_theta,kappa);
 		
 		pt_x = curve.a2.xf;
 		pt_y = curve.a2.yf;
 		pt_theta = curve.a2.thf;
 		kappa = curve.a2.k;
 		s = curve.a2.L;
-		path.points.emplace_back(s,pt_x,pt_y,pt_theta,kappa);
+		printf(" (%f, %f) - %f, %f, %f\n",pt_x/1000.0,pt_y/1000.0,pt_theta,kappa,s/1000.0);
+		path.points.emplace_back(s/1000.0,pt_x/1000.0,pt_y/1000.0,pt_theta,kappa);
 		
 		pt_x = curve.a3.xf;
 		pt_y = curve.a3.yf;
 		pt_theta = curve.a3.thf;
 		kappa = curve.a3.k;
 		s = curve.a3.L;
-		path.points.emplace_back(s,pt_x,pt_y,pt_theta,kappa);
+		printf(" (%f, %f) - %f, %f, %f\n",pt_x/1000.0,pt_y/1000.0,pt_theta,kappa,s/1000.0);
+		path.points.emplace_back(s/1000.0,pt_x/1000.0,pt_y/1000.0,pt_theta,kappa); 
 
 		j+=2;
 	}
@@ -283,7 +288,36 @@ void angle_calculator(VoronoiPoint prev_p, VoronoiPoint point, VoronoiPoint next
 	//I assume as theta_in i take the prev_theta_out to have more uniformity in the movements 
 
 	theta_out=delta;	
-	
-	
 }
+
+void sample(D curve, int pidx, Path& path)
+{
+	float s,pt0_x,pt0_y,pt0_theta,ptf_x,ptf_y,ptf_theta,kappa;
+	
+	pt0_x = curve.a1.x0;
+	pt0_y = curve.a1.y0;
+	pt0_theta = curve.a1.th0;
+	ptf_x = curve.a1.xf;
+	ptf_y = curve.a1.yf;
+	ptf_theta = curve.a1.thf;
+	kappa = curve.a1.k;
+	s = curve.a1.L;
+
+	path.points.emplace_back(s/1000.0,ptf_x/1000.0,ptf_y/1000.0,ptf_theta,kappa);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   

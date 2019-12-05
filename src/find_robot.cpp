@@ -1,6 +1,6 @@
 #include "find_robot.hpp"
 
-bool findRobot(const cv::Mat& img_in, const double scale, Polygon& triangle, double& x, double& y, double& theta, const std::string& config_folder){
+bool find_Robot(const cv::Mat& img_in, const double scale, Polygon& triangle, double& x, double& y, double& theta, const std::string& config_folder){
 	#define FIND_ROBOT_DEBUG_PLOT 
 
 	const double MIN_AREA_SIZE = 50; 
