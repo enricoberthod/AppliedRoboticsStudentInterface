@@ -1,5 +1,5 @@
-#ifndef PROCESS_MAP
-#define PROCESS_MAP
+#ifndef FIND_ROBOT
+#define FIND_ROBOT
 
 #include <opencv2/core.hpp>
 #include <opencv2/videoio.hpp>
@@ -11,14 +11,14 @@
 #include <utility>
 #include <vector>
 #include <cstring>
-#include <opencv2/opencv.hpp>.
+#include <opencv2/opencv.hpp>
 #include <opencv2/core/mat.hpp>
 #include "utils.hpp"
 
 #define PI 3.14159265
 
 
-bool findRobot(const cv::Mat& img_in, const double scale, Polygon& triangle, double& x, double& y, double& theta, const std::string& config_folder);
+bool find_Robot(const cv::Mat& img_in, const double scale, Polygon& triangle, double& x, double& y, double& theta, const std::string& config_folder);
 
 
 #endif

@@ -303,6 +303,9 @@ void sample(D curve, int pidx, Path& path)
 	kappa = curve.a1.k;
 	s = curve.a1.L;
 
+
+	
+
 	path.points.emplace_back(s/1000.0,ptf_x/1000.0,ptf_y/1000.0,ptf_theta,kappa);
 }
 

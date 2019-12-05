@@ -47,6 +47,10 @@ add_library(Dubins SHARED
    src/Dubins.cpp
 )
 
+add_library(find_robot SHARED
+   src/find_robot.cpp
+)
+
 
 ## Add executables
 add_executable(calibrate
@@ -59,6 +63,7 @@ add_executable(calibrate
   src/clipper.cpp
   src/Dubins.cpp
   src/PathFinder.cpp
+  src/find_robot.cpp
   
   )
 
@@ -80,6 +85,7 @@ target_link_libraries(student
   PathFinder
   Dijkstra
   Dubins
+  find_robot
 )
 
 target_link_libraries(calibrate
