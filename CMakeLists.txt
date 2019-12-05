@@ -23,6 +23,10 @@ add_library(undistort_img SHARED
    src/undistort_img.cpp
 )
 
+add_library(clipper SHARED
+   src/clipper.cpp
+)
+
 add_library(process_Map SHARED
    src/process_Map.cpp
 )
@@ -64,6 +68,7 @@ add_executable(calibrate
   src/Dubins.cpp
   src/PathFinder.cpp
   src/find_robot.cpp
+  src/clipper.cpp
   
   )
 
@@ -86,6 +91,7 @@ target_link_libraries(student
   Dijkstra
   Dubins
   find_robot
+  clipper
 )
 
 target_link_libraries(calibrate

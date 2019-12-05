@@ -8,8 +8,10 @@
 #include "Voronoi.h"
 #include "PathFinder.h"
 #include "Dubins.h"
+#include "clipper.hpp"
 
 void angle_calculator(VoronoiPoint, VoronoiPoint, VoronoiPoint, double &,  double &);
+void sample(C, Path&);
 
 //using namespace std;
 
@@ -34,47 +36,79 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	
 	//data structure for results
 	VoronoiResults voronoiPaths;
-	
 
-	//ADD CLIPPER TO ENLARGE THE OBSTACLES //////////////////////////////////////////////////
+
+//	CLIPPER
+	ClipperLib::Paths subj(obstacle_list.size());
+	ClipperLib::Paths solution(obstacle_list.size());
+
+	for(int i=0;i<obstacle_list.size();i++)
+	{
+		for(int j=0;j<obstacle_list[i].size();j++)//each element in obstacle list
+		{
+			subj[i] << ClipperLib::IntPoint(obstacle_list[i][j].x*floatToInt,obstacle_list[i][j].y*floatToInt);
+		}
+	}
+
+	printf("clipper1: %i\n", subj.size());
+	printf("clipper2: %i\n", obstacle_list.size());
+	
+	//throw std::logic_error( "STOP" );
+
+	const int offset = 100;
+	
+	ClipperLib::ClipperOffset co;
+	co.AddPaths(subj, ClipperLib::jtSquare, ClipperLib::etClosedPolygon);
+	co.Execute(solution, offset);	 //QUESTA NON VA quindi c'è un problema da qualche parte qui!!!!!!!!!!!!!!!!!!!!!!!
+
+	printf("clipper3: %i\n", solution.size());
+	printf("clipper4: %i\n", obstacle_list.size());
 
 	std::vector<VoronoiPoint> inputPoints;
 	std::vector<Segment> obstacles_edges;
 
-/*
-	//create a vector of points and obstacles edges
-	int vertexNumber;
-	
-	int xa,xb,ya,yb;
-	for(int i=0;i<obstacle_list.size();i++)
-	{
-		vertexNumber=obstacle_list[i].size();
-		for(int j=0;j<vertexNumber-1;j++)
-		{
-			printf("obsvertxf: %f,%f\n",obstacle_list[i][j].x,obstacle_list[i][j].y);
-			xa=(int)(obstacle_list[i][j].x*floatToInt);
-			ya=(int)(obstacle_list[i][j].y*floatToInt);
-			printf("obsvertx: %i,%i\n",xa,ya);
-			xb=(int)(obstacle_list[i][j+1].x*floatToInt);
-			yb=(int)(obstacle_list[i][j+1].y*floatToInt);
-			inputPoints.push_back(VoronoiPoint(xa,ya));
-			obstacles_edges.push_back(Segment(xa, ya, xb, yb));
-		}
-		//close the polygon with the last edge
-		xa=(int)(obstacle_list[i][vertexNumber-1].x*floatToInt);
-		ya=(int)(obstacle_list[i][vertexNumber-1].y*floatToInt);
-		xb=(int)(obstacle_list[i][0].x*floatToInt);
-		yb=(int)(obstacle_list[i][0].y*floatToInt);
-		inputPoints.push_back(VoronoiPoint(xa,ya));
-		obstacles_edges.push_back(Segment(xa, ya, xb, yb));
-	}
-*/
 	//create an unordered_map of the obstacles' vertexes
 
 	int xa,xb,ya,yb,longId,vertexNumber;
 	VoronoiPoint p;
 	std::unordered_map<int,VoronoiPoint> obstaclesVertexes;
 
+	for(int i=0;i<solution.size();i++)
+	{
+		vertexNumber=solution[i].size();
+		for(int j=0;j<vertexNumber-1;j++)
+		{
+			xa=(int)(solution[i][j].X<0?0:solution[i][j].X); //ADD CONTROL IF X>BORDER MAX X
+			ya=(int)(solution[i][j].Y<0?0:solution[i][j].Y); //ADD CONTROL IF Y>BORDER MAX Y
+			printf("obsvertx: %i,%i\n",xa,ya);
+			xb=(int)(solution[i][j+1].X<0?0:solution[i][j+1].X);
+			yb=(int)(solution[i][j+1].Y<0?0:solution[i][j+1].Y);
+			if(ya<floatToInt)
+				longId=(xa*floatToInt)+ya;
+			else
+				longId=(xa*floatToInt*10)+ya;
+			p=VoronoiPoint(xa,ya);
+			obstaclesVertexes[longId]=p;
+			inputPoints.push_back(VoronoiPoint(xa,ya));
+			obstacles_edges.push_back(Segment(xa, ya, xb, yb));
+		}
+		//close the polygon with the last edge
+		xa=(int)(solution[i][vertexNumber-1].X<0?0:solution[i][vertexNumber-1].X);
+		ya=(int)(solution[i][vertexNumber-1].Y<0?0:solution[i][vertexNumber-1].Y);
+		if(ya<floatToInt)
+			longId=(xa*floatToInt)+ya;
+		else
+			longId=(xa*floatToInt*10)+ya;
+		p=VoronoiPoint(xa,ya);
+		obstaclesVertexes[longId]=p;
+		xb=(int)(solution[i][0].X<0?0:solution[i][0].X);
+		yb=(int)(solution[i][0].Y<0?0:solution[i][0].Y);
+		inputPoints.push_back(VoronoiPoint(xa,ya));
+		obstacles_edges.push_back(Segment(xa, ya, xb, yb));
+	}
+	
+	//throw std::logic_error( "STOP" );
+/*
 	for(int i=0;i<obstacle_list.size();i++)
 	{
 		vertexNumber=obstacle_list[i].size();
@@ -109,7 +143,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		inputPoints.push_back(VoronoiPoint(xa,ya));
 		obstacles_edges.push_back(Segment(xa, ya, xb, yb));
 	}
-
+*/
 	printf("hash %i\n",obstaclesVertexes.size());
 
 
@@ -220,29 +254,9 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		printf(" (%i, %i) - (%i, %i)\n",(rightPath[i].a),(rightPath[i].b),(rightPath[i+1].a),(rightPath[i+1].b));
 		Dubins(rightPath[i].a,rightPath[i].b,rightPath[i+1].a,rightPath[i+1].b, angles[j], angles[j+1], &curve, &pidx); //add initial theta in and theta out.
 		
-		pt_x = curve.a1.xf;
-		pt_y = curve.a1.yf;
-		pt_theta = curve.a1.thf;
-		kappa = curve.a1.k;
-		s = curve.a1.L;
-		printf(" (%f, %f) - %f, %f, %f\n",pt_x/1000.0,pt_y/1000.0,pt_theta,kappa,s/1000.0);
-		path.points.emplace_back(s/1000.0,pt_x/1000.0,pt_y/1000.0,pt_theta,kappa);
-		
-		pt_x = curve.a2.xf;
-		pt_y = curve.a2.yf;
-		pt_theta = curve.a2.thf;
-		kappa = curve.a2.k;
-		s = curve.a2.L;
-		printf(" (%f, %f) - %f, %f, %f\n",pt_x/1000.0,pt_y/1000.0,pt_theta,kappa,s/1000.0);
-		path.points.emplace_back(s/1000.0,pt_x/1000.0,pt_y/1000.0,pt_theta,kappa);
-		
-		pt_x = curve.a3.xf;
-		pt_y = curve.a3.yf;
-		pt_theta = curve.a3.thf;
-		kappa = curve.a3.k;
-		s = curve.a3.L;
-		printf(" (%f, %f) - %f, %f, %f\n",pt_x/1000.0,pt_y/1000.0,pt_theta,kappa,s/1000.0);
-		path.points.emplace_back(s/1000.0,pt_x/1000.0,pt_y/1000.0,pt_theta,kappa); 
+		sample(curve.a1, path);
+		sample(curve.a2, path);
+		sample(curve.a3, path);
 
 		j+=2;
 	}
@@ -290,23 +304,23 @@ void angle_calculator(VoronoiPoint prev_p, VoronoiPoint point, VoronoiPoint next
 	theta_out=delta;	
 }
 
-void sample(D curve, int pidx, Path& path)
+void sample(C arc, Path& path)
 {
-	float s,pt0_x,pt0_y,pt0_theta,ptf_x,ptf_y,ptf_theta,kappa;
+	double s,pt_x,pt_y,pt_theta,kappa, x, y, th;
 	
-	pt0_x = curve.a1.x0;
-	pt0_y = curve.a1.y0;
-	pt0_theta = curve.a1.th0;
-	ptf_x = curve.a1.xf;
-	ptf_y = curve.a1.yf;
-	ptf_theta = curve.a1.thf;
-	kappa = curve.a1.k;
-	s = curve.a1.L;
+	pt_x = arc.x0;
+	pt_y = arc.y0;
+	pt_theta = arc.th0;
+	kappa = arc.k;
 
+	for(int i=0;i<9;i++)	
+	{
+		s = (arc.L/8)*i;
+		circline(s, pt_x, pt_y, pt_theta, kappa, &x, &y, &th);
+		path.points.emplace_back(s/1000.0,x/1000.0,y/1000.0,th,kappa);
+	}	
 
-	
-
-	path.points.emplace_back(s/1000.0,ptf_x/1000.0,ptf_y/1000.0,ptf_theta,kappa);
+	//path.points.emplace_back(s/1000.0,ptf_x/1000.0,ptf_y/1000.0,ptf_theta,kappa);
 }
 
 
