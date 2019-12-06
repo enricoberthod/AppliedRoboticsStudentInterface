@@ -17,6 +17,8 @@
 
 #define PI 3.14159265
 
+const int MAX_WIDTH = 800;
+const int MAX_HEIGHT = 600;
 
 bool find_Robot(const cv::Mat& img_in, const double scale, Polygon& triangle, double& x, double& y, double& theta, const std::string& config_folder);
 

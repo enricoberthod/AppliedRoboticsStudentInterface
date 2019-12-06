@@ -63,6 +63,8 @@ bool find_Robot(const cv::Mat& img_in, const double scale, Polygon& triangle, do
 		contours_approx = {approx_curve};
 
 		cv::drawContours(contours_img, contours_approx, -1, cv::Scalar(0,0,255), 3, cv::LINE_AA);
+		cv::imshow("robot find", contours_img);
+		cv::waitKey(0);
 #endif
 
 		found = true;  // we found the blue triangle exit!
@@ -72,10 +74,30 @@ bool find_Robot(const cv::Mat& img_in, const double scale, Polygon& triangle, do
 	
 	//ritaglio robot
 	cv::Rect boundRect = cv::boundingRect(cv::Mat(approx_curve));
-	boundRect.x = boundRect.x - 100;
-	boundRect.y = boundRect.y - 100;
-	boundRect.width = boundRect.width + 200;
-	boundRect.height = boundRect.height + 200;
+	if((boundRect.x - 100) > 0) {
+		boundRect.x = boundRect.x - 100;
+	}
+	else {
+		boundRect.x = 0;
+	}
+	if((boundRect.x - 100) > 0) {
+		boundRect.y = boundRect.y - 100;
+	}
+	else {
+		boundRect.y = 0;
+	}
+	if((boundRect.width + 200) < MAX_WIDTH) {
+		boundRect.width = boundRect.width + 200;
+	}
+	else {
+		boundRect.width = MAX_WIDTH;
+	}
+	if((boundRect.height + 200) < MAX_HEIGHT) {
+		boundRect.height = boundRect.height + 200;
+	}
+	else {
+		boundRect.height = MAX_HEIGHT;
+	}
 	cv::Mat filtered(img_in.rows, img_in.cols, CV_8UC3, cv::Scalar(255,255,255));
 	img_in.copyTo(filtered);
 	cv::Mat robot_pos(filtered, boundRect);

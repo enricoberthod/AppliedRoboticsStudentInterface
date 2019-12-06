@@ -232,16 +232,15 @@ namespace student {
 
   bool processMap(const cv::Mat& img_in, const double scale, std::vector<Polygon>& obstacle_list, std::vector<std::pair<int,Polygon>>& victim_list, Polygon& gate, const std::string& config_folder){
     //throw std::logic_error( "STUDENT FUNCTION NOT IMPLEMENTED" );   
-	process_Map(img_in, scale, obstacle_list, victim_list, gate, config_folder);
-	return true;
+	return process_Map(img_in, scale, obstacle_list, victim_list, gate, config_folder);
   }
 
   bool findRobot(const cv::Mat& img_in, const double scale, Polygon& triangle, double& x, double& y, double& theta, const std::string& config_folder){
-    	std::cout << "siamo qui 1" << std::endl;
-	find_Robot(img_in, scale, triangle, x, y, theta, config_folder);
+    //std::cout << "siamo qui 1" << std::endl;
+	
 	//throw std::logic_error( "STUDENT FUNCTION NOT IMPLEMENTED" );    
-	std::cout << "siamo qui" << std::endl;
-	return true;
+	//std::cout << "siamo qui" << std::endl;
+	return find_Robot(img_in, scale, triangle, x, y, theta, config_folder);
   }
 
   bool planPath(const Polygon& borders, const std::vector<Polygon>& obstacle_list, const std::vector<std::pair<int,Polygon>>& victim_list, const Polygon& gate, const float x, const float y, const float theta, Path& path, const std::string& config_folder){
