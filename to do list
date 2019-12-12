@@ -1,0 +1,10 @@
+Mission 2:
+Un unico dijkstra da robot a gate sulla roadmap dove sono collegate le vittime con len = distanza - guadagno salvataggio vittima.
+
+Planning:
+-aggiungere la dynamic dubins dalle slide quando le carica
+-nella connect object aggiungere controllo per evitare collisioni con ostacoli in mezzo
+-aggiungere il file config per caricare nella plan interface tutti i parametri (robot width, guadagno vittima, numero di neighbors e diatanza massima dai neighbors (per la connect))
+
+Varie ed eventuali
+-controlli vari, boolean di ritorno dalle funzioni, bla bla bla
