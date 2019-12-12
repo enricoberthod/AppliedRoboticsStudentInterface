@@ -26,8 +26,8 @@ bool find_Robot(const cv::Mat& img_in, const double scale, Polygon& triangle, do
 	cv::findContours(blue_mask, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
 
 #ifdef FIND_ROBOT_DEBUG_PLOT // do this only if FIND_DEBUG_PLOT is defined
-	cv::imshow("findRobotHsv", hsv_img);
-	cv::imshow("findRobotMask", blue_mask);
+	//cv::imshow("findRobotHsv", hsv_img);
+	//cv::imshow("findRobotMask", blue_mask);
 	cv::Mat contours_img;
 	contours_img = img_in.clone();
 	cv::drawContours(contours_img, contours, -1, cv::Scalar(0,0,0), 4, cv::LINE_AA);
@@ -63,8 +63,8 @@ bool find_Robot(const cv::Mat& img_in, const double scale, Polygon& triangle, do
 		contours_approx = {approx_curve};
 
 		cv::drawContours(contours_img, contours_approx, -1, cv::Scalar(0,0,255), 3, cv::LINE_AA);
-		cv::imshow("robot find", contours_img);
-		cv::waitKey(0);
+		//cv::imshow("robot find", contours_img);
+		//cv::waitKey(0);
 #endif
 
 		found = true;  // we found the blue triangle exit!
@@ -101,9 +101,9 @@ bool find_Robot(const cv::Mat& img_in, const double scale, Polygon& triangle, do
 	cv::Mat filtered(img_in.rows, img_in.cols, CV_8UC3, cv::Scalar(255,255,255));
 	img_in.copyTo(filtered);
 	cv::Mat robot_pos(filtered, boundRect);
-	cv::namedWindow("robot_pos", cv::WINDOW_AUTOSIZE);
-	cv::imshow("robot_pos", robot_pos);
-	cv::waitKey(0);
+	//cv::namedWindow("robot_pos", cv::WINDOW_AUTOSIZE);
+	//cv::imshow("robot_pos", robot_pos);
+	//cv::waitKey(0);
 	
 
 	// If we found the robot triangle set robot position and create the triangle poligon
@@ -162,8 +162,8 @@ bool find_Robot(const cv::Mat& img_in, const double scale, Polygon& triangle, do
 	}
 
 #ifdef FIND_ROBOT_DEBUG_PLOT   // do this only if FIND_DEBUG_PLOT is defined 
-	cv::imshow("findRobot", contours_img);
-	cv::waitKey(1);
+	//cv::imshow("findRobot", contours_img);
+	//cv::waitKey(1);
 #endif
 
 	return found;    
