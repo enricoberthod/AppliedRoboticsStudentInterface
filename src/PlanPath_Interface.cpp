@@ -18,6 +18,18 @@ void sample(C, Path&);
 void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_list, const std::vector<std::pair<int,Polygon>>& victim_list, 
 				const Polygon& gate, const float x, const float y, const float theta, Path& path, const std::string& config_folder)
 {
+	//--lettura file parametri
+	
+	string file = config_folder+"/param.xml";
+	cv::FileStorage param(file, cv::FileStorage::READ);
+	
+	int mission_type = (int)param["mission_type"];
+	cout << "Mission -> " << mission_type << endl;
+	//aggiungi tutti i dati che ti servono
+	
+	//--
+	
+	
 	const int floatToInt=1000;
 	//path.points.emplace_back(1,2,3,1,2);
 
