@@ -10,7 +10,7 @@
 void connect(int, VoronoiPoint, VoronoiPoint, VoronoiResults*, bool, bool, std::vector<GraphEdge>*, std::vector<GraphEdge>*);
 void shortestPath(VoronoiPoint, VoronoiPoint, VoronoiResults *, std::vector<VoronoiPoint> *);
 
-void PathFinder(VoronoiPoint start,VoronoiPoint end, VoronoiResults *voronoiPaths, std::vector<VoronoiPoint> *rightPath)
+void PathFinder(VoronoiPoint start,VoronoiPoint end, VoronoiResults *voronoiPaths, std::vector<VoronoiPoint> *rightPath, bool areVictims)
 {
 	int offset=20;
 	int step=10;
@@ -206,9 +206,6 @@ void shortestPath(VoronoiPoint start,VoronoiPoint end, VoronoiResults *voronoiPa
 	rightPath->push_back(end);
 	
 }
-
-
-
 
 
 

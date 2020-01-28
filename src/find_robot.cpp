@@ -31,7 +31,7 @@ bool find_Robot(const cv::Mat& img_in, const double scale, Polygon& triangle, do
 	cv::Mat contours_img;
 	contours_img = img_in.clone();
 	cv::drawContours(contours_img, contours, -1, cv::Scalar(0,0,0), 4, cv::LINE_AA);
-	std::cout << "N. contours: " << contours.size() << std::endl;
+	//std::cout << "N. contours: " << contours.size() << std::endl;
 #endif
 
 	std::vector<cv::Point> approx_curve;
@@ -57,9 +57,9 @@ bool find_Robot(const cv::Mat& img_in, const double scale, Polygon& triangle, do
 	*/
 
 #ifdef FIND_ROBOT_DEBUG_PLOT   // do this only if FIND_DEBUG_PLOT is defined
-		std::cout << (i+1) << ") Contour size: " << contours[i].size() << std::endl;
-		std::cout << (i+1) << ") Aprox Contour size: " << approx_curve.size() << std::endl;
-		std::cout << "Area: " << area << std::endl;
+		//std::cout << (i+1) << ") Contour size: " << contours[i].size() << std::endl;
+		//std::cout << (i+1) << ") Aprox Contour size: " << approx_curve.size() << std::endl;
+		//std::cout << "Area: " << area << std::endl;
 		contours_approx = {approx_curve};
 
 		cv::drawContours(contours_img, contours_approx, -1, cv::Scalar(0,0,255), 3, cv::LINE_AA);
@@ -157,7 +157,7 @@ bool find_Robot(const cv::Mat& img_in, const double scale, Polygon& triangle, do
 		cv::line(contours_img, cv_baricenter, cv_vertex, cv::Scalar(0,255,0), 3);
 		cv::circle(contours_img, cv_baricenter, 5, cv::Scalar(0,0,255), -1);
 		cv::circle(contours_img, cv_vertex, 5, cv::Scalar(0,255,0), -1);      
-		std::cout << "(x, y, theta) = " << x << ", " << y << ", " << theta*180/M_PI << std::endl;
+		//std::cout << "(x, y, theta) = " << x << ", " << y << ", " << theta*180/M_PI << std::endl;
 #endif  
 	}
 
