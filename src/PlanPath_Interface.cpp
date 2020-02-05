@@ -348,13 +348,15 @@ std::vector<float> IDP(float angolo_start_robot, std::vector<VoronoiPoint> &righ
 	angoli.resize(rightPath.size());
 	printf("Angoli!! %i\n",angoli.size());
 	angoli[0]=angolo_start_robot;
-	function_L(0, angoli.at(0), rightPath, angoli, path);
+	function_L(0,angoli.at(0), rightPath, angoli, path);
 	return angoli;
 }
 
 int pidx;   
 D curve;
 float angle;
+float residual_s=0;
+
 
 void function_L(int j, float theta_j, std::vector<VoronoiPoint> &rightPath, std::vector<float> &angoli, Path &path){
 	float min_length = 999999999.0;	
@@ -370,82 +372,57 @@ void function_L(int j, float theta_j, std::vector<VoronoiPoint> &rightPath, std:
 			best_pidx=pidx;	
 		}
 	}
-	sample(best_curve.a1, path);
-	sample(best_curve.a2, path);
-	sample(best_curve.a3, path);
+	if(best_curve.a1.L!=0)
+		sample(best_curve.a1, path);
+	if(best_curve.a2.L!=0)
+		sample(best_curve.a2, path);
+	if(best_curve.a3.L!=0)
+		sample(best_curve.a3, path);
 	
 	if(j < (rightPath.size()-2)){			//controllare estremi j +/- 1
 		angle=(angoli.at(j+1)+M_PI)<(2*M_PI)?(angoli.at(j+1)+M_PI):(angoli.at(j+1)-M_PI);
 		function_L(j+1, angle, rightPath, angoli, path);
 	}
-}
-
-
-
-
-
-/*
-void angle_calculator(VoronoiPoint prev_p, VoronoiPoint point, VoronoiPoint next_p, double &theta_in,  double &theta_out)
-{
-	//compute some segments' lenght
-	double prev_next = sqrt(pow((prev_p.a - next_p.a),2) + pow((prev_p.b - next_p.b),2));
-	double prev_point = sqrt(pow((prev_p.a - point.a),2) + pow((prev_p.b - point.b),2));
-	double point_next = sqrt(pow((point.a - next_p.a),2) + pow((point.b - next_p.b),2));
-	double point_abscissa = sqrt(pow((point.a - (point.a+1)),2) + pow((point.b - point.b),2));
-	double next_abscissa = sqrt(pow((next_p.a - (point.a+1)),2) + pow((next_p.b - point.b),2));
-	//alpha is the angle between the segment of (prev_p, point) and (point, next_p)
-	double alpha = acos((pow(prev_point,2) + pow(point_next,2) - pow(prev_next,2)) / (2 * prev_point * point_next));
-	//beta is the complementary of alpha
-	double beta = M_PI-alpha;
-	//gamma is the angle between the segment (point, next_p) and abscissa
-	double gamma = acos((pow(point_abscissa,2) + pow(point_next,2) - pow(next_abscissa,2)) / (2 * point_abscissa * point_next));
-	//delta is the normalized angle wrt abscissa
-	double delta=0;
-	
-	//if is above the pararrel of the abscissa with y=y_of_the_point 
-	if(((point.a+1)-point.a)*(next_p.b-point.b)-(point.b-point.b)*(next_p.a-point.a))
+	else
 	{
-		if(gamma<=(M_PI/2) && gamma>=0)
-			delta = gamma;
-		else //gamma>(M_PI/2) && gamma<=M_PI
-			delta = gamma - beta;
-		theta_in=M_PI+gamma;
+		//add the gate point
+		
+		//path.points.emplace_back(s_tot+(arc.L/1000.0),x/1000.0,y/1000.0,th,kappa);
 	}
-	else //if is under the pararrel of the abscissa with y=y_of_the_point 
-	{	
-		if(gamma<=(M_PI/2) && gamma>=0) //check if acos is clockwise or not!!!!!!!
-			delta = (M_PI*2)-gamma;
-		else //gamma>(M_PI/2) && gamma<=M_PI
-			delta = (3/2)*beta + alpha;
-		theta_in=gamma+alpha;	
-	}	
-
-	//I assume as theta_in i take the prev_theta_out to have more uniformity in the movements 
-
-	theta_out=delta;	
 }
-*/
 
 void sample(C arc, Path& path)
 {
-	double s,pt_x,pt_y,pt_theta,kappa, x, y, th, s_tot=0;
+	double pt_x,pt_y,pt_theta,kappa, x, y, th, s_tot=0;
+	int s;
 	
 	pt_x = arc.x0;
 	pt_y = arc.y0;
 	pt_theta = arc.th0;
 	kappa = arc.k;
-	if(path.points.size()!=0)
-		s_tot=path.points.back().s;
+	if(path.points.size()==0)
+		path.points.emplace_back(0, pt_x/1000.0, pt_y/1000.0, pt_theta, kappa);
+	else
+	{	
+		s_tot=path.points.back().s+(residual_s/1000.0); //aggiungo il residual a s_tot in modo da ripartire dal nodo con il gisto s_tot
 
-	for(int i=0;i<9;i++)	
-	{
-		s = (arc.L/8)*i;
-		circline(s, pt_x, pt_y, pt_theta, kappa, &x, &y, &th);
-		path.points.emplace_back(s_tot+(s/1000.0),x/1000.0,y/1000.0,th,kappa);
+		s=10;
+		while(s<=arc.L)
+		{			
+			circline(s, pt_x, pt_y, pt_theta, kappa, &x, &y, &th);
+			path.points.emplace_back(s_tot+(s/1000.0),x/1000.0,y/1000.0,th,kappa);
+			s=s+10;
+		}		
 	}	
-	
 
-	//path.points.emplace_back(s/1000.0,ptf_x/1000.0,ptf_y/1000.0,ptf_theta,kappa);
+	residual_s=((arc.L)-(s-10)); //calcolo il residual tra s e il nodo successivo
+
+	printf("S %i", s);
+	printf(" arc.L %f", arc.L);
+	printf(" residual %f\n", residual_s);
+	
+	
+	
 }
 
 
