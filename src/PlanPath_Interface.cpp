@@ -404,7 +404,7 @@ void sample(C arc, Path& path)
 		path.points.emplace_back(0, pt_x/1000.0, pt_y/1000.0, pt_theta, kappa);
 	else
 	{	
-		s_tot=path.points.back().s+(residual_s/1000.0); //aggiungo il residual a s_tot in modo da ripartire dal nodo con il gisto s_tot
+		s_tot=path.points.back().s+0.01;//(residual_s/1000.0); //aggiungo il residual a s_tot in modo da ripartire dal nodo con il gisto s_tot
 
 		s=10;
 		while(s<=arc.L)
