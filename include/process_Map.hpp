@@ -19,8 +19,8 @@ const int RHhr = 179, RHhg = 255, RHhb = 255;
 const int Glr = 45, Glg = 100, Glb = 40;
 const int Ghr = 75, Ghg = 255, Ghb = 255;
 
-//std::string template_folder = "/home/lar2019/Desktop/AppliedRoboticsStudentInterface/new_template/";
-std::string template_folder = "/home/robotics/workspace/group_3/new_template/";
+std::string template_folder = "/home/lar2019/Desktop/AppliedRoboticsStudentInterface/new_template/";
+//std::string template_folder = "/home/robotics/workspace/group_3/new_template/";
 
 
 float f_linea(cv::Mat src, cv::Mat dst, cv::Point& C);

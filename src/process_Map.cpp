@@ -134,7 +134,6 @@ void findVictim(cv::Mat hsv_img, cv::Mat img_in, cv::Mat kernel, const double sc
 	//cv::resizeWindow("VICTIM_filter", 467, 350);
 	
 	// Find green regions
-	std::cout << "FIND VICTIM" << std::endl;
 	cv::Mat green_mask;
 	// store a binary image in green_mask where the white pixel are those contained in HSV rage (45,40,40) --> (75,255,255)  
 	cv::inRange(hsv_img, cv::Scalar(45, 40, 40), cv::Scalar(75, 255, 255), green_mask);
@@ -157,8 +156,6 @@ void findVictim(cv::Mat hsv_img, cv::Mat img_in, cv::Mat kernel, const double sc
 
 	// Finds contours in a binary image.
 	cv::findContours(green_mask, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);  
-
-	std::cout << "--1" << std::endl;
     
 	// create an array of rectangle (i.e. bounding box containing the green area contour)  
 	std::vector<cv::Rect> boundRect(contours.size());
@@ -180,8 +177,6 @@ void findVictim(cv::Mat hsv_img, cv::Mat img_in, cv::Mat kernel, const double sc
 		// find the bounding box of the green blob approx curve
 		boundRect[i] = cv::boundingRect(cv::Mat(approx_curve)); 
 	}
-
-std::cout << "--2" << std::endl;
      
 	cv::Mat green_mask_inv;
 
@@ -200,8 +195,6 @@ std::cout << "--2" << std::endl;
 		templROIs.emplace_back(num_template);
 	}  
   
-std::cout << "--3" << std::endl;
-
 	img_in.copyTo(filtered, green_mask_inv);   // create copy of image without green shapes
   
 	// create a 3x3 recttangular kernel for img filtering
@@ -232,8 +225,6 @@ std::cout << "--3" << std::endl;
     
 		// Show the actual image used for the template matching
 		//cv::imshow("ROI", processROI);
-
-std::cout << "--4" << std::endl;
     
 		// Find the template digit with the best matching
 		double maxScore = 0;

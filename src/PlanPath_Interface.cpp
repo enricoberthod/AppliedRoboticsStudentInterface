@@ -20,7 +20,8 @@ void function_L(int, float, std::vector<VoronoiPoint> &, std::vector<float> &, P
 void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_list, const std::vector<std::pair<int,Polygon>>& victim_list, 
 				const Polygon& gate, const float x, const float y, const float theta, Path& path, const std::string& config_folder)
 {
-
+	//TEST PER DUBLINS
+	
 	//double start[3] 
 	//path
 	//return;
@@ -360,6 +361,7 @@ void sample(C arc, Path& path)
 		path.points.emplace_back(0, pt_x/1000.0, pt_y/1000.0, pt_theta, kappa);
 	else
 	{	
+		//?? residual_s non lo usiamo ??
 		s_tot= path.points.back().s+0.01; //(residual_s/1000.0); //start from the last point in simulator path + the new step
 		s=10; //auxiliar variable for sampling step by step each 0.01
 		while(s<=arc.L)
