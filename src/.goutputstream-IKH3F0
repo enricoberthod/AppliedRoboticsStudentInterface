@@ -271,23 +271,74 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	break;
 	default: throw std::logic_error("STOP_mission_type different from [0-2]"); break;
 	}
+
+	 
+
+	
+	//Direct path from robot center initial position to gate center
+	//PathFinder(start, end, &voronoiPaths, &rightPath); 
 	
 	//throw std::logic_error( "STOP" );
-	
 
-////////////////////////////////////////////////////////////////////Tutto ok fino a qui //////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////Tutto ok fino a qui //////////////////////////////////////////
+
+	/*
+
+	std::vector <double> angles;
+	double theta_in=0, theta_out=0; //the first theta_out (to assign in place of 0) is the robot angle at the starting point.	
+	angles.push_back(theta_out); 
+	for(int i=1;i<rightPath.size()-1;i++)
+	{
+		angle_calculator(rightPath[i-1], rightPath[i], rightPath[i+1], theta_in, theta_out);
+		angles.push_back(theta_in);
+		angles.push_back(theta_out);
+		printf("angle in %i: %f\n",i,theta_in);
+		printf("angle out %i: %f\n",i,theta_out);
+	}	
+	angles.push_back(0); //this is the last angle for entering the gate in the right way. only a theta_in
+
+	//throw std::logic_error( "STOP" );
+
+	for(int i=0;i<angles.size();i++)
+	{
+		if(angles[i]>M_PI)
+			angles[i]=-((2*M_PI)-angles[i]);
+		printf("angles for dubins: %f\n", angles[i]);
+	}
+
+	//Calculate dubins curves on the path initial_robot - gate	
+	int pidx;
+	D curve;
+	float s,pt_x,pt_y,pt_theta,kappa;
+	int j=0;
+	
+	for(int i=0; i<rightPath.size()-1; i++)
+	//int i=0;
+	{
+		printf("in loop dubins %i: \n",i);
+		printf(" (%i, %i) - (%i, %i)\n",(rightPath[i].a),(rightPath[i].b),(rightPath[i+1].a),(rightPath[i+1].b));
+		Dubins(rightPath[i].a,rightPath[i].b,rightPath[i+1].a,rightPath[i+1].b, angles[j], angles[j+1], &curve, &pidx); //add initial theta in and theta out.
+		
+		sample(curve.a1, path);
+		sample(curve.a2, path);
+		sample(curve.a3, path);
+
+		j+=2;
+	} */
 
 	std::vector<float> prova;
-	prova=IDP(theta, rightPath, path); //function to add the sample points to the simulator path
-
-	//printf("Angoli!! %i\n", prova.size());
-	//printf("path!! %i\n", path.points.size());
-	
+	prova=IDP(theta, rightPath, path);
+	printf("Angoli!! %i\n", prova.size());
+	printf("path!! %i\n", path.points.size());
 	for(int i=0; i<prova.size(); i++)
 		printf(" %f: ",prova[i]);
 	
 	//throw std::logic_error( "STOP" ); 
 }
+
+
+
 
 float theta[8] = {0, M_PI/4, M_PI/2, (3*M_PI)/4, M_PI, (5*M_PI)/4, (3*M_PI)/2, (7*M_PI)/4};
 
@@ -313,8 +364,7 @@ void function_L(int j, float theta_j, std::vector<VoronoiPoint> &rightPath, std:
 	D best_curve;	
 	
 	for(int i=0; i<8; i++) {
-		//Dubins function (the given matlab code)  
-		Dubins(rightPath[j].a,rightPath[j].b,rightPath[j+1].a,rightPath[j+1].b, theta_j, theta[i], &curve, &pidx); 
+		Dubins(rightPath[j].a,rightPath[j].b,rightPath[j+1].a,rightPath[j+1].b, theta_j, theta[i], &curve, &pidx);
 		if(curve.L < min_length) {
 			min_length = curve.L;
 			angoli[j+1] = theta[i];
@@ -322,18 +372,18 @@ void function_L(int j, float theta_j, std::vector<VoronoiPoint> &rightPath, std:
 			best_pidx=pidx;	
 		}
 	}
-	if(best_curve.a1.L!=0)//if the first arc is not 0 length
+	if(best_curve.a1.L!=0)
 		sample(best_curve.a1, path);
-	if(best_curve.a2.L!=0)//if the second arc is not 0 length
+	if(best_curve.a2.L!=0)
 		sample(best_curve.a2, path);
-	if(best_curve.a3.L!=0)//if the third arc is not 0 length
+	if(best_curve.a3.L!=0)
 		sample(best_curve.a3, path);
 	
 	if(j < (rightPath.size()-2)){			//controllare estremi j +/- 1
 		angle=(angoli.at(j+1)+M_PI)<(2*M_PI)?(angoli.at(j+1)+M_PI):(angoli.at(j+1)-M_PI);
 		function_L(j+1, angle, rightPath, angoli, path);
 	}
-	else //not our problem now 
+	else
 	{
 		//add the gate point
 		
@@ -350,28 +400,29 @@ void sample(C arc, Path& path)
 	pt_y = arc.y0;
 	pt_theta = arc.th0;
 	kappa = arc.k;
-	if(path.points.size()==0)//the first point is the robot position 
+	if(path.points.size()==0)
 		path.points.emplace_back(0, pt_x/1000.0, pt_y/1000.0, pt_theta, kappa);
 	else
 	{	
-		s_tot=path.points.back().s+0.01; //(residual_s/1000.0); //start from the last point in simulator path + the new step
+		s_tot=path.points.back().s+0.01; //(residual_s/1000.0); //aggiungo il residual a s_tot in modo da ripartire dal nodo con il gisto s_tot
 
-		s=10; //auxiliar variable for sampling step by step each 0.01
+		s=10;
 		while(s<=arc.L)
 		{			
-			circline(s, pt_x, pt_y, pt_theta, kappa, &x, &y, &th); //use the function defined in Dubins (the given matlab code) to compute x,y,theta
-
-			path.points.emplace_back(s_tot+(s/1000.0),x/1000.0,y/1000.0,th,kappa);//add to the simulator path a new point
+			circline(s, pt_x, pt_y, pt_theta, kappa, &x, &y, &th);
+			path.points.emplace_back(s_tot+(s/1000.0),x/1000.0,y/1000.0,th,kappa);
 			s=s+10;
 		}		
 	}	
 
-	residual_s=((arc.L)-(s-10)); //calcolo il residual tra s e il nodo successivo (useles if we use s_tot=...+0.01)
+	residual_s=((arc.L)-(s-10)); //calcolo il residual tra s e il nodo successivo
 
-	//printf("S %i", s);
-	//printf(" arc.L %f", arc.L);
-	//printf(" residual %f\n", residual_s);
-		
+	printf("S %i", s);
+	printf(" arc.L %f", arc.L);
+	printf(" residual %f\n", residual_s);
+	
+	
+	
 }
 
 
