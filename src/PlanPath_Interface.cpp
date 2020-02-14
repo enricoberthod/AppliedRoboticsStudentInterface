@@ -325,10 +325,9 @@ void function_L(int j, float theta_j, std::vector<VoronoiPoint> &rightPath, std:
 		if(curve.L < min_length) {
 			min_length = curve.L;
 			angoli[j+1] = theta[i];
-			best_curve=curve;
-			best_pidx=pidx;	
 		}
 	}
+	Dubins(rightPath[j].a,rightPath[j].b,rightPath[j+1].a,rightPath[j+1].b, theta_j, angoli[j+1], &best_curve, &best_pidx); 
 	if(best_curve.a1.L!=0)//if the first arc is not 0 length
 		sample(best_curve.a1, path);
 	if(best_curve.a2.L!=0)//if the second arc is not 0 length
