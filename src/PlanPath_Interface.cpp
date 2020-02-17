@@ -284,8 +284,29 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 
 ////////////////////////////////////////////////////////////////////Tutto ok fino a qui //////////////////////////////////////////////////
 
+	std::vector<VoronoiPoint> rightPathNew;
+	VoronoiPoint p1 = VoronoiPoint(rightPath[0].a,rightPath[0].b);
+	rightPathNew.emplace_back(p1);
+	int x1,y1,x2,y2;
+	for(int i=0;i<rightPath.size()-1;i++)
+	{
+		x1=rightPath[i].a;
+		y1=rightPath[i].b;
+		x2=rightPath[i+1].a;
+		y2=rightPath[i+1].b;		
+	
+		if(sqrt(pow((x1-x2),2)+pow((y1-y2),2))>100)
+		{
+			VoronoiPoint p = VoronoiPoint(x2,y2);
+			rightPathNew.emplace_back(p);
+		}
+	}
+	printf("-------Path %i => %i: ",rightPath.size(),rightPathNew.size());
+
+
+
 	std::vector<float> prova;
-	prova=IDP(theta, rightPath, path); //function to add the sample points to the simulator path
+	prova=IDP(theta, rightPathNew, path); //function to add the sample points to the simulator path
 
 	//printf("Angoli!! %i\n", prova.size());
 	//printf("path!! %i\n", path.points.size());
@@ -296,7 +317,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	//throw std::logic_error( "STOP" ); 
 }
 
-float theta[8] = {0, M_PI/4, M_PI/2, (3*M_PI)/4, M_PI, (5*M_PI)/4, (3*M_PI)/2, (7*M_PI)/4};
+float theta[8] = {0, M_PI/4, M_PI/2, (3*M_PI)/4, M_PI, -(M_PI/4), -(M_PI/2), -((3*M_PI)/4)};// (5*M_PI)/4, (3*M_PI)/2, (7*M_PI)/4};
 
 std::vector<float> IDP(float angolo_start_robot, std::vector<VoronoiPoint> &rightPath, Path &path){
 	
@@ -305,6 +326,7 @@ std::vector<float> IDP(float angolo_start_robot, std::vector<VoronoiPoint> &righ
 	printf("Angoli!! %i\n",angoli.size());
 	angoli[0]=angolo_start_robot;
 	function_L(0,angoli.at(0), rightPath, angoli, path);
+	
 	return angoli;
 }
 
@@ -318,7 +340,7 @@ void function_L(int j, float theta_j, std::vector<VoronoiPoint> &rightPath, std:
 	float min_length = 999999999.0;	
 	int best_pidx;
 	D best_curve;	
-	
+	printf("--------angolo: %f\n",theta_j);
 	for(int i=0; i<8; i++) {
 		//Dubins function (the given matlab code)  
 		Dubins(rightPath[j].a,rightPath[j].b,rightPath[j+1].a,rightPath[j+1].b, theta_j, theta[i], &curve, &pidx); 
@@ -328,6 +350,7 @@ void function_L(int j, float theta_j, std::vector<VoronoiPoint> &rightPath, std:
 		}
 	}
 	Dubins(rightPath[j].a,rightPath[j].b,rightPath[j+1].a,rightPath[j+1].b, theta_j, angoli[j+1], &best_curve, &best_pidx); 
+	printf("kappa: %f, %f, %f \n", best_curve.a1.k,best_curve.a2.k,best_curve.a3.k);
 	if(best_curve.a1.L!=0)//if the first arc is not 0 length
 		sample(best_curve.a1, path);
 	if(best_curve.a2.L!=0)//if the second arc is not 0 length
@@ -336,8 +359,8 @@ void function_L(int j, float theta_j, std::vector<VoronoiPoint> &rightPath, std:
 		sample(best_curve.a3, path);
 	
 	if(j < (rightPath.size()-2)){			//controllare estremi j +/- 1
-		angle=(angoli.at(j+1)+M_PI)<(2*M_PI)?(angoli.at(j+1)+M_PI):(angoli.at(j+1)-M_PI);
-		function_L(j+1, angle, rightPath, angoli, path);
+		//angle=(angoli.at(j+1)+M_PI)<(2*M_PI)?(angoli.at(j+1)+M_PI):(angoli.at(j+1)-M_PI);
+		function_L(j+1, angoli.at(j+1), rightPath, angoli, path);
 	}
 	else //not our problem now 
 	{
@@ -350,29 +373,43 @@ void function_L(int j, float theta_j, std::vector<VoronoiPoint> &rightPath, std:
 void sample(C arc, Path& path)
 {
 	double pt_x,pt_y,pt_theta,kappa, x, y, th, s_tot=0;
-	int s;
-	
+	int step;
+	//printf("arckappa: %f, %f, %f \n", arc.k, arc.L, arc.th0);
 	pt_x = arc.x0;
 	pt_y = arc.y0;
 	pt_theta = arc.th0;
+	//printf("th0 %f\n",arc.th0);
+	//printf("thf %f\n",arc.thf);
 	kappa = arc.k;
 	if(path.points.size()==0)//the first point is the robot position 
 		path.points.emplace_back(0, pt_x/1000.0, pt_y/1000.0, pt_theta, kappa);
 	else
 	{	
 		//?? residual_s non lo usiamo ??
-		s_tot= path.points.back().s+0.01; //(residual_s/1000.0); //start from the last point in simulator path + the new step
-		s=10; //auxiliar variable for sampling step by step each 0.01
-		while(s<=arc.L)
-		{			
-			circline(s, pt_x, pt_y, pt_theta, kappa, &x, &y, &th); //use the function defined in Dubins (the given matlab code) to compute x,y,theta
-
-			path.points.emplace_back(s_tot+(s/1000.0),x/1000.0,y/1000.0,th,kappa);//add to the simulator path a new point
-			s=s+10;
-		}		
+		
+		step=10; //auxiliar variable for sampling step by step each 0.01
+		//if(kappa==10 && arc.L<s)
+		//	path.points.emplace_back(s_tot+arc.L,pt_x/1000.0,pt_y/1000.0,pt_theta,kappa);//add to the simulator path a new point
+		//else
+		
+			s_tot= path.points.back().s; //(residual_s/1000.0); //start from the last point in simulator path + the new step
+			while(step<arc.L)
+			{		
+					
+				circline(step, pt_x, pt_y, pt_theta, kappa, &x, &y, &th); //use the function defined in Dubins (the given matlab code) to compute x,y,theta
+				//printf("arckappa11: %f \n", kappa);
+				//printf("th in %f\n",th);
+				//s_tot=s_tot+(step/1000.0);
+				path.points.emplace_back(s_tot+(step/1000.0),x/1000.0,y/1000.0,th,kappa);//add to the simulator path a new point
+				step=step+10;
+			}	
+			circline(arc.L, pt_x, pt_y, pt_theta, kappa, &x, &y, &th); //use the function defined in Dubins (the given matlab code) to compute x,y,theta
+			path.points.emplace_back(s_tot+((arc.L)/1000.0),x/1000.0,y/1000.0,th,kappa);//add to the simulator path a new point
+			//printf("th out %f\n",th);
+			
 	}	
 
-	residual_s=((arc.L)-(s-10)); //calcolo il residual tra s e il nodo successivo (useles if we use s_tot=...+0.01)
+	//residual_s=((arc.L)-(s-10)); //calcolo il residual tra s e il nodo successivo (useles if we use s_tot=...+0.01)
 
 	//printf("S %i", s);
 	//printf(" arc.L %f", arc.L);
