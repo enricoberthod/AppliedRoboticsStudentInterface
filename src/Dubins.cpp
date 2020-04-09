@@ -308,7 +308,7 @@ void Dubins(double x0,double y0,double xf,double yf, double th0, double thf, D *
 	//double th0 = (-(2.0/3.0))*M_PI; //DA PASSARE COME PARAMETRO
    	//double thf = M_PI/3.0; //DA PASSARE COME PARAMETRO
 	
-        double Kmax = 10;
+        double Kmax = 0.01;
 
 	//Find optimal Dubins solution
         dubins_shortest_path(x0, y0, th0, xf, yf, thf, Kmax, pidx, curve);

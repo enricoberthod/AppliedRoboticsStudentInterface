@@ -20,12 +20,30 @@ void function_L(int, float, std::vector<VoronoiPoint> &, std::vector<float> &, P
 void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_list, const std::vector<std::pair<int,Polygon>>& victim_list, 
 				const Polygon& gate, const float x, const float y, const float theta, Path& path, const std::string& config_folder)
 {
-	//TEST PER DUBLINS
 	
-	//double start[3] 
-	//path
-	//return;
+	//TEST PER DUBLINS
+	/*
+	int pidxxx;   
+	D curvexx;
+  	double startxx[3] = {100.0, 100.0, 0.0};
+  	double endxx[3] = {300.0, 600.0, 0.0};
+  	Dubins(startxx[0], startxx[1], endxx[0], endxx[1], startxx[2], endxx[2], &curvexx, &pidxxx);
+	if(curvexx.a1.L!=0)
+		sample(curvexx.a1, path);
+	if(curvexx.a2.L!=0)
+		sample(curvexx.a2, path);
+	if(curvexx.a3.L!=0)
+		sample(curvexx.a3, path);
 
+	for(int i = 0; i < path.size(); i++) {
+		std::cout << path.points.at(i).s << " " << path.points.at(i).x << " " << path.points.at(i).y << " " << path.points.at(i).theta << " " << path.points.at(i).kappa << std::endl;
+	}
+  //circline(0, pt_x, pt_y, pt_theta, kappa, &x, &y, &th);
+  //path.points.emplace_back(0, start[0]/1000.0, start[1]/1000.0, start[2], 0);
+  //path.points.emplace_back(0, end[0]/1000.0, end[1]/1000.0, end[2], 0);
+	//path
+  return;
+*/
 	
 	//--lettura file parametri
 	
@@ -382,7 +400,7 @@ void sample(C arc, Path& path)
 	//printf("thf %f\n",arc.thf);
 	kappa = arc.k;
 	if(path.points.size()==0)//the first point is the robot position 
-		path.points.emplace_back(0, pt_x/1000.0, pt_y/1000.0, pt_theta, kappa);
+		path.points.emplace_back(0, pt_x/1000.0, pt_y/1000.0, pt_theta, (kappa*1000));
 	else
 	{	
 		//?? residual_s non lo usiamo ??
@@ -400,11 +418,11 @@ void sample(C arc, Path& path)
 				//printf("arckappa11: %f \n", kappa);
 				//printf("th in %f\n",th);
 				//s_tot=s_tot+(step/1000.0);
-				path.points.emplace_back(s_tot+(step/1000.0),x/1000.0,y/1000.0,th,kappa);//add to the simulator path a new point
+				path.points.emplace_back(s_tot+(step/1000.0),x/1000.0,y/1000.0,th,(kappa*1000));//add to the simulator path a new point
 				step=step+10;
 			}	
 			circline(arc.L, pt_x, pt_y, pt_theta, kappa, &x, &y, &th); //use the function defined in Dubins (the given matlab code) to compute x,y,theta
-			path.points.emplace_back(s_tot+((arc.L)/1000.0),x/1000.0,y/1000.0,th,kappa);//add to the simulator path a new point
+			path.points.emplace_back(s_tot+((arc.L)/1000.0),x/1000.0,y/1000.0,th,(kappa*1000));//add to the simulator path a new point
 			//printf("th out %f\n",th);
 			
 	}	
