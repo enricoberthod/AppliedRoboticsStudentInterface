@@ -244,6 +244,9 @@ void findVictim(cv::Mat hsv_img, cv::Mat img_in, cv::Mat kernel, const double sc
 			float n = fabs((m1-m2)/(1+m1*m2));
 			float angolo = atan(n) *180/PI;
 		
+			centro.x = dst2.cols/2;
+			centro.y = dst2.rows/2;
+
 			cv::Mat dst3;
 			cv::Mat rot1;
 			cv::Mat dst4;
@@ -330,7 +333,7 @@ void findVictim(cv::Mat hsv_img, cv::Mat img_in, cv::Mat kernel, const double sc
 			}
 	
 		}
-    
+
 		if(maxIdx>5) {
 			maxIdx = maxIdx - 5;
 		}
