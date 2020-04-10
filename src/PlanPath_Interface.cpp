@@ -267,20 +267,22 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	case 1: //Path from robot to victim 1, victim 1 to victim 2, victim n to gate position (Mission 1)
 		
 		//find shortest path from robot to 1, 1 to 2, 2 to n, n to gate  
-		for(int i=1; i<=victim_list.size(); i++)
+		for(int i=1; i<=5; i++)
 		{
 			//search for the next victim 
 			for(int j=0; j<victim_list.size() && !find; j++)
 			{
 				if(victim_list[j].first==i)
 				{
+					std::cout << "NUMERO VITTIMA = " << i << std::endl;
 					find=true;
 					//set the end path to the next victim
 					end=VoronoiPoint((int)(victim_list[j].second[0].x*floatToInt),(int)(victim_list[j].second[0].y*floatToInt));
 					//find the shortest path
+					piecePath.clear();
 					PathFinder(start, end, &voronoiPaths, &piecePath, false); 
 					//connect the piece of the path (victim to next victim) to the total one
-					rightPath.insert(rightPath.end(),piecePath.begin(),rightPath.end());
+					rightPath.insert(rightPath.end(),piecePath.begin(),piecePath.end());
 					//the victim became the next starting point
 					start=end;
 				}
@@ -288,8 +290,9 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 			find=false;
 		}
 		//last call for connect the last victims with the gate
+		piecePath.clear();
 		PathFinder(start, gate_pos, &voronoiPaths, &piecePath, false);
-		rightPath.insert(rightPath.end(),piecePath.begin(),rightPath.end()); 
+		rightPath.insert(rightPath.end(),piecePath.begin(),piecePath.end()); 
 	break;
 	case 2: //Path which minimize the time for exit from the arena (Mission 2)
 		PathFinder(start, end, &voronoiPaths, &rightPath, true);
@@ -301,6 +304,8 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	
 
 ////////////////////////////////////////////////////////////////////Tutto ok fino a qui //////////////////////////////////////////////////
+
+	//aggiungere punto sul bordo del gate
 
 	std::vector<VoronoiPoint> rightPathNew;
 	VoronoiPoint p1 = VoronoiPoint(rightPath[0].a,rightPath[0].b);
