@@ -305,7 +305,10 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 
 ////////////////////////////////////////////////////////////////////Tutto ok fino a qui //////////////////////////////////////////////////
 
-	//aggiungere punto sul bordo del gate
+	std::cout << "--- terzultimo punto : " << rightPath[rightPath.size()-3].a << ", " << rightPath[rightPath.size()-3].b << std::endl;
+	std::cout << "--- penultimo punto : " << rightPath[rightPath.size()-2].a << ", " << rightPath[rightPath.size()-2].b << std::endl;
+	std::cout << "--- ultimo punto : " << rightPath[rightPath.size()-1].a << ", " << rightPath[rightPath.size()-1].b << std::endl;
+
 
 	std::vector<VoronoiPoint> rightPathNew;
 	VoronoiPoint p1 = VoronoiPoint(rightPath[0].a,rightPath[0].b);
@@ -324,7 +327,44 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 			rightPathNew.emplace_back(p);
 		}
 	}
-	printf("-------Path %i => %i: ",rightPath.size(),rightPathNew.size());
+	printf("-------Path %i => %i: \n",rightPath.size(),rightPathNew.size());
+	
+	std::cout << "PRIMA" << std::endl;
+	std::cout << "--- terzultimo punto : " << rightPathNew[rightPathNew.size()-3].a << ", " << rightPathNew[rightPathNew.size()-3].b << std::endl;
+	std::cout << "--- penultimo punto : " << rightPathNew[rightPathNew.size()-2].a << ", " << rightPathNew[rightPathNew.size()-2].b << std::endl;
+	std::cout << "--- ultimo punto : " << rightPathNew[rightPathNew.size()-1].a << ", " << rightPathNew[rightPathNew.size()-1].b << std::endl;
+
+
+//aggiungere punto sul bordo del gate
+	VoronoiPoint border_gate_pos;
+
+	int dy = std::fabs(gate_pos.b-(int)(gate[0].y*floatToInt));
+	int dx = std::fabs(gate_pos.a-(int)(gate[0].x*floatToInt));
+
+	if(dx > dy){
+		if(gate_pos.b < 500) {
+			border_gate_pos = VoronoiPoint((int)(gate_pos.a),(int)(gate_pos.b+dy));
+		}
+		else {
+			border_gate_pos = VoronoiPoint((int)(gate_pos.a),(int)(gate_pos.b-dy));
+		}
+	}
+	else {
+		if(gate_pos.a < 500) {
+			border_gate_pos = VoronoiPoint((int)(gate_pos.a+dx),(int)(gate_pos.b));
+		}
+		else {
+			border_gate_pos = VoronoiPoint((int)(gate_pos.a-dx),(int)(gate_pos.b));
+		}
+	}
+	rightPathNew.insert(rightPathNew.end()-1, border_gate_pos);
+
+	std::cout << "--- CENTRO GATE : " << gate_pos.a << ", " << gate_pos.b << std::endl;
+	std::cout << "--- PUNTO BORDO GATE : " << border_gate_pos.a << ", " << border_gate_pos.b << std::endl;
+	std::cout << "--- terzultimo punto : " << rightPathNew[rightPathNew.size()-3].a << ", " << rightPathNew[rightPathNew.size()-3].b << std::endl;
+	std::cout << "--- penultimo punto : " << rightPathNew[rightPathNew.size()-2].a << ", " << rightPathNew[rightPathNew.size()-2].b << std::endl;
+	std::cout << "--- ultimo punto : " << rightPathNew[rightPathNew.size()-1].a << ", " << rightPathNew[rightPathNew.size()-1].b << std::endl;
+
 
 
 
