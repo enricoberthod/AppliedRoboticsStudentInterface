@@ -327,8 +327,8 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 			rightPathNew.emplace_back(p);
 		}
 	}
-	VoronoiPoint p = VoronoiPoint(rightPath[righPath.size()-1].a,rightPath[righPath.size()-1].b);
-	rightPathNew.insert(rightPathNew.end(), p);
+	VoronoiPoint p_end = VoronoiPoint(rightPath[rightPath.size()-1].a,rightPath[rightPath.size()-1].b);
+	rightPathNew.insert(rightPathNew.end(), p_end);
 	
 	printf("-------Path %i => %i: \n",rightPath.size(),rightPathNew.size());
 	
