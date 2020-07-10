@@ -314,7 +314,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	VoronoiPoint p1 = VoronoiPoint(rightPath[0].a,rightPath[0].b);
 	rightPathNew.emplace_back(p1);
 	int x1,y1,x2,y2;
-	for(int i=0;i<rightPath.size()-1;i++)
+	for(int i=0;i<rightPath.size()-2;i++) //for(int i=0;i<rightPath.size()-1;i++)
 	{
 		x1=rightPath[i].a;
 		y1=rightPath[i].b;
@@ -327,6 +327,9 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 			rightPathNew.emplace_back(p);
 		}
 	}
+	VoronoiPoint p = VoronoiPoint(rightPath[righPath.size()-1].a,rightPath[righPath.size()-1].b);
+	rightPathNew.insert(rightPathNew.end(), p);
+	
 	printf("-------Path %i => %i: \n",rightPath.size(),rightPathNew.size());
 	
 	std::cout << "PRIMA" << std::endl;
