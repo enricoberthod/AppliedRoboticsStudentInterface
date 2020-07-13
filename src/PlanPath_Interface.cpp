@@ -15,6 +15,8 @@ void sample(C, Path&);
 std::vector<float> IDP(float, std::vector<VoronoiPoint> &, Path &);
 void function_L(int, float, std::vector<VoronoiPoint> &, std::vector<float> &, Path &);
 
+int i_gate;
+
 //using namespace std;
 
 void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_list, const std::vector<std::pair<int,Polygon>>& victim_list, 
@@ -347,17 +349,21 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	if(dx > dy){
 		if(gate_pos.b < 500) {
 			border_gate_pos = VoronoiPoint((int)(gate_pos.a),(int)(gate_pos.b+dy));
+			i_gate = 6;
 		}
 		else {
 			border_gate_pos = VoronoiPoint((int)(gate_pos.a),(int)(gate_pos.b-dy));
+			i_gate = 2;
 		}
 	}
 	else {
 		if(gate_pos.a < 500) {
 			border_gate_pos = VoronoiPoint((int)(gate_pos.a+dx),(int)(gate_pos.b));
+			i_gate = 4;
 		}
 		else {
 			border_gate_pos = VoronoiPoint((int)(gate_pos.a-dx),(int)(gate_pos.b));
+			i_gate = 0;
 		}
 	}
 	rightPathNew.insert(rightPathNew.end()-1, border_gate_pos);
@@ -414,6 +420,9 @@ void function_L(int j, float theta_j, std::vector<VoronoiPoint> &rightPath, std:
 			min_length = curve.L;
 			angoli[j+1] = theta[i];
 		}
+	}
+	if(j==rightPath.size()-3) {
+		angoli[j+1] = theta[i_gate];
 	}
 	Dubins(rightPath[j].a,rightPath[j].b,rightPath[j+1].a,rightPath[j+1].b, theta_j, angoli[j+1], &best_curve, &best_pidx); 
 	printf("kappa: %f, %f, %f \n", best_curve.a1.k,best_curve.a2.k,best_curve.a3.k);
