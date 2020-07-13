@@ -383,10 +383,16 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	//printf("Angoli!! %i\n", prova.size());
 	//printf("path!! %i\n", path.points.size());
 	
-	for(int i=0; i<prova.size(); i++)
-		printf(" %f: ",prova[i]);
+	//for(int i=0; i<prova.size(); i++)
+	//	printf(" %f: ",prova[i]);
 	
 	//throw std::logic_error( "STOP" ); 
+	
+	std::cout << "--- START righPathNew --- " << std::endl;
+	for(int i=0; i<rightPathNew.size(); i++)
+		std::cout << "--> " << (i+1) << ": (" << rightPathNew[i].a << ", " << rightPathNew[i].b << ")" << std::endl;
+	std::cout << "--- END righPathNew --- " << std::endl;
+		
 }
 
 float theta[8] = {0, M_PI/4, M_PI/2, (3*M_PI)/4, M_PI, -(M_PI/4), -(M_PI/2), -((3*M_PI)/4)};// (5*M_PI)/4, (3*M_PI)/2, (7*M_PI)/4};
