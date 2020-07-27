@@ -5,6 +5,6 @@
 #include "DataStructure.h"
 #include "Voronoi.h"
 
-void PathFinder(VoronoiPoint,VoronoiPoint, VoronoiResults*, std::vector<VoronoiPoint> *rightPath, bool areVictims);
+void PathFinder(VoronoiPoint, bool, VoronoiPoint, bool, VoronoiResults*, std::vector<VoronoiPoint> *rightPath, bool areVictims);
 
 #endif

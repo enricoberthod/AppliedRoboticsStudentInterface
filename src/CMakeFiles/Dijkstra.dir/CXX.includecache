@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Dijkstra.h
+stdlib.h
+-
+vector
+-
+
+/home/lar2019/Desktop/AppliedRoboticsStudentInterface/src/Dijkstra.cpp
+Dijkstra.h
+/home/lar2019/Desktop/AppliedRoboticsStudentInterface/src/Dijkstra.h
+stdio.h
+-
+limits.h
+-
+
