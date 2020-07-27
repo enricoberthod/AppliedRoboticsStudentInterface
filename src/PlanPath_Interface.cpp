@@ -260,6 +260,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	VoronoiPoint start = robot_pos;
 	VoronoiPoint end = gate_pos;
 	bool find = false;
+	bool firstTime = true;
 
 	switch(mission_type) //0 for robot-gate //1 for robot-victims_in_right_order-gate //2 for robot-victims-gate in min time
 	{
@@ -282,11 +283,12 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 					end=VoronoiPoint((int)(victim_list[j].second[0].x*floatToInt),(int)(victim_list[j].second[0].y*floatToInt));
 					//find the shortest path
 					piecePath.clear();
-					PathFinder(start, true, end, true, &voronoiPaths, &piecePath, false); //modify this (true only if the point is not already in the called before in pathFinder
+					PathFinder(start, firstTime, end, true, &voronoiPaths, &piecePath, false); //modify this (true only if the point is not already in the called before in pathFinder
 					//connect the piece of the path (victim to next victim) to the total one
 					rightPath.insert(rightPath.end(),piecePath.begin(),piecePath.end());
 					//the victim became the next starting point
 					start=end;
+					firstTime=false;
 				}
 			}
 			find=false;
