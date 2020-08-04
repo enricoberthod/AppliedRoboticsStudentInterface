@@ -323,9 +323,22 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		x1=rightPath[i].a;
 		y1=rightPath[i].b;
 		x2=rightPath[i+1].a;
-		y2=rightPath[i+1].b;		
+		y2=rightPath[i+1].b;	
+
+		bool is_victim = false;	
 	
-		if(sqrt(pow((x1-x2),2)+pow((y1-y2),2))>100)
+		for(int j=0; j<victim_list.size(); j++) {
+			//std::cout << ">>>>>>>>>>>>>>>> " << x2 << " -- "<< (int)(victim_list[j].second[0].x*floatToInt) << std::endl;
+			if(x2 == (int)(victim_list[j].second[0].x*floatToInt)) {
+				if(y2 == (int)(victim_list[j].second[0].y*floatToInt)) {
+					is_victim = true;
+					std::cout << ">>>>>>>>>>>>>>>> " << x2 << " -- "<< (int)(victim_list[j].second[0].x*floatToInt) << std::endl;
+					std::cout << ">>>>>>>>>>>>>>>> > " << y2 << " -- "<< (int)(victim_list[j].second[0].y*floatToInt) << std::endl;
+				}
+			}
+		}
+
+		if((sqrt(pow((x1-x2),2)+pow((y1-y2),2))>100) || is_victim)
 		{
 			VoronoiPoint p = VoronoiPoint(x2,y2);
 			rightPathNew.emplace_back(p);
