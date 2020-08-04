@@ -12,7 +12,7 @@
 
 //void connect(int, VoronoiPoint, VoronoiPoint, VoronoiResults*, bool, bool, std::vector<GraphEdge>*, std::vector<GraphEdge>*);
 void connect(int, VoronoiPoint, VoronoiResults*, bool, std::vector<GraphEdge>*, int);
-void shortestPath(VoronoiPoint, VoronoiPoint, VoronoiResults *, std::vector<VoronoiPoint> *);
+void shortestPath(VoronoiPoint, bool, VoronoiPoint, bool, VoronoiResults *, std::vector<VoronoiPoint> *);
 
 void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew, VoronoiResults *voronoiPaths, std::vector<VoronoiPoint> *rightPath, bool areVictims)
 {
@@ -91,7 +91,7 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 		for(int i=0;i<end_connection.size();i++)
 			voronoiPaths->resultEdges.push_back(end_connection[i]);
 	}
-	shortestPath(start, end, voronoiPaths, rightPath);
+	shortestPath(start, startNew, end, endNew, voronoiPaths, rightPath);
 }
 
 /*
@@ -179,7 +179,7 @@ void connect(int offset, VoronoiPoint startP, VoronoiPoint endP, VoronoiResults 
 */
 
 
-void shortestPath(VoronoiPoint start,VoronoiPoint end, VoronoiResults *voronoiPaths, std::vector<VoronoiPoint> *rightPath)
+void shortestPath(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew, VoronoiResults *voronoiPaths, std::vector<VoronoiPoint> *rightPath)
 {
 	int V = voronoiPaths->ids.size(); 
 	std::cout << "V " << V << std::endl;
@@ -222,7 +222,8 @@ void shortestPath(VoronoiPoint start,VoronoiPoint end, VoronoiResults *voronoiPa
 	std::cout << std::endl;
 	std::cout << "map " << mapPosition[111] << std::endl;
 	
-	rightPath->push_back(start);
+	if(startNew)
+		rightPath->push_back(start);
 	int x1,y1;
 	for(int i=1;i<startEndPath.size()-1;i++)
 	{
@@ -238,7 +239,8 @@ void shortestPath(VoronoiPoint start,VoronoiPoint end, VoronoiResults *voronoiPa
 	
 		std::cout << "node: " << startEndPath[i] << " " << mapPosition[startEndPath[i]] << " x,y (" << x1 << "," << y1 << ")" << std::endl;
 	}
-	rightPath->push_back(end);
+	if(endNew)
+		rightPath->push_back(end);
 	
 }
 
