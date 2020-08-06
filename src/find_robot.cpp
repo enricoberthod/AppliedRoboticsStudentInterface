@@ -71,32 +71,33 @@ bool find_Robot(const cv::Mat& img_in, const double scale, Polygon& triangle, do
 		break;
 	}
 	
+	/*
 	
 	//ritaglio robot
 	cv::Rect boundRect = cv::boundingRect(cv::Mat(approx_curve));
-	if((boundRect.x - 100) > 0) {
-		boundRect.x = boundRect.x - 100;
+	if((boundRect.x - 150) > 0) {
+		boundRect.x = boundRect.x - 150;
 	}
 	else {
 		boundRect.x = 0;
 	}
-	if((boundRect.x - 100) > 0) {
-		boundRect.y = boundRect.y - 100;
+	if((boundRect.y - 150) > 0) {
+		boundRect.y = boundRect.y - 150;
 	}
 	else {
 		boundRect.y = 0;
 	}
-	if((boundRect.width + 200) < MAX_WIDTH) {
-		boundRect.width = boundRect.width + 200;
+	if((boundRect.x + 300) < MAX_WIDTH) {
+		boundRect.width = 300;
 	}
 	else {
-		boundRect.width = MAX_WIDTH;
+		boundRect.width = MAX_WIDTH - boundRect.x;
 	}
-	if((boundRect.height + 200) < MAX_HEIGHT) {
-		boundRect.height = boundRect.height + 200;
+	if((boundRect.y + 300) < MAX_HEIGHT) {
+		boundRect.height = 300;
 	}
 	else {
-		boundRect.height = MAX_HEIGHT;
+		boundRect.height = MAX_HEIGHT - boundRect.y;
 	}
 	cv::Mat filtered(img_in.rows, img_in.cols, CV_8UC3, cv::Scalar(255,255,255));
 	img_in.copyTo(filtered);
@@ -104,6 +105,8 @@ bool find_Robot(const cv::Mat& img_in, const double scale, Polygon& triangle, do
 	//cv::namedWindow("robot_pos", cv::WINDOW_AUTOSIZE);
 	//cv::imshow("robot_pos", robot_pos);
 	//cv::waitKey(0);
+
+	*/
 	
 
 	// If we found the robot triangle set robot position and create the triangle poligon
