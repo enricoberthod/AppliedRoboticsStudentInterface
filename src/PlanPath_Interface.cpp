@@ -14,6 +14,7 @@ void angle_calculator(VoronoiPoint, VoronoiPoint, VoronoiPoint, double &,  doubl
 void sample(C, Path&);
 std::vector<float> IDP(float, std::vector<VoronoiPoint> &, Path &);
 void function_L(int, float, std::vector<VoronoiPoint> &, std::vector<float> &, Path &);
+void function_L_doppio(int, float, std::vector<VoronoiPoint> &, std::vector<float> &, Path &);
 
 int i_gate;
 
@@ -418,13 +419,17 @@ std::vector<float> IDP(float angolo_start_robot, std::vector<VoronoiPoint> &righ
 	angoli.resize(rightPath.size());
 	printf("Angoli!! %i\n",angoli.size());
 	angoli[0]=angolo_start_robot;
-	function_L(0,angoli.at(0), rightPath, angoli, path);
+	function_L_doppio(0,angoli.at(0), rightPath, angoli, path);
 	
 	return angoli;
 }
 
-int pidx;   
+int pidx;
+int pidx_1;
+int pidx_2;  
 D curve;
+D curve_1;
+D curve_2;
 float angle;
 float residual_s=0;
 
@@ -465,6 +470,61 @@ void function_L(int j, float theta_j, std::vector<VoronoiPoint> &rightPath, std:
 		//path.points.emplace_back(s_tot+(arc.L/1000.0),x/1000.0,y/1000.0,th,kappa);
 	}
 }
+
+
+void function_L_doppio(int j, float theta_j, std::vector<VoronoiPoint> &rightPath, std::vector<float> &angoli, Path &path){
+	float min_length = 999999999.0;	
+	int best_pidx;
+	D best_curve;	
+	printf("--------angolo: %f\n",theta_j);
+	if(j==rightPath.size()-3) {
+		angoli[j+1] = theta[i_gate];
+	}
+	else {
+		for(int i=0; i<8; i++) {
+			//Dubins function (the given matlab code)  
+			Dubins(rightPath[j].a,rightPath[j].b,rightPath[j+1].a,rightPath[j+1].b, theta_j, theta[i], &curve_1, &pidx_1);
+			if(j==rightPath.size()-4) {
+				Dubins(rightPath[j+1].a,rightPath[j+1].b,rightPath[j+2].a,rightPath[j+2].b, theta[i], theta[i_gate], &curve_2, &pidx_2);
+				if((curve_1.L + curve_2.L) < min_length) {
+					min_length = curve_1.L + curve_2.L;
+					angoli[j+1] = theta[i];
+					//angoli[j+2] = theta[w];
+				}
+			}
+			else {
+				for(int w=0; w<8; w++) {
+					Dubins(rightPath[j+1].a,rightPath[j+1].b,rightPath[j+2].a,rightPath[j+2].b, theta[i], theta[w], &curve_2, &pidx_2);
+					if((curve_1.L + curve_2.L) < min_length) {
+						min_length = curve_1.L + curve_2.L;
+						angoli[j+1] = theta[i];
+						//angoli[j+2] = theta[w];
+					}
+				}
+			}
+		}	
+	}
+	Dubins(rightPath[j].a,rightPath[j].b,rightPath[j+1].a,rightPath[j+1].b, theta_j, angoli[j+1], &best_curve, &best_pidx); 
+	printf("kappa: %f, %f, %f \n", best_curve.a1.k,best_curve.a2.k,best_curve.a3.k);
+	if(best_curve.a1.L!=0)//if the first arc is not 0 length
+		sample(best_curve.a1, path);
+	if(best_curve.a2.L!=0)//if the second arc is not 0 length
+		sample(best_curve.a2, path);
+	if(best_curve.a3.L!=0)//if the third arc is not 0 length
+		sample(best_curve.a3, path);
+	
+	if(j < (rightPath.size()-2)){			//controllare estremi j +/- 1
+		//angle=(angoli.at(j+1)+M_PI)<(2*M_PI)?(angoli.at(j+1)+M_PI):(angoli.at(j+1)-M_PI);
+		function_L_doppio(j+1, angoli.at(j+1), rightPath, angoli, path);
+	}
+	else //not our problem now 
+	{
+		//add the gate point
+		
+		//path.points.emplace_back(s_tot+(arc.L/1000.0),x/1000.0,y/1000.0,th,kappa);
+	}
+}
+
 
 void sample(C arc, Path& path)
 {
