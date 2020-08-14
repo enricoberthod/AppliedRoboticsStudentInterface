@@ -538,9 +538,10 @@ void sample(C arc, Path& path)
 	//printf("th0 %f\n",arc.th0);
 	//printf("thf %f\n",arc.thf);
 	kappa = arc.k;
-	if(path.points.size()==0)//the first point is the robot position 
+	if(path.points.size()==0) { //the first point is the robot position 
 		path.points.emplace_back(0, pt_x/1000.0, pt_y/1000.0, pt_theta, (kappa*1000));
-	else
+	}
+	//else
 	{	
 		//?? residual_s non lo usiamo ??
 		
