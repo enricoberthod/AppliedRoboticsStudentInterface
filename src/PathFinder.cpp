@@ -14,7 +14,7 @@
 void connect(int, VoronoiPoint, VoronoiResults*, bool, std::vector<GraphEdge>*, int);
 void shortestPath(VoronoiPoint, bool, VoronoiPoint, bool, VoronoiResults *, std::vector<VoronoiPoint> *);
 
-void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew, VoronoiResults *voronoiPaths, std::vector<VoronoiPoint> *rightPath, bool areVictims)
+void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew, VoronoiResults *voronoiPaths, std::vector<VoronoiPoint> *rightPath, int netRadius)
 {
 	int offset=20;
 	int step=10;
@@ -25,6 +25,8 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 	int endLongId;
 	int idPos;
 	std::vector<GraphEdge> start_connection, end_connection;
+	VoronoiPoint v1, v2, v3, v4, v5, v6, v7, v8;
+	std::vector<VoronoiPoint> netVertex;
 
 	//std::vector<GraphEdge> point_connections
 	
@@ -44,14 +46,56 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 	
 	if(endNew)
 	{
-		if(end.b<1000)
-			endLongId=(end.a*1000)+end.b;
+		if(netRadius>0)
+		{
+			int x = end.a;
+			int y = end.b;
+			
+			netVertex.push_back(VoronoiPoint(x, y+netRadius));
+			netVertex.push_back(VoronoiPoint(x, y-netRadius));
+			netVertex.push_back(VoronoiPoint(x+netRadius, y));
+			netVertex.push_back(VoronoiPoint(x-netRadius, y));
+			//netVertex.push_back(VoronoiPoint(x+(netRadius/2), y+(netRadius/2)));
+			//netVertex.push_back(VoronoiPoint(x-(netRadius/2), y+(netRadius/2)));
+			//netVertex.push_back(VoronoiPoint(x+(netRadius/2), y-(netRadius/2)));
+			//netVertex.push_back(VoronoiPoint(x-(netRadius/2), y-(netRadius/2)));
+			
+			for(int i=0;i<netVertex.size();i++)
+			{
+				x=netVertex[i].a;
+				y=netVertex[i].b;
+				std::cout << "netVertex " << x << "," << y << " " << netVertex.size() <<std::endl;
+				if(y<1000)
+					endLongId=(x*1000)+y;
+				else
+					endLongId=(x*10000)+y;
+				voronoiPaths->ids.push_back(endLongId);
+		
+				connect(offset, netVertex[i], voronoiPaths, true, &end_connection, -1);
+				endSize=end_connection.size();
+				
+				while(endSize<=(nConnection+i))
+				{
+					offset=offset+step;
+					end_connection.clear();
+					connect(offset, end, voronoiPaths, endSize<=nConnection, &end_connection, -1);
+					endSize=end_connection.size();
+					for(int j=0;j<end_connection.size();j++)
+						voronoiPaths->resultEdges.push_back(end_connection[i]);
+				}
+			}
+		}
 		else
-			endLongId=(end.a*10000)+end.b;
-		voronoiPaths->ids.push_back(endLongId);
-	
-		connect(offset, end, voronoiPaths, true, &end_connection, -1);
-		endSize=end_connection.size();
+		{
+			if(end.b<1000)
+				endLongId=(end.a*1000)+end.b;
+			else
+				endLongId=(end.a*10000)+end.b;
+			voronoiPaths->ids.push_back(endLongId);
+		
+			connect(offset, end, voronoiPaths, true, &end_connection, -1);
+			endSize=end_connection.size();
+		}
 	}
 
 	std::cout << "Step " << offset << std::endl;
@@ -74,23 +118,24 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 			connect(offset, start, voronoiPaths, startSize<=nConnection, &start_connection, -2);
 			startSize=start_connection.size();
 		}
-		if(endNew)
+		if(endNew && netRadius==0)
 		{
 			connect(offset, end, voronoiPaths, endSize<=nConnection, &end_connection, -1);
 			endSize=end_connection.size();
 		}
 	}
 	
-	if(startNew)
+	if(startNew) //maybe this section must be inside the prev while
 	{
 		for(int i=0;i<start_connection.size();i++)
 			voronoiPaths->resultEdges.push_back(start_connection[i]);
 	}
-	if(endNew)
+	if(endNew && netRadius==0)
 	{
 		for(int i=0;i<end_connection.size();i++)
 			voronoiPaths->resultEdges.push_back(end_connection[i]);
 	}
+	
 	shortestPath(start, startNew, end, endNew, voronoiPaths, rightPath);
 }
 
