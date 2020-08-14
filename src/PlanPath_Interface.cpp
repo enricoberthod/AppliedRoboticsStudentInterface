@@ -479,6 +479,7 @@ void function_L_doppio(int j, float theta_j, std::vector<VoronoiPoint> &rightPat
 	printf("--------angolo: %f\n",theta_j);
 	if(j==rightPath.size()-3) {
 		angoli[j+1] = theta[i_gate];
+		angoli[j+2] = theta[i_gate];
 	}
 	else {
 		for(int i=0; i<8; i++) {
