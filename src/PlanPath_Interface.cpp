@@ -17,6 +17,7 @@ void function_L(int, float, std::vector<VoronoiPoint> &, std::vector<float> &, P
 void function_L_doppio(int, float, std::vector<VoronoiPoint> &, std::vector<float> &, Path &);
 
 int i_gate;
+std::vector<std::vector<cv::Point>> contours;
 
 //using namespace std;
 
@@ -139,6 +140,23 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		yb=(int)(solution[i][0].Y<0?0:solution[i][0].Y);
 		inputPoints.push_back(VoronoiPoint(xa,ya));
 		obstacles_edges.push_back(Segment(xa, ya, xb, yb));
+	}
+
+	// Creo i contorni a partire da clipper
+	for (int i = 0; i < solution.size(); i++) {
+		std::vector<cv::Point> cc;
+		for (int j = 0; j < solution[i].size(); j++) {
+			xa=(int)(solution[i][j].X<0?0:solution[i][j].X);
+			ya=(int)(solution[i][j].Y<0?0:solution[i][j].Y);
+			std::cout << "<<" << xa << ", " << ya << ">>" << std::endl;
+			cc.push_back(cv::Point(xa,ya));
+		}
+		contours.push_back(cc);
+	}
+
+	std::cout << "### contours: " << contours.size() << std::endl;
+	for (int i = 0; i < contours.size(); i++) {
+		std::cout << "### contours[" << i << "] : " << contours[i].size() << std::endl;
 	}
 	
 	//throw std::logic_error( "STOP" );
@@ -433,7 +451,7 @@ D curve_2;
 float angle;
 float residual_s=0;
 
-
+/*
 void function_L(int j, float theta_j, std::vector<VoronoiPoint> &rightPath, std::vector<float> &angoli, Path &path){
 	float min_length = 999999999.0;	
 	int best_pidx;
@@ -470,6 +488,7 @@ void function_L(int j, float theta_j, std::vector<VoronoiPoint> &rightPath, std:
 		//path.points.emplace_back(s_tot+(arc.L/1000.0),x/1000.0,y/1000.0,th,kappa);
 	}
 }
+*/
 
 
 void function_L_doppio(int j, float theta_j, std::vector<VoronoiPoint> &rightPath, std::vector<float> &angoli, Path &path){
@@ -558,10 +577,35 @@ void sample(C arc, Path& path)
 				//printf("arckappa11: %f \n", kappa);
 				//printf("th in %f\n",th);
 				//s_tot=s_tot+(step/1000.0);
+
+			// todo: inserire controllo per collision detection
+				for (int i = 0; i < contours.size(); i++) {
+					double res = cv::pointPolygonTest(contours[i] , cv::Point2f(x,y) , true);
+					if(res > 0) {
+						std::cout << "INSIDE!!! " << res << std::endl;
+					}
+					else {
+						std::cout << "OUTSIDE " << res << " punto <" << x << ", " << y << ">" << std::endl;
+					}
+
+				}
+
 				path.points.emplace_back(s_tot+(step/1000.0),x/1000.0,y/1000.0,th,(kappa*1000));//add to the simulator path a new point
 				step=step+10;
 			}	
 			circline(arc.L, pt_x, pt_y, pt_theta, kappa, &x, &y, &th); //use the function defined in Dubins (the given matlab code) to compute x,y,theta
+
+			for (int i = 0; i < contours.size(); i++) {
+				double res = cv::pointPolygonTest(contours[i] , cv::Point2f(x,y) , true);
+				if(res > 0) {
+					std::cout << "INSIDE!!! " << res << std::endl;
+				}
+				else {
+					std::cout << "OUTSIDE " << res << " punto <" << x << ", " << y << ">" << std::endl;
+				}
+
+			}
+
 			path.points.emplace_back(s_tot+((arc.L)/1000.0),x/1000.0,y/1000.0,th,(kappa*1000));//add to the simulator path a new point
 			//printf("th out %f\n",th);
 			

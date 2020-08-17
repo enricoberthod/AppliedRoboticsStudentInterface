@@ -2,6 +2,7 @@
 #define PlanPath_Interface_H
 
 #include <string>
+#include <opencv2/imgproc/imgproc.hpp>
 #include "utils.hpp"
 //using namespace std;
 
