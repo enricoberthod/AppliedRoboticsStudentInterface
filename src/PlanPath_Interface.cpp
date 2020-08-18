@@ -1,21 +1,5 @@
 #include "PlanPath_Interface.h"
 
-#include <vector> 
-#include <string>
-#include <iostream>
-#include <cmath>
-#include <unordered_map>
-#include "Voronoi.h"
-#include "PathFinder.h"
-#include "Dubins.h"
-#include "clipper.hpp"
-
-void angle_calculator(VoronoiPoint, VoronoiPoint, VoronoiPoint, double &,  double &);
-void sample(C, Path&);
-std::vector<float> IDP(float, std::vector<VoronoiPoint> &, Path &);
-void function_L(int, float, std::vector<VoronoiPoint> &, std::vector<float> &, Path &);
-void function_L_doppio(int, float, std::vector<VoronoiPoint> &, std::vector<float> &, Path &);
-
 int i_gate;
 std::vector<std::vector<cv::Point>> contours;
 
@@ -148,7 +132,6 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		for (int j = 0; j < solution[i].size(); j++) {
 			xa=(int)(solution[i][j].X<0?0:solution[i][j].X);
 			ya=(int)(solution[i][j].Y<0?0:solution[i][j].Y);
-			std::cout << "<<" << xa << ", " << ya << ">>" << std::endl;
 			cc.push_back(cv::Point(xa,ya));
 		}
 		contours.push_back(cc);
@@ -579,32 +562,14 @@ void sample(C arc, Path& path)
 				//s_tot=s_tot+(step/1000.0);
 
 			// todo: inserire controllo per collision detection
-				for (int i = 0; i < contours.size(); i++) {
-					double res = cv::pointPolygonTest(contours[i] , cv::Point2f(x,y) , true);
-					if(res > 0) {
-						std::cout << "INSIDE!!! " << res << std::endl;
-					}
-					else {
-						std::cout << "OUTSIDE " << res << " punto <" << x << ", " << y << ">" << std::endl;
-					}
-
-				}
+				collision_detection(x, y, contours);
 
 				path.points.emplace_back(s_tot+(step/1000.0),x/1000.0,y/1000.0,th,(kappa*1000));//add to the simulator path a new point
 				step=step+10;
 			}	
 			circline(arc.L, pt_x, pt_y, pt_theta, kappa, &x, &y, &th); //use the function defined in Dubins (the given matlab code) to compute x,y,theta
 
-			for (int i = 0; i < contours.size(); i++) {
-				double res = cv::pointPolygonTest(contours[i] , cv::Point2f(x,y) , true);
-				if(res > 0) {
-					std::cout << "INSIDE!!! " << res << std::endl;
-				}
-				else {
-					std::cout << "OUTSIDE " << res << " punto <" << x << ", " << y << ">" << std::endl;
-				}
-
-			}
+			collision_detection(x, y, contours);
 
 			path.points.emplace_back(s_tot+((arc.L)/1000.0),x/1000.0,y/1000.0,th,(kappa*1000));//add to the simulator path a new point
 			//printf("th out %f\n",th);
@@ -620,17 +585,17 @@ void sample(C arc, Path& path)
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
+bool collision_detection(double x, double y, const std::vector<std::vector<cv::Point>>& contours) {
+	bool r = false;
+	for (int i = 0; i < contours.size() & !r; i++) {
+		double res = cv::pointPolygonTest(contours[i] , cv::Point2f(x,y) , true);
+		if(res > 0) {
+			r = true;
+			std::cout << "INSIDE!!! " << res << " -> " << r << std::endl;
+		}
+		else {
+			std::cout << "OUTSIDE " << res << " punto <" << x << ", " << y << ">" << " -> " << r << std::endl;
+		}
+	}
+	return r;
+}
