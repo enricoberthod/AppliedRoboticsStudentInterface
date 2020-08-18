@@ -529,65 +529,50 @@ void function_L_doppio(int j, float theta_j, std::vector<VoronoiPoint> &rightPat
 }
 
 
-void sample(C arc, Path& path)
-{
+void sample(C arc, Path& path) {
 	double pt_x,pt_y,pt_theta,kappa, x, y, th, s_tot=0;
 	int step;
-	//printf("arckappa: %f, %f, %f \n", arc.k, arc.L, arc.th0);
+	bool collision = false;
 	pt_x = arc.x0;
 	pt_y = arc.y0;
 	pt_theta = arc.th0;
-	//printf("th0 %f\n",arc.th0);
-	//printf("thf %f\n",arc.thf);
 	kappa = arc.k;
-	if(path.points.size()==0) { //the first point is the robot position 
+	int inserts = 0;
+
+	if(path.points.size()==0) { 	//the first point is the robot position 
 		path.points.emplace_back(0, pt_x/1000.0, pt_y/1000.0, pt_theta, (kappa*1000));
+		inserts++;
 	}
-	//else
-	{	
-		//?? residual_s non lo usiamo ??
 		
-		step=10; //auxiliar variable for sampling step by step each 0.01
+	step=10; 	//auxiliar variable for sampling step by step each 0.01
 		//if(kappa==10 && arc.L<s)
 		//	path.points.emplace_back(s_tot+arc.L,pt_x/1000.0,pt_y/1000.0,pt_theta,kappa);//add to the simulator path a new point
 		//else
 		
-			s_tot= path.points.back().s; //(residual_s/1000.0); //start from the last point in simulator path + the new step
-			while(step<arc.L)
-			{		
-					
-				circline(step, pt_x, pt_y, pt_theta, kappa, &x, &y, &th); //use the function defined in Dubins (the given matlab code) to compute x,y,theta
-				//printf("arckappa11: %f \n", kappa);
-				//printf("th in %f\n",th);
+	s_tot= path.points.back().s; //(residual_s/1000.0); //start from the last point in simulator path + the new step
+	while(step<arc.L /*&& !collision*/) {		
+		circline(step, pt_x, pt_y, pt_theta, kappa, &x, &y, &th); 	//use the function defined in Dubins (the given matlab code) to compute x,y,theta
 				//s_tot=s_tot+(step/1000.0);
 
-			// todo: inserire controllo per collision detection
-				collision_detection(x, y, contours);
+		collision = collision_detection(x, y, contours);
 
-				path.points.emplace_back(s_tot+(step/1000.0),x/1000.0,y/1000.0,th,(kappa*1000));//add to the simulator path a new point
-				step=step+10;
-			}	
-			circline(arc.L, pt_x, pt_y, pt_theta, kappa, &x, &y, &th); //use the function defined in Dubins (the given matlab code) to compute x,y,theta
-
-			collision_detection(x, y, contours);
-
-			path.points.emplace_back(s_tot+((arc.L)/1000.0),x/1000.0,y/1000.0,th,(kappa*1000));//add to the simulator path a new point
-			//printf("th out %f\n",th);
-			
+		path.points.emplace_back(s_tot+(step/1000.0),x/1000.0,y/1000.0,th,(kappa*1000));	//add to the simulator path a new point
+		inserts++;
+		step=step+10;
 	}	
+	circline(arc.L, pt_x, pt_y, pt_theta, kappa, &x, &y, &th); 		//use the function defined in Dubins (the given matlab code) to compute x,y,theta
 
-	//residual_s=((arc.L)-(s-10)); //calcolo il residual tra s e il nodo successivo (useles if we use s_tot=...+0.01)
+	collision = collision_detection(x, y, contours);
 
-	//printf("S %i", s);
-	//printf(" arc.L %f", arc.L);
-	//printf(" residual %f\n", residual_s);
-		
+	path.points.emplace_back(s_tot+((arc.L)/1000.0),x/1000.0,y/1000.0,th,(kappa*1000));		//add to the simulator path a new point
+
+	//residual_s=((arc.L)-(s-10)); //calcolo il residual tra s e il nodo successivo (useles if we use s_tot=...+0.01)	
 }
 
 
 bool collision_detection(double x, double y, const std::vector<std::vector<cv::Point>>& contours) {
 	bool r = false;
-	for (int i = 0; i < contours.size() & !r; i++) {
+	for (int i = 0; i < contours.size() && !r; i++) {
 		double res = cv::pointPolygonTest(contours[i] , cv::Point2f(x,y) , true);
 		if(res > 0) {
 			r = true;
