@@ -13,7 +13,7 @@
 //void connect(int, VoronoiPoint, VoronoiPoint, VoronoiResults*, bool, bool, std::vector<GraphEdge>*, std::vector<GraphEdge>*);
 void connect(int, VoronoiPoint, VoronoiResults*, bool, std::vector<GraphEdge>*, int, const std::vector<std::vector<cv::Point>>&);
 void shortestPath(VoronoiPoint, bool, VoronoiPoint, bool, VoronoiResults *, std::vector<VoronoiPoint> *);
-void sampleSegment(VoronoiPoint, VoronoiPoint, std::vector<VoronoiPoint>);
+void sampleSegment(VoronoiPoint, VoronoiPoint, std::vector<VoronoiPoint>&);
 VoronoiPoint midpoint(VoronoiPoint, VoronoiPoint);
 bool edgeOnObstacle(VoronoiPoint, VoronoiPoint, const std::vector<std::vector<cv::Point>>&);
 bool findCollision(double, double, const std::vector<std::vector<cv::Point>>&); 
@@ -255,6 +255,7 @@ void connect(int offset, VoronoiPoint pointP, VoronoiResults *voronoiPaths, bool
 			len=sqrt(pow((x-pointP.a),2)+pow((y-pointP.b),2));
 			if(x!=prev_x || y!=prev_y)
 			{
+				std::cout << "--points (" << x << "," << y << ") and (" << pointP.a << "," << pointP.b << ")" << std::endl;
 				if(!edgeOnObstacle(pointP,VoronoiPoint(x,y),obsContours))
 				{
 					if(y<1000)
@@ -283,9 +284,16 @@ bool edgeOnObstacle(VoronoiPoint a, VoronoiPoint b, const std::vector<std::vecto
 	std::vector<VoronoiPoint> samples;
 	bool isCollision=false;
 	sampleSegment(a, b, samples);
-	for(int i=0; i<samples.size() && !isCollision;i++)
+	std::cout << "------ n samples " << samples.size() << std::endl; 
+	for(int i=0; i<samples.size() && isCollision==false;i++)
+	{
+		std::cout << "------ sample " << i << " coord(" << samples[i].a << "," << samples[i].b << ")" << std::endl; 
 		isCollision=findCollision(samples[i].a, samples[i].b, obsContours);
+	}
+	if(isCollision)
+		std::cout << "BOOOOOOOOOOM " << std::endl; 
 	return isCollision;
+	//return true;
 }
 	
 
@@ -296,9 +304,9 @@ VoronoiPoint midpoint(VoronoiPoint a, VoronoiPoint b)
 	return VoronoiPoint(x,y);	
 }
 
-void sampleSegment(VoronoiPoint a, VoronoiPoint b, std::vector<VoronoiPoint> samples)
+void sampleSegment(VoronoiPoint a, VoronoiPoint b, std::vector<VoronoiPoint>& samples)
 {
-	// order in samples -> A 3 1 5 0 6 2 4 B
+	// order in samples -> A 7 3 9 1 11 5 13 0 14 6 12 2 10 4 8 B
 	VoronoiPoint mid = midpoint(a,b);
 	samples.push_back(mid);
 	mid = midpoint(a,samples[0]);                  
@@ -314,6 +322,26 @@ void sampleSegment(VoronoiPoint a, VoronoiPoint b, std::vector<VoronoiPoint> sam
 	mid = midpoint(samples[0], samples[1]);
 	samples.push_back(mid);
 	mid = midpoint(samples[0], samples[2]);
+	samples.push_back(mid);
+
+	mid = midpoint(a, samples[3]);
+	samples.push_back(mid);
+	mid = midpoint(b, samples[4]);
+	samples.push_back(mid);
+
+	mid = midpoint(samples[3], samples[1]);
+	samples.push_back(mid);
+	mid = midpoint(samples[4], samples[2]);
+	samples.push_back(mid);
+
+	mid = midpoint(samples[1], samples[5]);
+	samples.push_back(mid);
+	mid = midpoint(samples[6], samples[2]);
+	samples.push_back(mid);
+
+	mid = midpoint(samples[0], samples[5]);
+	samples.push_back(mid);
+	mid = midpoint(samples[6], samples[0]);
 	samples.push_back(mid);
 }
 

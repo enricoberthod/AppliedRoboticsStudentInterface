@@ -1,0 +1,4133 @@
+
+RED MASK
+N. contours (Elements): 12
+1) Contour size: 52
+   Approximated contour size: 5
+2) Contour size: 107
+   Approximated contour size: 3
+3) Contour size: 77
+   Approximated contour size: 3
+4) Contour size: 79
+   Approximated contour size: 6
+5) Contour size: 53
+   Approximated contour size: 3
+6) Contour size: 52
+   Approximated contour size: 5
+7) Contour size: 138
+   Approximated contour size: 6
+8) Contour size: 57
+   Approximated contour size: 4
+9) Contour size: 47
+   Approximated contour size: 4
+10) Contour size: 81
+   Approximated contour size: 7
+11) Contour size: 51
+   Approximated contour size: 6
+12) Contour size: 34
+   Approximated contour size: 4
+   Elements: 12
+N. contours: 2
+1) Contour size: 79
+   Approximated contour size: 4
+2) Contour size: 161
+   Elements: 4
+Best fitting template: 1
+   Elements: 1
+Mission -> 1
+clipper1: 12
+clipper2: 12
+clipper3: 1
+clipper4: 12
+obsvertx: 248,326
+obsvertx: 257,320
+obsvertx: 358,313
+obsvertx: 391,322
+obsvertx: 407,333
+obsvertx: 419,320
+obsvertx: 594,312
+obsvertx: 614,330
+obsvertx: 626,318
+obsvertx: 835,318
+obsvertx: 852,334
+obsvertx: 877,319
+obsvertx: 1035,313
+obsvertx: 1085,342
+obsvertx: 1158,481
+obsvertx: 1156,535
+obsvertx: 1077,660
+obsvertx: 1060,670
+obsvertx: 1061,672
+obsvertx: 1042,731
+obsvertx: 954,800
+obsvertx: 888,802
+obsvertx: 853,778
+obsvertx: 809,855
+obsvertx: 692,855
+obsvertx: 618,723
+obsvertx: 593,771
+obsvertx: 478,775
+obsvertx: 455,738
+obsvertx: 346,798
+obsvertx: 291,796
+obsvertx: 202,738
+obsvertx: 118,741
+obsvertx: 108,726
+obsvertx: 32,756
+obsvertx: 0,745
+obsvertx: 0,688
+obsvertx: 0,648
+obsvertx: 0,520
+obsvertx: 0,514
+obsvertx: 0,437
+obsvertx: 0,398
+obsvertx: 0,337
+obsvertx: 0,314
+obsvertx: 70,320
+obsvertx: 72,318
+### contours: 1
+### contours[0] : 47
+hash 47
+bordivertxf: 0.000000,0.000000
+bordivertx: 0,0
+bordivertxf: 1.500000,0.000000
+bordivertx: 1500,0
+bordivertxf: 1.500000,1.000000
+bordivertx: 1500,1000
+bordivertxf: 0.000000,1.000000
+bordivertx: 0,1000
+size: 51size2: 51pippo c'è 
+Traversing Voronoi graph.
+pippo c'è 
+Number of visited primary edges using vertex iterator: 338
+before points size: 293 
+before edge size: 292 
+edgesAfterVoronoi: 292
+pointsAfterVoronoi: 293
+x: 21, 337
+x: 21, 337
+x: 31, 722
+x: 31, 722
+x: 31, 722
+x: 67, 313
+x: 67, 313
+x: 75, 325
+x: 75, 325
+x: -43, 872
+x: 54, 688
+x: 54, 688
+x: -8, 874
+x: -8, 874
+x: 99, 753
+x: 99, 753
+x: 60, 258
+x: 60, 258
+x: 60, 258
+x: 0, 875
+x: 0, 875
+x: 64, 384
+x: 64, 384
+x: 68, 249
+x: 68, 249
+x: 78, 398
+x: 78, 398
+x: 78, 652
+x: 78, 652
+x: 82, 648
+x: 82, 648
+x: 134, 708
+x: 134, 708
+x: 93, 410
+x: 93, 410
+x: 93, 410
+x: 78, 873
+x: 78, 873
+x: 98, 869
+x: 98, 869
+x: 98, 869
+x: 121, 437
+x: 121, 437
+x: 122, 870
+x: 122, 870
+x: 249, 309
+x: 249, 309
+x: 211, 362
+x: 211, 362
+x: 254, 289
+x: 254, 289
+x: 256, 285
+x: 256, 285
+x: 165, 869
+x: 165, 869
+x: 165, 869
+x: 270, 359
+x: 270, 359
+x: 156, 156
+x: 156, 156
+x: 156, 156
+x: 230, 888
+x: 230, 888
+x: 173, 565
+x: 173, 565
+x: 173, 565
+x: 180, 493
+x: 180, 493
+x: 180, 493
+x: 224, 155
+x: 224, 155
+x: 287, 897
+x: 287, 897
+x: 195, 543
+x: 195, 543
+x: 195, 514
+x: 195, 514
+x: 199, 520
+x: 199, 520
+x: 207, 530
+x: 207, 530
+x: 207, 530
+x: 322, 697
+x: 322, 697
+x: 322, 697
+x: 403, 306
+x: 403, 306
+x: 403, 303
+x: 403, 303
+x: 281, 158
+x: 281, 158
+x: 281, 158
+x: 342, 898
+x: 342, 898
+x: 402, 281
+x: 402, 281
+x: 347, 414
+x: 347, 414
+x: 347, 414
+x: 346, 421
+x: 346, 421
+x: 438, 362
+x: 438, 362
+x: 438, 799
+x: 438, 799
+x: 347, 156
+x: 347, 156
+x: 397, 892
+x: 397, 892
+x: 311, 541
+x: 311, 541
+x: 311, 541
+x: 320, 543
+x: 320, 543
+x: 320, 543
+x: 433, 883
+x: 433, 883
+x: 433, 883
+x: 326, 546
+x: 326, 546
+x: 327, 547
+x: 327, 547
+x: 327, 547
+x: 399, 159
+x: 399, 159
+x: 406, 160
+x: 406, 160
+x: 406, 160
+x: 348, 545
+x: 348, 545
+x: 411, 160
+x: 411, 160
+x: 518, 698
+x: 518, 698
+x: 481, 887
+x: 481, 887
+x: 535, 680
+x: 535, 680
+x: 613, 305
+x: 613, 305
+x: 531, 672
+x: 531, 672
+x: 531, 672
+x: 570, 378
+x: 570, 378
+x: 614, 288
+x: 614, 288
+x: 618, 784
+x: 618, 784
+x: 595, 854
+x: 595, 854
+x: 642, 358
+x: 642, 358
+x: 578, 885
+x: 578, 885
+x: 578, 885
+x: 487, 528
+x: 487, 528
+x: 487, 528
+x: 607, 902
+x: 607, 902
+x: 626, 229
+x: 626, 229
+x: 518, 531
+x: 518, 531
+x: 518, 531
+x: 586, 156
+x: 586, 156
+x: 535, 527
+x: 535, 527
+x: 535, 527
+x: 692, 927
+x: 692, 927
+x: 637, 159
+x: 637, 159
+x: 637, 159
+x: 750, 754
+x: 750, 754
+x: 750, 754
+x: 750, 719
+x: 750, 719
+x: 811, 376
+x: 811, 376
+x: 809, 927
+x: 809, 927
+x: 856, 295
+x: 856, 295
+x: 683, 525
+x: 683, 525
+x: 683, 525
+x: 856, 285
+x: 856, 285
+x: 865, 834
+x: 865, 834
+x: 760, 643
+x: 760, 643
+x: 890, 890
+x: 890, 890
+x: 893, 903
+x: 893, 903
+x: 835, 159
+x: 835, 159
+x: 896, 900
+x: 896, 900
+x: 896, 900
+x: 767, 548
+x: 767, 548
+x: 767, 548
+x: 780, 556
+x: 780, 556
+x: 780, 556
+x: 917, 700
+x: 917, 700
+x: 917, 700
+x: 859, 159
+x: 859, 159
+x: 859, 159
+x: 910, 431
+x: 910, 431
+x: 870, 159
+x: 870, 159
+x: 917, 684
+x: 917, 684
+x: 957, 899
+x: 957, 899
+x: 1055, 672
+x: 1055, 672
+x: 922, 647
+x: 922, 647
+x: 922, 647
+x: 914, 642
+x: 914, 642
+x: 914, 642
+x: 1063, 670
+x: 1063, 670
+x: 1069, 674
+x: 1069, 674
+x: 868, 555
+x: 868, 555
+x: 868, 555
+x: 1018, 599
+x: 1018, 599
+x: 1009, 414
+x: 1009, 414
+x: 1009, 414
+x: 930, 517
+x: 930, 517
+x: 930, 517
+x: 932, 516
+x: 932, 516
+x: 932, 516
+x: 1023, 888
+x: 1023, 888
+x: 959, 500
+x: 959, 500
+x: 959, 500
+x: 1100, 699
+x: 1100, 699
+x: 1056, 504
+x: 1056, 504
+x: 1056, 504
+x: 1029, 156
+x: 1029, 156
+x: 1134, 849
+x: 1134, 849
+x: 1119, 167
+x: 1119, 167
+x: 1177, 183
+x: 1177, 183
+x: 1237, 794
+x: 1237, 794
+x: 1247, 787
+x: 1247, 787
+x: 1247, 787
+x: 1264, 778
+x: 1264, 778
+x: 1275, 224
+x: 1275, 224
+x: 1275, 224
+x: 1279, 239
+x: 1279, 239
+x: 1318, 396
+x: 1318, 396
+x: 1328, 487
+x: 1328, 487
+x: 1327, 541
+x: 1327, 541
+x: 1313, 634
+x: 1313, 634
+x: 1273, 773
+x: 1273, 773
+x: 1273, 773
+x: 1313, 634
+NUMERO VITTIMA = 1
+netVertex 562,396 4
+--points (570,378) and (562,396)
+------ n samples 15
+------ sample 0 coord(566,387)
+BOOOOOOOOOOM 
+--points (613,305) and (562,296)
+------ n samples 15
+------ sample 0 coord(587,300)
+------ sample 1 coord(574,298)
+------ sample 2 coord(600,302)
+------ sample 3 coord(568,297)
+------ sample 4 coord(606,303)
+------ sample 5 coord(580,299)
+------ sample 6 coord(593,301)
+------ sample 7 coord(565,296)
+------ sample 8 coord(609,304)
+------ sample 9 coord(571,297)
+------ sample 10 coord(603,302)
+------ sample 11 coord(577,298)
+------ sample 12 coord(596,301)
+------ sample 13 coord(583,299)
+------ sample 14 coord(590,300)
+longId 613305
+id1 86
+--points (614,288) and (562,296)
+------ n samples 15
+------ sample 0 coord(588,292)
+------ sample 1 coord(575,294)
+------ sample 2 coord(601,290)
+------ sample 3 coord(568,295)
+------ sample 4 coord(607,289)
+------ sample 5 coord(581,293)
+------ sample 6 coord(594,291)
+------ sample 7 coord(565,295)
+------ sample 8 coord(610,288)
+------ sample 9 coord(571,294)
+------ sample 10 coord(604,289)
+------ sample 11 coord(578,293)
+------ sample 12 coord(597,290)
+------ sample 13 coord(584,292)
+------ sample 14 coord(591,291)
+longId 614288
+id1 87
+--points (613,305) and (562,296)
+------ n samples 15
+------ sample 0 coord(587,300)
+------ sample 1 coord(574,298)
+------ sample 2 coord(600,302)
+------ sample 3 coord(568,297)
+------ sample 4 coord(606,303)
+------ sample 5 coord(580,299)
+------ sample 6 coord(593,301)
+------ sample 7 coord(565,296)
+------ sample 8 coord(609,304)
+------ sample 9 coord(571,297)
+------ sample 10 coord(603,302)
+------ sample 11 coord(577,298)
+------ sample 12 coord(596,301)
+------ sample 13 coord(583,299)
+------ sample 14 coord(590,300)
+longId 613305
+id1 86
+--points (614,288) and (562,296)
+------ n samples 15
+------ sample 0 coord(588,292)
+------ sample 1 coord(575,294)
+------ sample 2 coord(601,290)
+------ sample 3 coord(568,295)
+------ sample 4 coord(607,289)
+------ sample 5 coord(581,293)
+------ sample 6 coord(594,291)
+------ sample 7 coord(565,295)
+------ sample 8 coord(610,288)
+------ sample 9 coord(571,294)
+------ sample 10 coord(604,289)
+------ sample 11 coord(578,293)
+------ sample 12 coord(597,290)
+------ sample 13 coord(584,292)
+------ sample 14 coord(591,291)
+longId 614288
+id1 87
+--points (626,229) and (562,296)
+------ n samples 15
+------ sample 0 coord(594,262)
+------ sample 1 coord(578,279)
+------ sample 2 coord(610,245)
+------ sample 3 coord(570,287)
+------ sample 4 coord(618,237)
+------ sample 5 coord(586,270)
+------ sample 6 coord(602,253)
+------ sample 7 coord(566,291)
+------ sample 8 coord(622,233)
+------ sample 9 coord(574,283)
+------ sample 10 coord(614,241)
+------ sample 11 coord(582,274)
+------ sample 12 coord(606,249)
+------ sample 13 coord(590,266)
+------ sample 14 coord(598,257)
+longId 626229
+id1 93
+--points (613,305) and (562,296)
+------ n samples 15
+------ sample 0 coord(587,300)
+------ sample 1 coord(574,298)
+------ sample 2 coord(600,302)
+------ sample 3 coord(568,297)
+------ sample 4 coord(606,303)
+------ sample 5 coord(580,299)
+------ sample 6 coord(593,301)
+------ sample 7 coord(565,296)
+------ sample 8 coord(609,304)
+------ sample 9 coord(571,297)
+------ sample 10 coord(603,302)
+------ sample 11 coord(577,298)
+------ sample 12 coord(596,301)
+------ sample 13 coord(583,299)
+------ sample 14 coord(590,300)
+longId 613305
+id1 86
+--points (613,305) and (562,296)
+------ n samples 15
+------ sample 0 coord(587,300)
+------ sample 1 coord(574,298)
+------ sample 2 coord(600,302)
+------ sample 3 coord(568,297)
+------ sample 4 coord(606,303)
+------ sample 5 coord(580,299)
+------ sample 6 coord(593,301)
+------ sample 7 coord(565,296)
+------ sample 8 coord(609,304)
+------ sample 9 coord(571,297)
+------ sample 10 coord(603,302)
+------ sample 11 coord(577,298)
+------ sample 12 coord(596,301)
+------ sample 13 coord(583,299)
+------ sample 14 coord(590,300)
+longId 613305
+id1 86
+--points (614,288) and (562,296)
+------ n samples 15
+------ sample 0 coord(588,292)
+------ sample 1 coord(575,294)
+------ sample 2 coord(601,290)
+------ sample 3 coord(568,295)
+------ sample 4 coord(607,289)
+------ sample 5 coord(581,293)
+------ sample 6 coord(594,291)
+------ sample 7 coord(565,295)
+------ sample 8 coord(610,288)
+------ sample 9 coord(571,294)
+------ sample 10 coord(604,289)
+------ sample 11 coord(578,293)
+------ sample 12 coord(597,290)
+------ sample 13 coord(584,292)
+------ sample 14 coord(591,291)
+longId 614288
+id1 87
+--points (626,229) and (562,296)
+------ n samples 15
+------ sample 0 coord(594,262)
+------ sample 1 coord(578,279)
+------ sample 2 coord(610,245)
+------ sample 3 coord(570,287)
+------ sample 4 coord(618,237)
+------ sample 5 coord(586,270)
+------ sample 6 coord(602,253)
+------ sample 7 coord(566,291)
+------ sample 8 coord(622,233)
+------ sample 9 coord(574,283)
+------ sample 10 coord(614,241)
+------ sample 11 coord(582,274)
+------ sample 12 coord(606,249)
+------ sample 13 coord(590,266)
+------ sample 14 coord(598,257)
+longId 626229
+id1 93
+--points (613,305) and (562,296)
+------ n samples 15
+------ sample 0 coord(587,300)
+------ sample 1 coord(574,298)
+------ sample 2 coord(600,302)
+------ sample 3 coord(568,297)
+------ sample 4 coord(606,303)
+------ sample 5 coord(580,299)
+------ sample 6 coord(593,301)
+------ sample 7 coord(565,296)
+------ sample 8 coord(609,304)
+------ sample 9 coord(571,297)
+------ sample 10 coord(603,302)
+------ sample 11 coord(577,298)
+------ sample 12 coord(596,301)
+------ sample 13 coord(583,299)
+------ sample 14 coord(590,300)
+longId 613305
+id1 86
+--points (613,305) and (562,296)
+------ n samples 15
+------ sample 0 coord(587,300)
+------ sample 1 coord(574,298)
+------ sample 2 coord(600,302)
+------ sample 3 coord(568,297)
+------ sample 4 coord(606,303)
+------ sample 5 coord(580,299)
+------ sample 6 coord(593,301)
+------ sample 7 coord(565,296)
+------ sample 8 coord(609,304)
+------ sample 9 coord(571,297)
+------ sample 10 coord(603,302)
+------ sample 11 coord(577,298)
+------ sample 12 coord(596,301)
+------ sample 13 coord(583,299)
+------ sample 14 coord(590,300)
+longId 613305
+id1 86
+--points (570,378) and (562,296)
+------ n samples 15
+------ sample 0 coord(566,337)
+BOOOOOOOOOOM 
+--points (614,288) and (562,296)
+------ n samples 15
+------ sample 0 coord(588,292)
+------ sample 1 coord(575,294)
+------ sample 2 coord(601,290)
+------ sample 3 coord(568,295)
+------ sample 4 coord(607,289)
+------ sample 5 coord(581,293)
+------ sample 6 coord(594,291)
+------ sample 7 coord(565,295)
+------ sample 8 coord(610,288)
+------ sample 9 coord(571,294)
+------ sample 10 coord(604,289)
+------ sample 11 coord(578,293)
+------ sample 12 coord(597,290)
+------ sample 13 coord(584,292)
+------ sample 14 coord(591,291)
+longId 614288
+id1 87
+--points (642,358) and (562,296)
+------ n samples 15
+------ sample 0 coord(602,327)
+BOOOOOOOOOOM 
+--points (626,229) and (562,296)
+------ n samples 15
+------ sample 0 coord(594,262)
+------ sample 1 coord(578,279)
+------ sample 2 coord(610,245)
+------ sample 3 coord(570,287)
+------ sample 4 coord(618,237)
+------ sample 5 coord(586,270)
+------ sample 6 coord(602,253)
+------ sample 7 coord(566,291)
+------ sample 8 coord(622,233)
+------ sample 9 coord(574,283)
+------ sample 10 coord(614,241)
+------ sample 11 coord(582,274)
+------ sample 12 coord(606,249)
+------ sample 13 coord(590,266)
+------ sample 14 coord(598,257)
+longId 626229
+id1 93
+--points (613,305) and (562,296)
+------ n samples 15
+------ sample 0 coord(587,300)
+------ sample 1 coord(574,298)
+------ sample 2 coord(600,302)
+------ sample 3 coord(568,297)
+------ sample 4 coord(606,303)
+------ sample 5 coord(580,299)
+------ sample 6 coord(593,301)
+------ sample 7 coord(565,296)
+------ sample 8 coord(609,304)
+------ sample 9 coord(571,297)
+------ sample 10 coord(603,302)
+------ sample 11 coord(577,298)
+------ sample 12 coord(596,301)
+------ sample 13 coord(583,299)
+------ sample 14 coord(590,300)
+longId 613305
+id1 86
+--points (613,305) and (562,296)
+------ n samples 15
+------ sample 0 coord(587,300)
+------ sample 1 coord(574,298)
+------ sample 2 coord(600,302)
+------ sample 3 coord(568,297)
+------ sample 4 coord(606,303)
+------ sample 5 coord(580,299)
+------ sample 6 coord(593,301)
+------ sample 7 coord(565,296)
+------ sample 8 coord(609,304)
+------ sample 9 coord(571,297)
+------ sample 10 coord(603,302)
+------ sample 11 coord(577,298)
+------ sample 12 coord(596,301)
+------ sample 13 coord(583,299)
+------ sample 14 coord(590,300)
+longId 613305
+id1 86
+--points (570,378) and (562,296)
+------ n samples 15
+------ sample 0 coord(566,337)
+BOOOOOOOOOOM 
+--points (614,288) and (562,296)
+------ n samples 15
+------ sample 0 coord(588,292)
+------ sample 1 coord(575,294)
+------ sample 2 coord(601,290)
+------ sample 3 coord(568,295)
+------ sample 4 coord(607,289)
+------ sample 5 coord(581,293)
+------ sample 6 coord(594,291)
+------ sample 7 coord(565,295)
+------ sample 8 coord(610,288)
+------ sample 9 coord(571,294)
+------ sample 10 coord(604,289)
+------ sample 11 coord(578,293)
+------ sample 12 coord(597,290)
+------ sample 13 coord(584,292)
+------ sample 14 coord(591,291)
+longId 614288
+id1 87
+--points (642,358) and (562,296)
+------ n samples 15
+------ sample 0 coord(602,327)
+BOOOOOOOOOOM 
+--points (626,229) and (562,296)
+------ n samples 15
+------ sample 0 coord(594,262)
+------ sample 1 coord(578,279)
+------ sample 2 coord(610,245)
+------ sample 3 coord(570,287)
+------ sample 4 coord(618,237)
+------ sample 5 coord(586,270)
+------ sample 6 coord(602,253)
+------ sample 7 coord(566,291)
+------ sample 8 coord(622,233)
+------ sample 9 coord(574,283)
+------ sample 10 coord(614,241)
+------ sample 11 coord(582,274)
+------ sample 12 coord(606,249)
+------ sample 13 coord(590,266)
+------ sample 14 coord(598,257)
+longId 626229
+id1 93
+--points (613,305) and (562,296)
+------ n samples 15
+------ sample 0 coord(587,300)
+------ sample 1 coord(574,298)
+------ sample 2 coord(600,302)
+------ sample 3 coord(568,297)
+------ sample 4 coord(606,303)
+------ sample 5 coord(580,299)
+------ sample 6 coord(593,301)
+------ sample 7 coord(565,296)
+------ sample 8 coord(609,304)
+------ sample 9 coord(571,297)
+------ sample 10 coord(603,302)
+------ sample 11 coord(577,298)
+------ sample 12 coord(596,301)
+------ sample 13 coord(583,299)
+------ sample 14 coord(590,300)
+longId 613305
+id1 86
+--points (613,305) and (562,296)
+------ n samples 15
+------ sample 0 coord(587,300)
+------ sample 1 coord(574,298)
+------ sample 2 coord(600,302)
+------ sample 3 coord(568,297)
+------ sample 4 coord(606,303)
+------ sample 5 coord(580,299)
+------ sample 6 coord(593,301)
+------ sample 7 coord(565,296)
+------ sample 8 coord(609,304)
+------ sample 9 coord(571,297)
+------ sample 10 coord(603,302)
+------ sample 11 coord(577,298)
+------ sample 12 coord(596,301)
+------ sample 13 coord(583,299)
+------ sample 14 coord(590,300)
+longId 613305
+id1 86
+--points (570,378) and (562,296)
+------ n samples 15
+------ sample 0 coord(566,337)
+BOOOOOOOOOOM 
+--points (614,288) and (562,296)
+------ n samples 15
+------ sample 0 coord(588,292)
+------ sample 1 coord(575,294)
+------ sample 2 coord(601,290)
+------ sample 3 coord(568,295)
+------ sample 4 coord(607,289)
+------ sample 5 coord(581,293)
+------ sample 6 coord(594,291)
+------ sample 7 coord(565,295)
+------ sample 8 coord(610,288)
+------ sample 9 coord(571,294)
+------ sample 10 coord(604,289)
+------ sample 11 coord(578,293)
+------ sample 12 coord(597,290)
+------ sample 13 coord(584,292)
+------ sample 14 coord(591,291)
+longId 614288
+id1 87
+--points (642,358) and (562,296)
+------ n samples 15
+------ sample 0 coord(602,327)
+BOOOOOOOOOOM 
+--points (626,229) and (562,296)
+------ n samples 15
+------ sample 0 coord(594,262)
+------ sample 1 coord(578,279)
+------ sample 2 coord(610,245)
+------ sample 3 coord(570,287)
+------ sample 4 coord(618,237)
+------ sample 5 coord(586,270)
+------ sample 6 coord(602,253)
+------ sample 7 coord(566,291)
+------ sample 8 coord(622,233)
+------ sample 9 coord(574,283)
+------ sample 10 coord(614,241)
+------ sample 11 coord(582,274)
+------ sample 12 coord(606,249)
+------ sample 13 coord(590,266)
+------ sample 14 coord(598,257)
+longId 626229
+id1 93
+--points (613,305) and (562,296)
+------ n samples 15
+------ sample 0 coord(587,300)
+------ sample 1 coord(574,298)
+------ sample 2 coord(600,302)
+------ sample 3 coord(568,297)
+------ sample 4 coord(606,303)
+------ sample 5 coord(580,299)
+------ sample 6 coord(593,301)
+------ sample 7 coord(565,296)
+------ sample 8 coord(609,304)
+------ sample 9 coord(571,297)
+------ sample 10 coord(603,302)
+------ sample 11 coord(577,298)
+------ sample 12 coord(596,301)
+------ sample 13 coord(583,299)
+------ sample 14 coord(590,300)
+longId 613305
+id1 86
+--points (613,305) and (562,296)
+------ n samples 15
+------ sample 0 coord(587,300)
+------ sample 1 coord(574,298)
+------ sample 2 coord(600,302)
+------ sample 3 coord(568,297)
+------ sample 4 coord(606,303)
+------ sample 5 coord(580,299)
+------ sample 6 coord(593,301)
+------ sample 7 coord(565,296)
+------ sample 8 coord(609,304)
+------ sample 9 coord(571,297)
+------ sample 10 coord(603,302)
+------ sample 11 coord(577,298)
+------ sample 12 coord(596,301)
+------ sample 13 coord(583,299)
+------ sample 14 coord(590,300)
+longId 613305
+id1 86
+--points (570,378) and (562,296)
+------ n samples 15
+------ sample 0 coord(566,337)
+BOOOOOOOOOOM 
+--points (614,288) and (562,296)
+------ n samples 15
+------ sample 0 coord(588,292)
+------ sample 1 coord(575,294)
+------ sample 2 coord(601,290)
+------ sample 3 coord(568,295)
+------ sample 4 coord(607,289)
+------ sample 5 coord(581,293)
+------ sample 6 coord(594,291)
+------ sample 7 coord(565,295)
+------ sample 8 coord(610,288)
+------ sample 9 coord(571,294)
+------ sample 10 coord(604,289)
+------ sample 11 coord(578,293)
+------ sample 12 coord(597,290)
+------ sample 13 coord(584,292)
+------ sample 14 coord(591,291)
+longId 614288
+id1 87
+--points (642,358) and (562,296)
+------ n samples 15
+------ sample 0 coord(602,327)
+BOOOOOOOOOOM 
+--points (626,229) and (562,296)
+------ n samples 15
+------ sample 0 coord(594,262)
+------ sample 1 coord(578,279)
+------ sample 2 coord(610,245)
+------ sample 3 coord(570,287)
+------ sample 4 coord(618,237)
+------ sample 5 coord(586,270)
+------ sample 6 coord(602,253)
+------ sample 7 coord(566,291)
+------ sample 8 coord(622,233)
+------ sample 9 coord(574,283)
+------ sample 10 coord(614,241)
+------ sample 11 coord(582,274)
+------ sample 12 coord(606,249)
+------ sample 13 coord(590,266)
+------ sample 14 coord(598,257)
+longId 626229
+id1 93
+--points (613,305) and (562,296)
+------ n samples 15
+------ sample 0 coord(587,300)
+------ sample 1 coord(574,298)
+------ sample 2 coord(600,302)
+------ sample 3 coord(568,297)
+------ sample 4 coord(606,303)
+------ sample 5 coord(580,299)
+------ sample 6 coord(593,301)
+------ sample 7 coord(565,296)
+------ sample 8 coord(609,304)
+------ sample 9 coord(571,297)
+------ sample 10 coord(603,302)
+------ sample 11 coord(577,298)
+------ sample 12 coord(596,301)
+------ sample 13 coord(583,299)
+------ sample 14 coord(590,300)
+longId 613305
+id1 86
+--points (438,362) and (562,296)
+------ n samples 15
+------ sample 0 coord(500,329)
+BOOOOOOOOOOM 
+--points (613,305) and (562,296)
+------ n samples 15
+------ sample 0 coord(587,300)
+------ sample 1 coord(574,298)
+------ sample 2 coord(600,302)
+------ sample 3 coord(568,297)
+------ sample 4 coord(606,303)
+------ sample 5 coord(580,299)
+------ sample 6 coord(593,301)
+------ sample 7 coord(565,296)
+------ sample 8 coord(609,304)
+------ sample 9 coord(571,297)
+------ sample 10 coord(603,302)
+------ sample 11 coord(577,298)
+------ sample 12 coord(596,301)
+------ sample 13 coord(583,299)
+------ sample 14 coord(590,300)
+longId 613305
+id1 86
+--points (570,378) and (562,296)
+------ n samples 15
+------ sample 0 coord(566,337)
+BOOOOOOOOOOM 
+--points (614,288) and (562,296)
+------ n samples 15
+------ sample 0 coord(588,292)
+------ sample 1 coord(575,294)
+------ sample 2 coord(601,290)
+------ sample 3 coord(568,295)
+------ sample 4 coord(607,289)
+------ sample 5 coord(581,293)
+------ sample 6 coord(594,291)
+------ sample 7 coord(565,295)
+------ sample 8 coord(610,288)
+------ sample 9 coord(571,294)
+------ sample 10 coord(604,289)
+------ sample 11 coord(578,293)
+------ sample 12 coord(597,290)
+------ sample 13 coord(584,292)
+------ sample 14 coord(591,291)
+longId 614288
+id1 87
+--points (642,358) and (562,296)
+------ n samples 15
+------ sample 0 coord(602,327)
+BOOOOOOOOOOM 
+--points (626,229) and (562,296)
+------ n samples 15
+------ sample 0 coord(594,262)
+------ sample 1 coord(578,279)
+------ sample 2 coord(610,245)
+------ sample 3 coord(570,287)
+------ sample 4 coord(618,237)
+------ sample 5 coord(586,270)
+------ sample 6 coord(602,253)
+------ sample 7 coord(566,291)
+------ sample 8 coord(622,233)
+------ sample 9 coord(574,283)
+------ sample 10 coord(614,241)
+------ sample 11 coord(582,274)
+------ sample 12 coord(606,249)
+------ sample 13 coord(590,266)
+------ sample 14 coord(598,257)
+longId 626229
+id1 93
+--points (613,305) and (562,296)
+------ n samples 15
+------ sample 0 coord(587,300)
+------ sample 1 coord(574,298)
+------ sample 2 coord(600,302)
+------ sample 3 coord(568,297)
+------ sample 4 coord(606,303)
+------ sample 5 coord(580,299)
+------ sample 6 coord(593,301)
+------ sample 7 coord(565,296)
+------ sample 8 coord(609,304)
+------ sample 9 coord(571,297)
+------ sample 10 coord(603,302)
+------ sample 11 coord(577,298)
+------ sample 12 coord(596,301)
+------ sample 13 coord(583,299)
+------ sample 14 coord(590,300)
+longId 613305
+id1 86
+--points (438,362) and (562,296)
+------ n samples 15
+------ sample 0 coord(500,329)
+BOOOOOOOOOOM 
+--points (613,305) and (562,296)
+------ n samples 15
+------ sample 0 coord(587,300)
+------ sample 1 coord(574,298)
+------ sample 2 coord(600,302)
+------ sample 3 coord(568,297)
+------ sample 4 coord(606,303)
+------ sample 5 coord(580,299)
+------ sample 6 coord(593,301)
+------ sample 7 coord(565,296)
+------ sample 8 coord(609,304)
+------ sample 9 coord(571,297)
+------ sample 10 coord(603,302)
+------ sample 11 coord(577,298)
+------ sample 12 coord(596,301)
+------ sample 13 coord(583,299)
+------ sample 14 coord(590,300)
+longId 613305
+id1 86
+--points (570,378) and (562,296)
+------ n samples 15
+------ sample 0 coord(566,337)
+BOOOOOOOOOOM 
+--points (614,288) and (562,296)
+------ n samples 15
+------ sample 0 coord(588,292)
+------ sample 1 coord(575,294)
+------ sample 2 coord(601,290)
+------ sample 3 coord(568,295)
+------ sample 4 coord(607,289)
+------ sample 5 coord(581,293)
+------ sample 6 coord(594,291)
+------ sample 7 coord(565,295)
+------ sample 8 coord(610,288)
+------ sample 9 coord(571,294)
+------ sample 10 coord(604,289)
+------ sample 11 coord(578,293)
+------ sample 12 coord(597,290)
+------ sample 13 coord(584,292)
+------ sample 14 coord(591,291)
+longId 614288
+id1 87
+--points (642,358) and (562,296)
+------ n samples 15
+------ sample 0 coord(602,327)
+BOOOOOOOOOOM 
+--points (626,229) and (562,296)
+------ n samples 15
+------ sample 0 coord(594,262)
+------ sample 1 coord(578,279)
+------ sample 2 coord(610,245)
+------ sample 3 coord(570,287)
+------ sample 4 coord(618,237)
+------ sample 5 coord(586,270)
+------ sample 6 coord(602,253)
+------ sample 7 coord(566,291)
+------ sample 8 coord(622,233)
+------ sample 9 coord(574,283)
+------ sample 10 coord(614,241)
+------ sample 11 coord(582,274)
+------ sample 12 coord(606,249)
+------ sample 13 coord(590,266)
+------ sample 14 coord(598,257)
+longId 626229
+id1 93
+--points (637,159) and (562,296)
+------ n samples 15
+------ sample 0 coord(599,227)
+------ sample 1 coord(580,261)
+------ sample 2 coord(618,193)
+------ sample 3 coord(571,278)
+------ sample 4 coord(627,176)
+------ sample 5 coord(589,244)
+------ sample 6 coord(608,210)
+------ sample 7 coord(566,287)
+------ sample 8 coord(632,167)
+------ sample 9 coord(575,269)
+------ sample 10 coord(622,184)
+------ sample 11 coord(584,252)
+------ sample 12 coord(613,201)
+------ sample 13 coord(594,235)
+------ sample 14 coord(603,218)
+longId 637159
+id1 102
+--points (613,305) and (562,296)
+------ n samples 15
+------ sample 0 coord(587,300)
+------ sample 1 coord(574,298)
+------ sample 2 coord(600,302)
+------ sample 3 coord(568,297)
+------ sample 4 coord(606,303)
+------ sample 5 coord(580,299)
+------ sample 6 coord(593,301)
+------ sample 7 coord(565,296)
+------ sample 8 coord(609,304)
+------ sample 9 coord(571,297)
+------ sample 10 coord(603,302)
+------ sample 11 coord(577,298)
+------ sample 12 coord(596,301)
+------ sample 13 coord(583,299)
+------ sample 14 coord(590,300)
+longId 613305
+id1 86
+--points (438,362) and (562,296)
+------ n samples 15
+------ sample 0 coord(500,329)
+BOOOOOOOOOOM 
+--points (613,305) and (562,296)
+------ n samples 15
+------ sample 0 coord(587,300)
+------ sample 1 coord(574,298)
+------ sample 2 coord(600,302)
+------ sample 3 coord(568,297)
+------ sample 4 coord(606,303)
+------ sample 5 coord(580,299)
+------ sample 6 coord(593,301)
+------ sample 7 coord(565,296)
+------ sample 8 coord(609,304)
+------ sample 9 coord(571,297)
+------ sample 10 coord(603,302)
+------ sample 11 coord(577,298)
+------ sample 12 coord(596,301)
+------ sample 13 coord(583,299)
+------ sample 14 coord(590,300)
+longId 613305
+id1 86
+--points (570,378) and (562,296)
+------ n samples 15
+------ sample 0 coord(566,337)
+BOOOOOOOOOOM 
+--points (614,288) and (562,296)
+------ n samples 15
+------ sample 0 coord(588,292)
+------ sample 1 coord(575,294)
+------ sample 2 coord(601,290)
+------ sample 3 coord(568,295)
+------ sample 4 coord(607,289)
+------ sample 5 coord(581,293)
+------ sample 6 coord(594,291)
+------ sample 7 coord(565,295)
+------ sample 8 coord(610,288)
+------ sample 9 coord(571,294)
+------ sample 10 coord(604,289)
+------ sample 11 coord(578,293)
+------ sample 12 coord(597,290)
+------ sample 13 coord(584,292)
+------ sample 14 coord(591,291)
+longId 614288
+id1 87
+--points (642,358) and (562,296)
+------ n samples 15
+------ sample 0 coord(602,327)
+BOOOOOOOOOOM 
+--points (626,229) and (562,296)
+------ n samples 15
+------ sample 0 coord(594,262)
+------ sample 1 coord(578,279)
+------ sample 2 coord(610,245)
+------ sample 3 coord(570,287)
+------ sample 4 coord(618,237)
+------ sample 5 coord(586,270)
+------ sample 6 coord(602,253)
+------ sample 7 coord(566,291)
+------ sample 8 coord(622,233)
+------ sample 9 coord(574,283)
+------ sample 10 coord(614,241)
+------ sample 11 coord(582,274)
+------ sample 12 coord(606,249)
+------ sample 13 coord(590,266)
+------ sample 14 coord(598,257)
+longId 626229
+id1 93
+--points (586,156) and (562,296)
+------ n samples 15
+------ sample 0 coord(574,226)
+------ sample 1 coord(568,261)
+------ sample 2 coord(580,191)
+------ sample 3 coord(565,278)
+------ sample 4 coord(583,173)
+------ sample 5 coord(571,243)
+------ sample 6 coord(577,208)
+------ sample 7 coord(563,287)
+------ sample 8 coord(584,164)
+------ sample 9 coord(566,269)
+------ sample 10 coord(581,182)
+------ sample 11 coord(569,252)
+------ sample 12 coord(578,199)
+------ sample 13 coord(572,234)
+------ sample 14 coord(575,217)
+longId 586156
+id1 79
+--points (637,159) and (562,296)
+------ n samples 15
+------ sample 0 coord(599,227)
+------ sample 1 coord(580,261)
+------ sample 2 coord(618,193)
+------ sample 3 coord(571,278)
+------ sample 4 coord(627,176)
+------ sample 5 coord(589,244)
+------ sample 6 coord(608,210)
+------ sample 7 coord(566,287)
+------ sample 8 coord(632,167)
+------ sample 9 coord(575,269)
+------ sample 10 coord(622,184)
+------ sample 11 coord(584,252)
+------ sample 12 coord(613,201)
+------ sample 13 coord(594,235)
+------ sample 14 coord(603,218)
+longId 637159
+id1 102
+--points (613,305) and (562,296)
+------ n samples 15
+------ sample 0 coord(587,300)
+------ sample 1 coord(574,298)
+------ sample 2 coord(600,302)
+------ sample 3 coord(568,297)
+------ sample 4 coord(606,303)
+------ sample 5 coord(580,299)
+------ sample 6 coord(593,301)
+------ sample 7 coord(565,296)
+------ sample 8 coord(609,304)
+------ sample 9 coord(571,297)
+------ sample 10 coord(603,302)
+------ sample 11 coord(577,298)
+------ sample 12 coord(596,301)
+------ sample 13 coord(583,299)
+------ sample 14 coord(590,300)
+longId 613305
+id1 86
+netVertex 562,196 4
+--points (613,305) and (562,196)
+------ n samples 15
+------ sample 0 coord(587,250)
+------ sample 1 coord(574,223)
+------ sample 2 coord(600,277)
+------ sample 3 coord(568,209)
+------ sample 4 coord(606,291)
+------ sample 5 coord(580,236)
+------ sample 6 coord(593,263)
+------ sample 7 coord(565,202)
+------ sample 8 coord(609,298)
+------ sample 9 coord(571,216)
+------ sample 10 coord(603,284)
+------ sample 11 coord(577,229)
+------ sample 12 coord(596,270)
+------ sample 13 coord(583,243)
+------ sample 14 coord(590,256)
+longId 613305
+id1 86
+--points (614,288) and (562,196)
+------ n samples 15
+------ sample 0 coord(588,242)
+------ sample 1 coord(575,219)
+------ sample 2 coord(601,265)
+------ sample 3 coord(568,207)
+------ sample 4 coord(607,276)
+------ sample 5 coord(581,230)
+------ sample 6 coord(594,253)
+------ sample 7 coord(565,201)
+------ sample 8 coord(610,282)
+------ sample 9 coord(571,213)
+------ sample 10 coord(604,270)
+------ sample 11 coord(578,224)
+------ sample 12 coord(597,259)
+------ sample 13 coord(584,236)
+------ sample 14 coord(591,247)
+longId 614288
+id1 87
+--points (626,229) and (562,196)
+------ n samples 15
+------ sample 0 coord(594,212)
+------ sample 1 coord(578,204)
+------ sample 2 coord(610,220)
+------ sample 3 coord(570,200)
+------ sample 4 coord(618,224)
+------ sample 5 coord(586,208)
+------ sample 6 coord(602,216)
+------ sample 7 coord(566,198)
+------ sample 8 coord(622,226)
+------ sample 9 coord(574,202)
+------ sample 10 coord(614,222)
+------ sample 11 coord(582,206)
+------ sample 12 coord(606,218)
+------ sample 13 coord(590,210)
+------ sample 14 coord(598,214)
+longId 626229
+id1 93
+--points (586,156) and (562,196)
+------ n samples 15
+------ sample 0 coord(574,176)
+------ sample 1 coord(568,186)
+------ sample 2 coord(580,166)
+------ sample 3 coord(565,191)
+------ sample 4 coord(583,161)
+------ sample 5 coord(571,181)
+------ sample 6 coord(577,171)
+------ sample 7 coord(563,193)
+------ sample 8 coord(584,158)
+------ sample 9 coord(566,188)
+------ sample 10 coord(581,163)
+------ sample 11 coord(569,183)
+------ sample 12 coord(578,168)
+------ sample 13 coord(572,178)
+------ sample 14 coord(575,173)
+longId 586156
+id1 79
+--points (637,159) and (562,196)
+------ n samples 15
+------ sample 0 coord(599,177)
+------ sample 1 coord(580,186)
+------ sample 2 coord(618,168)
+------ sample 3 coord(571,191)
+------ sample 4 coord(627,163)
+------ sample 5 coord(589,181)
+------ sample 6 coord(608,172)
+------ sample 7 coord(566,193)
+------ sample 8 coord(632,161)
+------ sample 9 coord(575,188)
+------ sample 10 coord(622,165)
+------ sample 11 coord(584,183)
+------ sample 12 coord(613,170)
+------ sample 13 coord(594,179)
+------ sample 14 coord(603,174)
+longId 637159
+id1 102
+--points (613,305) and (562,196)
+------ n samples 15
+------ sample 0 coord(587,250)
+------ sample 1 coord(574,223)
+------ sample 2 coord(600,277)
+------ sample 3 coord(568,209)
+------ sample 4 coord(606,291)
+------ sample 5 coord(580,236)
+------ sample 6 coord(593,263)
+------ sample 7 coord(565,202)
+------ sample 8 coord(609,298)
+------ sample 9 coord(571,216)
+------ sample 10 coord(603,284)
+------ sample 11 coord(577,229)
+------ sample 12 coord(596,270)
+------ sample 13 coord(583,243)
+------ sample 14 coord(590,256)
+longId 613305
+id1 86
+netVertex 662,296 4
+--points (613,305) and (662,296)
+------ n samples 15
+------ sample 0 coord(637,300)
+------ sample 1 coord(649,298)
+------ sample 2 coord(625,302)
+------ sample 3 coord(655,297)
+------ sample 4 coord(619,303)
+------ sample 5 coord(643,299)
+------ sample 6 coord(631,301)
+------ sample 7 coord(658,296)
+------ sample 8 coord(616,304)
+------ sample 9 coord(652,297)
+------ sample 10 coord(622,302)
+------ sample 11 coord(646,298)
+------ sample 12 coord(628,301)
+------ sample 13 coord(640,299)
+------ sample 14 coord(634,300)
+longId 613305
+id1 86
+--points (570,378) and (662,296)
+------ n samples 15
+------ sample 0 coord(616,337)
+BOOOOOOOOOOM 
+--points (614,288) and (662,296)
+------ n samples 15
+------ sample 0 coord(638,292)
+------ sample 1 coord(650,294)
+------ sample 2 coord(626,290)
+------ sample 3 coord(656,295)
+------ sample 4 coord(620,289)
+------ sample 5 coord(644,293)
+------ sample 6 coord(632,291)
+------ sample 7 coord(659,295)
+------ sample 8 coord(617,288)
+------ sample 9 coord(653,294)
+------ sample 10 coord(623,289)
+------ sample 11 coord(647,293)
+------ sample 12 coord(629,290)
+------ sample 13 coord(641,292)
+------ sample 14 coord(635,291)
+longId 614288
+id1 87
+--points (642,358) and (662,296)
+------ n samples 15
+------ sample 0 coord(652,327)
+BOOOOOOOOOOM 
+--points (626,229) and (662,296)
+------ n samples 15
+------ sample 0 coord(644,262)
+------ sample 1 coord(653,279)
+------ sample 2 coord(635,245)
+------ sample 3 coord(657,287)
+------ sample 4 coord(630,237)
+------ sample 5 coord(648,270)
+------ sample 6 coord(639,253)
+------ sample 7 coord(659,291)
+------ sample 8 coord(628,233)
+------ sample 9 coord(655,283)
+------ sample 10 coord(632,241)
+------ sample 11 coord(650,274)
+------ sample 12 coord(637,249)
+------ sample 13 coord(646,266)
+------ sample 14 coord(641,257)
+longId 626229
+id1 93
+--points (586,156) and (662,296)
+------ n samples 15
+------ sample 0 coord(624,226)
+------ sample 1 coord(643,261)
+------ sample 2 coord(605,191)
+------ sample 3 coord(652,278)
+------ sample 4 coord(595,173)
+------ sample 5 coord(633,243)
+------ sample 6 coord(614,208)
+------ sample 7 coord(657,287)
+------ sample 8 coord(590,164)
+------ sample 9 coord(647,269)
+------ sample 10 coord(600,182)
+------ sample 11 coord(638,252)
+------ sample 12 coord(609,199)
+------ sample 13 coord(628,234)
+------ sample 14 coord(619,217)
+longId 586156
+id1 79
+--points (637,159) and (662,296)
+------ n samples 15
+------ sample 0 coord(649,227)
+------ sample 1 coord(655,261)
+------ sample 2 coord(643,193)
+------ sample 3 coord(658,278)
+------ sample 4 coord(640,176)
+------ sample 5 coord(652,244)
+------ sample 6 coord(646,210)
+------ sample 7 coord(660,287)
+------ sample 8 coord(638,167)
+------ sample 9 coord(656,269)
+------ sample 10 coord(641,184)
+------ sample 11 coord(653,252)
+------ sample 12 coord(644,201)
+------ sample 13 coord(650,235)
+------ sample 14 coord(647,218)
+longId 637159
+id1 102
+--points (811,376) and (662,296)
+------ n samples 15
+------ sample 0 coord(736,336)
+BOOOOOOOOOOM 
+--points (613,305) and (662,296)
+------ n samples 15
+------ sample 0 coord(637,300)
+------ sample 1 coord(649,298)
+------ sample 2 coord(625,302)
+------ sample 3 coord(655,297)
+------ sample 4 coord(619,303)
+------ sample 5 coord(643,299)
+------ sample 6 coord(631,301)
+------ sample 7 coord(658,296)
+------ sample 8 coord(616,304)
+------ sample 9 coord(652,297)
+------ sample 10 coord(622,302)
+------ sample 11 coord(646,298)
+------ sample 12 coord(628,301)
+------ sample 13 coord(640,299)
+------ sample 14 coord(634,300)
+longId 613305
+id1 86
+netVertex 462,296 4
+--points (403,306) and (462,296)
+------ n samples 15
+------ sample 0 coord(432,301)
+------ sample 1 coord(447,298)
+------ sample 2 coord(417,303)
+------ sample 3 coord(454,297)
+------ sample 4 coord(410,304)
+------ sample 5 coord(439,299)
+------ sample 6 coord(424,302)
+------ sample 7 coord(458,296)
+------ sample 8 coord(406,305)
+------ sample 9 coord(450,297)
+------ sample 10 coord(413,303)
+------ sample 11 coord(443,298)
+------ sample 12 coord(420,302)
+------ sample 13 coord(435,300)
+------ sample 14 coord(428,301)
+longId 403306
+id1 56
+--points (403,303) and (462,296)
+------ n samples 15
+------ sample 0 coord(432,299)
+------ sample 1 coord(447,297)
+------ sample 2 coord(417,301)
+------ sample 3 coord(454,296)
+------ sample 4 coord(410,302)
+------ sample 5 coord(439,298)
+------ sample 6 coord(424,300)
+------ sample 7 coord(458,296)
+------ sample 8 coord(406,302)
+------ sample 9 coord(450,296)
+------ sample 10 coord(413,301)
+------ sample 11 coord(443,297)
+------ sample 12 coord(420,300)
+------ sample 13 coord(435,298)
+------ sample 14 coord(428,299)
+longId 403303
+id1 57
+--points (402,281) and (462,296)
+------ n samples 15
+------ sample 0 coord(432,288)
+------ sample 1 coord(447,292)
+------ sample 2 coord(417,284)
+------ sample 3 coord(454,294)
+------ sample 4 coord(409,282)
+------ sample 5 coord(439,290)
+------ sample 6 coord(424,286)
+------ sample 7 coord(458,295)
+------ sample 8 coord(405,281)
+------ sample 9 coord(450,293)
+------ sample 10 coord(413,283)
+------ sample 11 coord(443,291)
+------ sample 12 coord(420,285)
+------ sample 13 coord(435,289)
+------ sample 14 coord(428,287)
+longId 402281
+id1 59
+--points (347,414) and (462,296)
+------ n samples 15
+------ sample 0 coord(404,355)
+BOOOOOOOOOOM 
+--points (346,421) and (462,296)
+------ n samples 15
+------ sample 0 coord(404,358)
+BOOOOOOOOOOM 
+--points (438,362) and (462,296)
+------ n samples 15
+------ sample 0 coord(450,329)
+BOOOOOOOOOOM 
+--points (347,156) and (462,296)
+------ n samples 15
+------ sample 0 coord(404,226)
+------ sample 1 coord(433,261)
+------ sample 2 coord(375,191)
+------ sample 3 coord(447,278)
+------ sample 4 coord(361,173)
+------ sample 5 coord(418,243)
+------ sample 6 coord(389,208)
+------ sample 7 coord(454,287)
+------ sample 8 coord(354,164)
+------ sample 9 coord(440,269)
+------ sample 10 coord(368,182)
+------ sample 11 coord(425,252)
+------ sample 12 coord(382,199)
+------ sample 13 coord(411,234)
+------ sample 14 coord(396,217)
+longId 347156
+id1 60
+--points (399,159) and (462,296)
+------ n samples 15
+------ sample 0 coord(430,227)
+------ sample 1 coord(446,261)
+------ sample 2 coord(414,193)
+------ sample 3 coord(454,278)
+------ sample 4 coord(406,176)
+------ sample 5 coord(438,244)
+------ sample 6 coord(422,210)
+------ sample 7 coord(458,287)
+------ sample 8 coord(402,167)
+------ sample 9 coord(450,269)
+------ sample 10 coord(410,184)
+------ sample 11 coord(442,252)
+------ sample 12 coord(418,201)
+------ sample 13 coord(434,235)
+------ sample 14 coord(426,218)
+longId 399159
+id1 74
+--points (406,160) and (462,296)
+------ n samples 15
+------ sample 0 coord(434,228)
+------ sample 1 coord(448,262)
+------ sample 2 coord(420,194)
+------ sample 3 coord(455,279)
+------ sample 4 coord(413,177)
+------ sample 5 coord(441,245)
+------ sample 6 coord(427,211)
+------ sample 7 coord(458,287)
+------ sample 8 coord(409,168)
+------ sample 9 coord(451,270)
+------ sample 10 coord(416,185)
+------ sample 11 coord(444,253)
+------ sample 12 coord(423,202)
+------ sample 13 coord(437,236)
+------ sample 14 coord(430,219)
+longId 406160
+id1 62
+--points (411,160) and (462,296)
+------ n samples 15
+------ sample 0 coord(436,228)
+------ sample 1 coord(449,262)
+------ sample 2 coord(423,194)
+------ sample 3 coord(455,279)
+------ sample 4 coord(417,177)
+------ sample 5 coord(442,245)
+------ sample 6 coord(429,211)
+------ sample 7 coord(458,287)
+------ sample 8 coord(414,168)
+------ sample 9 coord(452,270)
+------ sample 10 coord(420,185)
+------ sample 11 coord(445,253)
+------ sample 12 coord(426,202)
+------ sample 13 coord(439,236)
+------ sample 14 coord(432,219)
+longId 411160
+id1 78
+--points (570,378) and (462,296)
+------ n samples 15
+------ sample 0 coord(516,337)
+BOOOOOOOOOOM 
+--points (586,156) and (462,296)
+------ n samples 15
+------ sample 0 coord(524,226)
+------ sample 1 coord(493,261)
+------ sample 2 coord(555,191)
+------ sample 3 coord(477,278)
+------ sample 4 coord(570,173)
+------ sample 5 coord(508,243)
+------ sample 6 coord(539,208)
+------ sample 7 coord(469,287)
+------ sample 8 coord(578,164)
+------ sample 9 coord(485,269)
+------ sample 10 coord(562,182)
+------ sample 11 coord(500,252)
+------ sample 12 coord(547,199)
+------ sample 13 coord(516,234)
+------ sample 14 coord(531,217)
+longId 586156
+id1 79
+Step 150
+Step 160size: 0 26
+--points (21,337) and (151,186)
+------ n samples 15
+------ sample 0 coord(86,261)
+------ sample 1 coord(118,223)
+------ sample 2 coord(53,299)
+------ sample 3 coord(134,204)
+------ sample 4 coord(37,318)
+BOOOOOOOOOOM 
+--points (67,313) and (151,186)
+------ n samples 15
+------ sample 0 coord(109,249)
+------ sample 1 coord(130,217)
+------ sample 2 coord(88,281)
+------ sample 3 coord(140,201)
+------ sample 4 coord(77,297)
+------ sample 5 coord(119,233)
+------ sample 6 coord(98,265)
+------ sample 7 coord(145,193)
+------ sample 8 coord(72,305)
+------ sample 9 coord(135,209)
+------ sample 10 coord(82,289)
+------ sample 11 coord(124,225)
+------ sample 12 coord(93,273)
+------ sample 13 coord(114,241)
+------ sample 14 coord(103,257)
+longId 67313
+id1 7
+--points (75,325) and (151,186)
+------ n samples 15
+------ sample 0 coord(113,255)
+------ sample 1 coord(132,220)
+------ sample 2 coord(94,290)
+------ sample 3 coord(141,203)
+------ sample 4 coord(84,307)
+------ sample 5 coord(122,237)
+------ sample 6 coord(103,272)
+------ sample 7 coord(146,194)
+------ sample 8 coord(79,316)
+------ sample 9 coord(136,211)
+------ sample 10 coord(89,298)
+------ sample 11 coord(127,228)
+------ sample 12 coord(98,281)
+------ sample 13 coord(117,246)
+------ sample 14 coord(108,263)
+longId 75325
+id1 10
+--points (60,258) and (151,186)
+------ n samples 15
+------ sample 0 coord(105,222)
+------ sample 1 coord(128,204)
+------ sample 2 coord(82,240)
+------ sample 3 coord(139,195)
+------ sample 4 coord(71,249)
+------ sample 5 coord(116,213)
+------ sample 6 coord(93,231)
+------ sample 7 coord(145,190)
+------ sample 8 coord(65,253)
+------ sample 9 coord(133,199)
+------ sample 10 coord(76,244)
+------ sample 11 coord(122,208)
+------ sample 12 coord(87,235)
+------ sample 13 coord(110,217)
+------ sample 14 coord(99,226)
+longId 60258
+id1 8
+--points (68,249) and (151,186)
+------ n samples 15
+------ sample 0 coord(109,217)
+------ sample 1 coord(130,201)
+------ sample 2 coord(88,233)
+------ sample 3 coord(140,193)
+------ sample 4 coord(78,241)
+------ sample 5 coord(119,209)
+------ sample 6 coord(98,225)
+------ sample 7 coord(145,189)
+------ sample 8 coord(73,245)
+------ sample 9 coord(135,197)
+------ sample 10 coord(83,237)
+------ sample 11 coord(124,205)
+------ sample 12 coord(93,229)
+------ sample 13 coord(114,213)
+------ sample 14 coord(103,221)
+longId 68249
+id1 20
+--points (249,309) and (151,186)
+------ n samples 15
+------ sample 0 coord(200,247)
+------ sample 1 coord(175,216)
+------ sample 2 coord(224,278)
+------ sample 3 coord(163,201)
+------ sample 4 coord(236,293)
+------ sample 5 coord(187,231)
+------ sample 6 coord(212,262)
+------ sample 7 coord(157,193)
+------ sample 8 coord(242,301)
+------ sample 9 coord(169,208)
+------ sample 10 coord(230,285)
+------ sample 11 coord(181,223)
+------ sample 12 coord(218,270)
+------ sample 13 coord(193,239)
+------ sample 14 coord(206,254)
+longId 249309
+id1 32
+--points (254,289) and (151,186)
+------ n samples 15
+------ sample 0 coord(202,237)
+------ sample 1 coord(176,211)
+------ sample 2 coord(228,263)
+------ sample 3 coord(163,198)
+------ sample 4 coord(241,276)
+------ sample 5 coord(189,224)
+------ sample 6 coord(215,250)
+------ sample 7 coord(157,192)
+------ sample 8 coord(247,282)
+------ sample 9 coord(169,204)
+------ sample 10 coord(234,269)
+------ sample 11 coord(182,217)
+------ sample 12 coord(221,256)
+------ sample 13 coord(195,230)
+------ sample 14 coord(208,243)
+longId 254289
+id1 33
+--points (256,285) and (151,186)
+------ n samples 15
+------ sample 0 coord(203,235)
+------ sample 1 coord(177,210)
+------ sample 2 coord(229,260)
+------ sample 3 coord(164,198)
+------ sample 4 coord(242,272)
+------ sample 5 coord(190,222)
+------ sample 6 coord(216,247)
+------ sample 7 coord(157,192)
+------ sample 8 coord(249,278)
+------ sample 9 coord(170,204)
+------ sample 10 coord(235,266)
+------ sample 11 coord(183,216)
+------ sample 12 coord(222,253)
+------ sample 13 coord(196,228)
+------ sample 14 coord(209,241)
+longId 256285
+id1 37
+--points (156,156) and (151,186)
+------ n samples 15
+------ sample 0 coord(153,171)
+------ sample 1 coord(152,178)
+------ sample 2 coord(154,163)
+------ sample 3 coord(151,182)
+------ sample 4 coord(155,159)
+------ sample 5 coord(152,174)
+------ sample 6 coord(153,167)
+------ sample 7 coord(151,184)
+------ sample 8 coord(155,157)
+------ sample 9 coord(151,180)
+------ sample 10 coord(154,161)
+------ sample 11 coord(152,176)
+------ sample 12 coord(153,165)
+------ sample 13 coord(152,172)
+------ sample 14 coord(153,169)
+longId 156156
+id1 23
+--points (224,155) and (151,186)
+------ n samples 15
+------ sample 0 coord(187,170)
+------ sample 1 coord(169,178)
+------ sample 2 coord(205,162)
+------ sample 3 coord(160,182)
+------ sample 4 coord(214,158)
+------ sample 5 coord(178,174)
+------ sample 6 coord(196,166)
+------ sample 7 coord(155,184)
+------ sample 8 coord(219,156)
+------ sample 9 coord(164,180)
+------ sample 10 coord(209,160)
+------ sample 11 coord(173,176)
+------ sample 12 coord(200,164)
+------ sample 13 coord(182,172)
+------ sample 14 coord(191,168)
+longId 224155
+id1 44
+--points (281,158) and (151,186)
+------ n samples 15
+------ sample 0 coord(216,172)
+------ sample 1 coord(183,179)
+------ sample 2 coord(248,165)
+------ sample 3 coord(167,182)
+------ sample 4 coord(264,161)
+------ sample 5 coord(199,175)
+------ sample 6 coord(232,168)
+------ sample 7 coord(159,184)
+------ sample 8 coord(272,159)
+------ sample 9 coord(175,180)
+------ sample 10 coord(256,163)
+------ sample 11 coord(191,177)
+------ sample 12 coord(240,166)
+------ sample 13 coord(207,173)
+------ sample 14 coord(224,170)
+longId 281158
+id1 38
+V 174
+0 ; 1  (21,337)  (64,384)  => 63.7024
+id 0 coo 21337 coo2 21337
+0 ; 2  (21,337)  (0,314)  => 31.1448
+id 0 coo 21337 coo2 21337
+3 ; 4  (31,722)  (54,688)  => 41.0488
+id 3 coo 31722 coo2 31722
+3 ; 5  (31,722)  (32,756)  => 34.0147
+id 3 coo 31722 coo2 31722
+3 ; 6  (31,722)  (0,745)  => 38.6005
+id 3 coo 31722 coo2 31722
+7 ; 8  (67,313)  (60,258)  => 55.4437
+id 7 coo 67313 coo2 67313
+7 ; 9  (67,313)  (70,320)  => 7.61577
+id 7 coo 67313 coo2 67313
+10 ; 11  (75,325)  (93,410)  => 86.885
+id 10 coo 75325 coo2 75325
+10 ; 12  (75,325)  (72,318)  => 7.61577
+id 10 coo 75325 coo2 75325
+13 ; 14  (-43,872)  (-8,874)  => 35.0571
+id 13 coo -42128 coo2 -42128
+4 ; 15  (54,688)  (78,652)  => 43.2666
+id 4 coo 54688 coo2 54688
+4 ; 3  (54,688)  (31,722)  => 41.0488
+id 4 coo 54688 coo2 54688
+14 ; 16  (-8,874)  (0,875)  => 8.06226
+id 14 coo -7126 coo2 -7126
+14 ; 13  (-8,874)  (-43,872)  => 35.0571
+id 14 coo -7126 coo2 -7126
+17 ; 18  (99,753)  (98,869)  => 116.004
+id 17 coo 99753 coo2 99753
+17 ; 19  (99,753)  (108,726)  => 28.4605
+id 17 coo 99753 coo2 99753
+8 ; 20  (60,258)  (68,249)  => 12.0416
+id 8 coo 60258 coo2 60258
+8 ; 7  (60,258)  (67,313)  => 55.4437
+id 8 coo 60258 coo2 60258
+8 ; 2  (60,258)  (0,314)  => 82.0731
+id 8 coo 60258 coo2 60258
+16 ; 21  (0,875)  (78,873)  => 78.0256
+id 16 coo 875 coo2 875
+16 ; 14  (0,875)  (-8,874)  => 8.06226
+id 16 coo 875 coo2 875
+1 ; 22  (64,384)  (78,398)  => 19.799
+id 1 coo 64384 coo2 64384
+1 ; 0  (64,384)  (21,337)  => 63.7024
+id 1 coo 64384 coo2 64384
+20 ; 23  (68,249)  (156,156)  => 128.035
+id 20 coo 68249 coo2 68249
+20 ; 8  (68,249)  (60,258)  => 12.0416
+id 20 coo 68249 coo2 68249
+22 ; 11  (78,398)  (93,410)  => 19.2094
+id 22 coo 78398 coo2 78398
+22 ; 1  (78,398)  (64,384)  => 19.799
+id 22 coo 78398 coo2 78398
+15 ; 24  (78,652)  (82,648)  => 5.65685
+id 15 coo 78652 coo2 78652
+15 ; 4  (78,652)  (54,688)  => 43.2666
+id 15 coo 78652 coo2 78652
+24 ; 25  (82,648)  (173,565)  => 123.167
+id 24 coo 82648 coo2 82648
+24 ; 15  (82,648)  (78,652)  => 5.65685
+id 24 coo 82648 coo2 82648
+26 ; 25  (134,708)  (173,565)  => 148.223
+id 26 coo 134708 coo2 134708
+26 ; 27  (134,708)  (118,741)  => 36.6742
+id 26 coo 134708 coo2 134708
+11 ; 28  (93,410)  (121,437)  => 38.8973
+id 11 coo 93410 coo2 93410
+11 ; 22  (93,410)  (78,398)  => 19.2094
+id 11 coo 93410 coo2 93410
+11 ; 10  (93,410)  (75,325)  => 86.885
+id 11 coo 93410 coo2 93410
+21 ; 18  (78,873)  (98,869)  => 20.3961
+id 21 coo 78873 coo2 78873
+21 ; 16  (78,873)  (0,875)  => 78.0256
+id 21 coo 78873 coo2 78873
+18 ; 29  (98,869)  (122,870)  => 24.0208
+id 18 coo 98869 coo2 98869
+18 ; 21  (98,869)  (78,873)  => 20.3961
+id 18 coo 98869 coo2 98869
+18 ; 17  (98,869)  (99,753)  => 116.004
+id 18 coo 98869 coo2 98869
+28 ; 30  (121,437)  (180,493)  => 81.3449
+id 28 coo 121437 coo2 121437
+28 ; 11  (121,437)  (93,410)  => 38.8973
+id 28 coo 121437 coo2 121437
+29 ; 31  (122,870)  (165,869)  => 43.0116
+id 29 coo 122870 coo2 122870
+29 ; 18  (122,870)  (98,869)  => 24.0208
+id 29 coo 122870 coo2 122870
+32 ; 33  (249,309)  (254,289)  => 20.6155
+id 32 coo 249309 coo2 249309
+32 ; 34  (249,309)  (248,326)  => 17.0294
+id 32 coo 249309 coo2 249309
+35 ; 30  (211,362)  (180,493)  => 134.618
+id 35 coo 211362 coo2 211362
+35 ; 36  (211,362)  (232,310)  => 56.0803
+id 35 coo 211362 coo2 211362
+33 ; 37  (254,289)  (256,285)  => 4.47214
+id 33 coo 254289 coo2 254289
+33 ; 32  (254,289)  (249,309)  => 20.6155
+id 33 coo 254289 coo2 254289
+37 ; 38  (256,285)  (281,158)  => 129.437
+id 37 coo 256285 coo2 256285
+37 ; 33  (256,285)  (254,289)  => 4.47214
+id 37 coo 256285 coo2 256285
+31 ; 39  (165,869)  (230,888)  => 67.72
+id 31 coo 165869 coo2 165869
+31 ; 29  (165,869)  (122,870)  => 43.0116
+id 31 coo 165869 coo2 165869
+31 ; 40  (165,869)  (202,738)  => 136.125
+id 31 coo 165869 coo2 165869
+41 ; 42  (270,359)  (311,541)  => 186.561
+id 41 coo 270359 coo2 270359
+41 ; 43  (270,359)  (257,320)  => 41.1096
+id 41 coo 270359 coo2 270359
+23 ; 44  (156,156)  (224,155)  => 68.0074
+id 23 coo 156156 coo2 156156
+23 ; 20  (156,156)  (68,249)  => 128.035
+id 23 coo 156156 coo2 156156
+23 ; 45  (156,156)  (0,0)  => 220.617
+id 23 coo 156156 coo2 156156
+39 ; 46  (230,888)  (287,897)  => 57.7062
+id 39 coo 230888 coo2 230888
+39 ; 31  (230,888)  (165,869)  => 67.72
+id 39 coo 230888 coo2 230888
+25 ; 47  (173,565)  (195,543)  => 31.1127
+id 25 coo 173565 coo2 173565
+25 ; 26  (173,565)  (134,708)  => 148.223
+id 25 coo 173565 coo2 173565
+25 ; 24  (173,565)  (82,648)  => 123.167
+id 25 coo 173565 coo2 173565
+30 ; 48  (180,493)  (195,514)  => 25.807
+id 30 coo 180493 coo2 180493
+30 ; 28  (180,493)  (121,437)  => 81.3449
+id 30 coo 180493 coo2 180493
+30 ; 35  (180,493)  (211,362)  => 134.618
+id 30 coo 180493 coo2 180493
+44 ; 38  (224,155)  (281,158)  => 57.0789
+id 44 coo 224155 coo2 224155
+44 ; 23  (224,155)  (156,156)  => 68.0074
+id 44 coo 224155 coo2 224155
+46 ; 49  (287,897)  (342,898)  => 55.0091
+id 46 coo 287897 coo2 287897
+46 ; 39  (287,897)  (230,888)  => 57.7062
+id 46 coo 287897 coo2 287897
+47 ; 50  (195,543)  (207,530)  => 17.6918
+id 47 coo 195543 coo2 195543
+47 ; 25  (195,543)  (173,565)  => 31.1127
+id 47 coo 195543 coo2 195543
+48 ; 51  (195,514)  (199,520)  => 7.2111
+id 48 coo 195514 coo2 195514
+48 ; 30  (195,514)  (180,493)  => 25.807
+id 48 coo 195514 coo2 195514
+51 ; 50  (199,520)  (207,530)  => 12.8062
+id 51 coo 199520 coo2 199520
+51 ; 48  (199,520)  (195,514)  => 7.2111
+id 51 coo 199520 coo2 199520
+50 ; 42  (207,530)  (311,541)  => 104.58
+id 50 coo 207530 coo2 207530
+50 ; 47  (207,530)  (195,543)  => 17.6918
+id 50 coo 207530 coo2 207530
+50 ; 51  (207,530)  (199,520)  => 12.8062
+id 50 coo 207530 coo2 207530
+52 ; 53  (322,697)  (327,547)  => 150.083
+id 52 coo 322697 coo2 322697
+52 ; 54  (322,697)  (346,798)  => 103.812
+id 52 coo 322697 coo2 322697
+52 ; 55  (322,697)  (291,796)  => 103.74
+id 52 coo 322697 coo2 322697
+56 ; 57  (403,306)  (403,303)  => 3
+id 56 coo 403306 coo2 403306
+56 ; 58  (403,306)  (407,333)  => 27.2947
+id 56 coo 403306 coo2 403306
+57 ; 59  (403,303)  (402,281)  => 22.0227
+id 57 coo 403303 coo2 403303
+57 ; 56  (403,303)  (403,306)  => 3
+id 57 coo 403303 coo2 403303
+38 ; 60  (281,158)  (347,156)  => 66.0303
+id 38 coo 281158 coo2 281158
+38 ; 37  (281,158)  (256,285)  => 129.437
+id 38 coo 281158 coo2 281158
+38 ; 44  (281,158)  (224,155)  => 57.0789
+id 38 coo 281158 coo2 281158
+49 ; 61  (342,898)  (397,892)  => 55.3263
+id 49 coo 342898 coo2 342898
+49 ; 46  (342,898)  (287,897)  => 55.0091
+id 49 coo 342898 coo2 342898
+59 ; 62  (402,281)  (406,160)  => 121.066
+id 59 coo 402281 coo2 402281
+59 ; 57  (402,281)  (403,303)  => 22.0227
+id 59 coo 402281 coo2 402281
+63 ; 64  (347,414)  (346,421)  => 7.07107
+id 63 coo 347414 coo2 347414
+63 ; 65  (347,414)  (358,313)  => 101.597
+id 63 coo 347414 coo2 347414
+63 ; 66  (347,414)  (391,322)  => 101.98
+id 63 coo 347414 coo2 347414
+64 ; 67  (346,421)  (320,543)  => 124.74
+id 64 coo 346421 coo2 346421
+64 ; 63  (346,421)  (347,414)  => 7.07107
+id 64 coo 346421 coo2 346421
+68 ; 69  (438,362)  (487,528)  => 173.081
+id 68 coo 438362 coo2 438362
+68 ; 70  (438,362)  (419,320)  => 46.0977
+id 68 coo 438362 coo2 438362
+71 ; 72  (438,799)  (433,883)  => 84.1487
+id 71 coo 438799 coo2 438799
+71 ; 73  (438,799)  (455,738)  => 63.3246
+id 71 coo 438799 coo2 438799
+60 ; 74  (347,156)  (399,159)  => 52.0865
+id 60 coo 347156 coo2 347156
+60 ; 38  (347,156)  (281,158)  => 66.0303
+id 60 coo 347156 coo2 347156
+61 ; 72  (397,892)  (433,883)  => 37.108
+id 61 coo 397892 coo2 397892
+61 ; 49  (397,892)  (342,898)  => 55.3263
+id 61 coo 397892 coo2 397892
+42 ; 67  (311,541)  (320,543)  => 9.21954
+id 42 coo 311541 coo2 311541
+42 ; 50  (311,541)  (207,530)  => 104.58
+id 42 coo 311541 coo2 311541
+42 ; 41  (311,541)  (270,359)  => 186.561
+id 42 coo 311541 coo2 311541
+67 ; 75  (320,543)  (326,546)  => 6.7082
+id 67 coo 320543 coo2 320543
+67 ; 42  (320,543)  (311,541)  => 9.21954
+id 67 coo 320543 coo2 320543
+67 ; 64  (320,543)  (346,421)  => 124.74
+id 67 coo 320543 coo2 320543
+72 ; 76  (433,883)  (481,887)  => 48.1664
+id 72 coo 433883 coo2 433883
+72 ; 61  (433,883)  (397,892)  => 37.108
+id 72 coo 433883 coo2 433883
+72 ; 71  (433,883)  (438,799)  => 84.1487
+id 72 coo 433883 coo2 433883
+75 ; 53  (326,546)  (327,547)  => 1.41421
+id 75 coo 326546 coo2 326546
+75 ; 67  (326,546)  (320,543)  => 6.7082
+id 75 coo 326546 coo2 326546
+53 ; 77  (327,547)  (348,545)  => 21.095
+id 53 coo 327547 coo2 327547
+53 ; 52  (327,547)  (322,697)  => 150.083
+id 53 coo 327547 coo2 327547
+53 ; 75  (327,547)  (326,546)  => 1.41421
+id 53 coo 327547 coo2 327547
+74 ; 62  (399,159)  (406,160)  => 7.07107
+id 74 coo 399159 coo2 399159
+74 ; 60  (399,159)  (347,156)  => 52.0865
+id 74 coo 399159 coo2 399159
+62 ; 78  (406,160)  (411,160)  => 5
+id 62 coo 406160 coo2 406160
+62 ; 59  (406,160)  (402,281)  => 121.066
+id 62 coo 406160 coo2 406160
+62 ; 74  (406,160)  (399,159)  => 7.07107
+id 62 coo 406160 coo2 406160
+77 ; 69  (348,545)  (487,528)  => 140.036
+id 77 coo 348545 coo2 348545
+77 ; 53  (348,545)  (327,547)  => 21.095
+id 77 coo 348545 coo2 348545
+78 ; 79  (411,160)  (586,156)  => 175.046
+id 78 coo 411160 coo2 411160
+78 ; 62  (411,160)  (406,160)  => 5
+id 78 coo 411160 coo2 411160
+80 ; 81  (518,698)  (531,672)  => 29.0689
+id 80 coo 518698 coo2 518698
+80 ; 82  (518,698)  (478,775)  => 86.7698
+id 80 coo 518698 coo2 518698
+76 ; 83  (481,887)  (578,885)  => 97.0206
+id 76 coo 481887 coo2 481887
+76 ; 72  (481,887)  (433,883)  => 48.1664
+id 76 coo 481887 coo2 481887
+84 ; 81  (535,680)  (531,672)  => 8.94427
+id 84 coo 535680 coo2 535680
+84 ; 85  (535,680)  (593,771)  => 107.912
+id 84 coo 535680 coo2 535680
+86 ; 87  (613,305)  (614,288)  => 17.0294
+id 86 coo 613305 coo2 613305
+86 ; 88  (613,305)  (614,330)  => 25.02
+id 86 coo 613305 coo2 613305
+81 ; 89  (531,672)  (518,531)  => 141.598
+id 81 coo 531672 coo2 531672
+81 ; 84  (531,672)  (535,680)  => 8.94427
+id 81 coo 531672 coo2 531672
+81 ; 80  (531,672)  (518,698)  => 29.0689
+id 81 coo 531672 coo2 531672
+90 ; 91  (570,378)  (535,527)  => 153.056
+id 90 coo 570378 coo2 570378
+90 ; 92  (570,378)  (594,312)  => 70.2282
+id 90 coo 570378 coo2 570378
+87 ; 93  (614,288)  (626,229)  => 60.208
+id 87 coo 614288 coo2 614288
+87 ; 86  (614,288)  (613,305)  => 17.0294
+id 87 coo 614288 coo2 614288
+94 ; 95  (618,784)  (595,854)  => 73.6817
+id 94 coo 618784 coo2 618784
+94 ; 96  (618,784)  (618,723)  => 61
+id 94 coo 618784 coo2 618784
+95 ; 83  (595,854)  (578,885)  => 35.3553
+id 95 coo 595854 coo2 595854
+95 ; 94  (595,854)  (618,784)  => 73.6817
+id 95 coo 595854 coo2 595854
+97 ; 98  (642,358)  (683,525)  => 171.959
+id 97 coo 642358 coo2 642358
+97 ; 99  (642,358)  (626,318)  => 43.0813
+id 97 coo 642358 coo2 642358
+83 ; 100  (578,885)  (607,902)  => 33.6155
+id 83 coo 578885 coo2 578885
+83 ; 76  (578,885)  (481,887)  => 97.0206
+id 83 coo 578885 coo2 578885
+83 ; 95  (578,885)  (595,854)  => 35.3553
+id 83 coo 578885 coo2 578885
+69 ; 89  (487,528)  (518,531)  => 31.1448
+id 69 coo 487528 coo2 487528
+69 ; 77  (487,528)  (348,545)  => 140.036
+id 69 coo 487528 coo2 487528
+69 ; 68  (487,528)  (438,362)  => 173.081
+id 69 coo 487528 coo2 487528
+100 ; 101  (607,902)  (692,927)  => 88.6002
+id 100 coo 607902 coo2 607902
+100 ; 83  (607,902)  (578,885)  => 33.6155
+id 100 coo 607902 coo2 607902
+93 ; 102  (626,229)  (637,159)  => 70.859
+id 93 coo 626229 coo2 626229
+93 ; 87  (626,229)  (614,288)  => 60.208
+id 93 coo 626229 coo2 626229
+89 ; 91  (518,531)  (535,527)  => 17.4642
+id 89 coo 518531 coo2 518531
+89 ; 81  (518,531)  (531,672)  => 141.598
+id 89 coo 518531 coo2 518531
+89 ; 69  (518,531)  (487,528)  => 31.1448
+id 89 coo 518531 coo2 518531
+79 ; 102  (586,156)  (637,159)  => 51.0882
+id 79 coo 586156 coo2 586156
+79 ; 78  (586,156)  (411,160)  => 175.046
+id 79 coo 586156 coo2 586156
+91 ; 98  (535,527)  (683,525)  => 148.014
+id 91 coo 535527 coo2 535527
+91 ; 89  (535,527)  (518,531)  => 17.4642
+id 91 coo 535527 coo2 535527
+91 ; 90  (535,527)  (570,378)  => 153.056
+id 91 coo 535527 coo2 535527
+101 ; 103  (692,927)  (809,927)  => 117
+id 101 coo 692927 coo2 692927
+101 ; 100  (692,927)  (607,902)  => 88.6002
+id 101 coo 692927 coo2 692927
+102 ; 104  (637,159)  (835,159)  => 198
+id 102 coo 637159 coo2 637159
+102 ; 93  (637,159)  (626,229)  => 70.859
+id 102 coo 637159 coo2 637159
+102 ; 79  (637,159)  (586,156)  => 51.0882
+id 102 coo 637159 coo2 637159
+105 ; 106  (750,754)  (750,719)  => 35
+id 105 coo 750754 coo2 750754
+105 ; 107  (750,754)  (809,855)  => 116.97
+id 105 coo 750754 coo2 750754
+105 ; 108  (750,754)  (692,855)  => 116.469
+id 105 coo 750754 coo2 750754
+106 ; 109  (750,719)  (760,643)  => 76.6551
+id 106 coo 750719 coo2 750719
+106 ; 105  (750,719)  (750,754)  => 35
+id 106 coo 750719 coo2 750719
+110 ; 111  (811,376)  (767,548)  => 177.539
+id 110 coo 811376 coo2 811376
+110 ; 112  (811,376)  (835,318)  => 62.7694
+id 110 coo 811376 coo2 811376
+103 ; 113  (809,927)  (893,903)  => 87.3613
+id 103 coo 809927 coo2 809927
+103 ; 101  (809,927)  (692,927)  => 117
+id 103 coo 809927 coo2 809927
+114 ; 115  (856,295)  (856,285)  => 10
+id 114 coo 856295 coo2 856295
+114 ; 116  (856,295)  (852,334)  => 39.2046
+id 114 coo 856295 coo2 856295
+98 ; 111  (683,525)  (767,548)  => 87.0919
+id 98 coo 683525 coo2 683525
+98 ; 91  (683,525)  (535,527)  => 148.014
+id 98 coo 683525 coo2 683525
+98 ; 97  (683,525)  (642,358)  => 171.959
+id 98 coo 683525 coo2 683525
+115 ; 117  (856,285)  (859,159)  => 126.036
+id 115 coo 856285 coo2 856285
+115 ; 114  (856,285)  (856,295)  => 10
+id 115 coo 856285 coo2 856285
+118 ; 119  (865,834)  (890,890)  => 61.327
+id 118 coo 865834 coo2 865834
+118 ; 120  (865,834)  (853,778)  => 57.2713
+id 118 coo 865834 coo2 865834
+109 ; 121  (760,643)  (780,556)  => 89.2693
+id 109 coo 760643 coo2 760643
+109 ; 106  (760,643)  (750,719)  => 76.6551
+id 109 coo 760643 coo2 760643
+119 ; 122  (890,890)  (896,900)  => 11.6619
+id 119 coo 890890 coo2 890890
+119 ; 118  (890,890)  (865,834)  => 61.327
+id 119 coo 890890 coo2 890890
+113 ; 122  (893,903)  (896,900)  => 4.24264
+id 113 coo 893903 coo2 893903
+113 ; 103  (893,903)  (809,927)  => 87.3613
+id 113 coo 893903 coo2 893903
+104 ; 117  (835,159)  (859,159)  => 24
+id 104 coo 835159 coo2 835159
+104 ; 102  (835,159)  (637,159)  => 198
+id 104 coo 835159 coo2 835159
+122 ; 123  (896,900)  (957,899)  => 61.0082
+id 122 coo 896900 coo2 896900
+122 ; 113  (896,900)  (893,903)  => 4.24264
+id 122 coo 896900 coo2 896900
+122 ; 119  (896,900)  (890,890)  => 11.6619
+id 122 coo 896900 coo2 896900
+111 ; 121  (767,548)  (780,556)  => 15.2643
+id 111 coo 767548 coo2 767548
+111 ; 98  (767,548)  (683,525)  => 87.0919
+id 111 coo 767548 coo2 767548
+111 ; 110  (767,548)  (811,376)  => 177.539
+id 111 coo 767548 coo2 767548
+121 ; 124  (780,556)  (868,555)  => 88.0057
+id 121 coo 780556 coo2 780556
+121 ; 109  (780,556)  (760,643)  => 89.2693
+id 121 coo 780556 coo2 780556
+121 ; 111  (780,556)  (767,548)  => 15.2643
+id 121 coo 780556 coo2 780556
+125 ; 126  (917,700)  (917,684)  => 16
+id 125 coo 917700 coo2 917700
+125 ; 127  (917,700)  (954,800)  => 106.626
+id 125 coo 917700 coo2 917700
+125 ; 128  (917,700)  (888,802)  => 106.042
+id 125 coo 917700 coo2 917700
+117 ; 129  (859,159)  (870,159)  => 11
+id 117 coo 859159 coo2 859159
+117 ; 115  (859,159)  (856,285)  => 126.036
+id 117 coo 859159 coo2 859159
+117 ; 104  (859,159)  (835,159)  => 24
+id 117 coo 859159 coo2 859159
+130 ; 131  (910,431)  (932,516)  => 87.8009
+id 130 coo 910431 coo2 910431
+130 ; 132  (910,431)  (877,319)  => 116.76
+id 130 coo 910431 coo2 910431
+129 ; 133  (870,159)  (1029,156)  => 159.028
+id 129 coo 870159 coo2 870159
+129 ; 117  (870,159)  (859,159)  => 11
+id 129 coo 870159 coo2 870159
+126 ; 134  (917,684)  (914,642)  => 42.107
+id 126 coo 917684 coo2 917684
+126 ; 125  (917,684)  (917,700)  => 16
+id 126 coo 917684 coo2 917684
+123 ; 135  (957,899)  (1023,888)  => 66.9104
+id 123 coo 957899 coo2 957899
+123 ; 122  (957,899)  (896,900)  => 61.0082
+id 123 coo 957899 coo2 957899
+136 ; 137  (1055,672)  (1061,672)  => 6
+id 136 coo 1055672 coo2 1055672
+136 ; 138  (1055,672)  (922,647)  => 135.329
+id 136 coo 1055672 coo2 1055672
+138 ; 134  (922,647)  (914,642)  => 9.43398
+id 138 coo 922647 coo2 922647
+138 ; 136  (922,647)  (1055,672)  => 135.329
+id 138 coo 922647 coo2 922647
+138 ; 139  (922,647)  (1042,731)  => 146.479
+id 138 coo 922647 coo2 922647
+134 ; 124  (914,642)  (868,555)  => 98.4124
+id 134 coo 914642 coo2 914642
+134 ; 138  (914,642)  (922,647)  => 9.43398
+id 134 coo 914642 coo2 914642
+134 ; 126  (914,642)  (917,684)  => 42.107
+id 134 coo 914642 coo2 914642
+140 ; 141  (1063,670)  (1069,674)  => 7.2111
+id 140 coo 1063670 coo2 1063670
+140 ; 142  (1063,670)  (1060,670)  => 3
+id 140 coo 1063670 coo2 1063670
+141 ; 143  (1069,674)  (1100,699)  => 39.8246
+id 141 coo 1069674 coo2 1069674
+141 ; 140  (1069,674)  (1063,670)  => 7.2111
+id 141 coo 1069674 coo2 1069674
+124 ; 144  (868,555)  (930,517)  => 72.7186
+id 124 coo 868555 coo2 868555
+124 ; 134  (868,555)  (914,642)  => 98.4124
+id 124 coo 868555 coo2 868555
+124 ; 121  (868,555)  (780,556)  => 88.0057
+id 124 coo 868555 coo2 868555
+145 ; 144  (1018,599)  (930,517)  => 120.283
+id 145 coo 1018599 coo2 1018599
+145 ; 146  (1018,599)  (1077,660)  => 84.8646
+id 145 coo 1018599 coo2 1018599
+147 ; 148  (1009,414)  (959,500)  => 99.4786
+id 147 coo 1009414 coo2 1009414
+147 ; 149  (1009,414)  (1035,313)  => 104.293
+id 147 coo 1009414 coo2 1009414
+147 ; 150  (1009,414)  (1085,342)  => 104.69
+id 147 coo 1009414 coo2 1009414
+144 ; 131  (930,517)  (932,516)  => 2.23607
+id 144 coo 930517 coo2 930517
+144 ; 145  (930,517)  (1018,599)  => 120.283
+id 144 coo 930517 coo2 930517
+144 ; 124  (930,517)  (868,555)  => 72.7186
+id 144 coo 930517 coo2 930517
+131 ; 148  (932,516)  (959,500)  => 31.3847
+id 131 coo 932516 coo2 932516
+131 ; 144  (932,516)  (930,517)  => 2.23607
+id 131 coo 932516 coo2 932516
+131 ; 130  (932,516)  (910,431)  => 87.8009
+id 131 coo 932516 coo2 932516
+135 ; 151  (1023,888)  (1134,849)  => 117.652
+id 135 coo 1023888 coo2 1023888
+135 ; 123  (1023,888)  (957,899)  => 66.9104
+id 135 coo 1023888 coo2 1023888
+148 ; 152  (959,500)  (1056,504)  => 97.0824
+id 148 coo 959500 coo2 959500
+148 ; 131  (959,500)  (932,516)  => 31.3847
+id 148 coo 959500 coo2 959500
+148 ; 147  (959,500)  (1009,414)  => 99.4786
+id 148 coo 959500 coo2 959500
+143 ; 153  (1100,699)  (1247,787)  => 171.327
+id 143 coo 1100699 coo2 1100699
+143 ; 141  (1100,699)  (1069,674)  => 39.8246
+id 143 coo 1100699 coo2 1100699
+152 ; 154  (1056,504)  (1158,481)  => 104.561
+id 152 coo 1056504 coo2 1056504
+152 ; 155  (1056,504)  (1156,535)  => 104.695
+id 152 coo 1056504 coo2 1056504
+152 ; 148  (1056,504)  (959,500)  => 97.0824
+id 152 coo 1056504 coo2 1056504
+133 ; 156  (1029,156)  (1119,167)  => 90.6697
+id 133 coo 1029156 coo2 1029156
+133 ; 129  (1029,156)  (870,159)  => 159.028
+id 133 coo 1029156 coo2 1029156
+151 ; 157  (1134,849)  (1237,794)  => 116.765
+id 151 coo 1134849 coo2 1134849
+151 ; 135  (1134,849)  (1023,888)  => 117.652
+id 151 coo 1134849 coo2 1134849
+156 ; 158  (1119,167)  (1177,183)  => 60.1664
+id 156 coo 1119167 coo2 1119167
+156 ; 133  (1119,167)  (1029,156)  => 90.6697
+id 156 coo 1119167 coo2 1119167
+158 ; 159  (1177,183)  (1275,224)  => 106.231
+id 158 coo 1177183 coo2 1177183
+158 ; 156  (1177,183)  (1119,167)  => 60.1664
+id 158 coo 1177183 coo2 1177183
+157 ; 153  (1237,794)  (1247,787)  => 12.2066
+id 157 coo 1237794 coo2 1237794
+157 ; 151  (1237,794)  (1134,849)  => 116.765
+id 157 coo 1237794 coo2 1237794
+153 ; 160  (1247,787)  (1264,778)  => 19.2354
+id 153 coo 1247787 coo2 1247787
+153 ; 157  (1247,787)  (1237,794)  => 12.2066
+id 153 coo 1247787 coo2 1247787
+153 ; 143  (1247,787)  (1100,699)  => 171.327
+id 153 coo 1247787 coo2 1247787
+160 ; 161  (1264,778)  (1273,773)  => 10.2956
+id 160 coo 1264778 coo2 1264778
+160 ; 153  (1264,778)  (1247,787)  => 19.2354
+id 160 coo 1264778 coo2 1264778
+159 ; 162  (1275,224)  (1279,239)  => 15.5242
+id 159 coo 1275224 coo2 1275224
+159 ; 158  (1275,224)  (1177,183)  => 106.231
+id 159 coo 1275224 coo2 1275224
+159 ; 163  (1275,224)  (1500,0)  => 317.492
+id 159 coo 1275224 coo2 1275224
+162 ; 164  (1279,239)  (1318,396)  => 161.771
+id 162 coo 1279239 coo2 1279239
+162 ; 159  (1279,239)  (1275,224)  => 15.5242
+id 162 coo 1279239 coo2 1279239
+164 ; 165  (1318,396)  (1328,487)  => 91.5478
+id 164 coo 1318396 coo2 1318396
+164 ; 162  (1318,396)  (1279,239)  => 161.771
+id 164 coo 1318396 coo2 1318396
+165 ; 166  (1328,487)  (1327,541)  => 54.0093
+id 165 coo 1328487 coo2 1328487
+165 ; 164  (1328,487)  (1318,396)  => 91.5478
+id 165 coo 1328487 coo2 1328487
+166 ; 167  (1327,541)  (1313,634)  => 94.0479
+id 166 coo 1327541 coo2 1327541
+166 ; 165  (1327,541)  (1328,487)  => 54.0093
+id 166 coo 1327541 coo2 1327541
+167 ; 161  (1313,634)  (1273,773)  => 144.641
+id 167 coo 1313634 coo2 1313634
+167 ; 166  (1313,634)  (1327,541)  => 94.0479
+id 167 coo 1313634 coo2 1313634
+161 ; 168  (1273,773)  (1500,1000)  => 321.026
+id 161 coo 1273773 coo2 1273773
+161 ; 160  (1273,773)  (1264,778)  => 10.2956
+id 161 coo 1273773 coo2 1273773
+161 ; 167  (1273,773)  (1313,634)  => 144.641
+id 161 coo 1273773 coo2 1273773
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+7 ; 172  (67,313)  (151,186)  => 152.266
+id 7 coo 67313 coo2 67313
+10 ; 172  (75,325)  (151,186)  => 158.42
+id 10 coo 75325 coo2 75325
+8 ; 172  (60,258)  (151,186)  => 116.039
+id 8 coo 60258 coo2 60258
+20 ; 172  (68,249)  (151,186)  => 104.202
+id 20 coo 68249 coo2 68249
+32 ; 172  (249,309)  (151,186)  => 157.267
+id 32 coo 249309 coo2 249309
+33 ; 172  (254,289)  (151,186)  => 145.664
+id 33 coo 254289 coo2 254289
+37 ; 172  (256,285)  (151,186)  => 144.312
+id 37 coo 256285 coo2 256285
+23 ; 172  (156,156)  (151,186)  => 30.4138
+id 23 coo 156156 coo2 156156
+44 ; 172  (224,155)  (151,186)  => 79.3095
+id 44 coo 224155 coo2 224155
+38 ; 172  (281,158)  (151,186)  => 132.981
+id 38 coo 281158 coo2 281158
+
+
+right path  172
+map 767548
+Step 20
+Step 30size: 1000 0
+Step 40size: 1000 0
+Step 50size: 1000 0
+Step 60size: 1000 0
+Step 70size: 1000 0
+Step 80size: 1000 0
+Step 90size: 1000 0
+Step 100size: 1000 0
+Step 110size: 1000 0
+Step 120size: 1000 0
+Step 130size: 1000 0
+Step 140size: 1000 0
+--points (1313,634) and (1441,769)
+------ n samples 15
+------ sample 0 coord(1377,701)
+------ sample 1 coord(1409,735)
+------ sample 2 coord(1345,667)
+------ sample 3 coord(1425,752)
+------ sample 4 coord(1329,650)
+------ sample 5 coord(1393,718)
+------ sample 6 coord(1361,684)
+------ sample 7 coord(1433,760)
+------ sample 8 coord(1321,642)
+------ sample 9 coord(1417,743)
+------ sample 10 coord(1337,658)
+------ sample 11 coord(1401,726)
+------ sample 12 coord(1353,675)
+------ sample 13 coord(1385,709)
+------ sample 14 coord(1369,692)
+longId 1313634
+id1 167
+Step 150size: 1000 1
+--points (1313,634) and (1441,769)
+------ n samples 15
+------ sample 0 coord(1377,701)
+------ sample 1 coord(1409,735)
+------ sample 2 coord(1345,667)
+------ sample 3 coord(1425,752)
+------ sample 4 coord(1329,650)
+------ sample 5 coord(1393,718)
+------ sample 6 coord(1361,684)
+------ sample 7 coord(1433,760)
+------ sample 8 coord(1321,642)
+------ sample 9 coord(1417,743)
+------ sample 10 coord(1337,658)
+------ sample 11 coord(1401,726)
+------ sample 12 coord(1353,675)
+------ sample 13 coord(1385,709)
+------ sample 14 coord(1369,692)
+longId 1313634
+id1 167
+Step 160size: 1000 1
+--points (1313,634) and (1441,769)
+------ n samples 15
+------ sample 0 coord(1377,701)
+------ sample 1 coord(1409,735)
+------ sample 2 coord(1345,667)
+------ sample 3 coord(1425,752)
+------ sample 4 coord(1329,650)
+------ sample 5 coord(1393,718)
+------ sample 6 coord(1361,684)
+------ sample 7 coord(1433,760)
+------ sample 8 coord(1321,642)
+------ sample 9 coord(1417,743)
+------ sample 10 coord(1337,658)
+------ sample 11 coord(1401,726)
+------ sample 12 coord(1353,675)
+------ sample 13 coord(1385,709)
+------ sample 14 coord(1369,692)
+longId 1313634
+id1 167
+Step 170size: 1000 1
+--points (1313,634) and (1441,769)
+------ n samples 15
+------ sample 0 coord(1377,701)
+------ sample 1 coord(1409,735)
+------ sample 2 coord(1345,667)
+------ sample 3 coord(1425,752)
+------ sample 4 coord(1329,650)
+------ sample 5 coord(1393,718)
+------ sample 6 coord(1361,684)
+------ sample 7 coord(1433,760)
+------ sample 8 coord(1321,642)
+------ sample 9 coord(1417,743)
+------ sample 10 coord(1337,658)
+------ sample 11 coord(1401,726)
+------ sample 12 coord(1353,675)
+------ sample 13 coord(1385,709)
+------ sample 14 coord(1369,692)
+longId 1313634
+id1 167
+--points (1273,773) and (1441,769)
+------ n samples 15
+------ sample 0 coord(1357,771)
+------ sample 1 coord(1399,770)
+------ sample 2 coord(1315,772)
+------ sample 3 coord(1420,769)
+------ sample 4 coord(1294,772)
+------ sample 5 coord(1378,770)
+------ sample 6 coord(1336,771)
+------ sample 7 coord(1430,769)
+------ sample 8 coord(1283,772)
+------ sample 9 coord(1409,769)
+------ sample 10 coord(1304,772)
+------ sample 11 coord(1388,770)
+------ sample 12 coord(1325,771)
+------ sample 13 coord(1367,770)
+------ sample 14 coord(1346,771)
+longId 1273773
+id1 161
+Step 180size: 1000 2
+--points (1264,778) and (1441,769)
+------ n samples 15
+------ sample 0 coord(1352,773)
+------ sample 1 coord(1396,771)
+------ sample 2 coord(1308,775)
+------ sample 3 coord(1418,770)
+------ sample 4 coord(1286,776)
+------ sample 5 coord(1374,772)
+------ sample 6 coord(1330,774)
+------ sample 7 coord(1429,769)
+------ sample 8 coord(1275,777)
+------ sample 9 coord(1407,770)
+------ sample 10 coord(1297,775)
+------ sample 11 coord(1385,771)
+------ sample 12 coord(1319,774)
+------ sample 13 coord(1363,772)
+------ sample 14 coord(1341,773)
+longId 1264778
+id1 160
+--points (1313,634) and (1441,769)
+------ n samples 15
+------ sample 0 coord(1377,701)
+------ sample 1 coord(1409,735)
+------ sample 2 coord(1345,667)
+------ sample 3 coord(1425,752)
+------ sample 4 coord(1329,650)
+------ sample 5 coord(1393,718)
+------ sample 6 coord(1361,684)
+------ sample 7 coord(1433,760)
+------ sample 8 coord(1321,642)
+------ sample 9 coord(1417,743)
+------ sample 10 coord(1337,658)
+------ sample 11 coord(1401,726)
+------ sample 12 coord(1353,675)
+------ sample 13 coord(1385,709)
+------ sample 14 coord(1369,692)
+longId 1313634
+id1 167
+--points (1273,773) and (1441,769)
+------ n samples 15
+------ sample 0 coord(1357,771)
+------ sample 1 coord(1399,770)
+------ sample 2 coord(1315,772)
+------ sample 3 coord(1420,769)
+------ sample 4 coord(1294,772)
+------ sample 5 coord(1378,770)
+------ sample 6 coord(1336,771)
+------ sample 7 coord(1430,769)
+------ sample 8 coord(1283,772)
+------ sample 9 coord(1409,769)
+------ sample 10 coord(1304,772)
+------ sample 11 coord(1388,770)
+------ sample 12 coord(1325,771)
+------ sample 13 coord(1367,770)
+------ sample 14 coord(1346,771)
+longId 1273773
+id1 161
+Step 190size: 1000 3
+--points (1264,778) and (1441,769)
+------ n samples 15
+------ sample 0 coord(1352,773)
+------ sample 1 coord(1396,771)
+------ sample 2 coord(1308,775)
+------ sample 3 coord(1418,770)
+------ sample 4 coord(1286,776)
+------ sample 5 coord(1374,772)
+------ sample 6 coord(1330,774)
+------ sample 7 coord(1429,769)
+------ sample 8 coord(1275,777)
+------ sample 9 coord(1407,770)
+------ sample 10 coord(1297,775)
+------ sample 11 coord(1385,771)
+------ sample 12 coord(1319,774)
+------ sample 13 coord(1363,772)
+------ sample 14 coord(1341,773)
+longId 1264778
+id1 160
+--points (1313,634) and (1441,769)
+------ n samples 15
+------ sample 0 coord(1377,701)
+------ sample 1 coord(1409,735)
+------ sample 2 coord(1345,667)
+------ sample 3 coord(1425,752)
+------ sample 4 coord(1329,650)
+------ sample 5 coord(1393,718)
+------ sample 6 coord(1361,684)
+------ sample 7 coord(1433,760)
+------ sample 8 coord(1321,642)
+------ sample 9 coord(1417,743)
+------ sample 10 coord(1337,658)
+------ sample 11 coord(1401,726)
+------ sample 12 coord(1353,675)
+------ sample 13 coord(1385,709)
+------ sample 14 coord(1369,692)
+longId 1313634
+id1 167
+--points (1273,773) and (1441,769)
+------ n samples 15
+------ sample 0 coord(1357,771)
+------ sample 1 coord(1399,770)
+------ sample 2 coord(1315,772)
+------ sample 3 coord(1420,769)
+------ sample 4 coord(1294,772)
+------ sample 5 coord(1378,770)
+------ sample 6 coord(1336,771)
+------ sample 7 coord(1430,769)
+------ sample 8 coord(1283,772)
+------ sample 9 coord(1409,769)
+------ sample 10 coord(1304,772)
+------ sample 11 coord(1388,770)
+------ sample 12 coord(1325,771)
+------ sample 13 coord(1367,770)
+------ sample 14 coord(1346,771)
+longId 1273773
+id1 161
+Step 200size: 1000 3
+--points (1247,787) and (1441,769)
+------ n samples 15
+------ sample 0 coord(1344,778)
+------ sample 1 coord(1392,773)
+------ sample 2 coord(1295,782)
+------ sample 3 coord(1416,771)
+------ sample 4 coord(1271,784)
+------ sample 5 coord(1368,775)
+------ sample 6 coord(1319,780)
+------ sample 7 coord(1428,770)
+------ sample 8 coord(1259,785)
+------ sample 9 coord(1404,772)
+------ sample 10 coord(1283,783)
+------ sample 11 coord(1380,774)
+------ sample 12 coord(1307,781)
+------ sample 13 coord(1356,776)
+------ sample 14 coord(1331,779)
+longId 1247787
+id1 153
+--points (1264,778) and (1441,769)
+------ n samples 15
+------ sample 0 coord(1352,773)
+------ sample 1 coord(1396,771)
+------ sample 2 coord(1308,775)
+------ sample 3 coord(1418,770)
+------ sample 4 coord(1286,776)
+------ sample 5 coord(1374,772)
+------ sample 6 coord(1330,774)
+------ sample 7 coord(1429,769)
+------ sample 8 coord(1275,777)
+------ sample 9 coord(1407,770)
+------ sample 10 coord(1297,775)
+------ sample 11 coord(1385,771)
+------ sample 12 coord(1319,774)
+------ sample 13 coord(1363,772)
+------ sample 14 coord(1341,773)
+longId 1264778
+id1 160
+--points (1313,634) and (1441,769)
+------ n samples 15
+------ sample 0 coord(1377,701)
+------ sample 1 coord(1409,735)
+------ sample 2 coord(1345,667)
+------ sample 3 coord(1425,752)
+------ sample 4 coord(1329,650)
+------ sample 5 coord(1393,718)
+------ sample 6 coord(1361,684)
+------ sample 7 coord(1433,760)
+------ sample 8 coord(1321,642)
+------ sample 9 coord(1417,743)
+------ sample 10 coord(1337,658)
+------ sample 11 coord(1401,726)
+------ sample 12 coord(1353,675)
+------ sample 13 coord(1385,709)
+------ sample 14 coord(1369,692)
+longId 1313634
+id1 167
+--points (1273,773) and (1441,769)
+------ n samples 15
+------ sample 0 coord(1357,771)
+------ sample 1 coord(1399,770)
+------ sample 2 coord(1315,772)
+------ sample 3 coord(1420,769)
+------ sample 4 coord(1294,772)
+------ sample 5 coord(1378,770)
+------ sample 6 coord(1336,771)
+------ sample 7 coord(1430,769)
+------ sample 8 coord(1283,772)
+------ sample 9 coord(1409,769)
+------ sample 10 coord(1304,772)
+------ sample 11 coord(1388,770)
+------ sample 12 coord(1325,771)
+------ sample 13 coord(1367,770)
+------ sample 14 coord(1346,771)
+longId 1273773
+id1 161
+Step 210size: 1000 4
+--points (1237,794) and (1441,769)
+------ n samples 15
+------ sample 0 coord(1339,781)
+------ sample 1 coord(1390,775)
+------ sample 2 coord(1288,787)
+------ sample 3 coord(1415,772)
+------ sample 4 coord(1262,790)
+------ sample 5 coord(1364,778)
+------ sample 6 coord(1313,784)
+------ sample 7 coord(1428,770)
+------ sample 8 coord(1249,792)
+------ sample 9 coord(1402,773)
+------ sample 10 coord(1275,788)
+------ sample 11 coord(1377,776)
+------ sample 12 coord(1300,785)
+------ sample 13 coord(1351,779)
+------ sample 14 coord(1326,782)
+longId 1237794
+id1 157
+--points (1247,787) and (1441,769)
+------ n samples 15
+------ sample 0 coord(1344,778)
+------ sample 1 coord(1392,773)
+------ sample 2 coord(1295,782)
+------ sample 3 coord(1416,771)
+------ sample 4 coord(1271,784)
+------ sample 5 coord(1368,775)
+------ sample 6 coord(1319,780)
+------ sample 7 coord(1428,770)
+------ sample 8 coord(1259,785)
+------ sample 9 coord(1404,772)
+------ sample 10 coord(1283,783)
+------ sample 11 coord(1380,774)
+------ sample 12 coord(1307,781)
+------ sample 13 coord(1356,776)
+------ sample 14 coord(1331,779)
+longId 1247787
+id1 153
+--points (1264,778) and (1441,769)
+------ n samples 15
+------ sample 0 coord(1352,773)
+------ sample 1 coord(1396,771)
+------ sample 2 coord(1308,775)
+------ sample 3 coord(1418,770)
+------ sample 4 coord(1286,776)
+------ sample 5 coord(1374,772)
+------ sample 6 coord(1330,774)
+------ sample 7 coord(1429,769)
+------ sample 8 coord(1275,777)
+------ sample 9 coord(1407,770)
+------ sample 10 coord(1297,775)
+------ sample 11 coord(1385,771)
+------ sample 12 coord(1319,774)
+------ sample 13 coord(1363,772)
+------ sample 14 coord(1341,773)
+longId 1264778
+id1 160
+--points (1313,634) and (1441,769)
+------ n samples 15
+------ sample 0 coord(1377,701)
+------ sample 1 coord(1409,735)
+------ sample 2 coord(1345,667)
+------ sample 3 coord(1425,752)
+------ sample 4 coord(1329,650)
+------ sample 5 coord(1393,718)
+------ sample 6 coord(1361,684)
+------ sample 7 coord(1433,760)
+------ sample 8 coord(1321,642)
+------ sample 9 coord(1417,743)
+------ sample 10 coord(1337,658)
+------ sample 11 coord(1401,726)
+------ sample 12 coord(1353,675)
+------ sample 13 coord(1385,709)
+------ sample 14 coord(1369,692)
+longId 1313634
+id1 167
+--points (1273,773) and (1441,769)
+------ n samples 15
+------ sample 0 coord(1357,771)
+------ sample 1 coord(1399,770)
+------ sample 2 coord(1315,772)
+------ sample 3 coord(1420,769)
+------ sample 4 coord(1294,772)
+------ sample 5 coord(1378,770)
+------ sample 6 coord(1336,771)
+------ sample 7 coord(1430,769)
+------ sample 8 coord(1283,772)
+------ sample 9 coord(1409,769)
+------ sample 10 coord(1304,772)
+------ sample 11 coord(1388,770)
+------ sample 12 coord(1325,771)
+------ sample 13 coord(1367,770)
+------ sample 14 coord(1346,771)
+longId 1273773
+id1 161
+Step 220size: 1000 5
+--points (1237,794) and (1441,769)
+------ n samples 15
+------ sample 0 coord(1339,781)
+------ sample 1 coord(1390,775)
+------ sample 2 coord(1288,787)
+------ sample 3 coord(1415,772)
+------ sample 4 coord(1262,790)
+------ sample 5 coord(1364,778)
+------ sample 6 coord(1313,784)
+------ sample 7 coord(1428,770)
+------ sample 8 coord(1249,792)
+------ sample 9 coord(1402,773)
+------ sample 10 coord(1275,788)
+------ sample 11 coord(1377,776)
+------ sample 12 coord(1300,785)
+------ sample 13 coord(1351,779)
+------ sample 14 coord(1326,782)
+longId 1237794
+id1 157
+--points (1247,787) and (1441,769)
+------ n samples 15
+------ sample 0 coord(1344,778)
+------ sample 1 coord(1392,773)
+------ sample 2 coord(1295,782)
+------ sample 3 coord(1416,771)
+------ sample 4 coord(1271,784)
+------ sample 5 coord(1368,775)
+------ sample 6 coord(1319,780)
+------ sample 7 coord(1428,770)
+------ sample 8 coord(1259,785)
+------ sample 9 coord(1404,772)
+------ sample 10 coord(1283,783)
+------ sample 11 coord(1380,774)
+------ sample 12 coord(1307,781)
+------ sample 13 coord(1356,776)
+------ sample 14 coord(1331,779)
+longId 1247787
+id1 153
+--points (1264,778) and (1441,769)
+------ n samples 15
+------ sample 0 coord(1352,773)
+------ sample 1 coord(1396,771)
+------ sample 2 coord(1308,775)
+------ sample 3 coord(1418,770)
+------ sample 4 coord(1286,776)
+------ sample 5 coord(1374,772)
+------ sample 6 coord(1330,774)
+------ sample 7 coord(1429,769)
+------ sample 8 coord(1275,777)
+------ sample 9 coord(1407,770)
+------ sample 10 coord(1297,775)
+------ sample 11 coord(1385,771)
+------ sample 12 coord(1319,774)
+------ sample 13 coord(1363,772)
+------ sample 14 coord(1341,773)
+longId 1264778
+id1 160
+--points (1313,634) and (1441,769)
+------ n samples 15
+------ sample 0 coord(1377,701)
+------ sample 1 coord(1409,735)
+------ sample 2 coord(1345,667)
+------ sample 3 coord(1425,752)
+------ sample 4 coord(1329,650)
+------ sample 5 coord(1393,718)
+------ sample 6 coord(1361,684)
+------ sample 7 coord(1433,760)
+------ sample 8 coord(1321,642)
+------ sample 9 coord(1417,743)
+------ sample 10 coord(1337,658)
+------ sample 11 coord(1401,726)
+------ sample 12 coord(1353,675)
+------ sample 13 coord(1385,709)
+------ sample 14 coord(1369,692)
+longId 1313634
+id1 167
+--points (1273,773) and (1441,769)
+------ n samples 15
+------ sample 0 coord(1357,771)
+------ sample 1 coord(1399,770)
+------ sample 2 coord(1315,772)
+------ sample 3 coord(1420,769)
+------ sample 4 coord(1294,772)
+------ sample 5 coord(1378,770)
+------ sample 6 coord(1336,771)
+------ sample 7 coord(1430,769)
+------ sample 8 coord(1283,772)
+------ sample 9 coord(1409,769)
+------ sample 10 coord(1304,772)
+------ sample 11 coord(1388,770)
+------ sample 12 coord(1325,771)
+------ sample 13 coord(1367,770)
+------ sample 14 coord(1346,771)
+longId 1273773
+id1 161
+Step 230size: 1000 5
+--points (1237,794) and (1441,769)
+------ n samples 15
+------ sample 0 coord(1339,781)
+------ sample 1 coord(1390,775)
+------ sample 2 coord(1288,787)
+------ sample 3 coord(1415,772)
+------ sample 4 coord(1262,790)
+------ sample 5 coord(1364,778)
+------ sample 6 coord(1313,784)
+------ sample 7 coord(1428,770)
+------ sample 8 coord(1249,792)
+------ sample 9 coord(1402,773)
+------ sample 10 coord(1275,788)
+------ sample 11 coord(1377,776)
+------ sample 12 coord(1300,785)
+------ sample 13 coord(1351,779)
+------ sample 14 coord(1326,782)
+longId 1237794
+id1 157
+--points (1247,787) and (1441,769)
+------ n samples 15
+------ sample 0 coord(1344,778)
+------ sample 1 coord(1392,773)
+------ sample 2 coord(1295,782)
+------ sample 3 coord(1416,771)
+------ sample 4 coord(1271,784)
+------ sample 5 coord(1368,775)
+------ sample 6 coord(1319,780)
+------ sample 7 coord(1428,770)
+------ sample 8 coord(1259,785)
+------ sample 9 coord(1404,772)
+------ sample 10 coord(1283,783)
+------ sample 11 coord(1380,774)
+------ sample 12 coord(1307,781)
+------ sample 13 coord(1356,776)
+------ sample 14 coord(1331,779)
+longId 1247787
+id1 153
+--points (1264,778) and (1441,769)
+------ n samples 15
+------ sample 0 coord(1352,773)
+------ sample 1 coord(1396,771)
+------ sample 2 coord(1308,775)
+------ sample 3 coord(1418,770)
+------ sample 4 coord(1286,776)
+------ sample 5 coord(1374,772)
+------ sample 6 coord(1330,774)
+------ sample 7 coord(1429,769)
+------ sample 8 coord(1275,777)
+------ sample 9 coord(1407,770)
+------ sample 10 coord(1297,775)
+------ sample 11 coord(1385,771)
+------ sample 12 coord(1319,774)
+------ sample 13 coord(1363,772)
+------ sample 14 coord(1341,773)
+longId 1264778
+id1 160
+--points (1327,541) and (1441,769)
+------ n samples 15
+------ sample 0 coord(1384,655)
+------ sample 1 coord(1412,712)
+------ sample 2 coord(1355,598)
+------ sample 3 coord(1426,740)
+------ sample 4 coord(1341,569)
+------ sample 5 coord(1398,683)
+------ sample 6 coord(1369,626)
+------ sample 7 coord(1433,754)
+------ sample 8 coord(1334,555)
+------ sample 9 coord(1419,726)
+------ sample 10 coord(1348,583)
+------ sample 11 coord(1405,697)
+------ sample 12 coord(1362,612)
+------ sample 13 coord(1391,669)
+------ sample 14 coord(1376,640)
+longId 1327541
+id1 166
+--points (1313,634) and (1441,769)
+------ n samples 15
+------ sample 0 coord(1377,701)
+------ sample 1 coord(1409,735)
+------ sample 2 coord(1345,667)
+------ sample 3 coord(1425,752)
+------ sample 4 coord(1329,650)
+------ sample 5 coord(1393,718)
+------ sample 6 coord(1361,684)
+------ sample 7 coord(1433,760)
+------ sample 8 coord(1321,642)
+------ sample 9 coord(1417,743)
+------ sample 10 coord(1337,658)
+------ sample 11 coord(1401,726)
+------ sample 12 coord(1353,675)
+------ sample 13 coord(1385,709)
+------ sample 14 coord(1369,692)
+longId 1313634
+id1 167
+--points (1273,773) and (1441,769)
+------ n samples 15
+------ sample 0 coord(1357,771)
+------ sample 1 coord(1399,770)
+------ sample 2 coord(1315,772)
+------ sample 3 coord(1420,769)
+------ sample 4 coord(1294,772)
+------ sample 5 coord(1378,770)
+------ sample 6 coord(1336,771)
+------ sample 7 coord(1430,769)
+------ sample 8 coord(1283,772)
+------ sample 9 coord(1409,769)
+------ sample 10 coord(1304,772)
+------ sample 11 coord(1388,770)
+------ sample 12 coord(1325,771)
+------ sample 13 coord(1367,770)
+------ sample 14 coord(1346,771)
+longId 1273773
+id1 161
+V 175
+0 ; 1  (21,337)  (64,384)  => 63.7024
+id 0 coo 21337 coo2 21337
+0 ; 2  (21,337)  (0,314)  => 31.1448
+id 0 coo 21337 coo2 21337
+3 ; 4  (31,722)  (54,688)  => 41.0488
+id 3 coo 31722 coo2 31722
+3 ; 5  (31,722)  (32,756)  => 34.0147
+id 3 coo 31722 coo2 31722
+3 ; 6  (31,722)  (0,745)  => 38.6005
+id 3 coo 31722 coo2 31722
+7 ; 8  (67,313)  (60,258)  => 55.4437
+id 7 coo 67313 coo2 67313
+7 ; 9  (67,313)  (70,320)  => 7.61577
+id 7 coo 67313 coo2 67313
+10 ; 11  (75,325)  (93,410)  => 86.885
+id 10 coo 75325 coo2 75325
+10 ; 12  (75,325)  (72,318)  => 7.61577
+id 10 coo 75325 coo2 75325
+13 ; 14  (-43,872)  (-8,874)  => 35.0571
+id 13 coo -42128 coo2 -42128
+4 ; 15  (54,688)  (78,652)  => 43.2666
+id 4 coo 54688 coo2 54688
+4 ; 3  (54,688)  (31,722)  => 41.0488
+id 4 coo 54688 coo2 54688
+14 ; 16  (-8,874)  (0,875)  => 8.06226
+id 14 coo -7126 coo2 -7126
+14 ; 13  (-8,874)  (-43,872)  => 35.0571
+id 14 coo -7126 coo2 -7126
+17 ; 18  (99,753)  (98,869)  => 116.004
+id 17 coo 99753 coo2 99753
+17 ; 19  (99,753)  (108,726)  => 28.4605
+id 17 coo 99753 coo2 99753
+8 ; 20  (60,258)  (68,249)  => 12.0416
+id 8 coo 60258 coo2 60258
+8 ; 7  (60,258)  (67,313)  => 55.4437
+id 8 coo 60258 coo2 60258
+8 ; 2  (60,258)  (0,314)  => 82.0731
+id 8 coo 60258 coo2 60258
+16 ; 21  (0,875)  (78,873)  => 78.0256
+id 16 coo 875 coo2 875
+16 ; 14  (0,875)  (-8,874)  => 8.06226
+id 16 coo 875 coo2 875
+1 ; 22  (64,384)  (78,398)  => 19.799
+id 1 coo 64384 coo2 64384
+1 ; 0  (64,384)  (21,337)  => 63.7024
+id 1 coo 64384 coo2 64384
+20 ; 23  (68,249)  (156,156)  => 128.035
+id 20 coo 68249 coo2 68249
+20 ; 8  (68,249)  (60,258)  => 12.0416
+id 20 coo 68249 coo2 68249
+22 ; 11  (78,398)  (93,410)  => 19.2094
+id 22 coo 78398 coo2 78398
+22 ; 1  (78,398)  (64,384)  => 19.799
+id 22 coo 78398 coo2 78398
+15 ; 24  (78,652)  (82,648)  => 5.65685
+id 15 coo 78652 coo2 78652
+15 ; 4  (78,652)  (54,688)  => 43.2666
+id 15 coo 78652 coo2 78652
+24 ; 25  (82,648)  (173,565)  => 123.167
+id 24 coo 82648 coo2 82648
+24 ; 15  (82,648)  (78,652)  => 5.65685
+id 24 coo 82648 coo2 82648
+26 ; 25  (134,708)  (173,565)  => 148.223
+id 26 coo 134708 coo2 134708
+26 ; 27  (134,708)  (118,741)  => 36.6742
+id 26 coo 134708 coo2 134708
+11 ; 28  (93,410)  (121,437)  => 38.8973
+id 11 coo 93410 coo2 93410
+11 ; 22  (93,410)  (78,398)  => 19.2094
+id 11 coo 93410 coo2 93410
+11 ; 10  (93,410)  (75,325)  => 86.885
+id 11 coo 93410 coo2 93410
+21 ; 18  (78,873)  (98,869)  => 20.3961
+id 21 coo 78873 coo2 78873
+21 ; 16  (78,873)  (0,875)  => 78.0256
+id 21 coo 78873 coo2 78873
+18 ; 29  (98,869)  (122,870)  => 24.0208
+id 18 coo 98869 coo2 98869
+18 ; 21  (98,869)  (78,873)  => 20.3961
+id 18 coo 98869 coo2 98869
+18 ; 17  (98,869)  (99,753)  => 116.004
+id 18 coo 98869 coo2 98869
+28 ; 30  (121,437)  (180,493)  => 81.3449
+id 28 coo 121437 coo2 121437
+28 ; 11  (121,437)  (93,410)  => 38.8973
+id 28 coo 121437 coo2 121437
+29 ; 31  (122,870)  (165,869)  => 43.0116
+id 29 coo 122870 coo2 122870
+29 ; 18  (122,870)  (98,869)  => 24.0208
+id 29 coo 122870 coo2 122870
+32 ; 33  (249,309)  (254,289)  => 20.6155
+id 32 coo 249309 coo2 249309
+32 ; 34  (249,309)  (248,326)  => 17.0294
+id 32 coo 249309 coo2 249309
+35 ; 30  (211,362)  (180,493)  => 134.618
+id 35 coo 211362 coo2 211362
+35 ; 36  (211,362)  (232,310)  => 56.0803
+id 35 coo 211362 coo2 211362
+33 ; 37  (254,289)  (256,285)  => 4.47214
+id 33 coo 254289 coo2 254289
+33 ; 32  (254,289)  (249,309)  => 20.6155
+id 33 coo 254289 coo2 254289
+37 ; 38  (256,285)  (281,158)  => 129.437
+id 37 coo 256285 coo2 256285
+37 ; 33  (256,285)  (254,289)  => 4.47214
+id 37 coo 256285 coo2 256285
+31 ; 39  (165,869)  (230,888)  => 67.72
+id 31 coo 165869 coo2 165869
+31 ; 29  (165,869)  (122,870)  => 43.0116
+id 31 coo 165869 coo2 165869
+31 ; 40  (165,869)  (202,738)  => 136.125
+id 31 coo 165869 coo2 165869
+41 ; 42  (270,359)  (311,541)  => 186.561
+id 41 coo 270359 coo2 270359
+41 ; 43  (270,359)  (257,320)  => 41.1096
+id 41 coo 270359 coo2 270359
+23 ; 44  (156,156)  (224,155)  => 68.0074
+id 23 coo 156156 coo2 156156
+23 ; 20  (156,156)  (68,249)  => 128.035
+id 23 coo 156156 coo2 156156
+23 ; 45  (156,156)  (0,0)  => 220.617
+id 23 coo 156156 coo2 156156
+39 ; 46  (230,888)  (287,897)  => 57.7062
+id 39 coo 230888 coo2 230888
+39 ; 31  (230,888)  (165,869)  => 67.72
+id 39 coo 230888 coo2 230888
+25 ; 47  (173,565)  (195,543)  => 31.1127
+id 25 coo 173565 coo2 173565
+25 ; 26  (173,565)  (134,708)  => 148.223
+id 25 coo 173565 coo2 173565
+25 ; 24  (173,565)  (82,648)  => 123.167
+id 25 coo 173565 coo2 173565
+30 ; 48  (180,493)  (195,514)  => 25.807
+id 30 coo 180493 coo2 180493
+30 ; 28  (180,493)  (121,437)  => 81.3449
+id 30 coo 180493 coo2 180493
+30 ; 35  (180,493)  (211,362)  => 134.618
+id 30 coo 180493 coo2 180493
+44 ; 38  (224,155)  (281,158)  => 57.0789
+id 44 coo 224155 coo2 224155
+44 ; 23  (224,155)  (156,156)  => 68.0074
+id 44 coo 224155 coo2 224155
+46 ; 49  (287,897)  (342,898)  => 55.0091
+id 46 coo 287897 coo2 287897
+46 ; 39  (287,897)  (230,888)  => 57.7062
+id 46 coo 287897 coo2 287897
+47 ; 50  (195,543)  (207,530)  => 17.6918
+id 47 coo 195543 coo2 195543
+47 ; 25  (195,543)  (173,565)  => 31.1127
+id 47 coo 195543 coo2 195543
+48 ; 51  (195,514)  (199,520)  => 7.2111
+id 48 coo 195514 coo2 195514
+48 ; 30  (195,514)  (180,493)  => 25.807
+id 48 coo 195514 coo2 195514
+51 ; 50  (199,520)  (207,530)  => 12.8062
+id 51 coo 199520 coo2 199520
+51 ; 48  (199,520)  (195,514)  => 7.2111
+id 51 coo 199520 coo2 199520
+50 ; 42  (207,530)  (311,541)  => 104.58
+id 50 coo 207530 coo2 207530
+50 ; 47  (207,530)  (195,543)  => 17.6918
+id 50 coo 207530 coo2 207530
+50 ; 51  (207,530)  (199,520)  => 12.8062
+id 50 coo 207530 coo2 207530
+52 ; 53  (322,697)  (327,547)  => 150.083
+id 52 coo 322697 coo2 322697
+52 ; 54  (322,697)  (346,798)  => 103.812
+id 52 coo 322697 coo2 322697
+52 ; 55  (322,697)  (291,796)  => 103.74
+id 52 coo 322697 coo2 322697
+56 ; 57  (403,306)  (403,303)  => 3
+id 56 coo 403306 coo2 403306
+56 ; 58  (403,306)  (407,333)  => 27.2947
+id 56 coo 403306 coo2 403306
+57 ; 59  (403,303)  (402,281)  => 22.0227
+id 57 coo 403303 coo2 403303
+57 ; 56  (403,303)  (403,306)  => 3
+id 57 coo 403303 coo2 403303
+38 ; 60  (281,158)  (347,156)  => 66.0303
+id 38 coo 281158 coo2 281158
+38 ; 37  (281,158)  (256,285)  => 129.437
+id 38 coo 281158 coo2 281158
+38 ; 44  (281,158)  (224,155)  => 57.0789
+id 38 coo 281158 coo2 281158
+49 ; 61  (342,898)  (397,892)  => 55.3263
+id 49 coo 342898 coo2 342898
+49 ; 46  (342,898)  (287,897)  => 55.0091
+id 49 coo 342898 coo2 342898
+59 ; 62  (402,281)  (406,160)  => 121.066
+id 59 coo 402281 coo2 402281
+59 ; 57  (402,281)  (403,303)  => 22.0227
+id 59 coo 402281 coo2 402281
+63 ; 64  (347,414)  (346,421)  => 7.07107
+id 63 coo 347414 coo2 347414
+63 ; 65  (347,414)  (358,313)  => 101.597
+id 63 coo 347414 coo2 347414
+63 ; 66  (347,414)  (391,322)  => 101.98
+id 63 coo 347414 coo2 347414
+64 ; 67  (346,421)  (320,543)  => 124.74
+id 64 coo 346421 coo2 346421
+64 ; 63  (346,421)  (347,414)  => 7.07107
+id 64 coo 346421 coo2 346421
+68 ; 69  (438,362)  (487,528)  => 173.081
+id 68 coo 438362 coo2 438362
+68 ; 70  (438,362)  (419,320)  => 46.0977
+id 68 coo 438362 coo2 438362
+71 ; 72  (438,799)  (433,883)  => 84.1487
+id 71 coo 438799 coo2 438799
+71 ; 73  (438,799)  (455,738)  => 63.3246
+id 71 coo 438799 coo2 438799
+60 ; 74  (347,156)  (399,159)  => 52.0865
+id 60 coo 347156 coo2 347156
+60 ; 38  (347,156)  (281,158)  => 66.0303
+id 60 coo 347156 coo2 347156
+61 ; 72  (397,892)  (433,883)  => 37.108
+id 61 coo 397892 coo2 397892
+61 ; 49  (397,892)  (342,898)  => 55.3263
+id 61 coo 397892 coo2 397892
+42 ; 67  (311,541)  (320,543)  => 9.21954
+id 42 coo 311541 coo2 311541
+42 ; 50  (311,541)  (207,530)  => 104.58
+id 42 coo 311541 coo2 311541
+42 ; 41  (311,541)  (270,359)  => 186.561
+id 42 coo 311541 coo2 311541
+67 ; 75  (320,543)  (326,546)  => 6.7082
+id 67 coo 320543 coo2 320543
+67 ; 42  (320,543)  (311,541)  => 9.21954
+id 67 coo 320543 coo2 320543
+67 ; 64  (320,543)  (346,421)  => 124.74
+id 67 coo 320543 coo2 320543
+72 ; 76  (433,883)  (481,887)  => 48.1664
+id 72 coo 433883 coo2 433883
+72 ; 61  (433,883)  (397,892)  => 37.108
+id 72 coo 433883 coo2 433883
+72 ; 71  (433,883)  (438,799)  => 84.1487
+id 72 coo 433883 coo2 433883
+75 ; 53  (326,546)  (327,547)  => 1.41421
+id 75 coo 326546 coo2 326546
+75 ; 67  (326,546)  (320,543)  => 6.7082
+id 75 coo 326546 coo2 326546
+53 ; 77  (327,547)  (348,545)  => 21.095
+id 53 coo 327547 coo2 327547
+53 ; 52  (327,547)  (322,697)  => 150.083
+id 53 coo 327547 coo2 327547
+53 ; 75  (327,547)  (326,546)  => 1.41421
+id 53 coo 327547 coo2 327547
+74 ; 62  (399,159)  (406,160)  => 7.07107
+id 74 coo 399159 coo2 399159
+74 ; 60  (399,159)  (347,156)  => 52.0865
+id 74 coo 399159 coo2 399159
+62 ; 78  (406,160)  (411,160)  => 5
+id 62 coo 406160 coo2 406160
+62 ; 59  (406,160)  (402,281)  => 121.066
+id 62 coo 406160 coo2 406160
+62 ; 74  (406,160)  (399,159)  => 7.07107
+id 62 coo 406160 coo2 406160
+77 ; 69  (348,545)  (487,528)  => 140.036
+id 77 coo 348545 coo2 348545
+77 ; 53  (348,545)  (327,547)  => 21.095
+id 77 coo 348545 coo2 348545
+78 ; 79  (411,160)  (586,156)  => 175.046
+id 78 coo 411160 coo2 411160
+78 ; 62  (411,160)  (406,160)  => 5
+id 78 coo 411160 coo2 411160
+80 ; 81  (518,698)  (531,672)  => 29.0689
+id 80 coo 518698 coo2 518698
+80 ; 82  (518,698)  (478,775)  => 86.7698
+id 80 coo 518698 coo2 518698
+76 ; 83  (481,887)  (578,885)  => 97.0206
+id 76 coo 481887 coo2 481887
+76 ; 72  (481,887)  (433,883)  => 48.1664
+id 76 coo 481887 coo2 481887
+84 ; 81  (535,680)  (531,672)  => 8.94427
+id 84 coo 535680 coo2 535680
+84 ; 85  (535,680)  (593,771)  => 107.912
+id 84 coo 535680 coo2 535680
+86 ; 87  (613,305)  (614,288)  => 17.0294
+id 86 coo 613305 coo2 613305
+86 ; 88  (613,305)  (614,330)  => 25.02
+id 86 coo 613305 coo2 613305
+81 ; 89  (531,672)  (518,531)  => 141.598
+id 81 coo 531672 coo2 531672
+81 ; 84  (531,672)  (535,680)  => 8.94427
+id 81 coo 531672 coo2 531672
+81 ; 80  (531,672)  (518,698)  => 29.0689
+id 81 coo 531672 coo2 531672
+90 ; 91  (570,378)  (535,527)  => 153.056
+id 90 coo 570378 coo2 570378
+90 ; 92  (570,378)  (594,312)  => 70.2282
+id 90 coo 570378 coo2 570378
+87 ; 93  (614,288)  (626,229)  => 60.208
+id 87 coo 614288 coo2 614288
+87 ; 86  (614,288)  (613,305)  => 17.0294
+id 87 coo 614288 coo2 614288
+94 ; 95  (618,784)  (595,854)  => 73.6817
+id 94 coo 618784 coo2 618784
+94 ; 96  (618,784)  (618,723)  => 61
+id 94 coo 618784 coo2 618784
+95 ; 83  (595,854)  (578,885)  => 35.3553
+id 95 coo 595854 coo2 595854
+95 ; 94  (595,854)  (618,784)  => 73.6817
+id 95 coo 595854 coo2 595854
+97 ; 98  (642,358)  (683,525)  => 171.959
+id 97 coo 642358 coo2 642358
+97 ; 99  (642,358)  (626,318)  => 43.0813
+id 97 coo 642358 coo2 642358
+83 ; 100  (578,885)  (607,902)  => 33.6155
+id 83 coo 578885 coo2 578885
+83 ; 76  (578,885)  (481,887)  => 97.0206
+id 83 coo 578885 coo2 578885
+83 ; 95  (578,885)  (595,854)  => 35.3553
+id 83 coo 578885 coo2 578885
+69 ; 89  (487,528)  (518,531)  => 31.1448
+id 69 coo 487528 coo2 487528
+69 ; 77  (487,528)  (348,545)  => 140.036
+id 69 coo 487528 coo2 487528
+69 ; 68  (487,528)  (438,362)  => 173.081
+id 69 coo 487528 coo2 487528
+100 ; 101  (607,902)  (692,927)  => 88.6002
+id 100 coo 607902 coo2 607902
+100 ; 83  (607,902)  (578,885)  => 33.6155
+id 100 coo 607902 coo2 607902
+93 ; 102  (626,229)  (637,159)  => 70.859
+id 93 coo 626229 coo2 626229
+93 ; 87  (626,229)  (614,288)  => 60.208
+id 93 coo 626229 coo2 626229
+89 ; 91  (518,531)  (535,527)  => 17.4642
+id 89 coo 518531 coo2 518531
+89 ; 81  (518,531)  (531,672)  => 141.598
+id 89 coo 518531 coo2 518531
+89 ; 69  (518,531)  (487,528)  => 31.1448
+id 89 coo 518531 coo2 518531
+79 ; 102  (586,156)  (637,159)  => 51.0882
+id 79 coo 586156 coo2 586156
+79 ; 78  (586,156)  (411,160)  => 175.046
+id 79 coo 586156 coo2 586156
+91 ; 98  (535,527)  (683,525)  => 148.014
+id 91 coo 535527 coo2 535527
+91 ; 89  (535,527)  (518,531)  => 17.4642
+id 91 coo 535527 coo2 535527
+91 ; 90  (535,527)  (570,378)  => 153.056
+id 91 coo 535527 coo2 535527
+101 ; 103  (692,927)  (809,927)  => 117
+id 101 coo 692927 coo2 692927
+101 ; 100  (692,927)  (607,902)  => 88.6002
+id 101 coo 692927 coo2 692927
+102 ; 104  (637,159)  (835,159)  => 198
+id 102 coo 637159 coo2 637159
+102 ; 93  (637,159)  (626,229)  => 70.859
+id 102 coo 637159 coo2 637159
+102 ; 79  (637,159)  (586,156)  => 51.0882
+id 102 coo 637159 coo2 637159
+105 ; 106  (750,754)  (750,719)  => 35
+id 105 coo 750754 coo2 750754
+105 ; 107  (750,754)  (809,855)  => 116.97
+id 105 coo 750754 coo2 750754
+105 ; 108  (750,754)  (692,855)  => 116.469
+id 105 coo 750754 coo2 750754
+106 ; 109  (750,719)  (760,643)  => 76.6551
+id 106 coo 750719 coo2 750719
+106 ; 105  (750,719)  (750,754)  => 35
+id 106 coo 750719 coo2 750719
+110 ; 111  (811,376)  (767,548)  => 177.539
+id 110 coo 811376 coo2 811376
+110 ; 112  (811,376)  (835,318)  => 62.7694
+id 110 coo 811376 coo2 811376
+103 ; 113  (809,927)  (893,903)  => 87.3613
+id 103 coo 809927 coo2 809927
+103 ; 101  (809,927)  (692,927)  => 117
+id 103 coo 809927 coo2 809927
+114 ; 115  (856,295)  (856,285)  => 10
+id 114 coo 856295 coo2 856295
+114 ; 116  (856,295)  (852,334)  => 39.2046
+id 114 coo 856295 coo2 856295
+98 ; 111  (683,525)  (767,548)  => 87.0919
+id 98 coo 683525 coo2 683525
+98 ; 91  (683,525)  (535,527)  => 148.014
+id 98 coo 683525 coo2 683525
+98 ; 97  (683,525)  (642,358)  => 171.959
+id 98 coo 683525 coo2 683525
+115 ; 117  (856,285)  (859,159)  => 126.036
+id 115 coo 856285 coo2 856285
+115 ; 114  (856,285)  (856,295)  => 10
+id 115 coo 856285 coo2 856285
+118 ; 119  (865,834)  (890,890)  => 61.327
+id 118 coo 865834 coo2 865834
+118 ; 120  (865,834)  (853,778)  => 57.2713
+id 118 coo 865834 coo2 865834
+109 ; 121  (760,643)  (780,556)  => 89.2693
+id 109 coo 760643 coo2 760643
+109 ; 106  (760,643)  (750,719)  => 76.6551
+id 109 coo 760643 coo2 760643
+119 ; 122  (890,890)  (896,900)  => 11.6619
+id 119 coo 890890 coo2 890890
+119 ; 118  (890,890)  (865,834)  => 61.327
+id 119 coo 890890 coo2 890890
+113 ; 122  (893,903)  (896,900)  => 4.24264
+id 113 coo 893903 coo2 893903
+113 ; 103  (893,903)  (809,927)  => 87.3613
+id 113 coo 893903 coo2 893903
+104 ; 117  (835,159)  (859,159)  => 24
+id 104 coo 835159 coo2 835159
+104 ; 102  (835,159)  (637,159)  => 198
+id 104 coo 835159 coo2 835159
+122 ; 123  (896,900)  (957,899)  => 61.0082
+id 122 coo 896900 coo2 896900
+122 ; 113  (896,900)  (893,903)  => 4.24264
+id 122 coo 896900 coo2 896900
+122 ; 119  (896,900)  (890,890)  => 11.6619
+id 122 coo 896900 coo2 896900
+111 ; 121  (767,548)  (780,556)  => 15.2643
+id 111 coo 767548 coo2 767548
+111 ; 98  (767,548)  (683,525)  => 87.0919
+id 111 coo 767548 coo2 767548
+111 ; 110  (767,548)  (811,376)  => 177.539
+id 111 coo 767548 coo2 767548
+121 ; 124  (780,556)  (868,555)  => 88.0057
+id 121 coo 780556 coo2 780556
+121 ; 109  (780,556)  (760,643)  => 89.2693
+id 121 coo 780556 coo2 780556
+121 ; 111  (780,556)  (767,548)  => 15.2643
+id 121 coo 780556 coo2 780556
+125 ; 126  (917,700)  (917,684)  => 16
+id 125 coo 917700 coo2 917700
+125 ; 127  (917,700)  (954,800)  => 106.626
+id 125 coo 917700 coo2 917700
+125 ; 128  (917,700)  (888,802)  => 106.042
+id 125 coo 917700 coo2 917700
+117 ; 129  (859,159)  (870,159)  => 11
+id 117 coo 859159 coo2 859159
+117 ; 115  (859,159)  (856,285)  => 126.036
+id 117 coo 859159 coo2 859159
+117 ; 104  (859,159)  (835,159)  => 24
+id 117 coo 859159 coo2 859159
+130 ; 131  (910,431)  (932,516)  => 87.8009
+id 130 coo 910431 coo2 910431
+130 ; 132  (910,431)  (877,319)  => 116.76
+id 130 coo 910431 coo2 910431
+129 ; 133  (870,159)  (1029,156)  => 159.028
+id 129 coo 870159 coo2 870159
+129 ; 117  (870,159)  (859,159)  => 11
+id 129 coo 870159 coo2 870159
+126 ; 134  (917,684)  (914,642)  => 42.107
+id 126 coo 917684 coo2 917684
+126 ; 125  (917,684)  (917,700)  => 16
+id 126 coo 917684 coo2 917684
+123 ; 135  (957,899)  (1023,888)  => 66.9104
+id 123 coo 957899 coo2 957899
+123 ; 122  (957,899)  (896,900)  => 61.0082
+id 123 coo 957899 coo2 957899
+136 ; 137  (1055,672)  (1061,672)  => 6
+id 136 coo 1055672 coo2 1055672
+136 ; 138  (1055,672)  (922,647)  => 135.329
+id 136 coo 1055672 coo2 1055672
+138 ; 134  (922,647)  (914,642)  => 9.43398
+id 138 coo 922647 coo2 922647
+138 ; 136  (922,647)  (1055,672)  => 135.329
+id 138 coo 922647 coo2 922647
+138 ; 139  (922,647)  (1042,731)  => 146.479
+id 138 coo 922647 coo2 922647
+134 ; 124  (914,642)  (868,555)  => 98.4124
+id 134 coo 914642 coo2 914642
+134 ; 138  (914,642)  (922,647)  => 9.43398
+id 134 coo 914642 coo2 914642
+134 ; 126  (914,642)  (917,684)  => 42.107
+id 134 coo 914642 coo2 914642
+140 ; 141  (1063,670)  (1069,674)  => 7.2111
+id 140 coo 1063670 coo2 1063670
+140 ; 142  (1063,670)  (1060,670)  => 3
+id 140 coo 1063670 coo2 1063670
+141 ; 143  (1069,674)  (1100,699)  => 39.8246
+id 141 coo 1069674 coo2 1069674
+141 ; 140  (1069,674)  (1063,670)  => 7.2111
+id 141 coo 1069674 coo2 1069674
+124 ; 144  (868,555)  (930,517)  => 72.7186
+id 124 coo 868555 coo2 868555
+124 ; 134  (868,555)  (914,642)  => 98.4124
+id 124 coo 868555 coo2 868555
+124 ; 121  (868,555)  (780,556)  => 88.0057
+id 124 coo 868555 coo2 868555
+145 ; 144  (1018,599)  (930,517)  => 120.283
+id 145 coo 1018599 coo2 1018599
+145 ; 146  (1018,599)  (1077,660)  => 84.8646
+id 145 coo 1018599 coo2 1018599
+147 ; 148  (1009,414)  (959,500)  => 99.4786
+id 147 coo 1009414 coo2 1009414
+147 ; 149  (1009,414)  (1035,313)  => 104.293
+id 147 coo 1009414 coo2 1009414
+147 ; 150  (1009,414)  (1085,342)  => 104.69
+id 147 coo 1009414 coo2 1009414
+144 ; 131  (930,517)  (932,516)  => 2.23607
+id 144 coo 930517 coo2 930517
+144 ; 145  (930,517)  (1018,599)  => 120.283
+id 144 coo 930517 coo2 930517
+144 ; 124  (930,517)  (868,555)  => 72.7186
+id 144 coo 930517 coo2 930517
+131 ; 148  (932,516)  (959,500)  => 31.3847
+id 131 coo 932516 coo2 932516
+131 ; 144  (932,516)  (930,517)  => 2.23607
+id 131 coo 932516 coo2 932516
+131 ; 130  (932,516)  (910,431)  => 87.8009
+id 131 coo 932516 coo2 932516
+135 ; 151  (1023,888)  (1134,849)  => 117.652
+id 135 coo 1023888 coo2 1023888
+135 ; 123  (1023,888)  (957,899)  => 66.9104
+id 135 coo 1023888 coo2 1023888
+148 ; 152  (959,500)  (1056,504)  => 97.0824
+id 148 coo 959500 coo2 959500
+148 ; 131  (959,500)  (932,516)  => 31.3847
+id 148 coo 959500 coo2 959500
+148 ; 147  (959,500)  (1009,414)  => 99.4786
+id 148 coo 959500 coo2 959500
+143 ; 153  (1100,699)  (1247,787)  => 171.327
+id 143 coo 1100699 coo2 1100699
+143 ; 141  (1100,699)  (1069,674)  => 39.8246
+id 143 coo 1100699 coo2 1100699
+152 ; 154  (1056,504)  (1158,481)  => 104.561
+id 152 coo 1056504 coo2 1056504
+152 ; 155  (1056,504)  (1156,535)  => 104.695
+id 152 coo 1056504 coo2 1056504
+152 ; 148  (1056,504)  (959,500)  => 97.0824
+id 152 coo 1056504 coo2 1056504
+133 ; 156  (1029,156)  (1119,167)  => 90.6697
+id 133 coo 1029156 coo2 1029156
+133 ; 129  (1029,156)  (870,159)  => 159.028
+id 133 coo 1029156 coo2 1029156
+151 ; 157  (1134,849)  (1237,794)  => 116.765
+id 151 coo 1134849 coo2 1134849
+151 ; 135  (1134,849)  (1023,888)  => 117.652
+id 151 coo 1134849 coo2 1134849
+156 ; 158  (1119,167)  (1177,183)  => 60.1664
+id 156 coo 1119167 coo2 1119167
+156 ; 133  (1119,167)  (1029,156)  => 90.6697
+id 156 coo 1119167 coo2 1119167
+158 ; 159  (1177,183)  (1275,224)  => 106.231
+id 158 coo 1177183 coo2 1177183
+158 ; 156  (1177,183)  (1119,167)  => 60.1664
+id 158 coo 1177183 coo2 1177183
+157 ; 153  (1237,794)  (1247,787)  => 12.2066
+id 157 coo 1237794 coo2 1237794
+157 ; 151  (1237,794)  (1134,849)  => 116.765
+id 157 coo 1237794 coo2 1237794
+153 ; 160  (1247,787)  (1264,778)  => 19.2354
+id 153 coo 1247787 coo2 1247787
+153 ; 157  (1247,787)  (1237,794)  => 12.2066
+id 153 coo 1247787 coo2 1247787
+153 ; 143  (1247,787)  (1100,699)  => 171.327
+id 153 coo 1247787 coo2 1247787
+160 ; 161  (1264,778)  (1273,773)  => 10.2956
+id 160 coo 1264778 coo2 1264778
+160 ; 153  (1264,778)  (1247,787)  => 19.2354
+id 160 coo 1264778 coo2 1264778
+159 ; 162  (1275,224)  (1279,239)  => 15.5242
+id 159 coo 1275224 coo2 1275224
+159 ; 158  (1275,224)  (1177,183)  => 106.231
+id 159 coo 1275224 coo2 1275224
+159 ; 163  (1275,224)  (1500,0)  => 317.492
+id 159 coo 1275224 coo2 1275224
+162 ; 164  (1279,239)  (1318,396)  => 161.771
+id 162 coo 1279239 coo2 1279239
+162 ; 159  (1279,239)  (1275,224)  => 15.5242
+id 162 coo 1279239 coo2 1279239
+164 ; 165  (1318,396)  (1328,487)  => 91.5478
+id 164 coo 1318396 coo2 1318396
+164 ; 162  (1318,396)  (1279,239)  => 161.771
+id 164 coo 1318396 coo2 1318396
+165 ; 166  (1328,487)  (1327,541)  => 54.0093
+id 165 coo 1328487 coo2 1328487
+165 ; 164  (1328,487)  (1318,396)  => 91.5478
+id 165 coo 1328487 coo2 1328487
+166 ; 167  (1327,541)  (1313,634)  => 94.0479
+id 166 coo 1327541 coo2 1327541
+166 ; 165  (1327,541)  (1328,487)  => 54.0093
+id 166 coo 1327541 coo2 1327541
+167 ; 161  (1313,634)  (1273,773)  => 144.641
+id 167 coo 1313634 coo2 1313634
+167 ; 166  (1313,634)  (1327,541)  => 94.0479
+id 167 coo 1313634 coo2 1313634
+161 ; 168  (1273,773)  (1500,1000)  => 321.026
+id 161 coo 1273773 coo2 1273773
+161 ; 160  (1273,773)  (1264,778)  => 10.2956
+id 161 coo 1273773 coo2 1273773
+161 ; 167  (1273,773)  (1313,634)  => 144.641
+id 161 coo 1273773 coo2 1273773
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+86 ; 170  (613,305)  (562,296)  => 51.788
+id 86 coo 613305 coo2 613305
+7 ; 172  (67,313)  (151,186)  => 152.266
+id 7 coo 67313 coo2 67313
+10 ; 172  (75,325)  (151,186)  => 158.42
+id 10 coo 75325 coo2 75325
+8 ; 172  (60,258)  (151,186)  => 116.039
+id 8 coo 60258 coo2 60258
+20 ; 172  (68,249)  (151,186)  => 104.202
+id 20 coo 68249 coo2 68249
+32 ; 172  (249,309)  (151,186)  => 157.267
+id 32 coo 249309 coo2 249309
+33 ; 172  (254,289)  (151,186)  => 145.664
+id 33 coo 254289 coo2 254289
+37 ; 172  (256,285)  (151,186)  => 144.312
+id 37 coo 256285 coo2 256285
+23 ; 172  (156,156)  (151,186)  => 30.4138
+id 23 coo 156156 coo2 156156
+44 ; 172  (224,155)  (151,186)  => 79.3095
+id 44 coo 224155 coo2 224155
+38 ; 172  (281,158)  (151,186)  => 132.981
+id 38 coo 281158 coo2 281158
+157 ; 174  (1237,794)  (1441,769)  => 205.526
+id 157 coo 1237794 coo2 1237794
+153 ; 174  (1247,787)  (1441,769)  => 194.833
+id 153 coo 1247787 coo2 1247787
+160 ; 174  (1264,778)  (1441,769)  => 177.229
+id 160 coo 1264778 coo2 1264778
+166 ; 174  (1327,541)  (1441,769)  => 254.912
+id 166 coo 1327541 coo2 1327541
+167 ; 174  (1313,634)  (1441,769)  => 186.035
+id 167 coo 1313634 coo2 1313634
+161 ; 174  (1273,773)  (1441,769)  => 168.048
+id 161 coo 1273773 coo2 1273773
+
+
+right path  173
+map 767548
+--- terzultimo punto : 151, 186
+--- penultimo punto : 562, 296
+--- ultimo punto : 1441, 769
+>>>>>>>>>>>>>>>> 562 -- 562
+>>>>>>>>>>>>>>>> > 296 -- 296
+-------Path 3 => 3: 
+PRIMA
+--- terzultimo punto : 151, 186
+--- penultimo punto : 562, 296
+--- ultimo punto : 1441, 769
+--- CENTRO GATE : 1441, 769
+--- PUNTO BORDO GATE : 1393, 769
+--- terzultimo punto : 562, 296
+--- penultimo punto : 1393, 769
+--- ultimo punto : 1441, 769
+Angoli!! 4
+--------angolo: -0.024840
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+kappa: 0.010000, 0.000000, 0.010000 
+OUTSIDE -127.14 punto <160.993, 186.251> -> 0
+OUTSIDE -125.399 punto <170.91, 187.499> -> 0
+OUTSIDE -123.9 punto <176.731, 188.709> -> 0
+OUTSIDE -121.092 punto <186.457, 191.033> -> 0
+OUTSIDE -118.285 punto <196.183, 193.358> -> 0
+OUTSIDE -115.477 punto <205.909, 195.683> -> 0
+OUTSIDE -112.67 punto <215.635, 198.008> -> 0
+OUTSIDE -109.862 punto <225.361, 200.332> -> 0
+OUTSIDE -107.387 punto <235.087, 202.657> -> 0
+OUTSIDE -105.797 punto <244.813, 204.982> -> 0
+OUTSIDE -105.138 punto <254.539, 207.306> -> 0
+OUTSIDE -105.427 punto <264.265, 209.631> -> 0
+OUTSIDE -106.611 punto <273.991, 211.956> -> 0
+OUTSIDE -103.619 punto <283.717, 214.28> -> 0
+OUTSIDE -100.628 punto <293.443, 216.605> -> 0
+OUTSIDE -97.6361 punto <303.169, 218.93> -> 0
+OUTSIDE -94.6445 punto <312.895, 221.255> -> 0
+OUTSIDE -91.6529 punto <322.621, 223.579> -> 0
+OUTSIDE -88.6613 punto <332.347, 225.904> -> 0
+OUTSIDE -85.6697 punto <342.073, 228.229> -> 0
+OUTSIDE -82.6781 punto <351.799, 230.553> -> 0
+OUTSIDE -80.1995 punto <361.525, 232.878> -> 0
+OUTSIDE -78.9178 punto <371.251, 235.203> -> 0
+OUTSIDE -78.859 punto <380.977, 237.527> -> 0
+OUTSIDE -79.1753 punto <390.703, 239.852> -> 0
+OUTSIDE -79.4916 punto <400.43, 242.177> -> 0
+OUTSIDE -76.0148 punto <410.156, 244.501> -> 0
+OUTSIDE -73.0572 punto <419.882, 246.826> -> 0
+OUTSIDE -70.2908 punto <429.608, 249.151> -> 0
+OUTSIDE -67.5244 punto <439.334, 251.476> -> 0
+OUTSIDE -64.758 punto <449.06, 253.8> -> 0
+OUTSIDE -61.9915 punto <458.786, 256.125> -> 0
+OUTSIDE -59.2251 punto <468.512, 258.45> -> 0
+OUTSIDE -56.4587 punto <478.238, 260.774> -> 0
+OUTSIDE -53.6923 punto <487.964, 263.099> -> 0
+OUTSIDE -50.9259 punto <497.69, 265.424> -> 0
+OUTSIDE -48.1594 punto <507.416, 267.748> -> 0
+OUTSIDE -46.1341 punto <514.536, 269.45> -> 0
+OUTSIDE -42.8922 punto <524.13, 272.257> -> 0
+OUTSIDE -38.7225 punto <533.396, 276.007> -> 0
+OUTSIDE -33.6667 punto <542.24, 280.664> -> 0
+OUTSIDE -27.7754 punto <550.576, 286.181> -> 0
+OUTSIDE -21.1072 punto <558.32, 292.502> -> 0
+OUTSIDE -17.4446 punto <562, 296> -> 0
+--------angolo: 0.785398
+Algorithm INcorrect
+kappa: -0.010000, 0.000000, -0.010000 
+OUTSIDE -10.4071 punto <569.413, 302.706> -> 0
+OUTSIDE -4.11338 punto <577.458, 308.639> -> 0
+OUTSIDE -0.876781 punto <582.306, 311.657> -> 0
+INSIDE!!! 4.55287 -> 1
+INSIDE!!! 3.50566 -> 1
+INSIDE!!! 1.47451 -> 1
+INSIDE!!! 3.30341 -> 1
+INSIDE!!! 12.9747 -> 1
+INSIDE!!! 22.646 -> 1
+INSIDE!!! 28.9402 -> 1
+INSIDE!!! 33.9807 -> 1
+INSIDE!!! 39.0212 -> 1
+INSIDE!!! 44.0617 -> 1
+INSIDE!!! 49.1021 -> 1
+INSIDE!!! 54.1426 -> 1
+INSIDE!!! 59.1831 -> 1
+INSIDE!!! 64.2236 -> 1
+INSIDE!!! 69.2641 -> 1
+INSIDE!!! 74.3045 -> 1
+INSIDE!!! 79.345 -> 1
+INSIDE!!! 84.3855 -> 1
+INSIDE!!! 89.426 -> 1
+INSIDE!!! 94.4665 -> 1
+INSIDE!!! 99.5069 -> 1
+INSIDE!!! 104.547 -> 1
+INSIDE!!! 109.588 -> 1
+INSIDE!!! 114.628 -> 1
+INSIDE!!! 116.786 -> 1
+INSIDE!!! 117.708 -> 1
+INSIDE!!! 119.463 -> 1
+INSIDE!!! 122.015 -> 1
+INSIDE!!! 125.315 -> 1
+INSIDE!!! 129.306 -> 1
+INSIDE!!! 133.926 -> 1
+INSIDE!!! 139.113 -> 1
+INSIDE!!! 144.805 -> 1
+INSIDE!!! 150.946 -> 1
+INSIDE!!! 157.483 -> 1
+INSIDE!!! 164.369 -> 1
+INSIDE!!! 171.561 -> 1
+INSIDE!!! 179.024 -> 1
+INSIDE!!! 186.724 -> 1
+INSIDE!!! 194.633 -> 1
+INSIDE!!! 194.536 -> 1
+INSIDE!!! 184.542 -> 1
+INSIDE!!! 174.549 -> 1
+INSIDE!!! 164.555 -> 1
+INSIDE!!! 154.561 -> 1
+INSIDE!!! 144.567 -> 1
+INSIDE!!! 134.574 -> 1
+INSIDE!!! 124.58 -> 1
+INSIDE!!! 114.586 -> 1
+INSIDE!!! 104.592 -> 1
+INSIDE!!! 94.5987 -> 1
+INSIDE!!! 84.6049 -> 1
+INSIDE!!! 74.6111 -> 1
+INSIDE!!! 64.6174 -> 1
+INSIDE!!! 54.6237 -> 1
+INSIDE!!! 44.6299 -> 1
+INSIDE!!! 34.6361 -> 1
+INSIDE!!! 24.6424 -> 1
+INSIDE!!! 14.6486 -> 1
+INSIDE!!! 4.65486 -> 1
+OUTSIDE -5.33886 punto <1109.15, 619.126> -> 0
+OUTSIDE -15.3327 punto <1117.78, 624.167> -> 0
+OUTSIDE -25.3264 punto <1126.42, 629.207> -> 0
+OUTSIDE -35.3202 punto <1135.06, 634.247> -> 0
+OUTSIDE -45.314 punto <1143.7, 639.288> -> 0
+OUTSIDE -55.3077 punto <1152.33, 644.328> -> 0
+OUTSIDE -65.3014 punto <1160.97, 649.369> -> 0
+OUTSIDE -75.2953 punto <1169.61, 654.409> -> 0
+OUTSIDE -85.289 punto <1178.24, 659.45> -> 0
+OUTSIDE -95.2827 punto <1186.88, 664.49> -> 0
+OUTSIDE -105.277 punto <1195.52, 669.531> -> 0
+OUTSIDE -115.27 punto <1204.15, 674.571> -> 0
+OUTSIDE -125.264 punto <1212.79, 679.612> -> 0
+OUTSIDE -135.258 punto <1221.43, 684.652> -> 0
+OUTSIDE -145.252 punto <1230.06, 689.693> -> 0
+OUTSIDE -155.245 punto <1238.7, 694.733> -> 0
+OUTSIDE -165.239 punto <1247.34, 699.774> -> 0
+OUTSIDE -175.233 punto <1255.97, 704.814> -> 0
+OUTSIDE -185.227 punto <1264.61, 709.855> -> 0
+OUTSIDE -195.22 punto <1273.25, 714.895> -> 0
+OUTSIDE -205.214 punto <1281.88, 719.936> -> 0
+OUTSIDE -215.208 punto <1290.52, 724.976> -> 0
+OUTSIDE -225.202 punto <1299.16, 730.017> -> 0
+OUTSIDE -235.195 punto <1307.79, 735.057> -> 0
+OUTSIDE -245.189 punto <1316.43, 740.098> -> 0
+OUTSIDE -255.183 punto <1325.07, 745.138> -> 0
+OUTSIDE -265.177 punto <1333.7, 750.178> -> 0
+OUTSIDE -275.17 punto <1342.34, 755.219> -> 0
+OUTSIDE -275.465 punto <1342.6, 755.368> -> 0
+OUTSIDE -285.424 punto <1351.47, 759.968> -> 0
+OUTSIDE -295.249 punto <1360.76, 763.66> -> 0
+OUTSIDE -304.841 punto <1370.37, 766.406> -> 0
+OUTSIDE -314.104 punto <1380.21, 768.178> -> 0
+OUTSIDE -322.945 punto <1390.17, 768.96> -> 0
+OUTSIDE -325.357 punto <1393, 769> -> 0
+--------angolo: 0.000000
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+kappa: 0.010000, 0.000000, 0.010000 
+OUTSIDE -333.81 punto <1403, 769> -> 0
+OUTSIDE -342.263 punto <1413, 769> -> 0
+OUTSIDE -350.717 punto <1423, 769> -> 0
+OUTSIDE -359.17 punto <1433, 769> -> 0
+OUTSIDE -365.932 punto <1441, 769> -> 0
+--- START righPathNew --- 
+--> 1: (151, 186)
+--> 2: (562, 296)
+--> 3: (1393, 769)
+--> 4: (1441, 769)
+--- END righPathNew --- 
