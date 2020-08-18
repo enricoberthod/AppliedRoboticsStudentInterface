@@ -11,14 +11,14 @@
 // è probabile che possa inserire un nuovo e a caso successivo rispetto alla ids size
 
 //void connect(int, VoronoiPoint, VoronoiPoint, VoronoiResults*, bool, bool, std::vector<GraphEdge>*, std::vector<GraphEdge>*);
-void connect(int, VoronoiPoint, VoronoiResults*, bool, std::vector<GraphEdge>*, int, std::vector<std::vector<cv::Point>>&);
+void connect(int, VoronoiPoint, VoronoiResults*, bool, std::vector<GraphEdge>*, int, const std::vector<std::vector<cv::Point>>&);
 void shortestPath(VoronoiPoint, bool, VoronoiPoint, bool, VoronoiResults *, std::vector<VoronoiPoint> *);
 void sampleSegment(VoronoiPoint, VoronoiPoint, std::vector<VoronoiPoint>);
 VoronoiPoint midpoint(VoronoiPoint, VoronoiPoint);
-bool edgeOnObstacle(VoronoiPoint, VoronoiPoint, std::vector<std::vector<cv::Point>>&);
+bool edgeOnObstacle(VoronoiPoint, VoronoiPoint, const std::vector<std::vector<cv::Point>>&);
 bool findCollision(double, double, const std::vector<std::vector<cv::Point>>&); 
 
-void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew, VoronoiResults *voronoiPaths, std::vector<VoronoiPoint> *rightPath, int netRadius, std::vector<std::vector<cv::Point>>& obsContours)
+void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew, VoronoiResults *voronoiPaths, std::vector<VoronoiPoint> *rightPath, int netRadius, const std::vector<std::vector<cv::Point>>& obsContours)
 {
 	int offset=20;
 	int step=10;
@@ -216,7 +216,7 @@ void shortestPath(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endN
 
 //////////////////////////////////////
 //void connect(int offset, VoronoiPoint startP, VoronoiPoint endP, VoronoiResults *voronoiPaths, bool startOk, bool endOk, std::vector<GraphEdge> *start, std::vector<GraphEdge> *end)
-void connect(int offset, VoronoiPoint pointP, VoronoiResults *voronoiPaths, bool pointOK, std::vector<GraphEdge> *pointEdges, int IDpos, std::vector<std::vector<cv::Point>>& obsContours)
+void connect(int offset, VoronoiPoint pointP, VoronoiResults *voronoiPaths, bool pointOK, std::vector<GraphEdge> *pointEdges, int IDpos, const std::vector<std::vector<cv::Point>>& obsContours)
 {
 	int a,b,c,d,o,x,y,endId,startId,id1;
 	int prev_x,prev_y=-1;
