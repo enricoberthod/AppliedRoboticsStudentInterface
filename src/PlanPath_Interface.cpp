@@ -267,7 +267,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	switch(mission_type) //0 for robot-gate //1 for robot-victims_in_right_order-gate //2 for robot-victims-gate in min time
 	{
 	case 0: //Direct path from robot initial position to gate position 		
-		PathFinder(start, true, end, true, &voronoiPaths, &rightPath, 0); 
+		PathFinder(start, true, end, true, &voronoiPaths, &rightPath, 0, contours); 
 	break;
 	case 1: //Path from robot to victim 1, victim 1 to victim 2, victim n to gate position (Mission 1)
 		
@@ -285,7 +285,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 					end=VoronoiPoint((int)(victim_list[j].second[0].x*floatToInt),(int)(victim_list[j].second[0].y*floatToInt));
 					//find the shortest path
 					piecePath.clear();
-					PathFinder(start, firstTime, end, true, &voronoiPaths, &piecePath, 100); //modify this (true only if the point is not already in the called before in pathFinder
+					PathFinder(start, firstTime, end, true, &voronoiPaths, &piecePath, 100, contours); //modify this (true only if the point is not already in the called before in pathFinder
 					//connect the piece of the path (victim to next victim) to the total one
 					rightPath.insert(rightPath.end(),piecePath.begin(),piecePath.end());
 					//the victim became the next starting point
@@ -297,11 +297,11 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		}
 		//last call for connect the last victims with the gate
 		piecePath.clear();
-		PathFinder(start, false, gate_pos, true, &voronoiPaths, &piecePath, 0);
+		PathFinder(start, false, gate_pos, true, &voronoiPaths, &piecePath, 0, contours);
 		rightPath.insert(rightPath.end(),piecePath.begin(),piecePath.end()); 
 	break;
 	case 2: //Path which minimize the time for exit from the arena (Mission 2)
-		PathFinder(start, true, end, true, &voronoiPaths, &rightPath, 0);
+		PathFinder(start, true, end, true, &voronoiPaths, &rightPath, 0, contours);
 	break;
 	default: throw std::logic_error("STOP_mission_type different from [0-2]"); break;
 	}
@@ -572,8 +572,9 @@ void sample(C arc, Path& path) {
 
 bool collision_detection(double x, double y, const std::vector<std::vector<cv::Point>>& contours) {
 	bool r = false;
+	double res;
 	for (int i = 0; i < contours.size() && !r; i++) {
-		double res = cv::pointPolygonTest(contours[i] , cv::Point2f(x,y) , true);
+		res = cv::pointPolygonTest(contours[i] , cv::Point2f(x,y) , true);
 		if(res > 0) {
 			r = true;
 			std::cout << "INSIDE!!! " << res << " -> " << r << std::endl;

@@ -11,10 +11,14 @@
 // è probabile che possa inserire un nuovo e a caso successivo rispetto alla ids size
 
 //void connect(int, VoronoiPoint, VoronoiPoint, VoronoiResults*, bool, bool, std::vector<GraphEdge>*, std::vector<GraphEdge>*);
-void connect(int, VoronoiPoint, VoronoiResults*, bool, std::vector<GraphEdge>*, int);
+void connect(int, VoronoiPoint, VoronoiResults*, bool, std::vector<GraphEdge>*, int, std::vector<std::vector<cv::Point>>&);
 void shortestPath(VoronoiPoint, bool, VoronoiPoint, bool, VoronoiResults *, std::vector<VoronoiPoint> *);
+void sampleSegment(VoronoiPoint, VoronoiPoint, std::vector<VoronoiPoint>);
+VoronoiPoint midpoint(VoronoiPoint, VoronoiPoint);
+bool edgeOnObstacle(VoronoiPoint, VoronoiPoint, std::vector<std::vector<cv::Point>>&);
+bool findCollision(double, double, const std::vector<std::vector<cv::Point>>&); 
 
-void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew, VoronoiResults *voronoiPaths, std::vector<VoronoiPoint> *rightPath, int netRadius)
+void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew, VoronoiResults *voronoiPaths, std::vector<VoronoiPoint> *rightPath, int netRadius, std::vector<std::vector<cv::Point>>& obsContours)
 {
 	int offset=20;
 	int step=10;
@@ -40,7 +44,7 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 			startLongId=(start.a*10000)+start.b;
 		voronoiPaths->ids.push_back(startLongId);
 	
-		connect(offset, start, voronoiPaths, true, &start_connection, -1); //-1 indicate sthe right id is the last in ids vector
+		connect(offset, start, voronoiPaths, true, &start_connection, -1, obsContours); //-1 indicate sthe right id is the last in ids vector
 		startSize=start_connection.size();
 	}
 	
@@ -71,14 +75,14 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 					endLongId=(x*10000)+y;
 				voronoiPaths->ids.push_back(endLongId);
 		
-				connect(offset, netVertex[i], voronoiPaths, true, &end_connection, -1);
+				connect(offset, netVertex[i], voronoiPaths, true, &end_connection, -1, obsContours);
 				endSize=end_connection.size();
 				
 				while(endSize<=(nConnection+i))
 				{
 					offset=offset+step;
 					end_connection.clear();
-					connect(offset, end, voronoiPaths, endSize<=nConnection, &end_connection, -1);
+					connect(offset, end, voronoiPaths, endSize<=nConnection, &end_connection, -1, obsContours);
 					endSize=end_connection.size();
 					for(int j=0;j<end_connection.size();j++)
 						voronoiPaths->resultEdges.push_back(end_connection[i]);
@@ -93,7 +97,7 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 				endLongId=(end.a*10000)+end.b;
 			voronoiPaths->ids.push_back(endLongId);
 		
-			connect(offset, end, voronoiPaths, true, &end_connection, -1);
+			connect(offset, end, voronoiPaths, true, &end_connection, -1, obsContours);
 			endSize=end_connection.size();
 		}
 	}
@@ -115,12 +119,12 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 		//connect(offset, start, end, voronoiPaths, startSize<=nConnection, endSize<=nConnection, &start_connection, &end_connection);
 		if(startNew)
 		{
-			connect(offset, start, voronoiPaths, startSize<=nConnection, &start_connection, -2);
+			connect(offset, start, voronoiPaths, startSize<=nConnection, &start_connection, -2, obsContours);
 			startSize=start_connection.size();
 		}
 		if(endNew && netRadius==0)
 		{
-			connect(offset, end, voronoiPaths, endSize<=nConnection, &end_connection, -1);
+			connect(offset, end, voronoiPaths, endSize<=nConnection, &end_connection, -1, obsContours);
 			endSize=end_connection.size();
 		}
 	}
@@ -138,90 +142,6 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 	
 	shortestPath(start, startNew, end, endNew, voronoiPaths, rightPath);
 }
-
-/*
-void connect(int offset, VoronoiPoint startP, VoronoiPoint endP, VoronoiResults *voronoiPaths, bool startOk, bool endOk, std::vector<GraphEdge> *start, std::vector<GraphEdge> *end)
-{
-	int a,b,c,d,o,x,y,endId,startId,id1;
-	int prev_x,prev_y=-1;
-	double len;
-	int longId,startLongId,endLongId;
-
-	a=startP.a-offset;
-	b=startP.b-offset;
-	c=endP.a-offset;
-	d=endP.b-offset;
-	o=offset*2;
-
-	if(startP.b<1000)
-		startLongId=(startP.a*1000)+startP.b;
-	else
-		startLongId=(startP.a*10000)+startP.b;
-	//voronoiPaths->ids.push_back(startLongId);
-	startId=voronoiPaths->ids.size()-2;
-	
-	std::cout << "startID " << startId << " | startLongID " << startLongId << std::endl;
-	
-	if(endP.b<1000)
-		endLongId=(endP.a*1000)+endP.b;
-	else
-		endLongId=(endP.a*10000)+endP.b;
-	//voronoiPaths->ids.push_back(endLongId);
-	endId=voronoiPaths->ids.size()-1;
-
-	std::cout << "endID " << endId << " | endLongID " << endLongId << std::endl;
-
-	for(int i=0;i<voronoiPaths->resultEdges.size();i++)
-	{
-		x=voronoiPaths->resultEdges[i].p0.a;
-		y=voronoiPaths->resultEdges[i].p0.b;
-		
-		if(startOk && (a<x) && (x<(a+o)) && ((b<y) && (y<(b+o))))
-		{
-			len=sqrt(pow((x-startP.a),2)+pow((y-startP.b),2));
-			if(x!=prev_x || y!=prev_y)
-			{
-				if(y<1000)
-					longId=(x*1000)+y;
-				else
-					longId=(x*10000)+y;
-				std::cout << "longId " << longId << std::endl;
-				id1=-1;
-				for(int j=0;j<voronoiPaths->ids.size() && id1==-1;j++)
-					if(voronoiPaths->ids[j]==longId)
-						id1=j;
-				std::cout << "id1 " << id1 << std::endl;
-				GraphEdge e(x,y,startP.a,startP.b,len,id1,startId);
-				start->push_back(e);
-				prev_x=x;
-				prev_y=y;
-			}
-		}
-		if(endOk && (c<x) && (x<(c+o)) && ((d<y) && (y<(d+o))))
-		{
-			len=sqrt(pow((x-endP.a),2)+pow((y-endP.b),2));
-			if(x!=prev_x || y!=prev_y)
-			{
-				if(y<1000)
-					longId=(x*1000)+y;
-				else
-					longId=(x*10000)+y;
-				std::cout << "longId " << longId << std::endl;
-				id1=-1;
-				for(int k=0;k<voronoiPaths->ids.size() && id1==-1;k++)
-					if(voronoiPaths->ids[k]==longId)
-						id1=k;
-				std::cout << "id1 " << id1 << std::endl;
-				GraphEdge e(x,y,endP.a,endP.b,len,id1,endId);
-				end->push_back(e);
-				prev_x=x;
-				prev_y=y;
-			}
-		}
-	}
- 	//return id;
-}
-*/
 
 
 void shortestPath(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew, VoronoiResults *voronoiPaths, std::vector<VoronoiPoint> *rightPath)
@@ -296,7 +216,7 @@ void shortestPath(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endN
 
 //////////////////////////////////////
 //void connect(int offset, VoronoiPoint startP, VoronoiPoint endP, VoronoiResults *voronoiPaths, bool startOk, bool endOk, std::vector<GraphEdge> *start, std::vector<GraphEdge> *end)
-void connect(int offset, VoronoiPoint pointP, VoronoiResults *voronoiPaths, bool pointOK, std::vector<GraphEdge> *pointEdges, int IDpos)
+void connect(int offset, VoronoiPoint pointP, VoronoiResults *voronoiPaths, bool pointOK, std::vector<GraphEdge> *pointEdges, int IDpos, std::vector<std::vector<cv::Point>>& obsContours)
 {
 	int a,b,c,d,o,x,y,endId,startId,id1;
 	int prev_x,prev_y=-1;
@@ -335,93 +255,77 @@ void connect(int offset, VoronoiPoint pointP, VoronoiResults *voronoiPaths, bool
 			len=sqrt(pow((x-pointP.a),2)+pow((y-pointP.b),2));
 			if(x!=prev_x || y!=prev_y)
 			{
-				if(y<1000)
-					longId=(x*1000)+y;
-				else
-					longId=(x*10000)+y;
-				std::cout << "longId " << longId << std::endl;
-				id1=-1;
-				for(int j=0;j<voronoiPaths->ids.size() && id1==-1;j++)
-					if(voronoiPaths->ids[j]==longId)
-						id1=j;
-				std::cout << "id1 " << id1 << std::endl;
-				GraphEdge e(x,y,pointP.a,pointP.b,len,id1,pointId);
-				pointEdges->push_back(e);
+				if(!edgeOnObstacle(pointP,VoronoiPoint(x,y),obsContours))
+				{
+					if(y<1000)
+						longId=(x*1000)+y;
+					else
+						longId=(x*10000)+y;
+					std::cout << "longId " << longId << std::endl;
+					id1=-1;
+					for(int j=0;j<voronoiPaths->ids.size() && id1==-1;j++)
+						if(voronoiPaths->ids[j]==longId)
+							id1=j;
+					std::cout << "id1 " << id1 << std::endl;
+					GraphEdge e(x,y,pointP.a,pointP.b,len,id1,pointId);
+					pointEdges->push_back(e);
+				}
 				prev_x=x;
 				prev_y=y;
 			}
 		}
 	}
 	
-	
-	///////////END////////////
-/*
-	if(startP.b<1000)
-		startLongId=(startP.a*1000)+startP.b;
-	else
-		startLongId=(startP.a*10000)+startP.b;
-	//voronoiPaths->ids.push_back(startLongId);
-	startId=voronoiPaths->ids.size()-2;
-	
-	std::cout << "startID " << startId << " | startLongID " << startLongId << std::endl;
-	
-	if(endP.b<1000)
-		endLongId=(endP.a*1000)+endP.b;
-	else
-		endLongId=(endP.a*10000)+endP.b;
-	//voronoiPaths->ids.push_back(endLongId);
-	endId=voronoiPaths->ids.size()-1;
+}	
 
-	std::cout << "endID " << endId << " | endLongID " << endLongId << std::endl;
-
-	for(int i=0;i<voronoiPaths->resultEdges.size();i++)
-	{
-		x=voronoiPaths->resultEdges[i].p0.a;
-		y=voronoiPaths->resultEdges[i].p0.b;
-		
-		if(startOk && (a<x) && (x<(a+o)) && ((b<y) && (y<(b+o))))
-		{
-			len=sqrt(pow((x-startP.a),2)+pow((y-startP.b),2));
-			if(x!=prev_x || y!=prev_y)
-			{
-				if(y<1000)
-					longId=(x*1000)+y;
-				else
-					longId=(x*10000)+y;
-				std::cout << "longId " << longId << std::endl;
-				id1=-1;
-				for(int j=0;j<voronoiPaths->ids.size() && id1==-1;j++)
-					if(voronoiPaths->ids[j]==longId)
-						id1=j;
-				std::cout << "id1 " << id1 << std::endl;
-				GraphEdge e(x,y,startP.a,startP.b,len,id1,startId);
-				start->push_back(e);
-				prev_x=x;
-				prev_y=y;
-			}
-		}
-		if(endOk && (c<x) && (x<(c+o)) && ((d<y) && (y<(d+o))))
-		{
-			len=sqrt(pow((x-endP.a),2)+pow((y-endP.b),2));
-			if(x!=prev_x || y!=prev_y)
-			{
-				if(y<1000)
-					longId=(x*1000)+y;
-				else
-					longId=(x*10000)+y;
-				std::cout << "longId " << longId << std::endl;
-				id1=-1;
-				for(int k=0;k<voronoiPaths->ids.size() && id1==-1;k++)
-					if(voronoiPaths->ids[k]==longId)
-						id1=k;
-				std::cout << "id1 " << id1 << std::endl;
-				GraphEdge e(x,y,endP.a,endP.b,len,id1,endId);
-				end->push_back(e);
-				prev_x=x;
-				prev_y=y;
-			}
-		}
-	}
- 	//return id;
-	*/
+bool edgeOnObstacle(VoronoiPoint a, VoronoiPoint b, const std::vector<std::vector<cv::Point>>& obsContours)
+{
+	std::vector<VoronoiPoint> samples;
+	bool isCollision=false;
+	sampleSegment(a, b, samples);
+	for(int i=0; i<samples.size() && !isCollision;i++)
+		isCollision=findCollision(samples[i].a, samples[i].b, obsContours);
+	return isCollision;
 }
+	
+
+VoronoiPoint midpoint(VoronoiPoint a, VoronoiPoint b)
+{	
+	int x = (int)(a.a+b.a)/2;
+	int y = (int)(a.b+b.b)/2;
+	return VoronoiPoint(x,y);	
+}
+
+void sampleSegment(VoronoiPoint a, VoronoiPoint b, std::vector<VoronoiPoint> samples)
+{
+	// order in samples -> A 3 1 5 0 6 2 4 B
+	VoronoiPoint mid = midpoint(a,b);
+	samples.push_back(mid);
+	mid = midpoint(a,samples[0]);                  
+	samples.push_back(mid);
+	mid = midpoint(b,samples[0]);
+	samples.push_back(mid);
+
+	mid = midpoint(a,samples[1]);
+	samples.push_back(mid);
+	mid = midpoint(b,samples[2]);
+	samples.push_back(mid);
+
+	mid = midpoint(samples[0], samples[1]);
+	samples.push_back(mid);
+	mid = midpoint(samples[0], samples[2]);
+	samples.push_back(mid);
+}
+
+bool findCollision(double x, double y, const std::vector<std::vector<cv::Point>>& obsContours) {
+	bool r = false;
+	double res;
+	for (int i = 0; i < obsContours.size() && !r; i++) {
+		res = cv::pointPolygonTest(obsContours[i] , cv::Point2f(x,y) , true);
+		if(res > 0)
+			r = true;
+	}
+	return r;
+}
+
+

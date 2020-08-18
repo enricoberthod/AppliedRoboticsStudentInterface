@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC   -shared -Wl,-soname,libfind_robot.so -o libfind_robot.so CMakeFiles/find_robot.dir/find_robot.cpp.o 
