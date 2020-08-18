@@ -478,43 +478,64 @@ void function_L_doppio(int j, float theta_j, std::vector<VoronoiPoint> &rightPat
 	float min_length = 999999999.0;	
 	int best_pidx;
 	D best_curve;	
+	bool collision;
+	bool salta = false;
+	std::vector<float> angoli_scartati;
 	printf("--------angolo: %f\n",theta_j);
-	if(j==rightPath.size()-3) {
-		angoli[j+1] = theta[i_gate];
-		angoli[j+2] = theta[i_gate];
-	}
-	else {
-		for(int i=0; i<8; i++) {
-			//Dubins function (the given matlab code)  
-			Dubins(rightPath[j].a,rightPath[j].b,rightPath[j+1].a,rightPath[j+1].b, theta_j, theta[i], &curve_1, &pidx_1);
-			if(j==rightPath.size()-4) {
-				Dubins(rightPath[j+1].a,rightPath[j+1].b,rightPath[j+2].a,rightPath[j+2].b, theta[i], theta[i_gate], &curve_2, &pidx_2);
-				if((curve_1.L + curve_2.L) < min_length) {
-					min_length = curve_1.L + curve_2.L;
-					angoli[j+1] = theta[i];
-					//angoli[j+2] = theta[w];
-				}
-			}
-			else {
-				for(int w=0; w<8; w++) {
-					Dubins(rightPath[j+1].a,rightPath[j+1].b,rightPath[j+2].a,rightPath[j+2].b, theta[i], theta[w], &curve_2, &pidx_2);
-					if((curve_1.L + curve_2.L) < min_length) {
-						min_length = curve_1.L + curve_2.L;
-						angoli[j+1] = theta[i];
-						//angoli[j+2] = theta[w];
+	do {
+		if(j==rightPath.size()-3) {
+			angoli[j+1] = theta[i_gate];
+			angoli[j+2] = theta[i_gate];
+		}
+		else {
+			for(int i=0; i<8; i++) {
+				salta = false;
+				for(int h = 0; h < angoli_scartati.size(); h++) {
+					if(theta[i] == angoli_scartati[h]) {
+						salta = true;
 					}
 				}
-			}
-		}	
-	}
-	Dubins(rightPath[j].a,rightPath[j].b,rightPath[j+1].a,rightPath[j+1].b, theta_j, angoli[j+1], &best_curve, &best_pidx); 
-	printf("kappa: %f, %f, %f \n", best_curve.a1.k,best_curve.a2.k,best_curve.a3.k);
-	if(best_curve.a1.L!=0)//if the first arc is not 0 length
-		sample(best_curve.a1, path);
-	if(best_curve.a2.L!=0)//if the second arc is not 0 length
-		sample(best_curve.a2, path);
-	if(best_curve.a3.L!=0)//if the third arc is not 0 length
-		sample(best_curve.a3, path);
+				if(!salta) {
+					//Dubins function (the given matlab code)
+					Dubins(rightPath[j].a,rightPath[j].b,rightPath[j+1].a,rightPath[j+1].b, theta_j, theta[i], &curve_1, &pidx_1);
+					if(j==rightPath.size()-4) {
+						Dubins(rightPath[j+1].a,rightPath[j+1].b,rightPath[j+2].a,rightPath[j+2].b, theta[i], theta[i_gate], &curve_2, &pidx_2);
+						if((curve_1.L + curve_2.L) < min_length) {
+							min_length = curve_1.L + curve_2.L;
+							angoli[j+1] = theta[i];
+							//angoli[j+2] = theta[w];
+						}
+					}
+					else {
+						for(int w=0; w<8; w++) {
+							Dubins(rightPath[j+1].a,rightPath[j+1].b,rightPath[j+2].a,rightPath[j+2].b, theta[i], theta[w], &curve_2, &pidx_2);
+							if((curve_1.L + curve_2.L) < min_length) {
+								min_length = curve_1.L + curve_2.L;
+								angoli[j+1] = theta[i];
+								//angoli[j+2] = theta[w];
+							}
+						}
+					}
+				}
+				else {
+					std::cout << "(function_L) angolo saltato \n";
+				}
+			}	
+		}
+		Dubins(rightPath[j].a,rightPath[j].b,rightPath[j+1].a,rightPath[j+1].b, theta_j, angoli[j+1], &best_curve, &best_pidx); 
+		printf("kappa: %f, %f, %f \n", best_curve.a1.k,best_curve.a2.k,best_curve.a3.k);
+		if(best_curve.a1.L!=0)		//if the first arc is not 0 length
+			collision = sample(best_curve.a1, path);
+		if(best_curve.a2.L!=0 && !collision)	//if the second arc is not 0 length
+			collision = sample(best_curve.a2, path);
+		if(best_curve.a3.L!=0 && !collision)	//if the third arc is not 0 length
+			collision = sample(best_curve.a3, path);
+		std::cout << "(function_L) " << collision << std::endl;
+		if(collision) {
+			angoli_scartati.emplace_back(angoli[j+1]);
+			//aggiungere controllo se tutti gli angoli vanno scartati
+		}
+	} while(collision);
 	
 	if(j < (rightPath.size()-2)){			//controllare estremi j +/- 1
 		//angle=(angoli.at(j+1)+M_PI)<(2*M_PI)?(angoli.at(j+1)+M_PI):(angoli.at(j+1)-M_PI);
@@ -529,7 +550,7 @@ void function_L_doppio(int j, float theta_j, std::vector<VoronoiPoint> &rightPat
 }
 
 
-void sample(C arc, Path& path) {
+bool sample(C arc, Path& path) {
 	double pt_x,pt_y,pt_theta,kappa, x, y, th, s_tot=0;
 	int step;
 	bool collision = false;
@@ -538,6 +559,8 @@ void sample(C arc, Path& path) {
 	pt_theta = arc.th0;
 	kappa = arc.k;
 	int inserts = 0;
+
+	std::cout << "(sample) start \n";
 
 	if(path.points.size()==0) { 	//the first point is the robot position 
 		path.points.emplace_back(0, pt_x/1000.0, pt_y/1000.0, pt_theta, (kappa*1000));
@@ -550,7 +573,7 @@ void sample(C arc, Path& path) {
 		//else
 		
 	s_tot= path.points.back().s; //(residual_s/1000.0); //start from the last point in simulator path + the new step
-	while(step<arc.L /*&& !collision*/) {		
+	while(step<arc.L && !collision) {		
 		circline(step, pt_x, pt_y, pt_theta, kappa, &x, &y, &th); 	//use the function defined in Dubins (the given matlab code) to compute x,y,theta
 				//s_tot=s_tot+(step/1000.0);
 
@@ -560,13 +583,26 @@ void sample(C arc, Path& path) {
 		inserts++;
 		step=step+10;
 	}	
-	circline(arc.L, pt_x, pt_y, pt_theta, kappa, &x, &y, &th); 		//use the function defined in Dubins (the given matlab code) to compute x,y,theta
+	if(!collision) {
+		circline(arc.L, pt_x, pt_y, pt_theta, kappa, &x, &y, &th); 		//use the function defined in Dubins (the given matlab code) to compute x,y,theta
 
-	collision = collision_detection(x, y, contours);
+		collision = collision_detection(x, y, contours);
+		if(!collision) {
+			path.points.emplace_back(s_tot+((arc.L)/1000.0),x/1000.0,y/1000.0,th,(kappa*1000));		//add to the simulator path a new point
+		}
+	}
+	if(collision) {
+		for (int i = 0; i < inserts; i++) {
+			std::cout << "Rimozione di 1 elemento \n"; 
+			path.points.pop_back();
+		}
+	}
 
-	path.points.emplace_back(s_tot+((arc.L)/1000.0),x/1000.0,y/1000.0,th,(kappa*1000));		//add to the simulator path a new point
+	std::cout << "(sample) end \n";
 
 	//residual_s=((arc.L)-(s-10)); //calcolo il residual tra s e il nodo successivo (useles if we use s_tot=...+0.01)	
+
+	return collision;
 }
 
 
