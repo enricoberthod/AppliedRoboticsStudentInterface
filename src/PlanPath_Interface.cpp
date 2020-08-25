@@ -489,6 +489,7 @@ void function_L_doppio(int j, float theta_j, std::vector<VoronoiPoint> &rightPat
 		}
 		else {
 			for(int i=0; i<8; i++) {
+				printf("--------angolo da provare : %f\n",theta[i]);
 				salta = false;
 				for(int h = 0; h < angoli_scartati.size(); h++) {
 					if(theta[i] == angoli_scartati[h]) {
@@ -516,6 +517,7 @@ void function_L_doppio(int j, float theta_j, std::vector<VoronoiPoint> &rightPat
 							}
 						}
 					}
+					printf("--------angolo scelto: %f\n",angoli[j+1]);
 				}
 				else {
 					std::cout << "(function_L) angolo saltato \n";
@@ -524,15 +526,24 @@ void function_L_doppio(int j, float theta_j, std::vector<VoronoiPoint> &rightPat
 		}
 		Dubins(rightPath[j].a,rightPath[j].b,rightPath[j+1].a,rightPath[j+1].b, theta_j, angoli[j+1], &best_curve, &best_pidx); 
 		printf("kappa: %f, %f, %f \n", best_curve.a1.k,best_curve.a2.k,best_curve.a3.k);
+		int punti_inseriti = 0;
 		if(best_curve.a1.L!=0)		//if the first arc is not 0 length
-			collision = sample(best_curve.a1, path);
+			collision = sample(best_curve.a1, path, punti_inseriti);
+			std::cout << "Punti inseriti : " << punti_inseriti << std::endl;
 		if(best_curve.a2.L!=0 && !collision)	//if the second arc is not 0 length
-			collision = sample(best_curve.a2, path);
+			collision = sample(best_curve.a2, path, punti_inseriti);
+			std::cout << "Punti inseriti : " << punti_inseriti << std::endl;
 		if(best_curve.a3.L!=0 && !collision)	//if the third arc is not 0 length
-			collision = sample(best_curve.a3, path);
+			collision = sample(best_curve.a3, path, punti_inseriti);
+			std::cout << "Punti inseriti : " << punti_inseriti << std::endl;
 		std::cout << "(function_L) " << collision << std::endl;
 		if(collision) {
+			for (int e = 0; e < punti_inseriti; e++) {
+				std::cout << "Rimozione di 1 elemento \n"; 
+				path.points.pop_back();
+			}
 			angoli_scartati.emplace_back(angoli[j+1]);
+			min_length = 999999999.0;	
 			//aggiungere controllo se tutti gli angoli vanno scartati
 		}
 	} while(collision);
@@ -550,7 +561,7 @@ void function_L_doppio(int j, float theta_j, std::vector<VoronoiPoint> &rightPat
 }
 
 
-bool sample(C arc, Path& path) {
+bool sample(C arc, Path& path, int &punti_inseriti) {
 	double pt_x,pt_y,pt_theta,kappa, x, y, th, s_tot=0;
 	int step;
 	bool collision = false;
@@ -587,15 +598,17 @@ bool sample(C arc, Path& path) {
 		circline(arc.L, pt_x, pt_y, pt_theta, kappa, &x, &y, &th); 		//use the function defined in Dubins (the given matlab code) to compute x,y,theta
 
 		collision = collision_detection(x, y, contours);
-		if(!collision) {
-			path.points.emplace_back(s_tot+((arc.L)/1000.0),x/1000.0,y/1000.0,th,(kappa*1000));		//add to the simulator path a new point
-		}
+		path.points.emplace_back(s_tot+((arc.L)/1000.0),x/1000.0,y/1000.0,th,(kappa*1000));		//add to the simulator path a new point
+		inserts++;
 	}
 	if(collision) {
 		for (int i = 0; i < inserts; i++) {
 			std::cout << "Rimozione di 1 elemento \n"; 
 			path.points.pop_back();
 		}
+	}
+	else {
+		punti_inseriti = punti_inseriti + inserts;
 	}
 
 	std::cout << "(sample) end \n";
