@@ -285,7 +285,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 					end=VoronoiPoint((int)(victim_list[j].second[0].x*floatToInt),(int)(victim_list[j].second[0].y*floatToInt));
 					//find the shortest path
 					piecePath.clear();
-					PathFinder(start, firstTime, end, true, &voronoiPaths, &piecePath, 100, contours); //modify this (true only if the point is not already in the called before in pathFinder
+					PathFinder(start, firstTime, end, true, &voronoiPaths, &piecePath, 10, contours); //modify this (true only if the point is not already in the called before in pathFinder
 					//connect the piece of the path (victim to next victim) to the total one
 					rightPath.insert(rightPath.end(),piecePath.begin(),piecePath.end());
 					//the victim became the next starting point
@@ -339,11 +339,14 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 				}
 			}
 		}
+		
+		std::cout << "??????????????????????????????????????????? > " << x2 << ", "<< y2 << std::endl;
 
 		if((sqrt(pow((x1-x2),2)+pow((y1-y2),2))>100) || is_victim)
 		{
 			VoronoiPoint p = VoronoiPoint(x2,y2);
 			rightPathNew.emplace_back(p);
+			std::cout << "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > " << x2 << ", "<< y2 << std::endl;
 		}
 	}
 	VoronoiPoint p_end = VoronoiPoint(rightPath[rightPath.size()-1].a,rightPath[rightPath.size()-1].b);

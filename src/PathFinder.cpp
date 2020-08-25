@@ -12,7 +12,7 @@
 
 //void connect(int, VoronoiPoint, VoronoiPoint, VoronoiResults*, bool, bool, std::vector<GraphEdge>*, std::vector<GraphEdge>*);
 void connect(int, VoronoiPoint, VoronoiResults*, bool, std::vector<GraphEdge>*, int, const std::vector<std::vector<cv::Point>>&);
-void shortestPath(VoronoiPoint, bool, VoronoiPoint, bool, VoronoiResults *, std::vector<VoronoiPoint> *);
+void shortestPath(VoronoiPoint, bool, int, VoronoiPoint, bool, int, VoronoiResults *, std::vector<VoronoiPoint> *);
 void sampleSegment(VoronoiPoint, VoronoiPoint, std::vector<VoronoiPoint>&);
 VoronoiPoint midpoint(VoronoiPoint, VoronoiPoint);
 bool edgeOnObstacle(VoronoiPoint, VoronoiPoint, const std::vector<std::vector<cv::Point>>&);
@@ -21,6 +21,8 @@ bool findCollision(double, double, const std::vector<std::vector<cv::Point>>&);
 void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew, VoronoiResults *voronoiPaths, std::vector<VoronoiPoint> *rightPath, int netRadius, const std::vector<std::vector<cv::Point>>& obsContours)
 {
 	int offset=20;
+	int offset_2;
+	int offset_3;
 	int step=10;
 	int nConnection=5;
 	int startSize=1000;
@@ -63,6 +65,7 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 			//netVertex.push_back(VoronoiPoint(x-(netRadius/2), y+(netRadius/2)));
 			//netVertex.push_back(VoronoiPoint(x+(netRadius/2), y-(netRadius/2)));
 			//netVertex.push_back(VoronoiPoint(x-(netRadius/2), y-(netRadius/2)));
+			netVertex.push_back(VoronoiPoint(x, y));
 			
 			for(int i=0;i<netVertex.size();i++)
 			{
@@ -77,16 +80,16 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 		
 				connect(offset, netVertex[i], voronoiPaths, true, &end_connection, -1, obsContours);
 				endSize=end_connection.size();
-				
+				offset_2=offset;
 				while(endSize<=(nConnection+i))
 				{
-					offset=offset+step;
+					offset_2=offset_2+step;
 					end_connection.clear();
-					connect(offset, end, voronoiPaths, endSize<=nConnection, &end_connection, -1, obsContours);
+					connect(offset_2, end, voronoiPaths, endSize<=nConnection, &end_connection, -1, obsContours);
 					endSize=end_connection.size();
-					for(int j=0;j<end_connection.size();j++)
-						voronoiPaths->resultEdges.push_back(end_connection[i]);
 				}
+				for(int j=0;j<end_connection.size();j++)
+					voronoiPaths->resultEdges.push_back(end_connection[i]);
 			}
 		}
 		else
@@ -106,24 +109,22 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 	
 	
 	//// END /////////////////////////////////
-	
+
 	while(startSize<=nConnection || endSize<=nConnection)
 	{
 		offset=offset+step;
 		std::cout << "Step " << offset << "size: " << startSize << " " << endSize <<std::endl;
-		if(startSize<=nConnection)
-			start_connection.clear();
-		else
-			end_connection.clear();
 
 		//connect(offset, start, end, voronoiPaths, startSize<=nConnection, endSize<=nConnection, &start_connection, &end_connection);
-		if(startNew)
+		if(startNew && startSize<=nConnection)
 		{
+			start_connection.clear();
 			connect(offset, start, voronoiPaths, startSize<=nConnection, &start_connection, -2, obsContours);
 			startSize=start_connection.size();
 		}
-		if(endNew && netRadius==0)
+		if(endNew && netRadius==0 && endSize<=nConnection)
 		{
+			end_connection.clear();
 			connect(offset, end, voronoiPaths, endSize<=nConnection, &end_connection, -1, obsContours);
 			endSize=end_connection.size();
 		}
@@ -140,11 +141,14 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 			voronoiPaths->resultEdges.push_back(end_connection[i]);
 	}
 	
-	shortestPath(start, startNew, end, endNew, voronoiPaths, rightPath);
+	if(netRadius==0)
+		shortestPath(start, startNew, -2, end, endNew, -1, voronoiPaths, rightPath); //!!! se mission 0 ok -2,-1 
+	else
+		shortestPath(start, startNew, -6, end, endNew, -1, voronoiPaths, rightPath); //!!! se aggiungo punti, l id si sposta a -netvertex posizioni
 }
 
 
-void shortestPath(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew, VoronoiResults *voronoiPaths, std::vector<VoronoiPoint> *rightPath)
+void shortestPath(VoronoiPoint start, bool startNew, int idStart, VoronoiPoint end, bool endNew, int idEnd, VoronoiResults *voronoiPaths, std::vector<VoronoiPoint> *rightPath)
 {
 	int V = voronoiPaths->ids.size(); 
 	std::cout << "V " << V << std::endl;
@@ -172,13 +176,13 @@ void shortestPath(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endN
 		
 	}
 
-	dijkstra(graph,voronoiPaths->ids.size()-2,voronoiPaths->ids.size()-1,path); //modificare aggiunendo il voronoiPaths->ids.size()-1 ossia l'id del nodo destinazione e tracciarlo in modo da avere la lista degli id dei nodi da visitare per arrivare da start a end
+	dijkstra(graph,voronoiPaths->ids.size()+idStart,voronoiPaths->ids.size()+idEnd,path); //modificare aggiunendo il voronoiPaths->ids.size()-1 ossia l'id del nodo destinazione e tracciarlo in modo da avere la lista degli id dei nodi da visitare per arrivare da start a end
 	
 	std::cout << std::endl;
 	
 	std::vector<int> startEndPath;
-	startEndPath.push_back(voronoiPaths->ids.size()-2);
-	storePath(path,voronoiPaths->ids.size()-1,&startEndPath);
+	startEndPath.push_back(voronoiPaths->ids.size()+idStart);
+	storePath(path,voronoiPaths->ids.size()+idEnd,&startEndPath);
 	
 	
 	std::cout << std::endl << "right path ";
