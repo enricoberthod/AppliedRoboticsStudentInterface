@@ -322,8 +322,10 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	int x1,y1,x2,y2;
 	for(int i=0;i<rightPath.size()-2;i++) //for(int i=0;i<rightPath.size()-1;i++)
 	{
-		x1=rightPath[i].a;
-		y1=rightPath[i].b;
+		//x1=rightPath[i].a;
+		x1=rightPathNew[rightPathNew.size()-1].a;
+		//y1=rightPath[i].b;
+		y1=rightPathNew[rightPathNew.size()-1].b;
 		x2=rightPath[i+1].a;
 		y2=rightPath[i+1].b;	
 
@@ -342,7 +344,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		
 		std::cout << "??????????????????????????????????????????? > " << x2 << ", "<< y2 << std::endl;
 
-		if((sqrt(pow((x1-x2),2)+pow((y1-y2),2))>100) || is_victim)
+		if((sqrt(pow((x1-x2),2)+pow((y1-y2),2))>250) || is_victim)
 		{
 			VoronoiPoint p = VoronoiPoint(x2,y2);
 			rightPathNew.emplace_back(p);
@@ -408,10 +410,10 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	
 	//throw std::logic_error( "STOP" ); 
 	
-	std::cout << "--- START righPathNew --- " << std::endl;
+	std::cout << "--- START rightPathNew --- " << std::endl;
 	for(int i=0; i<rightPathNew.size(); i++)
 		std::cout << "--> " << (i+1) << ": (" << rightPathNew[i].a << ", " << rightPathNew[i].b << ")" << std::endl;
-	std::cout << "--- END righPathNew --- " << std::endl;
+	std::cout << "--- END rightPathNew --- " << std::endl;
 		
 }
 

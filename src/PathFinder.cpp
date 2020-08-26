@@ -25,7 +25,7 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 	int max_offset = 200;
 	int offset_3;
 	int step=10;
-	int nConnection=5;
+	int nConnection=8;
 	int startSize=1000;
 	int endSize=1000;
 	int startLongId;
@@ -80,7 +80,7 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 				else
 					endLongId=(x*10000)+y;
 				voronoiPaths->ids.push_back(endLongId);
-		
+				end_connection.clear();
 				connect(offset, netVertex[i], voronoiPaths, true, &end_connection, -1, obsContours);
 				endSize=end_connection.size();
 				std::cout << "end Size ingress r>0 " <<  endSize << std::endl;
@@ -89,7 +89,7 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 				{
 					offset_2=offset_2+step;
 					end_connection.clear();
-					connect(offset_2, end, voronoiPaths, endSize<=nConnection, &end_connection, -1, obsContours);
+					connect(offset_2, netVertex[i], voronoiPaths, endSize<=(nConnection+i), &end_connection, -1, obsContours);
 					endSize=end_connection.size();
 					if(offset_2>max_offset)
 						endSize=100;
