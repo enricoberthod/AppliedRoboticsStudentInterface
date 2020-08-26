@@ -22,6 +22,7 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 {
 	int offset=20;
 	int offset_2;
+	int max_offset = 50;
 	int offset_3;
 	int step=10;
 	int nConnection=5;
@@ -87,6 +88,8 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 					end_connection.clear();
 					connect(offset_2, end, voronoiPaths, endSize<=nConnection, &end_connection, -1, obsContours);
 					endSize=end_connection.size();
+					if(offset_2>max_offset)
+						endSize=100;
 				}
 				for(int j=0;j<end_connection.size();j++)
 					voronoiPaths->resultEdges.push_back(end_connection[i]);
@@ -128,6 +131,13 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 			connect(offset, end, voronoiPaths, endSize<=nConnection, &end_connection, -1, obsContours);
 			endSize=end_connection.size();
 		}
+		
+		if(offset>max_offset)
+		{
+			startSize=100;
+			endSize=100;
+		}
+			
 	}
 	
 	if(startNew) //maybe this section must be inside the prev while
