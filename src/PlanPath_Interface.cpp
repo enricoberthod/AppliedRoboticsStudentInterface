@@ -57,6 +57,19 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	VoronoiResults voronoiPaths;
 
 
+	//borders[i].x,borders[i].y
+	float b_x_max = 0.0;
+	float b_y_max = 0.0;
+	std::cout << "border size : " << borders.size() << std::endl;
+	for(int i = 0; i<borders.size(); i++) {
+		b_x_max = std::max(b_x_max, borders[i].x);
+		b_y_max = std::max(b_y_max, borders[i].y);
+	}
+	b_x_max = b_x_max * floatToInt;
+	b_y_max = b_y_max * floatToInt;
+	std::cout << "b_x_max : " << b_x_max << std::endl;
+	std::cout << "b_y_max : " << b_y_max << std::endl;
+
 //	CLIPPER
 	ClipperLib::Paths subj(obstacle_list.size());
 	ClipperLib::Paths solution(obstacle_list.size());
@@ -97,11 +110,48 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		vertexNumber=solution[i].size();
 		for(int j=0;j<vertexNumber-1;j++)
 		{
-			xa=(int)(solution[i][j].X<0?0:solution[i][j].X); //ADD CONTROL IF X>BORDER MAX X
-			ya=(int)(solution[i][j].Y<0?0:solution[i][j].Y); //ADD CONTROL IF Y>BORDER MAX Y
+			//xa=(int)(solution[i][j].X<0?0:solution[i][j].X); //ADD CONTROL IF X>BORDER MAX X
+			if(solution[i][j].X < 0) {
+				xa = 0;
+			}
+			else if (solution[i][j].X > b_x_max) {
+				xa = b_x_max;
+			}
+			else {
+				xa = (int)(solution[i][j].X);
+			}
+			//ya=(int)(solution[i][j].Y<0?0:solution[i][j].Y); //ADD CONTROL IF Y>BORDER MAX Y
+			if(solution[i][j].Y < 0) {
+				ya = 0;
+			}
+			else if (solution[i][j].Y > b_y_max) {
+				ya = b_y_max;
+			}
+			else {
+				ya = (int)(solution[i][j].Y);
+			}
 			printf("obsvertx: %i,%i\n",xa,ya);
-			xb=(int)(solution[i][j+1].X<0?0:solution[i][j+1].X);
-			yb=(int)(solution[i][j+1].Y<0?0:solution[i][j+1].Y);
+			//xb=(int)(solution[i][j+1].X<0?0:solution[i][j+1].X);
+			if(solution[i][j].X<0) {
+				xb = 0;
+			}
+			else if (solution[i][j].X > b_x_max) {
+				xb = b_x_max;
+			}
+			else {
+				xb = (int)(solution[i][j].X);
+			}
+			//yb=(int)(solution[i][j+1].Y<0?0:solution[i][j+1].Y);
+			if(solution[i][j].Y < 0) {
+				yb = 0;
+			}
+			else if (solution[i][j].Y > b_y_max) {
+				yb = b_y_max;
+			}
+			else {
+				yb = (int)(solution[i][j].Y);
+			}
+
 			if(ya<floatToInt)
 				longId=(xa*floatToInt)+ya;
 			else
@@ -112,16 +162,54 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 			obstacles_edges.push_back(Segment(xa, ya, xb, yb));
 		}
 		//close the polygon with the last edge
-		xa=(int)(solution[i][vertexNumber-1].X<0?0:solution[i][vertexNumber-1].X);
-		ya=(int)(solution[i][vertexNumber-1].Y<0?0:solution[i][vertexNumber-1].Y);
+		//xa=(int)(solution[i][vertexNumber-1].X<0?0:solution[i][vertexNumber-1].X);
+		if(solution[i][vertexNumber-1].X < 0) {
+			xa = 0;
+		}
+		else if (solution[i][vertexNumber-1].X > b_x_max) {
+			xa = b_x_max;
+		}
+		else {
+			xa = (int)(solution[i][vertexNumber-1].X);
+		}
+		//ya=(int)(solution[i][vertexNumber-1].Y<0?0:solution[i][vertexNumber-1].Y);
+		if(solution[i][vertexNumber-1].Y < 0) {
+			ya = 0;
+		}
+		else if (solution[i][vertexNumber-1].Y > b_y_max) {
+			ya = b_y_max;
+		}
+		else {
+			ya = (int)(solution[i][vertexNumber-1].Y);
+		}
+
 		if(ya<floatToInt)
 			longId=(xa*floatToInt)+ya;
 		else
 			longId=(xa*floatToInt*10)+ya;
 		p=VoronoiPoint(xa,ya);
 		obstaclesVertexes[longId]=p;
-		xb=(int)(solution[i][0].X<0?0:solution[i][0].X);
-		yb=(int)(solution[i][0].Y<0?0:solution[i][0].Y);
+		//xb=(int)(solution[i][0].X<0?0:solution[i][0].X);
+		if(solution[i][0].X < 0) {
+			xb = 0;
+		}
+		else if (solution[i][0].X > b_x_max) {
+			xb = b_x_max;
+		}
+		else {
+			xb = (int)(solution[i][0].X);
+		}
+		//yb=(int)(solution[i][0].Y<0?0:solution[i][0].Y);
+		if(solution[i][0].Y < 0) {
+			yb = 0;
+		}
+		else if (solution[i][0].Y > b_y_max) {
+			yb = b_y_max;
+		}
+		else {
+			yb = (int)(solution[i][0].Y);
+		}
+
 		inputPoints.push_back(VoronoiPoint(xa,ya));
 		obstacles_edges.push_back(Segment(xa, ya, xb, yb));
 	}
@@ -221,8 +309,8 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	inputPoints.push_back(VoronoiPoint(xa,ya));
 	obstacles_edges.push_back(Segment(xa, ya, xb, yb));
 
-	printf("size: %i", inputPoints.size());
-	printf("size2: %i",obstacles_edges.size());	
+	printf("size: %i \n", inputPoints.size());
+	printf("size2: %i \n",obstacles_edges.size());	
 
 
 	//throw std::logic_error( "STOP" );
