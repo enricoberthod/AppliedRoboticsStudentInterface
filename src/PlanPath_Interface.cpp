@@ -110,7 +110,8 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		vertexNumber=solution[i].size();
 		for(int j=0;j<vertexNumber-1;j++)
 		{
-			//xa=(int)(solution[i][j].X<0?0:solution[i][j].X); //ADD CONTROL IF X>BORDER MAX X
+			xa=(int)(solution[i][j].X<0?0:solution[i][j].X); //ADD CONTROL IF X>BORDER MAX X
+			/*
 			if(solution[i][j].X < 0) {
 				xa = 0;
 			}
@@ -120,7 +121,9 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 			else {
 				xa = (int)(solution[i][j].X);
 			}
-			//ya=(int)(solution[i][j].Y<0?0:solution[i][j].Y); //ADD CONTROL IF Y>BORDER MAX Y
+			*/
+			ya=(int)(solution[i][j].Y<0?0:solution[i][j].Y); //ADD CONTROL IF Y>BORDER MAX Y
+			/*
 			if(solution[i][j].Y < 0) {
 				ya = 0;
 			}
@@ -131,7 +134,9 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 				ya = (int)(solution[i][j].Y);
 			}
 			printf("obsvertx: %i,%i\n",xa,ya);
-			//xb=(int)(solution[i][j+1].X<0?0:solution[i][j+1].X);
+			*/
+			xb=(int)(solution[i][j+1].X<0?0:solution[i][j+1].X);
+			/*
 			if(solution[i][j].X<0) {
 				xb = 0;
 			}
@@ -141,7 +146,9 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 			else {
 				xb = (int)(solution[i][j].X);
 			}
-			//yb=(int)(solution[i][j+1].Y<0?0:solution[i][j+1].Y);
+			*/
+			yb=(int)(solution[i][j+1].Y<0?0:solution[i][j+1].Y);
+			/*
 			if(solution[i][j].Y < 0) {
 				yb = 0;
 			}
@@ -151,7 +158,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 			else {
 				yb = (int)(solution[i][j].Y);
 			}
-
+			*/
 			if(ya<floatToInt)
 				longId=(xa*floatToInt)+ya;
 			else
@@ -162,7 +169,8 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 			obstacles_edges.push_back(Segment(xa, ya, xb, yb));
 		}
 		//close the polygon with the last edge
-		//xa=(int)(solution[i][vertexNumber-1].X<0?0:solution[i][vertexNumber-1].X);
+		xa=(int)(solution[i][vertexNumber-1].X<0?0:solution[i][vertexNumber-1].X);
+		/*
 		if(solution[i][vertexNumber-1].X < 0) {
 			xa = 0;
 		}
@@ -172,7 +180,9 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		else {
 			xa = (int)(solution[i][vertexNumber-1].X);
 		}
-		//ya=(int)(solution[i][vertexNumber-1].Y<0?0:solution[i][vertexNumber-1].Y);
+		*/
+		ya=(int)(solution[i][vertexNumber-1].Y<0?0:solution[i][vertexNumber-1].Y);
+		/*
 		if(solution[i][vertexNumber-1].Y < 0) {
 			ya = 0;
 		}
@@ -182,14 +192,15 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		else {
 			ya = (int)(solution[i][vertexNumber-1].Y);
 		}
-
+		*/
 		if(ya<floatToInt)
 			longId=(xa*floatToInt)+ya;
 		else
 			longId=(xa*floatToInt*10)+ya;
 		p=VoronoiPoint(xa,ya);
 		obstaclesVertexes[longId]=p;
-		//xb=(int)(solution[i][0].X<0?0:solution[i][0].X);
+		xb=(int)(solution[i][0].X<0?0:solution[i][0].X);
+		/*
 		if(solution[i][0].X < 0) {
 			xb = 0;
 		}
@@ -199,7 +210,9 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		else {
 			xb = (int)(solution[i][0].X);
 		}
-		//yb=(int)(solution[i][0].Y<0?0:solution[i][0].Y);
+		*/
+		yb=(int)(solution[i][0].Y<0?0:solution[i][0].Y);
+		/*
 		if(solution[i][0].Y < 0) {
 			yb = 0;
 		}
@@ -209,7 +222,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		else {
 			yb = (int)(solution[i][0].Y);
 		}
-
+		*/
 		inputPoints.push_back(VoronoiPoint(xa,ya));
 		obstacles_edges.push_back(Segment(xa, ya, xb, yb));
 	}
@@ -218,7 +231,8 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	for (int i = 0; i < solution.size(); i++) {
 		std::vector<cv::Point> cc;
 		for (int j = 0; j < solution[i].size(); j++) {
-			//xa=(int)(solution[i][j].X<0?0:solution[i][j].X);
+			xa=(int)(solution[i][j].X<0?0:solution[i][j].X);
+			/*
 			if(solution[i][j].X < 0) {
 				xa = 0;
 			}
@@ -228,7 +242,9 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 			else {
 				xa = (int)(solution[i][j].X);
 			}
-			//ya=(int)(solution[i][j].Y<0?0:solution[i][j].Y);
+			*/
+			ya=(int)(solution[i][j].Y<0?0:solution[i][j].Y);
+			/*
 			if(solution[i][j].Y < 0) {
 				ya = 0;
 			}
@@ -238,6 +254,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 			else {
 				ya = (int)(solution[i][j].Y);
 			}
+			*/
 			cc.push_back(cv::Point(xa,ya));
 		}
 		contours.push_back(cc);

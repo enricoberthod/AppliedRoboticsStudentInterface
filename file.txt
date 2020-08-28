@@ -1,20 +1,36 @@
 
 RED MASK
-N. contours (Elements): 4
-1) Contour size: 102
-   Approximated contour size: 3
-2) Contour size: 71
-   Approximated contour size: 4
-3) Contour size: 62
+N. contours (Elements): 12
+1) Contour size: 53
    Approximated contour size: 5
-4) Contour size: 125
+2) Contour size: 89
+   Approximated contour size: 3
+3) Contour size: 95
+   Approximated contour size: 3
+4) Contour size: 97
+   Approximated contour size: 5
+5) Contour size: 48
+   Approximated contour size: 3
+6) Contour size: 40
+   Approximated contour size: 5
+7) Contour size: 127
    Approximated contour size: 6
-   Elements: 4
+8) Contour size: 57
+   Approximated contour size: 4
+9) Contour size: 42
+   Approximated contour size: 4
+10) Contour size: 81
+   Approximated contour size: 6
+11) Contour size: 53
+   Approximated contour size: 5
+12) Contour size: 32
+   Approximated contour size: 4
+   Elements: 12
 N. contours: 3
 1) Contour size: 73
    Approximated contour size: 4
-2) Contour size: 146
-3) Contour size: 144
+2) Contour size: 162
+3) Contour size: 155
    Elements: 4
 Best fitting template: 1
 Best fitting template: 3
@@ -23,41 +39,13 @@ Mission -> 0
 border size : 4
 b_x_max : 1560
 b_y_max : 1060
-clipper1: 4
-clipper2: 4
-clipper3: 2
-clipper4: 4
-obsvertx: 418,860
-obsvertx: 291,1060
-obsvertx: 176,1060
-obsvertx: 14,870
-obsvertx: 70,765
-obsvertx: 963,0
-obsvertx: 1041,140
-obsvertx: 1041,193
-obsvertx: 964,322
-obsvertx: 942,335
-obsvertx: 942,336
-obsvertx: 926,393
-obsvertx: 923,395
-obsvertx: 982,451
-obsvertx: 986,679
-obsvertx: 927,739
-obsvertx: 705,739
-obsvertx: 647,682
-obsvertx: 641,463
-obsvertx: 679,422
-obsvertx: 661,412
-obsvertx: 635,347
-obsvertx: 671,232
-obsvertx: 640,169
-obsvertx: 642,118
-obsvertx: 715,0
-obsvertx: 759,0
-### contours: 2
-### contours[0] : 6
-### contours[1] : 23
-hash 29
+clipper1: 12
+clipper2: 12
+clipper3: 1
+clipper4: 12
+### contours: 1
+### contours[0] : 43
+hash 43
 bordivertxf: 0.000000,0.000000
 bordivertx: 0,0
 bordivertxf: 1.560000,0.000000
@@ -66,389 +54,558 @@ bordivertxf: 1.560000,1.060000
 bordivertx: 1560,1060
 bordivertxf: 0.000000,1.060000
 bordivertx: 0,1060
-size: 33 
-size2: 33 
+size: 47 
+size2: 47 
 pippo c'è 
 Traversing Voronoi graph.
 pippo c'è 
-Number of visited primary edges using vertex iterator: 156
-before points size: 131 
-before edge size: 131 
-edgesAfterVoronoi: 131
-pointsAfterVoronoi: 131
-x: 64, 829
-INSIDE!!! 24.8235 ->  punto <64, 829> -> 1
-x: 64, 829
-INSIDE!!! 24.8235 ->  punto <64, 829> -> 1
-x: 64, 829
-INSIDE!!! 24.8235 ->  punto <64, 829> -> 1
-x: 131, 928
-INSIDE!!! 51.4002 ->  punto <131, 928> -> 1
-x: 131, 928
-INSIDE!!! 51.4002 ->  punto <131, 928> -> 1
-x: 131, 928
-INSIDE!!! 51.4002 ->  punto <131, 928> -> 1
-x: 176, 895
-INSIDE!!! 107.054 ->  punto <176, 895> -> 1
-x: 176, 895
-INSIDE!!! 107.054 ->  punto <176, 895> -> 1
-x: 180, 891
-INSIDE!!! 112.693 ->  punto <180, 891> -> 1
-x: 180, 891
-INSIDE!!! 112.693 ->  punto <180, 891> -> 1
-x: 180, 891
-INSIDE!!! 112.693 ->  punto <180, 891> -> 1
-x: 215, 853
-INSIDE!!! 88 ->  punto <215, 853> -> 1
-x: 215, 853
-INSIDE!!! 88 ->  punto <215, 853> -> 1
-x: 214, 877
-INSIDE!!! 112 ->  punto <214, 877> -> 1
-x: 214, 877
-INSIDE!!! 112 ->  punto <214, 877> -> 1
-x: 214, 877
-INSIDE!!! 112 ->  punto <214, 877> -> 1
-x: 215, 606
-OUTSIDE -159 punto <215, 606> -> 0
-OUTSIDE -429.757 punto <215, 606> -> 0
-x: 215, 606
-OUTSIDE -159 punto <215, 606> -> 0
-OUTSIDE -429.757 punto <215, 606> -> 0
-x: 215, 606
-OUTSIDE -159 punto <215, 606> -> 0
-OUTSIDE -429.757 punto <215, 606> -> 0
-x: 291, 920
-INSIDE!!! 75.0478 ->  punto <291, 920> -> 1
-x: 291, 920
-INSIDE!!! 75.0478 ->  punto <291, 920> -> 1
-x: 305, 928
-INSIDE!!! 58.9408 ->  punto <305, 928> -> 1
-x: 305, 928
-INSIDE!!! 58.9408 ->  punto <305, 928> -> 1
-x: 318, 318
-OUTSIDE -447 punto <318, 318> -> 0
-OUTSIDE -318.324 punto <318, 318> -> 0
-x: 318, 318
-OUTSIDE -447 punto <318, 318> -> 0
-OUTSIDE -318.324 punto <318, 318> -> 0
-x: 318, 318
-OUTSIDE -447 punto <318, 318> -> 0
-OUTSIDE -318.324 punto <318, 318> -> 0
-x: 320, 446
-OUTSIDE -319 punto <320, 446> -> 0
-OUTSIDE -321.45 punto <320, 446> -> 0
-x: 320, 446
-OUTSIDE -319 punto <320, 446> -> 0
-OUTSIDE -321.45 punto <320, 446> -> 0
-x: 320, 446
-OUTSIDE -319 punto <320, 446> -> 0
-OUTSIDE -321.45 punto <320, 446> -> 0
-x: 505, 138
-OUTSIDE -643.548 punto <505, 138> -> 0
-OUTSIDE -136.111 punto <505, 138> -> 0
-x: 505, 138
-OUTSIDE -643.548 punto <505, 138> -> 0
-OUTSIDE -136.111 punto <505, 138> -> 0
-x: 505, 138
-OUTSIDE -643.548 punto <505, 138> -> 0
-OUTSIDE -136.111 punto <505, 138> -> 0
-x: 321, 421
-OUTSIDE -344 punto <321, 421> -> 0
-OUTSIDE -322.602 punto <321, 421> -> 0
-x: 321, 421
-OUTSIDE -344 punto <321, 421> -> 0
-OUTSIDE -322.602 punto <321, 421> -> 0
-x: 321, 421
-OUTSIDE -344 punto <321, 421> -> 0
-OUTSIDE -322.602 punto <321, 421> -> 0
-x: 492, 684
-OUTSIDE -154.871 punto <492, 684> -> 0
-OUTSIDE -154.997 punto <492, 684> -> 0
-x: 492, 684
-OUTSIDE -154.871 punto <492, 684> -> 0
-OUTSIDE -154.997 punto <492, 684> -> 0
-x: 402, 251
-OUTSIDE -515.713 punto <402, 251> -> 0
-OUTSIDE -251.039 punto <402, 251> -> 0
-x: 402, 251
-OUTSIDE -515.713 punto <402, 251> -> 0
-OUTSIDE -251.039 punto <402, 251> -> 0
-x: 402, 251
-OUTSIDE -515.713 punto <402, 251> -> 0
-OUTSIDE -251.039 punto <402, 251> -> 0
-x: 543, 255
-OUTSIDE -541.839 punto <543, 255> -> 0
-OUTSIDE -115.283 punto <543, 255> -> 0
-x: 543, 255
-OUTSIDE -541.839 punto <543, 255> -> 0
-OUTSIDE -115.283 punto <543, 255> -> 0
-x: 543, 255
-OUTSIDE -541.839 punto <543, 255> -> 0
-OUTSIDE -115.283 punto <543, 255> -> 0
-x: 461, 577
-OUTSIDE -213.413 punto <461, 577> -> 0
-OUTSIDE -183.055 punto <461, 577> -> 0
-x: 461, 577
-OUTSIDE -213.413 punto <461, 577> -> 0
-OUTSIDE -183.055 punto <461, 577> -> 0
-x: 461, 577
-OUTSIDE -213.413 punto <461, 577> -> 0
-OUTSIDE -183.055 punto <461, 577> -> 0
-x: 657, 439
-OUTSIDE -441.005 punto <657, 439> -> 0
-OUTSIDE -4.57947 punto <657, 439> -> 0
-x: 657, 439
-OUTSIDE -441.005 punto <657, 439> -> 0
-OUTSIDE -4.57947 punto <657, 439> -> 0
-x: 542, 783
-OUTSIDE -145.958 punto <542, 783> -> 0
-OUTSIDE -145.691 punto <542, 783> -> 0
-x: 542, 783
-OUTSIDE -145.958 punto <542, 783> -> 0
-OUTSIDE -145.691 punto <542, 783> -> 0
-x: 569, 818
-OUTSIDE -156.732 punto <569, 818> -> 0
-OUTSIDE -151.672 punto <569, 818> -> 0
-x: 569, 818
-OUTSIDE -156.732 punto <569, 818> -> 0
-OUTSIDE -151.672 punto <569, 818> -> 0
-x: 569, 818
-OUTSIDE -156.732 punto <569, 818> -> 0
-OUTSIDE -151.672 punto <569, 818> -> 0
-x: 595, 880
-OUTSIDE -178.126 punto <595, 880> -> 0
-OUTSIDE -178.832 punto <595, 880> -> 0
-x: 595, 880
-OUTSIDE -178.126 punto <595, 880> -> 0
-OUTSIDE -178.832 punto <595, 880> -> 0
-x: 595, 880
-OUTSIDE -178.126 punto <595, 880> -> 0
-OUTSIDE -178.832 punto <595, 880> -> 0
-x: 761, 148
-OUTSIDE -735.86 punto <761, 148> -> 0
-INSIDE!!! 116.983 ->  punto <761, 148> -> 1
-x: 761, 148
-OUTSIDE -735.86 punto <761, 148> -> 0
-INSIDE!!! 116.983 ->  punto <761, 148> -> 1
-x: 761, 148
-OUTSIDE -735.86 punto <761, 148> -> 0
-INSIDE!!! 116.983 ->  punto <761, 148> -> 1
-x: 774, 397
-OUTSIDE -553.913 punto <774, 397> -> 0
-INSIDE!!! 98.2344 ->  punto <774, 397> -> 1
-x: 774, 397
-OUTSIDE -553.913 punto <774, 397> -> 0
-INSIDE!!! 98.2344 ->  punto <774, 397> -> 1
-x: 774, 397
-OUTSIDE -553.913 punto <774, 397> -> 0
-INSIDE!!! 98.2344 ->  punto <774, 397> -> 1
-x: 782, 142
-OUTSIDE -752.471 punto <782, 142> -> 0
-INSIDE!!! 131.685 ->  punto <782, 142> -> 1
-x: 782, 142
-OUTSIDE -752.471 punto <782, 142> -> 0
-INSIDE!!! 131.685 ->  punto <782, 142> -> 1
-x: 782, 142
-OUTSIDE -752.471 punto <782, 142> -> 0
-INSIDE!!! 131.685 ->  punto <782, 142> -> 1
-x: 785, 331
-OUTSIDE -607.438 punto <785, 331> -> 0
-INSIDE!!! 138.37 ->  punto <785, 331> -> 1
-x: 785, 331
-OUTSIDE -607.438 punto <785, 331> -> 0
-INSIDE!!! 138.37 ->  punto <785, 331> -> 1
-x: 785, 331
-OUTSIDE -607.438 punto <785, 331> -> 0
-INSIDE!!! 138.37 ->  punto <785, 331> -> 1
-x: 830, 335
-OUTSIDE -637.024 punto <830, 335> -> 0
-INSIDE!!! 108.103 ->  punto <830, 335> -> 1
-x: 830, 335
-OUTSIDE -637.024 punto <830, 335> -> 0
-INSIDE!!! 108.103 ->  punto <830, 335> -> 1
-x: 830, 335
-OUTSIDE -637.024 punto <830, 335> -> 0
-INSIDE!!! 108.103 ->  punto <830, 335> -> 1
-x: 792, 325
-OUTSIDE -616.623 punto <792, 325> -> 0
-INSIDE!!! 143.258 ->  punto <792, 325> -> 1
-x: 792, 325
-OUTSIDE -616.623 punto <792, 325> -> 0
-INSIDE!!! 143.258 ->  punto <792, 325> -> 1
-x: 792, 325
-OUTSIDE -616.623 punto <792, 325> -> 0
-INSIDE!!! 143.258 ->  punto <792, 325> -> 1
-x: 766, 244
-OUTSIDE -660.513 punto <766, 244> -> 0
-INSIDE!!! 95.7549 ->  punto <766, 244> -> 1
-x: 766, 244
-OUTSIDE -660.513 punto <766, 244> -> 0
-INSIDE!!! 95.7549 ->  punto <766, 244> -> 1
-x: 957, 335
-OUTSIDE -735.737 punto <957, 335> -> 0
-OUTSIDE -7.63094 punto <957, 335> -> 0
-x: 957, 335
-OUTSIDE -735.737 punto <957, 335> -> 0
-OUTSIDE -7.63094 punto <957, 335> -> 0
-x: 795, 568
-OUTSIDE -473.928 punto <795, 568> -> 0
-INSIDE!!! 151.067 ->  punto <795, 568> -> 1
-x: 795, 568
-OUTSIDE -473.928 punto <795, 568> -> 0
-INSIDE!!! 151.067 ->  punto <795, 568> -> 1
-x: 795, 568
-OUTSIDE -473.928 punto <795, 568> -> 0
-INSIDE!!! 151.067 ->  punto <795, 568> -> 1
-x: 816, 880
-OUTSIDE -398.502 punto <816, 880> -> 0
-OUTSIDE -141 punto <816, 880> -> 0
-x: 816, 880
-OUTSIDE -398.502 punto <816, 880> -> 0
-OUTSIDE -141 punto <816, 880> -> 0
-x: 816, 880
-OUTSIDE -398.502 punto <816, 880> -> 0
-OUTSIDE -141 punto <816, 880> -> 0
-x: 819, 551
-OUTSIDE -503.271 punto <819, 551> -> 0
-INSIDE!!! 164.729 ->  punto <819, 551> -> 1
-x: 819, 551
-OUTSIDE -503.271 punto <819, 551> -> 0
-INSIDE!!! 164.729 ->  punto <819, 551> -> 1
-x: 819, 551
-OUTSIDE -503.271 punto <819, 551> -> 0
-INSIDE!!! 164.729 ->  punto <819, 551> -> 1
-x: 813, 570
-OUTSIDE -488.249 punto <813, 570> -> 0
-INSIDE!!! 169 ->  punto <813, 570> -> 1
-x: 813, 570
-OUTSIDE -488.249 punto <813, 570> -> 0
-INSIDE!!! 169 ->  punto <813, 570> -> 1
-x: 813, 570
-OUTSIDE -488.249 punto <813, 570> -> 0
-INSIDE!!! 169 ->  punto <813, 570> -> 1
-x: 816, 570
-OUTSIDE -490.81 punto <816, 570> -> 0
-INSIDE!!! 168.062 ->  punto <816, 570> -> 1
-x: 816, 570
-OUTSIDE -490.81 punto <816, 570> -> 0
-INSIDE!!! 168.062 ->  punto <816, 570> -> 1
-x: 816, 570
-OUTSIDE -490.81 punto <816, 570> -> 0
-INSIDE!!! 168.062 ->  punto <816, 570> -> 1
-x: 815, 570
-OUTSIDE -489.956 punto <815, 570> -> 0
-INSIDE!!! 169 ->  punto <815, 570> -> 1
-x: 815, 570
-OUTSIDE -489.956 punto <815, 570> -> 0
-INSIDE!!! 169 ->  punto <815, 570> -> 1
-x: 815, 570
-OUTSIDE -489.956 punto <815, 570> -> 0
-INSIDE!!! 169 ->  punto <815, 570> -> 1
-x: 817, 567
-OUTSIDE -493.226 punto <817, 567> -> 0
-INSIDE!!! 167.009 ->  punto <817, 567> -> 1
-x: 817, 567
-OUTSIDE -493.226 punto <817, 567> -> 0
-INSIDE!!! 167.009 ->  punto <817, 567> -> 1
-x: 817, 567
-OUTSIDE -493.226 punto <817, 567> -> 0
-INSIDE!!! 167.009 ->  punto <817, 567> -> 1
-x: 853, 187
-OUTSIDE -759.693 punto <853, 187> -> 0
-INSIDE!!! 164.504 ->  punto <853, 187> -> 1
-x: 853, 187
-OUTSIDE -759.693 punto <853, 187> -> 0
-INSIDE!!! 164.504 ->  punto <853, 187> -> 1
-x: 853, 187
-OUTSIDE -759.693 punto <853, 187> -> 0
-INSIDE!!! 164.504 ->  punto <853, 187> -> 1
-x: 856, 220
-OUTSIDE -736.913 punto <856, 220> -> 0
-INSIDE!!! 143.6 ->  punto <856, 220> -> 1
-x: 856, 220
-OUTSIDE -736.913 punto <856, 220> -> 0
-INSIDE!!! 143.6 ->  punto <856, 220> -> 1
-x: 856, 220
-OUTSIDE -736.913 punto <856, 220> -> 0
-INSIDE!!! 143.6 ->  punto <856, 220> -> 1
-x: 876, 166
-OUTSIDE -790.605 punto <876, 166> -> 0
-INSIDE!!! 155.518 ->  punto <876, 166> -> 1
-x: 876, 166
-OUTSIDE -790.605 punto <876, 166> -> 0
-INSIDE!!! 155.518 ->  punto <876, 166> -> 1
-x: 876, 166
-OUTSIDE -790.605 punto <876, 166> -> 0
-INSIDE!!! 155.518 ->  punto <876, 166> -> 1
-x: 984, 378
-OUTSIDE -734.265 punto <984, 378> -> 0
-OUTSIDE -51.7879 punto <984, 378> -> 0
-x: 984, 378
-OUTSIDE -734.265 punto <984, 378> -> 0
-OUTSIDE -51.7879 punto <984, 378> -> 0
-x: 984, 378
-OUTSIDE -734.265 punto <984, 378> -> 0
-OUTSIDE -51.7879 punto <984, 378> -> 0
-x: 993, 383
-OUTSIDE -739.323 punto <993, 383> -> 0
-OUTSIDE -56.8935 punto <993, 383> -> 0
-x: 993, 383
-OUTSIDE -739.323 punto <993, 383> -> 0
-OUTSIDE -56.8935 punto <993, 383> -> 0
-x: 1205, 166
-OUTSIDE -1035.77 punto <1205, 166> -> 0
-OUTSIDE -164 punto <1205, 166> -> 0
-x: 1205, 166
-OUTSIDE -1035.77 punto <1205, 166> -> 0
-OUTSIDE -164 punto <1205, 166> -> 0
-x: 1205, 166
-OUTSIDE -1035.77 punto <1205, 166> -> 0
-OUTSIDE -164 punto <1205, 166> -> 0
-x: 1101, 851
-OUTSIDE -683.059 punto <1101, 851> -> 0
-OUTSIDE -202.594 punto <1101, 851> -> 0
-x: 1101, 851
-OUTSIDE -683.059 punto <1101, 851> -> 0
-OUTSIDE -202.594 punto <1101, 851> -> 0
-x: 1101, 851
-OUTSIDE -683.059 punto <1101, 851> -> 0
-OUTSIDE -202.594 punto <1101, 851> -> 0
-x: 1295, 264
-OUTSIDE -1059.09 punto <1295, 264> -> 0
-OUTSIDE -263.737 punto <1295, 264> -> 0
-x: 1295, 264
-OUTSIDE -1059.09 punto <1295, 264> -> 0
-OUTSIDE -263.737 punto <1295, 264> -> 0
-x: 1295, 264
-OUTSIDE -1059.09 punto <1295, 264> -> 0
-OUTSIDE -263.737 punto <1295, 264> -> 0
-x: 1239, 444
-OUTSIDE -920.379 punto <1239, 444> -> 0
-OUTSIDE -257.095 punto <1239, 444> -> 0
-x: 1239, 444
-OUTSIDE -920.379 punto <1239, 444> -> 0
-OUTSIDE -257.095 punto <1239, 444> -> 0
-x: 1239, 444
-OUTSIDE -920.379 punto <1239, 444> -> 0
-OUTSIDE -257.095 punto <1239, 444> -> 0
-x: 926, 1028
-OUTSIDE -535.059 punto <926, 1028> -> 0
-OUTSIDE -289 punto <926, 1028> -> 0
-x: 926, 1028
-OUTSIDE -535.059 punto <926, 1028> -> 0
-OUTSIDE -289 punto <926, 1028> -> 0
-x: 1474, 556
-OUTSIDE -1098.89 punto <1474, 556> -> 0
-OUTSIDE -490.082 punto <1474, 556> -> 0
-x: 1474, 556
-OUTSIDE -1098.89 punto <1474, 556> -> 0
-OUTSIDE -490.082 punto <1474, 556> -> 0
-x: 1474, 556
-OUTSIDE -1098.89 punto <1474, 556> -> 0
-OUTSIDE -490.082 punto <1474, 556> -> 0
-x: 1560, 481
-OUTSIDE -1203.25 punto <1560, 481> -> 0
-OUTSIDE -577.385 punto <1560, 481> -> 0
+Number of visited primary edges using vertex iterator: 318
+before points size: 271 
+before edge size: 270 
+edgesAfterVoronoi: 270
+pointsAfterVoronoi: 271
+x: 31, 762
+INSIDE!!! 31 ->  punto <31, 762> -> 1
+x: 31, 762
+INSIDE!!! 31 ->  punto <31, 762> -> 1
+x: 31, 762
+INSIDE!!! 31 ->  punto <31, 762> -> 1
+x: 67, 325
+OUTSIDE -21.0274 punto <67, 325> -> 0
+x: 67, 325
+OUTSIDE -21.0274 punto <67, 325> -> 0
+x: 50, 395
+INSIDE!!! 50 ->  punto <50, 395> -> 1
+x: 50, 395
+INSIDE!!! 50 ->  punto <50, 395> -> 1
+x: 52, 730
+INSIDE!!! 52 ->  punto <52, 730> -> 1
+x: 52, 730
+INSIDE!!! 52 ->  punto <52, 730> -> 1
+x: 91, 363
+INSIDE!!! 22.6274 ->  punto <91, 363> -> 1
+x: 91, 363
+INSIDE!!! 22.6274 ->  punto <91, 363> -> 1
+x: 58, 286
+OUTSIDE -58.8528 punto <58, 286> -> 0
+x: 58, 286
+OUTSIDE -58.8528 punto <58, 286> -> 0
+x: 58, 286
+OUTSIDE -58.8528 punto <58, 286> -> 0
+x: 100, 788
+OUTSIDE -19.347 punto <100, 788> -> 0
+x: 100, 788
+OUTSIDE -19.347 punto <100, 788> -> 0
+x: 0, 925
+OUTSIDE -133.154 punto <0, 925> -> 0
+x: 67, 414
+INSIDE!!! 67 ->  punto <67, 414> -> 1
+x: 67, 414
+INSIDE!!! 67 ->  punto <67, 414> -> 1
+x: 77, 691
+INSIDE!!! 77 ->  punto <77, 691> -> 1
+x: 77, 691
+INSIDE!!! 77 ->  punto <77, 691> -> 1
+x: 78, 691
+INSIDE!!! 78 ->  punto <78, 691> -> 1
+x: 78, 691
+INSIDE!!! 78 ->  punto <78, 691> -> 1
+x: 82, 258
+OUTSIDE -82 punto <82, 258> -> 0
+x: 82, 258
+OUTSIDE -82 punto <82, 258> -> 0
+x: 135, 747
+INSIDE!!! 30.5287 ->  punto <135, 747> -> 1
+x: 135, 747
+INSIDE!!! 30.5287 ->  punto <135, 747> -> 1
+x: 87, 922
+OUTSIDE -137.084 punto <87, 922> -> 0
+x: 87, 922
+OUTSIDE -137.084 punto <87, 922> -> 0
+x: 114, 454
+INSIDE!!! 113.886 ->  punto <114, 454> -> 1
+x: 114, 454
+INSIDE!!! 113.886 ->  punto <114, 454> -> 1
+x: 114, 454
+INSIDE!!! 113.886 ->  punto <114, 454> -> 1
+x: 103, 919
+OUTSIDE -140.703 punto <103, 919> -> 0
+x: 103, 919
+OUTSIDE -140.703 punto <103, 919> -> 0
+x: 103, 919
+OUTSIDE -140.703 punto <103, 919> -> 0
+x: 120, 919
+OUTSIDE -140.014 punto <120, 919> -> 0
+x: 120, 919
+OUTSIDE -140.014 punto <120, 919> -> 0
+x: 223, 383
+INSIDE!!! 43 ->  punto <223, 383> -> 1
+x: 223, 383
+INSIDE!!! 43 ->  punto <223, 383> -> 1
+x: 260, 323
+OUTSIDE -24.0416 punto <260, 323> -> 0
+x: 260, 323
+OUTSIDE -24.0416 punto <260, 323> -> 0
+x: 260, 322
+OUTSIDE -24.7588 punto <260, 322> -> 0
+x: 260, 322
+OUTSIDE -24.7588 punto <260, 322> -> 0
+x: 171, 918
+OUTSIDE -140.074 punto <171, 918> -> 0
+x: 171, 918
+OUTSIDE -140.074 punto <171, 918> -> 0
+x: 171, 918
+OUTSIDE -140.074 punto <171, 918> -> 0
+x: 170, 170
+OUTSIDE -170 punto <170, 170> -> 0
+x: 170, 170
+OUTSIDE -170 punto <170, 170> -> 0
+x: 170, 170
+OUTSIDE -170 punto <170, 170> -> 0
+x: 227, 936
+OUTSIDE -123.454 punto <227, 936> -> 0
+x: 227, 936
+OUTSIDE -123.454 punto <227, 936> -> 0
+x: 180, 597
+INSIDE!!! 180 ->  punto <180, 597> -> 1
+x: 180, 597
+INSIDE!!! 180 ->  punto <180, 597> -> 1
+x: 180, 597
+INSIDE!!! 180 ->  punto <180, 597> -> 1
+x: 292, 416
+INSIDE!!! 71.6938 ->  punto <292, 416> -> 1
+x: 292, 416
+INSIDE!!! 71.6938 ->  punto <292, 416> -> 1
+x: 185, 525
+INSIDE!!! 185 ->  punto <185, 525> -> 1
+x: 185, 525
+INSIDE!!! 185 ->  punto <185, 525> -> 1
+x: 185, 525
+INSIDE!!! 185 ->  punto <185, 525> -> 1
+x: 273, 229
+OUTSIDE -114.983 punto <273, 229> -> 0
+x: 273, 229
+OUTSIDE -114.983 punto <273, 229> -> 0
+x: 291, 947
+OUTSIDE -112.219 punto <291, 947> -> 0
+x: 291, 947
+OUTSIDE -112.219 punto <291, 947> -> 0
+x: 205, 553
+INSIDE!!! 205 ->  punto <205, 553> -> 1
+x: 205, 553
+INSIDE!!! 205 ->  punto <205, 553> -> 1
+x: 243, 170
+OUTSIDE -170 punto <243, 170> -> 0
+x: 243, 170
+OUTSIDE -170 punto <243, 170> -> 0
+x: 208, 557
+INSIDE!!! 208 ->  punto <208, 557> -> 1
+x: 208, 557
+INSIDE!!! 208 ->  punto <208, 557> -> 1
+x: 209, 567
+INSIDE!!! 209 ->  punto <209, 567> -> 1
+x: 209, 567
+INSIDE!!! 209 ->  punto <209, 567> -> 1
+x: 213, 563
+INSIDE!!! 213 ->  punto <213, 563> -> 1
+x: 213, 563
+INSIDE!!! 213 ->  punto <213, 563> -> 1
+x: 213, 563
+INSIDE!!! 213 ->  punto <213, 563> -> 1
+x: 424, 348
+OUTSIDE -6.06546 punto <424, 348> -> 0
+x: 424, 348
+OUTSIDE -6.06546 punto <424, 348> -> 0
+x: 331, 736
+INSIDE!!! 100.217 ->  punto <331, 736> -> 1
+x: 331, 736
+INSIDE!!! 100.217 ->  punto <331, 736> -> 1
+x: 331, 736
+INSIDE!!! 100.217 ->  punto <331, 736> -> 1
+x: 434, 364
+INSIDE!!! 11.3137 ->  punto <434, 364> -> 1
+x: 434, 364
+INSIDE!!! 11.3137 ->  punto <434, 364> -> 1
+x: 279, 172
+OUTSIDE -171.814 punto <279, 172> -> 0
+x: 279, 172
+OUTSIDE -171.814 punto <279, 172> -> 0
+x: 279, 172
+OUTSIDE -171.814 punto <279, 172> -> 0
+x: 427, 327
+OUTSIDE -25.9378 punto <427, 327> -> 0
+x: 427, 327
+OUTSIDE -25.9378 punto <427, 327> -> 0
+x: 348, 948
+OUTSIDE -110.163 punto <348, 948> -> 0
+x: 348, 948
+OUTSIDE -110.163 punto <348, 948> -> 0
+x: 378, 442
+INSIDE!!! 98 ->  punto <378, 442> -> 1
+x: 378, 442
+INSIDE!!! 98 ->  punto <378, 442> -> 1
+x: 436, 284
+OUTSIDE -68 punto <436, 284> -> 0
+x: 436, 284
+OUTSIDE -68 punto <436, 284> -> 0
+x: 458, 841
+OUTSIDE -51.5498 punto <458, 841> -> 0
+x: 458, 841
+OUTSIDE -51.5498 punto <458, 841> -> 0
+x: 409, 942
+OUTSIDE -117.648 punto <409, 942> -> 0
+x: 409, 942
+OUTSIDE -117.648 punto <409, 942> -> 0
+x: 323, 574
+INSIDE!!! 229.976 ->  punto <323, 574> -> 1
+x: 323, 574
+INSIDE!!! 229.976 ->  punto <323, 574> -> 1
+x: 323, 574
+INSIDE!!! 229.976 ->  punto <323, 574> -> 1
+x: 339, 594
+INSIDE!!! 221.617 ->  punto <339, 594> -> 1
+x: 339, 594
+INSIDE!!! 221.617 ->  punto <339, 594> -> 1
+x: 340, 578
+INSIDE!!! 234 ->  punto <340, 578> -> 1
+x: 340, 578
+INSIDE!!! 234 ->  punto <340, 578> -> 1
+x: 340, 578
+INSIDE!!! 234 ->  punto <340, 578> -> 1
+x: 404, 172
+OUTSIDE -172 punto <404, 172> -> 0
+x: 404, 172
+OUTSIDE -172 punto <404, 172> -> 0
+x: 452, 931
+OUTSIDE -128.156 punto <452, 931> -> 0
+x: 452, 931
+OUTSIDE -128.156 punto <452, 931> -> 0
+x: 452, 931
+OUTSIDE -128.156 punto <452, 931> -> 0
+x: 352, 576
+INSIDE!!! 232 ->  punto <352, 576> -> 1
+x: 352, 576
+INSIDE!!! 232 ->  punto <352, 576> -> 1
+x: 352, 576
+INSIDE!!! 232 ->  punto <352, 576> -> 1
+x: 370, 574
+INSIDE!!! 225.078 ->  punto <370, 574> -> 1
+x: 370, 574
+INSIDE!!! 225.078 ->  punto <370, 574> -> 1
+x: 452, 175
+OUTSIDE -175.684 punto <452, 175> -> 0
+x: 452, 175
+OUTSIDE -175.684 punto <452, 175> -> 0
+x: 452, 175
+OUTSIDE -175.684 punto <452, 175> -> 0
+x: 506, 936
+OUTSIDE -123.065 punto <506, 936> -> 0
+x: 506, 936
+OUTSIDE -123.065 punto <506, 936> -> 0
+x: 546, 727
+INSIDE!!! 83.7616 ->  punto <546, 727> -> 1
+x: 546, 727
+INSIDE!!! 83.7616 ->  punto <546, 727> -> 1
+x: 554, 711
+INSIDE!!! 99.6393 ->  punto <554, 711> -> 1
+x: 554, 711
+INSIDE!!! 99.6393 ->  punto <554, 711> -> 1
+x: 554, 711
+INSIDE!!! 99.6393 ->  punto <554, 711> -> 1
+x: 639, 335
+OUTSIDE -16.7533 punto <639, 335> -> 0
+x: 639, 335
+OUTSIDE -16.7533 punto <639, 335> -> 0
+x: 554, 706
+INSIDE!!! 102.825 ->  punto <554, 706> -> 1
+x: 554, 706
+INSIDE!!! 102.825 ->  punto <554, 706> -> 1
+x: 594, 411
+INSIDE!!! 70.0304 ->  punto <594, 411> -> 1
+x: 594, 411
+INSIDE!!! 70.0304 ->  punto <594, 411> -> 1
+x: 643, 824
+OUTSIDE -31.7635 punto <643, 824> -> 0
+x: 643, 824
+OUTSIDE -31.7635 punto <643, 824> -> 0
+x: 642, 310
+OUTSIDE -37.6431 punto <642, 310> -> 0
+x: 642, 310
+OUTSIDE -37.6431 punto <642, 310> -> 0
+x: 475, 561
+INSIDE!!! 210.775 ->  punto <475, 561> -> 1
+x: 475, 561
+INSIDE!!! 210.775 ->  punto <475, 561> -> 1
+x: 475, 561
+INSIDE!!! 210.775 ->  punto <475, 561> -> 1
+x: 667, 385
+INSIDE!!! 38.1838 ->  punto <667, 385> -> 1
+x: 667, 385
+INSIDE!!! 38.1838 ->  punto <667, 385> -> 1
+x: 618, 900
+OUTSIDE -91.0492 punto <618, 900> -> 0
+x: 618, 900
+OUTSIDE -91.0492 punto <618, 900> -> 0
+x: 649, 280
+OUTSIDE -66.6483 punto <649, 280> -> 0
+x: 649, 280
+OUTSIDE -66.6483 punto <649, 280> -> 0
+x: 598, 934
+OUTSIDE -124.32 punto <598, 934> -> 0
+x: 598, 934
+OUTSIDE -124.32 punto <598, 934> -> 0
+x: 598, 934
+OUTSIDE -124.32 punto <598, 934> -> 0
+x: 624, 950
+OUTSIDE -110.058 punto <624, 950> -> 0
+x: 624, 950
+OUTSIDE -110.058 punto <624, 950> -> 0
+x: 539, 563
+INSIDE!!! 217.552 ->  punto <539, 563> -> 1
+x: 539, 563
+INSIDE!!! 217.552 ->  punto <539, 563> -> 1
+x: 539, 563
+INSIDE!!! 217.552 ->  punto <539, 563> -> 1
+x: 605, 169
+OUTSIDE -170.496 punto <605, 169> -> 0
+x: 605, 169
+OUTSIDE -170.496 punto <605, 169> -> 0
+x: 562, 557
+INSIDE!!! 213.268 ->  punto <562, 557> -> 1
+x: 562, 557
+INSIDE!!! 213.268 ->  punto <562, 557> -> 1
+x: 562, 557
+INSIDE!!! 213.268 ->  punto <562, 557> -> 1
+x: 719, 978
+OUTSIDE -80.025 punto <719, 978> -> 0
+x: 719, 978
+OUTSIDE -80.025 punto <719, 978> -> 0
+x: 668, 173
+OUTSIDE -173.367 punto <668, 173> -> 0
+x: 668, 173
+OUTSIDE -173.367 punto <668, 173> -> 0
+x: 668, 173
+OUTSIDE -173.367 punto <668, 173> -> 0
+x: 781, 798
+INSIDE!!! 100.413 ->  punto <781, 798> -> 1
+x: 781, 798
+INSIDE!!! 100.413 ->  punto <781, 798> -> 1
+x: 781, 798
+INSIDE!!! 100.413 ->  punto <781, 798> -> 1
+x: 781, 754
+INSIDE!!! 121.387 ->  punto <781, 754> -> 1
+x: 781, 754
+INSIDE!!! 121.387 ->  punto <781, 754> -> 1
+x: 839, 414
+INSIDE!!! 70.4694 ->  punto <839, 414> -> 1
+x: 839, 414
+INSIDE!!! 70.4694 ->  punto <839, 414> -> 1
+x: 836, 979
+OUTSIDE -79.0226 punto <836, 979> -> 0
+x: 836, 979
+OUTSIDE -79.0226 punto <836, 979> -> 0
+x: 710, 556
+INSIDE!!! 210.01 ->  punto <710, 556> -> 1
+x: 710, 556
+INSIDE!!! 210.01 ->  punto <710, 556> -> 1
+x: 710, 556
+INSIDE!!! 210.01 ->  punto <710, 556> -> 1
+x: 894, 314
+OUTSIDE -39.6232 punto <894, 314> -> 0
+x: 894, 314
+OUTSIDE -39.6232 punto <894, 314> -> 0
+x: 895, 286
+OUTSIDE -63.5059 punto <895, 286> -> 0
+x: 895, 286
+OUTSIDE -63.5059 punto <895, 286> -> 0
+x: 792, 675
+INSIDE!!! 168.716 ->  punto <792, 675> -> 1
+x: 792, 675
+INSIDE!!! 168.716 ->  punto <792, 675> -> 1
+x: 910, 897
+OUTSIDE -60.4139 punto <910, 897> -> 0
+x: 910, 897
+OUTSIDE -60.4139 punto <910, 897> -> 0
+x: 796, 578
+INSIDE!!! 233.645 ->  punto <796, 578> -> 1
+x: 796, 578
+INSIDE!!! 233.645 ->  punto <796, 578> -> 1
+x: 796, 578
+INSIDE!!! 233.645 ->  punto <796, 578> -> 1
+x: 863, 171
+OUTSIDE -172.045 punto <863, 171> -> 0
+x: 863, 171
+OUTSIDE -172.045 punto <863, 171> -> 0
+x: 929, 953
+OUTSIDE -105.309 punto <929, 953> -> 0
+x: 929, 953
+OUTSIDE -105.309 punto <929, 953> -> 0
+x: 932, 951
+OUTSIDE -106.893 punto <932, 951> -> 0
+x: 932, 951
+OUTSIDE -106.893 punto <932, 951> -> 0
+x: 932, 951
+OUTSIDE -106.893 punto <932, 951> -> 0
+x: 814, 589
+INSIDE!!! 237.807 ->  punto <814, 589> -> 1
+x: 814, 589
+INSIDE!!! 237.807 ->  punto <814, 589> -> 1
+x: 814, 589
+INSIDE!!! 237.807 ->  punto <814, 589> -> 1
+x: 958, 741
+INSIDE!!! 99.6964 ->  punto <958, 741> -> 1
+x: 958, 741
+INSIDE!!! 99.6964 ->  punto <958, 741> -> 1
+x: 958, 741
+INSIDE!!! 99.6964 ->  punto <958, 741> -> 1
+x: 951, 951
+OUTSIDE -107.671 punto <951, 951> -> 0
+x: 951, 951
+OUTSIDE -107.671 punto <951, 951> -> 0
+x: 893, 172
+OUTSIDE -172.965 punto <893, 172> -> 0
+x: 893, 172
+OUTSIDE -172.965 punto <893, 172> -> 0
+x: 893, 172
+OUTSIDE -172.965 punto <893, 172> -> 0
+x: 953, 692
+INSIDE!!! 140.471 ->  punto <953, 692> -> 1
+x: 953, 692
+INSIDE!!! 140.471 ->  punto <953, 692> -> 1
+x: 956, 487
+INSIDE!!! 141.421 ->  punto <956, 487> -> 1
+x: 956, 487
+INSIDE!!! 141.421 ->  punto <956, 487> -> 1
+x: 951, 677
+INSIDE!!! 153.026 ->  punto <951, 677> -> 1
+x: 951, 677
+INSIDE!!! 153.026 ->  punto <951, 677> -> 1
+x: 951, 677
+INSIDE!!! 153.026 ->  punto <951, 677> -> 1
+x: 943, 661
+INSIDE!!! 164.806 ->  punto <943, 661> -> 1
+x: 943, 661
+INSIDE!!! 164.806 ->  punto <943, 661> -> 1
+x: 941, 171
+OUTSIDE -171.657 punto <941, 171> -> 0
+x: 941, 171
+OUTSIDE -171.657 punto <941, 171> -> 0
+x: 1013, 948
+OUTSIDE -111.646 punto <1013, 948> -> 0
+x: 1013, 948
+OUTSIDE -111.646 punto <1013, 948> -> 0
+x: 907, 589
+INSIDE!!! 226.797 ->  punto <907, 589> -> 1
+x: 907, 589
+INSIDE!!! 226.797 ->  punto <907, 589> -> 1
+x: 907, 589
+INSIDE!!! 226.797 ->  punto <907, 589> -> 1
+x: 1066, 638
+INSIDE!!! 77.5902 ->  punto <1066, 638> -> 1
+x: 1066, 638
+INSIDE!!! 77.5902 ->  punto <1066, 638> -> 1
+x: 1062, 453
+INSIDE!!! 98.6169 ->  punto <1062, 453> -> 1
+x: 1062, 453
+INSIDE!!! 98.6169 ->  punto <1062, 453> -> 1
+x: 1062, 453
+INSIDE!!! 98.6169 ->  punto <1062, 453> -> 1
+x: 968, 551
+INSIDE!!! 204.313 ->  punto <968, 551> -> 1
+x: 968, 551
+INSIDE!!! 204.313 ->  punto <968, 551> -> 1
+x: 968, 551
+INSIDE!!! 204.313 ->  punto <968, 551> -> 1
+x: 971, 550
+INSIDE!!! 203.24 ->  punto <971, 550> -> 1
+x: 971, 550
+INSIDE!!! 203.24 ->  punto <971, 550> -> 1
+x: 971, 550
+INSIDE!!! 203.24 ->  punto <971, 550> -> 1
+x: 1010, 530
+INSIDE!!! 179.889 ->  punto <1010, 530> -> 1
+x: 1010, 530
+INSIDE!!! 179.889 ->  punto <1010, 530> -> 1
+x: 1010, 530
+INSIDE!!! 179.889 ->  punto <1010, 530> -> 1
+x: 1144, 741
+OUTSIDE -49.6486 punto <1144, 741> -> 0
+x: 1144, 741
+OUTSIDE -49.6486 punto <1144, 741> -> 0
+x: 1104, 533
+INSIDE!!! 98.5859 ->  punto <1104, 533> -> 1
+x: 1104, 533
+INSIDE!!! 98.5859 ->  punto <1104, 533> -> 1
+x: 1104, 533
+INSIDE!!! 98.5859 ->  punto <1104, 533> -> 1
+x: 1084, 932
+OUTSIDE -126.151 punto <1084, 932> -> 0
+x: 1084, 932
+OUTSIDE -126.151 punto <1084, 932> -> 0
+x: 1111, 178
+OUTSIDE -179.626 punto <1111, 178> -> 0
+x: 1111, 178
+OUTSIDE -179.626 punto <1111, 178> -> 0
+x: 1197, 890
+OUTSIDE -168.671 punto <1197, 890> -> 0
+x: 1197, 890
+OUTSIDE -168.671 punto <1197, 890> -> 0
+x: 1201, 194
+OUTSIDE -193.892 punto <1201, 194> -> 0
+x: 1201, 194
+OUTSIDE -193.892 punto <1201, 194> -> 0
+x: 1258, 812
+OUTSIDE -178.843 punto <1258, 812> -> 0
+x: 1258, 812
+OUTSIDE -178.843 punto <1258, 812> -> 0
+x: 1253, 209
+OUTSIDE -209.694 punto <1253, 209> -> 0
+x: 1253, 209
+OUTSIDE -209.694 punto <1253, 209> -> 0
+x: 1300, 834
+OUTSIDE -225.411 punto <1300, 834> -> 0
+x: 1300, 834
+OUTSIDE -225.411 punto <1300, 834> -> 0
+x: 1300, 834
+OUTSIDE -225.411 punto <1300, 834> -> 0
+x: 1323, 236
+OUTSIDE -236.764 punto <1323, 236> -> 0
+x: 1323, 236
+OUTSIDE -236.764 punto <1323, 236> -> 0
+x: 1323, 236
+OUTSIDE -236.764 punto <1323, 236> -> 0
+x: 1337, 283
+OUTSIDE -222.729 punto <1337, 283> -> 0
+x: 1337, 283
+OUTSIDE -222.729 punto <1337, 283> -> 0
+x: 1371, 426
+OUTSIDE -187.842 punto <1371, 426> -> 0
+x: 1371, 426
+OUTSIDE -187.842 punto <1371, 426> -> 0
+x: 1381, 518
+OUTSIDE -177.102 punto <1381, 518> -> 0
+x: 1381, 518
+OUTSIDE -177.102 punto <1381, 518> -> 0
+x: 1380, 570
+OUTSIDE -178.138 punto <1380, 570> -> 0
+x: 1380, 570
+OUTSIDE -178.138 punto <1380, 570> -> 0
+x: 1367, 662
+OUTSIDE -192.421 punto <1367, 662> -> 0
+x: 1367, 662
+OUTSIDE -192.421 punto <1367, 662> -> 0
+x: 1323, 819
+OUTSIDE -235.983 punto <1323, 819> -> 0
+x: 1323, 819
+OUTSIDE -235.983 punto <1323, 819> -> 0
+x: 1322, 822
+OUTSIDE -236.698 punto <1322, 822> -> 0
+x: 1322, 822
+OUTSIDE -236.698 punto <1322, 822> -> 0
+x: 1322, 822
+OUTSIDE -236.698 punto <1322, 822> -> 0
+x: 1323, 819
+OUTSIDE -235.983 punto <1323, 819> -> 0
 start id 154203
 start Size ingress 0
 end id 1502812
@@ -456,571 +613,1566 @@ end Size ingress0
 Step 20
 Step 30size: 0 0
 Step 40size: 0 0
-Step 50size: 0 0
-Step 60size: 0 0
-Step 70size: 0 0
-Step 80size: 0 0
-Step 90size: 0 0
-Step 100size: 0 0
-Step 110size: 0 0
-Step 120size: 0 0
-Step 130size: 0 0
-Step 140size: 0 0
-Step 150size: 0 0
-Step 160size: 0 0
-Step 170size: 0 0
-connect points (318,318) and (154,203)
+connect points (170,170) and (154,203)
 ------ n samples 17
------- sample 0 coord(236,260)
------- sample 1 coord(195,231)
------- sample 2 coord(277,289)
------- sample 3 coord(174,217)
------- sample 4 coord(297,303)
------- sample 5 coord(215,245)
------- sample 6 coord(256,274)
------- sample 7 coord(164,210)
------- sample 8 coord(307,310)
------- sample 9 coord(184,224)
------- sample 10 coord(287,296)
------- sample 11 coord(205,238)
------- sample 12 coord(266,281)
------- sample 13 coord(225,252)
------- sample 14 coord(246,267)
+------ sample 0 coord(162,186)
+------ sample 1 coord(158,194)
+------ sample 2 coord(166,178)
+------ sample 3 coord(156,198)
+------ sample 4 coord(168,174)
+------ sample 5 coord(160,190)
+------ sample 6 coord(164,182)
+------ sample 7 coord(155,200)
+------ sample 8 coord(169,172)
+------ sample 9 coord(157,196)
+------ sample 10 coord(167,176)
+------ sample 11 coord(159,192)
+------ sample 12 coord(165,180)
+------ sample 13 coord(161,188)
+------ sample 14 coord(163,184)
 ------ sample 15 coord(154,203)
------- sample 16 coord(318,318)
-longId 318318
-id1 12
-Step 180size: 1 0
-connect points (318,318) and (154,203)
+------ sample 16 coord(170,170)
+longId 170170
+id1 24
+Step 50size: 1 0
+connect points (170,170) and (154,203)
 ------ n samples 17
------- sample 0 coord(236,260)
------- sample 1 coord(195,231)
------- sample 2 coord(277,289)
------- sample 3 coord(174,217)
------- sample 4 coord(297,303)
------- sample 5 coord(215,245)
------- sample 6 coord(256,274)
------- sample 7 coord(164,210)
------- sample 8 coord(307,310)
------- sample 9 coord(184,224)
------- sample 10 coord(287,296)
------- sample 11 coord(205,238)
------- sample 12 coord(266,281)
------- sample 13 coord(225,252)
------- sample 14 coord(246,267)
+------ sample 0 coord(162,186)
+------ sample 1 coord(158,194)
+------ sample 2 coord(166,178)
+------ sample 3 coord(156,198)
+------ sample 4 coord(168,174)
+------ sample 5 coord(160,190)
+------ sample 6 coord(164,182)
+------ sample 7 coord(155,200)
+------ sample 8 coord(169,172)
+------ sample 9 coord(157,196)
+------ sample 10 coord(167,176)
+------ sample 11 coord(159,192)
+------ sample 12 coord(165,180)
+------ sample 13 coord(161,188)
+------ sample 14 coord(163,184)
 ------ sample 15 coord(154,203)
------- sample 16 coord(318,318)
-longId 318318
-id1 12
-Step 190size: 1 0
-connect points (318,318) and (154,203)
+------ sample 16 coord(170,170)
+longId 170170
+id1 24
+Step 60size: 1 0
+connect points (170,170) and (154,203)
 ------ n samples 17
------- sample 0 coord(236,260)
------- sample 1 coord(195,231)
------- sample 2 coord(277,289)
------- sample 3 coord(174,217)
------- sample 4 coord(297,303)
------- sample 5 coord(215,245)
------- sample 6 coord(256,274)
------- sample 7 coord(164,210)
------- sample 8 coord(307,310)
------- sample 9 coord(184,224)
------- sample 10 coord(287,296)
------- sample 11 coord(205,238)
------- sample 12 coord(266,281)
------- sample 13 coord(225,252)
------- sample 14 coord(246,267)
+------ sample 0 coord(162,186)
+------ sample 1 coord(158,194)
+------ sample 2 coord(166,178)
+------ sample 3 coord(156,198)
+------ sample 4 coord(168,174)
+------ sample 5 coord(160,190)
+------ sample 6 coord(164,182)
+------ sample 7 coord(155,200)
+------ sample 8 coord(169,172)
+------ sample 9 coord(157,196)
+------ sample 10 coord(167,176)
+------ sample 11 coord(159,192)
+------ sample 12 coord(165,180)
+------ sample 13 coord(161,188)
+------ sample 14 coord(163,184)
 ------ sample 15 coord(154,203)
------- sample 16 coord(318,318)
-longId 318318
-id1 12
-Step 200size: 1 0
-connect points (318,318) and (154,203)
+------ sample 16 coord(170,170)
+longId 170170
+id1 24
+Step 70size: 1 0
+connect points (170,170) and (154,203)
 ------ n samples 17
------- sample 0 coord(236,260)
------- sample 1 coord(195,231)
------- sample 2 coord(277,289)
------- sample 3 coord(174,217)
------- sample 4 coord(297,303)
------- sample 5 coord(215,245)
------- sample 6 coord(256,274)
------- sample 7 coord(164,210)
------- sample 8 coord(307,310)
------- sample 9 coord(184,224)
------- sample 10 coord(287,296)
------- sample 11 coord(205,238)
------- sample 12 coord(266,281)
------- sample 13 coord(225,252)
------- sample 14 coord(246,267)
+------ sample 0 coord(162,186)
+------ sample 1 coord(158,194)
+------ sample 2 coord(166,178)
+------ sample 3 coord(156,198)
+------ sample 4 coord(168,174)
+------ sample 5 coord(160,190)
+------ sample 6 coord(164,182)
+------ sample 7 coord(155,200)
+------ sample 8 coord(169,172)
+------ sample 9 coord(157,196)
+------ sample 10 coord(167,176)
+------ sample 11 coord(159,192)
+------ sample 12 coord(165,180)
+------ sample 13 coord(161,188)
+------ sample 14 coord(163,184)
 ------ sample 15 coord(154,203)
------- sample 16 coord(318,318)
-longId 318318
-id1 12
-Step 210size: 1 0
-connect points (318,318) and (154,203)
+------ sample 16 coord(170,170)
+longId 170170
+id1 24
+Step 80size: 1 0
+connect points (82,258) and (154,203)
 ------ n samples 17
------- sample 0 coord(236,260)
------- sample 1 coord(195,231)
------- sample 2 coord(277,289)
------- sample 3 coord(174,217)
------- sample 4 coord(297,303)
------- sample 5 coord(215,245)
------- sample 6 coord(256,274)
------- sample 7 coord(164,210)
------- sample 8 coord(307,310)
------- sample 9 coord(184,224)
------- sample 10 coord(287,296)
------- sample 11 coord(205,238)
------- sample 12 coord(266,281)
------- sample 13 coord(225,252)
------- sample 14 coord(246,267)
+------ sample 0 coord(118,230)
+------ sample 1 coord(136,216)
+------ sample 2 coord(100,244)
+------ sample 3 coord(145,209)
+------ sample 4 coord(91,251)
+------ sample 5 coord(127,223)
+------ sample 6 coord(109,237)
+------ sample 7 coord(149,206)
+------ sample 8 coord(86,254)
+------ sample 9 coord(140,212)
+------ sample 10 coord(95,247)
+------ sample 11 coord(131,219)
+------ sample 12 coord(104,240)
+------ sample 13 coord(122,226)
+------ sample 14 coord(113,233)
 ------ sample 15 coord(154,203)
------- sample 16 coord(318,318)
-longId 318318
-id1 12
-start Size exit1
-end Size exit0
-V 58
-Dijkstra 56 57 - 154203 1502812
+------ sample 16 coord(82,258)
+longId 82258
+id1 16
+connect points (170,170) and (154,203)
+------ n samples 17
+------ sample 0 coord(162,186)
+------ sample 1 coord(158,194)
+------ sample 2 coord(166,178)
+------ sample 3 coord(156,198)
+------ sample 4 coord(168,174)
+------ sample 5 coord(160,190)
+------ sample 6 coord(164,182)
+------ sample 7 coord(155,200)
+------ sample 8 coord(169,172)
+------ sample 9 coord(157,196)
+------ sample 10 coord(167,176)
+------ sample 11 coord(159,192)
+------ sample 12 coord(165,180)
+------ sample 13 coord(161,188)
+------ sample 14 coord(163,184)
+------ sample 15 coord(154,203)
+------ sample 16 coord(170,170)
+longId 170170
+id1 24
+Step 90size: 2 0
+connect points (82,258) and (154,203)
+------ n samples 17
+------ sample 0 coord(118,230)
+------ sample 1 coord(136,216)
+------ sample 2 coord(100,244)
+------ sample 3 coord(145,209)
+------ sample 4 coord(91,251)
+------ sample 5 coord(127,223)
+------ sample 6 coord(109,237)
+------ sample 7 coord(149,206)
+------ sample 8 coord(86,254)
+------ sample 9 coord(140,212)
+------ sample 10 coord(95,247)
+------ sample 11 coord(131,219)
+------ sample 12 coord(104,240)
+------ sample 13 coord(122,226)
+------ sample 14 coord(113,233)
+------ sample 15 coord(154,203)
+------ sample 16 coord(82,258)
+longId 82258
+id1 16
+connect points (170,170) and (154,203)
+------ n samples 17
+------ sample 0 coord(162,186)
+------ sample 1 coord(158,194)
+------ sample 2 coord(166,178)
+------ sample 3 coord(156,198)
+------ sample 4 coord(168,174)
+------ sample 5 coord(160,190)
+------ sample 6 coord(164,182)
+------ sample 7 coord(155,200)
+------ sample 8 coord(169,172)
+------ sample 9 coord(157,196)
+------ sample 10 coord(167,176)
+------ sample 11 coord(159,192)
+------ sample 12 coord(165,180)
+------ sample 13 coord(161,188)
+------ sample 14 coord(163,184)
+------ sample 15 coord(154,203)
+------ sample 16 coord(170,170)
+longId 170170
+id1 24
+connect points (243,170) and (154,203)
+------ n samples 17
+------ sample 0 coord(198,186)
+------ sample 1 coord(176,194)
+------ sample 2 coord(220,178)
+------ sample 3 coord(165,198)
+------ sample 4 coord(231,174)
+------ sample 5 coord(187,190)
+------ sample 6 coord(209,182)
+------ sample 7 coord(159,200)
+------ sample 8 coord(237,172)
+------ sample 9 coord(170,196)
+------ sample 10 coord(225,176)
+------ sample 11 coord(181,192)
+------ sample 12 coord(214,180)
+------ sample 13 coord(192,188)
+------ sample 14 coord(203,184)
+------ sample 15 coord(154,203)
+------ sample 16 coord(243,170)
+longId 243170
+id1 38
+Step 100size: 3 0
+connect points (58,286) and (154,203)
+------ n samples 17
+------ sample 0 coord(106,244)
+------ sample 1 coord(130,223)
+------ sample 2 coord(82,265)
+------ sample 3 coord(142,213)
+------ sample 4 coord(70,275)
+------ sample 5 coord(118,233)
+------ sample 6 coord(94,254)
+------ sample 7 coord(148,208)
+------ sample 8 coord(64,280)
+------ sample 9 coord(136,218)
+------ sample 10 coord(76,270)
+------ sample 11 coord(124,228)
+------ sample 12 coord(88,259)
+------ sample 13 coord(112,238)
+------ sample 14 coord(100,249)
+------ sample 15 coord(154,203)
+------ sample 16 coord(58,286)
+longId 58286
+id1 5
+connect points (82,258) and (154,203)
+------ n samples 17
+------ sample 0 coord(118,230)
+------ sample 1 coord(136,216)
+------ sample 2 coord(100,244)
+------ sample 3 coord(145,209)
+------ sample 4 coord(91,251)
+------ sample 5 coord(127,223)
+------ sample 6 coord(109,237)
+------ sample 7 coord(149,206)
+------ sample 8 coord(86,254)
+------ sample 9 coord(140,212)
+------ sample 10 coord(95,247)
+------ sample 11 coord(131,219)
+------ sample 12 coord(104,240)
+------ sample 13 coord(122,226)
+------ sample 14 coord(113,233)
+------ sample 15 coord(154,203)
+------ sample 16 coord(82,258)
+longId 82258
+id1 16
+connect points (170,170) and (154,203)
+------ n samples 17
+------ sample 0 coord(162,186)
+------ sample 1 coord(158,194)
+------ sample 2 coord(166,178)
+------ sample 3 coord(156,198)
+------ sample 4 coord(168,174)
+------ sample 5 coord(160,190)
+------ sample 6 coord(164,182)
+------ sample 7 coord(155,200)
+------ sample 8 coord(169,172)
+------ sample 9 coord(157,196)
+------ sample 10 coord(167,176)
+------ sample 11 coord(159,192)
+------ sample 12 coord(165,180)
+------ sample 13 coord(161,188)
+------ sample 14 coord(163,184)
+------ sample 15 coord(154,203)
+------ sample 16 coord(170,170)
+longId 170170
+id1 24
+connect points (243,170) and (154,203)
+------ n samples 17
+------ sample 0 coord(198,186)
+------ sample 1 coord(176,194)
+------ sample 2 coord(220,178)
+------ sample 3 coord(165,198)
+------ sample 4 coord(231,174)
+------ sample 5 coord(187,190)
+------ sample 6 coord(209,182)
+------ sample 7 coord(159,200)
+------ sample 8 coord(237,172)
+------ sample 9 coord(170,196)
+------ sample 10 coord(225,176)
+------ sample 11 coord(181,192)
+------ sample 12 coord(214,180)
+------ sample 13 coord(192,188)
+------ sample 14 coord(203,184)
+------ sample 15 coord(154,203)
+------ sample 16 coord(243,170)
+longId 243170
+id1 38
+Step 110size: 4 0
+connect points (58,286) and (154,203)
+------ n samples 17
+------ sample 0 coord(106,244)
+------ sample 1 coord(130,223)
+------ sample 2 coord(82,265)
+------ sample 3 coord(142,213)
+------ sample 4 coord(70,275)
+------ sample 5 coord(118,233)
+------ sample 6 coord(94,254)
+------ sample 7 coord(148,208)
+------ sample 8 coord(64,280)
+------ sample 9 coord(136,218)
+------ sample 10 coord(76,270)
+------ sample 11 coord(124,228)
+------ sample 12 coord(88,259)
+------ sample 13 coord(112,238)
+------ sample 14 coord(100,249)
+------ sample 15 coord(154,203)
+------ sample 16 coord(58,286)
+longId 58286
+id1 5
+connect points (82,258) and (154,203)
+------ n samples 17
+------ sample 0 coord(118,230)
+------ sample 1 coord(136,216)
+------ sample 2 coord(100,244)
+------ sample 3 coord(145,209)
+------ sample 4 coord(91,251)
+------ sample 5 coord(127,223)
+------ sample 6 coord(109,237)
+------ sample 7 coord(149,206)
+------ sample 8 coord(86,254)
+------ sample 9 coord(140,212)
+------ sample 10 coord(95,247)
+------ sample 11 coord(131,219)
+------ sample 12 coord(104,240)
+------ sample 13 coord(122,226)
+------ sample 14 coord(113,233)
+------ sample 15 coord(154,203)
+------ sample 16 coord(82,258)
+longId 82258
+id1 16
+connect points (170,170) and (154,203)
+------ n samples 17
+------ sample 0 coord(162,186)
+------ sample 1 coord(158,194)
+------ sample 2 coord(166,178)
+------ sample 3 coord(156,198)
+------ sample 4 coord(168,174)
+------ sample 5 coord(160,190)
+------ sample 6 coord(164,182)
+------ sample 7 coord(155,200)
+------ sample 8 coord(169,172)
+------ sample 9 coord(157,196)
+------ sample 10 coord(167,176)
+------ sample 11 coord(159,192)
+------ sample 12 coord(165,180)
+------ sample 13 coord(161,188)
+------ sample 14 coord(163,184)
+------ sample 15 coord(154,203)
+------ sample 16 coord(170,170)
+longId 170170
+id1 24
+connect points (243,170) and (154,203)
+------ n samples 17
+------ sample 0 coord(198,186)
+------ sample 1 coord(176,194)
+------ sample 2 coord(220,178)
+------ sample 3 coord(165,198)
+------ sample 4 coord(231,174)
+------ sample 5 coord(187,190)
+------ sample 6 coord(209,182)
+------ sample 7 coord(159,200)
+------ sample 8 coord(237,172)
+------ sample 9 coord(170,196)
+------ sample 10 coord(225,176)
+------ sample 11 coord(181,192)
+------ sample 12 coord(214,180)
+------ sample 13 coord(192,188)
+------ sample 14 coord(203,184)
+------ sample 15 coord(154,203)
+------ sample 16 coord(243,170)
+longId 243170
+id1 38
+Step 120size: 4 0
+connect points (58,286) and (154,203)
+------ n samples 17
+------ sample 0 coord(106,244)
+------ sample 1 coord(130,223)
+------ sample 2 coord(82,265)
+------ sample 3 coord(142,213)
+------ sample 4 coord(70,275)
+------ sample 5 coord(118,233)
+------ sample 6 coord(94,254)
+------ sample 7 coord(148,208)
+------ sample 8 coord(64,280)
+------ sample 9 coord(136,218)
+------ sample 10 coord(76,270)
+------ sample 11 coord(124,228)
+------ sample 12 coord(88,259)
+------ sample 13 coord(112,238)
+------ sample 14 coord(100,249)
+------ sample 15 coord(154,203)
+------ sample 16 coord(58,286)
+longId 58286
+id1 5
+connect points (82,258) and (154,203)
+------ n samples 17
+------ sample 0 coord(118,230)
+------ sample 1 coord(136,216)
+------ sample 2 coord(100,244)
+------ sample 3 coord(145,209)
+------ sample 4 coord(91,251)
+------ sample 5 coord(127,223)
+------ sample 6 coord(109,237)
+------ sample 7 coord(149,206)
+------ sample 8 coord(86,254)
+------ sample 9 coord(140,212)
+------ sample 10 coord(95,247)
+------ sample 11 coord(131,219)
+------ sample 12 coord(104,240)
+------ sample 13 coord(122,226)
+------ sample 14 coord(113,233)
+------ sample 15 coord(154,203)
+------ sample 16 coord(82,258)
+longId 82258
+id1 16
+connect points (260,322) and (154,203)
+------ n samples 17
+------ sample 0 coord(207,262)
+------ sample 1 coord(180,232)
+------ sample 2 coord(233,292)
+------ sample 3 coord(167,217)
+------ sample 4 coord(246,307)
+------ sample 5 coord(193,247)
+------ sample 6 coord(220,277)
+------ sample 7 coord(160,210)
+------ sample 8 coord(253,314)
+------ sample 9 coord(173,224)
+------ sample 10 coord(239,299)
+------ sample 11 coord(186,239)
+------ sample 12 coord(226,284)
+------ sample 13 coord(200,254)
+------ sample 14 coord(213,269)
+------ sample 15 coord(154,203)
+------ sample 16 coord(260,322)
+longId 260322
+id1 33
+connect points (170,170) and (154,203)
+------ n samples 17
+------ sample 0 coord(162,186)
+------ sample 1 coord(158,194)
+------ sample 2 coord(166,178)
+------ sample 3 coord(156,198)
+------ sample 4 coord(168,174)
+------ sample 5 coord(160,190)
+------ sample 6 coord(164,182)
+------ sample 7 coord(155,200)
+------ sample 8 coord(169,172)
+------ sample 9 coord(157,196)
+------ sample 10 coord(167,176)
+------ sample 11 coord(159,192)
+------ sample 12 coord(165,180)
+------ sample 13 coord(161,188)
+------ sample 14 coord(163,184)
+------ sample 15 coord(154,203)
+------ sample 16 coord(170,170)
+longId 170170
+id1 24
+connect points (273,229) and (154,203)
+------ n samples 17
+------ sample 0 coord(213,216)
+------ sample 1 coord(183,209)
+------ sample 2 coord(243,222)
+------ sample 3 coord(168,206)
+------ sample 4 coord(258,225)
+------ sample 5 coord(198,212)
+------ sample 6 coord(228,219)
+------ sample 7 coord(161,204)
+------ sample 8 coord(265,227)
+------ sample 9 coord(175,207)
+------ sample 10 coord(250,223)
+------ sample 11 coord(190,210)
+------ sample 12 coord(235,220)
+------ sample 13 coord(205,214)
+------ sample 14 coord(220,217)
+------ sample 15 coord(154,203)
+------ sample 16 coord(273,229)
+longId 273229
+id1 35
+connect points (243,170) and (154,203)
+------ n samples 17
+------ sample 0 coord(198,186)
+------ sample 1 coord(176,194)
+------ sample 2 coord(220,178)
+------ sample 3 coord(165,198)
+------ sample 4 coord(231,174)
+------ sample 5 coord(187,190)
+------ sample 6 coord(209,182)
+------ sample 7 coord(159,200)
+------ sample 8 coord(237,172)
+------ sample 9 coord(170,196)
+------ sample 10 coord(225,176)
+------ sample 11 coord(181,192)
+------ sample 12 coord(214,180)
+------ sample 13 coord(192,188)
+------ sample 14 coord(203,184)
+------ sample 15 coord(154,203)
+------ sample 16 coord(243,170)
+longId 243170
+id1 38
+Step 130size: 6 0
+connect points (67,325) and (154,203)
+------ n samples 17
+------ sample 0 coord(110,264)
+------ sample 1 coord(132,233)
+------ sample 2 coord(88,294)
+------ sample 3 coord(143,218)
+------ sample 4 coord(77,309)
+------ sample 5 coord(121,248)
+------ sample 6 coord(99,279)
+------ sample 7 coord(148,210)
+------ sample 8 coord(72,317)
+------ sample 9 coord(137,225)
+------ sample 10 coord(82,301)
+------ sample 11 coord(126,240)
+------ sample 12 coord(93,286)
+------ sample 13 coord(115,256)
+------ sample 14 coord(104,271)
+------ sample 15 coord(154,203)
+------ sample 16 coord(67,325)
+longId 67325
+id1 4
+connect points (58,286) and (154,203)
+------ n samples 17
+------ sample 0 coord(106,244)
+------ sample 1 coord(130,223)
+------ sample 2 coord(82,265)
+------ sample 3 coord(142,213)
+------ sample 4 coord(70,275)
+------ sample 5 coord(118,233)
+------ sample 6 coord(94,254)
+------ sample 7 coord(148,208)
+------ sample 8 coord(64,280)
+------ sample 9 coord(136,218)
+------ sample 10 coord(76,270)
+------ sample 11 coord(124,228)
+------ sample 12 coord(88,259)
+------ sample 13 coord(112,238)
+------ sample 14 coord(100,249)
+------ sample 15 coord(154,203)
+------ sample 16 coord(58,286)
+longId 58286
+id1 5
+connect points (82,258) and (154,203)
+------ n samples 17
+------ sample 0 coord(118,230)
+------ sample 1 coord(136,216)
+------ sample 2 coord(100,244)
+------ sample 3 coord(145,209)
+------ sample 4 coord(91,251)
+------ sample 5 coord(127,223)
+------ sample 6 coord(109,237)
+------ sample 7 coord(149,206)
+------ sample 8 coord(86,254)
+------ sample 9 coord(140,212)
+------ sample 10 coord(95,247)
+------ sample 11 coord(131,219)
+------ sample 12 coord(104,240)
+------ sample 13 coord(122,226)
+------ sample 14 coord(113,233)
+------ sample 15 coord(154,203)
+------ sample 16 coord(82,258)
+longId 82258
+id1 16
+connect points (260,323) and (154,203)
+------ n samples 17
+------ sample 0 coord(207,263)
+------ sample 1 coord(180,233)
+------ sample 2 coord(233,293)
+------ sample 3 coord(167,218)
+------ sample 4 coord(246,308)
+------ sample 5 coord(193,248)
+------ sample 6 coord(220,278)
+------ sample 7 coord(160,210)
+------ sample 8 coord(253,315)
+------ sample 9 coord(173,225)
+------ sample 10 coord(239,300)
+------ sample 11 coord(186,240)
+------ sample 12 coord(226,285)
+------ sample 13 coord(200,255)
+------ sample 14 coord(213,270)
+------ sample 15 coord(154,203)
+------ sample 16 coord(260,323)
+longId 260323
+id1 32
+connect points (260,322) and (154,203)
+------ n samples 17
+------ sample 0 coord(207,262)
+------ sample 1 coord(180,232)
+------ sample 2 coord(233,292)
+------ sample 3 coord(167,217)
+------ sample 4 coord(246,307)
+------ sample 5 coord(193,247)
+------ sample 6 coord(220,277)
+------ sample 7 coord(160,210)
+------ sample 8 coord(253,314)
+------ sample 9 coord(173,224)
+------ sample 10 coord(239,299)
+------ sample 11 coord(186,239)
+------ sample 12 coord(226,284)
+------ sample 13 coord(200,254)
+------ sample 14 coord(213,269)
+------ sample 15 coord(154,203)
+------ sample 16 coord(260,322)
+longId 260322
+id1 33
+connect points (170,170) and (154,203)
+------ n samples 17
+------ sample 0 coord(162,186)
+------ sample 1 coord(158,194)
+------ sample 2 coord(166,178)
+------ sample 3 coord(156,198)
+------ sample 4 coord(168,174)
+------ sample 5 coord(160,190)
+------ sample 6 coord(164,182)
+------ sample 7 coord(155,200)
+------ sample 8 coord(169,172)
+------ sample 9 coord(157,196)
+------ sample 10 coord(167,176)
+------ sample 11 coord(159,192)
+------ sample 12 coord(165,180)
+------ sample 13 coord(161,188)
+------ sample 14 coord(163,184)
+------ sample 15 coord(154,203)
+------ sample 16 coord(170,170)
+longId 170170
+id1 24
+connect points (273,229) and (154,203)
+------ n samples 17
+------ sample 0 coord(213,216)
+------ sample 1 coord(183,209)
+------ sample 2 coord(243,222)
+------ sample 3 coord(168,206)
+------ sample 4 coord(258,225)
+------ sample 5 coord(198,212)
+------ sample 6 coord(228,219)
+------ sample 7 coord(161,204)
+------ sample 8 coord(265,227)
+------ sample 9 coord(175,207)
+------ sample 10 coord(250,223)
+------ sample 11 coord(190,210)
+------ sample 12 coord(235,220)
+------ sample 13 coord(205,214)
+------ sample 14 coord(220,217)
+------ sample 15 coord(154,203)
+------ sample 16 coord(273,229)
+longId 273229
+id1 35
+connect points (243,170) and (154,203)
+------ n samples 17
+------ sample 0 coord(198,186)
+------ sample 1 coord(176,194)
+------ sample 2 coord(220,178)
+------ sample 3 coord(165,198)
+------ sample 4 coord(231,174)
+------ sample 5 coord(187,190)
+------ sample 6 coord(209,182)
+------ sample 7 coord(159,200)
+------ sample 8 coord(237,172)
+------ sample 9 coord(170,196)
+------ sample 10 coord(225,176)
+------ sample 11 coord(181,192)
+------ sample 12 coord(214,180)
+------ sample 13 coord(192,188)
+------ sample 14 coord(203,184)
+------ sample 15 coord(154,203)
+------ sample 16 coord(243,170)
+longId 243170
+id1 38
+connect points (279,172) and (154,203)
+------ n samples 17
+------ sample 0 coord(216,187)
+------ sample 1 coord(185,195)
+------ sample 2 coord(247,179)
+------ sample 3 coord(169,199)
+------ sample 4 coord(263,175)
+------ sample 5 coord(200,191)
+------ sample 6 coord(231,183)
+------ sample 7 coord(161,201)
+------ sample 8 coord(271,173)
+------ sample 9 coord(177,197)
+------ sample 10 coord(255,177)
+------ sample 11 coord(192,193)
+------ sample 12 coord(239,181)
+------ sample 13 coord(208,189)
+------ sample 14 coord(223,185)
+------ sample 15 coord(154,203)
+------ sample 16 coord(279,172)
+longId 279172
+id1 46
+Step 140size: 9 0
+Step 150size: 9 0
+Step 160size: 9 0
+connect points (1367,662) and (1502,812)
+------ n samples 17
+------ sample 0 coord(1434,737)
+------ sample 1 coord(1468,774)
+------ sample 2 coord(1400,699)
+------ sample 3 coord(1485,793)
+------ sample 4 coord(1383,680)
+------ sample 5 coord(1451,755)
+------ sample 6 coord(1417,718)
+------ sample 7 coord(1493,802)
+------ sample 8 coord(1375,671)
+------ sample 9 coord(1476,783)
+------ sample 10 coord(1391,689)
+------ sample 11 coord(1459,764)
+------ sample 12 coord(1408,708)
+------ sample 13 coord(1442,746)
+------ sample 14 coord(1425,727)
+------ sample 15 coord(1502,812)
+------ sample 16 coord(1367,662)
+longId 1367662
+id1 156
+Step 170size: 9 1
+connect points (1367,662) and (1502,812)
+------ n samples 17
+------ sample 0 coord(1434,737)
+------ sample 1 coord(1468,774)
+------ sample 2 coord(1400,699)
+------ sample 3 coord(1485,793)
+------ sample 4 coord(1383,680)
+------ sample 5 coord(1451,755)
+------ sample 6 coord(1417,718)
+------ sample 7 coord(1493,802)
+------ sample 8 coord(1375,671)
+------ sample 9 coord(1476,783)
+------ sample 10 coord(1391,689)
+------ sample 11 coord(1459,764)
+------ sample 12 coord(1408,708)
+------ sample 13 coord(1442,746)
+------ sample 14 coord(1425,727)
+------ sample 15 coord(1502,812)
+------ sample 16 coord(1367,662)
+longId 1367662
+id1 156
+Step 180size: 9 1
+connect points (1367,662) and (1502,812)
+------ n samples 17
+------ sample 0 coord(1434,737)
+------ sample 1 coord(1468,774)
+------ sample 2 coord(1400,699)
+------ sample 3 coord(1485,793)
+------ sample 4 coord(1383,680)
+------ sample 5 coord(1451,755)
+------ sample 6 coord(1417,718)
+------ sample 7 coord(1493,802)
+------ sample 8 coord(1375,671)
+------ sample 9 coord(1476,783)
+------ sample 10 coord(1391,689)
+------ sample 11 coord(1459,764)
+------ sample 12 coord(1408,708)
+------ sample 13 coord(1442,746)
+------ sample 14 coord(1425,727)
+------ sample 15 coord(1502,812)
+------ sample 16 coord(1367,662)
+longId 1367662
+id1 156
+connect points (1323,819) and (1502,812)
+------ n samples 17
+------ sample 0 coord(1412,815)
+------ sample 1 coord(1457,813)
+------ sample 2 coord(1367,817)
+------ sample 3 coord(1479,812)
+------ sample 4 coord(1345,818)
+------ sample 5 coord(1434,814)
+------ sample 6 coord(1389,816)
+------ sample 7 coord(1490,812)
+------ sample 8 coord(1334,818)
+------ sample 9 coord(1468,812)
+------ sample 10 coord(1356,817)
+------ sample 11 coord(1445,813)
+------ sample 12 coord(1378,816)
+------ sample 13 coord(1423,814)
+------ sample 14 coord(1400,815)
+------ sample 15 coord(1502,812)
+------ sample 16 coord(1323,819)
+longId 1323819
+id1 157
+Step 190size: 9 2
+connect points (1367,662) and (1502,812)
+------ n samples 17
+------ sample 0 coord(1434,737)
+------ sample 1 coord(1468,774)
+------ sample 2 coord(1400,699)
+------ sample 3 coord(1485,793)
+------ sample 4 coord(1383,680)
+------ sample 5 coord(1451,755)
+------ sample 6 coord(1417,718)
+------ sample 7 coord(1493,802)
+------ sample 8 coord(1375,671)
+------ sample 9 coord(1476,783)
+------ sample 10 coord(1391,689)
+------ sample 11 coord(1459,764)
+------ sample 12 coord(1408,708)
+------ sample 13 coord(1442,746)
+------ sample 14 coord(1425,727)
+------ sample 15 coord(1502,812)
+------ sample 16 coord(1367,662)
+longId 1367662
+id1 156
+connect points (1323,819) and (1502,812)
+------ n samples 17
+------ sample 0 coord(1412,815)
+------ sample 1 coord(1457,813)
+------ sample 2 coord(1367,817)
+------ sample 3 coord(1479,812)
+------ sample 4 coord(1345,818)
+------ sample 5 coord(1434,814)
+------ sample 6 coord(1389,816)
+------ sample 7 coord(1490,812)
+------ sample 8 coord(1334,818)
+------ sample 9 coord(1468,812)
+------ sample 10 coord(1356,817)
+------ sample 11 coord(1445,813)
+------ sample 12 coord(1378,816)
+------ sample 13 coord(1423,814)
+------ sample 14 coord(1400,815)
+------ sample 15 coord(1502,812)
+------ sample 16 coord(1323,819)
+longId 1323819
+id1 157
+connect points (1322,822) and (1502,812)
+------ n samples 17
+------ sample 0 coord(1412,817)
+------ sample 1 coord(1457,814)
+------ sample 2 coord(1367,819)
+------ sample 3 coord(1479,813)
+------ sample 4 coord(1344,820)
+------ sample 5 coord(1434,815)
+------ sample 6 coord(1389,818)
+------ sample 7 coord(1490,812)
+------ sample 8 coord(1333,821)
+------ sample 9 coord(1468,813)
+------ sample 10 coord(1355,819)
+------ sample 11 coord(1445,814)
+------ sample 12 coord(1378,818)
+------ sample 13 coord(1423,816)
+------ sample 14 coord(1400,817)
+------ sample 15 coord(1502,812)
+------ sample 16 coord(1322,822)
+longId 1322822
+id1 150
+Step 200size: 9 3
+connect points (1367,662) and (1502,812)
+------ n samples 17
+------ sample 0 coord(1434,737)
+------ sample 1 coord(1468,774)
+------ sample 2 coord(1400,699)
+------ sample 3 coord(1485,793)
+------ sample 4 coord(1383,680)
+------ sample 5 coord(1451,755)
+------ sample 6 coord(1417,718)
+------ sample 7 coord(1493,802)
+------ sample 8 coord(1375,671)
+------ sample 9 coord(1476,783)
+------ sample 10 coord(1391,689)
+------ sample 11 coord(1459,764)
+------ sample 12 coord(1408,708)
+------ sample 13 coord(1442,746)
+------ sample 14 coord(1425,727)
+------ sample 15 coord(1502,812)
+------ sample 16 coord(1367,662)
+longId 1367662
+id1 156
+connect points (1323,819) and (1502,812)
+------ n samples 17
+------ sample 0 coord(1412,815)
+------ sample 1 coord(1457,813)
+------ sample 2 coord(1367,817)
+------ sample 3 coord(1479,812)
+------ sample 4 coord(1345,818)
+------ sample 5 coord(1434,814)
+------ sample 6 coord(1389,816)
+------ sample 7 coord(1490,812)
+------ sample 8 coord(1334,818)
+------ sample 9 coord(1468,812)
+------ sample 10 coord(1356,817)
+------ sample 11 coord(1445,813)
+------ sample 12 coord(1378,816)
+------ sample 13 coord(1423,814)
+------ sample 14 coord(1400,815)
+------ sample 15 coord(1502,812)
+------ sample 16 coord(1323,819)
+longId 1323819
+id1 157
+connect points (1322,822) and (1502,812)
+------ n samples 17
+------ sample 0 coord(1412,817)
+------ sample 1 coord(1457,814)
+------ sample 2 coord(1367,819)
+------ sample 3 coord(1479,813)
+------ sample 4 coord(1344,820)
+------ sample 5 coord(1434,815)
+------ sample 6 coord(1389,818)
+------ sample 7 coord(1490,812)
+------ sample 8 coord(1333,821)
+------ sample 9 coord(1468,813)
+------ sample 10 coord(1355,819)
+------ sample 11 coord(1445,814)
+------ sample 12 coord(1378,818)
+------ sample 13 coord(1423,816)
+------ sample 14 coord(1400,817)
+------ sample 15 coord(1502,812)
+------ sample 16 coord(1322,822)
+longId 1322822
+id1 150
+Step 210size: 9 3
+connect points (1300,834) and (1502,812)
+------ n samples 17
+------ sample 0 coord(1401,823)
+------ sample 1 coord(1451,817)
+------ sample 2 coord(1350,828)
+------ sample 3 coord(1476,814)
+------ sample 4 coord(1325,831)
+------ sample 5 coord(1426,820)
+------ sample 6 coord(1375,825)
+------ sample 7 coord(1489,813)
+------ sample 8 coord(1312,832)
+------ sample 9 coord(1463,815)
+------ sample 10 coord(1337,829)
+------ sample 11 coord(1438,818)
+------ sample 12 coord(1362,826)
+------ sample 13 coord(1413,821)
+------ sample 14 coord(1388,824)
+------ sample 15 coord(1502,812)
+------ sample 16 coord(1300,834)
+longId 1300834
+id1 147
+connect points (1367,662) and (1502,812)
+------ n samples 17
+------ sample 0 coord(1434,737)
+------ sample 1 coord(1468,774)
+------ sample 2 coord(1400,699)
+------ sample 3 coord(1485,793)
+------ sample 4 coord(1383,680)
+------ sample 5 coord(1451,755)
+------ sample 6 coord(1417,718)
+------ sample 7 coord(1493,802)
+------ sample 8 coord(1375,671)
+------ sample 9 coord(1476,783)
+------ sample 10 coord(1391,689)
+------ sample 11 coord(1459,764)
+------ sample 12 coord(1408,708)
+------ sample 13 coord(1442,746)
+------ sample 14 coord(1425,727)
+------ sample 15 coord(1502,812)
+------ sample 16 coord(1367,662)
+longId 1367662
+id1 156
+connect points (1323,819) and (1502,812)
+------ n samples 17
+------ sample 0 coord(1412,815)
+------ sample 1 coord(1457,813)
+------ sample 2 coord(1367,817)
+------ sample 3 coord(1479,812)
+------ sample 4 coord(1345,818)
+------ sample 5 coord(1434,814)
+------ sample 6 coord(1389,816)
+------ sample 7 coord(1490,812)
+------ sample 8 coord(1334,818)
+------ sample 9 coord(1468,812)
+------ sample 10 coord(1356,817)
+------ sample 11 coord(1445,813)
+------ sample 12 coord(1378,816)
+------ sample 13 coord(1423,814)
+------ sample 14 coord(1400,815)
+------ sample 15 coord(1502,812)
+------ sample 16 coord(1323,819)
+longId 1323819
+id1 157
+connect points (1322,822) and (1502,812)
+------ n samples 17
+------ sample 0 coord(1412,817)
+------ sample 1 coord(1457,814)
+------ sample 2 coord(1367,819)
+------ sample 3 coord(1479,813)
+------ sample 4 coord(1344,820)
+------ sample 5 coord(1434,815)
+------ sample 6 coord(1389,818)
+------ sample 7 coord(1490,812)
+------ sample 8 coord(1333,821)
+------ sample 9 coord(1468,813)
+------ sample 10 coord(1355,819)
+------ sample 11 coord(1445,814)
+------ sample 12 coord(1378,818)
+------ sample 13 coord(1423,816)
+------ sample 14 coord(1400,817)
+------ sample 15 coord(1502,812)
+------ sample 16 coord(1322,822)
+longId 1322822
+id1 150
+start Size exit9
+end Size exit4
+V 161
+Dijkstra 159 160 - 154203 1502812
 
 
 
 
-right path  56
+right path  159 46 60 66 73 94 98 111 123 130 146 148 149 151 153 154 155 156 160
 
---- terzultimo punto : 33, 0
---- penultimo punto : 154, 203
+node: 46 279172 x,y (279,172)
+node: 60 404172 x,y (404,172)
+node: 66 452175 x,y (452,175)
+node: 73 605169 x,y (605,169)
+node: 94 668173 x,y (668,173)
+node: 98 863171 x,y (863,171)
+node: 111 893172 x,y (893,172)
+node: 123 941171 x,y (941,171)
+node: 130 1111178 x,y (1111,178)
+node: 146 1201194 x,y (1201,194)
+node: 148 1253209 x,y (1253,209)
+node: 149 1323236 x,y (1323,236)
+node: 151 1337283 x,y (1337,283)
+node: 153 1371426 x,y (1371,426)
+node: 154 1381518 x,y (1381,518)
+node: 155 1380570 x,y (1380,570)
+node: 156 1367662 x,y (1367,662)
+--- terzultimo punto : 1380, 570
+--- penultimo punto : 1367, 662
 --- ultimo punto : 1502, 812
--------Path 2 => 2: 
+??????????????????????????????????????????? > 279, 172
+??????????????????????????????????????????? > 404, 172
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 404, 172
+??????????????????????????????????????????? > 452, 175
+??????????????????????????????????????????? > 605, 169
+??????????????????????????????????????????? > 668, 173
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 668, 173
+??????????????????????????????????????????? > 863, 171
+??????????????????????????????????????????? > 893, 172
+??????????????????????????????????????????? > 941, 171
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 941, 171
+??????????????????????????????????????????? > 1111, 178
+??????????????????????????????????????????? > 1201, 194
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 1201, 194
+??????????????????????????????????????????? > 1253, 209
+??????????????????????????????????????????? > 1323, 236
+??????????????????????????????????????????? > 1337, 283
+??????????????????????????????????????????? > 1371, 426
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 1371, 426
+??????????????????????????????????????????? > 1381, 518
+??????????????????????????????????????????? > 1380, 570
+??????????????????????????????????????????? > 1367, 662
+-------Path 19 => 7: 
 PRIMA
---- terzultimo punto : 33, 0
---- penultimo punto : 154, 203
+--- terzultimo punto : 1201, 194
+--- penultimo punto : 1371, 426
 --- ultimo punto : 1502, 812
 --- CENTRO GATE : 1502, 812
 --- PUNTO BORDO GATE : 1452, 812
---- terzultimo punto : 154, 203
+--- terzultimo punto : 1371, 426
 --- penultimo punto : 1452, 812
 --- ultimo punto : 1502, 812
-Angoli!! 3
+Angoli!! 8
 --------angolo: -0.012345
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+kappa: -0.010000, 0.000000, 0.010000 
+OUTSIDE -137.623 punto <163.976, 202.377> -> 0
+OUTSIDE -137.829 punto <165.67, 202.171> -> 0
+OUTSIDE -139.119 punto <175.586, 200.881> -> 0
+OUTSIDE -140.409 punto <185.503, 199.591> -> 0
+OUTSIDE -141.7 punto <195.419, 198.3> -> 0
+OUTSIDE -142.99 punto <205.336, 197.01> -> 0
+OUTSIDE -144.281 punto <215.252, 195.719> -> 0
+OUTSIDE -145.571 punto <225.168, 194.429> -> 0
+OUTSIDE -146.862 punto <235.085, 193.138> -> 0
+OUTSIDE -148.166 punto <245.001, 191.848> -> 0
+OUTSIDE -149.917 punto <254.918, 190.557> -> 0
+OUTSIDE -152.306 punto <264.834, 189.267> -> 0
+OUTSIDE -155.304 punto <274.75, 187.977> -> 0
+OUTSIDE -157.314 punto <284.667, 186.686> -> 0
+OUTSIDE -158.604 punto <294.583, 185.396> -> 0
+OUTSIDE -159.895 punto <304.499, 184.105> -> 0
+OUTSIDE -161.185 punto <314.416, 182.815> -> 0
+OUTSIDE -162.476 punto <324.332, 181.524> -> 0
+OUTSIDE -163.766 punto <334.249, 180.234> -> 0
+OUTSIDE -165.057 punto <344.165, 178.943> -> 0
+OUTSIDE -166.347 punto <354.081, 177.653> -> 0
+OUTSIDE -167.638 punto <363.998, 176.362> -> 0
+OUTSIDE -168.928 punto <373.914, 175.072> -> 0
+OUTSIDE -170.218 punto <383.831, 173.782> -> 0
+OUTSIDE -171.164 punto <391.095, 172.836> -> 0
+OUTSIDE -171.957 punto <401.06, 172.043> -> 0
+OUTSIDE -172 punto <404, 172> -> 0
+--------angolo: 0.000000
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+kappa: 0.010000, 0.000000, -0.010000 
+OUTSIDE -172 punto <404.379, 172.001> -> 0
+OUTSIDE -172.274 punto <414.379, 172.039> -> 0
+OUTSIDE -173.127 punto <424.379, 172.077> -> 0
+OUTSIDE -174.549 punto <434.379, 172.115> -> 0
+OUTSIDE -176.528 punto <444.379, 172.152> -> 0
+OUTSIDE -178.441 punto <454.379, 172.19> -> 0
+OUTSIDE -177.664 punto <464.379, 172.228> -> 0
+OUTSIDE -176.888 punto <474.379, 172.266> -> 0
+OUTSIDE -176.111 punto <484.379, 172.304> -> 0
+OUTSIDE -175.335 punto <494.379, 172.342> -> 0
+OUTSIDE -174.558 punto <504.379, 172.38> -> 0
+OUTSIDE -173.782 punto <514.379, 172.418> -> 0
+OUTSIDE -173.005 punto <524.378, 172.456> -> 0
+OUTSIDE -172.228 punto <534.378, 172.494> -> 0
+OUTSIDE -171.452 punto <544.378, 172.532> -> 0
+OUTSIDE -170.675 punto <554.378, 172.57> -> 0
+OUTSIDE -169.899 punto <564.378, 172.608> -> 0
+OUTSIDE -169.122 punto <574.378, 172.646> -> 0
+OUTSIDE -168.346 punto <584.378, 172.684> -> 0
+OUTSIDE -167.569 punto <594.378, 172.721> -> 0
+OUTSIDE -166.793 punto <604.378, 172.759> -> 0
+OUTSIDE -166.242 punto <614.378, 172.797> -> 0
+OUTSIDE -166.287 punto <624.378, 172.835> -> 0
+OUTSIDE -166.932 punto <634.378, 172.873> -> 0
+OUTSIDE -168.17 punto <644.378, 172.911> -> 0
+OUTSIDE -169.989 punto <654.378, 172.949> -> 0
+OUTSIDE -172.369 punto <664.377, 172.987> -> 0
+OUTSIDE -173.258 punto <667.621, 172.999> -> 0
+OUTSIDE -173.367 punto <668, 173> -> 0
+--------angolo: 0.000000
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+kappa: -0.010000, 0.000000, 0.010000 
+OUTSIDE -173.583 punto <668.735, 172.997> -> 0
+OUTSIDE -173.533 punto <678.734, 172.924> -> 0
+OUTSIDE -173.421 punto <688.734, 172.85> -> 0
+OUTSIDE -173.309 punto <698.734, 172.777> -> 0
+OUTSIDE -173.198 punto <708.733, 172.703> -> 0
+OUTSIDE -173.086 punto <718.733, 172.63> -> 0
+OUTSIDE -172.974 punto <728.733, 172.557> -> 0
+OUTSIDE -172.863 punto <738.733, 172.483> -> 0
+OUTSIDE -172.751 punto <748.732, 172.41> -> 0
+OUTSIDE -172.639 punto <758.732, 172.336> -> 0
+OUTSIDE -172.527 punto <768.732, 172.263> -> 0
+OUTSIDE -172.416 punto <778.732, 172.189> -> 0
+OUTSIDE -172.304 punto <788.731, 172.116> -> 0
+OUTSIDE -172.192 punto <798.731, 172.042> -> 0
+OUTSIDE -172.081 punto <808.731, 171.969> -> 0
+OUTSIDE -171.969 punto <818.731, 171.895> -> 0
+OUTSIDE -171.857 punto <828.73, 171.822> -> 0
+OUTSIDE -171.746 punto <838.73, 171.749> -> 0
+OUTSIDE -171.634 punto <848.73, 171.675> -> 0
+OUTSIDE -171.522 punto <858.729, 171.602> -> 0
+OUTSIDE -171.481 punto <868.729, 171.528> -> 0
+OUTSIDE -171.946 punto <878.729, 171.455> -> 0
+OUTSIDE -172.989 punto <888.729, 171.381> -> 0
+OUTSIDE -172.857 punto <898.728, 171.308> -> 0
+OUTSIDE -171.637 punto <908.728, 171.234> -> 0
+OUTSIDE -170.994 punto <918.728, 171.161> -> 0
+OUTSIDE -170.934 punto <928.728, 171.087> -> 0
+OUTSIDE -171.459 punto <938.727, 171.014> -> 0
+OUTSIDE -171.591 punto <940.265, 171.003> -> 0
+OUTSIDE -171.657 punto <941, 171> -> 0
+--------angolo: 0.000000
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+kappa: -0.010000, 0.000000, 0.010000 
+OUTSIDE -172.011 punto <944.381, 170.943> -> 0
+OUTSIDE -173.226 punto <954.375, 170.605> -> 0
+OUTSIDE -174.441 punto <964.37, 170.267> -> 0
+OUTSIDE -175.656 punto <974.364, 169.928> -> 0
+OUTSIDE -176.872 punto <984.358, 169.59> -> 0
+OUTSIDE -178.087 punto <994.353, 169.252> -> 0
+OUTSIDE -179.302 punto <1004.35, 168.914> -> 0
+OUTSIDE -180.517 punto <1014.34, 168.576> -> 0
+OUTSIDE -181.733 punto <1024.34, 168.238> -> 0
+OUTSIDE -182.948 punto <1034.33, 167.9> -> 0
+OUTSIDE -184.163 punto <1044.32, 167.562> -> 0
+OUTSIDE -185.378 punto <1054.32, 167.224> -> 0
+OUTSIDE -186.594 punto <1064.31, 166.885> -> 0
+OUTSIDE -187.809 punto <1074.31, 166.547> -> 0
+OUTSIDE -189.024 punto <1084.3, 166.209> -> 0
+OUTSIDE -190.239 punto <1094.3, 165.871> -> 0
+OUTSIDE -191.455 punto <1104.29, 165.533> -> 0
+OUTSIDE -192.675 punto <1114.28, 165.195> -> 0
+OUTSIDE -194.213 punto <1124.28, 164.857> -> 0
+OUTSIDE -194.701 punto <1126.91, 164.768> -> 0
+OUTSIDE -196.377 punto <1136.9, 164.93> -> 0
+OUTSIDE -197.563 punto <1146.83, 166.088> -> 0
+OUTSIDE -198.255 punto <1156.59, 168.232> -> 0
+OUTSIDE -198.451 punto <1166.09, 171.341> -> 0
+OUTSIDE -198.151 punto <1175.24, 175.382> -> 0
+OUTSIDE -197.356 punto <1183.93, 180.315> -> 0
+OUTSIDE -196.068 punto <1192.09, 186.092> -> 0
+OUTSIDE -194.289 punto <1199.63, 192.654> -> 0
+OUTSIDE -193.892 punto <1201, 194> -> 0
+--------angolo: 0.785398
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
 Algorithm INcorrect
 kappa: 0.010000, 0.000000, 0.010000 
-OUTSIDE -561.624 punto <163.989, 203.376> -> 0
-OUTSIDE -477.251 punto <163.989, 203.376> -> 0
-OUTSIDE -560.252 punto <173.89, 204.748> -> 0
-OUTSIDE -467.479 punto <173.89, 204.748> -> 0
-OUTSIDE -557.899 punto <183.605, 207.101> -> 0
-OUTSIDE -457.983 punto <183.605, 207.101> -> 0
-OUTSIDE -554.587 punto <193.036, 210.413> -> 0
-OUTSIDE -448.878 punto <193.036, 210.413> -> 0
-OUTSIDE -552.523 punto <197.744, 212.477> -> 0
-OUTSIDE -444.388 punto <197.744, 212.477> -> 0
-OUTSIDE -548.272 punto <206.795, 216.728> -> 0
-OUTSIDE -435.826 punto <206.795, 216.728> -> 0
-OUTSIDE -544.021 punto <215.847, 220.979> -> 0
-OUTSIDE -427.327 punto <215.847, 220.979> -> 0
-OUTSIDE -539.77 punto <224.898, 225.23> -> 0
-OUTSIDE -418.893 punto <224.898, 225.23> -> 0
-OUTSIDE -535.519 punto <233.95, 229.481> -> 0
-OUTSIDE -410.53 punto <233.95, 229.481> -> 0
-OUTSIDE -531.268 punto <243.001, 233.732> -> 0
-OUTSIDE -402.242 punto <243.001, 233.732> -> 0
-OUTSIDE -527.017 punto <252.053, 237.983> -> 0
-OUTSIDE -394.033 punto <252.053, 237.983> -> 0
-OUTSIDE -522.766 punto <261.104, 242.234> -> 0
-OUTSIDE -385.908 punto <261.104, 242.234> -> 0
-OUTSIDE -518.515 punto <270.156, 246.485> -> 0
-OUTSIDE -377.874 punto <270.156, 246.485> -> 0
-OUTSIDE -514.264 punto <279.207, 250.736> -> 0
-OUTSIDE -368.586 punto <279.207, 250.736> -> 0
-OUTSIDE -510.014 punto <288.259, 254.986> -> 0
-OUTSIDE -358.742 punto <288.259, 254.986> -> 0
-OUTSIDE -505.763 punto <297.31, 259.237> -> 0
-OUTSIDE -348.908 punto <297.31, 259.237> -> 0
-OUTSIDE -501.512 punto <306.362, 263.488> -> 0
-OUTSIDE -339.083 punto <306.362, 263.488> -> 0
-OUTSIDE -497.261 punto <315.413, 267.739> -> 0
-OUTSIDE -329.269 punto <315.413, 267.739> -> 0
-OUTSIDE -493.01 punto <324.465, 271.99> -> 0
-OUTSIDE -319.466 punto <324.465, 271.99> -> 0
-OUTSIDE -488.759 punto <333.516, 276.241> -> 0
-OUTSIDE -309.676 punto <333.516, 276.241> -> 0
-OUTSIDE -484.508 punto <342.568, 280.492> -> 0
-OUTSIDE -299.9 punto <342.568, 280.492> -> 0
-OUTSIDE -480.257 punto <351.619, 284.743> -> 0
-OUTSIDE -290.139 punto <351.619, 284.743> -> 0
-OUTSIDE -476.007 punto <360.671, 288.994> -> 0
-OUTSIDE -280.395 punto <360.671, 288.994> -> 0
-OUTSIDE -471.856 punto <369.722, 293.245> -> 0
-OUTSIDE -270.669 punto <369.722, 293.245> -> 0
-OUTSIDE -467.881 punto <378.774, 297.496> -> 0
-OUTSIDE -260.965 punto <378.774, 297.496> -> 0
-OUTSIDE -464.088 punto <387.825, 301.746> -> 0
-OUTSIDE -251.283 punto <387.825, 301.746> -> 0
-OUTSIDE -460.482 punto <396.877, 305.997> -> 0
-OUTSIDE -241.628 punto <396.877, 305.997> -> 0
-OUTSIDE -457.065 punto <405.928, 310.248> -> 0
-OUTSIDE -232.001 punto <405.928, 310.248> -> 0
-OUTSIDE -453.843 punto <414.98, 314.499> -> 0
-OUTSIDE -222.408 punto <414.98, 314.499> -> 0
-OUTSIDE -450.82 punto <424.031, 318.75> -> 0
-OUTSIDE -212.852 punto <424.031, 318.75> -> 0
-OUTSIDE -448 punto <433.083, 323.001> -> 0
-OUTSIDE -203.338 punto <433.083, 323.001> -> 0
-OUTSIDE -445.387 punto <442.134, 327.252> -> 0
-OUTSIDE -193.874 punto <442.134, 327.252> -> 0
-OUTSIDE -442.984 punto <451.186, 331.503> -> 0
-OUTSIDE -184.466 punto <451.186, 331.503> -> 0
-OUTSIDE -440.795 punto <460.237, 335.754> -> 0
-OUTSIDE -175.124 punto <460.237, 335.754> -> 0
-OUTSIDE -438.822 punto <469.289, 340.005> -> 0
-OUTSIDE -165.859 punto <469.289, 340.005> -> 0
-OUTSIDE -437.07 punto <478.34, 344.256> -> 0
-OUTSIDE -156.684 punto <478.34, 344.256> -> 0
-OUTSIDE -435.54 punto <487.392, 348.507> -> 0
-OUTSIDE -147.616 punto <487.392, 348.507> -> 0
-OUTSIDE -434.236 punto <496.443, 352.757> -> 0
-OUTSIDE -138.676 punto <496.443, 352.757> -> 0
-OUTSIDE -433.158 punto <505.495, 357.008> -> 0
-OUTSIDE -129.891 punto <505.495, 357.008> -> 0
-OUTSIDE -432.309 punto <514.546, 361.259> -> 0
-OUTSIDE -121.295 punto <514.546, 361.259> -> 0
-OUTSIDE -431.69 punto <523.598, 365.51> -> 0
-OUTSIDE -112.93 punto <523.598, 365.51> -> 0
-OUTSIDE -431.302 punto <532.649, 369.761> -> 0
-OUTSIDE -104.851 punto <532.649, 369.761> -> 0
-OUTSIDE -431.146 punto <541.701, 374.012> -> 0
-OUTSIDE -97.1308 punto <541.701, 374.012> -> 0
-OUTSIDE -431.222 punto <550.752, 378.263> -> 0
-OUTSIDE -89.8612 punto <550.752, 378.263> -> 0
-OUTSIDE -431.529 punto <559.804, 382.514> -> 0
-OUTSIDE -83.0074 punto <559.804, 382.514> -> 0
-OUTSIDE -432.068 punto <568.855, 386.765> -> 0
-OUTSIDE -76.1821 punto <568.855, 386.765> -> 0
-OUTSIDE -432.837 punto <577.907, 391.016> -> 0
-OUTSIDE -69.3567 punto <577.907, 391.016> -> 0
-OUTSIDE -433.835 punto <586.958, 395.267> -> 0
-OUTSIDE -62.5313 punto <586.958, 395.267> -> 0
-OUTSIDE -435.061 punto <596.01, 399.517> -> 0
-OUTSIDE -55.7059 punto <596.01, 399.517> -> 0
-OUTSIDE -436.513 punto <605.061, 403.768> -> 0
-OUTSIDE -48.8806 punto <605.061, 403.768> -> 0
-OUTSIDE -438.188 punto <614.113, 408.019> -> 0
-OUTSIDE -42.0552 punto <614.113, 408.019> -> 0
-OUTSIDE -440.084 punto <623.164, 412.27> -> 0
-OUTSIDE -35.2298 punto <623.164, 412.27> -> 0
-OUTSIDE -442.198 punto <632.216, 416.521> -> 0
-OUTSIDE -28.4045 punto <632.216, 416.521> -> 0
-OUTSIDE -444.527 punto <641.267, 420.772> -> 0
-OUTSIDE -21.5946 punto <641.267, 420.772> -> 0
-OUTSIDE -447.068 punto <650.319, 425.023> -> 0
-OUTSIDE -16.8429 punto <650.319, 425.023> -> 0
-OUTSIDE -449.816 punto <659.37, 429.274> -> 0
-OUTSIDE -9.45248 punto <659.37, 429.274> -> 0
-OUTSIDE -452.769 punto <668.422, 433.525> -> 0
-INSIDE!!! 0.0757796 ->  punto <668.422, 433.525> -> 1
-OUTSIDE -455.922 punto <677.473, 437.776> -> 0
-INSIDE!!! 9.60406 ->  punto <677.473, 437.776> -> 1
-OUTSIDE -459.272 punto <686.525, 442.027> -> 0
-INSIDE!!! 19.1323 ->  punto <686.525, 442.027> -> 1
-OUTSIDE -462.813 punto <695.576, 446.277> -> 0
-INSIDE!!! 28.6606 ->  punto <695.576, 446.277> -> 1
-OUTSIDE -466.541 punto <704.628, 450.528> -> 0
-INSIDE!!! 38.1888 ->  punto <704.628, 450.528> -> 1
-OUTSIDE -470.453 punto <713.679, 454.779> -> 0
-INSIDE!!! 47.7171 ->  punto <713.679, 454.779> -> 1
-OUTSIDE -474.543 punto <722.731, 459.03> -> 0
-INSIDE!!! 57.3029 ->  punto <722.731, 459.03> -> 1
-OUTSIDE -478.807 punto <731.782, 463.281> -> 0
-INSIDE!!! 67.0083 ->  punto <731.782, 463.281> -> 1
-OUTSIDE -483.241 punto <740.834, 467.532> -> 0
-INSIDE!!! 76.7893 ->  punto <740.834, 467.532> -> 1
-OUTSIDE -487.839 punto <749.885, 471.783> -> 0
-INSIDE!!! 86.6204 ->  punto <749.885, 471.783> -> 1
-OUTSIDE -492.597 punto <758.937, 476.034> -> 0
-INSIDE!!! 96.4861 ->  punto <758.937, 476.034> -> 1
-OUTSIDE -497.511 punto <767.988, 480.285> -> 0
-INSIDE!!! 106.377 ->  punto <767.988, 480.285> -> 1
-OUTSIDE -502.576 punto <777.04, 484.536> -> 0
-INSIDE!!! 116.286 ->  punto <777.04, 484.536> -> 1
-OUTSIDE -507.787 punto <786.091, 488.787> -> 0
-INSIDE!!! 126.21 ->  punto <786.091, 488.787> -> 1
-OUTSIDE -513.14 punto <795.143, 493.037> -> 0
-INSIDE!!! 136.145 ->  punto <795.143, 493.037> -> 1
-OUTSIDE -518.623 punto <804.194, 497.288> -> 0
-INSIDE!!! 146.089 ->  punto <804.194, 497.288> -> 1
-OUTSIDE -524.133 punto <813.246, 501.539> -> 0
-INSIDE!!! 152.959 ->  punto <813.246, 501.539> -> 1
-OUTSIDE -529.643 punto <822.297, 505.79> -> 0
-INSIDE!!! 149.683 ->  punto <822.297, 505.79> -> 1
-OUTSIDE -535.154 punto <831.349, 510.041> -> 0
-INSIDE!!! 146.535 ->  punto <831.349, 510.041> -> 1
-OUTSIDE -540.664 punto <840.4, 514.292> -> 0
-INSIDE!!! 142.688 ->  punto <840.4, 514.292> -> 1
-OUTSIDE -546.175 punto <849.452, 518.543> -> 0
-INSIDE!!! 133.712 ->  punto <849.452, 518.543> -> 1
-OUTSIDE -551.685 punto <858.503, 522.794> -> 0
-INSIDE!!! 124.737 ->  punto <858.503, 522.794> -> 1
-OUTSIDE -557.195 punto <867.555, 527.045> -> 0
-INSIDE!!! 115.761 ->  punto <867.555, 527.045> -> 1
-OUTSIDE -562.706 punto <876.606, 531.296> -> 0
-INSIDE!!! 106.786 ->  punto <876.606, 531.296> -> 1
-OUTSIDE -568.216 punto <885.658, 535.547> -> 0
-INSIDE!!! 97.8102 ->  punto <885.658, 535.547> -> 1
-OUTSIDE -573.727 punto <894.709, 539.798> -> 0
-INSIDE!!! 88.8347 ->  punto <894.709, 539.798> -> 1
-OUTSIDE -579.237 punto <903.761, 544.048> -> 0
-INSIDE!!! 79.8592 ->  punto <903.761, 544.048> -> 1
-OUTSIDE -584.747 punto <912.813, 548.299> -> 0
-INSIDE!!! 70.8836 ->  punto <912.813, 548.299> -> 1
-OUTSIDE -590.258 punto <921.864, 552.55> -> 0
-INSIDE!!! 61.908 ->  punto <921.864, 552.55> -> 1
-OUTSIDE -595.829 punto <930.916, 556.801> -> 0
-INSIDE!!! 52.9325 ->  punto <930.916, 556.801> -> 1
-OUTSIDE -601.514 punto <939.967, 561.052> -> 0
-INSIDE!!! 43.9569 ->  punto <939.967, 561.052> -> 1
-OUTSIDE -607.311 punto <949.019, 565.303> -> 0
-INSIDE!!! 34.9814 ->  punto <949.019, 565.303> -> 1
-OUTSIDE -613.217 punto <958.07, 569.554> -> 0
-INSIDE!!! 26.0059 ->  punto <958.07, 569.554> -> 1
-OUTSIDE -619.227 punto <967.122, 573.805> -> 0
-INSIDE!!! 17.0303 ->  punto <967.122, 573.805> -> 1
-OUTSIDE -625.34 punto <976.173, 578.056> -> 0
-INSIDE!!! 8.05477 ->  punto <976.173, 578.056> -> 1
-OUTSIDE -631.551 punto <985.225, 582.307> -> 0
-OUTSIDE -0.920781 punto <985.225, 582.307> -> 0
-OUTSIDE -637.86 punto <994.276, 586.558> -> 0
-OUTSIDE -9.89634 punto <994.276, 586.558> -> 0
-OUTSIDE -644.261 punto <1003.33, 590.808> -> 0
-OUTSIDE -18.8719 punto <1003.33, 590.808> -> 0
-OUTSIDE -650.753 punto <1012.38, 595.059> -> 0
-OUTSIDE -27.8474 punto <1012.38, 595.059> -> 0
-OUTSIDE -657.334 punto <1021.43, 599.31> -> 0
-OUTSIDE -36.823 punto <1021.43, 599.31> -> 0
-OUTSIDE -663.999 punto <1030.48, 603.561> -> 0
-OUTSIDE -45.7985 punto <1030.48, 603.561> -> 0
-OUTSIDE -670.748 punto <1039.53, 607.812> -> 0
-OUTSIDE -54.7741 punto <1039.53, 607.812> -> 0
-OUTSIDE -677.577 punto <1048.59, 612.063> -> 0
-OUTSIDE -63.7496 punto <1048.59, 612.063> -> 0
-OUTSIDE -684.484 punto <1057.64, 616.314> -> 0
-OUTSIDE -72.7252 punto <1057.64, 616.314> -> 0
-OUTSIDE -691.466 punto <1066.69, 620.565> -> 0
-OUTSIDE -81.7007 punto <1066.69, 620.565> -> 0
-OUTSIDE -698.522 punto <1075.74, 624.816> -> 0
-OUTSIDE -90.6763 punto <1075.74, 624.816> -> 0
-OUTSIDE -705.649 punto <1084.79, 629.067> -> 0
-OUTSIDE -99.6518 punto <1084.79, 629.067> -> 0
-OUTSIDE -712.845 punto <1093.84, 633.318> -> 0
-OUTSIDE -108.627 punto <1093.84, 633.318> -> 0
-OUTSIDE -720.108 punto <1102.89, 637.568> -> 0
-OUTSIDE -117.603 punto <1102.89, 637.568> -> 0
-OUTSIDE -727.436 punto <1111.95, 641.819> -> 0
-OUTSIDE -126.578 punto <1111.95, 641.819> -> 0
-OUTSIDE -734.827 punto <1121, 646.07> -> 0
-OUTSIDE -135.554 punto <1121, 646.07> -> 0
-OUTSIDE -742.279 punto <1130.05, 650.321> -> 0
-OUTSIDE -144.529 punto <1130.05, 650.321> -> 0
-OUTSIDE -749.791 punto <1139.1, 654.572> -> 0
-OUTSIDE -153.505 punto <1139.1, 654.572> -> 0
-OUTSIDE -757.36 punto <1148.15, 658.823> -> 0
-OUTSIDE -162.481 punto <1148.15, 658.823> -> 0
-OUTSIDE -764.984 punto <1157.2, 663.074> -> 0
-OUTSIDE -171.456 punto <1157.2, 663.074> -> 0
-OUTSIDE -772.663 punto <1166.25, 667.325> -> 0
-OUTSIDE -180.432 punto <1166.25, 667.325> -> 0
-OUTSIDE -780.395 punto <1175.31, 671.576> -> 0
-OUTSIDE -189.407 punto <1175.31, 671.576> -> 0
-OUTSIDE -788.178 punto <1184.36, 675.827> -> 0
-OUTSIDE -198.383 punto <1184.36, 675.827> -> 0
-OUTSIDE -796.01 punto <1193.41, 680.078> -> 0
-OUTSIDE -207.412 punto <1193.41, 680.078> -> 0
-OUTSIDE -803.89 punto <1202.46, 684.329> -> 0
-OUTSIDE -216.526 punto <1202.46, 684.329> -> 0
-OUTSIDE -811.817 punto <1211.51, 688.579> -> 0
-OUTSIDE -225.716 punto <1211.51, 688.579> -> 0
-OUTSIDE -819.789 punto <1220.56, 692.83> -> 0
-OUTSIDE -234.971 punto <1220.56, 692.83> -> 0
-OUTSIDE -827.805 punto <1229.62, 697.081> -> 0
-OUTSIDE -244.285 punto <1229.62, 697.081> -> 0
-OUTSIDE -835.864 punto <1238.67, 701.332> -> 0
-OUTSIDE -253.652 punto <1238.67, 701.332> -> 0
-OUTSIDE -843.965 punto <1247.72, 705.583> -> 0
-OUTSIDE -263.065 punto <1247.72, 705.583> -> 0
-OUTSIDE -852.106 punto <1256.77, 709.834> -> 0
-OUTSIDE -272.52 punto <1256.77, 709.834> -> 0
-OUTSIDE -860.286 punto <1265.82, 714.085> -> 0
-OUTSIDE -282.012 punto <1265.82, 714.085> -> 0
-OUTSIDE -868.504 punto <1274.87, 718.336> -> 0
-OUTSIDE -291.539 punto <1274.87, 718.336> -> 0
-OUTSIDE -876.759 punto <1283.92, 722.587> -> 0
-OUTSIDE -301.096 punto <1283.92, 722.587> -> 0
-OUTSIDE -885.051 punto <1292.98, 726.838> -> 0
-OUTSIDE -310.681 punto <1292.98, 726.838> -> 0
-OUTSIDE -893.377 punto <1302.03, 731.089> -> 0
-OUTSIDE -320.291 punto <1302.03, 731.089> -> 0
-OUTSIDE -901.737 punto <1311.08, 735.339> -> 0
-OUTSIDE -329.925 punto <1311.08, 735.339> -> 0
-OUTSIDE -910.13 punto <1320.13, 739.59> -> 0
-OUTSIDE -339.579 punto <1320.13, 739.59> -> 0
-OUTSIDE -918.556 punto <1329.18, 743.841> -> 0
-OUTSIDE -349.254 punto <1329.18, 743.841> -> 0
-OUTSIDE -927.013 punto <1338.23, 748.092> -> 0
-OUTSIDE -358.946 punto <1338.23, 748.092> -> 0
-OUTSIDE -935.5 punto <1347.28, 752.343> -> 0
-OUTSIDE -368.654 punto <1347.28, 752.343> -> 0
-OUTSIDE -944.017 punto <1356.34, 756.594> -> 0
-OUTSIDE -378.378 punto <1356.34, 756.594> -> 0
-OUTSIDE -952.563 punto <1365.39, 760.845> -> 0
-OUTSIDE -388.116 punto <1365.39, 760.845> -> 0
-OUTSIDE -961.136 punto <1374.44, 765.096> -> 0
-OUTSIDE -397.866 punto <1374.44, 765.096> -> 0
-OUTSIDE -969.737 punto <1383.49, 769.347> -> 0
-OUTSIDE -407.629 punto <1383.49, 769.347> -> 0
-OUTSIDE -978.365 punto <1392.54, 773.598> -> 0
-OUTSIDE -417.403 punto <1392.54, 773.598> -> 0
-OUTSIDE -987.019 punto <1401.59, 777.849> -> 0
-OUTSIDE -427.188 punto <1401.59, 777.849> -> 0
-OUTSIDE -995.697 punto <1410.65, 782.099> -> 0
-OUTSIDE -436.982 punto <1410.65, 782.099> -> 0
-OUTSIDE -1004.4 punto <1419.7, 786.35> -> 0
-OUTSIDE -446.785 punto <1419.7, 786.35> -> 0
-OUTSIDE -1013.13 punto <1428.75, 790.601> -> 0
-OUTSIDE -456.597 punto <1428.75, 790.601> -> 0
-OUTSIDE -1021.88 punto <1437.8, 794.852> -> 0
-OUTSIDE -466.417 punto <1437.8, 794.852> -> 0
-OUTSIDE -1030.65 punto <1446.85, 799.103> -> 0
-OUTSIDE -476.244 punto <1446.85, 799.103> -> 0
-OUTSIDE -1039.45 punto <1455.9, 803.354> -> 0
-OUTSIDE -486.079 punto <1455.9, 803.354> -> 0
-OUTSIDE -1048.26 punto <1464.95, 807.605> -> 0
-OUTSIDE -495.92 punto <1464.95, 807.605> -> 0
-OUTSIDE -1057.1 punto <1474.01, 811.856> -> 0
-OUTSIDE -505.767 punto <1474.01, 811.856> -> 0
-OUTSIDE -1065.96 punto <1483.06, 816.107> -> 0
-OUTSIDE -515.62 punto <1483.06, 816.107> -> 0
-OUTSIDE -1074.84 punto <1492.11, 820.358> -> 0
-OUTSIDE -525.479 punto <1492.11, 820.358> -> 0
-OUTSIDE -1077.2 punto <1494.51, 821.485> -> 0
-OUTSIDE -528.094 punto <1494.51, 821.485> -> 0
-OUTSIDE -1085.86 punto <1503.33, 826.181> -> 0
-OUTSIDE -537.862 punto <1503.33, 826.181> -> 0
-OUTSIDE -1094.01 punto <1511.64, 831.734> -> 0
-OUTSIDE -547.384 punto <1511.64, 831.734> -> 0
-OUTSIDE -1101.58 punto <1519.36, 838.09> -> 0
-OUTSIDE -556.581 punto <1519.36, 838.09> -> 0
-OUTSIDE -1108.5 punto <1526.4, 845.184> -> 0
-OUTSIDE -565.377 punto <1526.4, 845.184> -> 0
-OUTSIDE -1114.72 punto <1532.7, 852.946> -> 0
-OUTSIDE -573.706 punto <1532.7, 852.946> -> 0
-OUTSIDE -1120.19 punto <1538.19, 861.297> -> 0
-OUTSIDE -581.506 punto <1538.19, 861.297> -> 0
-OUTSIDE -1124.87 punto <1542.82, 870.155> -> 0
-OUTSIDE -588.722 punto <1542.82, 870.155> -> 0
-OUTSIDE -1128.72 punto <1546.55, 879.432> -> 0
-OUTSIDE -595.304 punto <1546.55, 879.432> -> 0
-OUTSIDE -1131.7 punto <1549.33, 889.034> -> 0
-OUTSIDE -601.208 punto <1549.33, 889.034> -> 0
-OUTSIDE -1133.8 punto <1551.13, 898.865> -> 0
-OUTSIDE -606.397 punto <1551.13, 898.865> -> 0
-OUTSIDE -1135 punto <1551.95, 908.828> -> 0
-OUTSIDE -610.836 punto <1551.95, 908.828> -> 0
-OUTSIDE -1135.29 punto <1551.77, 918.822> -> 0
-OUTSIDE -614.498 punto <1551.77, 918.822> -> 0
-OUTSIDE -1134.67 punto <1550.59, 928.749> -> 0
-OUTSIDE -617.361 punto <1550.59, 928.749> -> 0
-OUTSIDE -1133.15 punto <1548.42, 938.509> -> 0
-OUTSIDE -619.408 punto <1548.42, 938.509> -> 0
-OUTSIDE -1130.73 punto <1545.3, 948.005> -> 0
-OUTSIDE -620.626 punto <1545.3, 948.005> -> 0
-OUTSIDE -1127.43 punto <1541.24, 957.142> -> 0
-OUTSIDE -621.009 punto <1541.24, 957.142> -> 0
-OUTSIDE -1123.28 punto <1536.29, 965.829> -> 0
-OUTSIDE -620.554 punto <1536.29, 965.829> -> 0
-OUTSIDE -1118.32 punto <1530.49, 973.981> -> 0
-OUTSIDE -619.264 punto <1530.49, 973.981> -> 0
-OUTSIDE -1112.57 punto <1523.92, 981.516> -> 0
-OUTSIDE -617.147 punto <1523.92, 981.516> -> 0
-OUTSIDE -1106.08 punto <1516.62, 988.321> -> 0
-OUTSIDE -614.192 punto <1516.62, 988.321> -> 0
-OUTSIDE -1098.92 punto <1508.67, 994.39> -> 0
-OUTSIDE -610.457 punto <1508.67, 994.39> -> 0
-OUTSIDE -1091.14 punto <1500.16, 999.637> -> 0
-OUTSIDE -605.948 punto <1500.16, 999.637> -> 0
-OUTSIDE -1082.79 punto <1491.17, 1004.01> -> 0
-OUTSIDE -600.692 punto <1491.17, 1004.01> -> 0
-OUTSIDE -1073.96 punto <1481.79, 1007.46> -> 0
-OUTSIDE -594.724 punto <1481.79, 1007.46> -> 0
-OUTSIDE -1064.73 punto <1472.11, 1009.96> -> 0
-OUTSIDE -588.081 punto <1472.11, 1009.96> -> 0
-OUTSIDE -1055.16 punto <1462.24, 1011.47> -> 0
-OUTSIDE -580.809 punto <1462.24, 1011.47> -> 0
-OUTSIDE -1045.36 punto <1452.25, 1012> -> 0
-OUTSIDE -572.958 punto <1452.25, 1012> -> 0
-OUTSIDE -1035.42 punto <1442.27, 1011.53> -> 0
-OUTSIDE -564.583 punto <1442.27, 1011.53> -> 0
-OUTSIDE -1025.42 punto <1432.38, 1010.06> -> 0
-OUTSIDE -555.747 punto <1432.38, 1010.06> -> 0
-OUTSIDE -1015.48 punto <1422.69, 1007.61> -> 0
-OUTSIDE -546.517 punto <1422.69, 1007.61> -> 0
-OUTSIDE -1005.68 punto <1413.29, 1004.2> -> 0
-OUTSIDE -536.969 punto <1413.29, 1004.2> -> 0
-OUTSIDE -996.149 punto <1404.28, 999.879> -> 0
-OUTSIDE -527.182 punto <1404.28, 999.879> -> 0
-OUTSIDE -986.976 punto <1395.74, 994.676> -> 0
-OUTSIDE -517.245 punto <1395.74, 994.676> -> 0
-OUTSIDE -978.268 punto <1387.77, 988.647> -> 0
-OUTSIDE -507.249 punto <1387.77, 988.647> -> 0
-OUTSIDE -970.124 punto <1380.44, 981.852> -> 0
-OUTSIDE -497.296 punto <1380.44, 981.852> -> 0
-OUTSIDE -962.642 punto <1373.82, 974.359> -> 0
-OUTSIDE -487.489 punto <1373.82, 974.359> -> 0
-OUTSIDE -955.912 punto <1367.99, 966.243> -> 0
-OUTSIDE -477.938 punto <1367.99, 966.243> -> 0
-OUTSIDE -950.019 punto <1362.99, 957.585> -> 0
-OUTSIDE -468.758 punto <1362.99, 957.585> -> 0
-OUTSIDE -945.038 punto <1358.89, 948.471> -> 0
-OUTSIDE -460.066 punto <1358.89, 948.471> -> 0
-OUTSIDE -941.034 punto <1355.71, 938.994> -> 0
-OUTSIDE -451.978 punto <1355.71, 938.994> -> 0
-OUTSIDE -938.058 punto <1353.5, 929.246> -> 0
-OUTSIDE -444.61 punto <1353.5, 929.246> -> 0
-OUTSIDE -936.15 punto <1352.27, 919.326> -> 0
-OUTSIDE -438.075 punto <1352.27, 919.326> -> 0
-OUTSIDE -935.337 punto <1352.04, 909.333> -> 0
-OUTSIDE -432.476 punto <1352.04, 909.333> -> 0
-OUTSIDE -935.63 punto <1352.8, 899.366> -> 0
-OUTSIDE -427.907 punto <1352.8, 899.366> -> 0
-OUTSIDE -937.023 punto <1354.56, 889.526> -> 0
-OUTSIDE -424.448 punto <1354.56, 889.526> -> 0
-OUTSIDE -939.499 punto <1357.29, 879.911> -> 0
-OUTSIDE -422.161 punto <1357.29, 879.911> -> 0
-OUTSIDE -943.025 punto <1360.97, 870.616> -> 0
-OUTSIDE -421.088 punto <1360.97, 870.616> -> 0
-OUTSIDE -947.553 punto <1365.55, 861.734> -> 0
-OUTSIDE -421.249 punto <1365.55, 861.734> -> 0
-OUTSIDE -953.025 punto <1371, 853.355> -> 0
-OUTSIDE -422.642 punto <1371, 853.355> -> 0
-OUTSIDE -959.37 punto <1377.26, 845.561> -> 0
-OUTSIDE -425.239 punto <1377.26, 845.561> -> 0
-OUTSIDE -966.508 punto <1384.27, 838.432> -> 0
-OUTSIDE -428.993 punto <1384.27, 838.432> -> 0
-OUTSIDE -974.352 punto <1391.95, 832.037> -> 0
-OUTSIDE -433.839 punto <1391.95, 832.037> -> 0
-OUTSIDE -982.806 punto <1400.23, 826.442> -> 0
-OUTSIDE -439.691 punto <1400.23, 826.442> -> 0
-OUTSIDE -991.773 punto <1409.03, 821.701> -> 0
-OUTSIDE -446.454 punto <1409.03, 821.701> -> 0
-OUTSIDE -1001.15 punto <1418.26, 817.863> -> 0
-OUTSIDE -454.02 punto <1418.26, 817.863> -> 0
-OUTSIDE -1010.83 punto <1427.83, 814.965> -> 0
-OUTSIDE -462.277 punto <1427.83, 814.965> -> 0
-OUTSIDE -1020.72 punto <1437.64, 813.037> -> 0
-OUTSIDE -471.108 punto <1437.64, 813.037> -> 0
-OUTSIDE -1030.7 punto <1447.59, 812.097> -> 0
-OUTSIDE -480.395 punto <1447.59, 812.097> -> 0
-OUTSIDE -1035.11 punto <1452, 812> -> 0
-OUTSIDE -484.608 punto <1452, 812> -> 0
+OUTSIDE -192.258 punto <1205.64, 198.971> -> 0
+OUTSIDE -189.53 punto <1212.22, 206.506> -> 0
+OUTSIDE -186.803 punto <1218.79, 214.042> -> 0
+OUTSIDE -184.076 punto <1225.37, 221.577> -> 0
+OUTSIDE -181.348 punto <1231.94, 229.112> -> 0
+OUTSIDE -178.637 punto <1238.51, 236.648> -> 0
+OUTSIDE -176.306 punto <1245.09, 244.183> -> 0
+OUTSIDE -174.518 punto <1251.66, 251.719> -> 0
+OUTSIDE -173.289 punto <1258.24, 259.254> -> 0
+OUTSIDE -172.632 punto <1264.81, 266.79> -> 0
+OUTSIDE -172.552 punto <1271.38, 274.325> -> 0
+OUTSIDE -173.052 punto <1277.96, 281.86> -> 0
+OUTSIDE -174.125 punto <1284.53, 289.396> -> 0
+OUTSIDE -175.762 punto <1291.11, 296.931> -> 0
+OUTSIDE -177.945 punto <1297.68, 304.467> -> 0
+OUTSIDE -180.364 punto <1304.25, 312.002> -> 0
+OUTSIDE -182.783 punto <1310.83, 319.538> -> 0
+OUTSIDE -185.202 punto <1317.4, 327.073> -> 0
+OUTSIDE -187.621 punto <1323.98, 334.608> -> 0
+OUTSIDE -190.039 punto <1330.55, 342.144> -> 0
+OUTSIDE -192.458 punto <1337.12, 349.679> -> 0
+OUTSIDE -194.877 punto <1343.7, 357.215> -> 0
+OUTSIDE -195.855 punto <1346.35, 360.26> -> 0
+OUTSIDE -197.785 punto <1352.54, 368.111> -> 0
+OUTSIDE -198.726 punto <1357.91, 376.541> -> 0
+OUTSIDE -198.669 punto <1362.42, 385.465> -> 0
+OUTSIDE -197.615 punto <1366.01, 394.794> -> 0
+OUTSIDE -195.573 punto <1368.65, 404.435> -> 0
+OUTSIDE -192.565 punto <1370.31, 414.291> -> 0
+OUTSIDE -188.62 punto <1370.98, 424.264> -> 0
+OUTSIDE -187.842 punto <1371, 426> -> 0
+--------angolo: 1.570796
+Algorithm INcorrect
+kappa: 0.010000, 0.000000, -0.010000 
+OUTSIDE -184.625 punto <1370.77, 432.789> -> 0
+OUTSIDE -179.943 punto <1370.09, 442.766> -> 0
+OUTSIDE -175.705 punto <1369.41, 452.743> -> 0
+OUTSIDE -171.946 punto <1368.73, 462.72> -> 0
+OUTSIDE -168.696 punto <1368.05, 472.697> -> 0
+OUTSIDE -165.986 punto <1367.37, 482.674> -> 0
+OUTSIDE -163.842 punto <1366.7, 492.651> -> 0
+OUTSIDE -162.288 punto <1366.02, 502.628> -> 0
+OUTSIDE -161.339 punto <1365.34, 512.605> -> 0
+OUTSIDE -160.95 punto <1364.66, 522.582> -> 0
+OUTSIDE -160.663 punto <1363.98, 532.559> -> 0
+OUTSIDE -160.375 punto <1363.3, 542.536> -> 0
+OUTSIDE -160.088 punto <1362.62, 552.512> -> 0
+OUTSIDE -159.8 punto <1361.94, 562.489> -> 0
+OUTSIDE -159.545 punto <1361.26, 572.466> -> 0
+OUTSIDE -159.773 punto <1360.59, 582.443> -> 0
+OUTSIDE -160.624 punto <1359.91, 592.42> -> 0
+OUTSIDE -162.088 punto <1359.23, 602.397> -> 0
+OUTSIDE -164.15 punto <1358.55, 612.374> -> 0
+OUTSIDE -166.787 punto <1357.87, 622.351> -> 0
+OUTSIDE -169.972 punto <1357.19, 632.328> -> 0
+OUTSIDE -173.675 punto <1356.51, 642.305> -> 0
+OUTSIDE -177.864 punto <1355.83, 652.282> -> 0
+OUTSIDE -182.416 punto <1355.15, 662.259> -> 0
+OUTSIDE -186.996 punto <1354.47, 672.236> -> 0
+OUTSIDE -191.576 punto <1353.8, 682.213> -> 0
+OUTSIDE -196.157 punto <1353.12, 692.189> -> 0
+OUTSIDE -200.737 punto <1352.44, 702.166> -> 0
+OUTSIDE -202.134 punto <1352.23, 705.211> -> 0
+OUTSIDE -207.151 punto <1352.05, 715.205> -> 0
+OUTSIDE -213.005 punto <1352.87, 725.167> -> 0
+OUTSIDE -219.64 punto <1354.68, 734.998> -> 0
+OUTSIDE -226.987 punto <1357.46, 744.599> -> 0
+OUTSIDE -234.975 punto <1361.19, 753.874> -> 0
+OUTSIDE -243.522 punto <1365.82, 762.73> -> 0
+OUTSIDE -252.545 punto <1371.32, 771.08> -> 0
+OUTSIDE -261.951 punto <1377.62, 778.84> -> 0
+OUTSIDE -271.649 punto <1384.66, 785.932> -> 0
+OUTSIDE -281.54 punto <1392.38, 792.285> -> 0
+OUTSIDE -291.526 punto <1400.69, 797.836> -> 0
+OUTSIDE -301.507 punto <1409.52, 802.53> -> 0
+OUTSIDE -311.383 punto <1418.77, 806.319> -> 0
+OUTSIDE -321.058 punto <1428.35, 809.166> -> 0
+OUTSIDE -330.432 punto <1438.17, 811.043> -> 0
+OUTSIDE -339.414 punto <1448.13, 811.931> -> 0
+OUTSIDE -342.769 punto <1452.01, 812.007> -> 0
 --------angolo: 0.000000
 Algorithm correct
 Algorithm correct
@@ -1093,41 +2245,41 @@ Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
-Algorithm INcorrect
+Algorithm correct
 Algorithm correct
 kappa: 0.010000, 0.000000, 0.010000 
-OUTSIDE -1045.1 punto <1462, 812> -> 0
-OUTSIDE -494.232 punto <1462, 812> -> 0
-OUTSIDE -1055.09 punto <1472, 812> -> 0
-OUTSIDE -503.87 punto <1472, 812> -> 0
-OUTSIDE -1065.08 punto <1482, 812> -> 0
-OUTSIDE -513.522 punto <1482, 812> -> 0
-OUTSIDE -1075.07 punto <1492, 812> -> 0
-OUTSIDE -523.187 punto <1492, 812> -> 0
-OUTSIDE -1085.06 punto <1502, 812> -> 0
-OUTSIDE -532.865 punto <1502, 812> -> 0
+OUTSIDE -351.318 punto <1462, 812> -> 0
+OUTSIDE -359.876 punto <1472, 812> -> 0
+OUTSIDE -368.434 punto <1482, 812> -> 0
+OUTSIDE -376.992 punto <1492, 812> -> 0
+OUTSIDE -385.55 punto <1502, 812> -> 0
 --- START rightPathNew --- 
 --> 1: (154, 203)
---> 2: (1452, 812)
---> 3: (1502, 812)
+--> 2: (404, 172)
+--> 3: (668, 173)
+--> 4: (941, 171)
+--> 5: (1201, 194)
+--> 6: (1371, 426)
+--> 7: (1452, 812)
+--> 8: (1502, 812)
 --- END rightPathNew --- 
-[0m[ INFO] [1598641115.754112621]: cametra_matrix = 
+[0m[ INFO] [1598642673.728842894, 5.500000000]: cametra_matrix = 
  [558.5726818577332, 0, 342.6203163666451;
  0, 558.5726818577332, 267.9308376846099;
  0, 0, 1][0m
-[0m[ INFO] [1598641115.754214681]: dist_coeffs = 
+[0m[ INFO] [1598642673.728931504, 5.500000000]: dist_coeffs = 
 [-0.2069661057376372, 0.0110561549401185, 0.01602106933810088, 0.01733990140219172][0m
-[33m[ WARN] [1598641117.742113252, 7.370000000]: Call student function[0m
-[0m[ INFO] [1598641117.747247288, 7.380000000]: camera estimated position = 
+[33m[ WARN] [1598642676.849139869, 8.650000000]: Call student function[0m
+[0m[ INFO] [1598642676.877542445, 8.680000000]: camera estimated position = 
 [0.5710477852876324;
  0.7726561608221418;
  2.285687313095668][0m
-... logging to /home/lar2019/.ros/log/7346c130-e960-11ea-9168-080027ae6ce3/roslaunch-lar2019-vm-11486.log
+... logging to /home/lar2019/.ros/log/116d16a4-e964-11ea-9168-080027ae6ce3/roslaunch-lar2019-vm-22174.log
 Checking log directory for disk usage. This may take awhile.
 Press Ctrl-C to interrupt
 Done checking log file disk usage. Usage is <1GB.
 ]2;/home/lar2019/Desktop/AppliedRoboticsEnvironment/src/9_project_interface/launch/node_pipeline.launch
-[1mstarted roslaunch server http://lar2019-vm:35123/[0m
+[1mstarted roslaunch server http://lar2019-vm:44163/[0m
 
 SUMMARY
 ========
@@ -1175,19 +2327,19 @@ NODES
 
 [1mROS_MASTER_URI=http://localhost:11311[0m
 ]2;/home/lar2019/Desktop/AppliedRoboticsEnvironment/src/9_project_interface/launch/node_pipeline.launch http://localhost:11311
-[1mprocess[extrinsic_calib-1]: started with pid [11503][0m
-[1mprocess[rectify_image-2]: started with pid [11504][0m
-[1mprocess[unwarp_image-3]: started with pid [11505][0m
-[1mprocess[obstacle_detector-4]: started with pid [11511][0m
-[1mprocess[robot_detector-5]: started with pid [11513][0m
-[1mprocess[localization-6]: started with pid [11517][0m
-[1mprocess[odometry-7]: started with pid [11523][0m
-[1mprocess[planning-8]: started with pid [11525][0m
-[1mprocess[control-9]: started with pid [11530][0m
+[1mprocess[extrinsic_calib-1]: started with pid [22191][0m
+[1mprocess[rectify_image-2]: started with pid [22192][0m
+[1mprocess[unwarp_image-3]: started with pid [22193][0m
+[1mprocess[obstacle_detector-4]: started with pid [22194][0m
+[1mprocess[robot_detector-5]: started with pid [22195][0m
+[1mprocess[localization-6]: started with pid [22196][0m
+[1mprocess[odometry-7]: started with pid [22197][0m
+[1mprocess[planning-8]: started with pid [22203][0m
+[1mprocess[control-9]: started with pid [22215][0m
 [control-9] killing on exit
-[odometry-7] killing on exit
-[localization-6] killing on exit
 [planning-8] killing on exit
+[localization-6] killing on exit
+[odometry-7] killing on exit
 [robot_detector-5] killing on exit
 [obstacle_detector-4] killing on exit
 [unwarp_image-3] killing on exit
