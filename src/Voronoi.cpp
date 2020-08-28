@@ -106,8 +106,8 @@ int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::unordered_map
 	double prev_ya=-1;
 	int id1,id2,longId=0;
 	std::vector<int> visitedIds;
-	int max_X = 1600;
-	int max_Y = 1000;
+	int max_X = 1560;
+	int max_Y = 1060;
 	
     	const voronoi_diagram<double>::edge_type* edge;
 	

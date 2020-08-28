@@ -218,8 +218,26 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	for (int i = 0; i < solution.size(); i++) {
 		std::vector<cv::Point> cc;
 		for (int j = 0; j < solution[i].size(); j++) {
-			xa=(int)(solution[i][j].X<0?0:solution[i][j].X);
-			ya=(int)(solution[i][j].Y<0?0:solution[i][j].Y);
+			//xa=(int)(solution[i][j].X<0?0:solution[i][j].X);
+			if(solution[i][j].X < 0) {
+				xa = 0;
+			}
+			else if (solution[i][j].X > b_x_max) {
+				xa = b_x_max;
+			}
+			else {
+				xa = (int)(solution[i][j].X);
+			}
+			//ya=(int)(solution[i][j].Y<0?0:solution[i][j].Y);
+			if(solution[i][j].Y < 0) {
+				ya = 0;
+			}
+			else if (solution[i][j].Y > b_y_max) {
+				ya = b_y_max;
+			}
+			else {
+				ya = (int)(solution[i][j].Y);
+			}
 			cc.push_back(cv::Point(xa,ya));
 		}
 		contours.push_back(cc);
@@ -331,6 +349,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	{
 		printf("x: %i",voronoiPaths.resultPoints[j].a);
 		printf(", %i\n",voronoiPaths.resultPoints[j].b);
+		collision_detection((double)voronoiPaths.resultPoints[j].a, (double)voronoiPaths.resultPoints[j].b, contours);
 	}
 
 	//throw std::logic_error( "STOP" );
@@ -670,7 +689,7 @@ bool collision_detection(double x, double y, const std::vector<std::vector<cv::P
 		res = cv::pointPolygonTest(contours[i] , cv::Point2f(x,y) , true);
 		if(res > 0) {
 			r = true;
-			std::cout << "INSIDE!!! " << res << " -> " << r << std::endl;
+			std::cout << "INSIDE!!! " << res << " -> " << " punto <" << x << ", " << y << ">" << " -> " << r << std::endl;
 		}
 		else {
 			std::cout << "OUTSIDE " << res << " punto <" << x << ", " << y << ">" << " -> " << r << std::endl;
