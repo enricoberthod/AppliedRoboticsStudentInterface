@@ -106,6 +106,8 @@ int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::unordered_map
 	double prev_ya=-1;
 	int id1,id2,longId=0;
 	std::vector<int> visitedIds;
+	int max_X = 1600;
+	int max_Y = 1000;
 	
     	const voronoi_diagram<double>::edge_type* edge;
 	
@@ -161,10 +163,13 @@ int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::unordered_map
 							visitedIds.push_back(longId);
 							id2=(visitedIds.size()-1);
 						}
-						GraphEdge e(xa,ya,xb,yb,len,id1,id2);
-						results->resultEdges.push_back(e);
-						VoronoiPoint p(xa,ya);
-						results->resultPoints.push_back(p); 
+						if(xa>=0 && xa<=max_X && ya>=0 && ya<=max_Y && xb>=0 && xb<=max_X && yb>=0 && yb<=max_Y)
+						{
+							GraphEdge e(xa,ya,xb,yb,len,id1,id2);
+							results->resultEdges.push_back(e);
+							VoronoiPoint p(xa,ya);
+							results->resultPoints.push_back(p); 
+						}
 					}
 					prev_xa=xa;
 					prev_ya=ya;
@@ -176,8 +181,11 @@ int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::unordered_map
   	}
 	if(!isObstaclePoint(xb,yb,*points_map))
 	{
-		VoronoiPoint p(xb,yb);
-		results->resultPoints.push_back(p);
+		if(xb>=0 && xb<=max_X && yb>=0 && yb<=max_Y)
+		{
+			VoronoiPoint p(xb,yb);
+			results->resultPoints.push_back(p);
+		}
 	}
 	results->ids=visitedIds;	
 
