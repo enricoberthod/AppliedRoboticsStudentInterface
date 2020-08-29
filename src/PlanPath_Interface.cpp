@@ -316,10 +316,13 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	{
 		xa=(int)((borders[i].x*floatToInt)>0?(borders[i].x*floatToInt):0);
 		ya=(int)((borders[i].y*floatToInt)>0?(borders[i].y*floatToInt):0);
+		/*
 		if(ya<floatToInt)
 			longId=(xa*floatToInt)+ya;
 		else
 			longId=(xa*floatToInt*10)+ya;
+		*/
+		longId=encoder(xa,ya);
 		p=VoronoiPoint(xa,ya);
 		obstaclesVertexes[longId]=p;
 		xb=(int)((borders[i+1].x*floatToInt)>0?(borders[i+1].x*floatToInt):0);
@@ -333,10 +336,13 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	//close the borders
 	xa=(int)((borders[3].x*floatToInt)>0?(borders[3].x*floatToInt):0);
 	ya=(int)((borders[3].y*floatToInt)>0?(borders[3].y*floatToInt):0);
+	/*
 	if(ya<floatToInt)
 		longId=(xa*floatToInt)+ya;
 	else
 		longId=(xa*floatToInt*10)+ya;
+	*/
+	longId=encoder(xa,ya);
 	p=VoronoiPoint(xa,ya);
 	obstaclesVertexes[longId]=p;
 	xb=(int)((borders[0].x*floatToInt)>0?(borders[0].x*floatToInt):0);
