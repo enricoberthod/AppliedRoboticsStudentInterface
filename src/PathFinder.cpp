@@ -182,11 +182,15 @@ void shortestPath(VoronoiPoint start, bool startNew, int idStart, VoronoiPoint e
 			
 		x=voronoiPaths->resultEdges[i].p0.a;
 		y=voronoiPaths->resultEdges[i].p0.b;
+		std::cout << "(pathfinder) x = " << x << std::endl;
+		std::cout << "(pathfinder) y = " << y << std::endl;
 		if(y<1000)
-			encodedCoord=(x*1000)+y;
+			//encodedCoord=(x*1000)+y;
+			encodedCoord=( (x!=0?x:1) *1000)+y;
 		else
-			encodedCoord=(x*10000)+y;
-		
+			//encodedCoord=(x*10000)+y;
+			encodedCoord=( (x!=0?x:1) *10000)+y;
+		std::cout << "(pathfinder) encodedCoord = " << encodedCoord << std::endl;
 		mapPosition[voronoiPaths->resultEdges[i].idFirstNode]=encodedCoord;
 		//std::cout << "id " << voronoiPaths->resultEdges[i].idFirstNode << " coo " << encodedCoord << " coo2 " << mapPosition[voronoiPaths->resultEdges[i].idFirstNode] <<  std::endl; 
 		addEdge(graph, voronoiPaths->resultEdges[i].idFirstNode, voronoiPaths->resultEdges[i].idSecondNode, voronoiPaths->resultEdges[i].length); 
@@ -219,6 +223,7 @@ void shortestPath(VoronoiPoint start, bool startNew, int idStart, VoronoiPoint e
 	int x1,y1;
 	for(int i=1;i<startEndPath.size()-1;i++)
 	{
+		std::cout << "(pathfider) mapPosition[voronoiPaths->resultEdges[startEndPath[i]].idFirstNode] : " << mapPosition[voronoiPaths->resultEdges[startEndPath[i]].idFirstNode] << std::endl;
 		if(mapPosition[voronoiPaths->resultEdges[startEndPath[i]].idFirstNode]<10000)
 			encoder=100;
 		else

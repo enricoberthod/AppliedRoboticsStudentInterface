@@ -38,6 +38,7 @@ struct VoronoiResults {
 	std::vector<VoronoiPoint> resultPoints;
 };
 
-void Voronoi(std::vector<VoronoiPoint>,std::vector<Segment>,std::unordered_map<int,VoronoiPoint>, VoronoiResults*);
+//void Voronoi(std::vector<VoronoiPoint>,std::vector<Segment>,std::unordered_map<int,VoronoiPoint>, VoronoiResults*);
+void Voronoi(std::vector<VoronoiPoint>,std::vector<Segment>,std::unordered_map<int,VoronoiPoint>, const std::vector<std::vector<cv::Point>>&, VoronoiResults*);
 
 #endif

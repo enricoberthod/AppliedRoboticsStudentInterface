@@ -10,6 +10,8 @@
 #include "Voronoi.h"
 
 #include <cstdio>
+#include <iostream>
+#include <opencv2/imgproc/imgproc.hpp>
 #include <vector>
 #include <cmath>
 #include <unordered_map>
@@ -22,7 +24,8 @@ using boost::polygon::y;
 using boost::polygon::low;
 using boost::polygon::high;
 
-bool isObstaclePoint(double, double, std::unordered_map<int,VoronoiPoint>);
+//bool isObstaclePoint(double, double, std::unordered_map<int,VoronoiPoint>);
+bool isObstaclePoint(int, int, const std::vector<std::vector<cv::Point>>& contours);
 void removeObstacles(std::vector<VoronoiPoint>, VoronoiResults*);
 void remove(std::vector<VoronoiPoint>, VoronoiResults*);
 int visited(std::vector<int>, int);
@@ -97,7 +100,8 @@ int iterate_primary_edges2(const voronoi_diagram<double> &vd) {
 // As opposite to the above two functions this one will not iterate through
 // edges without finite endpoints and will iterate only once through edges
 // with single finite endpoint.
-int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::unordered_map<int,VoronoiPoint>*points_map, VoronoiResults *results) {
+//int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::unordered_map<int,VoronoiPoint>*points_map, VoronoiResults *results) {
+int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::unordered_map<int,VoronoiPoint>*points_map, const std::vector<std::vector<cv::Point>>& contours, VoronoiResults *results) {
   	int result = 0;
 	const voronoi_diagram<double>::vertex_type* startVertex;
 	const voronoi_diagram<double>::vertex_type* endVertex;
@@ -134,7 +138,8 @@ int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::unordered_map
 				{
 					xa = (int)startVertex->x();
 					ya = (int)startVertex->y();
-					if(!isObstaclePoint(xa,ya,*points_map))
+					//if(!isObstaclePoint(xa,ya,*points_map))
+					if(!isObstaclePoint(xa,ya,contours))
 					{
 						xb = (int)endVertex->x();  
 						yb = (int)endVertex->y();
@@ -179,7 +184,8 @@ int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::unordered_map
       			edge = edge->rot_next();
 		} while (edge != vertex.incident_edge());
   	}
-	if(!isObstaclePoint(xb,yb,*points_map))
+	//if(!isObstaclePoint(xb,yb,*points_map))
+	if(!isObstaclePoint(xb,yb,contours))
 	{
 		if(xb>=0 && xb<=max_X && yb>=0 && yb<=max_Y)
 		{
@@ -200,7 +206,8 @@ int visited(std::vector<int> visitedIds, int num)
 	return -1;
 }
 
-void Voronoi(std::vector<VoronoiPoint>points, std::vector<Segment> segments, std::unordered_map<int,VoronoiPoint>points_map, VoronoiResults *results)
+//void Voronoi(std::vector<VoronoiPoint>points, std::vector<Segment> segments, std::unordered_map<int,VoronoiPoint>points_map, VoronoiResults *results)
+void Voronoi(std::vector<VoronoiPoint>points, std::vector<Segment> segments, std::unordered_map<int,VoronoiPoint>points_map, const std::vector<std::vector<cv::Point>>& contours, VoronoiResults *results)
 // si può aggiungere un flag isObstaclePoint alla struttura di GraphEdge così da marchiare subito i vertici da togliere
 {
   
@@ -215,7 +222,8 @@ void Voronoi(std::vector<VoronoiPoint>points, std::vector<Segment> segments, std
     //printf("Number of visited primary edges using edge iterator: %d\n", iterate_primary_edges1(vd));
 		printf("pippo c'è \n");
     //printf("Number of visited primary edges using cell iterator: %d\n", iterate_primary_edges2(vd));
-    printf("Number of visited primary edges using vertex iterator: %d\n", iterate_primary_edges3(vd, &points_map, results));
+	//printf("Number of visited primary edges using vertex iterator: %d\n", iterate_primary_edges3(vd, &points_map, results));
+    printf("Number of visited primary edges using vertex iterator: %d\n", iterate_primary_edges3(vd, &points_map, contours, results));
     printf("before points size: %i \n",results->resultPoints.size());
     printf("before edge size: %i \n",results->resultEdges.size());
 
@@ -226,15 +234,15 @@ void Voronoi(std::vector<VoronoiPoint>points, std::vector<Segment> segments, std
 	
 	
 }
-
+/*
 bool isObstaclePoint(double x, double y, std::unordered_map<int,VoronoiPoint>points_map)
 {
-/*
+	*//*
 	for(int i=0; i<points.size();i++)
 	{
 		if(x==points[i].a && y==points[i].b)
 			return true;
-	} */
+	} *//*
 	//return false;
 	VoronoiPoint p;
 	int longId;
@@ -249,5 +257,21 @@ bool isObstaclePoint(double x, double y, std::unordered_map<int,VoronoiPoint>poi
 	//return points_map.contains(longId);
 	
 }
+*/
 
+bool isObstaclePoint(int x, int y, const std::vector<std::vector<cv::Point>>& contours) {
+	bool r = false;
+	double res;
+	for (int i = 0; i < contours.size() && !r; i++) {
+		res = cv::pointPolygonTest(contours[i] , cv::Point2f(x,y) , true);
+		if(res > 0) {
+			r = true;
+			std::cout << "INSIDE!!! " << res << " -> " << " punto <" << x << ", " << y << ">" << " -> " << r << std::endl;
+		}
+		else {
+			std::cout << "OUTSIDE " << res << " punto <" << x << ", " << y << ">" << " -> " << r << std::endl;
+		}
+	}
+	return r;
+}
 

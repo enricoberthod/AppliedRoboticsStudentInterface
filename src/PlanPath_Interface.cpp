@@ -116,7 +116,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 				xa = 0;
 			}
 			else if (solution[i][j].X > b_x_max) {
-				xa = b_x_max;
+				xa = (int)b_x_max;
 			}
 			else {
 				xa = (int)(solution[i][j].X);
@@ -128,13 +128,13 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 				ya = 0;
 			}
 			else if (solution[i][j].Y > b_y_max) {
-				ya = b_y_max;
+				ya = (int)b_y_max;
 			}
 			else {
 				ya = (int)(solution[i][j].Y);
 			}
-			printf("obsvertx: %i,%i\n",xa,ya);
 			*/
+			printf("obsvertx: %i,%i\n",xa,ya);
 			xb=(int)(solution[i][j+1].X<0?0:solution[i][j+1].X);
 			/*
 			if(solution[i][j].X<0) {
@@ -193,6 +193,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 			ya = (int)(solution[i][vertexNumber-1].Y);
 		}
 		*/
+		printf("obsvertx: %i,%i\n",xa,ya);
 		if(ya<floatToInt)
 			longId=(xa*floatToInt)+ya;
 		else
@@ -351,7 +352,8 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	//throw std::logic_error( "STOP" );
 
 	//Creates the Voronoi map
-	Voronoi(inputPoints, obstacles_edges, obstaclesVertexes, &voronoiPaths);
+	//Voronoi(inputPoints, obstacles_edges, obstaclesVertexes, &voronoiPaths);
+	Voronoi(inputPoints, obstacles_edges, obstaclesVertexes, contours, &voronoiPaths);
 		
 
 
