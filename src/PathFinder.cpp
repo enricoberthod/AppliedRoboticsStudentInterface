@@ -31,7 +31,7 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 	int startSize=1000;
 	int endSize=1000;
 	int startLongId;
-	int endLongId;2
+	int endLongId;
 	int idPos;
 	std::vector<GraphEdge> start_connection, end_connection;
 	VoronoiPoint v1, v2, v3, v4, v5, v6, v7, v8;
@@ -179,7 +179,7 @@ void shortestPath(VoronoiPoint start, bool startNew, int idStart, VoronoiPoint e
 	int path[V];
 	int mapPosition[V];
 	int encodedCoord,x,y;
-	int encoder;
+	//int encoder;
 	struct Graph* graph = createGraph(V); 
 	for(int i=0;i<voronoiPaths->resultEdges.size();i++)
 	{
