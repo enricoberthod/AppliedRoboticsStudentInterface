@@ -17,6 +17,8 @@ void sampleSegment(VoronoiPoint, VoronoiPoint, std::vector<VoronoiPoint>&);
 VoronoiPoint midpoint(VoronoiPoint, VoronoiPoint);
 bool edgeOnObstacle(VoronoiPoint, VoronoiPoint, const std::vector<std::vector<cv::Point>>&);
 bool findCollision(double, double, const std::vector<std::vector<cv::Point>>&); 
+int encoder(int, int);
+void decoder(int, int &, int &);
 
 void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew, VoronoiResults *voronoiPaths, std::vector<VoronoiPoint> *rightPath, int netRadius, const std::vector<std::vector<cv::Point>>& obsContours)
 {
@@ -29,7 +31,7 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 	int startSize=1000;
 	int endSize=1000;
 	int startLongId;
-	int endLongId;
+	int endLongId;2
 	int idPos;
 	std::vector<GraphEdge> start_connection, end_connection;
 	VoronoiPoint v1, v2, v3, v4, v5, v6, v7, v8;
@@ -41,10 +43,11 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 	
 	if(startNew)
 	{
-		if(start.b<1000)
+		/*if(start.b<1000)
 			startLongId=(start.a*1000)+start.b;
 		else
-			startLongId=(start.a*10000)+start.b;
+			startLongId=(start.a*10000)+start.b;*/
+		startLongId=encoder(start.a, start.b);	
 		voronoiPaths->ids.push_back(startLongId);
 		std::cout << "start id " <<  startLongId << std::endl;
 
@@ -75,10 +78,11 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 				x=netVertex[i].a;
 				y=netVertex[i].b;
 				std::cout << "netVertex " << x << "," << y << " " << netVertex.size() <<std::endl;
-				if(y<1000)
+				/*if(y<1000)
 					endLongId=(x*1000)+y;
 				else
-					endLongId=(x*10000)+y;
+					endLongId=(x*10000)+y;*/
+				endLongId=encoder(x,y);
 				voronoiPaths->ids.push_back(endLongId);
 				end_connection.clear();
 				connect(offset, netVertex[i], voronoiPaths, true, &end_connection, -1, obsContours);
@@ -101,10 +105,11 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 		}
 		else
 		{
-			if(end.b<1000)
+			/*if(end.b<1000)
 				endLongId=(end.a*1000)+end.b;
 			else
-				endLongId=(end.a*10000)+end.b;
+				endLongId=(end.a*10000)+end.b;*/
+			endLongId=encoder(end.a,end.b);
 			voronoiPaths->ids.push_back(endLongId);
 			std::cout << "end id " <<  endLongId << std::endl;
 			connect(offset, end, voronoiPaths, true, &end_connection, -1, obsContours);
@@ -180,19 +185,24 @@ void shortestPath(VoronoiPoint start, bool startNew, int idStart, VoronoiPoint e
 	{
 		//std::cout << voronoiPaths->resultEdges[i].idFirstNode << " ; " << voronoiPaths->resultEdges[i].idSecondNode << "  ("<< voronoiPaths->resultEdges[i].p0.a << "," << voronoiPaths->resultEdges[i].p0.b << ")" << "  ("<< voronoiPaths->resultEdges[i].p1.a << "," << voronoiPaths->resultEdges[i].p1.b << ")  => " << voronoiPaths->resultEdges[i].length << std::endl;
 			
+		//Save the coordinates of the first node (in edge A-B, take A)
 		x=voronoiPaths->resultEdges[i].p0.a;
 		y=voronoiPaths->resultEdges[i].p0.b;
 		std::cout << "(pathfinder) x = " << x << std::endl;
 		std::cout << "(pathfinder) y = " << y << std::endl;
-		if(y<1000)
+		//Encode coordinates x and y to an integer (xy one after the other)
+		/*if(y<1000)
 			//encodedCoord=(x*1000)+y;
 			encodedCoord=( (x!=0?x:1) *1000)+y;
 		else
 			//encodedCoord=(x*10000)+y;
-			encodedCoord=( (x!=0?x:1) *10000)+y;
+			encodedCoord=( (x!=0?x:1) *10000)+y;*/
+		encodedCoord=encoder(x,y);	
 		std::cout << "(pathfinder) encodedCoord = " << encodedCoord << std::endl;
+		//Save the coordinates in the array, each encoded coordinates in position using the id of the first node (edge A-B, take A id) 
 		mapPosition[voronoiPaths->resultEdges[i].idFirstNode]=encodedCoord;
 		//std::cout << "id " << voronoiPaths->resultEdges[i].idFirstNode << " coo " << encodedCoord << " coo2 " << mapPosition[voronoiPaths->resultEdges[i].idFirstNode] <<  std::endl; 
+		//Create the edge in the graph used by Dijkstra algorithm using for the edge A-B the id of A, the id of B and the lenght of the segment A-B
 		addEdge(graph, voronoiPaths->resultEdges[i].idFirstNode, voronoiPaths->resultEdges[i].idSecondNode, voronoiPaths->resultEdges[i].length); 
 		
 	}
@@ -200,7 +210,8 @@ void shortestPath(VoronoiPoint start, bool startNew, int idStart, VoronoiPoint e
 	
 	std::cout << "Dijkstra " << voronoiPaths->ids.size()+idStart << " " << voronoiPaths->ids.size()+idEnd << " - " << voronoiPaths->ids[voronoiPaths->ids.size()+idStart] << " " << voronoiPaths->ids[voronoiPaths->ids.size()+idEnd] << std::endl;
 
-	dijkstra(graph,voronoiPaths->ids.size()+idStart,voronoiPaths->ids.size()+idEnd,path); //modificare aggiunendo il voronoiPaths->ids.size()-1 ossia l'id del nodo destinazione e tracciarlo in modo da avere la lista degli id dei nodi da visitare per arrivare da start a end
+	//Call the Dijkstra algorithm using the graph generated before and the ids of the start and destination nodes
+	dijkstra(graph,voronoiPaths->ids.size()+idStart,voronoiPaths->ids.size()+idEnd,path); 
 	
 	std::cout << std::endl;
 	std::cout << std::endl;
@@ -224,12 +235,14 @@ void shortestPath(VoronoiPoint start, bool startNew, int idStart, VoronoiPoint e
 	for(int i=1;i<startEndPath.size()-1;i++)
 	{
 		std::cout << "(pathfider) mapPosition[voronoiPaths->resultEdges[startEndPath[i]].idFirstNode] : " << mapPosition[voronoiPaths->resultEdges[startEndPath[i]].idFirstNode] << std::endl;
-		if(mapPosition[voronoiPaths->resultEdges[startEndPath[i]].idFirstNode]<10000)
+		//if(mapPosition[voronoiPaths->resultEdges[startEndPath[i]].idFirstNode]<10000)
+		/*if(mapPosition[startEndPath[i]]<10000)
 			encoder=100;
 		else
 			encoder=1000;
 		x1 = mapPosition[startEndPath[i]]/encoder;
-		y1 = mapPosition[startEndPath[i]]-(x1*encoder); 
+		y1 = mapPosition[startEndPath[i]]-(x1*encoder); */
+		decoder(mapPosition[startEndPath[i]],x1,y1);
 		
 		VoronoiPoint vertex = VoronoiPoint(x1,y1);
 		rightPath->push_back(vertex);
@@ -239,6 +252,17 @@ void shortestPath(VoronoiPoint start, bool startNew, int idStart, VoronoiPoint e
 	if(endNew)
 		rightPath->push_back(end);
 	
+}
+
+int encoder(int x, int y)
+{
+	return (x*10000)+y;
+}
+
+void decoder(int encoded, int &x, int &y)    
+{
+	x=encoded/10000;
+	y=encoded-(x*10000);
 }
 
 
@@ -268,10 +292,12 @@ void connect(int offset, VoronoiPoint pointP, VoronoiResults *voronoiPaths, bool
 	b=pointP.b-offset;
 	o=offset*2;
 	
+	/*
 	if(pointP.b<1000)
 		pointLongId=(pointP.a*1000)+pointP.b;
 	else
-		pointLongId=(pointP.a*10000)+pointP.b;
+		pointLongId=(pointP.a*10000)+pointP.b;*/
+	pointLongId=encoder(pointP.a, pointP.b);
 	
 	pointId=voronoiPaths->ids.size()+IDpos; // what is the right number??? random greater than ids.size??
 	//startId=voronoiPaths->ids.size()-2; //penultimo
@@ -290,10 +316,12 @@ void connect(int offset, VoronoiPoint pointP, VoronoiResults *voronoiPaths, bool
 				std::cout << "connect points (" << x << "," << y << ") and (" << pointP.a << "," << pointP.b << ")" << std::endl;
 				if(!edgeOnObstacle(pointP,VoronoiPoint(x,y),obsContours))
 				{
+					/*
 					if(y<1000)
 						longId=(x*1000)+y;
 					else
-						longId=(x*10000)+y;
+						longId=(x*10000)+y;*/
+					longId=encoder(x,y);
 					std::cout << "longId " << longId << std::endl;
 					id1=-1;
 					for(int j=0;j<voronoiPaths->ids.size() && id1==-1;j++)
@@ -390,5 +418,3 @@ bool findCollision(double x, double y, const std::vector<std::vector<cv::Point>>
 	}
 	return r;
 }
-
-
