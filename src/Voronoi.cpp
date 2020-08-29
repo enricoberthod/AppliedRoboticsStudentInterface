@@ -29,6 +29,8 @@ bool isObstaclePoint(int, int, const std::vector<std::vector<cv::Point>>& contou
 void removeObstacles(std::vector<VoronoiPoint>, VoronoiResults*);
 void remove(std::vector<VoronoiPoint>, VoronoiResults*);
 int visited(std::vector<int>, int);
+int encoder(int, int);
+void decoder(int, int &, int &);
 
 //#include "voronoi_visual_utils.hpp"
 
@@ -146,10 +148,12 @@ int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::unordered_map
 						len=sqrt(pow((xa-xb),2)+pow((ya-yb),2));
 						if(xa!=prev_xa || ya!=prev_ya)
 						{
+						/*
 							if(ya<1000)
 								longId=(xa*1000)+ya;
 							else
-								longId=(xa*10000)+ya;
+								longId=(xa*10000)+ya;*/
+							longId=encoder(xa,ya);
 							id1=visited(visitedIds,longId);
 							if(id1==-1)
 							{
@@ -157,11 +161,12 @@ int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::unordered_map
 								id1=(visitedIds.size()-1);
 							}
 						}
-					
+						/*
 						if(yb<1000)
 							longId=(xb*1000)+yb;
 						else
-							longId=(xb*10000)+yb;
+							longId=(xb*10000)+yb;*/
+						longId=encoder(xb,yb);
 						id2=visited(visitedIds,longId);
 						if(id2==-1)
 						{
@@ -185,6 +190,7 @@ int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::unordered_map
 		} while (edge != vertex.incident_edge());
   	}
 	//if(!isObstaclePoint(xb,yb,*points_map))
+	//Add the last node to the result points array
 	if(!isObstaclePoint(xb,yb,contours))
 	{
 		if(xb>=0 && xb<=max_X && yb>=0 && yb<=max_Y)
@@ -259,6 +265,17 @@ bool isObstaclePoint(double x, double y, std::unordered_map<int,VoronoiPoint>poi
 }
 */
 
+int encoder(int x, int y)
+{
+	return (x*10000)+y;
+}
+
+void decoder(int encoded, int &x, int &y)    
+{
+	x=encoded/10000;
+	y=encoded-(x*10000);
+}
+
 bool isObstaclePoint(int x, int y, const std::vector<std::vector<cv::Point>>& contours) {
 	bool r = false;
 	double res;
@@ -274,4 +291,3 @@ bool isObstaclePoint(int x, int y, const std::vector<std::vector<cv::Point>>& co
 	}
 	return r;
 }
-
