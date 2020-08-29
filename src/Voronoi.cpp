@@ -29,8 +29,8 @@ bool isObstaclePoint(int, int, const std::vector<std::vector<cv::Point>>& contou
 void removeObstacles(std::vector<VoronoiPoint>, VoronoiResults*);
 void remove(std::vector<VoronoiPoint>, VoronoiResults*);
 int visited(std::vector<int>, int);
-int encoder(int, int);
-void decoder(int, int &, int &);
+//int encoder(int, int);
+//void decoder(int, int &, int &);
 
 //#include "voronoi_visual_utils.hpp"
 

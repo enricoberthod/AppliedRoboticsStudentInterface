@@ -2,8 +2,8 @@
 
 int i_gate;
 std::vector<std::vector<cv::Point>> contours;
-int encoder(int, int);
-void decoder(int, int &, int &);
+//int encoder(int, int);
+//void decoder(int, int &, int &);
 
 //using namespace std;
 
@@ -161,10 +161,13 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 				yb = (int)(solution[i][j].Y);
 			}
 			*/
+			/*
 			if(ya<floatToInt)
 				longId=(xa*floatToInt)+ya;
 			else
 				longId=(xa*floatToInt*10)+ya;
+			*/
+			longId = encoder(xa, ya);
 			p=VoronoiPoint(xa,ya);
 			obstaclesVertexes[longId]=p;
 			inputPoints.push_back(VoronoiPoint(xa,ya));
@@ -196,10 +199,13 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		}
 		*/
 		printf("obsvertx: %i,%i\n",xa,ya);
+		/*
 		if(ya<floatToInt)
 			longId=(xa*floatToInt)+ya;
 		else
 			longId=(xa*floatToInt*10)+ya;
+		*/
+		longId = encoder(xa, ya);
 		p=VoronoiPoint(xa,ya);
 		obstaclesVertexes[longId]=p;
 		xb=(int)(solution[i][0].X<0?0:solution[i][0].X);
@@ -725,6 +731,7 @@ bool collision_detection(double x, double y, const std::vector<std::vector<cv::P
 	return r;
 }
 
+/*
 int encoder(int x, int y)
 {
 	return (x*10000)+y;
@@ -735,3 +742,4 @@ void decoder(int encoded, int &x, int &y)
 	x=encoded/10000;
 	y=encoded-(x*10000);
 }
+*/

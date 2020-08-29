@@ -17,8 +17,8 @@ void sampleSegment(VoronoiPoint, VoronoiPoint, std::vector<VoronoiPoint>&);
 VoronoiPoint midpoint(VoronoiPoint, VoronoiPoint);
 bool edgeOnObstacle(VoronoiPoint, VoronoiPoint, const std::vector<std::vector<cv::Point>>&);
 bool findCollision(double, double, const std::vector<std::vector<cv::Point>>&); 
-int encoder(int, int);
-void decoder(int, int &, int &);
+//int encoder(int, int);
+//void decoder(int, int &, int &);
 
 void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew, VoronoiResults *voronoiPaths, std::vector<VoronoiPoint> *rightPath, int netRadius, const std::vector<std::vector<cv::Point>>& obsContours)
 {
@@ -254,6 +254,7 @@ void shortestPath(VoronoiPoint start, bool startNew, int idStart, VoronoiPoint e
 	
 }
 
+/*
 int encoder(int x, int y)
 {
 	return (x*10000)+y;
@@ -264,7 +265,7 @@ void decoder(int encoded, int &x, int &y)
 	x=encoded/10000;
 	y=encoded-(x*10000);
 }
-
+*/
 
 
 
