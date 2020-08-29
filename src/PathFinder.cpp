@@ -91,6 +91,7 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 				offset_2=offset;
 				while(endSize<=(nConnection+i))
 				{
+					std::cout << i << " qui 1" << std::endl;
 					offset_2=offset_2+step;
 					end_connection.clear();
 					connect(offset_2, netVertex[i], voronoiPaths, (endSize<=(nConnection+i)), &end_connection, -1, obsContours);
@@ -99,8 +100,10 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 						endSize=100;
 				}
 				std::cout << "end Size exit r>0" <<  end_connection.size() << std::endl;
-				for(int j=0;j<end_connection.size();j++)
-					voronoiPaths->resultEdges.push_back(end_connection[i]);
+				for(int j=0;j<end_connection.size();j++) {
+					std::cout << i << " qui 2" << std::endl;
+					voronoiPaths->resultEdges.push_back(end_connection[j]);
+				}
 			}
 			std::cout << "end id " <<  endLongId << "    size : " << voronoiPaths->ids.size() << std::endl;
 		}
@@ -177,7 +180,8 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 void shortestPath(VoronoiPoint start, bool startNew, int idStart, VoronoiPoint end, bool endNew, int idEnd, VoronoiResults *voronoiPaths, std::vector<VoronoiPoint> *rightPath)
 {
 	int V = voronoiPaths->ids.size(); 
-	std::cout << "V " << V << std::endl;
+	//std::cout << "V " << V << std::endl;
+	std::cout << "V " << V << "  start (" << start.a << ", " << start.b << ") " << idStart << " - end (" << end.a << ", " << end.b << ") " << idEnd << std::endl;
 	int k=0;
 	int idNode1,idNode2=0;
 	int path[V];
@@ -202,7 +206,7 @@ void shortestPath(VoronoiPoint start, bool startNew, int idStart, VoronoiPoint e
 			//encodedCoord=(x*10000)+y;
 			encodedCoord=( (x!=0?x:1) *10000)+y;*/
 		encodedCoord=encoder(x,y);	
-		std::cout << i << " (pathfinder) encodedCoord = " << encodedCoord << std::endl;
+		std::cout << voronoiPaths->resultEdges[i].idFirstNode << " (pathfinder) encodedCoord = " << encodedCoord << std::endl;
 		//Save the coordinates in the array, each encoded coordinates in position using the id of the first node (edge A-B, take A id) 
 		mapPosition[voronoiPaths->resultEdges[i].idFirstNode]=encodedCoord;
 		//std::cout << "id " << voronoiPaths->resultEdges[i].idFirstNode << " coo " << encodedCoord << " coo2 " << mapPosition[voronoiPaths->resultEdges[i].idFirstNode] <<  std::endl; 
@@ -216,7 +220,7 @@ void shortestPath(VoronoiPoint start, bool startNew, int idStart, VoronoiPoint e
 
 	//Call the Dijkstra algorithm using the graph generated before and the ids of the start and destination nodes
 	dijkstra(graph,voronoiPaths->ids.size()+idStart,voronoiPaths->ids.size()+idEnd,path); 
-	
+	std::cout << "Dijkstra " << voronoiPaths->ids.size()+idStart << " " << voronoiPaths->ids.size()+idEnd << " - " << voronoiPaths->ids[voronoiPaths->ids.size()+idStart] << " " << voronoiPaths->ids[voronoiPaths->ids.size()+idEnd] << std::endl;
 	std::cout << std::endl;
 	std::cout << std::endl;
 	std::cout << std::endl;
@@ -238,8 +242,10 @@ void shortestPath(VoronoiPoint start, bool startNew, int idStart, VoronoiPoint e
 	std::cout << std::endl;
 	//std::cout << "map " << mapPosition[111] << std::endl;
 	
-	if(startNew) 
+	if(startNew) {
+		std::cout << "startNew inside" << std::endl;	
 		rightPath->push_back(start);
+	}
 	std::cout << "node: " << startEndPath[0] << " " << mapPosition[startEndPath[0]] << std::endl;
 	int x1,y1;
 	for(int i=1;i<startEndPath.size()-1;i++)
@@ -259,10 +265,17 @@ void shortestPath(VoronoiPoint start, bool startNew, int idStart, VoronoiPoint e
 	
 		std::cout << "node: " << startEndPath[i] << " " << mapPosition[startEndPath[i]] << " x,y (" << x1 << "," << y1 << ")" << std::endl;
 	}
-	if(endNew)
+	if(endNew) {
+		std::cout << "endNew inside" << std::endl;
 		rightPath->push_back(end);
+	}
 	std::cout << "node: " << startEndPath[startEndPath.size()-1] << " " << mapPosition[startEndPath[startEndPath.size()-1]] << std::endl;
 	
+	std::cout << std::endl << "right path 2 ";
+	for(int j=0;j<rightPath->size();j++) {
+		std::cout << " " << rightPath->at(j).a << "," << rightPath->at(j).b << std::endl;
+	}
+
 }
 
 /*
@@ -334,12 +347,13 @@ void connect(int offset, VoronoiPoint pointP, VoronoiResults *voronoiPaths, bool
 					else
 						longId=(x*10000)+y;*/
 					longId=encoder(x,y);
-					std::cout << "longId " << longId << std::endl;
+					//std::cout << "longId " << longId << std::endl;
 					id1=-1;
 					for(int j=0;j<voronoiPaths->ids.size() && id1==-1;j++)
 						if(voronoiPaths->ids[j]==longId)
 							id1=j;
-					std::cout << "id1 " << id1 << std::endl;
+					//std::cout << "id1 " << id1 << std::endl;
+					std::cout << "id " << id1 << "  -  longId " << longId << "  -  pointLongId " << pointLongId << "  -  PointId " << pointId << std::endl;
 					GraphEdge e1(x,y,pointP.a,pointP.b,len,id1,pointId);
 					pointEdges->push_back(e1);
 					GraphEdge e2(pointP.a,pointP.b,x,y,len,pointId,id1);

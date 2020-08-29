@@ -203,1215 +203,1446 @@ start id 1540203    size : 101
 start Size ingress 0
 netVertex 1326,325 5
 end Size ingress r>0 0
+0 qui 1
+0 qui 1
+0 qui 1
+0 qui 1
+0 qui 1
+0 qui 1
 connect points (1380,395) and (1326,325)
-longId 13800395
-id1 90
+id 90  -  longId 13800395  -  pointLongId 13260325  -  PointId 101
+0 qui 1
 connect points (1380,395) and (1326,325)
-longId 13800395
-id1 90
+id 90  -  longId 13800395  -  pointLongId 13260325  -  PointId 101
+0 qui 1
 connect points (1380,395) and (1326,325)
-longId 13800395
-id1 90
+id 90  -  longId 13800395  -  pointLongId 13260325  -  PointId 101
+0 qui 1
 connect points (1380,395) and (1326,325)
-longId 13800395
-id1 90
+id 90  -  longId 13800395  -  pointLongId 13260325  -  PointId 101
+0 qui 1
 connect points (1380,395) and (1326,325)
-longId 13800395
-id1 90
+id 90  -  longId 13800395  -  pointLongId 13260325  -  PointId 101
+0 qui 1
 connect points (1380,395) and (1326,325)
-longId 13800395
-id1 90
+id 90  -  longId 13800395  -  pointLongId 13260325  -  PointId 101
+0 qui 1
 connect points (1234,193) and (1326,325)
-longId 12340193
-id1 87
+id 87  -  longId 12340193  -  pointLongId 13260325  -  PointId 101
 connect points (1380,395) and (1326,325)
-longId 13800395
-id1 90
+id 90  -  longId 13800395  -  pointLongId 13260325  -  PointId 101
+0 qui 1
 connect points (1234,193) and (1326,325)
-longId 12340193
-id1 87
+id 87  -  longId 12340193  -  pointLongId 13260325  -  PointId 101
 connect points (1380,395) and (1326,325)
-longId 13800395
-id1 90
+id 90  -  longId 13800395  -  pointLongId 13260325  -  PointId 101
+0 qui 1
 connect points (1234,193) and (1326,325)
-longId 12340193
-id1 87
+id 87  -  longId 12340193  -  pointLongId 13260325  -  PointId 101
 connect points (1380,395) and (1326,325)
-longId 13800395
-id1 90
+id 90  -  longId 13800395  -  pointLongId 13260325  -  PointId 101
+0 qui 1
 connect points (1234,193) and (1326,325)
-longId 12340193
-id1 87
+id 87  -  longId 12340193  -  pointLongId 13260325  -  PointId 101
 connect points (1380,395) and (1326,325)
-longId 13800395
-id1 90
+id 90  -  longId 13800395  -  pointLongId 13260325  -  PointId 101
+0 qui 1
 connect points (1234,193) and (1326,325)
-longId 12340193
-id1 87
+id 87  -  longId 12340193  -  pointLongId 13260325  -  PointId 101
 connect points (1380,395) and (1326,325)
-longId 13800395
-id1 90
+id 90  -  longId 13800395  -  pointLongId 13260325  -  PointId 101
+0 qui 1
 connect points (1181,140) and (1326,325)
-longId 11810140
-id1 86
+id 86  -  longId 11810140  -  pointLongId 13260325  -  PointId 101
 connect points (1234,193) and (1326,325)
-longId 12340193
-id1 87
+id 87  -  longId 12340193  -  pointLongId 13260325  -  PointId 101
 connect points (1380,395) and (1326,325)
-longId 13800395
-id1 90
+id 90  -  longId 13800395  -  pointLongId 13260325  -  PointId 101
+0 qui 1
 connect points (1181,140) and (1326,325)
-longId 11810140
-id1 86
+id 86  -  longId 11810140  -  pointLongId 13260325  -  PointId 101
 connect points (1234,193) and (1326,325)
-longId 12340193
-id1 87
+id 87  -  longId 12340193  -  pointLongId 13260325  -  PointId 101
 connect points (1380,395) and (1326,325)
-longId 13800395
-id1 90
+id 90  -  longId 13800395  -  pointLongId 13260325  -  PointId 101
+0 qui 1
 connect points (1181,140) and (1326,325)
-longId 11810140
-id1 86
+id 86  -  longId 11810140  -  pointLongId 13260325  -  PointId 101
 connect points (1234,193) and (1326,325)
-longId 12340193
-id1 87
+id 87  -  longId 12340193  -  pointLongId 13260325  -  PointId 101
 connect points (1380,395) and (1326,325)
-longId 13800395
-id1 90
+id 90  -  longId 13800395  -  pointLongId 13260325  -  PointId 101
 connect points (1508,530) and (1326,325)
-longId 15080530
-id1 98
+id 98  -  longId 15080530  -  pointLongId 13260325  -  PointId 101
 end Size exit r>08
+0 qui 2
+0 qui 2
+0 qui 2
+0 qui 2
+0 qui 2
+0 qui 2
+0 qui 2
+0 qui 2
 netVertex 1326,305 5
 end Size ingress r>0 0
+1 qui 1
+connect points (1326,325) and (1326,305)
+id 101  -  longId 13260325  -  pointLongId 13260305  -  PointId 102
+1 qui 1
+connect points (1326,325) and (1326,305)
+id 101  -  longId 13260325  -  pointLongId 13260305  -  PointId 102
+1 qui 1
+connect points (1326,325) and (1326,305)
+id 101  -  longId 13260325  -  pointLongId 13260305  -  PointId 102
+1 qui 1
+connect points (1326,325) and (1326,305)
+id 101  -  longId 13260325  -  pointLongId 13260305  -  PointId 102
+1 qui 1
+connect points (1326,325) and (1326,305)
+id 101  -  longId 13260325  -  pointLongId 13260305  -  PointId 102
+1 qui 1
+connect points (1326,325) and (1326,305)
+id 101  -  longId 13260325  -  pointLongId 13260305  -  PointId 102
+1 qui 1
+connect points (1326,325) and (1326,305)
+id 101  -  longId 13260325  -  pointLongId 13260305  -  PointId 102
+1 qui 1
 connect points (1380,395) and (1326,305)
-longId 13800395
-id1 90
+id 90  -  longId 13800395  -  pointLongId 13260305  -  PointId 102
+connect points (1326,325) and (1326,305)
+id 101  -  longId 13260325  -  pointLongId 13260305  -  PointId 102
 connect points (1380,395) and (1326,305)
-longId 13800395
-id1 90
+id 90  -  longId 13800395  -  pointLongId 13260305  -  PointId 102
+connect points (1326,325) and (1326,305)
+id 101  -  longId 13260325  -  pointLongId 13260305  -  PointId 102
+1 qui 1
+connect points (1380,395) and (1326,305)
+id 90  -  longId 13800395  -  pointLongId 13260305  -  PointId 102
+connect points (1326,325) and (1326,305)
+id 101  -  longId 13260325  -  pointLongId 13260305  -  PointId 102
+connect points (1380,395) and (1326,305)
+id 90  -  longId 13800395  -  pointLongId 13260305  -  PointId 102
+connect points (1326,325) and (1326,305)
+id 101  -  longId 13260325  -  pointLongId 13260305  -  PointId 102
+1 qui 1
 connect points (1234,193) and (1326,305)
-longId 12340193
-id1 87
+id 87  -  longId 12340193  -  pointLongId 13260305  -  PointId 102
 connect points (1380,395) and (1326,305)
-longId 13800395
-id1 90
+id 90  -  longId 13800395  -  pointLongId 13260305  -  PointId 102
+connect points (1326,325) and (1326,305)
+id 101  -  longId 13260325  -  pointLongId 13260305  -  PointId 102
 connect points (1234,193) and (1326,305)
-longId 12340193
-id1 87
+id 87  -  longId 12340193  -  pointLongId 13260305  -  PointId 102
+connect points (1326,325) and (1326,305)
+id 101  -  longId 13260325  -  pointLongId 13260305  -  PointId 102
 connect points (1380,395) and (1326,305)
-longId 13800395
-id1 90
-connect points (1234,193) and (1326,305)
-longId 12340193
-id1 87
-connect points (1380,395) and (1326,305)
-longId 13800395
-id1 90
-connect points (1234,193) and (1326,305)
-longId 12340193
-id1 87
-connect points (1380,395) and (1326,305)
-longId 13800395
-id1 90
-connect points (1234,193) and (1326,305)
-longId 12340193
-id1 87
-connect points (1380,395) and (1326,305)
-longId 13800395
-id1 90
-connect points (1181,140) and (1326,305)
-longId 11810140
-id1 86
-connect points (1234,193) and (1326,305)
-longId 12340193
-id1 87
-connect points (1380,395) and (1326,305)
-longId 13800395
-id1 90
-connect points (1181,140) and (1326,305)
-longId 11810140
-id1 86
-connect points (1181,140) and (1326,305)
-longId 11810140
-id1 86
-connect points (1234,193) and (1326,305)
-longId 12340193
-id1 87
-connect points (1380,395) and (1326,305)
-longId 13800395
-id1 90
-connect points (1181,140) and (1326,305)
-longId 11810140
-id1 86
-connect points (1181,140) and (1326,305)
-longId 11810140
-id1 86
-connect points (1234,193) and (1326,305)
-longId 12340193
-id1 87
-connect points (1380,395) and (1326,305)
-longId 13800395
-id1 90
-connect points (1181,140) and (1326,305)
-longId 11810140
-id1 86
-connect points (1181,140) and (1326,305)
-longId 11810140
-id1 86
-connect points (1234,193) and (1326,305)
-longId 12340193
-id1 87
-connect points (1380,395) and (1326,305)
-longId 13800395
-id1 90
-connect points (1181,140) and (1326,305)
-longId 11810140
-id1 86
-connect points (1181,140) and (1326,305)
-longId 11810140
-id1 86
-connect points (1234,193) and (1326,305)
-longId 12340193
-id1 87
-connect points (1380,395) and (1326,305)
-longId 13800395
-id1 90
-connect points (1181,140) and (1326,305)
-longId 11810140
-id1 86
-end Size exit r>08
-netVertex 1336,315 5
-connect points (1326,305) and (1336,315)
-longId 13260305
-id1 102
-end Size ingress r>0 2
-connect points (1326,305) and (1336,315)
-longId 13260305
-id1 102
-connect points (1326,305) and (1336,315)
-longId 13260305
-id1 102
-connect points (1326,305) and (1336,315)
-longId 13260305
-id1 102
-connect points (1326,305) and (1336,315)
-longId 13260305
-id1 102
-connect points (1326,305) and (1336,315)
-longId 13260305
-id1 102
-connect points (1326,305) and (1336,315)
-longId 13260305
-id1 102
-connect points (1380,395) and (1336,315)
-longId 13800395
-id1 90
-connect points (1326,305) and (1336,315)
-longId 13260305
-id1 102
-connect points (1380,395) and (1336,315)
-longId 13800395
-id1 90
-connect points (1326,305) and (1336,315)
-longId 13260305
-id1 102
-connect points (1380,395) and (1336,315)
-longId 13800395
-id1 90
-connect points (1326,305) and (1336,315)
-longId 13260305
-id1 102
-connect points (1380,395) and (1336,315)
-longId 13800395
-id1 90
-connect points (1326,305) and (1336,315)
-longId 13260305
-id1 102
-connect points (1234,193) and (1336,315)
-longId 12340193
-id1 87
-connect points (1380,395) and (1336,315)
-longId 13800395
-id1 90
-connect points (1326,305) and (1336,315)
-longId 13260305
-id1 102
-connect points (1234,193) and (1336,315)
-longId 12340193
-id1 87
-connect points (1380,395) and (1336,315)
-longId 13800395
-id1 90
-connect points (1326,305) and (1336,315)
-longId 13260305
-id1 102
-connect points (1234,193) and (1336,315)
-longId 12340193
-id1 87
-connect points (1380,395) and (1336,315)
-longId 13800395
-id1 90
-connect points (1326,305) and (1336,315)
-longId 13260305
-id1 102
-connect points (1234,193) and (1336,315)
-longId 12340193
-id1 87
-connect points (1380,395) and (1336,315)
-longId 13800395
-id1 90
-connect points (1326,305) and (1336,315)
-longId 13260305
-id1 102
-connect points (1234,193) and (1336,315)
-longId 12340193
-id1 87
-connect points (1380,395) and (1336,315)
-longId 13800395
-id1 90
-connect points (1326,305) and (1336,315)
-longId 13260305
-id1 102
-connect points (1181,140) and (1336,315)
-longId 11810140
-id1 86
-connect points (1234,193) and (1336,315)
-longId 12340193
-id1 87
-connect points (1380,395) and (1336,315)
-longId 13800395
-id1 90
-connect points (1181,140) and (1336,315)
-longId 11810140
-id1 86
-connect points (1326,305) and (1336,315)
-longId 13260305
-id1 102
-connect points (1181,140) and (1336,315)
-longId 11810140
-id1 86
-connect points (1234,193) and (1336,315)
-longId 12340193
-id1 87
-connect points (1380,395) and (1336,315)
-longId 13800395
-id1 90
-connect points (1181,140) and (1336,315)
-longId 11810140
-id1 86
-connect points (1326,305) and (1336,315)
-longId 13260305
-id1 102
-connect points (1181,140) and (1336,315)
-longId 11810140
-id1 86
-connect points (1234,193) and (1336,315)
-longId 12340193
-id1 87
-connect points (1380,395) and (1336,315)
-longId 13800395
-id1 90
-connect points (1181,140) and (1336,315)
-longId 11810140
-id1 86
-connect points (1326,305) and (1336,315)
-longId 13260305
-id1 102
-connect points (1181,140) and (1336,315)
-longId 11810140
-id1 86
-connect points (1234,193) and (1336,315)
-longId 12340193
-id1 87
-connect points (1380,395) and (1336,315)
-longId 13800395
-id1 90
-connect points (1181,140) and (1336,315)
-longId 11810140
-id1 86
-connect points (1326,305) and (1336,315)
-longId 13260305
-id1 102
-end Size exit r>010
-netVertex 1316,315 5
-connect points (1326,305) and (1316,315)
-longId 13260305
-id1 102
-end Size ingress r>0 2
-connect points (1326,305) and (1316,315)
-longId 13260305
-id1 102
-connect points (1326,305) and (1316,315)
-longId 13260305
-id1 102
-connect points (1326,305) and (1316,315)
-longId 13260305
-id1 102
-connect points (1326,305) and (1316,315)
-longId 13260305
-id1 102
-connect points (1326,305) and (1316,315)
-longId 13260305
-id1 102
-connect points (1326,305) and (1316,315)
-longId 13260305
-id1 102
-connect points (1380,395) and (1316,315)
-longId 13800395
-id1 90
-connect points (1326,305) and (1316,315)
-longId 13260305
-id1 102
-connect points (1380,395) and (1316,315)
-longId 13800395
-id1 90
-connect points (1326,305) and (1316,315)
-longId 13260305
-id1 102
-connect points (1380,395) and (1316,315)
-longId 13800395
-id1 90
-connect points (1326,305) and (1316,315)
-longId 13260305
-id1 102
-connect points (1380,395) and (1316,315)
-longId 13800395
-id1 90
-connect points (1326,305) and (1316,315)
-longId 13260305
-id1 102
-connect points (1234,193) and (1316,315)
-longId 12340193
-id1 87
-connect points (1380,395) and (1316,315)
-longId 13800395
-id1 90
-connect points (1326,305) and (1316,315)
-longId 13260305
-id1 102
-connect points (1234,193) and (1316,315)
-longId 12340193
-id1 87
-connect points (1234,193) and (1316,315)
-longId 12340193
-id1 87
-connect points (1380,395) and (1316,315)
-longId 13800395
-id1 90
-connect points (1326,305) and (1316,315)
-longId 13260305
-id1 102
-connect points (1234,193) and (1316,315)
-longId 12340193
-id1 87
-connect points (1234,193) and (1316,315)
-longId 12340193
-id1 87
-connect points (1380,395) and (1316,315)
-longId 13800395
-id1 90
-connect points (1326,305) and (1316,315)
-longId 13260305
-id1 102
-connect points (1234,193) and (1316,315)
-longId 12340193
-id1 87
-connect points (1234,193) and (1316,315)
-longId 12340193
-id1 87
-connect points (1380,395) and (1316,315)
-longId 13800395
-id1 90
-connect points (1326,305) and (1316,315)
-longId 13260305
-id1 102
-connect points (1234,193) and (1316,315)
-longId 12340193
-id1 87
-connect points (1234,193) and (1316,315)
-longId 12340193
-id1 87
-connect points (1380,395) and (1316,315)
-longId 13800395
-id1 90
-connect points (1326,305) and (1316,315)
-longId 13260305
-id1 102
-connect points (1234,193) and (1316,315)
-longId 12340193
-id1 87
-connect points (1181,140) and (1316,315)
-longId 11810140
-id1 86
-connect points (1234,193) and (1316,315)
-longId 12340193
-id1 87
-connect points (1380,395) and (1316,315)
-longId 13800395
-id1 90
-connect points (1181,140) and (1316,315)
-longId 11810140
-id1 86
-connect points (1326,305) and (1316,315)
-longId 13260305
-id1 102
-connect points (1234,193) and (1316,315)
-longId 12340193
-id1 87
-end Size exit r>012
-netVertex 1326,315 5
-connect points (1326,305) and (1326,315)
-longId 13260305
-id1 102
-connect points (1316,315) and (1326,315)
-longId 13160315
-id1 104
-end Size ingress r>0 4
-connect points (1326,305) and (1326,315)
-longId 13260305
-id1 102
-connect points (1316,315) and (1326,315)
-longId 13160315
-id1 104
-connect points (1326,305) and (1326,315)
-longId 13260305
-id1 102
-connect points (1316,315) and (1326,315)
-longId 13160315
-id1 104
-connect points (1326,305) and (1326,315)
-longId 13260305
-id1 102
-connect points (1316,315) and (1326,315)
-longId 13160315
-id1 104
-connect points (1326,305) and (1326,315)
-longId 13260305
-id1 102
-connect points (1316,315) and (1326,315)
-longId 13160315
-id1 104
-connect points (1326,305) and (1326,315)
-longId 13260305
-id1 102
-connect points (1316,315) and (1326,315)
-longId 13160315
-id1 104
-connect points (1326,305) and (1326,315)
-longId 13260305
-id1 102
-connect points (1316,315) and (1326,315)
-longId 13160315
-id1 104
-connect points (1380,395) and (1326,315)
-longId 13800395
-id1 90
-connect points (1326,305) and (1326,315)
-longId 13260305
-id1 102
-connect points (1316,315) and (1326,315)
-longId 13160315
-id1 104
-connect points (1380,395) and (1326,315)
-longId 13800395
-id1 90
-connect points (1326,305) and (1326,315)
-longId 13260305
-id1 102
-connect points (1316,315) and (1326,315)
-longId 13160315
-id1 104
-connect points (1380,395) and (1326,315)
-longId 13800395
-id1 90
-connect points (1326,305) and (1326,315)
-longId 13260305
-id1 102
-connect points (1316,315) and (1326,315)
-longId 13160315
-id1 104
-connect points (1380,395) and (1326,315)
-longId 13800395
-id1 90
-connect points (1326,305) and (1326,315)
-longId 13260305
-id1 102
-connect points (1316,315) and (1326,315)
-longId 13160315
-id1 104
-connect points (1234,193) and (1326,315)
-longId 12340193
-id1 87
-connect points (1380,395) and (1326,315)
-longId 13800395
-id1 90
-connect points (1326,305) and (1326,315)
-longId 13260305
-id1 102
-connect points (1234,193) and (1326,315)
-longId 12340193
-id1 87
-connect points (1316,315) and (1326,315)
-longId 13160315
-id1 104
-connect points (1234,193) and (1326,315)
-longId 12340193
-id1 87
-connect points (1380,395) and (1326,315)
-longId 13800395
-id1 90
-connect points (1326,305) and (1326,315)
-longId 13260305
-id1 102
-connect points (1234,193) and (1326,315)
-longId 12340193
-id1 87
-connect points (1316,315) and (1326,315)
-longId 13160315
-id1 104
-connect points (1234,193) and (1326,315)
-longId 12340193
-id1 87
-connect points (1380,395) and (1326,315)
-longId 13800395
-id1 90
-connect points (1326,305) and (1326,315)
-longId 13260305
-id1 102
-connect points (1234,193) and (1326,315)
-longId 12340193
-id1 87
-connect points (1316,315) and (1326,315)
-longId 13160315
-id1 104
-connect points (1234,193) and (1326,315)
-longId 12340193
-id1 87
-connect points (1380,395) and (1326,315)
-longId 13800395
-id1 90
-connect points (1326,305) and (1326,315)
-longId 13260305
-id1 102
-connect points (1234,193) and (1326,315)
-longId 12340193
-id1 87
-connect points (1316,315) and (1326,315)
-longId 13160315
-id1 104
-connect points (1234,193) and (1326,315)
-longId 12340193
-id1 87
-connect points (1380,395) and (1326,315)
-longId 13800395
-id1 90
-connect points (1326,305) and (1326,315)
-longId 13260305
-id1 102
-connect points (1234,193) and (1326,315)
-longId 12340193
-id1 87
-connect points (1316,315) and (1326,315)
-longId 13160315
-id1 104
-connect points (1181,140) and (1326,315)
-longId 11810140
-id1 86
-connect points (1234,193) and (1326,315)
-longId 12340193
-id1 87
-connect points (1380,395) and (1326,315)
-longId 13800395
-id1 90
-connect points (1181,140) and (1326,315)
-longId 11810140
-id1 86
-connect points (1326,305) and (1326,315)
-longId 13260305
-id1 102
-connect points (1234,193) and (1326,315)
-longId 12340193
-id1 87
-connect points (1316,315) and (1326,315)
-longId 13160315
-id1 104
+id 90  -  longId 13800395  -  pointLongId 13260305  -  PointId 102
+connect points (1326,325) and (1326,305)
+id 101  -  longId 13260325  -  pointLongId 13260305  -  PointId 102
 end Size exit r>014
+1 qui 2
+1 qui 2
+1 qui 2
+1 qui 2
+1 qui 2
+1 qui 2
+1 qui 2
+1 qui 2
+1 qui 2
+1 qui 2
+1 qui 2
+1 qui 2
+1 qui 2
+1 qui 2
+netVertex 1336,315 5
+connect points (1326,325) and (1336,315)
+id 101  -  longId 13260325  -  pointLongId 13360315  -  PointId 103
+connect points (1326,305) and (1336,315)
+id 102  -  longId 13260305  -  pointLongId 13360315  -  PointId 103
+connect points (1326,325) and (1336,315)
+id 101  -  longId 13260325  -  pointLongId 13360315  -  PointId 103
+connect points (1326,305) and (1336,315)
+id 102  -  longId 13260305  -  pointLongId 13360315  -  PointId 103
+connect points (1326,325) and (1336,315)
+id 101  -  longId 13260325  -  pointLongId 13360315  -  PointId 103
+connect points (1326,305) and (1336,315)
+id 102  -  longId 13260305  -  pointLongId 13360315  -  PointId 103
+connect points (1326,325) and (1336,315)
+id 101  -  longId 13260325  -  pointLongId 13360315  -  PointId 103
+connect points (1326,305) and (1336,315)
+id 102  -  longId 13260305  -  pointLongId 13360315  -  PointId 103
+end Size ingress r>0 16
+end Size exit r>016
+2 qui 2
+2 qui 2
+2 qui 2
+2 qui 2
+2 qui 2
+2 qui 2
+2 qui 2
+2 qui 2
+2 qui 2
+2 qui 2
+2 qui 2
+2 qui 2
+2 qui 2
+2 qui 2
+2 qui 2
+2 qui 2
+netVertex 1316,315 5
+connect points (1326,325) and (1316,315)
+id 101  -  longId 13260325  -  pointLongId 13160315  -  PointId 104
+connect points (1326,305) and (1316,315)
+id 102  -  longId 13260305  -  pointLongId 13160315  -  PointId 104
+connect points (1326,325) and (1316,315)
+id 101  -  longId 13260325  -  pointLongId 13160315  -  PointId 104
+connect points (1326,305) and (1316,315)
+id 102  -  longId 13260305  -  pointLongId 13160315  -  PointId 104
+connect points (1326,325) and (1316,315)
+id 101  -  longId 13260325  -  pointLongId 13160315  -  PointId 104
+connect points (1326,305) and (1316,315)
+id 102  -  longId 13260305  -  pointLongId 13160315  -  PointId 104
+connect points (1326,325) and (1316,315)
+id 101  -  longId 13260325  -  pointLongId 13160315  -  PointId 104
+connect points (1326,305) and (1316,315)
+id 102  -  longId 13260305  -  pointLongId 13160315  -  PointId 104
+connect points (1326,325) and (1316,315)
+id 101  -  longId 13260325  -  pointLongId 13160315  -  PointId 104
+connect points (1326,305) and (1316,315)
+id 102  -  longId 13260305  -  pointLongId 13160315  -  PointId 104
+connect points (1326,325) and (1316,315)
+id 101  -  longId 13260325  -  pointLongId 13160315  -  PointId 104
+connect points (1326,305) and (1316,315)
+id 102  -  longId 13260305  -  pointLongId 13160315  -  PointId 104
+connect points (1326,325) and (1316,315)
+id 101  -  longId 13260325  -  pointLongId 13160315  -  PointId 104
+connect points (1326,305) and (1316,315)
+id 102  -  longId 13260305  -  pointLongId 13160315  -  PointId 104
+connect points (1326,325) and (1316,315)
+id 101  -  longId 13260325  -  pointLongId 13160315  -  PointId 104
+connect points (1326,305) and (1316,315)
+id 102  -  longId 13260305  -  pointLongId 13160315  -  PointId 104
+end Size ingress r>0 32
+end Size exit r>032
+3 qui 2
+3 qui 2
+3 qui 2
+3 qui 2
+3 qui 2
+3 qui 2
+3 qui 2
+3 qui 2
+3 qui 2
+3 qui 2
+3 qui 2
+3 qui 2
+3 qui 2
+3 qui 2
+3 qui 2
+3 qui 2
+3 qui 2
+3 qui 2
+3 qui 2
+3 qui 2
+3 qui 2
+3 qui 2
+3 qui 2
+3 qui 2
+3 qui 2
+3 qui 2
+3 qui 2
+3 qui 2
+3 qui 2
+3 qui 2
+3 qui 2
+3 qui 2
+netVertex 1326,315 5
+connect points (1326,325) and (1326,315)
+id 101  -  longId 13260325  -  pointLongId 13260315  -  PointId 105
+connect points (1326,305) and (1326,315)
+id 102  -  longId 13260305  -  pointLongId 13260315  -  PointId 105
+connect points (1326,325) and (1326,315)
+id 101  -  longId 13260325  -  pointLongId 13260315  -  PointId 105
+connect points (1326,305) and (1326,315)
+id 102  -  longId 13260305  -  pointLongId 13260315  -  PointId 105
+connect points (1326,325) and (1326,315)
+id 101  -  longId 13260325  -  pointLongId 13260315  -  PointId 105
+connect points (1326,305) and (1326,315)
+id 102  -  longId 13260305  -  pointLongId 13260315  -  PointId 105
+connect points (1326,325) and (1326,315)
+id 101  -  longId 13260325  -  pointLongId 13260315  -  PointId 105
+connect points (1326,305) and (1326,315)
+id 102  -  longId 13260305  -  pointLongId 13260315  -  PointId 105
+connect points (1326,325) and (1326,315)
+id 101  -  longId 13260325  -  pointLongId 13260315  -  PointId 105
+connect points (1336,315) and (1326,315)
+id 103  -  longId 13360315  -  pointLongId 13260315  -  PointId 105
+connect points (1326,305) and (1326,315)
+id 102  -  longId 13260305  -  pointLongId 13260315  -  PointId 105
+connect points (1336,315) and (1326,315)
+id 103  -  longId 13360315  -  pointLongId 13260315  -  PointId 105
+connect points (1326,325) and (1326,315)
+id 101  -  longId 13260325  -  pointLongId 13260315  -  PointId 105
+connect points (1336,315) and (1326,315)
+id 103  -  longId 13360315  -  pointLongId 13260315  -  PointId 105
+connect points (1326,305) and (1326,315)
+id 102  -  longId 13260305  -  pointLongId 13260315  -  PointId 105
+connect points (1336,315) and (1326,315)
+id 103  -  longId 13360315  -  pointLongId 13260315  -  PointId 105
+connect points (1326,325) and (1326,315)
+id 101  -  longId 13260325  -  pointLongId 13260315  -  PointId 105
+connect points (1336,315) and (1326,315)
+id 103  -  longId 13360315  -  pointLongId 13260315  -  PointId 105
+connect points (1326,305) and (1326,315)
+id 102  -  longId 13260305  -  pointLongId 13260315  -  PointId 105
+connect points (1336,315) and (1326,315)
+id 103  -  longId 13360315  -  pointLongId 13260315  -  PointId 105
+connect points (1326,325) and (1326,315)
+id 101  -  longId 13260325  -  pointLongId 13260315  -  PointId 105
+connect points (1336,315) and (1326,315)
+id 103  -  longId 13360315  -  pointLongId 13260315  -  PointId 105
+connect points (1326,305) and (1326,315)
+id 102  -  longId 13260305  -  pointLongId 13260315  -  PointId 105
+connect points (1336,315) and (1326,315)
+id 103  -  longId 13360315  -  pointLongId 13260315  -  PointId 105
+connect points (1326,325) and (1326,315)
+id 101  -  longId 13260325  -  pointLongId 13260315  -  PointId 105
+connect points (1316,315) and (1326,315)
+id 104  -  longId 13160315  -  pointLongId 13260315  -  PointId 105
+connect points (1326,305) and (1326,315)
+id 102  -  longId 13260305  -  pointLongId 13260315  -  PointId 105
+connect points (1316,315) and (1326,315)
+id 104  -  longId 13160315  -  pointLongId 13260315  -  PointId 105
+connect points (1326,325) and (1326,315)
+id 101  -  longId 13260325  -  pointLongId 13260315  -  PointId 105
+connect points (1316,315) and (1326,315)
+id 104  -  longId 13160315  -  pointLongId 13260315  -  PointId 105
+connect points (1326,305) and (1326,315)
+id 102  -  longId 13260305  -  pointLongId 13260315  -  PointId 105
+connect points (1316,315) and (1326,315)
+id 104  -  longId 13160315  -  pointLongId 13260315  -  PointId 105
+connect points (1326,325) and (1326,315)
+id 101  -  longId 13260325  -  pointLongId 13260315  -  PointId 105
+connect points (1316,315) and (1326,315)
+id 104  -  longId 13160315  -  pointLongId 13260315  -  PointId 105
+connect points (1326,305) and (1326,315)
+id 102  -  longId 13260305  -  pointLongId 13260315  -  PointId 105
+connect points (1316,315) and (1326,315)
+id 104  -  longId 13160315  -  pointLongId 13260315  -  PointId 105
+connect points (1326,325) and (1326,315)
+id 101  -  longId 13260325  -  pointLongId 13260315  -  PointId 105
+connect points (1316,315) and (1326,315)
+id 104  -  longId 13160315  -  pointLongId 13260315  -  PointId 105
+connect points (1326,305) and (1326,315)
+id 102  -  longId 13260305  -  pointLongId 13260315  -  PointId 105
+connect points (1316,315) and (1326,315)
+id 104  -  longId 13160315  -  pointLongId 13260315  -  PointId 105
+connect points (1326,325) and (1326,315)
+id 101  -  longId 13260325  -  pointLongId 13260315  -  PointId 105
+connect points (1316,315) and (1326,315)
+id 104  -  longId 13160315  -  pointLongId 13260315  -  PointId 105
+connect points (1326,305) and (1326,315)
+id 102  -  longId 13260305  -  pointLongId 13260315  -  PointId 105
+connect points (1316,315) and (1326,315)
+id 104  -  longId 13160315  -  pointLongId 13260315  -  PointId 105
+connect points (1326,325) and (1326,315)
+id 101  -  longId 13260325  -  pointLongId 13260315  -  PointId 105
+connect points (1316,315) and (1326,315)
+id 104  -  longId 13160315  -  pointLongId 13260315  -  PointId 105
+connect points (1326,305) and (1326,315)
+id 102  -  longId 13260305  -  pointLongId 13260315  -  PointId 105
+connect points (1316,315) and (1326,315)
+id 104  -  longId 13160315  -  pointLongId 13260315  -  PointId 105
+connect points (1326,325) and (1326,315)
+id 101  -  longId 13260325  -  pointLongId 13260315  -  PointId 105
+connect points (1316,315) and (1326,315)
+id 104  -  longId 13160315  -  pointLongId 13260315  -  PointId 105
+connect points (1326,305) and (1326,315)
+id 102  -  longId 13260305  -  pointLongId 13260315  -  PointId 105
+connect points (1316,315) and (1326,315)
+id 104  -  longId 13160315  -  pointLongId 13260315  -  PointId 105
+connect points (1326,325) and (1326,315)
+id 101  -  longId 13260325  -  pointLongId 13260315  -  PointId 105
+connect points (1316,315) and (1326,315)
+id 104  -  longId 13160315  -  pointLongId 13260315  -  PointId 105
+connect points (1326,305) and (1326,315)
+id 102  -  longId 13260305  -  pointLongId 13260315  -  PointId 105
+connect points (1316,315) and (1326,315)
+id 104  -  longId 13160315  -  pointLongId 13260315  -  PointId 105
+end Size ingress r>0 112
+end Size exit r>0112
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
+4 qui 2
 end id 13260315    size : 106
 Step 20
-Step 30size: 0 14
-Step 40size: 0 14
-Step 50size: 0 14
-Step 60size: 0 14
-Step 70size: 0 14
-Step 80size: 0 14
-Step 90size: 0 14
-Step 100size: 0 14
-Step 110size: 0 14
-Step 120size: 0 14
-Step 130size: 0 14
-Step 140size: 0 14
-Step 150size: 0 14
-Step 160size: 0 14
-Step 170size: 0 14
+Step 30size: 0 112
+Step 40size: 0 112
+Step 50size: 0 112
+Step 60size: 0 112
+Step 70size: 0 112
+Step 80size: 0 112
+Step 90size: 0 112
+Step 100size: 0 112
+Step 110size: 0 112
+Step 120size: 0 112
+Step 130size: 0 112
+Step 140size: 0 112
+Step 150size: 0 112
+Step 160size: 0 112
+Step 170size: 0 112
 connect points (318,318) and (154,203)
-longId 3180318
-id1 1
-Step 180size: 2 14
+id 1  -  longId 3180318  -  pointLongId 1540203  -  PointId 100
+Step 180size: 2 112
 connect points (318,318) and (154,203)
-longId 3180318
-id1 1
-Step 190size: 2 14
+id 1  -  longId 3180318  -  pointLongId 1540203  -  PointId 100
+Step 190size: 2 112
 connect points (318,318) and (154,203)
-longId 3180318
-id1 1
-Step 200size: 2 14
+id 1  -  longId 3180318  -  pointLongId 1540203  -  PointId 100
+Step 200size: 2 112
 connect points (318,318) and (154,203)
-longId 3180318
-id1 1
-Step 210size: 2 14
+id 1  -  longId 3180318  -  pointLongId 1540203  -  PointId 100
+Step 210size: 2 112
 connect points (0,0) and (154,203)
-longId 0
-id1 0
+id 0  -  longId 0  -  pointLongId 1540203  -  PointId 100
 connect points (318,318) and (154,203)
-longId 3180318
-id1 1
+id 1  -  longId 3180318  -  pointLongId 1540203  -  PointId 100
 start Size exit4
-V 106
+V 106  start (154, 203) -6 - end (1326, 315) -1
 (pathfinder) x = 0
 (pathfinder) y = 0
-(pathfinder) encodedCoord = 0
+0 (pathfinder) encodedCoord = 0
 (pathfinder) x = 0
 (pathfinder) y = 1060
-(pathfinder) encodedCoord = 1060
+2 (pathfinder) encodedCoord = 1060
 (pathfinder) x = 14
 (pathfinder) y = 870
-(pathfinder) encodedCoord = 140870
+4 (pathfinder) encodedCoord = 140870
 (pathfinder) x = 7
 (pathfinder) y = 866
-(pathfinder) encodedCoord = 70866
+6 (pathfinder) encodedCoord = 70866
 (pathfinder) x = 7
 (pathfinder) y = 866
-(pathfinder) encodedCoord = 70866
+6 (pathfinder) encodedCoord = 70866
 (pathfinder) x = 7
 (pathfinder) y = 874
-(pathfinder) encodedCoord = 70874
+8 (pathfinder) encodedCoord = 70874
 (pathfinder) x = 7
 (pathfinder) y = 874
-(pathfinder) encodedCoord = 70874
+8 (pathfinder) encodedCoord = 70874
 (pathfinder) x = 70
 (pathfinder) y = 765
-(pathfinder) encodedCoord = 700765
+9 (pathfinder) encodedCoord = 700765
 (pathfinder) x = 37
 (pathfinder) y = 747
-(pathfinder) encodedCoord = 370747
+7 (pathfinder) encodedCoord = 370747
 (pathfinder) x = 37
 (pathfinder) y = 747
-(pathfinder) encodedCoord = 370747
+7 (pathfinder) encodedCoord = 370747
 (pathfinder) x = 48
 (pathfinder) y = 1011
-(pathfinder) encodedCoord = 481011
+3 (pathfinder) encodedCoord = 481011
 (pathfinder) x = 48
 (pathfinder) y = 1011
-(pathfinder) encodedCoord = 481011
+3 (pathfinder) encodedCoord = 481011
 (pathfinder) x = 48
 (pathfinder) y = 1011
-(pathfinder) encodedCoord = 481011
+3 (pathfinder) encodedCoord = 481011
 (pathfinder) x = 70
 (pathfinder) y = 695
-(pathfinder) encodedCoord = 700695
+10 (pathfinder) encodedCoord = 700695
 (pathfinder) x = 70
 (pathfinder) y = 695
-(pathfinder) encodedCoord = 700695
+10 (pathfinder) encodedCoord = 700695
 (pathfinder) x = 360
 (pathfinder) y = 765
-(pathfinder) encodedCoord = 3600765
+17 (pathfinder) encodedCoord = 3600765
 (pathfinder) x = 635
 (pathfinder) y = 347
-(pathfinder) encodedCoord = 6350347
+19 (pathfinder) encodedCoord = 6350347
 (pathfinder) x = 318
 (pathfinder) y = 318
-(pathfinder) encodedCoord = 3180318
+1 (pathfinder) encodedCoord = 3180318
 (pathfinder) x = 318
 (pathfinder) y = 318
-(pathfinder) encodedCoord = 3180318
+1 (pathfinder) encodedCoord = 3180318
 (pathfinder) x = 318
 (pathfinder) y = 318
-(pathfinder) encodedCoord = 3180318
+1 (pathfinder) encodedCoord = 3180318
 (pathfinder) x = 640
 (pathfinder) y = 169
-(pathfinder) encodedCoord = 6400169
+23 (pathfinder) encodedCoord = 6400169
 (pathfinder) x = 477
 (pathfinder) y = 162
-(pathfinder) encodedCoord = 4770162
+25 (pathfinder) encodedCoord = 4770162
 (pathfinder) x = 477
 (pathfinder) y = 162
-(pathfinder) encodedCoord = 4770162
+25 (pathfinder) encodedCoord = 4770162
 (pathfinder) x = 641
 (pathfinder) y = 463
-(pathfinder) encodedCoord = 6410463
+28 (pathfinder) encodedCoord = 6410463
 (pathfinder) x = 347
 (pathfinder) y = 471
-(pathfinder) encodedCoord = 3470471
+30 (pathfinder) encodedCoord = 3470471
 (pathfinder) x = 347
 (pathfinder) y = 471
-(pathfinder) encodedCoord = 3470471
+30 (pathfinder) encodedCoord = 3470471
 (pathfinder) x = 360
 (pathfinder) y = 483
-(pathfinder) encodedCoord = 3600483
+31 (pathfinder) encodedCoord = 3600483
 (pathfinder) x = 360
 (pathfinder) y = 483
-(pathfinder) encodedCoord = 3600483
+31 (pathfinder) encodedCoord = 3600483
 (pathfinder) x = 320
 (pathfinder) y = 444
-(pathfinder) encodedCoord = 3200444
+12 (pathfinder) encodedCoord = 3200444
 (pathfinder) x = 320
 (pathfinder) y = 444
-(pathfinder) encodedCoord = 3200444
+12 (pathfinder) encodedCoord = 3200444
 (pathfinder) x = 320
 (pathfinder) y = 444
-(pathfinder) encodedCoord = 3200444
+12 (pathfinder) encodedCoord = 3200444
 (pathfinder) x = 642
 (pathfinder) y = 118
-(pathfinder) encodedCoord = 6420118
+33 (pathfinder) encodedCoord = 6420118
 (pathfinder) x = 528
 (pathfinder) y = 113
-(pathfinder) encodedCoord = 5280113
+26 (pathfinder) encodedCoord = 5280113
 (pathfinder) x = 528
 (pathfinder) y = 113
-(pathfinder) encodedCoord = 5280113
+26 (pathfinder) encodedCoord = 5280113
 (pathfinder) x = 321
 (pathfinder) y = 421
-(pathfinder) encodedCoord = 3210421
+22 (pathfinder) encodedCoord = 3210421
 (pathfinder) x = 321
 (pathfinder) y = 421
-(pathfinder) encodedCoord = 3210421
+22 (pathfinder) encodedCoord = 3210421
 (pathfinder) x = 321
 (pathfinder) y = 421
-(pathfinder) encodedCoord = 3210421
+22 (pathfinder) encodedCoord = 3210421
 (pathfinder) x = 647
 (pathfinder) y = 682
-(pathfinder) encodedCoord = 6470682
+36 (pathfinder) encodedCoord = 6470682
 (pathfinder) x = 492
 (pathfinder) y = 684
-(pathfinder) encodedCoord = 4920684
+32 (pathfinder) encodedCoord = 4920684
 (pathfinder) x = 492
 (pathfinder) y = 684
-(pathfinder) encodedCoord = 4920684
+32 (pathfinder) encodedCoord = 4920684
 (pathfinder) x = 492
 (pathfinder) y = 686
-(pathfinder) encodedCoord = 4920686
+38 (pathfinder) encodedCoord = 4920686
 (pathfinder) x = 492
 (pathfinder) y = 686
-(pathfinder) encodedCoord = 4920686
+38 (pathfinder) encodedCoord = 4920686
 (pathfinder) x = 380
 (pathfinder) y = 267
-(pathfinder) encodedCoord = 3800267
+21 (pathfinder) encodedCoord = 3800267
 (pathfinder) x = 380
 (pathfinder) y = 267
-(pathfinder) encodedCoord = 3800267
+21 (pathfinder) encodedCoord = 3800267
 (pathfinder) x = 468
 (pathfinder) y = 413
-(pathfinder) encodedCoord = 4680413
+35 (pathfinder) encodedCoord = 4680413
 (pathfinder) x = 468
 (pathfinder) y = 413
-(pathfinder) encodedCoord = 4680413
+35 (pathfinder) encodedCoord = 4680413
 (pathfinder) x = 403
 (pathfinder) y = 249
-(pathfinder) encodedCoord = 4030249
+27 (pathfinder) encodedCoord = 4030249
 (pathfinder) x = 403
 (pathfinder) y = 249
-(pathfinder) encodedCoord = 4030249
+27 (pathfinder) encodedCoord = 4030249
 (pathfinder) x = 403
 (pathfinder) y = 249
-(pathfinder) encodedCoord = 4030249
+27 (pathfinder) encodedCoord = 4030249
 (pathfinder) x = 576
 (pathfinder) y = 77
-(pathfinder) encodedCoord = 5760077
+34 (pathfinder) encodedCoord = 5760077
 (pathfinder) x = 576
 (pathfinder) y = 77
-(pathfinder) encodedCoord = 5760077
+34 (pathfinder) encodedCoord = 5760077
 (pathfinder) x = 482
 (pathfinder) y = 246
-(pathfinder) encodedCoord = 4820246
+41 (pathfinder) encodedCoord = 4820246
 (pathfinder) x = 482
 (pathfinder) y = 246
-(pathfinder) encodedCoord = 4820246
+41 (pathfinder) encodedCoord = 4820246
 (pathfinder) x = 592
 (pathfinder) y = 418
-(pathfinder) encodedCoord = 5920418
+40 (pathfinder) encodedCoord = 5920418
 (pathfinder) x = 592
 (pathfinder) y = 418
-(pathfinder) encodedCoord = 5920418
+40 (pathfinder) encodedCoord = 5920418
 (pathfinder) x = 661
 (pathfinder) y = 412
-(pathfinder) encodedCoord = 6610412
+45 (pathfinder) encodedCoord = 6610412
 (pathfinder) x = 628
 (pathfinder) y = 424
-(pathfinder) encodedCoord = 6280424
+44 (pathfinder) encodedCoord = 6280424
 (pathfinder) x = 628
 (pathfinder) y = 424
-(pathfinder) encodedCoord = 6280424
+44 (pathfinder) encodedCoord = 6280424
 (pathfinder) x = 653
 (pathfinder) y = 426
-(pathfinder) encodedCoord = 6530426
+47 (pathfinder) encodedCoord = 6530426
 (pathfinder) x = 653
 (pathfinder) y = 426
-(pathfinder) encodedCoord = 6530426
+47 (pathfinder) encodedCoord = 6530426
 (pathfinder) x = 671
 (pathfinder) y = 232
-(pathfinder) encodedCoord = 6710232
+43 (pathfinder) encodedCoord = 6710232
 (pathfinder) x = 679
 (pathfinder) y = 422
-(pathfinder) encodedCoord = 6790422
+48 (pathfinder) encodedCoord = 6790422
 (pathfinder) x = 542
 (pathfinder) y = 783
-(pathfinder) encodedCoord = 5420783
+39 (pathfinder) encodedCoord = 5420783
 (pathfinder) x = 542
 (pathfinder) y = 783
-(pathfinder) encodedCoord = 5420783
+39 (pathfinder) encodedCoord = 5420783
 (pathfinder) x = 544
 (pathfinder) y = 786
-(pathfinder) encodedCoord = 5440786
+49 (pathfinder) encodedCoord = 5440786
 (pathfinder) x = 544
 (pathfinder) y = 786
-(pathfinder) encodedCoord = 5440786
+49 (pathfinder) encodedCoord = 5440786
 (pathfinder) x = 705
 (pathfinder) y = 739
-(pathfinder) encodedCoord = 7050739
+51 (pathfinder) encodedCoord = 7050739
 (pathfinder) x = 715
 (pathfinder) y = 0
-(pathfinder) encodedCoord = 7150000
+52 (pathfinder) encodedCoord = 7150000
 (pathfinder) x = 586
 (pathfinder) y = 859
-(pathfinder) encodedCoord = 5860859
+50 (pathfinder) encodedCoord = 5860859
 (pathfinder) x = 586
 (pathfinder) y = 859
-(pathfinder) encodedCoord = 5860859
+50 (pathfinder) encodedCoord = 5860859
 (pathfinder) x = 759
 (pathfinder) y = 0
-(pathfinder) encodedCoord = 7590000
+53 (pathfinder) encodedCoord = 7590000
 (pathfinder) x = 759
 (pathfinder) y = 0
-(pathfinder) encodedCoord = 7590000
+53 (pathfinder) encodedCoord = 7590000
 (pathfinder) x = 595
 (pathfinder) y = 880
-(pathfinder) encodedCoord = 5950880
+55 (pathfinder) encodedCoord = 5950880
 (pathfinder) x = 595
 (pathfinder) y = 880
-(pathfinder) encodedCoord = 5950880
+55 (pathfinder) encodedCoord = 5950880
 (pathfinder) x = 595
 (pathfinder) y = 880
-(pathfinder) encodedCoord = 5950880
+55 (pathfinder) encodedCoord = 5950880
 (pathfinder) x = 705
 (pathfinder) y = 899
-(pathfinder) encodedCoord = 7050899
+57 (pathfinder) encodedCoord = 7050899
 (pathfinder) x = 705
 (pathfinder) y = 899
-(pathfinder) encodedCoord = 7050899
+57 (pathfinder) encodedCoord = 7050899
 (pathfinder) x = 915
 (pathfinder) y = 0
-(pathfinder) encodedCoord = 9150000
+56 (pathfinder) encodedCoord = 9150000
 (pathfinder) x = 915
 (pathfinder) y = 0
-(pathfinder) encodedCoord = 9150000
+56 (pathfinder) encodedCoord = 9150000
 (pathfinder) x = 926
 (pathfinder) y = 393
-(pathfinder) encodedCoord = 9260393
+61 (pathfinder) encodedCoord = 9260393
 (pathfinder) x = 927
 (pathfinder) y = 739
-(pathfinder) encodedCoord = 9270739
+63 (pathfinder) encodedCoord = 9270739
 (pathfinder) x = 942
 (pathfinder) y = 336
-(pathfinder) encodedCoord = 9420336
+65 (pathfinder) encodedCoord = 9420336
 (pathfinder) x = 942
 (pathfinder) y = 335
-(pathfinder) encodedCoord = 9420335
+67 (pathfinder) encodedCoord = 9420335
 (pathfinder) x = 943
 (pathfinder) y = 336
-(pathfinder) encodedCoord = 9430336
+68 (pathfinder) encodedCoord = 9430336
 (pathfinder) x = 943
 (pathfinder) y = 336
-(pathfinder) encodedCoord = 9430336
+68 (pathfinder) encodedCoord = 9430336
 (pathfinder) x = 944
 (pathfinder) y = 336
-(pathfinder) encodedCoord = 9440336
+69 (pathfinder) encodedCoord = 9440336
 (pathfinder) x = 944
 (pathfinder) y = 336
-(pathfinder) encodedCoord = 9440336
+69 (pathfinder) encodedCoord = 9440336
 (pathfinder) x = 963
 (pathfinder) y = 0
-(pathfinder) encodedCoord = 9630000
+60 (pathfinder) encodedCoord = 9630000
 (pathfinder) x = 964
 (pathfinder) y = 322
-(pathfinder) encodedCoord = 9640322
+72 (pathfinder) encodedCoord = 9640322
 (pathfinder) x = 982
 (pathfinder) y = 451
-(pathfinder) encodedCoord = 9820451
+74 (pathfinder) encodedCoord = 9820451
 (pathfinder) x = 986
 (pathfinder) y = 679
-(pathfinder) encodedCoord = 9860679
+76 (pathfinder) encodedCoord = 9860679
 (pathfinder) x = 923
 (pathfinder) y = 395
-(pathfinder) encodedCoord = 9230395
+77 (pathfinder) encodedCoord = 9230395
 (pathfinder) x = 927
 (pathfinder) y = 395
-(pathfinder) encodedCoord = 9270395
+78 (pathfinder) encodedCoord = 9270395
 (pathfinder) x = 927
 (pathfinder) y = 395
-(pathfinder) encodedCoord = 9270395
+78 (pathfinder) encodedCoord = 9270395
 (pathfinder) x = 932
 (pathfinder) y = 394
-(pathfinder) encodedCoord = 9320394
+79 (pathfinder) encodedCoord = 9320394
 (pathfinder) x = 932
 (pathfinder) y = 394
-(pathfinder) encodedCoord = 9320394
+79 (pathfinder) encodedCoord = 9320394
 (pathfinder) x = 995
 (pathfinder) y = 375
-(pathfinder) encodedCoord = 9950375
+70 (pathfinder) encodedCoord = 9950375
 (pathfinder) x = 995
 (pathfinder) y = 375
-(pathfinder) encodedCoord = 9950375
+70 (pathfinder) encodedCoord = 9950375
 (pathfinder) x = 1041
 (pathfinder) y = 193
-(pathfinder) encodedCoord = 10410193
+81 (pathfinder) encodedCoord = 10410193
 (pathfinder) x = 997
 (pathfinder) y = 376
-(pathfinder) encodedCoord = 9970376
+80 (pathfinder) encodedCoord = 9970376
 (pathfinder) x = 997
 (pathfinder) y = 376
-(pathfinder) encodedCoord = 9970376
+80 (pathfinder) encodedCoord = 9970376
 (pathfinder) x = 997
 (pathfinder) y = 376
-(pathfinder) encodedCoord = 9970376
+80 (pathfinder) encodedCoord = 9970376
 (pathfinder) x = 927
 (pathfinder) y = 899
-(pathfinder) encodedCoord = 9270899
+59 (pathfinder) encodedCoord = 9270899
 (pathfinder) x = 927
 (pathfinder) y = 899
-(pathfinder) encodedCoord = 9270899
+59 (pathfinder) encodedCoord = 9270899
 (pathfinder) x = 1053
 (pathfinder) y = 375
-(pathfinder) encodedCoord = 10530375
+83 (pathfinder) encodedCoord = 10530375
 (pathfinder) x = 1053
 (pathfinder) y = 375
-(pathfinder) encodedCoord = 10530375
+83 (pathfinder) encodedCoord = 10530375
 (pathfinder) x = 1053
 (pathfinder) y = 375
-(pathfinder) encodedCoord = 10530375
+83 (pathfinder) encodedCoord = 10530375
 (pathfinder) x = 1053
 (pathfinder) y = 375
-(pathfinder) encodedCoord = 10530375
+83 (pathfinder) encodedCoord = 10530375
 (pathfinder) x = 1061
 (pathfinder) y = 871
-(pathfinder) encodedCoord = 10610871
+84 (pathfinder) encodedCoord = 10610871
 (pathfinder) x = 1061
 (pathfinder) y = 871
-(pathfinder) encodedCoord = 10610871
+84 (pathfinder) encodedCoord = 10610871
 (pathfinder) x = 1181
 (pathfinder) y = 140
-(pathfinder) encodedCoord = 11810140
+86 (pathfinder) encodedCoord = 11810140
 (pathfinder) x = 1181
 (pathfinder) y = 140
-(pathfinder) encodedCoord = 11810140
+86 (pathfinder) encodedCoord = 11810140
 (pathfinder) x = 1145
 (pathfinder) y = 836
-(pathfinder) encodedCoord = 11450836
+85 (pathfinder) encodedCoord = 11450836
 (pathfinder) x = 1145
 (pathfinder) y = 836
-(pathfinder) encodedCoord = 11450836
+85 (pathfinder) encodedCoord = 11450836
 (pathfinder) x = 1234
 (pathfinder) y = 193
-(pathfinder) encodedCoord = 12340193
+87 (pathfinder) encodedCoord = 12340193
 (pathfinder) x = 1234
 (pathfinder) y = 193
-(pathfinder) encodedCoord = 12340193
+87 (pathfinder) encodedCoord = 12340193
 (pathfinder) x = 1373
 (pathfinder) y = 672
-(pathfinder) encodedCoord = 13730672
+89 (pathfinder) encodedCoord = 13730672
 (pathfinder) x = 981
 (pathfinder) y = 1030
-(pathfinder) encodedCoord = 9811030
+95 (pathfinder) encodedCoord = 9811030
 (pathfinder) x = 981
 (pathfinder) y = 1030
-(pathfinder) encodedCoord = 9811030
+95 (pathfinder) encodedCoord = 9811030
 (pathfinder) x = 1380
 (pathfinder) y = 395
-(pathfinder) encodedCoord = 13800395
+90 (pathfinder) encodedCoord = 13800395
 (pathfinder) x = 1053
 (pathfinder) y = 375
-(pathfinder) encodedCoord = 10530375
+83 (pathfinder) encodedCoord = 10530375
 (pathfinder) x = 1508
 (pathfinder) y = 530
-(pathfinder) encodedCoord = 15080530
+98 (pathfinder) encodedCoord = 15080530
 (pathfinder) x = 1181
 (pathfinder) y = 140
-(pathfinder) encodedCoord = 11810140
-(pathfinder) x = 1181
-(pathfinder) y = 140
-(pathfinder) encodedCoord = 11810140
-(pathfinder) x = 1181
-(pathfinder) y = 140
-(pathfinder) encodedCoord = 11810140
-(pathfinder) x = 1181
-(pathfinder) y = 140
-(pathfinder) encodedCoord = 11810140
-(pathfinder) x = 1181
-(pathfinder) y = 140
-(pathfinder) encodedCoord = 11810140
-(pathfinder) x = 1181
-(pathfinder) y = 140
-(pathfinder) encodedCoord = 11810140
-(pathfinder) x = 1181
-(pathfinder) y = 140
-(pathfinder) encodedCoord = 11810140
-(pathfinder) x = 1181
-(pathfinder) y = 140
-(pathfinder) encodedCoord = 11810140
+86 (pathfinder) encodedCoord = 11810140
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1234
+(pathfinder) y = 193
+87 (pathfinder) encodedCoord = 12340193
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1380
+(pathfinder) y = 395
+90 (pathfinder) encodedCoord = 13800395
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1508
+(pathfinder) y = 530
+98 (pathfinder) encodedCoord = 15080530
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1234
+(pathfinder) y = 193
+87 (pathfinder) encodedCoord = 12340193
 (pathfinder) x = 1326
 (pathfinder) y = 305
-(pathfinder) encodedCoord = 13260305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1380
+(pathfinder) y = 395
+90 (pathfinder) encodedCoord = 13800395
 (pathfinder) x = 1326
 (pathfinder) y = 305
-(pathfinder) encodedCoord = 13260305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
 (pathfinder) x = 1326
 (pathfinder) y = 305
-(pathfinder) encodedCoord = 13260305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1234
+(pathfinder) y = 193
+87 (pathfinder) encodedCoord = 12340193
 (pathfinder) x = 1326
 (pathfinder) y = 305
-(pathfinder) encodedCoord = 13260305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
 (pathfinder) x = 1326
 (pathfinder) y = 305
-(pathfinder) encodedCoord = 13260305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1380
+(pathfinder) y = 395
+90 (pathfinder) encodedCoord = 13800395
 (pathfinder) x = 1326
 (pathfinder) y = 305
-(pathfinder) encodedCoord = 13260305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
 (pathfinder) x = 1326
 (pathfinder) y = 305
-(pathfinder) encodedCoord = 13260305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
 (pathfinder) x = 1326
 (pathfinder) y = 305
-(pathfinder) encodedCoord = 13260305
-(pathfinder) x = 1234
-(pathfinder) y = 193
-(pathfinder) encodedCoord = 12340193
-(pathfinder) x = 1234
-(pathfinder) y = 193
-(pathfinder) encodedCoord = 12340193
-(pathfinder) x = 1234
-(pathfinder) y = 193
-(pathfinder) encodedCoord = 12340193
-(pathfinder) x = 1234
-(pathfinder) y = 193
-(pathfinder) encodedCoord = 12340193
-(pathfinder) x = 1234
-(pathfinder) y = 193
-(pathfinder) encodedCoord = 12340193
-(pathfinder) x = 1234
-(pathfinder) y = 193
-(pathfinder) encodedCoord = 12340193
-(pathfinder) x = 1234
-(pathfinder) y = 193
-(pathfinder) encodedCoord = 12340193
-(pathfinder) x = 1234
-(pathfinder) y = 193
-(pathfinder) encodedCoord = 12340193
-(pathfinder) x = 1234
-(pathfinder) y = 193
-(pathfinder) encodedCoord = 12340193
-(pathfinder) x = 1234
-(pathfinder) y = 193
-(pathfinder) encodedCoord = 12340193
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
 (pathfinder) x = 1316
 (pathfinder) y = 315
-(pathfinder) encodedCoord = 13160315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
 (pathfinder) x = 1316
 (pathfinder) y = 315
-(pathfinder) encodedCoord = 13160315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
 (pathfinder) x = 1316
 (pathfinder) y = 315
-(pathfinder) encodedCoord = 13160315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
 (pathfinder) x = 1316
 (pathfinder) y = 315
-(pathfinder) encodedCoord = 13160315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
 (pathfinder) x = 1316
 (pathfinder) y = 315
-(pathfinder) encodedCoord = 13160315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
 (pathfinder) x = 1316
 (pathfinder) y = 315
-(pathfinder) encodedCoord = 13160315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
 (pathfinder) x = 1316
 (pathfinder) y = 315
-(pathfinder) encodedCoord = 13160315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
 (pathfinder) x = 1316
 (pathfinder) y = 315
-(pathfinder) encodedCoord = 13160315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
 (pathfinder) x = 1316
 (pathfinder) y = 315
-(pathfinder) encodedCoord = 13160315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
 (pathfinder) x = 1316
 (pathfinder) y = 315
-(pathfinder) encodedCoord = 13160315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
 (pathfinder) x = 1316
 (pathfinder) y = 315
-(pathfinder) encodedCoord = 13160315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
 (pathfinder) x = 1316
 (pathfinder) y = 315
-(pathfinder) encodedCoord = 13160315
-(pathfinder) x = 1380
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 13800395
-(pathfinder) x = 1380
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 13800395
-(pathfinder) x = 1380
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 13800395
-(pathfinder) x = 1380
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 13800395
-(pathfinder) x = 1380
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 13800395
-(pathfinder) x = 1380
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 13800395
-(pathfinder) x = 1380
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 13800395
-(pathfinder) x = 1380
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 13800395
-(pathfinder) x = 1380
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 13800395
-(pathfinder) x = 1380
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 13800395
-(pathfinder) x = 1380
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 13800395
-(pathfinder) x = 1380
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 13800395
-(pathfinder) x = 1380
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 13800395
-(pathfinder) x = 1380
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 13800395
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
 (pathfinder) x = 0
 (pathfinder) y = 0
-(pathfinder) encodedCoord = 0
+0 (pathfinder) encodedCoord = 0
 (pathfinder) x = 154
 (pathfinder) y = 203
-(pathfinder) encodedCoord = 1540203
+100 (pathfinder) encodedCoord = 1540203
 (pathfinder) x = 318
 (pathfinder) y = 318
-(pathfinder) encodedCoord = 3180318
+1 (pathfinder) encodedCoord = 3180318
 (pathfinder) x = 154
 (pathfinder) y = 203
-(pathfinder) encodedCoord = 1540203
+100 (pathfinder) encodedCoord = 1540203
+Dijkstra 100 105 - 1540203 13260315
 Dijkstra 100 105 - 1540203 13260315
 
 
@@ -1423,8 +1654,16 @@ voronoiPaths->ids.size()+idStart : 100
 right path  100(pathfinder) mapposition : 1540203
 
 
+startNew inside
 node: 100 1540203
+(pathfider) startEndPath[0] : 100
+node: 100 1540203 x,y (154,203)
+endNew inside
 node: 100 1540203
+
+right path 2  154,203
+ 154,203
+ 1326,315
 end id 15020812    size : 107
 end Size ingress0
 Step 20
@@ -1442,597 +1681,992 @@ Step 130size: 1000 0
 Step 140size: 1000 0
 Step 150size: 1000 0
 connect points (1373,672) and (1502,812)
-longId 13730672
-id1 89
+id 89  -  longId 13730672  -  pointLongId 15020812  -  PointId 106
 Step 160size: 1000 2
 connect points (1373,672) and (1502,812)
-longId 13730672
-id1 89
+id 89  -  longId 13730672  -  pointLongId 15020812  -  PointId 106
 Step 170size: 1000 2
 connect points (1373,672) and (1502,812)
-longId 13730672
-id1 89
+id 89  -  longId 13730672  -  pointLongId 15020812  -  PointId 106
 Step 180size: 1000 2
 connect points (1373,672) and (1502,812)
-longId 13730672
-id1 89
+id 89  -  longId 13730672  -  pointLongId 15020812  -  PointId 106
 Step 190size: 1000 2
 connect points (1373,672) and (1502,812)
-longId 13730672
-id1 89
+id 89  -  longId 13730672  -  pointLongId 15020812  -  PointId 106
 Step 200size: 1000 2
 connect points (1373,672) and (1502,812)
-longId 13730672
-id1 89
+id 89  -  longId 13730672  -  pointLongId 15020812  -  PointId 106
 Step 210size: 1000 2
 connect points (1373,672) and (1502,812)
-longId 13730672
-id1 89
+id 89  -  longId 13730672  -  pointLongId 15020812  -  PointId 106
 end Size exit2
-V 107
+V 107  start (1326, 315) -2 - end (1502, 812) -1
 (pathfinder) x = 0
 (pathfinder) y = 0
-(pathfinder) encodedCoord = 0
+0 (pathfinder) encodedCoord = 0
 (pathfinder) x = 0
 (pathfinder) y = 1060
-(pathfinder) encodedCoord = 1060
+2 (pathfinder) encodedCoord = 1060
 (pathfinder) x = 14
 (pathfinder) y = 870
-(pathfinder) encodedCoord = 140870
+4 (pathfinder) encodedCoord = 140870
 (pathfinder) x = 7
 (pathfinder) y = 866
-(pathfinder) encodedCoord = 70866
+6 (pathfinder) encodedCoord = 70866
 (pathfinder) x = 7
 (pathfinder) y = 866
-(pathfinder) encodedCoord = 70866
+6 (pathfinder) encodedCoord = 70866
 (pathfinder) x = 7
 (pathfinder) y = 874
-(pathfinder) encodedCoord = 70874
+8 (pathfinder) encodedCoord = 70874
 (pathfinder) x = 7
 (pathfinder) y = 874
-(pathfinder) encodedCoord = 70874
+8 (pathfinder) encodedCoord = 70874
 (pathfinder) x = 70
 (pathfinder) y = 765
-(pathfinder) encodedCoord = 700765
+9 (pathfinder) encodedCoord = 700765
 (pathfinder) x = 37
 (pathfinder) y = 747
-(pathfinder) encodedCoord = 370747
+7 (pathfinder) encodedCoord = 370747
 (pathfinder) x = 37
 (pathfinder) y = 747
-(pathfinder) encodedCoord = 370747
+7 (pathfinder) encodedCoord = 370747
 (pathfinder) x = 48
 (pathfinder) y = 1011
-(pathfinder) encodedCoord = 481011
+3 (pathfinder) encodedCoord = 481011
 (pathfinder) x = 48
 (pathfinder) y = 1011
-(pathfinder) encodedCoord = 481011
+3 (pathfinder) encodedCoord = 481011
 (pathfinder) x = 48
 (pathfinder) y = 1011
-(pathfinder) encodedCoord = 481011
+3 (pathfinder) encodedCoord = 481011
 (pathfinder) x = 70
 (pathfinder) y = 695
-(pathfinder) encodedCoord = 700695
+10 (pathfinder) encodedCoord = 700695
 (pathfinder) x = 70
 (pathfinder) y = 695
-(pathfinder) encodedCoord = 700695
+10 (pathfinder) encodedCoord = 700695
 (pathfinder) x = 360
 (pathfinder) y = 765
-(pathfinder) encodedCoord = 3600765
+17 (pathfinder) encodedCoord = 3600765
 (pathfinder) x = 635
 (pathfinder) y = 347
-(pathfinder) encodedCoord = 6350347
+19 (pathfinder) encodedCoord = 6350347
 (pathfinder) x = 318
 (pathfinder) y = 318
-(pathfinder) encodedCoord = 3180318
+1 (pathfinder) encodedCoord = 3180318
 (pathfinder) x = 318
 (pathfinder) y = 318
-(pathfinder) encodedCoord = 3180318
+1 (pathfinder) encodedCoord = 3180318
 (pathfinder) x = 318
 (pathfinder) y = 318
-(pathfinder) encodedCoord = 3180318
+1 (pathfinder) encodedCoord = 3180318
 (pathfinder) x = 640
 (pathfinder) y = 169
-(pathfinder) encodedCoord = 6400169
+23 (pathfinder) encodedCoord = 6400169
 (pathfinder) x = 477
 (pathfinder) y = 162
-(pathfinder) encodedCoord = 4770162
+25 (pathfinder) encodedCoord = 4770162
 (pathfinder) x = 477
 (pathfinder) y = 162
-(pathfinder) encodedCoord = 4770162
+25 (pathfinder) encodedCoord = 4770162
 (pathfinder) x = 641
 (pathfinder) y = 463
-(pathfinder) encodedCoord = 6410463
+28 (pathfinder) encodedCoord = 6410463
 (pathfinder) x = 347
 (pathfinder) y = 471
-(pathfinder) encodedCoord = 3470471
+30 (pathfinder) encodedCoord = 3470471
 (pathfinder) x = 347
 (pathfinder) y = 471
-(pathfinder) encodedCoord = 3470471
+30 (pathfinder) encodedCoord = 3470471
 (pathfinder) x = 360
 (pathfinder) y = 483
-(pathfinder) encodedCoord = 3600483
+31 (pathfinder) encodedCoord = 3600483
 (pathfinder) x = 360
 (pathfinder) y = 483
-(pathfinder) encodedCoord = 3600483
+31 (pathfinder) encodedCoord = 3600483
 (pathfinder) x = 320
 (pathfinder) y = 444
-(pathfinder) encodedCoord = 3200444
+12 (pathfinder) encodedCoord = 3200444
 (pathfinder) x = 320
 (pathfinder) y = 444
-(pathfinder) encodedCoord = 3200444
+12 (pathfinder) encodedCoord = 3200444
 (pathfinder) x = 320
 (pathfinder) y = 444
-(pathfinder) encodedCoord = 3200444
+12 (pathfinder) encodedCoord = 3200444
 (pathfinder) x = 642
 (pathfinder) y = 118
-(pathfinder) encodedCoord = 6420118
+33 (pathfinder) encodedCoord = 6420118
 (pathfinder) x = 528
 (pathfinder) y = 113
-(pathfinder) encodedCoord = 5280113
+26 (pathfinder) encodedCoord = 5280113
 (pathfinder) x = 528
 (pathfinder) y = 113
-(pathfinder) encodedCoord = 5280113
+26 (pathfinder) encodedCoord = 5280113
 (pathfinder) x = 321
 (pathfinder) y = 421
-(pathfinder) encodedCoord = 3210421
+22 (pathfinder) encodedCoord = 3210421
 (pathfinder) x = 321
 (pathfinder) y = 421
-(pathfinder) encodedCoord = 3210421
+22 (pathfinder) encodedCoord = 3210421
 (pathfinder) x = 321
 (pathfinder) y = 421
-(pathfinder) encodedCoord = 3210421
+22 (pathfinder) encodedCoord = 3210421
 (pathfinder) x = 647
 (pathfinder) y = 682
-(pathfinder) encodedCoord = 6470682
+36 (pathfinder) encodedCoord = 6470682
 (pathfinder) x = 492
 (pathfinder) y = 684
-(pathfinder) encodedCoord = 4920684
+32 (pathfinder) encodedCoord = 4920684
 (pathfinder) x = 492
 (pathfinder) y = 684
-(pathfinder) encodedCoord = 4920684
+32 (pathfinder) encodedCoord = 4920684
 (pathfinder) x = 492
 (pathfinder) y = 686
-(pathfinder) encodedCoord = 4920686
+38 (pathfinder) encodedCoord = 4920686
 (pathfinder) x = 492
 (pathfinder) y = 686
-(pathfinder) encodedCoord = 4920686
+38 (pathfinder) encodedCoord = 4920686
 (pathfinder) x = 380
 (pathfinder) y = 267
-(pathfinder) encodedCoord = 3800267
+21 (pathfinder) encodedCoord = 3800267
 (pathfinder) x = 380
 (pathfinder) y = 267
-(pathfinder) encodedCoord = 3800267
+21 (pathfinder) encodedCoord = 3800267
 (pathfinder) x = 468
 (pathfinder) y = 413
-(pathfinder) encodedCoord = 4680413
+35 (pathfinder) encodedCoord = 4680413
 (pathfinder) x = 468
 (pathfinder) y = 413
-(pathfinder) encodedCoord = 4680413
+35 (pathfinder) encodedCoord = 4680413
 (pathfinder) x = 403
 (pathfinder) y = 249
-(pathfinder) encodedCoord = 4030249
+27 (pathfinder) encodedCoord = 4030249
 (pathfinder) x = 403
 (pathfinder) y = 249
-(pathfinder) encodedCoord = 4030249
+27 (pathfinder) encodedCoord = 4030249
 (pathfinder) x = 403
 (pathfinder) y = 249
-(pathfinder) encodedCoord = 4030249
+27 (pathfinder) encodedCoord = 4030249
 (pathfinder) x = 576
 (pathfinder) y = 77
-(pathfinder) encodedCoord = 5760077
+34 (pathfinder) encodedCoord = 5760077
 (pathfinder) x = 576
 (pathfinder) y = 77
-(pathfinder) encodedCoord = 5760077
+34 (pathfinder) encodedCoord = 5760077
 (pathfinder) x = 482
 (pathfinder) y = 246
-(pathfinder) encodedCoord = 4820246
+41 (pathfinder) encodedCoord = 4820246
 (pathfinder) x = 482
 (pathfinder) y = 246
-(pathfinder) encodedCoord = 4820246
+41 (pathfinder) encodedCoord = 4820246
 (pathfinder) x = 592
 (pathfinder) y = 418
-(pathfinder) encodedCoord = 5920418
+40 (pathfinder) encodedCoord = 5920418
 (pathfinder) x = 592
 (pathfinder) y = 418
-(pathfinder) encodedCoord = 5920418
+40 (pathfinder) encodedCoord = 5920418
 (pathfinder) x = 661
 (pathfinder) y = 412
-(pathfinder) encodedCoord = 6610412
+45 (pathfinder) encodedCoord = 6610412
 (pathfinder) x = 628
 (pathfinder) y = 424
-(pathfinder) encodedCoord = 6280424
+44 (pathfinder) encodedCoord = 6280424
 (pathfinder) x = 628
 (pathfinder) y = 424
-(pathfinder) encodedCoord = 6280424
+44 (pathfinder) encodedCoord = 6280424
 (pathfinder) x = 653
 (pathfinder) y = 426
-(pathfinder) encodedCoord = 6530426
+47 (pathfinder) encodedCoord = 6530426
 (pathfinder) x = 653
 (pathfinder) y = 426
-(pathfinder) encodedCoord = 6530426
+47 (pathfinder) encodedCoord = 6530426
 (pathfinder) x = 671
 (pathfinder) y = 232
-(pathfinder) encodedCoord = 6710232
+43 (pathfinder) encodedCoord = 6710232
 (pathfinder) x = 679
 (pathfinder) y = 422
-(pathfinder) encodedCoord = 6790422
+48 (pathfinder) encodedCoord = 6790422
 (pathfinder) x = 542
 (pathfinder) y = 783
-(pathfinder) encodedCoord = 5420783
+39 (pathfinder) encodedCoord = 5420783
 (pathfinder) x = 542
 (pathfinder) y = 783
-(pathfinder) encodedCoord = 5420783
+39 (pathfinder) encodedCoord = 5420783
 (pathfinder) x = 544
 (pathfinder) y = 786
-(pathfinder) encodedCoord = 5440786
+49 (pathfinder) encodedCoord = 5440786
 (pathfinder) x = 544
 (pathfinder) y = 786
-(pathfinder) encodedCoord = 5440786
+49 (pathfinder) encodedCoord = 5440786
 (pathfinder) x = 705
 (pathfinder) y = 739
-(pathfinder) encodedCoord = 7050739
+51 (pathfinder) encodedCoord = 7050739
 (pathfinder) x = 715
 (pathfinder) y = 0
-(pathfinder) encodedCoord = 7150000
+52 (pathfinder) encodedCoord = 7150000
 (pathfinder) x = 586
 (pathfinder) y = 859
-(pathfinder) encodedCoord = 5860859
+50 (pathfinder) encodedCoord = 5860859
 (pathfinder) x = 586
 (pathfinder) y = 859
-(pathfinder) encodedCoord = 5860859
+50 (pathfinder) encodedCoord = 5860859
 (pathfinder) x = 759
 (pathfinder) y = 0
-(pathfinder) encodedCoord = 7590000
+53 (pathfinder) encodedCoord = 7590000
 (pathfinder) x = 759
 (pathfinder) y = 0
-(pathfinder) encodedCoord = 7590000
+53 (pathfinder) encodedCoord = 7590000
 (pathfinder) x = 595
 (pathfinder) y = 880
-(pathfinder) encodedCoord = 5950880
+55 (pathfinder) encodedCoord = 5950880
 (pathfinder) x = 595
 (pathfinder) y = 880
-(pathfinder) encodedCoord = 5950880
+55 (pathfinder) encodedCoord = 5950880
 (pathfinder) x = 595
 (pathfinder) y = 880
-(pathfinder) encodedCoord = 5950880
+55 (pathfinder) encodedCoord = 5950880
 (pathfinder) x = 705
 (pathfinder) y = 899
-(pathfinder) encodedCoord = 7050899
+57 (pathfinder) encodedCoord = 7050899
 (pathfinder) x = 705
 (pathfinder) y = 899
-(pathfinder) encodedCoord = 7050899
+57 (pathfinder) encodedCoord = 7050899
 (pathfinder) x = 915
 (pathfinder) y = 0
-(pathfinder) encodedCoord = 9150000
+56 (pathfinder) encodedCoord = 9150000
 (pathfinder) x = 915
 (pathfinder) y = 0
-(pathfinder) encodedCoord = 9150000
+56 (pathfinder) encodedCoord = 9150000
 (pathfinder) x = 926
 (pathfinder) y = 393
-(pathfinder) encodedCoord = 9260393
+61 (pathfinder) encodedCoord = 9260393
 (pathfinder) x = 927
 (pathfinder) y = 739
-(pathfinder) encodedCoord = 9270739
+63 (pathfinder) encodedCoord = 9270739
 (pathfinder) x = 942
 (pathfinder) y = 336
-(pathfinder) encodedCoord = 9420336
+65 (pathfinder) encodedCoord = 9420336
 (pathfinder) x = 942
 (pathfinder) y = 335
-(pathfinder) encodedCoord = 9420335
+67 (pathfinder) encodedCoord = 9420335
 (pathfinder) x = 943
 (pathfinder) y = 336
-(pathfinder) encodedCoord = 9430336
+68 (pathfinder) encodedCoord = 9430336
 (pathfinder) x = 943
 (pathfinder) y = 336
-(pathfinder) encodedCoord = 9430336
+68 (pathfinder) encodedCoord = 9430336
 (pathfinder) x = 944
 (pathfinder) y = 336
-(pathfinder) encodedCoord = 9440336
+69 (pathfinder) encodedCoord = 9440336
 (pathfinder) x = 944
 (pathfinder) y = 336
-(pathfinder) encodedCoord = 9440336
+69 (pathfinder) encodedCoord = 9440336
 (pathfinder) x = 963
 (pathfinder) y = 0
-(pathfinder) encodedCoord = 9630000
+60 (pathfinder) encodedCoord = 9630000
 (pathfinder) x = 964
 (pathfinder) y = 322
-(pathfinder) encodedCoord = 9640322
+72 (pathfinder) encodedCoord = 9640322
 (pathfinder) x = 982
 (pathfinder) y = 451
-(pathfinder) encodedCoord = 9820451
+74 (pathfinder) encodedCoord = 9820451
 (pathfinder) x = 986
 (pathfinder) y = 679
-(pathfinder) encodedCoord = 9860679
+76 (pathfinder) encodedCoord = 9860679
 (pathfinder) x = 923
 (pathfinder) y = 395
-(pathfinder) encodedCoord = 9230395
+77 (pathfinder) encodedCoord = 9230395
 (pathfinder) x = 927
 (pathfinder) y = 395
-(pathfinder) encodedCoord = 9270395
+78 (pathfinder) encodedCoord = 9270395
 (pathfinder) x = 927
 (pathfinder) y = 395
-(pathfinder) encodedCoord = 9270395
+78 (pathfinder) encodedCoord = 9270395
 (pathfinder) x = 932
 (pathfinder) y = 394
-(pathfinder) encodedCoord = 9320394
+79 (pathfinder) encodedCoord = 9320394
 (pathfinder) x = 932
 (pathfinder) y = 394
-(pathfinder) encodedCoord = 9320394
+79 (pathfinder) encodedCoord = 9320394
 (pathfinder) x = 995
 (pathfinder) y = 375
-(pathfinder) encodedCoord = 9950375
+70 (pathfinder) encodedCoord = 9950375
 (pathfinder) x = 995
 (pathfinder) y = 375
-(pathfinder) encodedCoord = 9950375
+70 (pathfinder) encodedCoord = 9950375
 (pathfinder) x = 1041
 (pathfinder) y = 193
-(pathfinder) encodedCoord = 10410193
+81 (pathfinder) encodedCoord = 10410193
 (pathfinder) x = 997
 (pathfinder) y = 376
-(pathfinder) encodedCoord = 9970376
+80 (pathfinder) encodedCoord = 9970376
 (pathfinder) x = 997
 (pathfinder) y = 376
-(pathfinder) encodedCoord = 9970376
+80 (pathfinder) encodedCoord = 9970376
 (pathfinder) x = 997
 (pathfinder) y = 376
-(pathfinder) encodedCoord = 9970376
+80 (pathfinder) encodedCoord = 9970376
 (pathfinder) x = 927
 (pathfinder) y = 899
-(pathfinder) encodedCoord = 9270899
+59 (pathfinder) encodedCoord = 9270899
 (pathfinder) x = 927
 (pathfinder) y = 899
-(pathfinder) encodedCoord = 9270899
+59 (pathfinder) encodedCoord = 9270899
 (pathfinder) x = 1053
 (pathfinder) y = 375
-(pathfinder) encodedCoord = 10530375
+83 (pathfinder) encodedCoord = 10530375
 (pathfinder) x = 1053
 (pathfinder) y = 375
-(pathfinder) encodedCoord = 10530375
+83 (pathfinder) encodedCoord = 10530375
 (pathfinder) x = 1053
 (pathfinder) y = 375
-(pathfinder) encodedCoord = 10530375
+83 (pathfinder) encodedCoord = 10530375
 (pathfinder) x = 1053
 (pathfinder) y = 375
-(pathfinder) encodedCoord = 10530375
+83 (pathfinder) encodedCoord = 10530375
 (pathfinder) x = 1061
 (pathfinder) y = 871
-(pathfinder) encodedCoord = 10610871
+84 (pathfinder) encodedCoord = 10610871
 (pathfinder) x = 1061
 (pathfinder) y = 871
-(pathfinder) encodedCoord = 10610871
+84 (pathfinder) encodedCoord = 10610871
 (pathfinder) x = 1181
 (pathfinder) y = 140
-(pathfinder) encodedCoord = 11810140
+86 (pathfinder) encodedCoord = 11810140
 (pathfinder) x = 1181
 (pathfinder) y = 140
-(pathfinder) encodedCoord = 11810140
+86 (pathfinder) encodedCoord = 11810140
 (pathfinder) x = 1145
 (pathfinder) y = 836
-(pathfinder) encodedCoord = 11450836
+85 (pathfinder) encodedCoord = 11450836
 (pathfinder) x = 1145
 (pathfinder) y = 836
-(pathfinder) encodedCoord = 11450836
+85 (pathfinder) encodedCoord = 11450836
 (pathfinder) x = 1234
 (pathfinder) y = 193
-(pathfinder) encodedCoord = 12340193
+87 (pathfinder) encodedCoord = 12340193
 (pathfinder) x = 1234
 (pathfinder) y = 193
-(pathfinder) encodedCoord = 12340193
+87 (pathfinder) encodedCoord = 12340193
 (pathfinder) x = 1373
 (pathfinder) y = 672
-(pathfinder) encodedCoord = 13730672
+89 (pathfinder) encodedCoord = 13730672
 (pathfinder) x = 981
 (pathfinder) y = 1030
-(pathfinder) encodedCoord = 9811030
+95 (pathfinder) encodedCoord = 9811030
 (pathfinder) x = 981
 (pathfinder) y = 1030
-(pathfinder) encodedCoord = 9811030
+95 (pathfinder) encodedCoord = 9811030
 (pathfinder) x = 1380
 (pathfinder) y = 395
-(pathfinder) encodedCoord = 13800395
+90 (pathfinder) encodedCoord = 13800395
 (pathfinder) x = 1053
 (pathfinder) y = 375
-(pathfinder) encodedCoord = 10530375
+83 (pathfinder) encodedCoord = 10530375
 (pathfinder) x = 1508
 (pathfinder) y = 530
-(pathfinder) encodedCoord = 15080530
+98 (pathfinder) encodedCoord = 15080530
 (pathfinder) x = 1181
 (pathfinder) y = 140
-(pathfinder) encodedCoord = 11810140
-(pathfinder) x = 1181
-(pathfinder) y = 140
-(pathfinder) encodedCoord = 11810140
-(pathfinder) x = 1181
-(pathfinder) y = 140
-(pathfinder) encodedCoord = 11810140
-(pathfinder) x = 1181
-(pathfinder) y = 140
-(pathfinder) encodedCoord = 11810140
-(pathfinder) x = 1181
-(pathfinder) y = 140
-(pathfinder) encodedCoord = 11810140
-(pathfinder) x = 1181
-(pathfinder) y = 140
-(pathfinder) encodedCoord = 11810140
-(pathfinder) x = 1181
-(pathfinder) y = 140
-(pathfinder) encodedCoord = 11810140
-(pathfinder) x = 1181
-(pathfinder) y = 140
-(pathfinder) encodedCoord = 11810140
+86 (pathfinder) encodedCoord = 11810140
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1234
+(pathfinder) y = 193
+87 (pathfinder) encodedCoord = 12340193
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1380
+(pathfinder) y = 395
+90 (pathfinder) encodedCoord = 13800395
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1508
+(pathfinder) y = 530
+98 (pathfinder) encodedCoord = 15080530
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1234
+(pathfinder) y = 193
+87 (pathfinder) encodedCoord = 12340193
 (pathfinder) x = 1326
 (pathfinder) y = 305
-(pathfinder) encodedCoord = 13260305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1380
+(pathfinder) y = 395
+90 (pathfinder) encodedCoord = 13800395
 (pathfinder) x = 1326
 (pathfinder) y = 305
-(pathfinder) encodedCoord = 13260305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
 (pathfinder) x = 1326
 (pathfinder) y = 305
-(pathfinder) encodedCoord = 13260305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1234
+(pathfinder) y = 193
+87 (pathfinder) encodedCoord = 12340193
 (pathfinder) x = 1326
 (pathfinder) y = 305
-(pathfinder) encodedCoord = 13260305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
 (pathfinder) x = 1326
 (pathfinder) y = 305
-(pathfinder) encodedCoord = 13260305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1380
+(pathfinder) y = 395
+90 (pathfinder) encodedCoord = 13800395
 (pathfinder) x = 1326
 (pathfinder) y = 305
-(pathfinder) encodedCoord = 13260305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
 (pathfinder) x = 1326
 (pathfinder) y = 305
-(pathfinder) encodedCoord = 13260305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
 (pathfinder) x = 1326
 (pathfinder) y = 305
-(pathfinder) encodedCoord = 13260305
-(pathfinder) x = 1234
-(pathfinder) y = 193
-(pathfinder) encodedCoord = 12340193
-(pathfinder) x = 1234
-(pathfinder) y = 193
-(pathfinder) encodedCoord = 12340193
-(pathfinder) x = 1234
-(pathfinder) y = 193
-(pathfinder) encodedCoord = 12340193
-(pathfinder) x = 1234
-(pathfinder) y = 193
-(pathfinder) encodedCoord = 12340193
-(pathfinder) x = 1234
-(pathfinder) y = 193
-(pathfinder) encodedCoord = 12340193
-(pathfinder) x = 1234
-(pathfinder) y = 193
-(pathfinder) encodedCoord = 12340193
-(pathfinder) x = 1234
-(pathfinder) y = 193
-(pathfinder) encodedCoord = 12340193
-(pathfinder) x = 1234
-(pathfinder) y = 193
-(pathfinder) encodedCoord = 12340193
-(pathfinder) x = 1234
-(pathfinder) y = 193
-(pathfinder) encodedCoord = 12340193
-(pathfinder) x = 1234
-(pathfinder) y = 193
-(pathfinder) encodedCoord = 12340193
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
 (pathfinder) x = 1316
 (pathfinder) y = 315
-(pathfinder) encodedCoord = 13160315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
 (pathfinder) x = 1316
 (pathfinder) y = 315
-(pathfinder) encodedCoord = 13160315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
 (pathfinder) x = 1316
 (pathfinder) y = 315
-(pathfinder) encodedCoord = 13160315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
 (pathfinder) x = 1316
 (pathfinder) y = 315
-(pathfinder) encodedCoord = 13160315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
 (pathfinder) x = 1316
 (pathfinder) y = 315
-(pathfinder) encodedCoord = 13160315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
 (pathfinder) x = 1316
 (pathfinder) y = 315
-(pathfinder) encodedCoord = 13160315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
 (pathfinder) x = 1316
 (pathfinder) y = 315
-(pathfinder) encodedCoord = 13160315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
 (pathfinder) x = 1316
 (pathfinder) y = 315
-(pathfinder) encodedCoord = 13160315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
 (pathfinder) x = 1316
 (pathfinder) y = 315
-(pathfinder) encodedCoord = 13160315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
 (pathfinder) x = 1316
 (pathfinder) y = 315
-(pathfinder) encodedCoord = 13160315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
 (pathfinder) x = 1316
 (pathfinder) y = 315
-(pathfinder) encodedCoord = 13160315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
 (pathfinder) x = 1316
 (pathfinder) y = 315
-(pathfinder) encodedCoord = 13160315
-(pathfinder) x = 1380
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 13800395
-(pathfinder) x = 1380
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 13800395
-(pathfinder) x = 1380
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 13800395
-(pathfinder) x = 1380
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 13800395
-(pathfinder) x = 1380
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 13800395
-(pathfinder) x = 1380
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 13800395
-(pathfinder) x = 1380
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 13800395
-(pathfinder) x = 1380
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 13800395
-(pathfinder) x = 1380
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 13800395
-(pathfinder) x = 1380
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 13800395
-(pathfinder) x = 1380
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 13800395
-(pathfinder) x = 1380
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 13800395
-(pathfinder) x = 1380
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 13800395
-(pathfinder) x = 1380
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 13800395
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1336
+(pathfinder) y = 315
+103 (pathfinder) encodedCoord = 13360315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 325
+101 (pathfinder) encodedCoord = 13260325
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1326
+(pathfinder) y = 305
+102 (pathfinder) encodedCoord = 13260305
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
+(pathfinder) x = 1316
+(pathfinder) y = 315
+104 (pathfinder) encodedCoord = 13160315
+(pathfinder) x = 1326
+(pathfinder) y = 315
+105 (pathfinder) encodedCoord = 13260315
 (pathfinder) x = 0
 (pathfinder) y = 0
-(pathfinder) encodedCoord = 0
+0 (pathfinder) encodedCoord = 0
 (pathfinder) x = 154
 (pathfinder) y = 203
-(pathfinder) encodedCoord = 1540203
+100 (pathfinder) encodedCoord = 1540203
 (pathfinder) x = 318
 (pathfinder) y = 318
-(pathfinder) encodedCoord = 3180318
+1 (pathfinder) encodedCoord = 3180318
 (pathfinder) x = 154
 (pathfinder) y = 203
-(pathfinder) encodedCoord = 1540203
+100 (pathfinder) encodedCoord = 1540203
 (pathfinder) x = 1373
 (pathfinder) y = 672
-(pathfinder) encodedCoord = 13730672
+89 (pathfinder) encodedCoord = 13730672
 (pathfinder) x = 1502
 (pathfinder) y = 812
-(pathfinder) encodedCoord = 15020812
+106 (pathfinder) encodedCoord = 15020812
+Dijkstra 105 106 - 13260315 15020812
 Dijkstra 105 106 - 13260315 15020812
 
 
 
 startEndPath[0] : 105
-(pathfinder) mapposition : 0
+(pathfinder) mapposition : 13260315
 voronoiPaths->ids.size()+idStart : 105
 
-right path  105(pathfinder) mapposition : 0
+right path  105(pathfinder) mapposition : 13260315
 
 
-node: 105 0
-node: 105 0
---- terzultimo punto : 154, 203
+node: 105 13260315
+(pathfider) startEndPath[0] : 105
+node: 105 13260315 x,y (1326,315)
+endNew inside
+node: 105 13260315
+
+right path 2  1326,315
+ 1502,812
+--- terzultimo punto : 1326, 315
 --- penultimo punto : 1326, 315
 --- ultimo punto : 1502, 812
+??????????????????????????????????????????? > 154, 203
 >>>>>>>>>>>>>>>> 1326 -- 1326
 >>>>>>>>>>>>>>>> > 315 -- 315
 ??????????????????????????????????????????? > 1326, 315
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 1326, 315
--------Path 3 => 3: 
+>>>>>>>>>>>>>>>> 1326 -- 1326
+>>>>>>>>>>>>>>>> > 315 -- 315
+??????????????????????????????????????????? > 1326, 315
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 1326, 315
+-------Path 5 => 4: 
 PRIMA
---- terzultimo punto : 154, 203
+--- terzultimo punto : 1326, 315
 --- penultimo punto : 1326, 315
 --- ultimo punto : 1502, 812
 --- CENTRO GATE : 1502, 812
@@ -2040,29 +2674,31 @@ PRIMA
 --- terzultimo punto : 1326, 315
 --- penultimo punto : 1452, 812
 --- ultimo punto : 1502, 812
-Angoli!! 4
+Angoli!! 5
 --------angolo: -0.012345
 Algorithm correct
 Algorithm INcorrect
 Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
 Algorithm correct
 Algorithm correct
 Algorithm INcorrect
 Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-kappa: 0.010000, 0.000000, 0.010000 
---------angolo: 0.785398
-Algorithm INcorrect
+Algorithm correct
+Algorithm correct
 kappa: 0.010000, 0.000000, -0.010000 
+--------angolo: 0.000000
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+kappa: 0.000000, 1.177375, 0.000000 
+--------angolo: 1.570796
+Algorithm INcorrect
+kappa: -0.010000, 0.000000, -0.010000 
 --------angolo: 0.000000
 Algorithm correct
 Algorithm correct
@@ -2071,24 +2707,21 @@ Algorithm correct
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
 Algorithm INcorrect
 Algorithm correct
 Algorithm INcorrect
 Algorithm correct
-Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm correct
-Algorithm INcorrect
 Algorithm correct
 Algorithm correct
-Algorithm correct
-Algorithm correct
-Algorithm correct
-Algorithm INcorrect
 Algorithm INcorrect
 Algorithm correct
 Algorithm INcorrect
@@ -2105,11 +2738,7 @@ Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
+Algorithm correct
 Algorithm correct
 Algorithm INcorrect
 Algorithm INcorrect
@@ -2117,9 +2746,9 @@ Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
-Algorithm correct
 Algorithm INcorrect
-Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
@@ -2127,10 +2756,17 @@ Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm correct
+Algorithm correct
 Algorithm INcorrect
-Algorithm correct
-Algorithm correct
-Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
@@ -2141,6 +2777,92 @@ kappa: 0.010000, 0.000000, 0.010000
 --- START rightPathNew --- 
 --> 1: (154, 203)
 --> 2: (1326, 315)
---> 3: (1452, 812)
---> 4: (1502, 812)
+--> 3: (1326, 315)
+--> 4: (1452, 812)
+--> 5: (1502, 812)
 --- END rightPathNew --- 
+[0m[ INFO] [1598724221.690775933]: cametra_matrix = 
+ [558.5726818577332, 0, 342.6203163666451;
+ 0, 558.5726818577332, 267.9308376846099;
+ 0, 0, 1][0m
+[0m[ INFO] [1598724221.690857447]: dist_coeffs = 
+[-0.2069661057376372, 0.0110561549401185, 0.01602106933810088, 0.01733990140219172][0m
+[33m[ WARN] [1598724223.672042267, 4.720000000]: Call student function[0m
+[0m[ INFO] [1598724223.679076712, 4.730000000]: camera estimated position = 
+[0.5710477852876324;
+ 0.7726561608221418;
+ 2.285687313095668][0m
+... logging to /home/lar2019/.ros/log/f4764944-ea21-11ea-90ac-080027ae6ce3/roslaunch-lar2019-vm-5612.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/lar2019/Desktop/AppliedRoboticsEnvironment/src/9_project_interface/launch/node_pipeline.launch
+[1mstarted roslaunch server http://lar2019-vm:41179/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /arena/h: 1.06
+ * /arena/robot_height: 0.16
+ * /arena/w: 1.56
+ * /camera_calibration/cx: 342.620316367
+ * /camera_calibration/cy: 267.930837685
+ * /camera_calibration/fx: 558.572681858
+ * /camera_calibration/fy: 558.572681858
+ * /camera_calibration/image_height: 600
+ * /camera_calibration/image_width: 800
+ * /camera_calibration/k1: -0.206966105738
+ * /camera_calibration/k2: 0.0110561549401
+ * /camera_calibration/k3: 0.0
+ * /camera_calibration/p1: 0.0160210693381
+ * /camera_calibration/p2: 0.0173399014022
+ * /config_folder: /home/lar2019/Des...
+ * /default_implementation/extrinsic_calib: False
+ * /default_implementation/obstacle_detector: False
+ * /default_implementation/planning: False
+ * /default_implementation/raw_clbk: False
+ * /default_implementation/rectify: False
+ * /default_implementation/rectify_clbk: True
+ * /default_implementation/robot_detector: False
+ * /default_implementation/unwarp: False
+ * /default_implementation/unwarped_ground_clbk: True
+ * /default_implementation/unwarped_robot_clbk: True
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+
+NODES
+  /
+    control (control/control_node)
+    extrinsic_calib (image_elab/extrinsic_calib_node)
+    localization (localization/localization_node)
+    obstacle_detector (image_elab/obstacle_detector_node)
+    odometry (localization/odometry_node)
+    planning (planning/planning_node)
+    rectify_image (image_elab/rectify_node)
+    robot_detector (image_elab/robot_detector_node)
+    unwarp_image (image_elab/unwarp_node)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/lar2019/Desktop/AppliedRoboticsEnvironment/src/9_project_interface/launch/node_pipeline.launch http://localhost:11311
+[1mprocess[extrinsic_calib-1]: started with pid [5629][0m
+[1mprocess[rectify_image-2]: started with pid [5630][0m
+[1mprocess[unwarp_image-3]: started with pid [5632][0m
+[1mprocess[obstacle_detector-4]: started with pid [5638][0m
+[1mprocess[robot_detector-5]: started with pid [5641][0m
+[1mprocess[localization-6]: started with pid [5648][0m
+[1mprocess[odometry-7]: started with pid [5652][0m
+[1mprocess[planning-8]: started with pid [5659][0m
+[1mprocess[control-9]: started with pid [5680][0m
+[control-9] killing on exit
+[planning-8] killing on exit
+[odometry-7] killing on exit
+[localization-6] killing on exit
+[robot_detector-5] killing on exit
+[obstacle_detector-4] killing on exit
+[unwarp_image-3] killing on exit
+[rectify_image-2] killing on exit
+[extrinsic_calib-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
