@@ -49,7 +49,7 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 			startLongId=(start.a*10000)+start.b;*/
 		startLongId=encoder(start.a, start.b);	
 		voronoiPaths->ids.push_back(startLongId);
-		std::cout << "start id " <<  startLongId << std::endl;
+		std::cout << "start id " <<  startLongId << "    size : " << voronoiPaths->ids.size() << std::endl;
 
 		connect(offset, start, voronoiPaths, true, &start_connection, -1, obsContours); //-1 indicate sthe right id is the last in ids vector
 		startSize=start_connection.size();
@@ -93,7 +93,7 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 				{
 					offset_2=offset_2+step;
 					end_connection.clear();
-					connect(offset_2, netVertex[i], voronoiPaths, endSize<=(nConnection+i), &end_connection, -1, obsContours);
+					connect(offset_2, netVertex[i], voronoiPaths, (endSize<=(nConnection+i)), &end_connection, -1, obsContours);
 					endSize=end_connection.size();
 					if(offset_2>max_offset)
 						endSize=100;
@@ -102,6 +102,7 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 				for(int j=0;j<end_connection.size();j++)
 					voronoiPaths->resultEdges.push_back(end_connection[i]);
 			}
+			std::cout << "end id " <<  endLongId << "    size : " << voronoiPaths->ids.size() << std::endl;
 		}
 		else
 		{
@@ -111,7 +112,7 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 				endLongId=(end.a*10000)+end.b;*/
 			endLongId=encoder(end.a,end.b);
 			voronoiPaths->ids.push_back(endLongId);
-			std::cout << "end id " <<  endLongId << std::endl;
+			std::cout << "end id " <<  endLongId << "    size : " << voronoiPaths->ids.size() << std::endl;
 			connect(offset, end, voronoiPaths, true, &end_connection, -1, obsContours);
 			endSize=end_connection.size();
 			std::cout << "end Size ingress" <<  endSize << std::endl;
@@ -132,7 +133,10 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 		if(startNew && startSize<=nConnection)
 		{
 			start_connection.clear();
-			connect(offset, start, voronoiPaths, startSize<=nConnection, &start_connection, -2, obsContours);
+			if(netRadius==0)
+				connect(offset, start, voronoiPaths, startSize<=nConnection, &start_connection, -2, obsContours);
+			else
+				connect(offset, start, voronoiPaths, startSize<=nConnection, &start_connection, -6, obsContours);
 			startSize=start_connection.size();
 		}
 		if(endNew && netRadius==0 && endSize<=nConnection)
@@ -198,7 +202,7 @@ void shortestPath(VoronoiPoint start, bool startNew, int idStart, VoronoiPoint e
 			//encodedCoord=(x*10000)+y;
 			encodedCoord=( (x!=0?x:1) *10000)+y;*/
 		encodedCoord=encoder(x,y);	
-		std::cout << "(pathfinder) encodedCoord = " << encodedCoord << std::endl;
+		std::cout << i << " (pathfinder) encodedCoord = " << encodedCoord << std::endl;
 		//Save the coordinates in the array, each encoded coordinates in position using the id of the first node (edge A-B, take A id) 
 		mapPosition[voronoiPaths->resultEdges[i].idFirstNode]=encodedCoord;
 		//std::cout << "id " << voronoiPaths->resultEdges[i].idFirstNode << " coo " << encodedCoord << " coo2 " << mapPosition[voronoiPaths->resultEdges[i].idFirstNode] <<  std::endl; 
@@ -219,22 +223,28 @@ void shortestPath(VoronoiPoint start, bool startNew, int idStart, VoronoiPoint e
 	
 	std::vector<int> startEndPath;
 	startEndPath.push_back(voronoiPaths->ids.size()+idStart);
+	std::cout << "startEndPath[0] : " << startEndPath[0] << std::endl;
+	std::cout << "(pathfinder) mapposition : " << mapPosition[startEndPath[0]] << std::endl;
+	std::cout << "voronoiPaths->ids.size()+idStart : " << voronoiPaths->ids.size()+idStart << std::endl;
 	storePath(path,voronoiPaths->ids.size()+idEnd,&startEndPath);
 	
 	
 	std::cout << std::endl << "right path ";
-	for(int j=0;j<startEndPath.size();j++)
+	for(int j=0;j<startEndPath.size();j++) {
 		std::cout << " " << startEndPath[j];
+		std::cout << "(pathfinder) mapposition : " << mapPosition[startEndPath[j]] << std::endl;
+	}
 	std::cout << std::endl;
 	std::cout << std::endl;
 	//std::cout << "map " << mapPosition[111] << std::endl;
 	
-	if(startNew)
+	if(startNew) 
 		rightPath->push_back(start);
+	std::cout << "node: " << startEndPath[0] << " " << mapPosition[startEndPath[0]] << std::endl;
 	int x1,y1;
 	for(int i=1;i<startEndPath.size()-1;i++)
 	{
-		std::cout << "(pathfider) mapPosition[voronoiPaths->resultEdges[startEndPath[i]].idFirstNode] : " << mapPosition[voronoiPaths->resultEdges[startEndPath[i]].idFirstNode] << std::endl;
+		std::cout << "(pathfider) startEndPath[" << i << "] : " << startEndPath[i] << std::endl;
 		//if(mapPosition[voronoiPaths->resultEdges[startEndPath[i]].idFirstNode]<10000)
 		/*if(mapPosition[startEndPath[i]]<10000)
 			encoder=100;
@@ -251,6 +261,7 @@ void shortestPath(VoronoiPoint start, bool startNew, int idStart, VoronoiPoint e
 	}
 	if(endNew)
 		rightPath->push_back(end);
+	std::cout << "node: " << startEndPath[startEndPath.size()-1] << " " << mapPosition[startEndPath[startEndPath.size()-1]] << std::endl;
 	
 }
 
@@ -329,8 +340,10 @@ void connect(int offset, VoronoiPoint pointP, VoronoiResults *voronoiPaths, bool
 						if(voronoiPaths->ids[j]==longId)
 							id1=j;
 					std::cout << "id1 " << id1 << std::endl;
-					GraphEdge e(x,y,pointP.a,pointP.b,len,id1,pointId);
-					pointEdges->push_back(e);
+					GraphEdge e1(x,y,pointP.a,pointP.b,len,id1,pointId);
+					pointEdges->push_back(e1);
+					GraphEdge e2(pointP.a,pointP.b,x,y,len,pointId,id1);
+    				pointEdges->push_back(e2);
 				}
 				prev_x=x;
 				prev_y=y;
@@ -345,10 +358,10 @@ bool edgeOnObstacle(VoronoiPoint a, VoronoiPoint b, const std::vector<std::vecto
 	std::vector<VoronoiPoint> samples;
 	bool isCollision=false;
 	sampleSegment(a, b, samples);
-	std::cout << "------ n samples " << samples.size() << std::endl; 
+	//std::cout << "------ n samples " << samples.size() << std::endl; 
 	for(int i=0; i<samples.size() && isCollision==false;i++)
 	{
-		std::cout << "------ sample " << i << " coord(" << samples[i].a << "," << samples[i].b << ")" << std::endl; 
+		//std::cout << "------ sample " << i << " coord(" << samples[i].a << "," << samples[i].b << ")" << std::endl; 
 		isCollision=findCollision(samples[i].a, samples[i].b, obsContours);
 	}
 	if(isCollision)
