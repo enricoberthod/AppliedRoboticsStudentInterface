@@ -2,6 +2,8 @@
 
 int i_gate;
 std::vector<std::vector<cv::Point>> contours;
+int encoder(int, int);
+void decoder(int, int &, int &);
 
 //using namespace std;
 
@@ -715,4 +717,15 @@ bool collision_detection(double x, double y, const std::vector<std::vector<cv::P
 		}
 	}
 	return r;
+}
+
+int encoder(int x, int y)
+{
+	return (x*10000)+y;
+}
+
+void decoder(int encoded, int &x, int &y)    
+{
+	x=encoded/10000;
+	y=encoded-(x*10000);
 }
