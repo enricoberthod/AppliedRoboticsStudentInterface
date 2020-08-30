@@ -417,8 +417,14 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 
 	switch(mission_type) //0 for robot-gate //1 for robot-victims_in_right_order-gate //2 for robot-victims-gate in min time
 	{
-	case 0: //Direct path from robot initial position to gate position 		
-		PathFinder(start, true, end, true, &voronoiPaths, &rightPath, 0, contours); 
+	case 0: //Direct path from robot initial position to gate position 
+		if(!edgeOnObstacle(start, end, contours))
+		{
+			rightPath.push_back(start);
+			rightPath.push_back(end);	
+		}	
+		else
+			PathFinder(start, true, end, true, &voronoiPaths, &rightPath, 0, contours); 
 	break;
 	case 1: //Path from robot to victim 1, victim 1 to victim 2, victim n to gate position (Mission 1)
 		
@@ -436,7 +442,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 					end=VoronoiPoint((int)(victim_list[j].second[0].x*floatToInt),(int)(victim_list[j].second[0].y*floatToInt));
 					//find the shortest path
 					piecePath.clear();
-					if(isFreePath(start, end))
+					if(!edgeOnObstacle(start, end, contours))
 					{
 						if(firstTime)
 							piecePath.push_back(start);
@@ -455,7 +461,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		}
 		//last call for connect the last victims with the gate
 		piecePath.clear();
-		if(isFreePath(start, end))
+		if(!edgeOnObstacle(start, end, contours))
 			piecePath.push_back(end);		
 		else
 			PathFinder(start, false, gate_pos, true, &voronoiPaths, &piecePath, 0, contours);
@@ -751,6 +757,7 @@ bool collision_detection(double x, double y, const std::vector<std::vector<cv::P
 	}
 	return r;
 }
+
 
 /*
 int encoder(int x, int y)
