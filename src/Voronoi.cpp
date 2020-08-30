@@ -281,7 +281,7 @@ bool isObstaclePoint(int x, int y, const std::vector<std::vector<cv::Point>>& co
 	double res;
 	for (int i = 0; i < contours.size() && !r; i++) {
 		res = cv::pointPolygonTest(contours[i] , cv::Point2f(x,y) , true);
-		if(res > 0) {
+		if(res >= 0 || x == 0 || x == 1560 || y == 0 || y == 1060) {
 			r = true;
 			//std::cout << "INSIDE!!! " << res << " -> " << " punto <" << x << ", " << y << ">" << " -> " << r << std::endl;
 		}
