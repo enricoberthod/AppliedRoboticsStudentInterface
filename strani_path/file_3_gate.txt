@@ -1,0 +1,1308 @@
+
+RED MASK
+N. contours (Elements): 4
+1) Contour size: 100
+   Approximated contour size: 3
+2) Contour size: 71
+   Approximated contour size: 4
+3) Contour size: 62
+   Approximated contour size: 5
+4) Contour size: 145
+   Approximated contour size: 6
+   Elements: 4
+N. contours: 3
+1) Contour size: 79
+   Approximated contour size: 4
+2) Contour size: 146
+3) Contour size: 148
+   Elements: 4
+Best fitting template: 1
+Best fitting template: 3
+   Elements: 2
+Mission -> 1
+border size : 4
+b_x_max : 1500
+b_y_max : 1000
+clipper1: 4
+clipper2: 4
+clipper3: 2
+clipper4: 4
+obsvertx: 349,720
+obsvertx: 406,815
+obsvertx: 282,1060
+obsvertx: 165,1065
+obsvertx: 13,819
+obsvertx: 71,716
+obsvertx: 921,0
+obsvertx: 1003,122
+obsvertx: 1003,178
+obsvertx: 927,304
+obsvertx: 905,317
+obsvertx: 906,321
+obsvertx: 890,368
+obsvertx: 947,424
+obsvertx: 947,647
+obsvertx: 887,706
+obsvertx: 674,702
+obsvertx: 617,645
+obsvertx: 613,428
+obsvertx: 643,398
+obsvertx: 631,392
+obsvertx: 603,322
+obsvertx: 640,220
+obsvertx: 609,156
+obsvertx: 611,105
+obsvertx: 680,0
+obsvertx: 724,0
+obsvertx: 873,0
+### contours: 2
+### contours[0] : 6
+### contours[1] : 22
+hash 28
+bordivertxf: 0.000000,0.000000
+bordivertx: 0,0
+bordivertxf: 1.500000,0.000000
+bordivertx: 1500,0
+bordivertxf: 1.500000,1.000000
+bordivertx: 1500,1000
+bordivertxf: 0.000000,1.000000
+bordivertx: 0,1000
+size: 32 
+size2: 32 
+pippo c'è 
+Traversing Voronoi graph.
+pippo c'è 
+Number of visited primary edges using vertex iterator: 215
+before points size: 109 
+before edge size: 108 
+edgesAfterVoronoi: 108
+pointsAfterVoronoi: 109
+x: 0, 0
+x: 0, 1000
+x: 13, 819
+x: 6, 815
+x: 6, 815
+x: 7, 822
+x: 7, 822
+x: 71, 716
+x: 37, 697
+x: 37, 697
+x: 44, 955
+x: 44, 955
+x: 44, 955
+x: 72, 643
+x: 72, 643
+x: 282, 1060
+x: 349, 720
+x: 603, 322
+x: 301, 301
+x: 301, 301
+x: 301, 301
+x: 609, 156
+x: 458, 150
+x: 458, 150
+x: 611, 105
+x: 510, 101
+x: 510, 101
+x: 613, 428
+x: 326, 433
+x: 326, 433
+x: 306, 412
+x: 306, 412
+x: 306, 412
+x: 352, 459
+x: 352, 459
+x: 306, 403
+x: 306, 403
+x: 306, 403
+x: 428, 391
+x: 428, 391
+x: 472, 645
+x: 472, 645
+x: 617, 645
+x: 473, 647
+x: 473, 647
+x: 377, 240
+x: 377, 240
+x: 390, 230
+x: 390, 230
+x: 390, 230
+x: 554, 67
+x: 554, 67
+x: 457, 229
+x: 457, 229
+x: 577, 392
+x: 577, 392
+x: 631, 392
+x: 611, 399
+x: 611, 399
+x: 626, 400
+x: 626, 400
+x: 640, 220
+x: 643, 398
+x: 520, 741
+x: 520, 741
+x: 523, 744
+x: 523, 744
+x: 674, 702
+x: 562, 813
+x: 562, 813
+x: 571, 833
+x: 571, 833
+x: 571, 833
+x: 890, 368
+x: 905, 317
+x: 906, 321
+x: 911, 319
+x: 911, 319
+x: 921, 0
+x: 921, 326
+x: 921, 326
+x: 954, 352
+x: 954, 352
+x: 954, 352
+x: 955, 353
+x: 955, 353
+x: 1006, 352
+x: 1006, 352
+x: 1019, 350
+x: 1318, 368
+x: 1318, 368
+x: 1002, 61
+x: 1236, 0
+x: 1500, 270
+x: 1319, 336
+x: 1319, 336
+x: 1386, 424
+x: 1386, 424
+x: 671, 850
+x: 671, 850
+x: 1500, 858
+x: 1471, 535
+x: 1471, 535
+x: 1471, 535
+x: 1159, 923
+x: 1159, 923
+x: 1430, 500
+x: 1430, 500
+x: 680, 0
+NUMERO VITTIMA = 3
+start id 12730294    size : 88
+start Size ingress 0
+end id 14410769    size : 89
+end Size ingress0
+Step 20
+Step 30size: 0 0
+Step 40size: 0 0
+Step 50size: 0 0
+connect points (1319,336) and (1273,294)
+id 74  -  longId 13190336  -  pointLongId 12730294  -  PointId 87
+Step 60size: 2 0
+connect points (1319,336) and (1273,294)
+id 74  -  longId 13190336  -  pointLongId 12730294  -  PointId 87
+Step 70size: 2 0
+connect points (1319,336) and (1273,294)
+id 74  -  longId 13190336  -  pointLongId 12730294  -  PointId 87
+Step 80size: 2 0
+connect points (1318,368) and (1273,294)
+id 70  -  longId 13180368  -  pointLongId 12730294  -  PointId 87
+connect points (1319,336) and (1273,294)
+id 74  -  longId 13190336  -  pointLongId 12730294  -  PointId 87
+Step 90size: 4 0
+connect points (1318,368) and (1273,294)
+id 70  -  longId 13180368  -  pointLongId 12730294  -  PointId 87
+connect points (1319,336) and (1273,294)
+id 74  -  longId 13190336  -  pointLongId 12730294  -  PointId 87
+connect points (1500,858) and (1441,769)
+id 81  -  longId 15000858  -  pointLongId 14410769  -  PointId 88
+Step 100size: 4 2
+connect points (1318,368) and (1273,294)
+id 70  -  longId 13180368  -  pointLongId 12730294  -  PointId 87
+connect points (1319,336) and (1273,294)
+id 74  -  longId 13190336  -  pointLongId 12730294  -  PointId 87
+connect points (1500,858) and (1441,769)
+id 81  -  longId 15000858  -  pointLongId 14410769  -  PointId 88
+Step 110size: 4 2
+connect points (1318,368) and (1273,294)
+id 70  -  longId 13180368  -  pointLongId 12730294  -  PointId 87
+connect points (1319,336) and (1273,294)
+id 74  -  longId 13190336  -  pointLongId 12730294  -  PointId 87
+connect points (1500,858) and (1441,769)
+id 81  -  longId 15000858  -  pointLongId 14410769  -  PointId 88
+Step 120size: 4 2
+connect points (1318,368) and (1273,294)
+id 70  -  longId 13180368  -  pointLongId 12730294  -  PointId 87
+connect points (1319,336) and (1273,294)
+id 74  -  longId 13190336  -  pointLongId 12730294  -  PointId 87
+connect points (1500,858) and (1441,769)
+id 81  -  longId 15000858  -  pointLongId 14410769  -  PointId 88
+Step 130size: 4 2
+connect points (1318,368) and (1273,294)
+id 70  -  longId 13180368  -  pointLongId 12730294  -  PointId 87
+connect points (1319,336) and (1273,294)
+id 74  -  longId 13190336  -  pointLongId 12730294  -  PointId 87
+connect points (1500,858) and (1441,769)
+id 81  -  longId 15000858  -  pointLongId 14410769  -  PointId 88
+Step 140size: 4 2
+connect points (1318,368) and (1273,294)
+id 70  -  longId 13180368  -  pointLongId 12730294  -  PointId 87
+connect points (1319,336) and (1273,294)
+id 74  -  longId 13190336  -  pointLongId 12730294  -  PointId 87
+connect points (1386,424) and (1273,294)
+id 79  -  longId 13860424  -  pointLongId 12730294  -  PointId 87
+connect points (1500,858) and (1441,769)
+id 81  -  longId 15000858  -  pointLongId 14410769  -  PointId 88
+Step 150size: 6 2
+connect points (1318,368) and (1273,294)
+id 70  -  longId 13180368  -  pointLongId 12730294  -  PointId 87
+connect points (1319,336) and (1273,294)
+id 74  -  longId 13190336  -  pointLongId 12730294  -  PointId 87
+connect points (1386,424) and (1273,294)
+id 79  -  longId 13860424  -  pointLongId 12730294  -  PointId 87
+connect points (1500,858) and (1441,769)
+id 81  -  longId 15000858  -  pointLongId 14410769  -  PointId 88
+Step 160size: 6 2
+connect points (1318,368) and (1273,294)
+id 70  -  longId 13180368  -  pointLongId 12730294  -  PointId 87
+connect points (1319,336) and (1273,294)
+id 74  -  longId 13190336  -  pointLongId 12730294  -  PointId 87
+connect points (1386,424) and (1273,294)
+id 79  -  longId 13860424  -  pointLongId 12730294  -  PointId 87
+connect points (1500,858) and (1441,769)
+id 81  -  longId 15000858  -  pointLongId 14410769  -  PointId 88
+Step 170size: 6 2
+connect points (1318,368) and (1273,294)
+id 70  -  longId 13180368  -  pointLongId 12730294  -  PointId 87
+connect points (1319,336) and (1273,294)
+id 74  -  longId 13190336  -  pointLongId 12730294  -  PointId 87
+connect points (1386,424) and (1273,294)
+id 79  -  longId 13860424  -  pointLongId 12730294  -  PointId 87
+connect points (1500,858) and (1441,769)
+id 81  -  longId 15000858  -  pointLongId 14410769  -  PointId 88
+Step 180size: 6 2
+connect points (1318,368) and (1273,294)
+id 70  -  longId 13180368  -  pointLongId 12730294  -  PointId 87
+connect points (1319,336) and (1273,294)
+id 74  -  longId 13190336  -  pointLongId 12730294  -  PointId 87
+connect points (1386,424) and (1273,294)
+id 79  -  longId 13860424  -  pointLongId 12730294  -  PointId 87
+connect points (1500,858) and (1441,769)
+id 81  -  longId 15000858  -  pointLongId 14410769  -  PointId 88
+Step 190size: 6 2
+connect points (1318,368) and (1273,294)
+id 70  -  longId 13180368  -  pointLongId 12730294  -  PointId 87
+connect points (1319,336) and (1273,294)
+id 74  -  longId 13190336  -  pointLongId 12730294  -  PointId 87
+connect points (1386,424) and (1273,294)
+id 79  -  longId 13860424  -  pointLongId 12730294  -  PointId 87
+connect points (1500,858) and (1441,769)
+id 81  -  longId 15000858  -  pointLongId 14410769  -  PointId 88
+Step 200size: 6 2
+connect points (1318,368) and (1273,294)
+id 70  -  longId 13180368  -  pointLongId 12730294  -  PointId 87
+connect points (1319,336) and (1273,294)
+id 74  -  longId 13190336  -  pointLongId 12730294  -  PointId 87
+connect points (1386,424) and (1273,294)
+id 79  -  longId 13860424  -  pointLongId 12730294  -  PointId 87
+connect points (1500,858) and (1441,769)
+id 81  -  longId 15000858  -  pointLongId 14410769  -  PointId 88
+Step 210size: 6 2
+connect points (1318,368) and (1273,294)
+id 70  -  longId 13180368  -  pointLongId 12730294  -  PointId 87
+connect points (1319,336) and (1273,294)
+id 74  -  longId 13190336  -  pointLongId 12730294  -  PointId 87
+connect points (1386,424) and (1273,294)
+id 79  -  longId 13860424  -  pointLongId 12730294  -  PointId 87
+connect points (1430,500) and (1273,294)
+id 83  -  longId 14300500  -  pointLongId 12730294  -  PointId 87
+connect points (1500,858) and (1441,769)
+id 81  -  longId 15000858  -  pointLongId 14410769  -  PointId 88
+start Size exit8
+end Size exit2
+V 89  start (1273, 294) -2 - end (1441, 769) -1
+(pathfinder) x = 0
+(pathfinder) y = 0
+0 (pathfinder) encodedCoord = 0
+(pathfinder) x = 0
+(pathfinder) y = 1000
+2 (pathfinder) encodedCoord = 1000
+(pathfinder) x = 13
+(pathfinder) y = 819
+4 (pathfinder) encodedCoord = 130819
+(pathfinder) x = 6
+(pathfinder) y = 815
+6 (pathfinder) encodedCoord = 60815
+(pathfinder) x = 6
+(pathfinder) y = 815
+6 (pathfinder) encodedCoord = 60815
+(pathfinder) x = 7
+(pathfinder) y = 822
+8 (pathfinder) encodedCoord = 70822
+(pathfinder) x = 7
+(pathfinder) y = 822
+8 (pathfinder) encodedCoord = 70822
+(pathfinder) x = 71
+(pathfinder) y = 716
+9 (pathfinder) encodedCoord = 710716
+(pathfinder) x = 37
+(pathfinder) y = 697
+7 (pathfinder) encodedCoord = 370697
+(pathfinder) x = 37
+(pathfinder) y = 697
+7 (pathfinder) encodedCoord = 370697
+(pathfinder) x = 44
+(pathfinder) y = 955
+3 (pathfinder) encodedCoord = 440955
+(pathfinder) x = 44
+(pathfinder) y = 955
+3 (pathfinder) encodedCoord = 440955
+(pathfinder) x = 44
+(pathfinder) y = 955
+3 (pathfinder) encodedCoord = 440955
+(pathfinder) x = 72
+(pathfinder) y = 643
+10 (pathfinder) encodedCoord = 720643
+(pathfinder) x = 72
+(pathfinder) y = 643
+10 (pathfinder) encodedCoord = 720643
+(pathfinder) x = 282
+(pathfinder) y = 1060
+15 (pathfinder) encodedCoord = 2821060
+(pathfinder) x = 349
+(pathfinder) y = 720
+17 (pathfinder) encodedCoord = 3490720
+(pathfinder) x = 603
+(pathfinder) y = 322
+19 (pathfinder) encodedCoord = 6030322
+(pathfinder) x = 301
+(pathfinder) y = 301
+1 (pathfinder) encodedCoord = 3010301
+(pathfinder) x = 301
+(pathfinder) y = 301
+1 (pathfinder) encodedCoord = 3010301
+(pathfinder) x = 301
+(pathfinder) y = 301
+1 (pathfinder) encodedCoord = 3010301
+(pathfinder) x = 609
+(pathfinder) y = 156
+23 (pathfinder) encodedCoord = 6090156
+(pathfinder) x = 458
+(pathfinder) y = 150
+25 (pathfinder) encodedCoord = 4580150
+(pathfinder) x = 458
+(pathfinder) y = 150
+25 (pathfinder) encodedCoord = 4580150
+(pathfinder) x = 611
+(pathfinder) y = 105
+28 (pathfinder) encodedCoord = 6110105
+(pathfinder) x = 510
+(pathfinder) y = 101
+26 (pathfinder) encodedCoord = 5100101
+(pathfinder) x = 510
+(pathfinder) y = 101
+26 (pathfinder) encodedCoord = 5100101
+(pathfinder) x = 613
+(pathfinder) y = 428
+31 (pathfinder) encodedCoord = 6130428
+(pathfinder) x = 326
+(pathfinder) y = 433
+33 (pathfinder) encodedCoord = 3260433
+(pathfinder) x = 326
+(pathfinder) y = 433
+33 (pathfinder) encodedCoord = 3260433
+(pathfinder) x = 306
+(pathfinder) y = 412
+12 (pathfinder) encodedCoord = 3060412
+(pathfinder) x = 306
+(pathfinder) y = 412
+12 (pathfinder) encodedCoord = 3060412
+(pathfinder) x = 306
+(pathfinder) y = 412
+12 (pathfinder) encodedCoord = 3060412
+(pathfinder) x = 352
+(pathfinder) y = 459
+34 (pathfinder) encodedCoord = 3520459
+(pathfinder) x = 352
+(pathfinder) y = 459
+34 (pathfinder) encodedCoord = 3520459
+(pathfinder) x = 306
+(pathfinder) y = 403
+22 (pathfinder) encodedCoord = 3060403
+(pathfinder) x = 306
+(pathfinder) y = 403
+22 (pathfinder) encodedCoord = 3060403
+(pathfinder) x = 306
+(pathfinder) y = 403
+22 (pathfinder) encodedCoord = 3060403
+(pathfinder) x = 428
+(pathfinder) y = 391
+36 (pathfinder) encodedCoord = 4280391
+(pathfinder) x = 428
+(pathfinder) y = 391
+36 (pathfinder) encodedCoord = 4280391
+(pathfinder) x = 472
+(pathfinder) y = 645
+35 (pathfinder) encodedCoord = 4720645
+(pathfinder) x = 472
+(pathfinder) y = 645
+35 (pathfinder) encodedCoord = 4720645
+(pathfinder) x = 617
+(pathfinder) y = 645
+39 (pathfinder) encodedCoord = 6170645
+(pathfinder) x = 473
+(pathfinder) y = 647
+38 (pathfinder) encodedCoord = 4730647
+(pathfinder) x = 473
+(pathfinder) y = 647
+38 (pathfinder) encodedCoord = 4730647
+(pathfinder) x = 377
+(pathfinder) y = 240
+21 (pathfinder) encodedCoord = 3770240
+(pathfinder) x = 377
+(pathfinder) y = 240
+21 (pathfinder) encodedCoord = 3770240
+(pathfinder) x = 390
+(pathfinder) y = 230
+27 (pathfinder) encodedCoord = 3900230
+(pathfinder) x = 390
+(pathfinder) y = 230
+27 (pathfinder) encodedCoord = 3900230
+(pathfinder) x = 390
+(pathfinder) y = 230
+27 (pathfinder) encodedCoord = 3900230
+(pathfinder) x = 554
+(pathfinder) y = 67
+30 (pathfinder) encodedCoord = 5540067
+(pathfinder) x = 554
+(pathfinder) y = 67
+30 (pathfinder) encodedCoord = 5540067
+(pathfinder) x = 457
+(pathfinder) y = 229
+42 (pathfinder) encodedCoord = 4570229
+(pathfinder) x = 457
+(pathfinder) y = 229
+42 (pathfinder) encodedCoord = 4570229
+(pathfinder) x = 577
+(pathfinder) y = 392
+37 (pathfinder) encodedCoord = 5770392
+(pathfinder) x = 577
+(pathfinder) y = 392
+37 (pathfinder) encodedCoord = 5770392
+(pathfinder) x = 631
+(pathfinder) y = 392
+46 (pathfinder) encodedCoord = 6310392
+(pathfinder) x = 611
+(pathfinder) y = 399
+45 (pathfinder) encodedCoord = 6110399
+(pathfinder) x = 611
+(pathfinder) y = 399
+45 (pathfinder) encodedCoord = 6110399
+(pathfinder) x = 626
+(pathfinder) y = 400
+48 (pathfinder) encodedCoord = 6260400
+(pathfinder) x = 626
+(pathfinder) y = 400
+48 (pathfinder) encodedCoord = 6260400
+(pathfinder) x = 640
+(pathfinder) y = 220
+44 (pathfinder) encodedCoord = 6400220
+(pathfinder) x = 643
+(pathfinder) y = 398
+49 (pathfinder) encodedCoord = 6430398
+(pathfinder) x = 520
+(pathfinder) y = 741
+41 (pathfinder) encodedCoord = 5200741
+(pathfinder) x = 520
+(pathfinder) y = 741
+41 (pathfinder) encodedCoord = 5200741
+(pathfinder) x = 523
+(pathfinder) y = 744
+50 (pathfinder) encodedCoord = 5230744
+(pathfinder) x = 523
+(pathfinder) y = 744
+50 (pathfinder) encodedCoord = 5230744
+(pathfinder) x = 674
+(pathfinder) y = 702
+52 (pathfinder) encodedCoord = 6740702
+(pathfinder) x = 562
+(pathfinder) y = 813
+51 (pathfinder) encodedCoord = 5620813
+(pathfinder) x = 562
+(pathfinder) y = 813
+51 (pathfinder) encodedCoord = 5620813
+(pathfinder) x = 571
+(pathfinder) y = 833
+55 (pathfinder) encodedCoord = 5710833
+(pathfinder) x = 571
+(pathfinder) y = 833
+55 (pathfinder) encodedCoord = 5710833
+(pathfinder) x = 571
+(pathfinder) y = 833
+55 (pathfinder) encodedCoord = 5710833
+(pathfinder) x = 890
+(pathfinder) y = 368
+58 (pathfinder) encodedCoord = 8900368
+(pathfinder) x = 905
+(pathfinder) y = 317
+60 (pathfinder) encodedCoord = 9050317
+(pathfinder) x = 906
+(pathfinder) y = 321
+62 (pathfinder) encodedCoord = 9060321
+(pathfinder) x = 911
+(pathfinder) y = 319
+61 (pathfinder) encodedCoord = 9110319
+(pathfinder) x = 911
+(pathfinder) y = 319
+61 (pathfinder) encodedCoord = 9110319
+(pathfinder) x = 921
+(pathfinder) y = 0
+65 (pathfinder) encodedCoord = 9210000
+(pathfinder) x = 921
+(pathfinder) y = 326
+64 (pathfinder) encodedCoord = 9210326
+(pathfinder) x = 921
+(pathfinder) y = 326
+64 (pathfinder) encodedCoord = 9210326
+(pathfinder) x = 954
+(pathfinder) y = 352
+59 (pathfinder) encodedCoord = 9540352
+(pathfinder) x = 954
+(pathfinder) y = 352
+59 (pathfinder) encodedCoord = 9540352
+(pathfinder) x = 954
+(pathfinder) y = 352
+59 (pathfinder) encodedCoord = 9540352
+(pathfinder) x = 955
+(pathfinder) y = 353
+67 (pathfinder) encodedCoord = 9550353
+(pathfinder) x = 955
+(pathfinder) y = 353
+67 (pathfinder) encodedCoord = 9550353
+(pathfinder) x = 1006
+(pathfinder) y = 352
+68 (pathfinder) encodedCoord = 10060352
+(pathfinder) x = 1006
+(pathfinder) y = 352
+68 (pathfinder) encodedCoord = 10060352
+(pathfinder) x = 1019
+(pathfinder) y = 350
+69 (pathfinder) encodedCoord = 10190350
+(pathfinder) x = 1318
+(pathfinder) y = 368
+70 (pathfinder) encodedCoord = 13180368
+(pathfinder) x = 1318
+(pathfinder) y = 368
+70 (pathfinder) encodedCoord = 13180368
+(pathfinder) x = 1002
+(pathfinder) y = 61
+71 (pathfinder) encodedCoord = 10020061
+(pathfinder) x = 1236
+(pathfinder) y = 0
+73 (pathfinder) encodedCoord = 12360000
+(pathfinder) x = 1500
+(pathfinder) y = 270
+78 (pathfinder) encodedCoord = 15000270
+(pathfinder) x = 1319
+(pathfinder) y = 336
+74 (pathfinder) encodedCoord = 13190336
+(pathfinder) x = 1319
+(pathfinder) y = 336
+74 (pathfinder) encodedCoord = 13190336
+(pathfinder) x = 1386
+(pathfinder) y = 424
+79 (pathfinder) encodedCoord = 13860424
+(pathfinder) x = 1386
+(pathfinder) y = 424
+79 (pathfinder) encodedCoord = 13860424
+(pathfinder) x = 671
+(pathfinder) y = 850
+56 (pathfinder) encodedCoord = 6710850
+(pathfinder) x = 671
+(pathfinder) y = 850
+56 (pathfinder) encodedCoord = 6710850
+(pathfinder) x = 1500
+(pathfinder) y = 858
+81 (pathfinder) encodedCoord = 15000858
+(pathfinder) x = 1471
+(pathfinder) y = 535
+80 (pathfinder) encodedCoord = 14710535
+(pathfinder) x = 1471
+(pathfinder) y = 535
+80 (pathfinder) encodedCoord = 14710535
+(pathfinder) x = 1471
+(pathfinder) y = 535
+80 (pathfinder) encodedCoord = 14710535
+(pathfinder) x = 1159
+(pathfinder) y = 923
+85 (pathfinder) encodedCoord = 11590923
+(pathfinder) x = 1159
+(pathfinder) y = 923
+85 (pathfinder) encodedCoord = 11590923
+(pathfinder) x = 1430
+(pathfinder) y = 500
+83 (pathfinder) encodedCoord = 14300500
+(pathfinder) x = 1430
+(pathfinder) y = 500
+83 (pathfinder) encodedCoord = 14300500
+(pathfinder) x = 1318
+(pathfinder) y = 368
+70 (pathfinder) encodedCoord = 13180368
+(pathfinder) x = 1273
+(pathfinder) y = 294
+87 (pathfinder) encodedCoord = 12730294
+(pathfinder) x = 1319
+(pathfinder) y = 336
+74 (pathfinder) encodedCoord = 13190336
+(pathfinder) x = 1273
+(pathfinder) y = 294
+87 (pathfinder) encodedCoord = 12730294
+(pathfinder) x = 1386
+(pathfinder) y = 424
+79 (pathfinder) encodedCoord = 13860424
+(pathfinder) x = 1273
+(pathfinder) y = 294
+87 (pathfinder) encodedCoord = 12730294
+(pathfinder) x = 1430
+(pathfinder) y = 500
+83 (pathfinder) encodedCoord = 14300500
+(pathfinder) x = 1273
+(pathfinder) y = 294
+87 (pathfinder) encodedCoord = 12730294
+(pathfinder) x = 1500
+(pathfinder) y = 858
+81 (pathfinder) encodedCoord = 15000858
+(pathfinder) x = 1441
+(pathfinder) y = 769
+88 (pathfinder) encodedCoord = 14410769
+Dijkstra 87 88 - 12730294 14410769
+Dijkstra 87 88 - 12730294 14410769
+
+
+
+startEndPath[0] : 87
+(pathfinder) mapposition : 12730294
+voronoiPaths->ids.size()+idStart : 87
+
+right path  87(pathfinder) mapposition : 12730294
+ 70(pathfinder) mapposition : 13180368
+ 43(pathfinder) mapposition : 32765
+ 30(pathfinder) mapposition : 5540067
+ 26(pathfinder) mapposition : 5100101
+ 25(pathfinder) mapposition : 4580150
+ 27(pathfinder) mapposition : 3900230
+ 21(pathfinder) mapposition : 3770240
+ 1(pathfinder) mapposition : 3010301
+ 22(pathfinder) mapposition : 3060403
+ 12(pathfinder) mapposition : 3060412
+ 33(pathfinder) mapposition : 3260433
+ 34(pathfinder) mapposition : 3520459
+ 35(pathfinder) mapposition : 4720645
+ 38(pathfinder) mapposition : 4730647
+ 41(pathfinder) mapposition : 5200741
+ 50(pathfinder) mapposition : 5230744
+ 51(pathfinder) mapposition : 5620813
+ 55(pathfinder) mapposition : 5710833
+ 56(pathfinder) mapposition : 6710850
+ 81(pathfinder) mapposition : 15000858
+ 88(pathfinder) mapposition : 14410769
+
+
+startNew inside
+node: 87 12730294
+(pathfider) startEndPath[1] : 70
+node: 70 13180368 x,y (1318,368)
+(pathfider) startEndPath[2] : 43
+node: 43 32765 x,y (3,2765)
+(pathfider) startEndPath[3] : 30
+node: 30 5540067 x,y (554,67)
+(pathfider) startEndPath[4] : 26
+node: 26 5100101 x,y (510,101)
+(pathfider) startEndPath[5] : 25
+node: 25 4580150 x,y (458,150)
+(pathfider) startEndPath[6] : 27
+node: 27 3900230 x,y (390,230)
+(pathfider) startEndPath[7] : 21
+node: 21 3770240 x,y (377,240)
+(pathfider) startEndPath[8] : 1
+node: 1 3010301 x,y (301,301)
+(pathfider) startEndPath[9] : 22
+node: 22 3060403 x,y (306,403)
+(pathfider) startEndPath[10] : 12
+node: 12 3060412 x,y (306,412)
+(pathfider) startEndPath[11] : 33
+node: 33 3260433 x,y (326,433)
+(pathfider) startEndPath[12] : 34
+node: 34 3520459 x,y (352,459)
+(pathfider) startEndPath[13] : 35
+node: 35 4720645 x,y (472,645)
+(pathfider) startEndPath[14] : 38
+node: 38 4730647 x,y (473,647)
+(pathfider) startEndPath[15] : 41
+node: 41 5200741 x,y (520,741)
+(pathfider) startEndPath[16] : 50
+node: 50 5230744 x,y (523,744)
+(pathfider) startEndPath[17] : 51
+node: 51 5620813 x,y (562,813)
+(pathfider) startEndPath[18] : 55
+node: 55 5710833 x,y (571,833)
+(pathfider) startEndPath[19] : 56
+node: 56 6710850 x,y (671,850)
+(pathfider) startEndPath[20] : 81
+node: 81 15000858 x,y (1500,858)
+endNew inside
+node: 88 14410769
+
+right path 2  1273,294
+ 1318,368
+ 3,2765
+ 554,67
+ 510,101
+ 458,150
+ 390,230
+ 377,240
+ 301,301
+ 306,403
+ 306,412
+ 326,433
+ 352,459
+ 472,645
+ 473,647
+ 520,741
+ 523,744
+ 562,813
+ 571,833
+ 671,850
+ 1500,858
+ 1441,769
+--- terzultimo punto : 671, 850
+--- penultimo punto : 1500, 858
+--- ultimo punto : 1441, 769
+??????????????????????????????????????????? > 1318, 368
+??????????????????????????????????????????? > 3, 2765
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 3, 2765
+??????????????????????????????????????????? > 554, 67
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 554, 67
+??????????????????????????????????????????? > 510, 101
+??????????????????????????????????????????? > 458, 150
+??????????????????????????????????????????? > 390, 230
+??????????????????????????????????????????? > 377, 240
+??????????????????????????????????????????? > 301, 301
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 301, 301
+??????????????????????????????????????????? > 306, 403
+??????????????????????????????????????????? > 306, 412
+??????????????????????????????????????????? > 326, 433
+??????????????????????????????????????????? > 352, 459
+??????????????????????????????????????????? > 472, 645
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 472, 645
+??????????????????????????????????????????? > 473, 647
+??????????????????????????????????????????? > 520, 741
+??????????????????????????????????????????? > 523, 744
+??????????????????????????????????????????? > 562, 813
+??????????????????????????????????????????? > 571, 833
+??????????????????????????????????????????? > 671, 850
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 671, 850
+??????????????????????????????????????????? > 1500, 858
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 1500, 858
+-------Path 22 => 8: 
+PRIMA
+--- terzultimo punto : 671, 850
+--- penultimo punto : 1500, 858
+--- ultimo punto : 1441, 769
+--- CENTRO GATE : 1441, 769
+--- PUNTO BORDO GATE : 1393, 769
+--- terzultimo punto : 671, 850
+--- penultimo punto : 1500, 858
+--- ultimo punto : 1441, 769
+Angoli!! 8
+--------angolo: -0.024840
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+kappa: 0.010000, 0.000000, 0.010000 
+--------angolo: 3.141593
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+kappa: 0.010000, 0.000000, 0.010000 
+--------angolo: 0.785398
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+kappa: 0.010000, 0.000000, -0.010000 
+--------angolo: 2.356194
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+kappa: -0.010000, 0.000000, -0.010000 
+--------angolo: 0.785398
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+kappa: 0.010000, 0.000000, -0.010000 
+--------angolo: 0.785398
+Algorithm INcorrect
+kappa: -0.010000, 0.000000, 0.010000 
+--------angolo: 0.000000
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+kappa: 0.010000, -0.010000, 0.010000 
+--- START rightPathNew --- 
+--> 1: (1273, 294)
+--> 2: (3, 2765)
+--> 3: (554, 67)
+--> 4: (301, 301)
+--> 5: (472, 645)
+--> 6: (671, 850)
+--> 7: (1500, 858)
+--> 8: (1441, 769)
+--- END rightPathNew --- 
+[0m[ INFO] [1598788640.450924716]: cametra_matrix = 
+ [558.5726818577332, 0, 342.6203163666451;
+ 0, 558.5726818577332, 267.9308376846099;
+ 0, 0, 1][0m
+[0m[ INFO] [1598788640.451078647]: dist_coeffs = 
+[-0.2069661057376372, 0.0110561549401185, 0.01602106933810088, 0.01733990140219172][0m
+[33m[ WARN] [1598788641.961794153, 1609.020000000]: Call student function[0m
+[0m[ INFO] [1598788641.965130920, 1609.020000000]: camera estimated position = 
+[0.5304201173701641;
+ 0.706237036936453;
+ 2.184937583863922][0m
+... logging to /home/lar2019/.ros/log/30c9d734-eab4-11ea-afb3-080027ae6ce3/roslaunch-lar2019-vm-18245.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/lar2019/Desktop/AppliedRoboticsEnvironment/src/9_project_interface/launch/node_pipeline.launch
+[1mstarted roslaunch server http://lar2019-vm:46691/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /arena/h: 1.0
+ * /arena/robot_height: 0.16
+ * /arena/w: 1.5
+ * /camera_calibration/cx: 342.620316367
+ * /camera_calibration/cy: 267.930837685
+ * /camera_calibration/fx: 558.572681858
+ * /camera_calibration/fy: 558.572681858
+ * /camera_calibration/image_height: 600
+ * /camera_calibration/image_width: 800
+ * /camera_calibration/k1: -0.206966105738
+ * /camera_calibration/k2: 0.0110561549401
+ * /camera_calibration/k3: 0.0
+ * /camera_calibration/p1: 0.0160210693381
+ * /camera_calibration/p2: 0.0173399014022
+ * /config_folder: /home/lar2019/Des...
+ * /default_implementation/extrinsic_calib: False
+ * /default_implementation/obstacle_detector: False
+ * /default_implementation/planning: False
+ * /default_implementation/raw_clbk: False
+ * /default_implementation/rectify: False
+ * /default_implementation/rectify_clbk: True
+ * /default_implementation/robot_detector: False
+ * /default_implementation/unwarp: False
+ * /default_implementation/unwarped_ground_clbk: True
+ * /default_implementation/unwarped_robot_clbk: True
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+
+NODES
+  /
+    control (control/control_node)
+    extrinsic_calib (image_elab/extrinsic_calib_node)
+    localization (localization/localization_node)
+    obstacle_detector (image_elab/obstacle_detector_node)
+    odometry (localization/odometry_node)
+    planning (planning/planning_node)
+    rectify_image (image_elab/rectify_node)
+    robot_detector (image_elab/robot_detector_node)
+    unwarp_image (image_elab/unwarp_node)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/lar2019/Desktop/AppliedRoboticsEnvironment/src/9_project_interface/launch/node_pipeline.launch http://localhost:11311
+[1mprocess[extrinsic_calib-1]: started with pid [18266][0m
+[1mprocess[rectify_image-2]: started with pid [18267][0m
+[1mprocess[unwarp_image-3]: started with pid [18268][0m
+[1mprocess[obstacle_detector-4]: started with pid [18269][0m
+[1mprocess[robot_detector-5]: started with pid [18271][0m
+[1mprocess[localization-6]: started with pid [18296][0m
+[1mprocess[odometry-7]: started with pid [18307][0m
+[1mprocess[planning-8]: started with pid [18328][0m
+[1mprocess[control-9]: started with pid [18331][0m
+[control-9] killing on exit
+[planning-8] killing on exit
+[odometry-7] killing on exit
+[localization-6] killing on exit
+[robot_detector-5] killing on exit
+[obstacle_detector-4] killing on exit
+[unwarp_image-3] killing on exit
+[rectify_image-2] killing on exit
+[extrinsic_calib-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
