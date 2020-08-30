@@ -436,7 +436,14 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 					end=VoronoiPoint((int)(victim_list[j].second[0].x*floatToInt),(int)(victim_list[j].second[0].y*floatToInt));
 					//find the shortest path
 					piecePath.clear();
-					PathFinder(start, firstTime, end, true, &voronoiPaths, &piecePath, 10, contours); //modify this (true only if the point is not already in the called before in pathFinder
+					if(isFreePath(start, end))
+					{
+						if(firstTime)
+							piecePath.push_back(start);
+						piecePath.push_back(end);		
+					}
+					else
+						PathFinder(start, firstTime, end, true, &voronoiPaths, &piecePath, 10, contours); 
 					//connect the piece of the path (victim to next victim) to the total one
 					rightPath.insert(rightPath.end(),piecePath.begin(),piecePath.end());
 					//the victim became the next starting point
@@ -448,7 +455,10 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		}
 		//last call for connect the last victims with the gate
 		piecePath.clear();
-		PathFinder(start, false, gate_pos, true, &voronoiPaths, &piecePath, 0, contours);
+		if(isFreePath(start, end))
+			piecePath.push_back(end);		
+		else
+			PathFinder(start, false, gate_pos, true, &voronoiPaths, &piecePath, 0, contours);
 		rightPath.insert(rightPath.end(),piecePath.begin(),piecePath.end()); 
 	break;
 	case 2: //Path which minimize the time for exit from the arena (Mission 2)
