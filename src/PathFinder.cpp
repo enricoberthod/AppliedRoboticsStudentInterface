@@ -313,6 +313,7 @@ void connect(int offset, VoronoiPoint pointP, VoronoiResults *voronoiPaths, bool
 	///////////INIT////////////
 	int pointLongId;
 	int pointId; 
+	bool find;
 	a=pointP.a-offset;
 	b=pointP.b-offset;
 	o=offset*2;
@@ -354,10 +355,20 @@ void connect(int offset, VoronoiPoint pointP, VoronoiResults *voronoiPaths, bool
 							id1=j;
 					//std::cout << "id1 " << id1 << std::endl;
 					std::cout << "id " << id1 << "  -  longId " << longId << "  -  pointLongId " << pointLongId << "  -  PointId " << pointId << std::endl;
-					GraphEdge e1(x,y,pointP.a,pointP.b,len,id1,pointId);
-					pointEdges->push_back(e1);
-					GraphEdge e2(pointP.a,pointP.b,x,y,len,pointId,id1);
-    				pointEdges->push_back(e2);
+					find=false;
+					for(int j=(voronoiPaths->resultEdges.size()-1);j>=0 && !find ;j--)
+					{
+						if(voronoiPaths->resultEdges[j].idFirstNode==pointId && voronoiPaths->resultEdges[j].idSecondNode==id1)
+							find=true;
+					}
+					if(!find)
+					{
+						find=false;
+						GraphEdge e1(x,y,pointP.a,pointP.b,len,id1,pointId);
+						pointEdges->push_back(e1);
+						GraphEdge e2(pointP.a,pointP.b,x,y,len,pointId,id1);
+						pointEdges->push_back(e2);
+					}
 				}
 				prev_x=x;
 				prev_y=y;
