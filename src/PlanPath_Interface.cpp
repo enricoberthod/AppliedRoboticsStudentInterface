@@ -89,7 +89,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	
 	//throw std::logic_error( "STOP" );
 
-	const int offset = 200;
+	const int offset = 100;
 	
 	ClipperLib::ClipperOffset co;
 	co.AddPaths(subj, ClipperLib::jtSquare, ClipperLib::etClosedPolygon);
@@ -112,7 +112,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		vertexNumber=solution[i].size();
 		for(int j=0;j<vertexNumber-1;j++)
 		{
-			xa=(int)(solution[i][j].X<0?0:solution[i][j].X); //ADD CONTROL IF X>BORDER MAX X
+			//xa=(int)(solution[i][j].X<0?0:solution[i][j].X); //ADD CONTROL IF X>BORDER MAX X
 			/*
 			if(solution[i][j].X < 0) {
 				xa = 0;
@@ -120,11 +120,11 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 			else if (solution[i][j].X > b_x_max) {
 				xa = (int)b_x_max;
 			}
-			else {
-				xa = (int)(solution[i][j].X);
+			else {*/
+				xa = (int)(solution[i][j].X);/*
 			}
 			*/
-			ya=(int)(solution[i][j].Y<0?0:solution[i][j].Y); //ADD CONTROL IF Y>BORDER MAX Y
+			//ya=(int)(solution[i][j].Y<0?0:solution[i][j].Y); //ADD CONTROL IF Y>BORDER MAX Y
 			/*
 			if(solution[i][j].Y < 0) {
 				ya = 0;
@@ -132,12 +132,12 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 			else if (solution[i][j].Y > b_y_max) {
 				ya = (int)b_y_max;
 			}
-			else {
-				ya = (int)(solution[i][j].Y);
+			else {*/
+				ya = (int)(solution[i][j].Y);/*
 			}
 			*/
 			printf("obsvertx: %i,%i\n",xa,ya);
-			xb=(int)(solution[i][j+1].X<0?0:solution[i][j+1].X);
+			//xb=(int)(solution[i][j+1].X<0?0:solution[i][j+1].X);
 			/*
 			if(solution[i][j].X<0) {
 				xb = 0;
@@ -145,11 +145,11 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 			else if (solution[i][j].X > b_x_max) {
 				xb = b_x_max;
 			}
-			else {
-				xb = (int)(solution[i][j].X);
+			else {*/
+				xb = (int)(solution[i][j].X);/*
 			}
 			*/
-			yb=(int)(solution[i][j+1].Y<0?0:solution[i][j+1].Y);
+			//yb=(int)(solution[i][j+1].Y<0?0:solution[i][j+1].Y);
 			/*
 			if(solution[i][j].Y < 0) {
 				yb = 0;
@@ -157,8 +157,8 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 			else if (solution[i][j].Y > b_y_max) {
 				yb = b_y_max;
 			}
-			else {
-				yb = (int)(solution[i][j].Y);
+			else {*/
+				yb = (int)(solution[i][j].Y);/*
 			}
 			*/
 			/*
@@ -174,7 +174,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 			obstacles_edges.push_back(Segment(xa, ya, xb, yb));
 		}
 		//close the polygon with the last edge
-		xa=(int)(solution[i][vertexNumber-1].X<0?0:solution[i][vertexNumber-1].X);
+		//xa=(int)(solution[i][vertexNumber-1].X<0?0:solution[i][vertexNumber-1].X);
 		/*
 		if(solution[i][vertexNumber-1].X < 0) {
 			xa = 0;
@@ -182,11 +182,11 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		else if (solution[i][vertexNumber-1].X > b_x_max) {
 			xa = b_x_max;
 		}
-		else {
-			xa = (int)(solution[i][vertexNumber-1].X);
+		else {*/
+			xa = (int)(solution[i][vertexNumber-1].X);/*
 		}
 		*/
-		ya=(int)(solution[i][vertexNumber-1].Y<0?0:solution[i][vertexNumber-1].Y);
+		//ya=(int)(solution[i][vertexNumber-1].Y<0?0:solution[i][vertexNumber-1].Y);
 		/*
 		if(solution[i][vertexNumber-1].Y < 0) {
 			ya = 0;
@@ -194,8 +194,8 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		else if (solution[i][vertexNumber-1].Y > b_y_max) {
 			ya = b_y_max;
 		}
-		else {
-			ya = (int)(solution[i][vertexNumber-1].Y);
+		else {*/
+			ya = (int)(solution[i][vertexNumber-1].Y);/*
 		}
 		*/
 		printf("obsvertx: %i,%i\n",xa,ya);
@@ -208,7 +208,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		longId = encoder(xa, ya);
 		p=VoronoiPoint(xa,ya);
 		obstaclesVertexes[longId]=p;
-		xb=(int)(solution[i][0].X<0?0:solution[i][0].X);
+		//xb=(int)(solution[i][0].X<0?0:solution[i][0].X);
 		/*
 		if(solution[i][0].X < 0) {
 			xb = 0;
@@ -216,11 +216,11 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		else if (solution[i][0].X > b_x_max) {
 			xb = b_x_max;
 		}
-		else {
-			xb = (int)(solution[i][0].X);
+		else {*/
+			xb = (int)(solution[i][0].X);/*
 		}
 		*/
-		yb=(int)(solution[i][0].Y<0?0:solution[i][0].Y);
+		//yb=(int)(solution[i][0].Y<0?0:solution[i][0].Y);
 		/*
 		if(solution[i][0].Y < 0) {
 			yb = 0;
@@ -228,8 +228,8 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		else if (solution[i][0].Y > b_y_max) {
 			yb = b_y_max;
 		}
-		else {
-			yb = (int)(solution[i][0].Y);
+		else {*/
+			yb = (int)(solution[i][0].Y);/*
 		}
 		*/
 		inputPoints.push_back(VoronoiPoint(xa,ya));
@@ -240,7 +240,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	for (int i = 0; i < solution.size(); i++) {
 		std::vector<cv::Point> cc;
 		for (int j = 0; j < solution[i].size(); j++) {
-			xa=(int)(solution[i][j].X<0?0:solution[i][j].X);
+			//xa=(int)(solution[i][j].X<0?0:solution[i][j].X);
 			/*
 			if(solution[i][j].X < 0) {
 				xa = 0;
@@ -248,11 +248,11 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 			else if (solution[i][j].X > b_x_max) {
 				xa = b_x_max;
 			}
-			else {
-				xa = (int)(solution[i][j].X);
+			else {*/
+				xa = (int)(solution[i][j].X);/*
 			}
 			*/
-			ya=(int)(solution[i][j].Y<0?0:solution[i][j].Y);
+			//ya=(int)(solution[i][j].Y<0?0:solution[i][j].Y);
 			/*
 			if(solution[i][j].Y < 0) {
 				ya = 0;
@@ -260,8 +260,8 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 			else if (solution[i][j].Y > b_y_max) {
 				ya = b_y_max;
 			}
-			else {
-				ya = (int)(solution[i][j].Y);
+			else {*/
+				ya = (int)(solution[i][j].Y);/*
 			}
 			*/
 			cc.push_back(cv::Point(xa,ya));
@@ -418,12 +418,12 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	switch(mission_type) //0 for robot-gate //1 for robot-victims_in_right_order-gate //2 for robot-victims-gate in min time
 	{
 	case 0: //Direct path from robot initial position to gate position 
-		if(!edgeOnObstacle(start, end, contours))
+		/*if(!edgeOnObstacle(start, end, contours))
 		{
 			rightPath.push_back(start);
 			rightPath.push_back(end);	
 		}	
-		else
+		else*/
 			PathFinder(start, true, end, true, &voronoiPaths, &rightPath, 0, contours); 
 	break;
 	case 1: //Path from robot to victim 1, victim 1 to victim 2, victim n to gate position (Mission 1)
@@ -442,13 +442,13 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 					end=VoronoiPoint((int)(victim_list[j].second[0].x*floatToInt),(int)(victim_list[j].second[0].y*floatToInt));
 					//find the shortest path
 					piecePath.clear();
-					if(!edgeOnObstacle(start, end, contours))
+					/*if(!edgeOnObstacle(start, end, contours))
 					{
 						if(firstTime)
 							piecePath.push_back(start);
 						piecePath.push_back(end);		
 					}
-					else
+					else*/
 						PathFinder(start, firstTime, end, true, &voronoiPaths, &piecePath, 10, contours); 
 					//connect the piece of the path (victim to next victim) to the total one
 					rightPath.insert(rightPath.end(),piecePath.begin(),piecePath.end());
@@ -461,9 +461,9 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		}
 		//last call for connect the last victims with the gate
 		piecePath.clear();
-		if(!edgeOnObstacle(start, end, contours))
+		/*if(!edgeOnObstacle(start, end, contours))
 			piecePath.push_back(end);		
-		else
+		else*/
 			PathFinder(start, false, gate_pos, true, &voronoiPaths, &piecePath, 0, contours);
 		rightPath.insert(rightPath.end(),piecePath.begin(),piecePath.end()); 
 	break;
