@@ -27,7 +27,7 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 	int max_offset = 200;
 	int offset_3;
 	int step=10;
-	int nConnection=8;
+	int nConnection=50;
 	int startSize=1000;
 	int endSize=1000;
 	int startLongId;

@@ -89,7 +89,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	
 	//throw std::logic_error( "STOP" );
 
-	const int offset = 100;
+	const int offset = 200;
 	
 	ClipperLib::ClipperOffset co;
 	co.AddPaths(subj, ClipperLib::jtSquare, ClipperLib::etClosedPolygon);
