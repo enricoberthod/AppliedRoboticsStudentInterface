@@ -1,0 +1,1286 @@
+
+RED MASK
+N. contours (Elements): 12
+1) Contour size: 52
+   Approximated contour size: 5
+2) Contour size: 107
+   Approximated contour size: 3
+3) Contour size: 77
+   Approximated contour size: 3
+4) Contour size: 79
+   Approximated contour size: 6
+5) Contour size: 53
+   Approximated contour size: 3
+6) Contour size: 52
+   Approximated contour size: 5
+7) Contour size: 138
+   Approximated contour size: 6
+8) Contour size: 57
+   Approximated contour size: 4
+9) Contour size: 47
+   Approximated contour size: 4
+10) Contour size: 81
+   Approximated contour size: 7
+11) Contour size: 51
+   Approximated contour size: 6
+12) Contour size: 34
+   Approximated contour size: 4
+   Elements: 12
+N. contours: 3
+1) Contour size: 79
+   Approximated contour size: 4
+2) Contour size: 161
+3) Contour size: 152
+   Elements: 4
+Best fitting template: 1
+Best fitting template: 3
+   Elements: 2
+Mission -> 1
+clipper1: 12
+clipper2: 12
+clipper3: 1
+clipper4: 12
+obsvertx: 248,326
+obsvertx: 257,320
+obsvertx: 358,313
+obsvertx: 391,322
+obsvertx: 407,333
+obsvertx: 419,320
+obsvertx: 594,312
+obsvertx: 614,330
+obsvertx: 626,318
+obsvertx: 835,318
+obsvertx: 852,334
+obsvertx: 877,319
+obsvertx: 1035,313
+obsvertx: 1085,342
+obsvertx: 1158,481
+obsvertx: 1156,535
+obsvertx: 1077,660
+obsvertx: 1060,670
+obsvertx: 1061,672
+obsvertx: 1042,731
+obsvertx: 954,800
+obsvertx: 888,802
+obsvertx: 853,778
+obsvertx: 809,855
+obsvertx: 692,855
+obsvertx: 618,723
+obsvertx: 593,771
+obsvertx: 478,775
+obsvertx: 455,738
+obsvertx: 346,798
+obsvertx: 291,796
+obsvertx: 202,738
+obsvertx: 118,741
+obsvertx: 108,726
+obsvertx: 32,756
+obsvertx: 0,745
+obsvertx: 0,688
+obsvertx: 0,648
+obsvertx: 0,520
+obsvertx: 0,514
+obsvertx: 0,437
+obsvertx: 0,398
+obsvertx: 0,337
+obsvertx: 0,314
+obsvertx: 70,320
+obsvertx: 72,318
+### contours: 1
+### contours[0] : 47
+hash 47
+bordivertxf: 0.000000,0.000000
+bordivertx: 0,0
+bordivertxf: 1.500000,0.000000
+bordivertx: 1500,0
+bordivertxf: 1.500000,1.000000
+bordivertx: 1500,1000
+bordivertxf: 0.000000,1.000000
+bordivertx: 0,1000
+size: 51size2: 51pippo c'è 
+Traversing Voronoi graph.
+pippo c'è 
+Number of visited primary edges using vertex iterator: 338
+before points size: 293 
+before edge size: 292 
+edgesAfterVoronoi: 292
+pointsAfterVoronoi: 293
+x: 21, 337
+x: 21, 337
+x: 31, 722
+x: 31, 722
+x: 31, 722
+x: 67, 313
+x: 67, 313
+x: 75, 325
+x: 75, 325
+x: -43, 872
+x: 54, 688
+x: 54, 688
+x: -8, 874
+x: -8, 874
+x: 99, 753
+x: 99, 753
+x: 60, 258
+x: 60, 258
+x: 60, 258
+x: 0, 875
+x: 0, 875
+x: 64, 384
+x: 64, 384
+x: 68, 249
+x: 68, 249
+x: 78, 398
+x: 78, 398
+x: 78, 652
+x: 78, 652
+x: 82, 648
+x: 82, 648
+x: 134, 708
+x: 134, 708
+x: 93, 410
+x: 93, 410
+x: 93, 410
+x: 78, 873
+x: 78, 873
+x: 98, 869
+x: 98, 869
+x: 98, 869
+x: 121, 437
+x: 121, 437
+x: 122, 870
+x: 122, 870
+x: 249, 309
+x: 249, 309
+x: 211, 362
+x: 211, 362
+x: 254, 289
+x: 254, 289
+x: 256, 285
+x: 256, 285
+x: 165, 869
+x: 165, 869
+x: 165, 869
+x: 270, 359
+x: 270, 359
+x: 156, 156
+x: 156, 156
+x: 156, 156
+x: 230, 888
+x: 230, 888
+x: 173, 565
+x: 173, 565
+x: 173, 565
+x: 180, 493
+x: 180, 493
+x: 180, 493
+x: 224, 155
+x: 224, 155
+x: 287, 897
+x: 287, 897
+x: 195, 543
+x: 195, 543
+x: 195, 514
+x: 195, 514
+x: 199, 520
+x: 199, 520
+x: 207, 530
+x: 207, 530
+x: 207, 530
+x: 322, 697
+x: 322, 697
+x: 322, 697
+x: 403, 306
+x: 403, 306
+x: 403, 303
+x: 403, 303
+x: 281, 158
+x: 281, 158
+x: 281, 158
+x: 342, 898
+x: 342, 898
+x: 402, 281
+x: 402, 281
+x: 347, 414
+x: 347, 414
+x: 347, 414
+x: 346, 421
+x: 346, 421
+x: 438, 362
+x: 438, 362
+x: 438, 799
+x: 438, 799
+x: 347, 156
+x: 347, 156
+x: 397, 892
+x: 397, 892
+x: 311, 541
+x: 311, 541
+x: 311, 541
+x: 320, 543
+x: 320, 543
+x: 320, 543
+x: 433, 883
+x: 433, 883
+x: 433, 883
+x: 326, 546
+x: 326, 546
+x: 327, 547
+x: 327, 547
+x: 327, 547
+x: 399, 159
+x: 399, 159
+x: 406, 160
+x: 406, 160
+x: 406, 160
+x: 348, 545
+x: 348, 545
+x: 411, 160
+x: 411, 160
+x: 518, 698
+x: 518, 698
+x: 481, 887
+x: 481, 887
+x: 535, 680
+x: 535, 680
+x: 613, 305
+x: 613, 305
+x: 531, 672
+x: 531, 672
+x: 531, 672
+x: 570, 378
+x: 570, 378
+x: 614, 288
+x: 614, 288
+x: 618, 784
+x: 618, 784
+x: 595, 854
+x: 595, 854
+x: 642, 358
+x: 642, 358
+x: 578, 885
+x: 578, 885
+x: 578, 885
+x: 487, 528
+x: 487, 528
+x: 487, 528
+x: 607, 902
+x: 607, 902
+x: 626, 229
+x: 626, 229
+x: 518, 531
+x: 518, 531
+x: 518, 531
+x: 586, 156
+x: 586, 156
+x: 535, 527
+x: 535, 527
+x: 535, 527
+x: 692, 927
+x: 692, 927
+x: 637, 159
+x: 637, 159
+x: 637, 159
+x: 750, 754
+x: 750, 754
+x: 750, 754
+x: 750, 719
+x: 750, 719
+x: 811, 376
+x: 811, 376
+x: 809, 927
+x: 809, 927
+x: 856, 295
+x: 856, 295
+x: 683, 525
+x: 683, 525
+x: 683, 525
+x: 856, 285
+x: 856, 285
+x: 865, 834
+x: 865, 834
+x: 760, 643
+x: 760, 643
+x: 890, 890
+x: 890, 890
+x: 893, 903
+x: 893, 903
+x: 835, 159
+x: 835, 159
+x: 896, 900
+x: 896, 900
+x: 896, 900
+x: 767, 548
+x: 767, 548
+x: 767, 548
+x: 780, 556
+x: 780, 556
+x: 780, 556
+x: 917, 700
+x: 917, 700
+x: 917, 700
+x: 859, 159
+x: 859, 159
+x: 859, 159
+x: 910, 431
+x: 910, 431
+x: 870, 159
+x: 870, 159
+x: 917, 684
+x: 917, 684
+x: 957, 899
+x: 957, 899
+x: 1055, 672
+x: 1055, 672
+x: 922, 647
+x: 922, 647
+x: 922, 647
+x: 914, 642
+x: 914, 642
+x: 914, 642
+x: 1063, 670
+x: 1063, 670
+x: 1069, 674
+x: 1069, 674
+x: 868, 555
+x: 868, 555
+x: 868, 555
+x: 1018, 599
+x: 1018, 599
+x: 1009, 414
+x: 1009, 414
+x: 1009, 414
+x: 930, 517
+x: 930, 517
+x: 930, 517
+x: 932, 516
+x: 932, 516
+x: 932, 516
+x: 1023, 888
+x: 1023, 888
+x: 959, 500
+x: 959, 500
+x: 959, 500
+x: 1100, 699
+x: 1100, 699
+x: 1056, 504
+x: 1056, 504
+x: 1056, 504
+x: 1029, 156
+x: 1029, 156
+x: 1134, 849
+x: 1134, 849
+x: 1119, 167
+x: 1119, 167
+x: 1177, 183
+x: 1177, 183
+x: 1237, 794
+x: 1237, 794
+x: 1247, 787
+x: 1247, 787
+x: 1247, 787
+x: 1264, 778
+x: 1264, 778
+x: 1275, 224
+x: 1275, 224
+x: 1275, 224
+x: 1279, 239
+x: 1279, 239
+x: 1318, 396
+x: 1318, 396
+x: 1328, 487
+x: 1328, 487
+x: 1327, 541
+x: 1327, 541
+x: 1313, 634
+x: 1313, 634
+x: 1273, 773
+x: 1273, 773
+x: 1273, 773
+x: 1313, 634
+NUMERO VITTIMA = 1
+start id 151186
+netVertex 562,306 5
+connect points (613,305) and (562,296)
+------ n samples 15
+------ sample 0 coord(587,300)
+------ sample 1 coord(574,298)
+------ sample 2 coord(600,302)
+------ sample 3 coord(568,297)
+------ sample 4 coord(606,303)
+------ sample 5 coord(580,299)
+------ sample 6 coord(593,301)
+------ sample 7 coord(565,296)
+------ sample 8 coord(609,304)
+------ sample 9 coord(571,297)
+------ sample 10 coord(603,302)
+------ sample 11 coord(577,298)
+------ sample 12 coord(596,301)
+------ sample 13 coord(583,299)
+------ sample 14 coord(590,300)
+longId 613305
+id1 86
+connect points (614,288) and (562,296)
+------ n samples 15
+------ sample 0 coord(588,292)
+------ sample 1 coord(575,294)
+------ sample 2 coord(601,290)
+------ sample 3 coord(568,295)
+------ sample 4 coord(607,289)
+------ sample 5 coord(581,293)
+------ sample 6 coord(594,291)
+------ sample 7 coord(565,295)
+------ sample 8 coord(610,288)
+------ sample 9 coord(571,294)
+------ sample 10 coord(604,289)
+------ sample 11 coord(578,293)
+------ sample 12 coord(597,290)
+------ sample 13 coord(584,292)
+------ sample 14 coord(591,291)
+longId 614288
+id1 87
+netVertex 562,286 5
+connect points (613,305) and (562,296)
+------ n samples 15
+------ sample 0 coord(587,300)
+------ sample 1 coord(574,298)
+------ sample 2 coord(600,302)
+------ sample 3 coord(568,297)
+------ sample 4 coord(606,303)
+------ sample 5 coord(580,299)
+------ sample 6 coord(593,301)
+------ sample 7 coord(565,296)
+------ sample 8 coord(609,304)
+------ sample 9 coord(571,297)
+------ sample 10 coord(603,302)
+------ sample 11 coord(577,298)
+------ sample 12 coord(596,301)
+------ sample 13 coord(583,299)
+------ sample 14 coord(590,300)
+longId 613305
+id1 86
+connect points (614,288) and (562,296)
+------ n samples 15
+------ sample 0 coord(588,292)
+------ sample 1 coord(575,294)
+------ sample 2 coord(601,290)
+------ sample 3 coord(568,295)
+------ sample 4 coord(607,289)
+------ sample 5 coord(581,293)
+------ sample 6 coord(594,291)
+------ sample 7 coord(565,295)
+------ sample 8 coord(610,288)
+------ sample 9 coord(571,294)
+------ sample 10 coord(604,289)
+------ sample 11 coord(578,293)
+------ sample 12 coord(597,290)
+------ sample 13 coord(584,292)
+------ sample 14 coord(591,291)
+longId 614288
+id1 87
+connect points (613,305) and (562,296)
+------ n samples 15
+------ sample 0 coord(587,300)
+------ sample 1 coord(574,298)
+------ sample 2 coord(600,302)
+------ sample 3 coord(568,297)
+------ sample 4 coord(606,303)
+------ sample 5 coord(580,299)
+------ sample 6 coord(593,301)
+------ sample 7 coord(565,296)
+------ sample 8 coord(609,304)
+------ sample 9 coord(571,297)
+------ sample 10 coord(603,302)
+------ sample 11 coord(577,298)
+------ sample 12 coord(596,301)
+------ sample 13 coord(583,299)
+------ sample 14 coord(590,300)
+longId 613305
+id1 86
+netVertex 572,296 5
+connect points (613,305) and (562,296)
+------ n samples 15
+------ sample 0 coord(587,300)
+------ sample 1 coord(574,298)
+------ sample 2 coord(600,302)
+------ sample 3 coord(568,297)
+------ sample 4 coord(606,303)
+------ sample 5 coord(580,299)
+------ sample 6 coord(593,301)
+------ sample 7 coord(565,296)
+------ sample 8 coord(609,304)
+------ sample 9 coord(571,297)
+------ sample 10 coord(603,302)
+------ sample 11 coord(577,298)
+------ sample 12 coord(596,301)
+------ sample 13 coord(583,299)
+------ sample 14 coord(590,300)
+longId 613305
+id1 86
+connect points (614,288) and (562,296)
+------ n samples 15
+------ sample 0 coord(588,292)
+------ sample 1 coord(575,294)
+------ sample 2 coord(601,290)
+------ sample 3 coord(568,295)
+------ sample 4 coord(607,289)
+------ sample 5 coord(581,293)
+------ sample 6 coord(594,291)
+------ sample 7 coord(565,295)
+------ sample 8 coord(610,288)
+------ sample 9 coord(571,294)
+------ sample 10 coord(604,289)
+------ sample 11 coord(578,293)
+------ sample 12 coord(597,290)
+------ sample 13 coord(584,292)
+------ sample 14 coord(591,291)
+longId 614288
+id1 87
+connect points (613,305) and (562,296)
+------ n samples 15
+------ sample 0 coord(587,300)
+------ sample 1 coord(574,298)
+------ sample 2 coord(600,302)
+------ sample 3 coord(568,297)
+------ sample 4 coord(606,303)
+------ sample 5 coord(580,299)
+------ sample 6 coord(593,301)
+------ sample 7 coord(565,296)
+------ sample 8 coord(609,304)
+------ sample 9 coord(571,297)
+------ sample 10 coord(603,302)
+------ sample 11 coord(577,298)
+------ sample 12 coord(596,301)
+------ sample 13 coord(583,299)
+------ sample 14 coord(590,300)
+longId 613305
+id1 86
+connect points (614,288) and (562,296)
+------ n samples 15
+------ sample 0 coord(588,292)
+------ sample 1 coord(575,294)
+------ sample 2 coord(601,290)
+------ sample 3 coord(568,295)
+------ sample 4 coord(607,289)
+------ sample 5 coord(581,293)
+------ sample 6 coord(594,291)
+------ sample 7 coord(565,295)
+------ sample 8 coord(610,288)
+------ sample 9 coord(571,294)
+------ sample 10 coord(604,289)
+------ sample 11 coord(578,293)
+------ sample 12 coord(597,290)
+------ sample 13 coord(584,292)
+------ sample 14 coord(591,291)
+longId 614288
+id1 87
+netVertex 552,296 5
+connect points (613,305) and (562,296)
+------ n samples 15
+------ sample 0 coord(587,300)
+------ sample 1 coord(574,298)
+------ sample 2 coord(600,302)
+------ sample 3 coord(568,297)
+------ sample 4 coord(606,303)
+------ sample 5 coord(580,299)
+------ sample 6 coord(593,301)
+------ sample 7 coord(565,296)
+------ sample 8 coord(609,304)
+------ sample 9 coord(571,297)
+------ sample 10 coord(603,302)
+------ sample 11 coord(577,298)
+------ sample 12 coord(596,301)
+------ sample 13 coord(583,299)
+------ sample 14 coord(590,300)
+longId 613305
+id1 86
+connect points (614,288) and (562,296)
+------ n samples 15
+------ sample 0 coord(588,292)
+------ sample 1 coord(575,294)
+------ sample 2 coord(601,290)
+------ sample 3 coord(568,295)
+------ sample 4 coord(607,289)
+------ sample 5 coord(581,293)
+------ sample 6 coord(594,291)
+------ sample 7 coord(565,295)
+------ sample 8 coord(610,288)
+------ sample 9 coord(571,294)
+------ sample 10 coord(604,289)
+------ sample 11 coord(578,293)
+------ sample 12 coord(597,290)
+------ sample 13 coord(584,292)
+------ sample 14 coord(591,291)
+longId 614288
+id1 87
+connect points (613,305) and (562,296)
+------ n samples 15
+------ sample 0 coord(587,300)
+------ sample 1 coord(574,298)
+------ sample 2 coord(600,302)
+------ sample 3 coord(568,297)
+------ sample 4 coord(606,303)
+------ sample 5 coord(580,299)
+------ sample 6 coord(593,301)
+------ sample 7 coord(565,296)
+------ sample 8 coord(609,304)
+------ sample 9 coord(571,297)
+------ sample 10 coord(603,302)
+------ sample 11 coord(577,298)
+------ sample 12 coord(596,301)
+------ sample 13 coord(583,299)
+------ sample 14 coord(590,300)
+longId 613305
+id1 86
+connect points (614,288) and (562,296)
+------ n samples 15
+------ sample 0 coord(588,292)
+------ sample 1 coord(575,294)
+------ sample 2 coord(601,290)
+------ sample 3 coord(568,295)
+------ sample 4 coord(607,289)
+------ sample 5 coord(581,293)
+------ sample 6 coord(594,291)
+------ sample 7 coord(565,295)
+------ sample 8 coord(610,288)
+------ sample 9 coord(571,294)
+------ sample 10 coord(604,289)
+------ sample 11 coord(578,293)
+------ sample 12 coord(597,290)
+------ sample 13 coord(584,292)
+------ sample 14 coord(591,291)
+longId 614288
+id1 87
+connect points (613,305) and (562,296)
+------ n samples 15
+------ sample 0 coord(587,300)
+------ sample 1 coord(574,298)
+------ sample 2 coord(600,302)
+------ sample 3 coord(568,297)
+------ sample 4 coord(606,303)
+------ sample 5 coord(580,299)
+------ sample 6 coord(593,301)
+------ sample 7 coord(565,296)
+------ sample 8 coord(609,304)
+------ sample 9 coord(571,297)
+------ sample 10 coord(603,302)
+------ sample 11 coord(577,298)
+------ sample 12 coord(596,301)
+------ sample 13 coord(583,299)
+------ sample 14 coord(590,300)
+longId 613305
+id1 86
+netVertex 562,296 5
+connect points (613,305) and (562,296)
+------ n samples 15
+------ sample 0 coord(587,300)
+------ sample 1 coord(574,298)
+------ sample 2 coord(600,302)
+------ sample 3 coord(568,297)
+------ sample 4 coord(606,303)
+------ sample 5 coord(580,299)
+------ sample 6 coord(593,301)
+------ sample 7 coord(565,296)
+------ sample 8 coord(609,304)
+------ sample 9 coord(571,297)
+------ sample 10 coord(603,302)
+------ sample 11 coord(577,298)
+------ sample 12 coord(596,301)
+------ sample 13 coord(583,299)
+------ sample 14 coord(590,300)
+longId 613305
+id1 86
+connect points (614,288) and (562,296)
+------ n samples 15
+------ sample 0 coord(588,292)
+------ sample 1 coord(575,294)
+------ sample 2 coord(601,290)
+------ sample 3 coord(568,295)
+------ sample 4 coord(607,289)
+------ sample 5 coord(581,293)
+------ sample 6 coord(594,291)
+------ sample 7 coord(565,295)
+------ sample 8 coord(610,288)
+------ sample 9 coord(571,294)
+------ sample 10 coord(604,289)
+------ sample 11 coord(578,293)
+------ sample 12 coord(597,290)
+------ sample 13 coord(584,292)
+------ sample 14 coord(591,291)
+longId 614288
+id1 87
+connect points (613,305) and (562,296)
+------ n samples 15
+------ sample 0 coord(587,300)
+------ sample 1 coord(574,298)
+------ sample 2 coord(600,302)
+------ sample 3 coord(568,297)
+------ sample 4 coord(606,303)
+------ sample 5 coord(580,299)
+------ sample 6 coord(593,301)
+------ sample 7 coord(565,296)
+------ sample 8 coord(609,304)
+------ sample 9 coord(571,297)
+------ sample 10 coord(603,302)
+------ sample 11 coord(577,298)
+------ sample 12 coord(596,301)
+------ sample 13 coord(583,299)
+------ sample 14 coord(590,300)
+longId 613305
+id1 86
+connect points (614,288) and (562,296)
+------ n samples 15
+------ sample 0 coord(588,292)
+------ sample 1 coord(575,294)
+------ sample 2 coord(601,290)
+------ sample 3 coord(568,295)
+------ sample 4 coord(607,289)
+------ sample 5 coord(581,293)
+------ sample 6 coord(594,291)
+------ sample 7 coord(565,295)
+------ sample 8 coord(610,288)
+------ sample 9 coord(571,294)
+------ sample 10 coord(604,289)
+------ sample 11 coord(578,293)
+------ sample 12 coord(597,290)
+------ sample 13 coord(584,292)
+------ sample 14 coord(591,291)
+longId 614288
+id1 87
+connect points (613,305) and (562,296)
+------ n samples 15
+------ sample 0 coord(587,300)
+------ sample 1 coord(574,298)
+------ sample 2 coord(600,302)
+------ sample 3 coord(568,297)
+------ sample 4 coord(606,303)
+------ sample 5 coord(580,299)
+------ sample 6 coord(593,301)
+------ sample 7 coord(565,296)
+------ sample 8 coord(609,304)
+------ sample 9 coord(571,297)
+------ sample 10 coord(603,302)
+------ sample 11 coord(577,298)
+------ sample 12 coord(596,301)
+------ sample 13 coord(583,299)
+------ sample 14 coord(590,300)
+longId 613305
+id1 86
+connect points (614,288) and (562,296)
+------ n samples 15
+------ sample 0 coord(588,292)
+------ sample 1 coord(575,294)
+------ sample 2 coord(601,290)
+------ sample 3 coord(568,295)
+------ sample 4 coord(607,289)
+------ sample 5 coord(581,293)
+------ sample 6 coord(594,291)
+------ sample 7 coord(565,295)
+------ sample 8 coord(610,288)
+------ sample 9 coord(571,294)
+------ sample 10 coord(604,289)
+------ sample 11 coord(578,293)
+------ sample 12 coord(597,290)
+------ sample 13 coord(584,292)
+------ sample 14 coord(591,291)
+longId 614288
+id1 87
+Step 20
+Step 30size: 0 100
+Step 40size: 0 100
+connect points (156,156) and (151,186)
+------ n samples 15
+------ sample 0 coord(153,171)
+------ sample 1 coord(152,178)
+------ sample 2 coord(154,163)
+------ sample 3 coord(151,182)
+------ sample 4 coord(155,159)
+------ sample 5 coord(152,174)
+------ sample 6 coord(153,167)
+------ sample 7 coord(151,184)
+------ sample 8 coord(155,157)
+------ sample 9 coord(151,180)
+------ sample 10 coord(154,161)
+------ sample 11 coord(152,176)
+------ sample 12 coord(153,165)
+------ sample 13 coord(152,172)
+------ sample 14 coord(153,169)
+longId 156156
+id1 23
+Step 50size: 1 100
+connect points (156,156) and (151,186)
+------ n samples 15
+------ sample 0 coord(153,171)
+------ sample 1 coord(152,178)
+------ sample 2 coord(154,163)
+------ sample 3 coord(151,182)
+------ sample 4 coord(155,159)
+------ sample 5 coord(152,174)
+------ sample 6 coord(153,167)
+------ sample 7 coord(151,184)
+------ sample 8 coord(155,157)
+------ sample 9 coord(151,180)
+------ sample 10 coord(154,161)
+------ sample 11 coord(152,176)
+------ sample 12 coord(153,165)
+------ sample 13 coord(152,172)
+------ sample 14 coord(153,169)
+longId 156156
+id1 23
+Step 60size: 1 100
+connect points (156,156) and (151,186)
+------ n samples 15
+------ sample 0 coord(153,171)
+------ sample 1 coord(152,178)
+------ sample 2 coord(154,163)
+------ sample 3 coord(151,182)
+------ sample 4 coord(155,159)
+------ sample 5 coord(152,174)
+------ sample 6 coord(153,167)
+------ sample 7 coord(151,184)
+------ sample 8 coord(155,157)
+------ sample 9 coord(151,180)
+------ sample 10 coord(154,161)
+------ sample 11 coord(152,176)
+------ sample 12 coord(153,165)
+------ sample 13 coord(152,172)
+------ sample 14 coord(153,169)
+longId 156156
+id1 23
+V 175
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDijkstra 169 174 - 151186 562296
+
+
+right path  169
+map 767548
+NUMERO VITTIMA = 3
+netVertex 1374,171 5
+netVertex 1374,151 5
+netVertex 1384,161 5
+netVertex 1364,161 5
+netVertex 1374,161 5
+Step 20
+V 180
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDijkstra 174 179 - 562296 1374161
+
+
+right path  174
+map 767548
+end id 1441769
+Step 20
+Step 30size: 1000 0
+Step 40size: 1000 0
+Step 50size: 1000 0
+Step 60size: 1000 0
+V 181
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDijkstra 179 180 - 1374161 1441769
+
+
+right path  179
+map 767548
+--- terzultimo punto : 562, 296
+--- penultimo punto : 1374, 161
+--- ultimo punto : 1441, 769
+>>>>>>>>>>>>>>>> 562 -- 562
+>>>>>>>>>>>>>>>> > 296 -- 296
+??????????????????????????????????????????? > 562, 296
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 562, 296
+>>>>>>>>>>>>>>>> 1374 -- 1374
+>>>>>>>>>>>>>>>> > 161 -- 161
+??????????????????????????????????????????? > 1374, 161
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 1374, 161
+-------Path 4 => 4: 
+PRIMA
+--- terzultimo punto : 562, 296
+--- penultimo punto : 1374, 161
+--- ultimo punto : 1441, 769
+--- CENTRO GATE : 1441, 769
+--- PUNTO BORDO GATE : 1393, 769
+--- terzultimo punto : 1374, 161
+--- penultimo punto : 1393, 769
+--- ultimo punto : 1441, 769
+Angoli!! 5
+--------angolo: -0.024840
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+kappa: 0.010000, 0.000000, -0.010000 
+OUTSIDE -127.14 punto <160.993, 186.251> -> 0
+OUTSIDE -125.399 punto <170.91, 187.499> -> 0
+OUTSIDE -122.683 punto <180.654, 189.731> -> 0
+OUTSIDE -122.471 punto <181.286, 189.912> -> 0
+OUTSIDE -119.214 punto <190.892, 192.692> -> 0
+OUTSIDE -115.958 punto <200.498, 195.472> -> 0
+OUTSIDE -112.701 punto <210.103, 198.253> -> 0
+OUTSIDE -109.445 punto <219.709, 201.033> -> 0
+OUTSIDE -106.221 punto <229.315, 203.813> -> 0
+OUTSIDE -103.638 punto <238.921, 206.593> -> 0
+OUTSIDE -101.975 punto <248.526, 209.374> -> 0
+OUTSIDE -101.276 punto <258.132, 212.154> -> 0
+OUTSIDE -101.561 punto <267.738, 214.934> -> 0
+OUTSIDE -100.634 punto <277.344, 217.714> -> 0
+OUTSIDE -97.1965 punto <286.949, 220.495> -> 0
+OUTSIDE -93.7588 punto <296.555, 223.275> -> 0
+OUTSIDE -90.321 punto <306.161, 226.055> -> 0
+OUTSIDE -86.8833 punto <315.767, 228.835> -> 0
+OUTSIDE -83.4455 punto <325.372, 231.616> -> 0
+OUTSIDE -80.0078 punto <334.978, 234.396> -> 0
+OUTSIDE -76.57 punto <344.584, 237.176> -> 0
+OUTSIDE -73.1429 punto <354.19, 239.956> -> 0
+OUTSIDE -70.5019 punto <363.795, 242.737> -> 0
+OUTSIDE -69.2182 punto <373.401, 245.517> -> 0
+OUTSIDE -69.0027 punto <383.007, 248.297> -> 0
+OUTSIDE -68.8478 punto <392.612, 251.077> -> 0
+OUTSIDE -68.2381 punto <402.218, 253.858> -> 0
+OUTSIDE -63.7671 punto <411.824, 256.638> -> 0
+OUTSIDE -60.4077 punto <421.43, 259.418> -> 0
+OUTSIDE -57.1916 punto <431.035, 262.198> -> 0
+OUTSIDE -53.9756 punto <440.641, 264.979> -> 0
+OUTSIDE -50.7596 punto <450.247, 267.759> -> 0
+OUTSIDE -47.5436 punto <459.853, 270.539> -> 0
+OUTSIDE -44.3275 punto <469.458, 273.319> -> 0
+OUTSIDE -41.1115 punto <479.064, 276.1> -> 0
+OUTSIDE -37.8955 punto <488.67, 278.88> -> 0
+OUTSIDE -34.6795 punto <498.276, 281.66> -> 0
+OUTSIDE -31.4635 punto <507.881, 284.441> -> 0
+OUTSIDE -28.2475 punto <517.487, 287.221> -> 0
+OUTSIDE -25.0315 punto <527.093, 290.001> -> 0
+OUTSIDE -22.6528 punto <534.197, 292.057> -> 0
+OUTSIDE -19.9152 punto <543.926, 294.353> -> 0
+OUTSIDE -18.151 punto <553.835, 295.666> -> 0
+OUTSIDE -17.4446 punto <562, 296> -> 0
+--------angolo: 0.000000
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+kappa: -0.010000, 0.000000, 0.010000 
+OUTSIDE -17.4878 punto <571.983, 295.5> -> 0
+OUTSIDE -18.5287 punto <581.867, 294.007> -> 0
+OUTSIDE -18.9388 punto <584.284, 293.486> -> 0
+OUTSIDE -20.7429 punto <594.032, 291.257> -> 0
+OUTSIDE -24.9668 punto <603.781, 289.029> -> 0
+OUTSIDE -31.8813 punto <613.529, 286.8> -> 0
+OUTSIDE -33.5386 punto <623.278, 284.572> -> 0
+OUTSIDE -35.6563 punto <633.027, 282.344> -> 0
+OUTSIDE -37.8847 punto <642.775, 280.115> -> 0
+OUTSIDE -40.1131 punto <652.524, 277.887> -> 0
+OUTSIDE -42.3415 punto <662.272, 275.659> -> 0
+OUTSIDE -44.5699 punto <672.021, 273.43> -> 0
+OUTSIDE -46.7982 punto <681.769, 271.202> -> 0
+OUTSIDE -49.0266 punto <691.518, 268.973> -> 0
+OUTSIDE -51.255 punto <701.266, 266.745> -> 0
+OUTSIDE -53.4834 punto <711.015, 264.517> -> 0
+OUTSIDE -55.7117 punto <720.764, 262.288> -> 0
+OUTSIDE -57.9401 punto <730.512, 260.06> -> 0
+OUTSIDE -60.1685 punto <740.261, 257.832> -> 0
+OUTSIDE -62.3969 punto <750.009, 255.603> -> 0
+OUTSIDE -64.6252 punto <759.758, 253.375> -> 0
+OUTSIDE -66.8536 punto <769.506, 251.146> -> 0
+OUTSIDE -69.082 punto <779.255, 248.918> -> 0
+OUTSIDE -71.3104 punto <789.003, 246.69> -> 0
+OUTSIDE -73.5388 punto <798.752, 244.461> -> 0
+OUTSIDE -75.7671 punto <808.501, 242.233> -> 0
+OUTSIDE -77.9955 punto <818.249, 240.004> -> 0
+OUTSIDE -80.2239 punto <827.998, 237.776> -> 0
+OUTSIDE -82.498 punto <837.746, 235.548> -> 0
+OUTSIDE -85.5975 punto <847.495, 233.319> -> 0
+OUTSIDE -89.7103 punto <857.243, 231.091> -> 0
+OUTSIDE -90.6913 punto <866.992, 228.863> -> 0
+OUTSIDE -92.3091 punto <876.74, 226.634> -> 0
+OUTSIDE -94.1659 punto <886.489, 224.406> -> 0
+OUTSIDE -96.0228 punto <896.238, 222.177> -> 0
+OUTSIDE -97.8796 punto <905.986, 219.949> -> 0
+OUTSIDE -99.7365 punto <915.735, 217.721> -> 0
+OUTSIDE -101.593 punto <925.483, 215.492> -> 0
+OUTSIDE -103.45 punto <935.232, 213.264> -> 0
+OUTSIDE -105.307 punto <944.98, 211.036> -> 0
+OUTSIDE -107.164 punto <954.729, 208.807> -> 0
+OUTSIDE -109.021 punto <964.477, 206.579> -> 0
+OUTSIDE -110.878 punto <974.226, 204.35> -> 0
+OUTSIDE -112.734 punto <983.975, 202.122> -> 0
+OUTSIDE -114.591 punto <993.723, 199.894> -> 0
+OUTSIDE -116.448 punto <1003.47, 197.665> -> 0
+OUTSIDE -118.305 punto <1013.22, 195.437> -> 0
+OUTSIDE -120.162 punto <1022.97, 193.209> -> 0
+OUTSIDE -122.041 punto <1032.72, 190.98> -> 0
+OUTSIDE -124.472 punto <1042.47, 188.752> -> 0
+OUTSIDE -127.643 punto <1052.21, 186.523> -> 0
+OUTSIDE -131.499 punto <1061.96, 184.295> -> 0
+OUTSIDE -135.983 punto <1071.71, 182.067> -> 0
+OUTSIDE -141.034 punto <1081.46, 179.838> -> 0
+OUTSIDE -146.594 punto <1091.21, 177.61> -> 0
+OUTSIDE -152.608 punto <1100.96, 175.382> -> 0
+OUTSIDE -159.024 punto <1110.71, 173.153> -> 0
+OUTSIDE -165.773 punto <1120.45, 170.925> -> 0
+OUTSIDE -172.592 punto <1130.2, 168.696> -> 0
+OUTSIDE -179.411 punto <1139.95, 166.468> -> 0
+OUTSIDE -186.229 punto <1149.7, 164.24> -> 0
+OUTSIDE -193.048 punto <1159.45, 162.011> -> 0
+OUTSIDE -199.867 punto <1169.2, 159.783> -> 0
+OUTSIDE -206.685 punto <1178.95, 157.555> -> 0
+OUTSIDE -213.504 punto <1188.69, 155.326> -> 0
+OUTSIDE -220.348 punto <1198.44, 153.098> -> 0
+OUTSIDE -227.392 punto <1208.19, 150.869> -> 0
+OUTSIDE -234.65 punto <1217.94, 148.641> -> 0
+OUTSIDE -242.104 punto <1227.69, 146.413> -> 0
+OUTSIDE -249.736 punto <1237.44, 144.184> -> 0
+OUTSIDE -257.53 punto <1247.19, 141.956> -> 0
+OUTSIDE -265.472 punto <1256.93, 139.728> -> 0
+OUTSIDE -273.549 punto <1266.68, 137.499> -> 0
+OUTSIDE -281.75 punto <1276.43, 135.271> -> 0
+OUTSIDE -285.637 punto <1281.01, 134.225> -> 0
+OUTSIDE -293.717 punto <1290.85, 132.487> -> 0
+OUTSIDE -301.307 punto <1300.82, 131.741> -> 0
+OUTSIDE -308.371 punto <1310.81, 131.994> -> 0
+OUTSIDE -314.876 punto <1320.73, 133.243> -> 0
+OUTSIDE -320.793 punto <1330.47, 135.476> -> 0
+OUTSIDE -326.096 punto <1339.94, 138.67> -> 0
+OUTSIDE -330.763 punto <1349.05, 142.794> -> 0
+OUTSIDE -334.775 punto <1357.7, 147.806> -> 0
+OUTSIDE -338.115 punto <1365.8, 153.657> -> 0
+OUTSIDE -340.771 punto <1373.28, 160.288> -> 0
+OUTSIDE -341.002 punto <1374, 161> -> 0
+--------angolo: 0.785398
+Algorithm INcorrect
+kappa: 0.010000, 0.000000, -0.010000 
+OUTSIDE -342.892 punto <1380.71, 168.413> -> 0
+OUTSIDE -344.079 punto <1386.64, 176.458> -> 0
+OUTSIDE -344.538 punto <1391.74, 185.055> -> 0
+OUTSIDE -344.057 punto <1395.95, 194.118> -> 0
+OUTSIDE -342.581 punto <1399.24, 203.557> -> 0
+OUTSIDE -340.126 punto <1401.58, 213.277> -> 0
+OUTSIDE -336.715 punto <1402.92, 223.181> -> 0
+OUTSIDE -332.383 punto <1403.28, 233.171> -> 0
+OUTSIDE -327.174 punto <1402.63, 243.146> -> 0
+OUTSIDE -321.139 punto <1401, 253.007> -> 0
+OUTSIDE -317.993 punto <1399.87, 257.633> -> 0
+OUTSIDE -311.207 punto <1397.28, 267.292> -> 0
+OUTSIDE -304.421 punto <1394.69, 276.95> -> 0
+OUTSIDE -297.636 punto <1392.09, 286.608> -> 0
+OUTSIDE -290.85 punto <1389.5, 296.266> -> 0
+OUTSIDE -284.064 punto <1386.91, 305.924> -> 0
+OUTSIDE -277.279 punto <1384.32, 315.583> -> 0
+OUTSIDE -270.493 punto <1381.73, 325.241> -> 0
+OUTSIDE -263.707 punto <1379.13, 334.899> -> 0
+OUTSIDE -256.922 punto <1376.54, 344.557> -> 0
+OUTSIDE -250.136 punto <1373.95, 354.215> -> 0
+OUTSIDE -243.351 punto <1371.36, 363.873> -> 0
+OUTSIDE -236.582 punto <1368.76, 373.532> -> 0
+OUTSIDE -230.005 punto <1366.17, 383.19> -> 0
+OUTSIDE -223.683 punto <1363.58, 392.848> -> 0
+OUTSIDE -217.636 punto <1360.99, 402.506> -> 0
+OUTSIDE -211.888 punto <1358.4, 412.164> -> 0
+OUTSIDE -206.466 punto <1355.8, 421.822> -> 0
+OUTSIDE -201.394 punto <1353.21, 431.481> -> 0
+OUTSIDE -196.7 punto <1350.62, 441.139> -> 0
+OUTSIDE -192.412 punto <1348.03, 450.797> -> 0
+OUTSIDE -188.557 punto <1345.43, 460.455> -> 0
+OUTSIDE -185.162 punto <1342.84, 470.113> -> 0
+OUTSIDE -182.254 punto <1340.25, 479.771> -> 0
+OUTSIDE -179.846 punto <1337.66, 489.43> -> 0
+OUTSIDE -177.613 punto <1335.07, 499.088> -> 0
+OUTSIDE -175.38 punto <1332.47, 508.746> -> 0
+OUTSIDE -173.147 punto <1329.88, 518.404> -> 0
+OUTSIDE -170.914 punto <1327.29, 528.062> -> 0
+OUTSIDE -168.681 punto <1324.7, 537.72> -> 0
+OUTSIDE -166.565 punto <1322.1, 547.379> -> 0
+OUTSIDE -164.99 punto <1319.51, 557.037> -> 0
+OUTSIDE -164.011 punto <1316.92, 566.695> -> 0
+OUTSIDE -163.639 punto <1314.33, 576.353> -> 0
+OUTSIDE -163.877 punto <1311.74, 586.011> -> 0
+OUTSIDE -164.722 punto <1309.14, 595.67> -> 0
+OUTSIDE -166.167 punto <1306.55, 605.328> -> 0
+OUTSIDE -168.194 punto <1303.96, 614.986> -> 0
+OUTSIDE -170.785 punto <1301.37, 624.644> -> 0
+OUTSIDE -173.743 punto <1298.77, 634.302> -> 0
+OUTSIDE -176.44 punto <1296.42, 643.078> -> 0
+OUTSIDE -179.881 punto <1294.31, 652.85> -> 0
+OUTSIDE -184.241 punto <1293.19, 662.783> -> 0
+OUTSIDE -189.478 punto <1293.07, 672.778> -> 0
+OUTSIDE -195.538 punto <1293.95, 682.735> -> 0
+OUTSIDE -202.362 punto <1295.81, 692.555> -> 0
+OUTSIDE -209.881 punto <1298.65, 702.14> -> 0
+OUTSIDE -218.02 punto <1302.43, 711.394> -> 0
+OUTSIDE -226.697 punto <1307.12, 720.224> -> 0
+OUTSIDE -235.827 punto <1312.66, 728.542> -> 0
+OUTSIDE -245.317 punto <1319, 736.265> -> 0
+OUTSIDE -255.074 punto <1326.09, 743.317> -> 0
+OUTSIDE -264.999 punto <1333.84, 749.626> -> 0
+OUTSIDE -274.994 punto <1342.19, 755.13> -> 0
+OUTSIDE -284.958 punto <1351.04, 759.774> -> 0
+OUTSIDE -294.793 punto <1360.31, 763.511> -> 0
+OUTSIDE -304.401 punto <1369.91, 766.305> -> 0
+OUTSIDE -313.686 punto <1379.74, 768.128> -> 0
+OUTSIDE -322.555 punto <1389.71, 768.961> -> 0
+OUTSIDE -325.377 punto <1393.01, 769.017> -> 0
+--------angolo: 0.000000
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+kappa: 0.010000, 0.000000, 0.010000 
+OUTSIDE -333.81 punto <1403, 769> -> 0
+OUTSIDE -342.263 punto <1413, 769> -> 0
+OUTSIDE -350.717 punto <1423, 769> -> 0
+OUTSIDE -359.17 punto <1433, 769> -> 0
+OUTSIDE -365.932 punto <1441, 769> -> 0
+--- START righPathNew --- 
+--> 1: (151, 186)
+--> 2: (562, 296)
+--> 3: (1374, 161)
+--> 4: (1393, 769)
+--> 5: (1441, 769)
+--- END righPathNew --- 

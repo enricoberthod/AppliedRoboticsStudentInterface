@@ -176,7 +176,9 @@ int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::unordered_map
 						if(xa>=0 && xa<=max_X && ya>=0 && ya<=max_Y && xb>=0 && xb<=max_X && yb>=0 && yb<=max_Y)
 						{
 							GraphEdge e(xa,ya,xb,yb,len,id1,id2);
+							GraphEdge e1(xb,yb,xa,ya,len,id2,id1);
 							results->resultEdges.push_back(e);
+							results->resultEdges.push_back(e1);
 							VoronoiPoint p(xa,ya);
 							results->resultPoints.push_back(p); 
 						}
