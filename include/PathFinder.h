@@ -7,5 +7,6 @@
 #include <opencv2/imgproc/imgproc.hpp>
 
 void PathFinder(VoronoiPoint, bool, VoronoiPoint, bool, VoronoiResults*, std::vector<VoronoiPoint> *, int, const std::vector<std::vector<cv::Point>>&);
+void sampleSegment2(VoronoiPoint, VoronoiPoint, std::vector<VoronoiPoint>&);
 
 #endif

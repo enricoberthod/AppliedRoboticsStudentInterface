@@ -13,7 +13,7 @@
 //void connect(int, VoronoiPoint, VoronoiPoint, VoronoiResults*, bool, bool, std::vector<GraphEdge>*, std::vector<GraphEdge>*);
 void connect(int, VoronoiPoint, VoronoiResults*, bool, std::vector<GraphEdge>*, int, const std::vector<std::vector<cv::Point>>&);
 void shortestPath(VoronoiPoint, bool, int, VoronoiPoint, bool, int, VoronoiResults *, std::vector<VoronoiPoint> *);
-void sampleSegment(VoronoiPoint, VoronoiPoint, std::vector<VoronoiPoint>&);
+//void sampleSegment(VoronoiPoint, VoronoiPoint, std::vector<VoronoiPoint>&);
 VoronoiPoint midpoint(VoronoiPoint, VoronoiPoint);
 bool edgeOnObstacle(VoronoiPoint, VoronoiPoint, const std::vector<std::vector<cv::Point>>&);
 bool findCollision(double, double, const std::vector<std::vector<cv::Point>>&); 
@@ -371,8 +371,9 @@ bool edgeOnObstacle(VoronoiPoint a, VoronoiPoint b, const std::vector<std::vecto
 {
 	std::vector<VoronoiPoint> samples;
 	bool isCollision=false;
-	sampleSegment(a, b, samples);
-	//std::cout << "------ n samples " << samples.size() << std::endl; 
+	sampleSegment2(a, b, samples);
+	//sampleSegment(a, b, samples);
+	std::cout << "------ n samples " << samples.size() << std::endl; 
 	for(int i=0; i<samples.size() && isCollision==false;i++)
 	{
 		//std::cout << "------ sample " << i << " coord(" << samples[i].a << "," << samples[i].b << ")" << std::endl; 
@@ -392,6 +393,7 @@ VoronoiPoint midpoint(VoronoiPoint a, VoronoiPoint b)
 	return VoronoiPoint(x,y);	
 }
 
+/*
 void sampleSegment(VoronoiPoint a, VoronoiPoint b, std::vector<VoronoiPoint>& samples)
 {
 	// order in samples -> A 7 3 9 1 11 5 13 0 14 6 12 2 10 4 8 B
@@ -433,6 +435,64 @@ void sampleSegment(VoronoiPoint a, VoronoiPoint b, std::vector<VoronoiPoint>& sa
 	samples.push_back(mid);
 
 	samples.push_back(a);
+	samples.push_back(b);
+}
+*/
+
+void sampleSegment2(VoronoiPoint a, VoronoiPoint b, std::vector<VoronoiPoint>& samples) {
+	std::cout << "Tratto " << a.a << ", " << a.b << "  ->  " << b.a << ", " << b.b << std::endl;
+	samples.push_back(a);
+	float d = 5;
+	float d_tot2 = (((a.a - b.a) * (a.a - b.a)) + ((a.b - b.b) * (a.b - b.b)));
+	float d_tot = (std::sqrt(d_tot2));
+	std::cout << "Lunghezza : " << d_tot << std::endl;
+	int x, x1, x2, y, y1, y2;
+	if (a.a != b.a) {
+		float m = ((float)(a.b - b.b) / (float)(a.a - b.a));
+		float q = (a.b - (m * a.a));
+		float par_a = ((m * m) + 1);
+		float par_b = ((2 * m * q) - (2 * a.a) - (2 * a.b * m));
+		float par_c;
+		while (d < d_tot) { 
+			std::cout << "Distanza sample : " << d << std::endl;
+			par_c = (a.a * a.a) + (a.b * a.b) + (q * q) - (2 * a.b * q) - (d * d);
+			x1 = (int)(- par_b + std::sqrt((par_b * par_b) - (4 * par_a * par_c))) / (2 * par_a);
+			x2 = (int)(- par_b - std::sqrt((par_b * par_b) - (4 * par_a * par_c))) / (2 * par_a);
+			y1 = (int)(m * x1) + q; 
+			y2 = (int)(m * x2) + q;
+			std::cout << "Soluzione 1 : " << x1 << ", " << y1 << std::endl;
+			std::cout << "Soluzione 2 : " << x2 << ", " << y2 << std::endl;
+			if((x1 > a.a && x1 < b.a) || (x1 > b.a && x1 < a.a)) {
+				x = x1;
+				y = y1;
+			}
+			else {
+				x = x2;
+				y = y2;
+			}
+			VoronoiPoint p = VoronoiPoint(x,y);
+			samples.push_back(p);
+			std::cout << "Sample : " << x << ", " << y << " == " << p.a << ", " << p.b << std::endl;
+			d = d + 5;
+		}
+	}
+	else {
+		while (d < d_tot) {
+			std::cout << "Distanza sample : " << d << std::endl;
+			x = a.a;
+			if(a.b < b.b) {
+				y = a.b + d;
+			}
+			else {
+				y = b.b + d;
+			}
+			VoronoiPoint p = VoronoiPoint(x,y);
+			samples.push_back(p);
+			std::cout << "Sample : " << x << ", " << y << std::endl;
+			d = d + 5;
+		}
+		
+	}
 	samples.push_back(b);
 }
 
