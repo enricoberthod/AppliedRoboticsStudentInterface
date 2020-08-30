@@ -8,5 +8,6 @@
 
 void PathFinder(VoronoiPoint, bool, VoronoiPoint, bool, VoronoiResults*, std::vector<VoronoiPoint> *, int, const std::vector<std::vector<cv::Point>>&);
 void sampleSegment2(VoronoiPoint, VoronoiPoint, std::vector<VoronoiPoint>&);
+bool edgeOnObstacle(VoronoiPoint, VoronoiPoint, const std::vector<std::vector<cv::Point>>&);
 
 #endif
