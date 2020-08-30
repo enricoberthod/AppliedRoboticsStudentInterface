@@ -393,7 +393,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		printf(" - p2: %i",voronoiPaths.resultEdges[j].idSecondNode);
 		printf(" ->(%i",voronoiPaths.resultEdges[j].p1.a);
 		printf(", %i)",voronoiPaths.resultEdges[j].p1.b);
-		printf(" - lenght: %f",voronoiPaths.resultEdges[j].length);
+		printf(" - lenght: %f\n",voronoiPaths.resultEdges[j].length);
 	}
 
 	//throw std::logic_error( "STOP" );
