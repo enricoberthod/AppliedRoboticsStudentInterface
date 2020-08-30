@@ -389,10 +389,10 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	{
 		printf("p1: %i",voronoiPaths.resultEdges[j].idFirstNode);
 		printf(" ->(%i",voronoiPaths.resultEdges[j].p0.a);
-		printf(", %i)",voronoiPaths.resultPoints[j].p0.b);
+		printf(", %i)",voronoiPaths.resultEdges[j].p0.b);
 		printf(" - p2: %i",voronoiPaths.resultEdges[j].idSecondNode);
 		printf(" ->(%i",voronoiPaths.resultEdges[j].p1.a);
-		printf(", %i)",voronoiPaths.resultPoints[j].p1.b);
+		printf(", %i)",voronoiPaths.resultEdges[j].p1.b);
 		printf(" - lenght: %f",voronoiPaths.resultEdges[j].length);
 	}
 
