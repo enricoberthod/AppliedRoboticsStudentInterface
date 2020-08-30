@@ -18416,3 +18416,88 @@ kappa: 0.010000, 0.000000, 0.010000
 --> 14: (1393, 769)
 --> 15: (1441, 769)
 --- END rightPathNew --- 
+[33m[ WARN] [1598798356.988123401, 862.150000000]: Call student function[0m
+[0m[ INFO] [1598798357.000914746, 862.160000000]: camera estimated position = 
+[0.5304201173701641;
+ 0.706237036936453;
+ 2.184937583863922][0m
+[0m[ INFO] [1598798355.529385634]: cametra_matrix = 
+ [558.5726818577332, 0, 342.6203163666451;
+ 0, 558.5726818577332, 267.9308376846099;
+ 0, 0, 1][0m
+[0m[ INFO] [1598798355.529610677]: dist_coeffs = 
+[-0.2069661057376372, 0.0110561549401185, 0.01602106933810088, 0.01733990140219172][0m
+... logging to /home/lar2019/.ros/log/8d91863e-eacc-11ea-8ebc-080027ae6ce3/roslaunch-lar2019-vm-22991.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/lar2019/Desktop/AppliedRoboticsEnvironment/src/9_project_interface/launch/node_pipeline.launch
+[1mstarted roslaunch server http://lar2019-vm:44067/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /arena/h: 1.0
+ * /arena/robot_height: 0.16
+ * /arena/w: 1.5
+ * /camera_calibration/cx: 342.620316367
+ * /camera_calibration/cy: 267.930837685
+ * /camera_calibration/fx: 558.572681858
+ * /camera_calibration/fy: 558.572681858
+ * /camera_calibration/image_height: 600
+ * /camera_calibration/image_width: 800
+ * /camera_calibration/k1: -0.206966105738
+ * /camera_calibration/k2: 0.0110561549401
+ * /camera_calibration/k3: 0.0
+ * /camera_calibration/p1: 0.0160210693381
+ * /camera_calibration/p2: 0.0173399014022
+ * /config_folder: /home/lar2019/Des...
+ * /default_implementation/extrinsic_calib: False
+ * /default_implementation/obstacle_detector: False
+ * /default_implementation/planning: False
+ * /default_implementation/raw_clbk: False
+ * /default_implementation/rectify: False
+ * /default_implementation/rectify_clbk: True
+ * /default_implementation/robot_detector: False
+ * /default_implementation/unwarp: False
+ * /default_implementation/unwarped_ground_clbk: True
+ * /default_implementation/unwarped_robot_clbk: True
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+
+NODES
+  /
+    control (control/control_node)
+    extrinsic_calib (image_elab/extrinsic_calib_node)
+    localization (localization/localization_node)
+    obstacle_detector (image_elab/obstacle_detector_node)
+    odometry (localization/odometry_node)
+    planning (planning/planning_node)
+    rectify_image (image_elab/rectify_node)
+    robot_detector (image_elab/robot_detector_node)
+    unwarp_image (image_elab/unwarp_node)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/lar2019/Desktop/AppliedRoboticsEnvironment/src/9_project_interface/launch/node_pipeline.launch http://localhost:11311
+[1mprocess[extrinsic_calib-1]: started with pid [23013][0m
+[1mprocess[rectify_image-2]: started with pid [23014][0m
+[1mprocess[unwarp_image-3]: started with pid [23015][0m
+[1mprocess[obstacle_detector-4]: started with pid [23022][0m
+[1mprocess[robot_detector-5]: started with pid [23038][0m
+[1mprocess[localization-6]: started with pid [23057][0m
+[1mprocess[odometry-7]: started with pid [23091][0m
+[1mprocess[planning-8]: started with pid [23108][0m
+[1mprocess[control-9]: started with pid [23144][0m
+[control-9] killing on exit
+[planning-8] killing on exit
+[odometry-7] killing on exit
+[localization-6] killing on exit
+[robot_detector-5] killing on exit
+[obstacle_detector-4] killing on exit
+[unwarp_image-3] killing on exit
+[rectify_image-2] killing on exit
+[extrinsic_calib-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
