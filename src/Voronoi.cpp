@@ -173,7 +173,7 @@ int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::unordered_map
 							visitedIds.push_back(longId);
 							id2=(visitedIds.size()-1);
 						}
-						if(xa>=0 && xa<=max_X && ya>=0 && ya<=max_Y && xb>=0 && xb<=max_X && yb>=0 && yb<=max_Y)
+						if(xa>0 && xa<max_X && ya>0 && ya<max_Y && xb>0 && xb<max_X && yb>0 && yb<max_Y)
 						{
 							GraphEdge e(xa,ya,xb,yb,len,id1,id2);
 							GraphEdge e1(xb,yb,xa,ya,len,id2,id1);
@@ -283,7 +283,7 @@ bool isObstaclePoint(int x, int y, const std::vector<std::vector<cv::Point>>& co
 	double res;
 	for (int i = 0; i < contours.size() && !r; i++) {
 		res = cv::pointPolygonTest(contours[i] , cv::Point2f(x,y) , true);
-		if(res >= 0 || x == 0 || x == 1560 || y == 0 || y == 1060) {
+		if(res >= 0 || x <= 0 || x >= 1560 || y <= 0 || y >= 1060) {
 			r = true;
 			//std::cout << "INSIDE!!! " << res << " -> " << " punto <" << x << ", " << y << ">" << " -> " << r << std::endl;
 		}
