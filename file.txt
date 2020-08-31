@@ -4736,6 +4736,7 @@ right path -1 startEndPath[0] : 58
 (pathfinder) mapposition : 1540203
 voronoiPaths->ids.size()+idStart : 58
 
+<<<<<<< HEAD
 right path  58(pathfinder) mapposition : 1540203
  8(pathfinder) mapposition : 3180318
  9(pathfinder) mapposition : 4020251
@@ -10553,8 +10554,794 @@ PRIMA
 --- ultimo punto : 1502, 812
 Angoli!! 11
 --------angolo: -0.012345
+=======
+right path  159 38 46 60 66 73 94 98 111 123 130 146 148 149 151 153 154 155 160
+map 893172
+node: 38 243170 x,y (243,170)
+node: 46 279172 x,y (279,172)
+node: 60 404172 x,y (404,172)
+node: 66 452175 x,y (452,175)
+node: 73 605169 x,y (605,169)
+node: 94 668173 x,y (668,173)
+node: 98 863171 x,y (863,171)
+node: 111 893172 x,y (893,172)
+node: 123 941171 x,y (941,171)
+node: 130 1111178 x,y (1111,178)
+node: 146 1201194 x,y (1201,194)
+node: 148 1253209 x,y (1253,209)
+node: 149 1323236 x,y (1323,236)
+node: 151 1337283 x,y (1337,283)
+node: 153 1371426 x,y (1371,426)
+node: 154 1381518 x,y (1381,518)
+node: 155 1380570 x,y (1380,570)
+--- terzultimo punto : 1381, 518
+--- penultimo punto : 1380, 570
+--- ultimo punto : 1502, 812
+-------Path 19 => 8: 
+PRIMA
+--- terzultimo punto : 1111, 178
+--- penultimo punto : 1371, 426
+--- ultimo punto : 1502, 812
+--- CENTRO GATE : 1502, 812
+--- PUNTO BORDO GATE : 1452, 812
+--- terzultimo punto : 1371, 426
+--- penultimo punto : 1452, 812
+--- ultimo punto : 1502, 812
+Angoli!! 9
+--------angolo: 1.184148
+--------angolo da provare : 0.000000
+Algorithm correct
+Algorithm correct
 Algorithm INcorrect
 Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 0.785398
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 1.570796
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: 0.000000
+--------angolo da provare : 2.356194
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+--------angolo scelto: 0.000000
+--------angolo da provare : 3.141593
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: 0.000000
+--------angolo da provare : -0.785398
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: -0.785398
+--------angolo da provare : -1.570796
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: -0.785398
+--------angolo da provare : -2.356194
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: -0.785398
+Algorithm INcorrect
+kappa: 0.010000, -0.010000, 0.010000 
+(sample) start 
+OUTSIDE -121.565 punto <104.302, 218.435> -> 0
+OUTSIDE -111.848 punto <106.645, 228.152> -> 0
+OUTSIDE -101.945 punto <108.007, 238.055> -> 0
+OUTSIDE -91.9563 punto <108.373, 248.044> -> 0
+OUTSIDE -81.9805 punto <107.74, 258.02> -> 0
+OUTSIDE -72.1177 punto <106.115, 267.882> -> 0
+OUTSIDE -62.4665 punto <103.513, 277.534> -> 0
+OUTSIDE -53.1232 punto <99.9602, 286.877> -> 0
+OUTSIDE -44.1812 punto <95.4926, 295.819> -> 0
+OUTSIDE -35.7299 punto <90.1545, 304.27> -> 0
+OUTSIDE -30.2183 punto <85.9827, 309.782> -> 0
+(sample) end 
+Punti inseriti : 12
+(sample) start 
+OUTSIDE -22.2397 punto <80.0737, 317.844> -> 0
+OUTSIDE -15.2466 punto <74.999, 326.456> -> 0
+OUTSIDE -10.9595 punto <70.8094, 335.531> -> 0
+OUTSIDE -1.21838 punto <67.5468, 344.98> -> 0
+INSIDE!!! 8.69792 -> 1
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+(sample) end 
+Punti inseriti : 12
+Punti inseriti : 12
+(function_L) 1
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+--------angolo da provare : 0.000000
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 0.785398
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 1.570796
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: 0.000000
+--------angolo da provare : 2.356194
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+--------angolo scelto: 0.000000
+--------angolo da provare : 3.141593
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: 0.000000
+--------angolo da provare : -0.785398
+(function_L) angolo saltato 
+--------angolo da provare : -1.570796
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : -2.356194
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: 0.000000
+Algorithm correct
+kappa: 0.010000, 0.000000, -0.010000 
+(sample) start 
+OUTSIDE -121.565 punto <104.302, 218.435> -> 0
+OUTSIDE -111.848 punto <106.645, 228.152> -> 0
+OUTSIDE -101.945 punto <108.007, 238.055> -> 0
+OUTSIDE -91.9563 punto <108.373, 248.044> -> 0
+OUTSIDE -81.9805 punto <107.74, 258.02> -> 0
+OUTSIDE -72.1177 punto <106.115, 267.882> -> 0
+OUTSIDE -62.4665 punto <103.513, 277.534> -> 0
+OUTSIDE -53.1232 punto <99.9602, 286.877> -> 0
+OUTSIDE -44.1812 punto <95.4926, 295.819> -> 0
+OUTSIDE -35.7299 punto <90.1545, 304.27> -> 0
+OUTSIDE -27.8536 punto <83.9994, 312.146> -> 0
+OUTSIDE -21.2074 punto <77.0887, 319.369> -> 0
+OUTSIDE -18.8741 punto <69.4913, 325.866> -> 0
+OUTSIDE -13.8854 punto <61.2832, 331.573> -> 0
+OUTSIDE -8.12684 punto <52.5461, 336.432> -> 0
+OUTSIDE -3.212 punto <43.3671, 340.396> -> 0
+INSIDE!!! 0.810341 -> 1
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+(sample) end 
+Punti inseriti : 0
+Punti inseriti : 0
+Punti inseriti : 0
+(function_L) 1
+--------angolo da provare : 0.000000
+(function_L) angolo saltato 
+--------angolo da provare : 0.785398
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.785398
+--------angolo da provare : 1.570796
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: 0.785398
+--------angolo da provare : 2.356194
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+--------angolo scelto: 0.785398
+--------angolo da provare : 3.141593
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: 0.785398
+--------angolo da provare : -0.785398
+(function_L) angolo saltato 
+--------angolo da provare : -1.570796
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.785398
+--------angolo da provare : -2.356194
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: 0.785398
+Algorithm INcorrect
+kappa: 0.010000, 0.000000, 0.010000 
+(sample) start 
+OUTSIDE -121.565 punto <104.302, 218.435> -> 0
+OUTSIDE -111.848 punto <106.645, 228.152> -> 0
+OUTSIDE -101.945 punto <108.007, 238.055> -> 0
+OUTSIDE -91.9563 punto <108.373, 248.044> -> 0
+OUTSIDE -81.9805 punto <107.74, 258.02> -> 0
+OUTSIDE -72.1177 punto <106.115, 267.882> -> 0
+OUTSIDE -62.4665 punto <103.513, 277.534> -> 0
+OUTSIDE -53.1232 punto <99.9602, 286.877> -> 0
+OUTSIDE -44.1812 punto <95.4926, 295.819> -> 0
+OUTSIDE -35.7299 punto <90.1545, 304.27> -> 0
+OUTSIDE -27.8536 punto <83.9994, 312.146> -> 0
+OUTSIDE -21.2074 punto <77.0887, 319.369> -> 0
+OUTSIDE -18.8741 punto <69.4913, 325.866> -> 0
+OUTSIDE -13.8854 punto <61.2832, 331.573> -> 0
+OUTSIDE -8.12684 punto <52.5461, 336.432> -> 0
+OUTSIDE -3.212 punto <43.3671, 340.396> -> 0
+INSIDE!!! 0.810341 -> 1
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+(sample) end 
+Punti inseriti : 0
+Punti inseriti : 0
+Punti inseriti : 0
+(function_L) 1
+--------angolo da provare : 0.000000
+(function_L) angolo saltato 
+--------angolo da provare : 0.785398
+(function_L) angolo saltato 
+--------angolo da provare : 1.570796
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: 1.570796
+--------angolo da provare : 2.356194
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+--------angolo scelto: 2.356194
+--------angolo da provare : 3.141593
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: 2.356194
+--------angolo da provare : -0.785398
+(function_L) angolo saltato 
+--------angolo da provare : -1.570796
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: -1.570796
+--------angolo da provare : -2.356194
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: -2.356194
+Algorithm INcorrect
+kappa: 0.010000, -0.010000, 0.010000 
+(sample) start 
+OUTSIDE -121.565 punto <104.302, 218.435> -> 0
+OUTSIDE -111.848 punto <106.645, 228.152> -> 0
+OUTSIDE -101.945 punto <108.007, 238.055> -> 0
+OUTSIDE -91.9563 punto <108.373, 248.044> -> 0
+OUTSIDE -82.3661 punto <107.784, 257.634> -> 0
+(sample) end 
+Punti inseriti : 6
+(sample) start 
+OUTSIDE -72.3879 punto <107.189, 267.612> -> 0
+OUTSIDE -62.4003 punto <107.595, 277.6> -> 0
+OUTSIDE -52.503 punto <108.995, 287.497> -> 0
+OUTSIDE -42.7949 punto <111.376, 297.205> -> 0
+OUTSIDE -33.3731 punto <114.714, 306.627> -> 0
+OUTSIDE -24.3316 punto <118.977, 315.668> -> 0
+OUTSIDE -15.7607 punto <124.12, 324.239> -> 0
+OUTSIDE -7.74625 punto <130.094, 332.254> -> 0
+OUTSIDE -0.368134 punto <136.838, 339.632> -> 0
+INSIDE!!! 6.29993 -> 1
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+(sample) end 
+Punti inseriti : 6
+Punti inseriti : 6
+(function_L) 1
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+--------angolo da provare : 0.000000
+(function_L) angolo saltato 
+--------angolo da provare : 0.785398
+(function_L) angolo saltato 
+--------angolo da provare : 1.570796
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: 1.570796
+--------angolo da provare : 2.356194
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+--------angolo scelto: 2.356194
+--------angolo da provare : 3.141593
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: 2.356194
+--------angolo da provare : -0.785398
+(function_L) angolo saltato 
+--------angolo da provare : -1.570796
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: -1.570796
+--------angolo da provare : -2.356194
+(function_L) angolo saltato 
+Algorithm INcorrect
+kappa: 0.010000, -0.010000, 0.010000 
+(sample) start 
+OUTSIDE -121.565 punto <104.302, 218.435> -> 0
+OUTSIDE -111.848 punto <106.645, 228.152> -> 0
+OUTSIDE -101.945 punto <108.007, 238.055> -> 0
+OUTSIDE -91.9563 punto <108.373, 248.044> -> 0
+OUTSIDE -81.9805 punto <107.74, 258.02> -> 0
+OUTSIDE -72.1177 punto <106.115, 267.882> -> 0
+OUTSIDE -62.4665 punto <103.513, 277.534> -> 0
+OUTSIDE -62.442 punto <103.505, 277.558> -> 0
+(sample) end 
+Punti inseriti : 9
+(sample) start 
+OUTSIDE -52.7914 punto <100.9, 287.209> -> 0
+OUTSIDE -42.9291 punto <99.2722, 297.071> -> 0
+OUTSIDE -32.9535 punto <98.6368, 307.047> -> 0
+OUTSIDE -22.9643 punto <99.0005, 317.036> -> 0
+OUTSIDE -13.0612 punto <100.36, 326.939> -> 0
+OUTSIDE -3.34341 punto <102.701, 336.657> -> 0
+INSIDE!!! 6.09219 -> 1
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+(sample) end 
+Punti inseriti : 9
+Punti inseriti : 9
+(function_L) 1
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+Rimozione di 1 elemento 
+--------angolo da provare : 0.000000
+(function_L) angolo saltato 
+--------angolo da provare : 0.785398
+(function_L) angolo saltato 
+--------angolo da provare : 1.570796
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: 1.570796
+--------angolo da provare : 2.356194
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+--------angolo scelto: 2.356194
+--------angolo da provare : 3.141593
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: 2.356194
+--------angolo da provare : -0.785398
+(function_L) angolo saltato 
+--------angolo da provare : -1.570796
+(function_L) angolo saltato 
+--------angolo da provare : -2.356194
+(function_L) angolo saltato 
+Algorithm INcorrect
+kappa: -0.010000, 0.000000, -0.010000 
+(sample) start 
+OUTSIDE -121.942 punto <105.227, 218.058> -> 0
+OUTSIDE -113.351 punto <110.338, 226.649> -> 0
+OUTSIDE -105.314 punto <116.28, 234.686> -> 0
+OUTSIDE -97.9096 punto <122.996, 242.09> -> 0
+OUTSIDE -91.2129 punto <130.417, 248.787> -> 0
+OUTSIDE -85.2904 punto <138.469, 254.71> -> 0
+OUTSIDE -82.1323 punto <143.573, 257.868> -> 0
+(sample) end 
+Punti inseriti : 8
+(sample) start 
+OUTSIDE -77.1277 punto <152.23, 262.872> -> 0
+OUTSIDE -72.1232 punto <160.888, 267.877> -> 0
+OUTSIDE -67.1187 punto <169.545, 272.881> -> 0
+OUTSIDE -62.1142 punto <178.203, 277.886> -> 0
+OUTSIDE -57.1096 punto <186.861, 282.89> -> 0
+OUTSIDE -52.1051 punto <195.518, 287.895> -> 0
+OUTSIDE -47.1006 punto <204.176, 292.899> -> 0
+OUTSIDE -42.0961 punto <212.834, 297.904> -> 0
+OUTSIDE -37.0915 punto <221.491, 302.908> -> 0
+OUTSIDE -32.087 punto <230.149, 307.913> -> 0
+OUTSIDE -27.0825 punto <238.807, 312.918> -> 0
+OUTSIDE -22.5248 punto <247.464, 317.922> -> 0
+OUTSIDE -21.5334 punto <256.122, 322.927> -> 0
+OUTSIDE -19.143 punto <263.665, 327.287> -> 0
+(sample) end 
+Punti inseriti : 22
+(sample) start 
+OUTSIDE -12.1572 punto <272.559, 331.851> -> 0
+OUTSIDE -8.49622 punto <281.863, 335.504> -> 0
+OUTSIDE -5.79034 punto <291.486, 338.21> -> 0
+OUTSIDE -4.05862 punto <301.33, 339.941> -> 0
+OUTSIDE -3.31839 punto <311.299, 340.682> -> 0
+OUTSIDE -3.57706 punto <321.291, 340.423> -> 0
+OUTSIDE -4.832 punto <331.208, 339.168> -> 0
+OUTSIDE -7.07068 punto <340.95, 336.929> -> 0
+OUTSIDE -10.2708 punto <350.42, 333.729> -> 0
+OUTSIDE -14.4002 punto <359.523, 329.6> -> 0
+OUTSIDE -19.4179 punto <368.168, 324.582> -> 0
+OUTSIDE -25.2737 punto <376.27, 318.726> -> 0
+OUTSIDE -31.909 punto <383.747, 312.091> -> 0
+OUTSIDE -39.2577 punto <390.525, 304.742> -> 0
+OUTSIDE -47.2464 punto <396.535, 296.754> -> 0
+OUTSIDE -55.7957 punto <401.719, 288.204> -> 0
+OUTSIDE -64.8518 punto <406.025, 279.18> -> 0
+OUTSIDE -74.427 punto <409.411, 269.77> -> 0
+OUTSIDE -84.2976 punto <411.842, 260.068> -> 0
+OUTSIDE -94.2678 punto <413.261, 250.188> -> 0
+OUTSIDE -104.251 punto <413.709, 240.202> -> 0
+OUTSIDE -114.146 punto <413.159, 230.222> -> 0
+OUTSIDE -123.888 punto <411.615, 220.346> -> 0
+OUTSIDE -133.424 punto <409.093, 210.674> -> 0
+OUTSIDE -142.708 punto <405.618, 201.301> -> 0
+OUTSIDE -151.677 punto <401.224, 192.323> -> 0
+OUTSIDE -160.172 punto <395.956, 183.828> -> 0
+OUTSIDE -168.099 punto <389.867, 175.901> -> 0
+OUTSIDE -175.378 punto <383.016, 168.622> -> 0
+OUTSIDE -181.937 punto <375.473, 162.063> -> 0
+OUTSIDE -187.71 punto <367.313, 156.29> -> 0
+OUTSIDE -192.639 punto <358.617, 151.361> -> 0
+OUTSIDE -196.676 punto <349.472, 147.324> -> 0
+OUTSIDE -199.78 punto <339.971, 144.22> -> 0
+OUTSIDE -201.919 punto <330.206, 142.081> -> 0
+OUTSIDE -203.073 punto <320.277, 140.927> -> 0
+OUTSIDE -203.231 punto <310.283, 140.769> -> 0
+OUTSIDE -202.389 punto <300.322, 141.611> -> 0
+OUTSIDE -200.557 punto <290.496, 143.443> -> 0
+OUTSIDE -197.426 punto <280.901, 146.246> -> 0
+OUTSIDE -192.152 punto <271.634, 149.994> -> 0
+OUTSIDE -186.406 punto <262.788, 154.647> -> 0
+OUTSIDE -180.203 punto <254.45, 160.161> -> 0
+OUTSIDE -173.56 punto <246.705, 166.48> -> 0
+OUTSIDE -170 punto <243, 170> -> 0
+(sample) end 
+Punti inseriti : 67
+(function_L) 0
+--------angolo: 2.356194
+--------angolo da provare : 0.000000
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 0.785398
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 1.570796
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 2.356194
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: 0.000000
+--------angolo da provare : 3.141593
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: 0.000000
+--------angolo da provare : -0.785398
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: -0.785398
+--------angolo da provare : -1.570796
+Algorithm correct
+Algorithm INcorrect
+>>>>>>> collision
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
@@ -10566,8 +11353,165 @@ Algorithm INcorrect
 Algorithm INcorrect
 Algorithm correct
 Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: -0.785398
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
 Algorithm INcorrect
 Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 0.785398
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 1.570796
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 2.356194
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: 0.000000
+--------angolo da provare : 3.141593
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: 0.000000
+--------angolo da provare : -0.785398
+(function_L) angolo saltato 
+--------angolo da provare : -1.570796
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: -1.570796
+--------angolo da provare : -2.356194
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: -1.570796
+Algorithm correct
+kappa: -0.010000, 0.000000, 0.010000 
+(sample) start 
+OUTSIDE -162.587 punto <236.294, 177.413> -> 0
+OUTSIDE -154.542 punto <230.361, 185.458> -> 0
+OUTSIDE -145.945 punto <225.262, 194.055> -> 0
+OUTSIDE -136.882 punto <221.046, 203.118> -> 0
+OUTSIDE -127.443 punto <217.756, 212.557> -> 0
+OUTSIDE -117.723 punto <215.424, 222.277> -> 0
+OUTSIDE -107.819 punto <214.075, 232.181> -> 0
+OUTSIDE -97.8291 punto <213.721, 242.171> -> 0
+OUTSIDE -87.8541 punto <214.367, 252.146> -> 0
+OUTSIDE -77.9932 punto <216.004, 262.007> -> 0
+OUTSIDE -68.3449 punto <218.619, 271.655> -> 0
+OUTSIDE -59.0057 punto <222.183, 280.994> -> 0
+OUTSIDE -50.0686 punto <226.662, 289.931> -> 0
+OUTSIDE -41.6228 punto <232.01, 298.377> -> 0
+OUTSIDE -33.7524 punto <238.175, 306.248> -> 0
+OUTSIDE -26.6184 punto <245.095, 313.464> -> 0
+OUTSIDE -22.2688 punto <252.701, 319.955> -> 0
+OUTSIDE -21.9373 punto <260.917, 325.656> -> 0
+OUTSIDE -13.8957 punto <269.662, 330.511> -> 0
+OUTSIDE -9.56625 punto <278.84, 334.434> -> 0
+OUTSIDE -6.55319 punto <288.371, 337.447> -> 0
+OUTSIDE -4.50668 punto <298.155, 339.493> -> 0
+OUTSIDE -3.44717 punto <308.094, 340.553> -> 0
+OUTSIDE -3.38525 punto <318.09, 340.615> -> 0
+OUTSIDE -4.32153 punto <328.042, 339.678> -> 0
+OUTSIDE -6.24667 punto <337.85, 337.753> -> 0
+OUTSIDE -9.14145 punto <347.418, 334.859> -> 0
+OUTSIDE -12.9769 punto <356.649, 331.023> -> 0
+OUTSIDE -17.7147 punto <365.45, 326.285> -> 0
+OUTSIDE -23.3076 punto <373.735, 320.692> -> 0
+OUTSIDE -29.6996 punto <381.42, 314.3> -> 0
+OUTSIDE -36.8269 punto <388.428, 307.173> -> 0
+OUTSIDE -44.6183 punto <394.69, 299.382> -> 0
+OUTSIDE -52.9958 punto <400.143, 291.004> -> 0
+OUTSIDE -61.8803 punto <404.732, 282.124> -> 0
+OUTSIDE -71.3065 punto <408.412, 272.83> -> 0
+OUTSIDE -81.1001 punto <411.145, 263.215> -> 0
+OUTSIDE -91.0608 punto <412.905, 253.376> -> 0
+OUTSIDE -101.055 punto <413.674, 243.409> -> 0
+OUTSIDE -110.986 punto <413.444, 233.416> -> 0
+OUTSIDE -120.784 punto <412.218, 223.496> -> 0
+OUTSIDE -122.925 punto <411.813, 221.324> -> 0
+(sample) end 
+Punti inseriti : 42
+(sample) start 
+OUTSIDE -132.617 punto <409.875, 211.513> -> 0
+OUTSIDE -142.351 punto <407.936, 201.703> -> 0
+OUTSIDE -152.12 punto <405.997, 191.893> -> 0
+OUTSIDE -152.625 punto <405.897, 191.387> -> 0
+(sample) end 
+Punti inseriti : 46
+(sample) start 
+OUTSIDE -162.504 punto <404.452, 181.496> -> 0
+OUTSIDE -172 punto <404, 172> -> 0
+(sample) end 
+Punti inseriti : 48
+(function_L) 0
+--------angolo: -1.570796
+--------angolo da provare : 0.000000
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 0.785398
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
@@ -10646,31 +11590,12 @@ Algorithm INcorrect
 Algorithm INcorrect
 Algorithm correct
 Algorithm correct
-Algorithm correct
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm correct
 Algorithm INcorrect
 Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
 Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
@@ -10679,6 +11604,34 @@ Algorithm INcorrect
 Algorithm INcorrect
 Algorithm correct
 Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 2.356194
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
 Algorithm correct
 Algorithm correct
 Algorithm correct
@@ -10700,6 +11653,13 @@ Algorithm INcorrect
 Algorithm correct
 Algorithm correct
 Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: -0.785398
+--------angolo da provare : -1.570796
+Algorithm INcorrect
+Algorithm INcorrect
 Algorithm correct
 kappa: -0.010000, 0.000000, 0.010000 
 --------angolo: 0.785398
@@ -10765,7 +11725,63 @@ Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm correct
+--------angolo scelto: -0.785398
 Algorithm correct
+kappa: -0.010000, 0.000000, -0.010000 
+(sample) start 
+OUTSIDE -160.503 punto <605.5, 178.983> -> 0
+OUTSIDE -150.536 punto <606.993, 188.867> -> 0
+OUTSIDE -140.707 punto <609.466, 198.552> -> 0
+OUTSIDE -131.158 punto <612.894, 207.942> -> 0
+OUTSIDE -122.06 punto <617.242, 216.943> -> 0
+OUTSIDE -113.624 punto <622.466, 225.464> -> 0
+OUTSIDE -106.101 punto <628.516, 233.422> -> 0
+OUTSIDE -99.7807 punto <635.329, 240.736> -> 0
+OUTSIDE -94.9729 punto <642.839, 247.333> -> 0
+OUTSIDE -91.9657 punto <650.97, 253.147> -> 0
+OUTSIDE -88.7035 punto <659.641, 258.121> -> 0
+OUTSIDE -84.4517 punto <668.765, 262.205> -> 0
+OUTSIDE -81.1241 punto <678.251, 265.357> -> 0
+OUTSIDE -78.7538 punto <688.005, 267.547> -> 0
+OUTSIDE -77.3643 punto <697.93, 268.753> -> 0
+OUTSIDE -76.9695 punto <707.926, 268.963> -> 0
+OUTSIDE -77.5731 punto <717.894, 268.175> -> 0
+OUTSIDE -79.169 punto <727.735, 266.396> -> 0
+OUTSIDE -81.741 punto <737.351, 263.646> -> 0
+OUTSIDE -85.285 punto <746.615, 259.93> -> 0
+OUTSIDE -89.7288 punto <755.485, 255.321> -> 0
+OUTSIDE -95.0442 punto <763.85, 249.85> -> 0
+OUTSIDE -97.2613 punto <766.852, 247.577> -> 0
+(sample) end 
+Punti inseriti : 23
+(sample) start 
+OUTSIDE -103.3 punto <774.71, 241.391> -> 0
+OUTSIDE -109.339 punto <782.568, 235.206> -> 0
+OUTSIDE -115.377 punto <790.425, 229.021> -> 0
+OUTSIDE -121.416 punto <798.283, 222.836> -> 0
+OUTSIDE -127.455 punto <806.141, 216.65> -> 0
+OUTSIDE -133.493 punto <813.998, 210.465> -> 0
+OUTSIDE -139.532 punto <821.856, 204.28> -> 0
+OUTSIDE -145.571 punto <829.714, 198.095> -> 0
+OUTSIDE -151.61 punto <837.571, 191.909> -> 0
+OUTSIDE -157.648 punto <845.429, 185.724> -> 0
+OUTSIDE -163.687 punto <853.287, 179.539> -> 0
+OUTSIDE -164.344 punto <854.142, 178.866> -> 0
+(sample) end 
+Punti inseriti : 35
+(sample) start 
+OUTSIDE -170.771 punto <861.677, 172.298> -> 0
+OUTSIDE -172.045 punto <863, 171> -> 0
+(sample) end 
+Punti inseriti : 37
+(function_L) 0
+--------angolo: -0.785398
+--------angolo da provare : 0.000000
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
 Algorithm correct
 Algorithm INcorrect
 Algorithm INcorrect
@@ -10774,6 +11790,14 @@ Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.785398
+--------angolo da provare : 1.570796
 Algorithm correct
 Algorithm INcorrect
 kappa: 0.010000, 0.000000, -0.010000 
@@ -10811,6 +11835,27 @@ Algorithm INcorrect
 Algorithm INcorrect
 Algorithm correct
 Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.785398
+--------angolo da provare : 3.141593
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
 Algorithm correct
 Algorithm INcorrect
 Algorithm INcorrect
@@ -10818,16 +11863,6 @@ Algorithm INcorrect
 Algorithm INcorrect
 Algorithm correct
 Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
 Algorithm correct
 Algorithm INcorrect
 Algorithm INcorrect
@@ -10842,6 +11877,8 @@ Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm correct
+--------angolo scelto: 0.785398
+--------angolo da provare : -2.356194
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
@@ -10950,6 +11987,50 @@ Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm correct
+--------angolo scelto: 0.785398
+Algorithm INcorrect
+kappa: 0.010000, 0.000000, 0.010000 
+(sample) start 
+OUTSIDE -178.739 punto <870.413, 164.294> -> 0
+OUTSIDE -184.994 punto <878.458, 158.361> -> 0
+OUTSIDE -190.795 punto <887.055, 153.262> -> 0
+OUTSIDE -195.254 punto <896.118, 149.046> -> 0
+OUTSIDE -197.306 punto <905.557, 145.756> -> 0
+OUTSIDE -198.865 punto <915.277, 143.424> -> 0
+OUTSIDE -199.927 punto <925.181, 142.075> -> 0
+OUTSIDE -200.489 punto <935.171, 141.721> -> 0
+OUTSIDE -200.582 punto <940.265, 141.926> -> 0
+(sample) end 
+Punti inseriti : 9
+(sample) start 
+OUTSIDE -200.778 punto <950.243, 142.581> -> 0
+OUTSIDE -201.002 punto <960.222, 143.236> -> 0
+OUTSIDE -201.226 punto <970.2, 143.892> -> 0
+OUTSIDE -201.451 punto <980.179, 144.547> -> 0
+OUTSIDE -201.675 punto <990.157, 145.203> -> 0
+OUTSIDE -201.899 punto <1000.14, 145.858> -> 0
+OUTSIDE -202.123 punto <1010.11, 146.513> -> 0
+OUTSIDE -202.347 punto <1020.09, 147.169> -> 0
+OUTSIDE -202.572 punto <1030.07, 147.824> -> 0
+OUTSIDE -202.796 punto <1040.05, 148.479> -> 0
+OUTSIDE -202.949 punto <1046.84, 148.926> -> 0
+(sample) end 
+Punti inseriti : 20
+(sample) start 
+OUTSIDE -202.673 punto <1056.77, 150.078> -> 0
+OUTSIDE -201.401 punto <1066.54, 152.217> -> 0
+OUTSIDE -199.146 punto <1076.04, 155.319> -> 0
+OUTSIDE -195.93 punto <1085.18, 159.355> -> 0
+OUTSIDE -191.785 punto <1093.88, 164.283> -> 0
+OUTSIDE -186.752 punto <1102.04, 170.055> -> 0
+OUTSIDE -180.883 punto <1109.59, 176.613> -> 0
+OUTSIDE -179.626 punto <1111, 178> -> 0
+(sample) end 
+Punti inseriti : 28
+(function_L) 0
+--------angolo: 0.785398
+--------angolo da provare : 0.000000
+Algorithm INcorrect
 Algorithm correct
 Algorithm INcorrect
 Algorithm INcorrect
@@ -10959,6 +12040,127 @@ Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm correct
+--------angolo scelto: 1.570796
+--------angolo da provare : -1.570796
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 1.570796
+--------angolo da provare : -2.356194
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 1.570796
+Algorithm INcorrect
+kappa: -0.010000, 0.000000, 0.010000 
+(sample) start 
+OUTSIDE -173.746 punto <1118.41, 184.706> -> 0
+OUTSIDE -171.9 punto <1121.29, 186.97> -> 0
+(sample) end 
+Punti inseriti : 2
+(sample) start 
+OUTSIDE -167.326 punto <1129.26, 193.013> -> 0
+OUTSIDE -163.236 punto <1137.22, 199.055> -> 0
+OUTSIDE -159.669 punto <1145.19, 205.097> -> 0
+OUTSIDE -156.661 punto <1153.16, 211.139> -> 0
+OUTSIDE -154.243 punto <1161.13, 217.182> -> 0
+OUTSIDE -152.444 punto <1169.1, 223.224> -> 0
+OUTSIDE -151.285 punto <1177.06, 229.266> -> 0
+OUTSIDE -150.56 punto <1185.03, 235.309> -> 0
+OUTSIDE -149.844 punto <1193, 241.351> -> 0
+OUTSIDE -149.129 punto <1200.97, 247.393> -> 0
+OUTSIDE -148.413 punto <1208.94, 253.436> -> 0
+OUTSIDE -147.698 punto <1216.9, 259.478> -> 0
+OUTSIDE -147.138 punto <1224.87, 265.52> -> 0
+OUTSIDE -147.221 punto <1232.84, 271.563> -> 0
+OUTSIDE -147.982 punto <1240.81, 277.605> -> 0
+OUTSIDE -149.41 punto <1248.78, 283.647> -> 0
+OUTSIDE -151.486 punto <1256.74, 289.69> -> 0
+OUTSIDE -154.184 punto <1264.71, 295.732> -> 0
+OUTSIDE -157.471 punto <1272.68, 301.774> -> 0
+OUTSIDE -161.313 punto <1280.65, 307.817> -> 0
+OUTSIDE -165.599 punto <1288.62, 313.859> -> 0
+OUTSIDE -169.939 punto <1296.59, 319.901> -> 0
+OUTSIDE -174.279 punto <1304.55, 325.943> -> 0
+OUTSIDE -178.619 punto <1312.52, 331.986> -> 0
+OUTSIDE -182.96 punto <1320.49, 338.028> -> 0
+OUTSIDE -187.3 punto <1328.46, 344.07> -> 0
+OUTSIDE -188.915 punto <1331.42, 346.319> -> 0
+(sample) end 
+Punti inseriti : 29
+(sample) start 
+OUTSIDE -192.798 punto <1339.08, 352.749> -> 0
+OUTSIDE -195.742 punto <1346.05, 359.912> -> 0
+OUTSIDE -197.717 punto <1352.27, 367.734> -> 0
+OUTSIDE -198.704 punto <1357.68, 376.139> -> 0
+OUTSIDE -198.694 punto <1362.23, 385.042> -> 0
+OUTSIDE -197.685 punto <1365.86, 394.354> -> 0
+OUTSIDE -195.689 punto <1368.55, 403.982> -> 0
+OUTSIDE -192.725 punto <1370.26, 413.831> -> 0
+OUTSIDE -188.823 punto <1370.98, 423.801> -> 0
+OUTSIDE -187.842 punto <1371, 426> -> 0
+(sample) end 
+Punti inseriti : 39
+(function_L) 0
+--------angolo: 1.570796
+Algorithm INcorrect
+kappa: 0.010000, 0.000000, -0.010000 
+(sample) start 
+OUTSIDE -184.625 punto <1370.77, 432.789> -> 0
+(sample) end 
+Punti inseriti : 1
+(sample) start 
+OUTSIDE -179.943 punto <1370.09, 442.766> -> 0
+OUTSIDE -175.705 punto <1369.41, 452.743> -> 0
+OUTSIDE -171.946 punto <1368.73, 462.72> -> 0
+OUTSIDE -168.696 punto <1368.05, 472.697> -> 0
+OUTSIDE -165.986 punto <1367.37, 482.674> -> 0
+OUTSIDE -163.842 punto <1366.7, 492.651> -> 0
+OUTSIDE -162.288 punto <1366.02, 502.628> -> 0
+OUTSIDE -161.339 punto <1365.34, 512.605> -> 0
+OUTSIDE -160.95 punto <1364.66, 522.582> -> 0
+OUTSIDE -160.663 punto <1363.98, 532.559> -> 0
+OUTSIDE -160.375 punto <1363.3, 542.536> -> 0
+OUTSIDE -160.088 punto <1362.62, 552.512> -> 0
+OUTSIDE -159.8 punto <1361.94, 562.489> -> 0
+OUTSIDE -159.545 punto <1361.26, 572.466> -> 0
+OUTSIDE -159.773 punto <1360.59, 582.443> -> 0
+OUTSIDE -160.624 punto <1359.91, 592.42> -> 0
+OUTSIDE -162.088 punto <1359.23, 602.397> -> 0
+OUTSIDE -164.15 punto <1358.55, 612.374> -> 0
+OUTSIDE -166.787 punto <1357.87, 622.351> -> 0
+OUTSIDE -169.972 punto <1357.19, 632.328> -> 0
+OUTSIDE -173.675 punto <1356.51, 642.305> -> 0
+OUTSIDE -177.864 punto <1355.83, 652.282> -> 0
+OUTSIDE -182.416 punto <1355.15, 662.259> -> 0
+OUTSIDE -186.996 punto <1354.47, 672.236> -> 0
+OUTSIDE -191.576 punto <1353.8, 682.213> -> 0
+OUTSIDE -196.157 punto <1353.12, 692.189> -> 0
+OUTSIDE -200.737 punto <1352.44, 702.166> -> 0
+OUTSIDE -202.134 punto <1352.23, 705.211> -> 0
+(sample) end 
+Punti inseriti : 29
+(sample) start 
+OUTSIDE -207.151 punto <1352.05, 715.205> -> 0
+OUTSIDE -213.005 punto <1352.87, 725.167> -> 0
+OUTSIDE -219.64 punto <1354.68, 734.998> -> 0
+OUTSIDE -226.987 punto <1357.46, 744.599> -> 0
+OUTSIDE -234.975 punto <1361.19, 753.874> -> 0
+OUTSIDE -243.522 punto <1365.82, 762.73> -> 0
+OUTSIDE -252.545 punto <1371.32, 771.08> -> 0
+OUTSIDE -261.951 punto <1377.62, 778.84> -> 0
+OUTSIDE -271.649 punto <1384.66, 785.932> -> 0
+OUTSIDE -281.54 punto <1392.38, 792.285> -> 0
+OUTSIDE -291.526 punto <1400.69, 797.836> -> 0
+OUTSIDE -301.507 punto <1409.52, 802.53> -> 0
+OUTSIDE -311.383 punto <1418.77, 806.319> -> 0
+OUTSIDE -321.058 punto <1428.35, 809.166> -> 0
+OUTSIDE -330.432 punto <1438.17, 811.043> -> 0
+OUTSIDE -339.414 punto <1448.13, 811.931> -> 0
+OUTSIDE -342.769 punto <1452.01, 812.007> -> 0
+(sample) end 
+Punti inseriti : 46
+(function_L) 0
+--------angolo: 0.000000
+--------angolo da provare : 0.000000
 Algorithm correct
 Algorithm INcorrect
 Algorithm INcorrect
