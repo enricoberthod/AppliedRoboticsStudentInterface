@@ -24,7 +24,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 bool sample(C, Path&, int&);
 std::vector<float> IDP(float, std::vector<VoronoiPoint> &, Path &);
 //void function_L(int, float, std::vector<VoronoiPoint> &, std::vector<float> &, Path &);
-void function_L_doppio(int, float, std::vector<VoronoiPoint> &, std::vector<float> &, Path &);
+void function_L_doppio(int, float, std::vector<VoronoiPoint> &, std::vector<float> &, Path &, bool);
 bool collision_detection(double, double, const std::vector<std::vector<cv::Point>> &);
 
 #endif
