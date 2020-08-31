@@ -652,72 +652,109 @@ void function_L_doppio(int j, float theta_j, std::vector<VoronoiPoint> &rightPat
 	D best_curve;	
 	bool collision;
 	bool salta = false;
+	bool salta_2 = false;
+	bool fase_1_finita = false;
 	std::vector<float> angoli_scartati;
+	std::vector<float> angoli_scartati_2;
+	int ii = 0;
 	printf("--------angolo: %f\n",theta_j);
 	do {
-		if(j==rightPath.size()-3) {
-			angoli[j+1] = theta[i_gate];
-			angoli[j+2] = theta[i_gate];
-		}
-		else {
-			for(int i=0; i<8; i++) {
-				printf("--------angolo da provare : %f\n",theta[i]);
-				salta = false;
-				for(int h = 0; h < angoli_scartati.size(); h++) {
-					if(theta[i] == angoli_scartati[h]) {
-						salta = true;
-					}
-				}
-				if(!salta) {
-					//Dubins function (the given matlab code)
-					Dubins(rightPath[j].a,rightPath[j].b,rightPath[j+1].a,rightPath[j+1].b, theta_j, theta[i], &curve_1, &pidx_1);
-					if(j==rightPath.size()-4) {
-						Dubins(rightPath[j+1].a,rightPath[j+1].b,rightPath[j+2].a,rightPath[j+2].b, theta[i], theta[i_gate], &curve_2, &pidx_2);
-						if((curve_1.L + curve_2.L) < min_length) {
-							min_length = curve_1.L + curve_2.L;
-							angoli[j+1] = theta[i];
-							//angoli[j+2] = theta[w];
-						}
-					}
-					else {
-						for(int w=0; w<8; w++) {
-							Dubins(rightPath[j+1].a,rightPath[j+1].b,rightPath[j+2].a,rightPath[j+2].b, theta[i], theta[w], &curve_2, &pidx_2);
-							if((curve_1.L + curve_2.L) < min_length) {
-								min_length = curve_1.L + curve_2.L;
-								angoli[j+1] = theta[i];
-								//angoli[j+2] = theta[w];
+		do {
+			if(j==rightPath.size()-3) {
+				angoli[j+1] = theta[i_gate];
+				angoli[j+2] = theta[i_gate];
+			}
+			else {
+				do {
+					//min_length = 999999999.0;
+					
+					salta_2 = false;
+					if(angoli_scartati_2.size() != 0) {
+						salta_2 = false;
+						for(int h_2 = 0; h_2 < angoli_scartati_2.size(); h_2++) {
+							if(theta[ii] == angoli_scartati_2[h_2]) {
+								salta_2 = true;
 							}
 						}
+						if(!salta_2) {
+							theta_j = theta[ii];
+							std::cout << "nuovo theta_j : " << theta_j << std::endl;
+						}
 					}
-					printf("--------angolo scelto: %f\n",angoli[j+1]);
-				}
-				else {
-					std::cout << "(function_L) angolo saltato \n";
-				}
-			}	
-		}
-		Dubins(rightPath[j].a,rightPath[j].b,rightPath[j+1].a,rightPath[j+1].b, theta_j, angoli[j+1], &best_curve, &best_pidx); 
-		printf("kappa: %f, %f, %f \n", best_curve.a1.k,best_curve.a2.k,best_curve.a3.k);
-		int punti_inseriti = 0;
-		if(best_curve.a1.L!=0)		//if the first arc is not 0 length
-			collision = sample(best_curve.a1, path, punti_inseriti);
-			std::cout << "Punti inseriti : " << punti_inseriti << std::endl;
-		if(best_curve.a2.L!=0 && !collision)	//if the second arc is not 0 length
-			collision = sample(best_curve.a2, path, punti_inseriti);
-			std::cout << "Punti inseriti : " << punti_inseriti << std::endl;
-		if(best_curve.a3.L!=0 && !collision)	//if the third arc is not 0 length
-			collision = sample(best_curve.a3, path, punti_inseriti);
-			std::cout << "Punti inseriti : " << punti_inseriti << std::endl;
-		std::cout << "(function_L) " << collision << std::endl;
-		if(collision) {
-			for (int e = 0; e < punti_inseriti; e++) {
-				std::cout << "Rimozione di 1 elemento \n"; 
-				path.points.pop_back();
+					for(int i=0; i<8; i++) {
+						printf("--------angolo da provare : %f\n",theta[i]);
+						salta = false;
+						for(int h = 0; h < angoli_scartati.size(); h++) {
+							if(theta[i] == angoli_scartati[h]) {
+								salta = true;
+							}
+						}
+						if(!salta && !salta_2) {
+							//Dubins function (the given matlab code)
+							Dubins(rightPath[j].a,rightPath[j].b,rightPath[j+1].a,rightPath[j+1].b, theta_j, theta[i], &curve_1, &pidx_1);
+							if(j==rightPath.size()-4) {
+								Dubins(rightPath[j+1].a,rightPath[j+1].b,rightPath[j+2].a,rightPath[j+2].b, theta[i], theta[i_gate], &curve_2, &pidx_2);
+								if((curve_1.L + curve_2.L) < min_length) {
+									min_length = curve_1.L + curve_2.L;
+									angoli[j+1] = theta[i];
+									if (angoli_scartati_2.size() != 0) {
+										angoli[j] = theta_j;
+									}
+									//angoli[j+2] = theta[w];
+								}
+							}
+							else {
+								for(int w=0; w<8; w++) {
+									Dubins(rightPath[j+1].a,rightPath[j+1].b,rightPath[j+2].a,rightPath[j+2].b, theta[i], theta[w], &curve_2, &pidx_2);
+									if((curve_1.L + curve_2.L) < min_length) {
+										min_length = curve_1.L + curve_2.L;
+										angoli[j+1] = theta[i];
+										//angoli[j+2] = theta[w];
+									}
+								}
+							}		
+							printf("--------angolo scelto: %f\n",angoli[j+1]);
+						}
+						else {
+							std::cout << "(function_L) angolo saltato \n";
+						}
+					}
+					ii++;
+				} while(angoli_scartati_2.size() != 0 && ii<8);	
+				ii = 0;
 			}
-			angoli_scartati.emplace_back(angoli[j+1]);
-			min_length = 999999999.0;	
-			//aggiungere controllo se tutti gli angoli vanno scartati
-		}
+			if (angoli_scartati_2.size() != 0) {
+				theta_j = angoli[j];
+			} 
+			Dubins(rightPath[j].a,rightPath[j].b,rightPath[j+1].a,rightPath[j+1].b, theta_j, angoli[j+1], &best_curve, &best_pidx); 
+			printf("kappa: %f, %f, %f \n", best_curve.a1.k,best_curve.a2.k,best_curve.a3.k);
+			int punti_inseriti = 0;
+			if(best_curve.a1.L!=0)		//if the first arc is not 0 length
+				collision = sample(best_curve.a1, path, punti_inseriti);
+			std::cout << "Punti inseriti : " << punti_inseriti << std::endl;
+			if(best_curve.a2.L!=0 && !collision)	//if the second arc is not 0 length
+				collision = sample(best_curve.a2, path, punti_inseriti);
+			std::cout << "Punti inseriti : " << punti_inseriti << std::endl;
+			if(best_curve.a3.L!=0 && !collision)	//if the third arc is not 0 length
+				collision = sample(best_curve.a3, path, punti_inseriti);
+			std::cout << "Punti inseriti : " << punti_inseriti << std::endl;
+			std::cout << "(function_L) " << collision << std::endl;
+			if(collision) {
+				for (int e = 0; e < punti_inseriti; e++) {
+					std::cout << "Rimozione di 1 elemento \n"; 
+					path.points.pop_back();
+				}
+				angoli_scartati.emplace_back(angoli[j+1]);
+				if(angoli_scartati.size()==8) {
+					angoli_scartati.clear();
+					fase_1_finita = true;
+				}
+				min_length = 999999999.0;	
+				//aggiungere controllo se tutti gli angoli vanno scartati
+			}
+		} while(collision && !fase_1_finita);
+		angoli_scartati_2.emplace_back(theta_j);
+		fase_1_finita = false;
 	} while(collision);
 	
 	if(j < (rightPath.size()-2)){			//controllare estremi j +/- 1
