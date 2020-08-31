@@ -89,11 +89,11 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	
 	//throw std::logic_error( "STOP" );
 
-	const int offset = 200;
+	const int offset = 100;
 	
 	ClipperLib::ClipperOffset co;
 	co.AddPaths(subj, ClipperLib::jtSquare, ClipperLib::etClosedPolygon);
-	co.Execute(solution, offset);	 //QUESTA NON VA quindi c'è un problema da qualche parte qui!!!!!!!!!!!!!!!!!!!!!!!
+	co.Execute(solution, offset);	 
 
 	printf("clipper3: %i\n", solution.size());
 	printf("clipper4: %i\n", obstacle_list.size());
@@ -444,14 +444,23 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 					piecePath.clear();
 					if(!edgeOnObstacle(start, end, contours))
 					{
+						std::cout << "SKIP piecePath size " << piecePath.size() << std::endl;
 						if(firstTime)
 							piecePath.push_back(start);
-						piecePath.push_back(end);		
+						piecePath.push_back(end);
+						std::cout << "piecePath size " << piecePath.size() << std::endl;		
 					}
 					else
+					{
+						std::cout << "NO SKIP piecePath size " << piecePath.size() << std::endl;
+						std::cout << "START END POINTS " << start.a << ", " << start.b << " - " << end.a << ", " << end.b << std::endl;
 						PathFinder(start, firstTime, end, true, &voronoiPaths, &piecePath, 10, contours); 
+						std::cout << "piecePath size " << piecePath.size() << std::endl;
+					}
+					std::cout << "RIGHTPATHSIZE before insertion " << rightPath.size() << std::endl;
 					//connect the piece of the path (victim to next victim) to the total one
 					rightPath.insert(rightPath.end(),piecePath.begin(),piecePath.end());
+					std::cout << "RIGHTPATHSIZE after insertion " << rightPath.size() << std::endl;
 					//the victim became the next starting point
 					start=end;
 					firstTime=false;
@@ -462,10 +471,20 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		//last call for connect the last victims with the gate
 		piecePath.clear();
 		if(!edgeOnObstacle(start, end, contours))
-			piecePath.push_back(end);		
+		{
+			std::cout << "SKIP last piecePath size " << piecePath.size() << std::endl;
+			piecePath.push_back(end);	
+			std::cout << "piecePath size " << piecePath.size() << std::endl;	
+		}
 		else
+		{
+			std::cout << "NO SKIP last piecePath size " << piecePath.size() << std::endl;
 			PathFinder(start, false, gate_pos, true, &voronoiPaths, &piecePath, 0, contours);
+			std::cout << "piecePath size " << piecePath.size() << std::endl;
+		}
+		std::cout << "RIGHTPATHSIZE last before insertion " << rightPath.size() << std::endl;
 		rightPath.insert(rightPath.end(),piecePath.begin(),piecePath.end()); 
+		std::cout << "RIGHTPATHSIZE last after insertion " << rightPath.size() << std::endl;
 	break;
 	case 2: //Path which minimize the time for exit from the arena (Mission 2)
 		PathFinder(start, true, end, true, &voronoiPaths, &rightPath, 0, contours);
