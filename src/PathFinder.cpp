@@ -224,6 +224,11 @@ void shortestPath(VoronoiPoint start, bool startNew, int idStart, VoronoiPoint e
 	std::cout << std::endl;
 	std::cout << std::endl;
 	std::cout << std::endl;
+
+	std::cout << std::endl << "right path -1 ";
+	for(int j=0;j<rightPath->size();j++) {
+		std::cout << " " << rightPath->at(j).a << "," << rightPath->at(j).b << std::endl;
+	}
 	
 	std::vector<int> startEndPath;
 	startEndPath.push_back(voronoiPaths->ids.size()+idStart);
@@ -246,7 +251,7 @@ void shortestPath(VoronoiPoint start, bool startNew, int idStart, VoronoiPoint e
 		std::cout << "startNew inside" << std::endl;	
 		rightPath->push_back(start);
 	}
-	std::cout << "node: " << startEndPath[0] << " " << mapPosition[startEndPath[0]] << std::endl;
+	std::cout << "node start: " << startEndPath[0] << " " << mapPosition[startEndPath[0]] << std::endl;
 	int x1,y1;
 	for(int i=1;i<startEndPath.size()-1;i++)
 	{
@@ -269,7 +274,7 @@ void shortestPath(VoronoiPoint start, bool startNew, int idStart, VoronoiPoint e
 		std::cout << "endNew inside" << std::endl;
 		rightPath->push_back(end);
 	}
-	std::cout << "node: " << startEndPath[startEndPath.size()-1] << " " << mapPosition[startEndPath[startEndPath.size()-1]] << std::endl;
+	std::cout << "node end: " << startEndPath[startEndPath.size()-1] << " " << mapPosition[startEndPath[startEndPath.size()-1]] << std::endl;
 	
 	std::cout << std::endl << "right path 2 ";
 	for(int j=0;j<rightPath->size();j++) {
