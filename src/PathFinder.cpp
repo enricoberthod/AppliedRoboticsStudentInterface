@@ -11,12 +11,14 @@
 // è probabile che possa inserire un nuovo e a caso successivo rispetto alla ids size
 
 //void connect(int, VoronoiPoint, VoronoiPoint, VoronoiResults*, bool, bool, std::vector<GraphEdge>*, std::vector<GraphEdge>*);
-void connect(int, VoronoiPoint, VoronoiResults*, bool, std::vector<GraphEdge>*, int, const std::vector<std::vector<cv::Point>>&);
+void connect(int, VoronoiPoint, VoronoiResults*, bool, double, std::vector<GraphEdge>*, int, const std::vector<std::vector<cv::Point>>&);
 void shortestPath(VoronoiPoint, bool, int, VoronoiPoint, bool, int, VoronoiResults *, std::vector<VoronoiPoint> *);
 //void sampleSegment(VoronoiPoint, VoronoiPoint, std::vector<VoronoiPoint>&);
 VoronoiPoint midpoint(VoronoiPoint, VoronoiPoint);
 bool edgeOnObstacle(VoronoiPoint, VoronoiPoint, const std::vector<std::vector<cv::Point>>&);
 bool findCollision(double, double, const std::vector<std::vector<cv::Point>>&); 
+void connector_netpoints(VoronoiPoint, int, int, int, int, double, VoronoiResults *, int, const std::vector<std::vector<cv::Point>>&);
+void connector_singlepoint(VoronoiPoint, int, int, int, int, double, VoronoiResults *, const std::vector<std::vector<cv::Point>>&);
 //int encoder(int, int);
 //void decoder(int, int &, int &);
 
@@ -27,15 +29,14 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 	int max_offset = 300;
 	int offset_3;
 	int step=10;
-	int nConnection=8;
-	int startSize=1000;
-	int endSize=1000;
-	int startLongId;
-	int endLongId;
+	int nConnections=8;
 	int idPos;
+	double const victimGain=50;
+	int const netPointsNumber = 4;
 	std::vector<GraphEdge> start_connection, end_connection;
-	VoronoiPoint v1, v2, v3, v4, v5, v6, v7, v8;
 	std::vector<VoronoiPoint> netVertex;
+
+	bool is_victim_list_null = true; //to delete
 
 	//std::vector<GraphEdge> point_connections
 	
@@ -43,26 +44,37 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 	
 	if(startNew)
 	{
-		/*if(start.b<1000)
-			startLongId=(start.a*1000)+start.b;
-		else
-			startLongId=(start.a*10000)+start.b;*/
-		startLongId=encoder(start.a, start.b);	
+		connector_singlepoint(start, offset, step, max_offset, nConnections, victimGain, voronoiPaths, obsContours);
+		/*startLongId=encoder(start.a, start.b);	
 		voronoiPaths->ids.push_back(startLongId);
 		std::cout << "start id " <<  startLongId << "    size : " << voronoiPaths->ids.size() << std::endl;
 
 		connect(offset, start, voronoiPaths, true, &start_connection, -1, obsContours); //-1 indicate sthe right id is the last in ids vector
 		startSize=start_connection.size();
-		std::cout << "start Size ingress " <<  startSize << std::endl;
+		std::cout << "start Size ingress " <<  startSize << std::endl; */
 	}
 	
 	if(endNew)
 	{
 		if(netRadius>0)
-		{
+		{	
+			
+			if(is_victim_list_null) //modify with if(victim_list == NULL)
+				connector_netpoints(end, offset, step, max_offset, nConnections, victimGain, voronoiPaths, netRadius, obsContours);
+			else
+			{
+				VoronoiPoint p;
+				/*for(int j=0; j<victim_list.size(); j++)
+				{
+					p=VoronoiPoint((int)(victim_list[j].second[0].x*1000),(int)(victim_list[j].second[0].y*1000));
+					connector_netpoints(p, offset, step, max_offset, nConnections, 0, voronoiPaths, netRadius, obsContours);
+				}*/
+				connector_singlepoint(end, offset, step, max_offset, nConnections, victimGain, voronoiPaths, obsContours);
+			}
+			/*
 			int x = end.a;
 			int y = end.b;
-			
+		
 			netVertex.push_back(VoronoiPoint(x, y+netRadius));
 			netVertex.push_back(VoronoiPoint(x, y-netRadius));
 			netVertex.push_back(VoronoiPoint(x+netRadius, y));
@@ -72,16 +84,12 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 			//netVertex.push_back(VoronoiPoint(x+(netRadius/2), y-(netRadius/2)));
 			//netVertex.push_back(VoronoiPoint(x-(netRadius/2), y-(netRadius/2)));
 			netVertex.push_back(VoronoiPoint(x, y));
-			
+		
 			for(int i=0;i<netVertex.size();i++)
 			{
 				x=netVertex[i].a;
 				y=netVertex[i].b;
 				std::cout << "netVertex " << x << "," << y << " " << netVertex.size() <<std::endl;
-				/*if(y<1000)
-					endLongId=(x*1000)+y;
-				else
-					endLongId=(x*10000)+y;*/
 				endLongId=encoder(x,y);
 				voronoiPaths->ids.push_back(endLongId);
 				end_connection.clear();
@@ -106,28 +114,27 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 				}
 			}
 			std::cout << "end id " <<  endLongId << "    size : " << voronoiPaths->ids.size() << std::endl;
+			*/
 		}
 		else
 		{
-			/*if(end.b<1000)
-				endLongId=(end.a*1000)+end.b;
-			else
-				endLongId=(end.a*10000)+end.b;*/
-			endLongId=encoder(end.a,end.b);
+			connector_singlepoint(end, offset, step, max_offset, nConnections, victimGain, voronoiPaths, obsContours);
+			/*endLongId=encoder(end.a,end.b);
 			voronoiPaths->ids.push_back(endLongId);
 			std::cout << "end id " <<  endLongId << "    size : " << voronoiPaths->ids.size() << std::endl;
 			connect(offset, end, voronoiPaths, true, &end_connection, -1, obsContours);
 			endSize=end_connection.size();
-			std::cout << "end Size ingress" <<  endSize << std::endl;
+			std::cout << "end Size ingress" <<  endSize << std::endl;*/
 		}
+		
 	}
 
-	std::cout << "Step " << offset << std::endl;
+	//std::cout << "Step " << offset << std::endl;
 	
 	
 	//// END /////////////////////////////////
 
-	while(startSize<=nConnection || endSize<=nConnection)
+	/*while(startSize<=nConnection || endSize<=nConnection)
 	{
 		offset=offset+step;
 		std::cout << "Step " << offset << "size: " << startSize << " " << endSize <<std::endl;
@@ -169,7 +176,7 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 		for(int i=0;i<end_connection.size();i++)
 			voronoiPaths->resultEdges.push_back(end_connection[i]);
 	}
-	
+	*/
 	std::cout << std::endl;
 	std::cout << std::endl;
 	//Check if there is an obstacle between start and end, if not connect directly the two points without using the roadMap, if so call the shirtestPath function
@@ -178,12 +185,17 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 		if(netRadius==0)
 		{
 			std::cout << "NO SKIP - id: " << (voronoiPaths->ids.size()-2) << " -> " << start.a << "," << start.b << " " << startNew <<" - id:" << (voronoiPaths->ids.size()-1) << " -> " << end.a << "," << end.b << " " << endNew << std::endl;
-			shortestPath(start, startNew, -2, end, endNew, -1, voronoiPaths, rightPath); //!!! se mission 0 ok -2,-1 
+			shortestPath(start, startNew, -2, end, endNew, -1, voronoiPaths, rightPath); //!!! se mission 0 ok -2,-1 		
 		}
 		else
 		{
-			std::cout << "NO SKIP - id: " << (voronoiPaths->ids.size()-6) << " -> " << start.a << "," << start.b << " " << startNew <<" - id:" << (voronoiPaths->ids.size()-1) << " -> " << end.a << "," << end.b << " " << endNew << std::endl;
-			shortestPath(start, startNew, -6, end, endNew, -1, voronoiPaths, rightPath); //!!! se aggiungo punti, l id si sposta a -netvertex posizioni
+			int posStart;
+			if(is_victim_list_null) //modify with if(victim_list == NULL)
+				posStart=(netPointsNumber+2)*(-1);
+			else
+				posStart=0; //posStart=(((1+victim_list->size())*(netPointsNumber+1))+1)*(-1);
+			std::cout << "NO SKIP - id: " << (voronoiPaths->ids.size()+posStart) << " -> " << start.a << "," << start.b << " " << startNew <<" - id:" << (voronoiPaths->ids.size()-1) << " -> " << end.a << "," << end.b << " " << endNew << std::endl;
+			shortestPath(start, startNew, posStart, end, endNew, -1, voronoiPaths, rightPath); //!!! se aggiungo punti, l id si sposta a -netvertex posizioni
 		}
 	}
 	else
@@ -332,7 +344,7 @@ void decoder(int encoded, int &x, int &y)
 
 //////////////////////////////////////
 //void connect(int offset, VoronoiPoint startP, VoronoiPoint endP, VoronoiResults *voronoiPaths, bool startOk, bool endOk, std::vector<GraphEdge> *start, std::vector<GraphEdge> *end)
-void connect(int offset, VoronoiPoint pointP, VoronoiResults *voronoiPaths, bool pointOK, std::vector<GraphEdge> *pointEdges, int IDpos, const std::vector<std::vector<cv::Point>>& obsContours)
+void connect(int offset, VoronoiPoint pointP, VoronoiResults *voronoiPaths, bool pointOK, double victimGain, std::vector<GraphEdge> *pointEdges, int IDpos, const std::vector<std::vector<cv::Point>>& obsContours)
 {
 	int a,b,c,d,o,x,y,endId,startId,id1;
 	int prev_x,prev_y=-1;
@@ -374,6 +386,7 @@ void connect(int offset, VoronoiPoint pointP, VoronoiResults *voronoiPaths, bool
 		if(pointOK && (a<x) && (x<(a+o)) && ((b<y) && (y<(b+o))))
 		{
 			len=sqrt(pow((x-pointP.a),2)+pow((y-pointP.b),2));
+			len=len+victimGain;
 			//if(len<(offset*1.0))
 			{
 				std::cout << "at the beginningof connect _ 1 (" << pointP.a << "," << pointP.b << ") - len: " << len << std::endl;
@@ -558,3 +571,76 @@ bool findCollision(double x, double y, const std::vector<std::vector<cv::Point>>
 	}
 	return r;
 }
+
+void connector_singlepoint(VoronoiPoint point, int offset, int step, int max_offset, int nConnections, double victimGain, VoronoiResults *voronoiPaths, const std::vector<std::vector<cv::Point>>& obsContours)
+{
+	std::vector<GraphEdge> connections;
+	int longId;
+	int connectionsSize = 1000;
+	longId=encoder(point.a, point.b);	
+	voronoiPaths->ids.push_back(longId);
+	connect(offset, point, voronoiPaths, true, victimGain, &connections, -1, obsContours); //-1 indicate sthe right id is the last in ids vector
+	connectionsSize=connections.size();
+
+	while(connectionsSize<=nConnections)
+	{
+		offset=offset+step;
+		connections.clear();
+		connect(offset, point, voronoiPaths, connectionsSize<=nConnections, victimGain, &connections, -1, obsContours);
+		connectionsSize=connections.size();	
+		if(offset>max_offset)
+			connectionsSize=1000;		
+	}
+	for(int i=0;i<connections.size();i++)
+		voronoiPaths->resultEdges.push_back(connections[i]);
+}
+
+void connector_netpoints(VoronoiPoint point, int offset, int step, int max_offset, int nConnections, double victimGain, VoronoiResults *voronoiPaths, int netRadius, const std::vector<std::vector<cv::Point>>& obsContours)
+{
+	std::vector<GraphEdge> connections;
+	std::vector<VoronoiPoint> netVertex;
+	int connectionsSize = 1000;
+	int offset_2;
+	int longId;
+	int idPos;
+	int x = point.a;
+	int y = point.b;
+			
+	netVertex.push_back(VoronoiPoint(x, y+netRadius));
+	netVertex.push_back(VoronoiPoint(x, y-netRadius));
+	netVertex.push_back(VoronoiPoint(x+netRadius, y));
+	netVertex.push_back(VoronoiPoint(x-netRadius, y));
+	//netVertex.push_back(VoronoiPoint(x+(netRadius/2), y+(netRadius/2)));
+	//netVertex.push_back(VoronoiPoint(x-(netRadius/2), y+(netRadius/2)));
+	//netVertex.push_back(VoronoiPoint(x+(netRadius/2), y-(netRadius/2)));
+	//netVertex.push_back(VoronoiPoint(x-(netRadius/2), y-(netRadius/2)));
+	netVertex.push_back(VoronoiPoint(x, y));
+	
+	for(int i=0;i<netVertex.size();i++)
+	{
+		x=netVertex[i].a;
+		y=netVertex[i].b;
+		
+		longId=encoder(x,y);
+		voronoiPaths->ids.push_back(longId);
+		connections.clear();
+		connect(offset, netVertex[i], voronoiPaths, true, victimGain, &connections, -1, obsContours);
+		connectionsSize=connections.size();
+		
+		offset_2=offset;
+		while(connectionsSize<=(nConnections+i))
+		{
+			offset_2=offset_2+step;
+			connections.clear();
+			connect(offset_2, netVertex[i], voronoiPaths, (connectionsSize<=(nConnections+i)), victimGain, &connections, -1, obsContours);
+			connectionsSize=connections.size();
+			if(offset_2>max_offset)
+				connectionsSize=1000;
+		}
+		
+		for(int j=0;j<connections.size();j++) {
+			voronoiPaths->resultEdges.push_back(connections[j]);
+		}
+	}
+}
+

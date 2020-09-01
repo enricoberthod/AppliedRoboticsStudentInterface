@@ -452,7 +452,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		rightPath.insert(rightPath.end(),piecePath.begin(),piecePath.end()); 
 	break;
 	case 2: //Path which minimize the time for exit from the arena (Mission 2)
-		PathFinder(start, true, end, true, &voronoiPaths, &rightPath, 0, contours);//, &victim_list);
+		PathFinder(start, true, end, true, &voronoiPaths, &rightPath, 10, contours);//, &victim_list);
 	break;
 	default: throw std::logic_error("STOP_mission_type different from [0-2]"); break;
 	}

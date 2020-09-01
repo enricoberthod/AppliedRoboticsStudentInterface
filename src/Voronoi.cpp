@@ -29,6 +29,8 @@ bool isObstaclePoint(int, int, const std::vector<std::vector<cv::Point>>& contou
 void removeObstacles(std::vector<VoronoiPoint>, VoronoiResults*);
 void remove(std::vector<VoronoiPoint>, VoronoiResults*);
 int visited(std::vector<int>, int);
+
+double const victimGain = 50;
 //int encoder(int, int);
 //void decoder(int, int &, int &);
 
@@ -146,6 +148,7 @@ int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::unordered_map
 						xb = (int)endVertex->x();  
 						yb = (int)endVertex->y();
 						len=sqrt(pow((xa-xb),2)+pow((ya-yb),2));
+						len=len+victimGain;
 						if(xa!=prev_xa || ya!=prev_ya)
 						{
 						/*
