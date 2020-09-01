@@ -2,6 +2,7 @@
 
 int i_gate;
 std::vector<std::vector<cv::Point>> contours;
+std::vector<cv::Point> bordi;
 //int encoder(int, int);
 //void decoder(int, int &, int &);
 
@@ -89,7 +90,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	
 	//throw std::logic_error( "STOP" );
 
-	const int offset = 100;
+	const int offset = 50;
 	
 	ClipperLib::ClipperOffset co;
 	co.AddPaths(subj, ClipperLib::jtSquare, ClipperLib::etClosedPolygon);
@@ -328,12 +329,36 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		else
 			longId=(xa*floatToInt*10)+ya;
 		*/
+		if(xa < 500) {
+			xa = xa + 40;
+		}
+		else {
+			xa = xa - 40;
+		}
+		if(ya < 500) {
+			ya = ya + 40;
+		}
+		else {
+			ya = ya - 40;
+		}
 		longId=encoder(xa,ya);
 		p=VoronoiPoint(xa,ya);
 		obstaclesVertexes[longId]=p;
+		bordi.push_back(cv::Point(xa, ya));
 		xb=(int)((borders[i+1].x*floatToInt)>0?(borders[i+1].x*floatToInt):0);
 		yb=(int)((borders[i+1].y*floatToInt)>0?(borders[i+1].y*floatToInt):0);
-		
+		if(xb < 500) {
+			xb = xb + 40;
+		}
+		else {
+			xb = xb - 40;
+		}
+		if(yb < 500) {
+			yb = yb + 40;
+		}
+		else {
+			yb = yb - 40;
+		}
 		printf("bordivertxf: %f,%f\n",borders[i].x,borders[i].y);
 		printf("bordivertx: %i,%i\n",xa,ya);
 		inputPoints.push_back(VoronoiPoint(xa,ya));
@@ -348,12 +373,36 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	else
 		longId=(xa*floatToInt*10)+ya;
 	*/
+	if(xa < 500) {
+			xa = xa + 40;
+		}
+		else {
+			xa = xa - 40;
+		}
+		if(ya < 500) {
+			ya = ya + 40;
+		}
+		else {
+			ya = ya - 40;
+		}
 	longId=encoder(xa,ya);
 	p=VoronoiPoint(xa,ya);
 	obstaclesVertexes[longId]=p;
+	bordi.push_back(cv::Point(xa, ya));
 	xb=(int)((borders[0].x*floatToInt)>0?(borders[0].x*floatToInt):0);
 	yb=(int)((borders[0].y*floatToInt)>0?(borders[0].y*floatToInt):0);	
-	
+	if(xb < 500) {
+			xb = xb + 40;
+		}
+		else {
+			xb = xb - 40;
+		}
+		if(yb < 500) {
+			yb = yb + 40;
+		}
+		else {
+			yb = yb - 40;
+		}
 	printf("bordivertxf: %f,%f\n",borders[3].x,borders[3].y);
 	printf("bordivertx: %i,%i\n",xa,ya);
 	inputPoints.push_back(VoronoiPoint(xa,ya));
@@ -361,6 +410,11 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 
 	printf("size: %i \n", inputPoints.size());
 	printf("size2: %i \n",obstacles_edges.size());	
+
+	std::cout << "BORDI : " << std::endl;
+	for (int bb = 0; bb < bordi.size(); bb++) {
+		std::cout << "	" << bordi[bb].x << ", " << bordi[bb].y << std::endl;
+	}
 
 
 	//throw std::logic_error( "STOP" );
@@ -848,6 +902,11 @@ bool sample(C arc, Path& path, int &punti_inseriti) {
 bool collision_detection(double x, double y, const std::vector<std::vector<cv::Point>>& contours) {
 	bool r = false;
 	double res;
+	res = cv::pointPolygonTest(bordi , cv::Point2f(x,y) , true);
+	if(res <= 0) {
+			r = true;
+			//std::cout << "OUTSIDE bordo!!! " << res << " -> " << " punto <" << x << ", " << y << ">" << " -> " << r << std::endl;
+		}
 	for (int i = 0; i < contours.size() && !r; i++) {
 		res = cv::pointPolygonTest(contours[i] , cv::Point2f(x,y) , true);
 		if(res > 0) {
