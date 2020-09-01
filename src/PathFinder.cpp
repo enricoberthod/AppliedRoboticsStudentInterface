@@ -170,10 +170,37 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 			voronoiPaths->resultEdges.push_back(end_connection[i]);
 	}
 	
-	if(netRadius==0)
-		shortestPath(start, startNew, -2, end, endNew, -1, voronoiPaths, rightPath); //!!! se mission 0 ok -2,-1 
+	std::cout << std::endl;
+	std::cout << std::endl;
+	//Check if there is an obstacle between start and end, if not connect directly the two points without using the roadMap, if so call the shirtestPath function
+	if(edgeOnObstacle(start,end,obsContours))
+	{
+		if(netRadius==0)
+		{
+			std::cout << "NO SKIP - id: " << (voronoiPaths->ids.size()-2) << " -> " << start.a << "," << start.b << " " << startNew <<" - id:" << (voronoiPaths->ids.size()-1) << " -> " << end.a << "," << end.b << " " << endNew << std::endl;
+			shortestPath(start, startNew, -2, end, endNew, -1, voronoiPaths, rightPath); //!!! se mission 0 ok -2,-1 
+		}
+		else
+		{
+			std::cout << "NO SKIP - id: " << (voronoiPaths->ids.size()-6) << " -> " << start.a << "," << start.b << " " << startNew <<" - id:" << (voronoiPaths->ids.size()-1) << " -> " << end.a << "," << end.b << " " << endNew << std::endl;
+			shortestPath(start, startNew, -6, end, endNew, -1, voronoiPaths, rightPath); //!!! se aggiungo punti, l id si sposta a -netvertex posizioni
+		}
+	}
 	else
-		shortestPath(start, startNew, -6, end, endNew, -1, voronoiPaths, rightPath); //!!! se aggiungo punti, l id si sposta a -netvertex posizioni
+	{
+		std::cout << "SKIP ";
+		if(startNew)
+		{
+			std::cout << "START NEW";
+			rightPath.pushBack(start);
+		}
+		if(endNew)
+		{
+			std::cout << "END NEW";
+			rightPath.pushBack(end);
+		}
+		std::cout << std::endl;
+	}
 }
 
 
@@ -211,10 +238,13 @@ void shortestPath(VoronoiPoint start, bool startNew, int idStart, VoronoiPoint e
 		mapPosition[voronoiPaths->resultEdges[i].idFirstNode]=encodedCoord;
 		//std::cout << "id " << voronoiPaths->resultEdges[i].idFirstNode << " coo " << encodedCoord << " coo2 " << mapPosition[voronoiPaths->resultEdges[i].idFirstNode] <<  std::endl; 
 		//Create the edge in the graph used by Dijkstra algorithm using for the edge A-B the id of A, the id of B and the lenght of the segment A-B
-		addEdge(graph, voronoiPaths->resultEdges[i].idFirstNode, voronoiPaths->resultEdges[i].idSecondNode, voronoiPaths->resultEdges[i].length); 
-		
+		addEdge(graph, voronoiPaths->resultEdges[i].idFirstNode, voronoiPaths->resultEdges[i].idSecondNode, voronoiPaths->resultEdges[i].length); 		
 	}
+	
+	std::cout << "AFTER SKIP/NO_SKIP - id: " << (voronoiPaths->ids.size()+idStart) << " -> " << mapPosition[voronoiPaths->ids.size()+idStart] <<  " " << startNew <<" - id:" << (voronoiPaths->ids.size()+idEnd) << " -> " << mapPosition[voronoiPaths->ids.size()+idEnd] << " " << endNew << std::endl;
 
+	std::cout << std::endl;
+	std::cout << std::endl;
 	
 	std::cout << "Dijkstra " << voronoiPaths->ids.size()+idStart << " " << voronoiPaths->ids.size()+idEnd << " - " << voronoiPaths->ids[voronoiPaths->ids.size()+idStart] << " " << voronoiPaths->ids[voronoiPaths->ids.size()+idEnd] << std::endl;
 
