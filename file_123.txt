@@ -1,0 +1,2996 @@
+
+RED MASK
+N. contours (Elements): 4
+1) Contour size: 100
+   Approximated contour size: 3
+2) Contour size: 71
+   Approximated contour size: 4
+3) Contour size: 62
+   Approximated contour size: 5
+4) Contour size: 145
+   Approximated contour size: 6
+   Elements: 4
+N. contours: 3
+1) Contour size: 79
+   Approximated contour size: 4
+2) Contour size: 146
+3) Contour size: 148
+   Elements: 4
+Best fitting template: 1
+Best fitting template: 3
+   Elements: 2
+Mission -> 0
+border size : 4
+b_x_max : 1500
+b_y_max : 1000
+clipper1: 4
+clipper2: 4
+clipper3: 2
+clipper4: 4
+obsvertx: 349,720
+obsvertx: 406,815
+obsvertx: 282,1060
+obsvertx: 165,1065
+obsvertx: 13,819
+obsvertx: 71,716
+obsvertx: 921,-15
+obsvertx: 1003,122
+obsvertx: 1003,178
+obsvertx: 927,304
+obsvertx: 905,317
+obsvertx: 906,321
+obsvertx: 890,368
+obsvertx: 947,424
+obsvertx: 947,647
+obsvertx: 887,706
+obsvertx: 674,702
+obsvertx: 617,645
+obsvertx: 613,428
+obsvertx: 643,398
+obsvertx: 631,392
+obsvertx: 603,322
+obsvertx: 640,220
+obsvertx: 609,156
+obsvertx: 611,105
+obsvertx: 680,-10
+obsvertx: 724,-36
+obsvertx: 873,-41
+### contours: 2
+### contours[0] : 6
+### contours[1] : 22
+hash 28
+bordivertxf: 0.000000,0.000000
+bordivertx: 0,0
+bordivertxf: 1.500000,0.000000
+bordivertx: 1500,0
+bordivertxf: 1.500000,1.000000
+bordivertx: 1500,1000
+bordivertxf: 0.000000,1.000000
+bordivertx: 0,1000
+size: 32 
+size2: 32 
+pippo c'è 
+Traversing Voronoi graph.
+pippo c'è 
+Number of visited primary edges using vertex iterator: 172
+before points size: 70 
+before edge size: 138 
+edgesAfterVoronoi: 138
+pointsAfterVoronoi: 70
+x: 72, 643
+x: 72, 643
+x: 301, 301
+x: 301, 301
+x: 487, 125
+x: 487, 125
+x: 487, 125
+x: 306, 412
+x: 306, 412
+x: 306, 412
+x: 306, 403
+x: 306, 403
+x: 306, 403
+x: 352, 458
+x: 352, 458
+x: 390, 231
+x: 390, 231
+x: 390, 231
+x: 488, 701
+x: 488, 701
+x: 488, 701
+x: 560, 379
+x: 560, 379
+x: 560, 379
+x: 525, 236
+x: 525, 236
+x: 525, 236
+x: 443, 539
+x: 443, 539
+x: 443, 539
+x: 546, 772
+x: 546, 772
+x: 546, 772
+x: 571, 833
+x: 571, 833
+x: 571, 833
+x: 919, 315
+x: 919, 315
+x: 919, 315
+x: 778, 832
+x: 778, 832
+x: 778, 832
+x: 951, 362
+x: 951, 362
+x: 951, 362
+x: 955, 360
+x: 955, 360
+x: 955, 360
+x: 1047, 809
+x: 1047, 809
+x: 1047, 809
+x: 1150, 150
+x: 1150, 150
+x: 1150, 150
+x: 1118, 333
+x: 1118, 333
+x: 1118, 333
+x: 1245, 254
+x: 1245, 254
+x: 1219, 356
+x: 1219, 356
+x: 1219, 356
+x: 1212, 535
+x: 1212, 535
+x: 1212, 535
+x: 1218, 718
+x: 1218, 718
+x: 1218, 718
+x: 1500, 1000
+x: 1218, 718
+p1: 0 ->(72, 643) - p2: 1 ->(306, 412) - lenght: 328.811496
+p1: 1 ->(306, 412) - p2: 0 ->(72, 643) - lenght: 328.811496
+p1: 0 ->(72, 643) - p2: 2 ->(64, 780) - lenght: 137.233378
+p1: 2 ->(64, 780) - p2: 0 ->(72, 643) - lenght: 137.233378
+p1: 3 ->(301, 301) - p2: 4 ->(390, 231) - lenght: 113.229855
+p1: 4 ->(390, 231) - p2: 3 ->(301, 301) - lenght: 113.229855
+p1: 3 ->(301, 301) - p2: 5 ->(306, 403) - lenght: 102.122475
+p1: 5 ->(306, 403) - p2: 3 ->(301, 301) - lenght: 102.122475
+p1: 7 ->(487, 125) - p2: 8 ->(733, 135) - lenght: 246.203168
+p1: 8 ->(733, 135) - p2: 7 ->(487, 125) - lenght: 246.203168
+p1: 7 ->(487, 125) - p2: 4 ->(390, 231) - lenght: 143.683680
+p1: 4 ->(390, 231) - p2: 7 ->(487, 125) - lenght: 143.683680
+p1: 7 ->(487, 125) - p2: 9 ->(741, 133) - lenght: 254.125953
+p1: 9 ->(741, 133) - p2: 7 ->(487, 125) - lenght: 254.125953
+p1: 1 ->(306, 412) - p2: 5 ->(306, 403) - lenght: 9.000000
+p1: 5 ->(306, 403) - p2: 1 ->(306, 412) - lenght: 9.000000
+p1: 1 ->(306, 412) - p2: 10 ->(352, 458) - lenght: 65.053824
+p1: 10 ->(352, 458) - p2: 1 ->(306, 412) - lenght: 65.053824
+p1: 1 ->(306, 412) - p2: 0 ->(72, 643) - lenght: 328.811496
+p1: 0 ->(72, 643) - p2: 1 ->(306, 412) - lenght: 328.811496
+p1: 5 ->(306, 403) - p2: 11 ->(560, 379) - lenght: 255.131339
+p1: 11 ->(560, 379) - p2: 5 ->(306, 403) - lenght: 255.131339
+p1: 5 ->(306, 403) - p2: 1 ->(306, 412) - lenght: 9.000000
+p1: 1 ->(306, 412) - p2: 5 ->(306, 403) - lenght: 9.000000
+p1: 5 ->(306, 403) - p2: 3 ->(301, 301) - lenght: 102.122475
+p1: 3 ->(301, 301) - p2: 5 ->(306, 403) - lenght: 102.122475
+p1: 10 ->(352, 458) - p2: 12 ->(443, 539) - lenght: 121.827747
+p1: 12 ->(443, 539) - p2: 10 ->(352, 458) - lenght: 121.827747
+p1: 10 ->(352, 458) - p2: 1 ->(306, 412) - lenght: 65.053824
+p1: 1 ->(306, 412) - p2: 10 ->(352, 458) - lenght: 65.053824
+p1: 4 ->(390, 231) - p2: 13 ->(525, 236) - lenght: 135.092561
+p1: 13 ->(525, 236) - p2: 4 ->(390, 231) - lenght: 135.092561
+p1: 4 ->(390, 231) - p2: 3 ->(301, 301) - lenght: 113.229855
+p1: 3 ->(301, 301) - p2: 4 ->(390, 231) - lenght: 113.229855
+p1: 4 ->(390, 231) - p2: 7 ->(487, 125) - lenght: 143.683680
+p1: 7 ->(487, 125) - p2: 4 ->(390, 231) - lenght: 143.683680
+p1: 14 ->(488, 701) - p2: 15 ->(546, 772) - lenght: 91.678787
+p1: 15 ->(546, 772) - p2: 14 ->(488, 701) - lenght: 91.678787
+p1: 14 ->(488, 701) - p2: 16 ->(348, 785) - lenght: 163.266653
+p1: 16 ->(348, 785) - p2: 14 ->(488, 701) - lenght: 163.266653
+p1: 14 ->(488, 701) - p2: 12 ->(443, 539) - lenght: 168.133875
+p1: 12 ->(443, 539) - p2: 14 ->(488, 701) - lenght: 168.133875
+p1: 11 ->(560, 379) - p2: 17 ->(665, 337) - lenght: 113.088461
+p1: 17 ->(665, 337) - p2: 11 ->(560, 379) - lenght: 113.088461
+p1: 11 ->(560, 379) - p2: 18 ->(628, 413) - lenght: 76.026311
+p1: 18 ->(628, 413) - p2: 11 ->(560, 379) - lenght: 76.026311
+p1: 11 ->(560, 379) - p2: 5 ->(306, 403) - lenght: 255.131339
+p1: 5 ->(306, 403) - p2: 11 ->(560, 379) - lenght: 255.131339
+p1: 13 ->(525, 236) - p2: 19 ->(722, 307) - lenght: 209.403916
+p1: 19 ->(722, 307) - p2: 13 ->(525, 236) - lenght: 209.403916
+p1: 13 ->(525, 236) - p2: 4 ->(390, 231) - lenght: 135.092561
+p1: 4 ->(390, 231) - p2: 13 ->(525, 236) - lenght: 135.092561
+p1: 13 ->(525, 236) - p2: 8 ->(733, 135) - lenght: 231.224999
+p1: 8 ->(733, 135) - p2: 13 ->(525, 236) - lenght: 231.224999
+p1: 12 ->(443, 539) - p2: 20 ->(749, 534) - lenght: 306.040847
+p1: 20 ->(749, 534) - p2: 12 ->(443, 539) - lenght: 306.040847
+p1: 12 ->(443, 539) - p2: 14 ->(488, 701) - lenght: 168.133875
+p1: 14 ->(488, 701) - p2: 12 ->(443, 539) - lenght: 168.133875
+p1: 12 ->(443, 539) - p2: 10 ->(352, 458) - lenght: 121.827747
+p1: 10 ->(352, 458) - p2: 12 ->(443, 539) - lenght: 121.827747
+p1: 15 ->(546, 772) - p2: 21 ->(571, 833) - lenght: 65.924199
+p1: 21 ->(571, 833) - p2: 15 ->(546, 772) - lenght: 65.924199
+p1: 15 ->(546, 772) - p2: 14 ->(488, 701) - lenght: 91.678787
+p1: 14 ->(488, 701) - p2: 15 ->(546, 772) - lenght: 91.678787
+p1: 15 ->(546, 772) - p2: 22 ->(781, 537) - lenght: 332.340187
+p1: 22 ->(781, 537) - p2: 15 ->(546, 772) - lenght: 332.340187
+p1: 21 ->(571, 833) - p2: 23 ->(778, 832) - lenght: 207.002415
+p1: 23 ->(778, 832) - p2: 21 ->(571, 833) - lenght: 207.002415
+p1: 21 ->(571, 833) - p2: 24 ->(272, 859) - lenght: 300.128306
+p1: 24 ->(272, 859) - p2: 21 ->(571, 833) - lenght: 300.128306
+p1: 21 ->(571, 833) - p2: 15 ->(546, 772) - lenght: 65.924199
+p1: 15 ->(546, 772) - p2: 21 ->(571, 833) - lenght: 65.924199
+p1: 25 ->(919, 315) - p2: 26 ->(955, 360) - lenght: 57.628118
+p1: 26 ->(955, 360) - p2: 25 ->(919, 315) - lenght: 57.628118
+p1: 25 ->(919, 315) - p2: 27 ->(857, 330) - lenght: 63.788714
+p1: 27 ->(857, 330) - p2: 25 ->(919, 315) - lenght: 63.788714
+p1: 25 ->(919, 315) - p2: 28 ->(831, 167) - lenght: 172.185946
+p1: 28 ->(831, 167) - p2: 25 ->(919, 315) - lenght: 172.185946
+p1: 23 ->(778, 832) - p2: 29 ->(1047, 809) - lenght: 269.981481
+p1: 29 ->(1047, 809) - p2: 23 ->(778, 832) - lenght: 269.981481
+p1: 23 ->(778, 832) - p2: 21 ->(571, 833) - lenght: 207.002415
+p1: 21 ->(571, 833) - p2: 23 ->(778, 832) - lenght: 207.002415
+p1: 23 ->(778, 832) - p2: 30 ->(783, 540) - lenght: 292.042805
+p1: 30 ->(783, 540) - p2: 23 ->(778, 832) - lenght: 292.042805
+p1: 31 ->(951, 362) - p2: 26 ->(955, 360) - lenght: 4.472136
+p1: 26 ->(955, 360) - p2: 31 ->(951, 362) - lenght: 4.472136
+p1: 31 ->(951, 362) - p2: 32 ->(784, 532) - lenght: 238.304427
+p1: 32 ->(784, 532) - p2: 31 ->(951, 362) - lenght: 238.304427
+p1: 31 ->(951, 362) - p2: 27 ->(857, 330) - lenght: 99.297533
+p1: 27 ->(857, 330) - p2: 31 ->(951, 362) - lenght: 99.297533
+p1: 26 ->(955, 360) - p2: 33 ->(1118, 333) - lenght: 165.221064
+p1: 33 ->(1118, 333) - p2: 26 ->(955, 360) - lenght: 165.221064
+p1: 26 ->(955, 360) - p2: 31 ->(951, 362) - lenght: 4.472136
+p1: 31 ->(951, 362) - p2: 26 ->(955, 360) - lenght: 4.472136
+p1: 26 ->(955, 360) - p2: 25 ->(919, 315) - lenght: 57.628118
+p1: 25 ->(919, 315) - p2: 26 ->(955, 360) - lenght: 57.628118
+p1: 29 ->(1047, 809) - p2: 34 ->(1218, 718) - lenght: 193.705963
+p1: 34 ->(1218, 718) - p2: 29 ->(1047, 809) - lenght: 193.705963
+p1: 29 ->(1047, 809) - p2: 23 ->(778, 832) - lenght: 269.981481
+p1: 23 ->(778, 832) - p2: 29 ->(1047, 809) - lenght: 269.981481
+p1: 29 ->(1047, 809) - p2: 30 ->(783, 540) - lenght: 376.904497
+p1: 30 ->(783, 540) - p2: 29 ->(1047, 809) - lenght: 376.904497
+p1: 35 ->(1150, 150) - p2: 36 ->(1245, 254) - lenght: 140.858085
+p1: 36 ->(1245, 254) - p2: 35 ->(1150, 150) - lenght: 140.858085
+p1: 35 ->(1150, 150) - p2: 37 ->(855, 150) - lenght: 295.000000
+p1: 37 ->(855, 150) - p2: 35 ->(1150, 150) - lenght: 295.000000
+p1: 35 ->(1150, 150) - p2: 37 ->(855, 150) - lenght: 295.000000
+p1: 37 ->(855, 150) - p2: 35 ->(1150, 150) - lenght: 295.000000
+p1: 33 ->(1118, 333) - p2: 38 ->(1219, 356) - lenght: 103.585713
+p1: 38 ->(1219, 356) - p2: 33 ->(1118, 333) - lenght: 103.585713
+p1: 33 ->(1118, 333) - p2: 26 ->(955, 360) - lenght: 165.221064
+p1: 26 ->(955, 360) - p2: 33 ->(1118, 333) - lenght: 165.221064
+p1: 33 ->(1118, 333) - p2: 39 ->(838, 164) - lenght: 327.048926
+p1: 39 ->(838, 164) - p2: 33 ->(1118, 333) - lenght: 327.048926
+p1: 36 ->(1245, 254) - p2: 38 ->(1219, 356) - lenght: 105.261579
+p1: 38 ->(1219, 356) - p2: 36 ->(1245, 254) - lenght: 105.261579
+p1: 36 ->(1245, 254) - p2: 35 ->(1150, 150) - lenght: 140.858085
+p1: 35 ->(1150, 150) - p2: 36 ->(1245, 254) - lenght: 140.858085
+p1: 38 ->(1219, 356) - p2: 41 ->(1212, 535) - lenght: 179.136819
+p1: 41 ->(1212, 535) - p2: 38 ->(1219, 356) - lenght: 179.136819
+p1: 38 ->(1219, 356) - p2: 33 ->(1118, 333) - lenght: 103.585713
+p1: 33 ->(1118, 333) - p2: 38 ->(1219, 356) - lenght: 103.585713
+p1: 38 ->(1219, 356) - p2: 36 ->(1245, 254) - lenght: 105.261579
+p1: 36 ->(1245, 254) - p2: 38 ->(1219, 356) - lenght: 105.261579
+p1: 41 ->(1212, 535) - p2: 34 ->(1218, 718) - lenght: 183.098334
+p1: 34 ->(1218, 718) - p2: 41 ->(1212, 535) - lenght: 183.098334
+p1: 41 ->(1212, 535) - p2: 42 ->(784, 535) - lenght: 428.000000
+p1: 42 ->(784, 535) - p2: 41 ->(1212, 535) - lenght: 428.000000
+p1: 41 ->(1212, 535) - p2: 38 ->(1219, 356) - lenght: 179.136819
+p1: 38 ->(1219, 356) - p2: 41 ->(1212, 535) - lenght: 179.136819
+p1: 34 ->(1218, 718) - p2: 43 ->(1500, 1000) - lenght: 398.808225
+p1: 43 ->(1500, 1000) - p2: 34 ->(1218, 718) - lenght: 398.808225
+p1: 34 ->(1218, 718) - p2: 29 ->(1047, 809) - lenght: 193.705963
+p1: 29 ->(1047, 809) - p2: 34 ->(1218, 718) - lenght: 193.705963
+p1: 34 ->(1218, 718) - p2: 41 ->(1212, 535) - lenght: 183.098334
+p1: 41 ->(1212, 535) - p2: 34 ->(1218, 718) - lenght: 183.098334
+p1: 43 ->(1500, 1000) - p2: 34 ->(1218, 718) - lenght: 398.808225
+p1: 34 ->(1218, 718) - p2: 43 ->(1500, 1000) - lenght: 398.808225
+start id 1510186    size : 45
+start Size ingress 0
+end id 14410769    size : 46
+end Size ingress0
+Step 20
+Step 30size: 0 0
+Step 40size: 0 0
+Step 50size: 0 0
+Step 60size: 0 0
+Step 70size: 0 0
+Step 80size: 0 0
+Step 90size: 0 0
+Step 100size: 0 0
+Step 110size: 0 0
+Step 120size: 0 0
+Step 130size: 0 0
+Step 140size: 0 0
+Step 150size: 0 0
+Step 160size: 0 0
+connect points (301,301) and (151,186)
+Tratto 151, 186  ->  301, 301
+Lunghezza : 189.011
+Distanza sample : 5
+Soluzione 1 : 154, 188
+Soluzione 2 : 146, 181
+Sample : 154, 188 == 154, 188
+Distanza sample : 10
+Soluzione 1 : 158, 191
+Soluzione 2 : 142, 178
+Sample : 158, 191 == 158, 191
+Distanza sample : 15
+Soluzione 1 : 162, 194
+Soluzione 2 : 138, 175
+Sample : 162, 194 == 162, 194
+Distanza sample : 20
+Soluzione 1 : 166, 197
+Soluzione 2 : 135, 173
+Sample : 166, 197 == 166, 197
+Distanza sample : 25
+Soluzione 1 : 170, 200
+Soluzione 2 : 131, 170
+Sample : 170, 200 == 170, 200
+Distanza sample : 30
+Soluzione 1 : 174, 203
+Soluzione 2 : 126, 166
+Sample : 174, 203 == 174, 203
+Distanza sample : 35
+Soluzione 1 : 178, 206
+Soluzione 2 : 123, 164
+Sample : 178, 206 == 178, 206
+Distanza sample : 40
+Soluzione 1 : 182, 209
+Soluzione 2 : 119, 161
+Sample : 182, 209 == 182, 209
+Distanza sample : 45
+Soluzione 1 : 186, 212
+Soluzione 2 : 115, 158
+Sample : 186, 212 == 186, 212
+Distanza sample : 50
+Soluzione 1 : 190, 215
+Soluzione 2 : 111, 155
+Sample : 190, 215 == 190, 215
+Distanza sample : 55
+Soluzione 1 : 194, 218
+Soluzione 2 : 107, 152
+Sample : 194, 218 == 194, 218
+Distanza sample : 60
+Soluzione 1 : 198, 221
+Soluzione 2 : 103, 148
+Sample : 198, 221 == 198, 221
+Distanza sample : 65
+Soluzione 1 : 202, 224
+Soluzione 2 : 99, 145
+Sample : 202, 224 == 202, 224
+Distanza sample : 70
+Soluzione 1 : 206, 227
+Soluzione 2 : 95, 142
+Sample : 206, 227 == 206, 227
+Distanza sample : 75
+Soluzione 1 : 210, 231
+Soluzione 2 : 91, 139
+Sample : 210, 231 == 210, 231
+Distanza sample : 80
+Soluzione 1 : 214, 234
+Soluzione 2 : 87, 136
+Sample : 214, 234 == 214, 234
+Distanza sample : 85
+Soluzione 1 : 218, 237
+Soluzione 2 : 83, 133
+Sample : 218, 237 == 218, 237
+Distanza sample : 90
+Soluzione 1 : 222, 240
+Soluzione 2 : 79, 130
+Sample : 222, 240 == 222, 240
+Distanza sample : 95
+Soluzione 1 : 226, 243
+Soluzione 2 : 75, 127
+Sample : 226, 243 == 226, 243
+Distanza sample : 100
+Soluzione 1 : 230, 246
+Soluzione 2 : 71, 124
+Sample : 230, 246 == 230, 246
+Distanza sample : 105
+Soluzione 1 : 234, 249
+Soluzione 2 : 67, 121
+Sample : 234, 249 == 234, 249
+Distanza sample : 110
+Soluzione 1 : 238, 252
+Soluzione 2 : 63, 118
+Sample : 238, 252 == 238, 252
+Distanza sample : 115
+Soluzione 1 : 242, 255
+Soluzione 2 : 59, 115
+Sample : 242, 255 == 242, 255
+Distanza sample : 120
+Soluzione 1 : 245, 257
+Soluzione 2 : 55, 112
+Sample : 245, 257 == 245, 257
+Distanza sample : 125
+Soluzione 1 : 250, 261
+Soluzione 2 : 51, 109
+Sample : 250, 261 == 250, 261
+Distanza sample : 130
+Soluzione 1 : 254, 264
+Soluzione 2 : 47, 106
+Sample : 254, 264 == 254, 264
+Distanza sample : 135
+Soluzione 1 : 257, 267
+Soluzione 2 : 43, 102
+Sample : 257, 267 == 257, 267
+Distanza sample : 140
+Soluzione 1 : 262, 270
+Soluzione 2 : 39, 99
+Sample : 262, 270 == 262, 270
+Distanza sample : 145
+Soluzione 1 : 265, 273
+Soluzione 2 : 35, 96
+Sample : 265, 273 == 265, 273
+Distanza sample : 150
+Soluzione 1 : 269, 276
+Soluzione 2 : 31, 93
+Sample : 269, 276 == 269, 276
+Distanza sample : 155
+Soluzione 1 : 273, 279
+Soluzione 2 : 27, 90
+Sample : 273, 279 == 273, 279
+Distanza sample : 160
+Soluzione 1 : 277, 282
+Soluzione 2 : 23, 87
+Sample : 277, 282 == 277, 282
+Distanza sample : 165
+Soluzione 1 : 281, 285
+Soluzione 2 : 19, 84
+Sample : 281, 285 == 281, 285
+Distanza sample : 170
+Soluzione 1 : 285, 288
+Soluzione 2 : 16, 82
+Sample : 285, 288 == 285, 288
+Distanza sample : 175
+Soluzione 1 : 289, 291
+Soluzione 2 : 11, 78
+Sample : 289, 291 == 289, 291
+Distanza sample : 180
+Soluzione 1 : 293, 294
+Soluzione 2 : 7, 75
+Sample : 293, 294 == 293, 294
+Distanza sample : 185
+Soluzione 1 : 297, 297
+Soluzione 2 : 4, 73
+Sample : 297, 297 == 297, 297
+------ n samples 39
+id 3  -  longId 3010301  -  pointLongId 1510186  -  PointId 44
+Step 170size: 2 0
+connect points (301,301) and (151,186)
+Tratto 151, 186  ->  301, 301
+Lunghezza : 189.011
+Distanza sample : 5
+Soluzione 1 : 154, 188
+Soluzione 2 : 146, 181
+Sample : 154, 188 == 154, 188
+Distanza sample : 10
+Soluzione 1 : 158, 191
+Soluzione 2 : 142, 178
+Sample : 158, 191 == 158, 191
+Distanza sample : 15
+Soluzione 1 : 162, 194
+Soluzione 2 : 138, 175
+Sample : 162, 194 == 162, 194
+Distanza sample : 20
+Soluzione 1 : 166, 197
+Soluzione 2 : 135, 173
+Sample : 166, 197 == 166, 197
+Distanza sample : 25
+Soluzione 1 : 170, 200
+Soluzione 2 : 131, 170
+Sample : 170, 200 == 170, 200
+Distanza sample : 30
+Soluzione 1 : 174, 203
+Soluzione 2 : 126, 166
+Sample : 174, 203 == 174, 203
+Distanza sample : 35
+Soluzione 1 : 178, 206
+Soluzione 2 : 123, 164
+Sample : 178, 206 == 178, 206
+Distanza sample : 40
+Soluzione 1 : 182, 209
+Soluzione 2 : 119, 161
+Sample : 182, 209 == 182, 209
+Distanza sample : 45
+Soluzione 1 : 186, 212
+Soluzione 2 : 115, 158
+Sample : 186, 212 == 186, 212
+Distanza sample : 50
+Soluzione 1 : 190, 215
+Soluzione 2 : 111, 155
+Sample : 190, 215 == 190, 215
+Distanza sample : 55
+Soluzione 1 : 194, 218
+Soluzione 2 : 107, 152
+Sample : 194, 218 == 194, 218
+Distanza sample : 60
+Soluzione 1 : 198, 221
+Soluzione 2 : 103, 148
+Sample : 198, 221 == 198, 221
+Distanza sample : 65
+Soluzione 1 : 202, 224
+Soluzione 2 : 99, 145
+Sample : 202, 224 == 202, 224
+Distanza sample : 70
+Soluzione 1 : 206, 227
+Soluzione 2 : 95, 142
+Sample : 206, 227 == 206, 227
+Distanza sample : 75
+Soluzione 1 : 210, 231
+Soluzione 2 : 91, 139
+Sample : 210, 231 == 210, 231
+Distanza sample : 80
+Soluzione 1 : 214, 234
+Soluzione 2 : 87, 136
+Sample : 214, 234 == 214, 234
+Distanza sample : 85
+Soluzione 1 : 218, 237
+Soluzione 2 : 83, 133
+Sample : 218, 237 == 218, 237
+Distanza sample : 90
+Soluzione 1 : 222, 240
+Soluzione 2 : 79, 130
+Sample : 222, 240 == 222, 240
+Distanza sample : 95
+Soluzione 1 : 226, 243
+Soluzione 2 : 75, 127
+Sample : 226, 243 == 226, 243
+Distanza sample : 100
+Soluzione 1 : 230, 246
+Soluzione 2 : 71, 124
+Sample : 230, 246 == 230, 246
+Distanza sample : 105
+Soluzione 1 : 234, 249
+Soluzione 2 : 67, 121
+Sample : 234, 249 == 234, 249
+Distanza sample : 110
+Soluzione 1 : 238, 252
+Soluzione 2 : 63, 118
+Sample : 238, 252 == 238, 252
+Distanza sample : 115
+Soluzione 1 : 242, 255
+Soluzione 2 : 59, 115
+Sample : 242, 255 == 242, 255
+Distanza sample : 120
+Soluzione 1 : 245, 257
+Soluzione 2 : 55, 112
+Sample : 245, 257 == 245, 257
+Distanza sample : 125
+Soluzione 1 : 250, 261
+Soluzione 2 : 51, 109
+Sample : 250, 261 == 250, 261
+Distanza sample : 130
+Soluzione 1 : 254, 264
+Soluzione 2 : 47, 106
+Sample : 254, 264 == 254, 264
+Distanza sample : 135
+Soluzione 1 : 257, 267
+Soluzione 2 : 43, 102
+Sample : 257, 267 == 257, 267
+Distanza sample : 140
+Soluzione 1 : 262, 270
+Soluzione 2 : 39, 99
+Sample : 262, 270 == 262, 270
+Distanza sample : 145
+Soluzione 1 : 265, 273
+Soluzione 2 : 35, 96
+Sample : 265, 273 == 265, 273
+Distanza sample : 150
+Soluzione 1 : 269, 276
+Soluzione 2 : 31, 93
+Sample : 269, 276 == 269, 276
+Distanza sample : 155
+Soluzione 1 : 273, 279
+Soluzione 2 : 27, 90
+Sample : 273, 279 == 273, 279
+Distanza sample : 160
+Soluzione 1 : 277, 282
+Soluzione 2 : 23, 87
+Sample : 277, 282 == 277, 282
+Distanza sample : 165
+Soluzione 1 : 281, 285
+Soluzione 2 : 19, 84
+Sample : 281, 285 == 281, 285
+Distanza sample : 170
+Soluzione 1 : 285, 288
+Soluzione 2 : 16, 82
+Sample : 285, 288 == 285, 288
+Distanza sample : 175
+Soluzione 1 : 289, 291
+Soluzione 2 : 11, 78
+Sample : 289, 291 == 289, 291
+Distanza sample : 180
+Soluzione 1 : 293, 294
+Soluzione 2 : 7, 75
+Sample : 293, 294 == 293, 294
+Distanza sample : 185
+Soluzione 1 : 297, 297
+Soluzione 2 : 4, 73
+Sample : 297, 297 == 297, 297
+------ n samples 39
+id 3  -  longId 3010301  -  pointLongId 1510186  -  PointId 44
+Step 180size: 2 0
+connect points (301,301) and (151,186)
+Tratto 151, 186  ->  301, 301
+Lunghezza : 189.011
+Distanza sample : 5
+Soluzione 1 : 154, 188
+Soluzione 2 : 146, 181
+Sample : 154, 188 == 154, 188
+Distanza sample : 10
+Soluzione 1 : 158, 191
+Soluzione 2 : 142, 178
+Sample : 158, 191 == 158, 191
+Distanza sample : 15
+Soluzione 1 : 162, 194
+Soluzione 2 : 138, 175
+Sample : 162, 194 == 162, 194
+Distanza sample : 20
+Soluzione 1 : 166, 197
+Soluzione 2 : 135, 173
+Sample : 166, 197 == 166, 197
+Distanza sample : 25
+Soluzione 1 : 170, 200
+Soluzione 2 : 131, 170
+Sample : 170, 200 == 170, 200
+Distanza sample : 30
+Soluzione 1 : 174, 203
+Soluzione 2 : 126, 166
+Sample : 174, 203 == 174, 203
+Distanza sample : 35
+Soluzione 1 : 178, 206
+Soluzione 2 : 123, 164
+Sample : 178, 206 == 178, 206
+Distanza sample : 40
+Soluzione 1 : 182, 209
+Soluzione 2 : 119, 161
+Sample : 182, 209 == 182, 209
+Distanza sample : 45
+Soluzione 1 : 186, 212
+Soluzione 2 : 115, 158
+Sample : 186, 212 == 186, 212
+Distanza sample : 50
+Soluzione 1 : 190, 215
+Soluzione 2 : 111, 155
+Sample : 190, 215 == 190, 215
+Distanza sample : 55
+Soluzione 1 : 194, 218
+Soluzione 2 : 107, 152
+Sample : 194, 218 == 194, 218
+Distanza sample : 60
+Soluzione 1 : 198, 221
+Soluzione 2 : 103, 148
+Sample : 198, 221 == 198, 221
+Distanza sample : 65
+Soluzione 1 : 202, 224
+Soluzione 2 : 99, 145
+Sample : 202, 224 == 202, 224
+Distanza sample : 70
+Soluzione 1 : 206, 227
+Soluzione 2 : 95, 142
+Sample : 206, 227 == 206, 227
+Distanza sample : 75
+Soluzione 1 : 210, 231
+Soluzione 2 : 91, 139
+Sample : 210, 231 == 210, 231
+Distanza sample : 80
+Soluzione 1 : 214, 234
+Soluzione 2 : 87, 136
+Sample : 214, 234 == 214, 234
+Distanza sample : 85
+Soluzione 1 : 218, 237
+Soluzione 2 : 83, 133
+Sample : 218, 237 == 218, 237
+Distanza sample : 90
+Soluzione 1 : 222, 240
+Soluzione 2 : 79, 130
+Sample : 222, 240 == 222, 240
+Distanza sample : 95
+Soluzione 1 : 226, 243
+Soluzione 2 : 75, 127
+Sample : 226, 243 == 226, 243
+Distanza sample : 100
+Soluzione 1 : 230, 246
+Soluzione 2 : 71, 124
+Sample : 230, 246 == 230, 246
+Distanza sample : 105
+Soluzione 1 : 234, 249
+Soluzione 2 : 67, 121
+Sample : 234, 249 == 234, 249
+Distanza sample : 110
+Soluzione 1 : 238, 252
+Soluzione 2 : 63, 118
+Sample : 238, 252 == 238, 252
+Distanza sample : 115
+Soluzione 1 : 242, 255
+Soluzione 2 : 59, 115
+Sample : 242, 255 == 242, 255
+Distanza sample : 120
+Soluzione 1 : 245, 257
+Soluzione 2 : 55, 112
+Sample : 245, 257 == 245, 257
+Distanza sample : 125
+Soluzione 1 : 250, 261
+Soluzione 2 : 51, 109
+Sample : 250, 261 == 250, 261
+Distanza sample : 130
+Soluzione 1 : 254, 264
+Soluzione 2 : 47, 106
+Sample : 254, 264 == 254, 264
+Distanza sample : 135
+Soluzione 1 : 257, 267
+Soluzione 2 : 43, 102
+Sample : 257, 267 == 257, 267
+Distanza sample : 140
+Soluzione 1 : 262, 270
+Soluzione 2 : 39, 99
+Sample : 262, 270 == 262, 270
+Distanza sample : 145
+Soluzione 1 : 265, 273
+Soluzione 2 : 35, 96
+Sample : 265, 273 == 265, 273
+Distanza sample : 150
+Soluzione 1 : 269, 276
+Soluzione 2 : 31, 93
+Sample : 269, 276 == 269, 276
+Distanza sample : 155
+Soluzione 1 : 273, 279
+Soluzione 2 : 27, 90
+Sample : 273, 279 == 273, 279
+Distanza sample : 160
+Soluzione 1 : 277, 282
+Soluzione 2 : 23, 87
+Sample : 277, 282 == 277, 282
+Distanza sample : 165
+Soluzione 1 : 281, 285
+Soluzione 2 : 19, 84
+Sample : 281, 285 == 281, 285
+Distanza sample : 170
+Soluzione 1 : 285, 288
+Soluzione 2 : 16, 82
+Sample : 285, 288 == 285, 288
+Distanza sample : 175
+Soluzione 1 : 289, 291
+Soluzione 2 : 11, 78
+Sample : 289, 291 == 289, 291
+Distanza sample : 180
+Soluzione 1 : 293, 294
+Soluzione 2 : 7, 75
+Sample : 293, 294 == 293, 294
+Distanza sample : 185
+Soluzione 1 : 297, 297
+Soluzione 2 : 4, 73
+Sample : 297, 297 == 297, 297
+------ n samples 39
+id 3  -  longId 3010301  -  pointLongId 1510186  -  PointId 44
+Step 190size: 2 0
+connect points (301,301) and (151,186)
+Tratto 151, 186  ->  301, 301
+Lunghezza : 189.011
+Distanza sample : 5
+Soluzione 1 : 154, 188
+Soluzione 2 : 146, 181
+Sample : 154, 188 == 154, 188
+Distanza sample : 10
+Soluzione 1 : 158, 191
+Soluzione 2 : 142, 178
+Sample : 158, 191 == 158, 191
+Distanza sample : 15
+Soluzione 1 : 162, 194
+Soluzione 2 : 138, 175
+Sample : 162, 194 == 162, 194
+Distanza sample : 20
+Soluzione 1 : 166, 197
+Soluzione 2 : 135, 173
+Sample : 166, 197 == 166, 197
+Distanza sample : 25
+Soluzione 1 : 170, 200
+Soluzione 2 : 131, 170
+Sample : 170, 200 == 170, 200
+Distanza sample : 30
+Soluzione 1 : 174, 203
+Soluzione 2 : 126, 166
+Sample : 174, 203 == 174, 203
+Distanza sample : 35
+Soluzione 1 : 178, 206
+Soluzione 2 : 123, 164
+Sample : 178, 206 == 178, 206
+Distanza sample : 40
+Soluzione 1 : 182, 209
+Soluzione 2 : 119, 161
+Sample : 182, 209 == 182, 209
+Distanza sample : 45
+Soluzione 1 : 186, 212
+Soluzione 2 : 115, 158
+Sample : 186, 212 == 186, 212
+Distanza sample : 50
+Soluzione 1 : 190, 215
+Soluzione 2 : 111, 155
+Sample : 190, 215 == 190, 215
+Distanza sample : 55
+Soluzione 1 : 194, 218
+Soluzione 2 : 107, 152
+Sample : 194, 218 == 194, 218
+Distanza sample : 60
+Soluzione 1 : 198, 221
+Soluzione 2 : 103, 148
+Sample : 198, 221 == 198, 221
+Distanza sample : 65
+Soluzione 1 : 202, 224
+Soluzione 2 : 99, 145
+Sample : 202, 224 == 202, 224
+Distanza sample : 70
+Soluzione 1 : 206, 227
+Soluzione 2 : 95, 142
+Sample : 206, 227 == 206, 227
+Distanza sample : 75
+Soluzione 1 : 210, 231
+Soluzione 2 : 91, 139
+Sample : 210, 231 == 210, 231
+Distanza sample : 80
+Soluzione 1 : 214, 234
+Soluzione 2 : 87, 136
+Sample : 214, 234 == 214, 234
+Distanza sample : 85
+Soluzione 1 : 218, 237
+Soluzione 2 : 83, 133
+Sample : 218, 237 == 218, 237
+Distanza sample : 90
+Soluzione 1 : 222, 240
+Soluzione 2 : 79, 130
+Sample : 222, 240 == 222, 240
+Distanza sample : 95
+Soluzione 1 : 226, 243
+Soluzione 2 : 75, 127
+Sample : 226, 243 == 226, 243
+Distanza sample : 100
+Soluzione 1 : 230, 246
+Soluzione 2 : 71, 124
+Sample : 230, 246 == 230, 246
+Distanza sample : 105
+Soluzione 1 : 234, 249
+Soluzione 2 : 67, 121
+Sample : 234, 249 == 234, 249
+Distanza sample : 110
+Soluzione 1 : 238, 252
+Soluzione 2 : 63, 118
+Sample : 238, 252 == 238, 252
+Distanza sample : 115
+Soluzione 1 : 242, 255
+Soluzione 2 : 59, 115
+Sample : 242, 255 == 242, 255
+Distanza sample : 120
+Soluzione 1 : 245, 257
+Soluzione 2 : 55, 112
+Sample : 245, 257 == 245, 257
+Distanza sample : 125
+Soluzione 1 : 250, 261
+Soluzione 2 : 51, 109
+Sample : 250, 261 == 250, 261
+Distanza sample : 130
+Soluzione 1 : 254, 264
+Soluzione 2 : 47, 106
+Sample : 254, 264 == 254, 264
+Distanza sample : 135
+Soluzione 1 : 257, 267
+Soluzione 2 : 43, 102
+Sample : 257, 267 == 257, 267
+Distanza sample : 140
+Soluzione 1 : 262, 270
+Soluzione 2 : 39, 99
+Sample : 262, 270 == 262, 270
+Distanza sample : 145
+Soluzione 1 : 265, 273
+Soluzione 2 : 35, 96
+Sample : 265, 273 == 265, 273
+Distanza sample : 150
+Soluzione 1 : 269, 276
+Soluzione 2 : 31, 93
+Sample : 269, 276 == 269, 276
+Distanza sample : 155
+Soluzione 1 : 273, 279
+Soluzione 2 : 27, 90
+Sample : 273, 279 == 273, 279
+Distanza sample : 160
+Soluzione 1 : 277, 282
+Soluzione 2 : 23, 87
+Sample : 277, 282 == 277, 282
+Distanza sample : 165
+Soluzione 1 : 281, 285
+Soluzione 2 : 19, 84
+Sample : 281, 285 == 281, 285
+Distanza sample : 170
+Soluzione 1 : 285, 288
+Soluzione 2 : 16, 82
+Sample : 285, 288 == 285, 288
+Distanza sample : 175
+Soluzione 1 : 289, 291
+Soluzione 2 : 11, 78
+Sample : 289, 291 == 289, 291
+Distanza sample : 180
+Soluzione 1 : 293, 294
+Soluzione 2 : 7, 75
+Sample : 293, 294 == 293, 294
+Distanza sample : 185
+Soluzione 1 : 297, 297
+Soluzione 2 : 4, 73
+Sample : 297, 297 == 297, 297
+------ n samples 39
+id 3  -  longId 3010301  -  pointLongId 1510186  -  PointId 44
+Step 200size: 2 0
+connect points (301,301) and (151,186)
+Tratto 151, 186  ->  301, 301
+Lunghezza : 189.011
+Distanza sample : 5
+Soluzione 1 : 154, 188
+Soluzione 2 : 146, 181
+Sample : 154, 188 == 154, 188
+Distanza sample : 10
+Soluzione 1 : 158, 191
+Soluzione 2 : 142, 178
+Sample : 158, 191 == 158, 191
+Distanza sample : 15
+Soluzione 1 : 162, 194
+Soluzione 2 : 138, 175
+Sample : 162, 194 == 162, 194
+Distanza sample : 20
+Soluzione 1 : 166, 197
+Soluzione 2 : 135, 173
+Sample : 166, 197 == 166, 197
+Distanza sample : 25
+Soluzione 1 : 170, 200
+Soluzione 2 : 131, 170
+Sample : 170, 200 == 170, 200
+Distanza sample : 30
+Soluzione 1 : 174, 203
+Soluzione 2 : 126, 166
+Sample : 174, 203 == 174, 203
+Distanza sample : 35
+Soluzione 1 : 178, 206
+Soluzione 2 : 123, 164
+Sample : 178, 206 == 178, 206
+Distanza sample : 40
+Soluzione 1 : 182, 209
+Soluzione 2 : 119, 161
+Sample : 182, 209 == 182, 209
+Distanza sample : 45
+Soluzione 1 : 186, 212
+Soluzione 2 : 115, 158
+Sample : 186, 212 == 186, 212
+Distanza sample : 50
+Soluzione 1 : 190, 215
+Soluzione 2 : 111, 155
+Sample : 190, 215 == 190, 215
+Distanza sample : 55
+Soluzione 1 : 194, 218
+Soluzione 2 : 107, 152
+Sample : 194, 218 == 194, 218
+Distanza sample : 60
+Soluzione 1 : 198, 221
+Soluzione 2 : 103, 148
+Sample : 198, 221 == 198, 221
+Distanza sample : 65
+Soluzione 1 : 202, 224
+Soluzione 2 : 99, 145
+Sample : 202, 224 == 202, 224
+Distanza sample : 70
+Soluzione 1 : 206, 227
+Soluzione 2 : 95, 142
+Sample : 206, 227 == 206, 227
+Distanza sample : 75
+Soluzione 1 : 210, 231
+Soluzione 2 : 91, 139
+Sample : 210, 231 == 210, 231
+Distanza sample : 80
+Soluzione 1 : 214, 234
+Soluzione 2 : 87, 136
+Sample : 214, 234 == 214, 234
+Distanza sample : 85
+Soluzione 1 : 218, 237
+Soluzione 2 : 83, 133
+Sample : 218, 237 == 218, 237
+Distanza sample : 90
+Soluzione 1 : 222, 240
+Soluzione 2 : 79, 130
+Sample : 222, 240 == 222, 240
+Distanza sample : 95
+Soluzione 1 : 226, 243
+Soluzione 2 : 75, 127
+Sample : 226, 243 == 226, 243
+Distanza sample : 100
+Soluzione 1 : 230, 246
+Soluzione 2 : 71, 124
+Sample : 230, 246 == 230, 246
+Distanza sample : 105
+Soluzione 1 : 234, 249
+Soluzione 2 : 67, 121
+Sample : 234, 249 == 234, 249
+Distanza sample : 110
+Soluzione 1 : 238, 252
+Soluzione 2 : 63, 118
+Sample : 238, 252 == 238, 252
+Distanza sample : 115
+Soluzione 1 : 242, 255
+Soluzione 2 : 59, 115
+Sample : 242, 255 == 242, 255
+Distanza sample : 120
+Soluzione 1 : 245, 257
+Soluzione 2 : 55, 112
+Sample : 245, 257 == 245, 257
+Distanza sample : 125
+Soluzione 1 : 250, 261
+Soluzione 2 : 51, 109
+Sample : 250, 261 == 250, 261
+Distanza sample : 130
+Soluzione 1 : 254, 264
+Soluzione 2 : 47, 106
+Sample : 254, 264 == 254, 264
+Distanza sample : 135
+Soluzione 1 : 257, 267
+Soluzione 2 : 43, 102
+Sample : 257, 267 == 257, 267
+Distanza sample : 140
+Soluzione 1 : 262, 270
+Soluzione 2 : 39, 99
+Sample : 262, 270 == 262, 270
+Distanza sample : 145
+Soluzione 1 : 265, 273
+Soluzione 2 : 35, 96
+Sample : 265, 273 == 265, 273
+Distanza sample : 150
+Soluzione 1 : 269, 276
+Soluzione 2 : 31, 93
+Sample : 269, 276 == 269, 276
+Distanza sample : 155
+Soluzione 1 : 273, 279
+Soluzione 2 : 27, 90
+Sample : 273, 279 == 273, 279
+Distanza sample : 160
+Soluzione 1 : 277, 282
+Soluzione 2 : 23, 87
+Sample : 277, 282 == 277, 282
+Distanza sample : 165
+Soluzione 1 : 281, 285
+Soluzione 2 : 19, 84
+Sample : 281, 285 == 281, 285
+Distanza sample : 170
+Soluzione 1 : 285, 288
+Soluzione 2 : 16, 82
+Sample : 285, 288 == 285, 288
+Distanza sample : 175
+Soluzione 1 : 289, 291
+Soluzione 2 : 11, 78
+Sample : 289, 291 == 289, 291
+Distanza sample : 180
+Soluzione 1 : 293, 294
+Soluzione 2 : 7, 75
+Sample : 293, 294 == 293, 294
+Distanza sample : 185
+Soluzione 1 : 297, 297
+Soluzione 2 : 4, 73
+Sample : 297, 297 == 297, 297
+------ n samples 39
+id 3  -  longId 3010301  -  pointLongId 1510186  -  PointId 44
+Step 210size: 2 0
+connect points (301,301) and (151,186)
+Tratto 151, 186  ->  301, 301
+Lunghezza : 189.011
+Distanza sample : 5
+Soluzione 1 : 154, 188
+Soluzione 2 : 146, 181
+Sample : 154, 188 == 154, 188
+Distanza sample : 10
+Soluzione 1 : 158, 191
+Soluzione 2 : 142, 178
+Sample : 158, 191 == 158, 191
+Distanza sample : 15
+Soluzione 1 : 162, 194
+Soluzione 2 : 138, 175
+Sample : 162, 194 == 162, 194
+Distanza sample : 20
+Soluzione 1 : 166, 197
+Soluzione 2 : 135, 173
+Sample : 166, 197 == 166, 197
+Distanza sample : 25
+Soluzione 1 : 170, 200
+Soluzione 2 : 131, 170
+Sample : 170, 200 == 170, 200
+Distanza sample : 30
+Soluzione 1 : 174, 203
+Soluzione 2 : 126, 166
+Sample : 174, 203 == 174, 203
+Distanza sample : 35
+Soluzione 1 : 178, 206
+Soluzione 2 : 123, 164
+Sample : 178, 206 == 178, 206
+Distanza sample : 40
+Soluzione 1 : 182, 209
+Soluzione 2 : 119, 161
+Sample : 182, 209 == 182, 209
+Distanza sample : 45
+Soluzione 1 : 186, 212
+Soluzione 2 : 115, 158
+Sample : 186, 212 == 186, 212
+Distanza sample : 50
+Soluzione 1 : 190, 215
+Soluzione 2 : 111, 155
+Sample : 190, 215 == 190, 215
+Distanza sample : 55
+Soluzione 1 : 194, 218
+Soluzione 2 : 107, 152
+Sample : 194, 218 == 194, 218
+Distanza sample : 60
+Soluzione 1 : 198, 221
+Soluzione 2 : 103, 148
+Sample : 198, 221 == 198, 221
+Distanza sample : 65
+Soluzione 1 : 202, 224
+Soluzione 2 : 99, 145
+Sample : 202, 224 == 202, 224
+Distanza sample : 70
+Soluzione 1 : 206, 227
+Soluzione 2 : 95, 142
+Sample : 206, 227 == 206, 227
+Distanza sample : 75
+Soluzione 1 : 210, 231
+Soluzione 2 : 91, 139
+Sample : 210, 231 == 210, 231
+Distanza sample : 80
+Soluzione 1 : 214, 234
+Soluzione 2 : 87, 136
+Sample : 214, 234 == 214, 234
+Distanza sample : 85
+Soluzione 1 : 218, 237
+Soluzione 2 : 83, 133
+Sample : 218, 237 == 218, 237
+Distanza sample : 90
+Soluzione 1 : 222, 240
+Soluzione 2 : 79, 130
+Sample : 222, 240 == 222, 240
+Distanza sample : 95
+Soluzione 1 : 226, 243
+Soluzione 2 : 75, 127
+Sample : 226, 243 == 226, 243
+Distanza sample : 100
+Soluzione 1 : 230, 246
+Soluzione 2 : 71, 124
+Sample : 230, 246 == 230, 246
+Distanza sample : 105
+Soluzione 1 : 234, 249
+Soluzione 2 : 67, 121
+Sample : 234, 249 == 234, 249
+Distanza sample : 110
+Soluzione 1 : 238, 252
+Soluzione 2 : 63, 118
+Sample : 238, 252 == 238, 252
+Distanza sample : 115
+Soluzione 1 : 242, 255
+Soluzione 2 : 59, 115
+Sample : 242, 255 == 242, 255
+Distanza sample : 120
+Soluzione 1 : 245, 257
+Soluzione 2 : 55, 112
+Sample : 245, 257 == 245, 257
+Distanza sample : 125
+Soluzione 1 : 250, 261
+Soluzione 2 : 51, 109
+Sample : 250, 261 == 250, 261
+Distanza sample : 130
+Soluzione 1 : 254, 264
+Soluzione 2 : 47, 106
+Sample : 254, 264 == 254, 264
+Distanza sample : 135
+Soluzione 1 : 257, 267
+Soluzione 2 : 43, 102
+Sample : 257, 267 == 257, 267
+Distanza sample : 140
+Soluzione 1 : 262, 270
+Soluzione 2 : 39, 99
+Sample : 262, 270 == 262, 270
+Distanza sample : 145
+Soluzione 1 : 265, 273
+Soluzione 2 : 35, 96
+Sample : 265, 273 == 265, 273
+Distanza sample : 150
+Soluzione 1 : 269, 276
+Soluzione 2 : 31, 93
+Sample : 269, 276 == 269, 276
+Distanza sample : 155
+Soluzione 1 : 273, 279
+Soluzione 2 : 27, 90
+Sample : 273, 279 == 273, 279
+Distanza sample : 160
+Soluzione 1 : 277, 282
+Soluzione 2 : 23, 87
+Sample : 277, 282 == 277, 282
+Distanza sample : 165
+Soluzione 1 : 281, 285
+Soluzione 2 : 19, 84
+Sample : 281, 285 == 281, 285
+Distanza sample : 170
+Soluzione 1 : 285, 288
+Soluzione 2 : 16, 82
+Sample : 285, 288 == 285, 288
+Distanza sample : 175
+Soluzione 1 : 289, 291
+Soluzione 2 : 11, 78
+Sample : 289, 291 == 289, 291
+Distanza sample : 180
+Soluzione 1 : 293, 294
+Soluzione 2 : 7, 75
+Sample : 293, 294 == 293, 294
+Distanza sample : 185
+Soluzione 1 : 297, 297
+Soluzione 2 : 4, 73
+Sample : 297, 297 == 297, 297
+------ n samples 39
+id 3  -  longId 3010301  -  pointLongId 1510186  -  PointId 44
+start Size exit2
+end Size exit0
+
+
+Tratto 151, 186  ->  1441, 769
+Lunghezza : 1415.62
+Distanza sample : 5
+Soluzione 1 : 155, 187
+Soluzione 2 : 146, 182
+Sample : 155, 187 == 155, 187
+Distanza sample : 10
+Soluzione 1 : 159, 188
+Soluzione 2 : 141, 180
+Sample : 159, 188 == 159, 188
+Distanza sample : 15
+Soluzione 1 : 164, 191
+Soluzione 2 : 137, 178
+Sample : 164, 191 == 164, 191
+Distanza sample : 20
+Soluzione 1 : 168, 192
+Soluzione 2 : 132, 176
+Sample : 168, 192 == 168, 192
+Distanza sample : 25
+Soluzione 1 : 173, 195
+Soluzione 2 : 127, 174
+Sample : 173, 195 == 173, 195
+Distanza sample : 30
+Soluzione 1 : 178, 197
+Soluzione 2 : 123, 172
+Sample : 178, 197 == 178, 197
+Distanza sample : 35
+Soluzione 1 : 182, 199
+Soluzione 2 : 118, 170
+Sample : 182, 199 == 182, 199
+Distanza sample : 40
+Soluzione 1 : 187, 201
+Soluzione 2 : 114, 168
+Sample : 187, 201 == 187, 201
+Distanza sample : 45
+Soluzione 1 : 191, 203
+Soluzione 2 : 109, 166
+Sample : 191, 203 == 191, 203
+Distanza sample : 50
+Soluzione 1 : 196, 205
+Soluzione 2 : 105, 164
+Sample : 196, 205 == 196, 205
+Distanza sample : 55
+Soluzione 1 : 200, 207
+Soluzione 2 : 100, 162
+Sample : 200, 207 == 200, 207
+Distanza sample : 60
+Soluzione 1 : 205, 209
+Soluzione 2 : 95, 159
+Sample : 205, 209 == 205, 209
+Distanza sample : 65
+Soluzione 1 : 210, 211
+Soluzione 2 : 91, 158
+Sample : 210, 211 == 210, 211
+Distanza sample : 70
+Soluzione 1 : 214, 213
+Soluzione 2 : 87, 156
+Sample : 214, 213 == 214, 213
+Distanza sample : 75
+Soluzione 1 : 219, 215
+Soluzione 2 : 82, 154
+Sample : 219, 215 == 219, 215
+Distanza sample : 80
+Soluzione 1 : 223, 217
+Soluzione 2 : 78, 152
+Sample : 223, 217 == 223, 217
+Distanza sample : 85
+Soluzione 1 : 228, 220
+Soluzione 2 : 73, 149
+Sample : 228, 220 == 228, 220
+Distanza sample : 90
+Soluzione 1 : 232, 221
+Soluzione 2 : 68, 147
+Sample : 232, 221 == 232, 221
+Distanza sample : 95
+Soluzione 1 : 237, 224
+Soluzione 2 : 64, 145
+Sample : 237, 224 == 237, 224
+Distanza sample : 100
+Soluzione 1 : 242, 226
+Soluzione 2 : 59, 143
+Sample : 242, 226 == 242, 226
+Distanza sample : 105
+Soluzione 1 : 246, 228
+Soluzione 2 : 55, 141
+Sample : 246, 228 == 246, 228
+Distanza sample : 110
+Soluzione 1 : 251, 230
+Soluzione 2 : 50, 139
+Sample : 251, 230 == 251, 230
+Distanza sample : 115
+Soluzione 1 : 255, 232
+Soluzione 2 : 46, 137
+Sample : 255, 232 == 255, 232
+Distanza sample : 120
+Soluzione 1 : 260, 234
+Soluzione 2 : 41, 135
+Sample : 260, 234 == 260, 234
+Distanza sample : 125
+Soluzione 1 : 264, 236
+Soluzione 2 : 36, 133
+Sample : 264, 236 == 264, 236
+Distanza sample : 130
+Soluzione 1 : 269, 238
+Soluzione 2 : 32, 131
+Sample : 269, 238 == 269, 238
+Distanza sample : 135
+Soluzione 1 : 273, 240
+Soluzione 2 : 27, 129
+Sample : 273, 240 == 273, 240
+Distanza sample : 140
+Soluzione 1 : 278, 242
+Soluzione 2 : 23, 127
+Sample : 278, 242 == 278, 242
+Distanza sample : 145
+Soluzione 1 : 282, 244
+Soluzione 2 : 18, 125
+Sample : 282, 244 == 282, 244
+Distanza sample : 150
+Soluzione 1 : 287, 246
+Soluzione 2 : 14, 123
+Sample : 287, 246 == 287, 246
+Distanza sample : 155
+Soluzione 1 : 291, 248
+Soluzione 2 : 9, 121
+Sample : 291, 248 == 291, 248
+Distanza sample : 160
+Soluzione 1 : 296, 250
+Soluzione 2 : 4, 118
+Sample : 296, 250 == 296, 250
+Distanza sample : 165
+Soluzione 1 : 301, 253
+Soluzione 2 : 0, 117
+Sample : 301, 253 == 301, 253
+Distanza sample : 170
+Soluzione 1 : 305, 254
+Soluzione 2 : -3, 116
+Sample : 305, 254 == 305, 254
+Distanza sample : 175
+Soluzione 1 : 310, 257
+Soluzione 2 : -8, 114
+Sample : 310, 257 == 310, 257
+Distanza sample : 180
+Soluzione 1 : 314, 258
+Soluzione 2 : -12, 112
+Sample : 314, 258 == 314, 258
+Distanza sample : 185
+Soluzione 1 : 319, 261
+Soluzione 2 : -17, 110
+Sample : 319, 261 == 319, 261
+Distanza sample : 190
+Soluzione 1 : 323, 262
+Soluzione 2 : -22, 108
+Sample : 323, 262 == 323, 262
+Distanza sample : 195
+Soluzione 1 : 328, 265
+Soluzione 2 : -26, 106
+Sample : 328, 265 == 328, 265
+Distanza sample : 200
+Soluzione 1 : 332, 267
+Soluzione 2 : -31, 103
+Sample : 332, 267 == 332, 267
+Distanza sample : 205
+Soluzione 1 : 337, 269
+Soluzione 2 : -35, 102
+Sample : 337, 269 == 337, 269
+Distanza sample : 210
+Soluzione 1 : 342, 271
+Soluzione 2 : -40, 99
+Sample : 342, 271 == 342, 271
+Distanza sample : 215
+Soluzione 1 : 346, 273
+Soluzione 2 : -44, 98
+Sample : 346, 273 == 346, 273
+Distanza sample : 220
+Soluzione 1 : 351, 275
+Soluzione 2 : -49, 95
+Sample : 351, 275 == 351, 275
+Distanza sample : 225
+Soluzione 1 : 355, 277
+Soluzione 2 : -53, 94
+Sample : 355, 277 == 355, 277
+Distanza sample : 230
+Soluzione 1 : 360, 279
+Soluzione 2 : -58, 91
+Sample : 360, 279 == 360, 279
+Distanza sample : 235
+Soluzione 1 : 364, 281
+Soluzione 2 : -63, 89
+Sample : 364, 281 == 364, 281
+Distanza sample : 240
+Soluzione 1 : 369, 283
+Soluzione 2 : -67, 87
+Sample : 369, 283 == 369, 283
+Distanza sample : 245
+Soluzione 1 : 374, 286
+Soluzione 2 : -72, 85
+Sample : 374, 286 == 374, 286
+Distanza sample : 250
+Soluzione 1 : 378, 287
+Soluzione 2 : -76, 83
+Sample : 378, 287 == 378, 287
+Distanza sample : 255
+Soluzione 1 : 383, 290
+Soluzione 2 : -80, 81
+Sample : 383, 290 == 383, 290
+Distanza sample : 260
+Soluzione 1 : 387, 291
+Soluzione 2 : -85, 79
+Sample : 387, 291 == 387, 291
+Distanza sample : 265
+Soluzione 1 : 392, 294
+Soluzione 2 : -90, 77
+Sample : 392, 294 == 392, 294
+Distanza sample : 270
+Soluzione 1 : 396, 295
+Soluzione 2 : -94, 75
+Sample : 396, 295 == 396, 295
+Distanza sample : 275
+Soluzione 1 : 401, 298
+Soluzione 2 : -99, 73
+Sample : 401, 298 == 401, 298
+Distanza sample : 280
+Soluzione 1 : 406, 300
+Soluzione 2 : -103, 71
+Sample : 406, 300 == 406, 300
+Distanza sample : 285
+Soluzione 1 : 410, 302
+Soluzione 2 : -108, 69
+Sample : 410, 302 == 410, 302
+Distanza sample : 290
+Soluzione 1 : 415, 304
+Soluzione 2 : -112, 67
+Sample : 415, 304 == 415, 304
+Distanza sample : 295
+Soluzione 1 : 419, 306
+Soluzione 2 : -117, 65
+Sample : 419, 306 == 419, 306
+Distanza sample : 300
+Soluzione 1 : 424, 308
+Soluzione 2 : -122, 62
+Sample : 424, 308 == 424, 308
+Distanza sample : 305
+Soluzione 1 : 428, 310
+Soluzione 2 : -126, 61
+Sample : 428, 310 == 428, 310
+Distanza sample : 310
+Soluzione 1 : 433, 312
+Soluzione 2 : -131, 58
+Sample : 433, 312 == 433, 312
+Distanza sample : 315
+Soluzione 1 : 438, 314
+Soluzione 2 : -135, 56
+Sample : 438, 314 == 438, 314
+Distanza sample : 320
+Soluzione 1 : 442, 316
+Soluzione 2 : -140, 54
+Sample : 442, 316 == 442, 316
+Distanza sample : 325
+Soluzione 1 : 446, 318
+Soluzione 2 : -144, 52
+Sample : 446, 318 == 446, 318
+Distanza sample : 330
+Soluzione 1 : 451, 320
+Soluzione 2 : -149, 50
+Sample : 451, 320 == 451, 320
+Distanza sample : 335
+Soluzione 1 : 455, 322
+Soluzione 2 : -154, 48
+Sample : 455, 322 == 455, 322
+Distanza sample : 340
+Soluzione 1 : 460, 324
+Soluzione 2 : -158, 46
+Sample : 460, 324 == 460, 324
+Distanza sample : 345
+Soluzione 1 : 465, 327
+Soluzione 2 : -163, 44
+Sample : 465, 327 == 465, 327
+Distanza sample : 350
+Soluzione 1 : 469, 328
+Soluzione 2 : -167, 42
+Sample : 469, 328 == 469, 328
+Distanza sample : 355
+Soluzione 1 : 474, 331
+Soluzione 2 : -172, 40
+Sample : 474, 331 == 474, 331
+Distanza sample : 360
+Soluzione 1 : 478, 333
+Soluzione 2 : -176, 38
+Sample : 478, 333 == 478, 333
+Distanza sample : 365
+Soluzione 1 : 483, 335
+Soluzione 2 : -181, 36
+Sample : 483, 335 == 483, 335
+Distanza sample : 370
+Soluzione 1 : 487, 337
+Soluzione 2 : -186, 33
+Sample : 487, 337 == 487, 337
+Distanza sample : 375
+Soluzione 1 : 492, 339
+Soluzione 2 : -190, 32
+Sample : 492, 339 == 492, 339
+Distanza sample : 380
+Soluzione 1 : 496, 341
+Soluzione 2 : -195, 29
+Sample : 496, 341 == 496, 341
+Distanza sample : 385
+Soluzione 1 : 501, 343
+Soluzione 2 : -199, 28
+Sample : 501, 343 == 501, 343
+Distanza sample : 390
+Soluzione 1 : 506, 345
+Soluzione 2 : -204, 25
+Sample : 506, 345 == 506, 345
+Distanza sample : 395
+Soluzione 1 : 510, 347
+Soluzione 2 : -208, 23
+Sample : 510, 347 == 510, 347
+Distanza sample : 400
+Soluzione 1 : 515, 349
+Soluzione 2 : -213, 21
+Sample : 515, 349 == 515, 349
+Distanza sample : 405
+Soluzione 1 : 519, 351
+Soluzione 2 : -217, 19
+Sample : 519, 351 == 519, 351
+Distanza sample : 410
+Soluzione 1 : 524, 353
+Soluzione 2 : -222, 17
+Sample : 524, 353 == 524, 353
+Distanza sample : 415
+Soluzione 1 : 528, 355
+Soluzione 2 : -227, 15
+Sample : 528, 355 == 528, 355
+Distanza sample : 420
+Soluzione 1 : 533, 357
+Soluzione 2 : -231, 13
+Sample : 533, 357 == 533, 357
+Distanza sample : 425
+Soluzione 1 : 538, 360
+Soluzione 2 : -236, 11
+Sample : 538, 360 == 538, 360
+Distanza sample : 430
+Soluzione 1 : 542, 361
+Soluzione 2 : -240, 9
+Sample : 542, 361 == 542, 361
+Distanza sample : 435
+Soluzione 1 : 547, 364
+Soluzione 2 : -245, 7
+Sample : 547, 364 == 547, 364
+Distanza sample : 440
+Soluzione 1 : 551, 366
+Soluzione 2 : -249, 5
+Sample : 551, 366 == 551, 366
+Distanza sample : 445
+Soluzione 1 : 556, 368
+Soluzione 2 : -254, 3
+Sample : 556, 368 == 556, 368
+Distanza sample : 450
+Soluzione 1 : 560, 370
+Soluzione 2 : -258, 1
+Sample : 560, 370 == 560, 370
+Distanza sample : 455
+Soluzione 1 : 565, 372
+Soluzione 2 : -263, 0
+Sample : 565, 372 == 565, 372
+Distanza sample : 460
+Soluzione 1 : 570, 374
+Soluzione 2 : -267, -2
+Sample : 570, 374 == 570, 374
+Distanza sample : 465
+Soluzione 1 : 574, 376
+Soluzione 2 : -272, -4
+Sample : 574, 376 == 574, 376
+Distanza sample : 470
+Soluzione 1 : 579, 378
+Soluzione 2 : -276, -6
+Sample : 579, 378 == 579, 378
+Distanza sample : 475
+Soluzione 1 : 583, 380
+Soluzione 2 : -281, -8
+Sample : 583, 380 == 583, 380
+Distanza sample : 480
+Soluzione 1 : 588, 382
+Soluzione 2 : -286, -11
+Sample : 588, 382 == 588, 382
+Distanza sample : 485
+Soluzione 1 : 592, 384
+Soluzione 2 : -290, -13
+Sample : 592, 384 == 592, 384
+Distanza sample : 490
+Soluzione 1 : 597, 386
+Soluzione 2 : -295, -15
+Sample : 597, 386 == 597, 386
+Distanza sample : 495
+Soluzione 1 : 602, 389
+Soluzione 2 : -299, -17
+Sample : 602, 389 == 602, 389
+Distanza sample : 500
+Soluzione 1 : 606, 390
+Soluzione 2 : -304, -19
+Sample : 606, 390 == 606, 390
+Distanza sample : 505
+Soluzione 1 : 611, 393
+Soluzione 2 : -308, -21
+Sample : 611, 393 == 611, 393
+Distanza sample : 510
+Soluzione 1 : 615, 394
+Soluzione 2 : -313, -23
+Sample : 615, 394 == 615, 394
+Distanza sample : 515
+Soluzione 1 : 619, 396
+Soluzione 2 : -318, -25
+Sample : 619, 396 == 619, 396
+Distanza sample : 520
+Soluzione 1 : 624, 399
+Soluzione 2 : -322, -27
+Sample : 624, 399 == 624, 399
+Distanza sample : 525
+Soluzione 1 : 629, 401
+Soluzione 2 : -327, -29
+Sample : 629, 401 == 629, 401
+Distanza sample : 530
+Soluzione 1 : 633, 403
+Soluzione 2 : -331, -31
+Sample : 633, 403 == 633, 403
+Distanza sample : 535
+Soluzione 1 : 638, 405
+Soluzione 2 : -336, -33
+Sample : 638, 405 == 638, 405
+Distanza sample : 540
+Soluzione 1 : 642, 407
+Soluzione 2 : -340, -35
+Sample : 642, 407 == 642, 407
+Distanza sample : 545
+Soluzione 1 : 647, 409
+Soluzione 2 : -345, -37
+Sample : 647, 409 == 647, 409
+Distanza sample : 550
+Soluzione 1 : 651, 411
+Soluzione 2 : -350, -40
+Sample : 651, 411 == 651, 411
+Distanza sample : 555
+Soluzione 1 : 656, 413
+Soluzione 2 : -354, -41
+Sample : 656, 413 == 656, 413
+Distanza sample : 560
+Soluzione 1 : 660, 415
+Soluzione 2 : -359, -44
+Sample : 660, 415 == 660, 415
+Distanza sample : 565
+Soluzione 1 : 665, 417
+Soluzione 2 : -363, -46
+Sample : 665, 417 == 665, 417
+Distanza sample : 570
+Soluzione 1 : 670, 419
+Soluzione 2 : -368, -48
+Sample : 670, 419 == 670, 419
+Distanza sample : 575
+Soluzione 1 : 674, 421
+Soluzione 2 : -372, -50
+Sample : 674, 421 == 674, 421
+Distanza sample : 580
+Soluzione 1 : 679, 423
+Soluzione 2 : -377, -52
+Sample : 679, 423 == 679, 423
+Distanza sample : 585
+Soluzione 1 : 683, 425
+Soluzione 2 : -381, -54
+Sample : 683, 425 == 683, 425
+Distanza sample : 590
+Soluzione 1 : 688, 427
+Soluzione 2 : -386, -56
+Sample : 688, 427 == 688, 427
+Distanza sample : 595
+Soluzione 1 : 692, 429
+Soluzione 2 : -391, -58
+Sample : 692, 429 == 692, 429
+Distanza sample : 600
+Soluzione 1 : 697, 432
+Soluzione 2 : -395, -60
+Sample : 697, 432 == 697, 432
+Distanza sample : 605
+Soluzione 1 : 702, 434
+Soluzione 2 : -400, -62
+Sample : 702, 434 == 702, 434
+Distanza sample : 610
+Soluzione 1 : 706, 436
+Soluzione 2 : -404, -64
+Sample : 706, 436 == 706, 436
+Distanza sample : 615
+Soluzione 1 : 711, 438
+Soluzione 2 : -409, -66
+Sample : 711, 438 == 711, 438
+Distanza sample : 620
+Soluzione 1 : 715, 440
+Soluzione 2 : -413, -68
+Sample : 715, 440 == 715, 440
+Distanza sample : 625
+Soluzione 1 : 720, 442
+Soluzione 2 : -418, -70
+Sample : 720, 442 == 720, 442
+Distanza sample : 630
+Soluzione 1 : 724, 444
+Soluzione 2 : -423, -73
+Sample : 724, 444 == 724, 444
+Distanza sample : 635
+Soluzione 1 : 729, 446
+Soluzione 2 : -427, -74
+Sample : 729, 446 == 729, 446
+Distanza sample : 640
+Soluzione 1 : 734, 448
+Soluzione 2 : -431, -76
+Sample : 734, 448 == 734, 448
+Distanza sample : 645
+Soluzione 1 : 738, 450
+Soluzione 2 : -436, -79
+Sample : 738, 450 == 738, 450
+Distanza sample : 650
+Soluzione 1 : 743, 452
+Soluzione 2 : -440, -80
+Sample : 743, 452 == 743, 452
+Distanza sample : 655
+Soluzione 1 : 747, 454
+Soluzione 2 : -445, -83
+Sample : 747, 454 == 747, 454
+Distanza sample : 660
+Soluzione 1 : 752, 456
+Soluzione 2 : -450, -85
+Sample : 752, 456 == 752, 456
+Distanza sample : 665
+Soluzione 1 : 756, 458
+Soluzione 2 : -454, -87
+Sample : 756, 458 == 756, 458
+Distanza sample : 670
+Soluzione 1 : 761, 460
+Soluzione 2 : -459, -89
+Sample : 761, 460 == 761, 460
+Distanza sample : 675
+Soluzione 1 : 766, 463
+Soluzione 2 : -463, -91
+Sample : 766, 463 == 766, 463
+Distanza sample : 680
+Soluzione 1 : 770, 464
+Soluzione 2 : -468, -93
+Sample : 770, 464 == 770, 464
+Distanza sample : 685
+Soluzione 1 : 775, 467
+Soluzione 2 : -472, -95
+Sample : 775, 467 == 775, 467
+Distanza sample : 690
+Soluzione 1 : 779, 469
+Soluzione 2 : -477, -97
+Sample : 779, 469 == 779, 469
+Distanza sample : 695
+Soluzione 1 : 784, 471
+Soluzione 2 : -482, -99
+Sample : 784, 471 == 784, 471
+Distanza sample : 700
+Soluzione 1 : 788, 473
+Soluzione 2 : -486, -101
+Sample : 788, 473 == 788, 473
+Distanza sample : 705
+Soluzione 1 : 793, 475
+Soluzione 2 : -491, -103
+Sample : 793, 475 == 793, 475
+Distanza sample : 710
+Soluzione 1 : 797, 477
+Soluzione 2 : -495, -105
+Sample : 797, 477 == 797, 477
+Distanza sample : 715
+Soluzione 1 : 802, 479
+Soluzione 2 : -500, -107
+Sample : 802, 479 == 802, 479
+Distanza sample : 720
+Soluzione 1 : 806, 481
+Soluzione 2 : -504, -109
+Sample : 806, 481 == 806, 481
+Distanza sample : 725
+Soluzione 1 : 811, 483
+Soluzione 2 : -509, -112
+Sample : 811, 483 == 811, 483
+Distanza sample : 730
+Soluzione 1 : 815, 485
+Soluzione 2 : -514, -114
+Sample : 815, 485 == 815, 485
+Distanza sample : 735
+Soluzione 1 : 820, 487
+Soluzione 2 : -518, -116
+Sample : 820, 487 == 820, 487
+Distanza sample : 740
+Soluzione 1 : 824, 489
+Soluzione 2 : -523, -118
+Sample : 824, 489 == 824, 489
+Distanza sample : 745
+Soluzione 1 : 829, 491
+Soluzione 2 : -527, -120
+Sample : 829, 491 == 829, 491
+Distanza sample : 750
+Soluzione 1 : 834, 493
+Soluzione 2 : -532, -122
+Sample : 834, 493 == 834, 493
+Distanza sample : 755
+Soluzione 1 : 838, 495
+Soluzione 2 : -536, -124
+Sample : 838, 495 == 838, 495
+Distanza sample : 760
+Soluzione 1 : 843, 497
+Soluzione 2 : -541, -126
+Sample : 843, 497 == 843, 497
+Distanza sample : 765
+Soluzione 1 : 847, 499
+Soluzione 2 : -545, -128
+Sample : 847, 499 == 847, 499
+Distanza sample : 770
+Soluzione 1 : 852, 502
+Soluzione 2 : -550, -130
+Sample : 852, 502 == 852, 502
+Distanza sample : 775
+Soluzione 1 : 856, 503
+Soluzione 2 : -555, -132
+Sample : 856, 503 == 856, 503
+Distanza sample : 780
+Soluzione 1 : 861, 506
+Soluzione 2 : -559, -134
+Sample : 861, 506 == 861, 506
+Distanza sample : 785
+Soluzione 1 : 866, 508
+Soluzione 2 : -564, -136
+Sample : 866, 508 == 866, 508
+Distanza sample : 790
+Soluzione 1 : 870, 510
+Soluzione 2 : -568, -138
+Sample : 870, 510 == 870, 510
+Distanza sample : 795
+Soluzione 1 : 875, 512
+Soluzione 2 : -573, -140
+Sample : 875, 512 == 875, 512
+Distanza sample : 800
+Soluzione 1 : 879, 514
+Soluzione 2 : -577, -142
+Sample : 879, 514 == 879, 514
+Distanza sample : 805
+Soluzione 1 : 884, 516
+Soluzione 2 : -582, -145
+Sample : 884, 516 == 884, 516
+Distanza sample : 810
+Soluzione 1 : 888, 518
+Soluzione 2 : -587, -147
+Sample : 888, 518 == 888, 518
+Distanza sample : 815
+Soluzione 1 : 893, 520
+Soluzione 2 : -591, -149
+Sample : 893, 520 == 893, 520
+Distanza sample : 820
+Soluzione 1 : 898, 522
+Soluzione 2 : -596, -151
+Sample : 898, 522 == 898, 522
+Distanza sample : 825
+Soluzione 1 : 902, 524
+Soluzione 2 : -600, -153
+Sample : 902, 524 == 902, 524
+Distanza sample : 830
+Soluzione 1 : 907, 526
+Soluzione 2 : -604, -154
+Sample : 907, 526 == 907, 526
+Distanza sample : 835
+Soluzione 1 : 911, 528
+Soluzione 2 : -609, -157
+Sample : 911, 528 == 911, 528
+Distanza sample : 840
+Soluzione 1 : 916, 530
+Soluzione 2 : -614, -159
+Sample : 916, 530 == 916, 530
+Distanza sample : 845
+Soluzione 1 : 920, 532
+Soluzione 2 : -618, -161
+Sample : 920, 532 == 920, 532
+Distanza sample : 850
+Soluzione 1 : 925, 535
+Soluzione 2 : -623, -163
+Sample : 925, 535 == 925, 535
+Distanza sample : 855
+Soluzione 1 : 930, 537
+Soluzione 2 : -627, -165
+Sample : 930, 537 == 930, 537
+Distanza sample : 860
+Soluzione 1 : 934, 539
+Soluzione 2 : -632, -167
+Sample : 934, 539 == 934, 539
+Distanza sample : 865
+Soluzione 1 : 939, 541
+Soluzione 2 : -636, -169
+Sample : 939, 541 == 939, 541
+Distanza sample : 870
+Soluzione 1 : 943, 543
+Soluzione 2 : -641, -171
+Sample : 943, 543 == 943, 543
+Distanza sample : 875
+Soluzione 1 : 948, 545
+Soluzione 2 : -646, -173
+Sample : 948, 545 == 948, 545
+Distanza sample : 880
+Soluzione 1 : 952, 547
+Soluzione 2 : -650, -175
+Sample : 952, 547 == 952, 547
+Distanza sample : 885
+Soluzione 1 : 957, 549
+Soluzione 2 : -655, -178
+Sample : 957, 549 == 957, 549
+Distanza sample : 890
+Soluzione 1 : 962, 551
+Soluzione 2 : -659, -179
+Sample : 962, 551 == 962, 551
+Distanza sample : 895
+Soluzione 1 : 966, 553
+Soluzione 2 : -664, -182
+Sample : 966, 553 == 966, 553
+Distanza sample : 900
+Soluzione 1 : 970, 555
+Soluzione 2 : -668, -183
+Sample : 970, 555 == 970, 555
+Distanza sample : 905
+Soluzione 1 : 975, 557
+Soluzione 2 : -673, -186
+Sample : 975, 557 == 975, 557
+Distanza sample : 910
+Soluzione 1 : 979, 559
+Soluzione 2 : -678, -188
+Sample : 979, 559 == 979, 559
+Distanza sample : 915
+Soluzione 1 : 984, 561
+Soluzione 2 : -682, -190
+Sample : 984, 561 == 984, 561
+Distanza sample : 920
+Soluzione 1 : 988, 563
+Soluzione 2 : -687, -192
+Sample : 988, 563 == 988, 563
+Distanza sample : 925
+Soluzione 1 : 993, 565
+Soluzione 2 : -691, -194
+Sample : 993, 565 == 993, 565
+Distanza sample : 930
+Soluzione 1 : 998, 568
+Soluzione 2 : -696, -196
+Sample : 998, 568 == 998, 568
+Distanza sample : 935
+Soluzione 1 : 1002, 569
+Soluzione 2 : -700, -198
+Sample : 1002, 569 == 1002, 569
+Distanza sample : 940
+Soluzione 1 : 1007, 572
+Soluzione 2 : -705, -200
+Sample : 1007, 572 == 1007, 572
+Distanza sample : 945
+Soluzione 1 : 1011, 573
+Soluzione 2 : -709, -202
+Sample : 1011, 573 == 1011, 573
+Distanza sample : 950
+Soluzione 1 : 1016, 576
+Soluzione 2 : -714, -204
+Sample : 1016, 576 == 1016, 576
+Distanza sample : 955
+Soluzione 1 : 1020, 577
+Soluzione 2 : -719, -206
+Sample : 1020, 577 == 1020, 577
+Distanza sample : 960
+Soluzione 1 : 1025, 580
+Soluzione 2 : -723, -208
+Sample : 1025, 580 == 1025, 580
+Distanza sample : 965
+Soluzione 1 : 1030, 582
+Soluzione 2 : -728, -211
+Sample : 1030, 582 == 1030, 582
+Distanza sample : 970
+Soluzione 1 : 1034, 584
+Soluzione 2 : -732, -212
+Sample : 1034, 584 == 1034, 584
+Distanza sample : 975
+Soluzione 1 : 1039, 586
+Soluzione 2 : -737, -215
+Sample : 1039, 586 == 1039, 586
+Distanza sample : 980
+Soluzione 1 : 1043, 588
+Soluzione 2 : -741, -216
+Sample : 1043, 588 == 1043, 588
+Distanza sample : 985
+Soluzione 1 : 1048, 590
+Soluzione 2 : -746, -219
+Sample : 1048, 590 == 1048, 590
+Distanza sample : 990
+Soluzione 1 : 1052, 592
+Soluzione 2 : -751, -221
+Sample : 1052, 592 == 1052, 592
+Distanza sample : 995
+Soluzione 1 : 1057, 594
+Soluzione 2 : -755, -223
+Sample : 1057, 594 == 1057, 594
+Distanza sample : 1000
+Soluzione 1 : 1062, 596
+Soluzione 2 : -760, -225
+Sample : 1062, 596 == 1062, 596
+Distanza sample : 1005
+Soluzione 1 : 1066, 598
+Soluzione 2 : -764, -227
+Sample : 1066, 598 == 1066, 598
+Distanza sample : 1010
+Soluzione 1 : 1071, 601
+Soluzione 2 : -769, -229
+Sample : 1071, 601 == 1071, 601
+Distanza sample : 1015
+Soluzione 1 : 1075, 602
+Soluzione 2 : -773, -231
+Sample : 1075, 602 == 1075, 602
+Distanza sample : 1020
+Soluzione 1 : 1080, 605
+Soluzione 2 : -778, -233
+Sample : 1080, 605 == 1080, 605
+Distanza sample : 1025
+Soluzione 1 : 1084, 606
+Soluzione 2 : -782, -235
+Sample : 1084, 606 == 1084, 606
+Distanza sample : 1030
+Soluzione 1 : 1089, 609
+Soluzione 2 : -787, -237
+Sample : 1089, 609 == 1089, 609
+Distanza sample : 1035
+Soluzione 1 : 1094, 611
+Soluzione 2 : -791, -239
+Sample : 1094, 611 == 1094, 611
+Distanza sample : 1040
+Soluzione 1 : 1098, 613
+Soluzione 2 : -796, -241
+Sample : 1098, 613 == 1098, 613
+Distanza sample : 1045
+Soluzione 1 : 1103, 615
+Soluzione 2 : -800, -243
+Sample : 1103, 615 == 1103, 615
+Distanza sample : 1050
+Soluzione 1 : 1107, 617
+Soluzione 2 : -805, -245
+Sample : 1107, 617 == 1107, 617
+Distanza sample : 1055
+Soluzione 1 : 1112, 619
+Soluzione 2 : -810, -248
+Sample : 1112, 619 == 1112, 619
+Distanza sample : 1060
+Soluzione 1 : 1116, 621
+Soluzione 2 : -814, -249
+Sample : 1116, 621 == 1116, 621
+Distanza sample : 1065
+Soluzione 1 : 1121, 623
+Soluzione 2 : -819, -252
+Sample : 1121, 623 == 1121, 623
+Distanza sample : 1070
+Soluzione 1 : 1126, 625
+Soluzione 2 : -823, -253
+Sample : 1126, 625 == 1126, 625
+Distanza sample : 1075
+Soluzione 1 : 1130, 627
+Soluzione 2 : -828, -256
+Sample : 1130, 627 == 1130, 627
+Distanza sample : 1080
+Soluzione 1 : 1135, 629
+Soluzione 2 : -832, -258
+Sample : 1135, 629 == 1135, 629
+Distanza sample : 1085
+Soluzione 1 : 1139, 631
+Soluzione 2 : -837, -260
+Sample : 1139, 631 == 1139, 631
+Distanza sample : 1090
+Soluzione 1 : 1143, 633
+Soluzione 2 : -842, -262
+Sample : 1143, 633 == 1143, 633
+Distanza sample : 1095
+Soluzione 1 : 1148, 635
+Soluzione 2 : -846, -264
+Sample : 1148, 635 == 1148, 635
+Distanza sample : 1100
+Soluzione 1 : 1153, 638
+Soluzione 2 : -851, -266
+Sample : 1153, 638 == 1153, 638
+Distanza sample : 1105
+Soluzione 1 : 1157, 639
+Soluzione 2 : -855, -268
+Sample : 1157, 639 == 1157, 639
+Distanza sample : 1110
+Soluzione 1 : 1162, 642
+Soluzione 2 : -860, -270
+Sample : 1162, 642 == 1162, 642
+Distanza sample : 1115
+Soluzione 1 : 1166, 643
+Soluzione 2 : -864, -272
+Sample : 1166, 643 == 1166, 643
+Distanza sample : 1120
+Soluzione 1 : 1171, 646
+Soluzione 2 : -869, -274
+Sample : 1171, 646 == 1171, 646
+Distanza sample : 1125
+Soluzione 1 : 1175, 648
+Soluzione 2 : -873, -276
+Sample : 1175, 648 == 1175, 648
+Distanza sample : 1130
+Soluzione 1 : 1180, 650
+Soluzione 2 : -878, -278
+Sample : 1180, 650 == 1180, 650
+Distanza sample : 1135
+Soluzione 1 : 1184, 652
+Soluzione 2 : -883, -281
+Sample : 1184, 652 == 1184, 652
+Distanza sample : 1140
+Soluzione 1 : 1189, 654
+Soluzione 2 : -887, -282
+Sample : 1189, 654 == 1189, 654
+Distanza sample : 1145
+Soluzione 1 : 1194, 656
+Soluzione 2 : -892, -285
+Sample : 1194, 656 == 1194, 656
+Distanza sample : 1150
+Soluzione 1 : 1198, 658
+Soluzione 2 : -896, -286
+Sample : 1198, 658 == 1198, 658
+Distanza sample : 1155
+Soluzione 1 : 1203, 660
+Soluzione 2 : -901, -289
+Sample : 1203, 660 == 1203, 660
+Distanza sample : 1160
+Soluzione 1 : 1207, 662
+Soluzione 2 : -905, -291
+Sample : 1207, 662 == 1207, 662
+Distanza sample : 1165
+Soluzione 1 : 1212, 664
+Soluzione 2 : -910, -293
+Sample : 1212, 664 == 1212, 664
+Distanza sample : 1170
+Soluzione 1 : 1216, 666
+Soluzione 2 : -915, -295
+Sample : 1216, 666 == 1216, 666
+Distanza sample : 1175
+Soluzione 1 : 1221, 668
+Soluzione 2 : -919, -297
+Sample : 1221, 668 == 1221, 668
+Distanza sample : 1180
+Soluzione 1 : 1226, 671
+Soluzione 2 : -924, -299
+Sample : 1226, 671 == 1226, 671
+Distanza sample : 1185
+Soluzione 1 : 1230, 672
+Soluzione 2 : -928, -301
+Sample : 1230, 672 == 1230, 672
+Distanza sample : 1190
+Soluzione 1 : 1235, 675
+Soluzione 2 : -933, -303
+Sample : 1235, 675 == 1235, 675
+Distanza sample : 1195
+Soluzione 1 : 1239, 676
+Soluzione 2 : -937, -305
+Sample : 1239, 676 == 1239, 676
+Distanza sample : 1200
+Soluzione 1 : 1244, 679
+Soluzione 2 : -942, -307
+Sample : 1244, 679 == 1244, 679
+Distanza sample : 1205
+Soluzione 1 : 1248, 681
+Soluzione 2 : -947, -309
+Sample : 1248, 681 == 1248, 681
+Distanza sample : 1210
+Soluzione 1 : 1253, 683
+Soluzione 2 : -951, -311
+Sample : 1253, 683 == 1253, 683
+Distanza sample : 1215
+Soluzione 1 : 1258, 685
+Soluzione 2 : -955, -313
+Sample : 1258, 685 == 1258, 685
+Distanza sample : 1220
+Soluzione 1 : 1262, 687
+Soluzione 2 : -960, -315
+Sample : 1262, 687 == 1262, 687
+Distanza sample : 1225
+Soluzione 1 : 1267, 689
+Soluzione 2 : -964, -317
+Sample : 1267, 689 == 1267, 689
+Distanza sample : 1230
+Soluzione 1 : 1271, 691
+Soluzione 2 : -969, -319
+Sample : 1271, 691 == 1271, 691
+Distanza sample : 1235
+Soluzione 1 : 1276, 693
+Soluzione 2 : -974, -322
+Sample : 1276, 693 == 1276, 693
+Distanza sample : 1240
+Soluzione 1 : 1280, 695
+Soluzione 2 : -978, -323
+Sample : 1280, 695 == 1280, 695
+Distanza sample : 1245
+Soluzione 1 : 1285, 697
+Soluzione 2 : -983, -326
+Sample : 1285, 697 == 1285, 697
+Distanza sample : 1250
+Soluzione 1 : 1290, 700
+Soluzione 2 : -987, -328
+Sample : 1290, 700 == 1290, 700
+Distanza sample : 1255
+Soluzione 1 : 1294, 701
+Soluzione 2 : -992, -330
+Sample : 1294, 701 == 1294, 701
+Distanza sample : 1260
+Soluzione 1 : 1299, 704
+Soluzione 2 : -996, -332
+Sample : 1299, 704 == 1299, 704
+Distanza sample : 1265
+Soluzione 1 : 1303, 705
+Soluzione 2 : -1001, -334
+Sample : 1303, 705 == 1303, 705
+Distanza sample : 1270
+Soluzione 1 : 1308, 708
+Soluzione 2 : -1006, -336
+Sample : 1308, 708 == 1308, 708
+Distanza sample : 1275
+Soluzione 1 : 1312, 709
+Soluzione 2 : -1010, -338
+Sample : 1312, 709 == 1312, 709
+Distanza sample : 1280
+Soluzione 1 : 1317, 712
+Soluzione 2 : -1015, -340
+Sample : 1317, 712 == 1317, 712
+Distanza sample : 1285
+Soluzione 1 : 1321, 714
+Soluzione 2 : -1019, -342
+Sample : 1321, 714 == 1321, 714
+Distanza sample : 1290
+Soluzione 1 : 1326, 716
+Soluzione 2 : -1024, -344
+Sample : 1326, 716 == 1326, 716
+Distanza sample : 1295
+Soluzione 1 : 1330, 718
+Soluzione 2 : -1028, -346
+Sample : 1330, 718 == 1330, 718
+Distanza sample : 1300
+Soluzione 1 : 1335, 720
+Soluzione 2 : -1033, -348
+Sample : 1335, 720 == 1335, 720
+Distanza sample : 1305
+Soluzione 1 : 1339, 722
+Soluzione 2 : -1037, -350
+Sample : 1339, 722 == 1339, 722
+Distanza sample : 1310
+Soluzione 1 : 1344, 724
+Soluzione 2 : -1042, -352
+Sample : 1344, 724 == 1344, 724
+Distanza sample : 1315
+Soluzione 1 : 1348, 726
+Soluzione 2 : -1047, -355
+Sample : 1348, 726 == 1348, 726
+Distanza sample : 1320
+Soluzione 1 : 1353, 728
+Soluzione 2 : -1051, -356
+Sample : 1353, 728 == 1353, 728
+Distanza sample : 1325
+Soluzione 1 : 1358, 730
+Soluzione 2 : -1056, -359
+Sample : 1358, 730 == 1358, 730
+Distanza sample : 1330
+Soluzione 1 : 1362, 732
+Soluzione 2 : -1060, -361
+Sample : 1362, 732 == 1362, 732
+Distanza sample : 1335
+Soluzione 1 : 1367, 734
+Soluzione 2 : -1065, -363
+Sample : 1367, 734 == 1367, 734
+Distanza sample : 1340
+Soluzione 1 : 1371, 736
+Soluzione 2 : -1069, -365
+Sample : 1371, 736 == 1371, 736
+Distanza sample : 1345
+Soluzione 1 : 1376, 738
+Soluzione 2 : -1074, -367
+Sample : 1376, 738 == 1376, 738
+Distanza sample : 1350
+Soluzione 1 : 1380, 740
+Soluzione 2 : -1079, -369
+Sample : 1380, 740 == 1380, 740
+Distanza sample : 1355
+Soluzione 1 : 1385, 742
+Soluzione 2 : -1083, -371
+Sample : 1385, 742 == 1385, 742
+Distanza sample : 1360
+Soluzione 1 : 1390, 745
+Soluzione 2 : -1088, -373
+Sample : 1390, 745 == 1390, 745
+Distanza sample : 1365
+Soluzione 1 : 1394, 747
+Soluzione 2 : -1092, -375
+Sample : 1394, 747 == 1394, 747
+Distanza sample : 1370
+Soluzione 1 : 1399, 749
+Soluzione 2 : -1097, -377
+Sample : 1399, 749 == 1399, 749
+Distanza sample : 1375
+Soluzione 1 : 1403, 751
+Soluzione 2 : -1101, -379
+Sample : 1403, 751 == 1403, 751
+Distanza sample : 1380
+Soluzione 1 : 1408, 753
+Soluzione 2 : -1106, -381
+Sample : 1408, 753 == 1408, 753
+Distanza sample : 1385
+Soluzione 1 : 1412, 755
+Soluzione 2 : -1111, -384
+Sample : 1412, 755 == 1412, 755
+Distanza sample : 1390
+Soluzione 1 : 1417, 757
+Soluzione 2 : -1115, -385
+Sample : 1417, 757 == 1417, 757
+Distanza sample : 1395
+Soluzione 1 : 1422, 759
+Soluzione 2 : -1120, -388
+Sample : 1422, 759 == 1422, 759
+Distanza sample : 1400
+Soluzione 1 : 1426, 761
+Soluzione 2 : -1124, -389
+Sample : 1426, 761 == 1426, 761
+Distanza sample : 1405
+Soluzione 1 : 1431, 763
+Soluzione 2 : -1128, -391
+Sample : 1431, 763 == 1431, 763
+Distanza sample : 1410
+Soluzione 1 : 1435, 765
+Soluzione 2 : -1133, -394
+Sample : 1435, 765 == 1435, 765
+Distanza sample : 1415
+Soluzione 1 : 1440, 767
+Soluzione 2 : -1138, -396
+Sample : 1440, 767 == 1440, 767
+------ n samples 285
+BOOOOOOOOOOM 
+NO SKIP - id: 44 -> 151,186 1 - id:45 -> 1441,769 1
+V 46  start (151, 186) -2 - end (1441, 769) -1
+(pathfinder) x = 72
+(pathfinder) y = 643
+0 (pathfinder) encodedCoord = 720643
+(pathfinder) x = 306
+(pathfinder) y = 412
+1 (pathfinder) encodedCoord = 3060412
+(pathfinder) x = 72
+(pathfinder) y = 643
+0 (pathfinder) encodedCoord = 720643
+(pathfinder) x = 64
+(pathfinder) y = 780
+2 (pathfinder) encodedCoord = 640780
+(pathfinder) x = 301
+(pathfinder) y = 301
+3 (pathfinder) encodedCoord = 3010301
+(pathfinder) x = 390
+(pathfinder) y = 231
+4 (pathfinder) encodedCoord = 3900231
+(pathfinder) x = 301
+(pathfinder) y = 301
+3 (pathfinder) encodedCoord = 3010301
+(pathfinder) x = 306
+(pathfinder) y = 403
+5 (pathfinder) encodedCoord = 3060403
+(pathfinder) x = 487
+(pathfinder) y = 125
+7 (pathfinder) encodedCoord = 4870125
+(pathfinder) x = 733
+(pathfinder) y = 135
+8 (pathfinder) encodedCoord = 7330135
+(pathfinder) x = 487
+(pathfinder) y = 125
+7 (pathfinder) encodedCoord = 4870125
+(pathfinder) x = 390
+(pathfinder) y = 231
+4 (pathfinder) encodedCoord = 3900231
+(pathfinder) x = 487
+(pathfinder) y = 125
+7 (pathfinder) encodedCoord = 4870125
+(pathfinder) x = 741
+(pathfinder) y = 133
+9 (pathfinder) encodedCoord = 7410133
+(pathfinder) x = 306
+(pathfinder) y = 412
+1 (pathfinder) encodedCoord = 3060412
+(pathfinder) x = 306
+(pathfinder) y = 403
+5 (pathfinder) encodedCoord = 3060403
+(pathfinder) x = 306
+(pathfinder) y = 412
+1 (pathfinder) encodedCoord = 3060412
+(pathfinder) x = 352
+(pathfinder) y = 458
+10 (pathfinder) encodedCoord = 3520458
+(pathfinder) x = 306
+(pathfinder) y = 412
+1 (pathfinder) encodedCoord = 3060412
+(pathfinder) x = 72
+(pathfinder) y = 643
+0 (pathfinder) encodedCoord = 720643
+(pathfinder) x = 306
+(pathfinder) y = 403
+5 (pathfinder) encodedCoord = 3060403
+(pathfinder) x = 560
+(pathfinder) y = 379
+11 (pathfinder) encodedCoord = 5600379
+(pathfinder) x = 306
+(pathfinder) y = 403
+5 (pathfinder) encodedCoord = 3060403
+(pathfinder) x = 306
+(pathfinder) y = 412
+1 (pathfinder) encodedCoord = 3060412
+(pathfinder) x = 306
+(pathfinder) y = 403
+5 (pathfinder) encodedCoord = 3060403
+(pathfinder) x = 301
+(pathfinder) y = 301
+3 (pathfinder) encodedCoord = 3010301
+(pathfinder) x = 352
+(pathfinder) y = 458
+10 (pathfinder) encodedCoord = 3520458
+(pathfinder) x = 443
+(pathfinder) y = 539
+12 (pathfinder) encodedCoord = 4430539
+(pathfinder) x = 352
+(pathfinder) y = 458
+10 (pathfinder) encodedCoord = 3520458
+(pathfinder) x = 306
+(pathfinder) y = 412
+1 (pathfinder) encodedCoord = 3060412
+(pathfinder) x = 390
+(pathfinder) y = 231
+4 (pathfinder) encodedCoord = 3900231
+(pathfinder) x = 525
+(pathfinder) y = 236
+13 (pathfinder) encodedCoord = 5250236
+(pathfinder) x = 390
+(pathfinder) y = 231
+4 (pathfinder) encodedCoord = 3900231
+(pathfinder) x = 301
+(pathfinder) y = 301
+3 (pathfinder) encodedCoord = 3010301
+(pathfinder) x = 390
+(pathfinder) y = 231
+4 (pathfinder) encodedCoord = 3900231
+(pathfinder) x = 487
+(pathfinder) y = 125
+7 (pathfinder) encodedCoord = 4870125
+(pathfinder) x = 488
+(pathfinder) y = 701
+14 (pathfinder) encodedCoord = 4880701
+(pathfinder) x = 546
+(pathfinder) y = 772
+15 (pathfinder) encodedCoord = 5460772
+(pathfinder) x = 488
+(pathfinder) y = 701
+14 (pathfinder) encodedCoord = 4880701
+(pathfinder) x = 348
+(pathfinder) y = 785
+16 (pathfinder) encodedCoord = 3480785
+(pathfinder) x = 488
+(pathfinder) y = 701
+14 (pathfinder) encodedCoord = 4880701
+(pathfinder) x = 443
+(pathfinder) y = 539
+12 (pathfinder) encodedCoord = 4430539
+(pathfinder) x = 560
+(pathfinder) y = 379
+11 (pathfinder) encodedCoord = 5600379
+(pathfinder) x = 665
+(pathfinder) y = 337
+17 (pathfinder) encodedCoord = 6650337
+(pathfinder) x = 560
+(pathfinder) y = 379
+11 (pathfinder) encodedCoord = 5600379
+(pathfinder) x = 628
+(pathfinder) y = 413
+18 (pathfinder) encodedCoord = 6280413
+(pathfinder) x = 560
+(pathfinder) y = 379
+11 (pathfinder) encodedCoord = 5600379
+(pathfinder) x = 306
+(pathfinder) y = 403
+5 (pathfinder) encodedCoord = 3060403
+(pathfinder) x = 525
+(pathfinder) y = 236
+13 (pathfinder) encodedCoord = 5250236
+(pathfinder) x = 722
+(pathfinder) y = 307
+19 (pathfinder) encodedCoord = 7220307
+(pathfinder) x = 525
+(pathfinder) y = 236
+13 (pathfinder) encodedCoord = 5250236
+(pathfinder) x = 390
+(pathfinder) y = 231
+4 (pathfinder) encodedCoord = 3900231
+(pathfinder) x = 525
+(pathfinder) y = 236
+13 (pathfinder) encodedCoord = 5250236
+(pathfinder) x = 733
+(pathfinder) y = 135
+8 (pathfinder) encodedCoord = 7330135
+(pathfinder) x = 443
+(pathfinder) y = 539
+12 (pathfinder) encodedCoord = 4430539
+(pathfinder) x = 749
+(pathfinder) y = 534
+20 (pathfinder) encodedCoord = 7490534
+(pathfinder) x = 443
+(pathfinder) y = 539
+12 (pathfinder) encodedCoord = 4430539
+(pathfinder) x = 488
+(pathfinder) y = 701
+14 (pathfinder) encodedCoord = 4880701
+(pathfinder) x = 443
+(pathfinder) y = 539
+12 (pathfinder) encodedCoord = 4430539
+(pathfinder) x = 352
+(pathfinder) y = 458
+10 (pathfinder) encodedCoord = 3520458
+(pathfinder) x = 546
+(pathfinder) y = 772
+15 (pathfinder) encodedCoord = 5460772
+(pathfinder) x = 571
+(pathfinder) y = 833
+21 (pathfinder) encodedCoord = 5710833
+(pathfinder) x = 546
+(pathfinder) y = 772
+15 (pathfinder) encodedCoord = 5460772
+(pathfinder) x = 488
+(pathfinder) y = 701
+14 (pathfinder) encodedCoord = 4880701
+(pathfinder) x = 546
+(pathfinder) y = 772
+15 (pathfinder) encodedCoord = 5460772
+(pathfinder) x = 781
+(pathfinder) y = 537
+22 (pathfinder) encodedCoord = 7810537
+(pathfinder) x = 571
+(pathfinder) y = 833
+21 (pathfinder) encodedCoord = 5710833
+(pathfinder) x = 778
+(pathfinder) y = 832
+23 (pathfinder) encodedCoord = 7780832
+(pathfinder) x = 571
+(pathfinder) y = 833
+21 (pathfinder) encodedCoord = 5710833
+(pathfinder) x = 272
+(pathfinder) y = 859
+24 (pathfinder) encodedCoord = 2720859
+(pathfinder) x = 571
+(pathfinder) y = 833
+21 (pathfinder) encodedCoord = 5710833
+(pathfinder) x = 546
+(pathfinder) y = 772
+15 (pathfinder) encodedCoord = 5460772
+(pathfinder) x = 919
+(pathfinder) y = 315
+25 (pathfinder) encodedCoord = 9190315
+(pathfinder) x = 955
+(pathfinder) y = 360
+26 (pathfinder) encodedCoord = 9550360
+(pathfinder) x = 919
+(pathfinder) y = 315
+25 (pathfinder) encodedCoord = 9190315
+(pathfinder) x = 857
+(pathfinder) y = 330
+27 (pathfinder) encodedCoord = 8570330
+(pathfinder) x = 919
+(pathfinder) y = 315
+25 (pathfinder) encodedCoord = 9190315
+(pathfinder) x = 831
+(pathfinder) y = 167
+28 (pathfinder) encodedCoord = 8310167
+(pathfinder) x = 778
+(pathfinder) y = 832
+23 (pathfinder) encodedCoord = 7780832
+(pathfinder) x = 1047
+(pathfinder) y = 809
+29 (pathfinder) encodedCoord = 10470809
+(pathfinder) x = 778
+(pathfinder) y = 832
+23 (pathfinder) encodedCoord = 7780832
+(pathfinder) x = 571
+(pathfinder) y = 833
+21 (pathfinder) encodedCoord = 5710833
+(pathfinder) x = 778
+(pathfinder) y = 832
+23 (pathfinder) encodedCoord = 7780832
+(pathfinder) x = 783
+(pathfinder) y = 540
+30 (pathfinder) encodedCoord = 7830540
+(pathfinder) x = 951
+(pathfinder) y = 362
+31 (pathfinder) encodedCoord = 9510362
+(pathfinder) x = 955
+(pathfinder) y = 360
+26 (pathfinder) encodedCoord = 9550360
+(pathfinder) x = 951
+(pathfinder) y = 362
+31 (pathfinder) encodedCoord = 9510362
+(pathfinder) x = 784
+(pathfinder) y = 532
+32 (pathfinder) encodedCoord = 7840532
+(pathfinder) x = 951
+(pathfinder) y = 362
+31 (pathfinder) encodedCoord = 9510362
+(pathfinder) x = 857
+(pathfinder) y = 330
+27 (pathfinder) encodedCoord = 8570330
+(pathfinder) x = 955
+(pathfinder) y = 360
+26 (pathfinder) encodedCoord = 9550360
+(pathfinder) x = 1118
+(pathfinder) y = 333
+33 (pathfinder) encodedCoord = 11180333
+(pathfinder) x = 955
+(pathfinder) y = 360
+26 (pathfinder) encodedCoord = 9550360
+(pathfinder) x = 951
+(pathfinder) y = 362
+31 (pathfinder) encodedCoord = 9510362
+(pathfinder) x = 955
+(pathfinder) y = 360
+26 (pathfinder) encodedCoord = 9550360
+(pathfinder) x = 919
+(pathfinder) y = 315
+25 (pathfinder) encodedCoord = 9190315
+(pathfinder) x = 1047
+(pathfinder) y = 809
+29 (pathfinder) encodedCoord = 10470809
+(pathfinder) x = 1218
+(pathfinder) y = 718
+34 (pathfinder) encodedCoord = 12180718
+(pathfinder) x = 1047
+(pathfinder) y = 809
+29 (pathfinder) encodedCoord = 10470809
+(pathfinder) x = 778
+(pathfinder) y = 832
+23 (pathfinder) encodedCoord = 7780832
+(pathfinder) x = 1047
+(pathfinder) y = 809
+29 (pathfinder) encodedCoord = 10470809
+(pathfinder) x = 783
+(pathfinder) y = 540
+30 (pathfinder) encodedCoord = 7830540
+(pathfinder) x = 1150
+(pathfinder) y = 150
+35 (pathfinder) encodedCoord = 11500150
+(pathfinder) x = 1245
+(pathfinder) y = 254
+36 (pathfinder) encodedCoord = 12450254
+(pathfinder) x = 1150
+(pathfinder) y = 150
+35 (pathfinder) encodedCoord = 11500150
+(pathfinder) x = 855
+(pathfinder) y = 150
+37 (pathfinder) encodedCoord = 8550150
+(pathfinder) x = 1150
+(pathfinder) y = 150
+35 (pathfinder) encodedCoord = 11500150
+(pathfinder) x = 855
+(pathfinder) y = 150
+37 (pathfinder) encodedCoord = 8550150
+(pathfinder) x = 1118
+(pathfinder) y = 333
+33 (pathfinder) encodedCoord = 11180333
+(pathfinder) x = 1219
+(pathfinder) y = 356
+38 (pathfinder) encodedCoord = 12190356
+(pathfinder) x = 1118
+(pathfinder) y = 333
+33 (pathfinder) encodedCoord = 11180333
+(pathfinder) x = 955
+(pathfinder) y = 360
+26 (pathfinder) encodedCoord = 9550360
+(pathfinder) x = 1118
+(pathfinder) y = 333
+33 (pathfinder) encodedCoord = 11180333
+(pathfinder) x = 838
+(pathfinder) y = 164
+39 (pathfinder) encodedCoord = 8380164
+(pathfinder) x = 1245
+(pathfinder) y = 254
+36 (pathfinder) encodedCoord = 12450254
+(pathfinder) x = 1219
+(pathfinder) y = 356
+38 (pathfinder) encodedCoord = 12190356
+(pathfinder) x = 1245
+(pathfinder) y = 254
+36 (pathfinder) encodedCoord = 12450254
+(pathfinder) x = 1150
+(pathfinder) y = 150
+35 (pathfinder) encodedCoord = 11500150
+(pathfinder) x = 1219
+(pathfinder) y = 356
+38 (pathfinder) encodedCoord = 12190356
+(pathfinder) x = 1212
+(pathfinder) y = 535
+41 (pathfinder) encodedCoord = 12120535
+(pathfinder) x = 1219
+(pathfinder) y = 356
+38 (pathfinder) encodedCoord = 12190356
+(pathfinder) x = 1118
+(pathfinder) y = 333
+33 (pathfinder) encodedCoord = 11180333
+(pathfinder) x = 1219
+(pathfinder) y = 356
+38 (pathfinder) encodedCoord = 12190356
+(pathfinder) x = 1245
+(pathfinder) y = 254
+36 (pathfinder) encodedCoord = 12450254
+(pathfinder) x = 1212
+(pathfinder) y = 535
+41 (pathfinder) encodedCoord = 12120535
+(pathfinder) x = 1218
+(pathfinder) y = 718
+34 (pathfinder) encodedCoord = 12180718
+(pathfinder) x = 1212
+(pathfinder) y = 535
+41 (pathfinder) encodedCoord = 12120535
+(pathfinder) x = 784
+(pathfinder) y = 535
+42 (pathfinder) encodedCoord = 7840535
+(pathfinder) x = 1212
+(pathfinder) y = 535
+41 (pathfinder) encodedCoord = 12120535
+(pathfinder) x = 1219
+(pathfinder) y = 356
+38 (pathfinder) encodedCoord = 12190356
+(pathfinder) x = 1218
+(pathfinder) y = 718
+34 (pathfinder) encodedCoord = 12180718
+(pathfinder) x = 1500
+(pathfinder) y = 1000
+43 (pathfinder) encodedCoord = 15001000
+(pathfinder) x = 1218
+(pathfinder) y = 718
+34 (pathfinder) encodedCoord = 12180718
+(pathfinder) x = 1047
+(pathfinder) y = 809
+29 (pathfinder) encodedCoord = 10470809
+(pathfinder) x = 1218
+(pathfinder) y = 718
+34 (pathfinder) encodedCoord = 12180718
+(pathfinder) x = 1212
+(pathfinder) y = 535
+41 (pathfinder) encodedCoord = 12120535
+(pathfinder) x = 1500
+(pathfinder) y = 1000
+43 (pathfinder) encodedCoord = 15001000
+(pathfinder) x = 1218
+(pathfinder) y = 718
+34 (pathfinder) encodedCoord = 12180718
+(pathfinder) x = 301
+(pathfinder) y = 301
+3 (pathfinder) encodedCoord = 3010301
+(pathfinder) x = 151
+(pathfinder) y = 186
+44 (pathfinder) encodedCoord = 1510186
+AFTER SKIP/NO_SKIP - id: 44 -> 1510186 1 - id:45 -> 32526 1
+
+
+Dijkstra 44 45 - 1510186 14410769
+Dijkstra 44 45 - 1510186 14410769
+
+
+
+
+right path -1 startEndPath[0] : 44
+(pathfinder) mapposition : 1510186
+voronoiPaths->ids.size()+idStart : 44
+
+right path  44(pathfinder) mapposition : 1510186
+
+
+startNew inside
+node start: 44 1510186
+endNew inside
+node end: 44 1510186
+
+right path 2  151,186
+ 1441,769
+--- terzultimo punto : 33, 0
+--- penultimo punto : 151, 186
+--- ultimo punto : 1441, 769
+-------Path 2 => 2: 
+PRIMA
+--- terzultimo punto : 33, 0
+--- penultimo punto : 151, 186
+--- ultimo punto : 1441, 769
+--- CENTRO GATE : 1441, 769
+--- PUNTO BORDO GATE : 1393, 769
+--- terzultimo punto : 151, 186
+--- penultimo punto : 1393, 769
+--- ultimo punto : 1441, 769
+Angoli!! 3
+--------angolo: -0.024840
+Algorithm INcorrect
+kappa: 0.010000, 0.000000, 0.010000 
+--------angolo: 0.000000
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+kappa: 0.010000, 0.000000, 0.010000 
+--- START rightPathNew --- 
+--> 1: (151, 186)
+--> 2: (1393, 769)
+--> 3: (1441, 769)
+--- END rightPathNew --- 
+[0m[ INFO] [1598966407.070955996]: cametra_matrix = 
+ [558.5726818577332, 0, 342.6203163666451;
+ 0, 558.5726818577332, 267.9308376846099;
+ 0, 0, 1][0m
+[0m[ INFO] [1598966407.071188702]: dist_coeffs = 
+[-0.2069661057376372, 0.0110561549401185, 0.01602106933810088, 0.01733990140219172][0m
+[33m[ WARN] [1598966411.218094231, 9.930000000]: Call student function[0m
+[0m[ INFO] [1598966411.223479365, 9.930000000]: camera estimated position = 
+[0.5304201173701641;
+ 0.706237036936453;
+ 2.184937583863922][0m
+... logging to /home/lar2019/.ros/log/d14c9ece-ec55-11ea-a038-080027ae6ce3/roslaunch-lar2019-vm-6190.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/lar2019/Desktop/AppliedRoboticsEnvironment/src/9_project_interface/launch/node_pipeline.launch
+[1mstarted roslaunch server http://lar2019-vm:43751/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /arena/h: 1.0
+ * /arena/robot_height: 0.16
+ * /arena/w: 1.5
+ * /camera_calibration/cx: 342.620316367
+ * /camera_calibration/cy: 267.930837685
+ * /camera_calibration/fx: 558.572681858
+ * /camera_calibration/fy: 558.572681858
+ * /camera_calibration/image_height: 600
+ * /camera_calibration/image_width: 800
+ * /camera_calibration/k1: -0.206966105738
+ * /camera_calibration/k2: 0.0110561549401
+ * /camera_calibration/k3: 0.0
+ * /camera_calibration/p1: 0.0160210693381
+ * /camera_calibration/p2: 0.0173399014022
+ * /config_folder: /home/lar2019/Des...
+ * /default_implementation/extrinsic_calib: False
+ * /default_implementation/obstacle_detector: False
+ * /default_implementation/planning: False
+ * /default_implementation/raw_clbk: False
+ * /default_implementation/rectify: False
+ * /default_implementation/rectify_clbk: True
+ * /default_implementation/robot_detector: False
+ * /default_implementation/unwarp: False
+ * /default_implementation/unwarped_ground_clbk: True
+ * /default_implementation/unwarped_robot_clbk: True
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+
+NODES
+  /
+    control (control/control_node)
+    extrinsic_calib (image_elab/extrinsic_calib_node)
+    localization (localization/localization_node)
+    obstacle_detector (image_elab/obstacle_detector_node)
+    odometry (localization/odometry_node)
+    planning (planning/planning_node)
+    rectify_image (image_elab/rectify_node)
+    robot_detector (image_elab/robot_detector_node)
+    unwarp_image (image_elab/unwarp_node)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/lar2019/Desktop/AppliedRoboticsEnvironment/src/9_project_interface/launch/node_pipeline.launch http://localhost:11311
+[1mprocess[extrinsic_calib-1]: started with pid [6207][0m
+[1mprocess[rectify_image-2]: started with pid [6208][0m
+[1mprocess[unwarp_image-3]: started with pid [6209][0m
+[1mprocess[obstacle_detector-4]: started with pid [6210][0m
+[1mprocess[robot_detector-5]: started with pid [6211][0m
+[1mprocess[localization-6]: started with pid [6230][0m
+[1mprocess[odometry-7]: started with pid [6247][0m
+[1mprocess[planning-8]: started with pid [6269][0m
+[1mprocess[control-9]: started with pid [6289][0m
+[control-9] killing on exit
+[planning-8] killing on exit
+[odometry-7] killing on exit
+[localization-6] killing on exit
+[robot_detector-5] killing on exit
+[obstacle_detector-4] killing on exit
+[unwarp_image-3] killing on exit
+[rectify_image-2] killing on exit
+[extrinsic_calib-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

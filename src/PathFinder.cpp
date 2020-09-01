@@ -191,13 +191,13 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 		std::cout << "SKIP ";
 		if(startNew)
 		{
-			std::cout << "START NEW";
-			rightPath.pushBack(start);
+			std::cout << "START NEW - ";
+			rightPath->push_back(start);
 		}
 		if(endNew)
 		{
 			std::cout << "END NEW";
-			rightPath.pushBack(end);
+			rightPath->push_back(end);
 		}
 		std::cout << std::endl;
 	}
