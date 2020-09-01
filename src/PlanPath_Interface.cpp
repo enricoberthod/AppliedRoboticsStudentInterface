@@ -418,7 +418,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	switch(mission_type) //0 for robot-gate //1 for robot-victims_in_right_order-gate //2 for robot-victims-gate in min time
 	{
 	case 0: 
-		PathFinder(start, true, end, true, &voronoiPaths, &rightPath, 0, contours); 
+		PathFinder(start, true, end, true, &voronoiPaths, &rightPath, 0, contours);//, NULL); 
 	break;
 	case 1: //Path from robot to victim 1, victim 1 to victim 2, victim n to gate position (Mission 1)
 		
@@ -436,7 +436,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 					end=VoronoiPoint((int)(victim_list[j].second[0].x*floatToInt),(int)(victim_list[j].second[0].y*floatToInt));
 					//find the shortest path
 					piecePath.clear();
-					PathFinder(start, firstTime, end, true, &voronoiPaths, &piecePath, 10, contours); 
+					PathFinder(start, firstTime, end, true, &voronoiPaths, &piecePath, 10, contours);//, NULL); 
 					//connect the piece of the path (victim to next victim) to the total one
 					rightPath.insert(rightPath.end(),piecePath.begin(),piecePath.end());
 					//the victim became the next starting point
@@ -448,11 +448,11 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		}
 		//last call for connect the last victims with the gate
 		piecePath.clear();
-		PathFinder(start, false, gate_pos, true, &voronoiPaths, &piecePath, 0, contours);
+		PathFinder(start, false, gate_pos, true, &voronoiPaths, &piecePath, 0, contours);//, NULL);
 		rightPath.insert(rightPath.end(),piecePath.begin(),piecePath.end()); 
 	break;
 	case 2: //Path which minimize the time for exit from the arena (Mission 2)
-		PathFinder(start, true, end, true, &voronoiPaths, &rightPath, 0, contours);
+		PathFinder(start, true, end, true, &voronoiPaths, &rightPath, 0, contours);//, &victim_list);
 	break;
 	default: throw std::logic_error("STOP_mission_type different from [0-2]"); break;
 	}

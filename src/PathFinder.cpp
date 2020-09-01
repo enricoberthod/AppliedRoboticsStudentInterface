@@ -24,7 +24,7 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 {
 	int offset=20;
 	int offset_2;
-	int max_offset = 200;
+	int max_offset = 300;
 	int offset_3;
 	int step=10;
 	int nConnection=8;
@@ -371,45 +371,48 @@ void connect(int offset, VoronoiPoint pointP, VoronoiResults *voronoiPaths, bool
 		x=voronoiPaths->resultEdges[i].p0.a;
 		y=voronoiPaths->resultEdges[i].p0.b;
 		
-		if(pointOK)// && (a<x) && (x<(a+o)) && ((b<y) && (y<(b+o))))
+		if(pointOK && (a<x) && (x<(a+o)) && ((b<y) && (y<(b+o))))
 		{
 			len=sqrt(pow((x-pointP.a),2)+pow((y-pointP.b),2));
-			std::cout << "at the beginningof connect _ 1 (" << pointP.a << "," << pointP.b << ") - len: " << len << std::endl;
-			if(x!=prev_x || y!=prev_y)
+			//if(len<(offset*1.0))
 			{
-				std::cout << "connect points (" << x << "," << y << ") and (" << pointP.a << "," << pointP.b << ")" << std::endl;
-				if(!edgeOnObstacle(pointP,VoronoiPoint(x,y),obsContours))
+				std::cout << "at the beginningof connect _ 1 (" << pointP.a << "," << pointP.b << ") - len: " << len << std::endl;
+				if(x!=prev_x || y!=prev_y)
 				{
-					/*
-					if(y<1000)
-						longId=(x*1000)+y;
-					else
-						longId=(x*10000)+y;*/
-					longId=encoder(x,y);
-					//std::cout << "longId " << longId << std::endl;
-					id1=-1;
-					for(int j=0;j<voronoiPaths->ids.size() && id1==-1;j++)
-						if(voronoiPaths->ids[j]==longId)
-							id1=j;
-					//std::cout << "id1 " << id1 << std::endl;
-					std::cout << "id " << id1 << "  -  longId " << longId << "  -  pointLongId " << pointLongId << "  -  PointId " << pointId << std::endl;
-					find=false;
-					for(int j=(voronoiPaths->resultEdges.size()-1);j>=0 && !find ;j--)
+					std::cout << "connect points (" << x << "," << y << ") and (" << pointP.a << "," << pointP.b << ")" << std::endl;
+					if(!edgeOnObstacle(pointP,VoronoiPoint(x,y),obsContours))
 					{
-						if(voronoiPaths->resultEdges[j].idFirstNode==pointId && voronoiPaths->resultEdges[j].idSecondNode==id1)
-							find=true;
-					}
-					if(!find)
-					{
+						/*
+						if(y<1000)
+							longId=(x*1000)+y;
+						else
+							longId=(x*10000)+y;*/
+						longId=encoder(x,y);
+						//std::cout << "longId " << longId << std::endl;
+						id1=-1;
+						for(int j=0;j<voronoiPaths->ids.size() && id1==-1;j++)
+							if(voronoiPaths->ids[j]==longId)
+								id1=j;
+						//std::cout << "id1 " << id1 << std::endl;
+						std::cout << "id " << id1 << "  -  longId " << longId << "  -  pointLongId " << pointLongId << "  -  PointId " << pointId << std::endl;
 						find=false;
-						GraphEdge e1(x,y,pointP.a,pointP.b,len,id1,pointId);
-						pointEdges->push_back(e1);
-						GraphEdge e2(pointP.a,pointP.b,x,y,len,pointId,id1);
-						pointEdges->push_back(e2);
+						for(int j=(voronoiPaths->resultEdges.size()-1);j>=0 && !find ;j--)
+						{
+							if(voronoiPaths->resultEdges[j].idFirstNode==pointId && voronoiPaths->resultEdges[j].idSecondNode==id1)
+								find=true;
+						}
+						if(!find)
+						{
+							find=false;
+							GraphEdge e1(x,y,pointP.a,pointP.b,len,id1,pointId);
+							pointEdges->push_back(e1);
+							GraphEdge e2(pointP.a,pointP.b,x,y,len,pointId,id1);
+							pointEdges->push_back(e2);
+						}
 					}
+					prev_x=x;
+					prev_y=y;
 				}
-				prev_x=x;
-				prev_y=y;
 			}
 		}
 	}
