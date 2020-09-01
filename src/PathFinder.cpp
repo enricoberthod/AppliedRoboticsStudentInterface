@@ -364,14 +364,17 @@ void connect(int offset, VoronoiPoint pointP, VoronoiResults *voronoiPaths, bool
 	//startId=voronoiPaths->ids.size()-2; //penultimo
 	//endId=voronoiPaths->ids.size()-1; //ultimo
 	
+	std::cout << "at the beginningof connect (" << pointP.a << "," << pointP.b << ") - " << pointOK << std::endl;
+
 	for(int i=0;i<voronoiPaths->resultEdges.size();i++)
 	{
 		x=voronoiPaths->resultEdges[i].p0.a;
 		y=voronoiPaths->resultEdges[i].p0.b;
 		
-		if(pointOK && (a<x) && (x<(a+o)) && ((b<y) && (y<(b+o))))
+		if(pointOK)// && (a<x) && (x<(a+o)) && ((b<y) && (y<(b+o))))
 		{
 			len=sqrt(pow((x-pointP.a),2)+pow((y-pointP.b),2));
+			std::cout << "at the beginningof connect _ 1 (" << pointP.a << "," << pointP.b << ") - len: " << len << std::endl;
 			if(x!=prev_x || y!=prev_y)
 			{
 				std::cout << "connect points (" << x << "," << y << ") and (" << pointP.a << "," << pointP.b << ")" << std::endl;
