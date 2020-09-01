@@ -1,65 +1,69 @@
 
 RED MASK
-N. contours (Elements): 4
+N. contours (Elements): 5
 1) Contour size: 102
    Approximated contour size: 3
-2) Contour size: 71
-   Approximated contour size: 4
-3) Contour size: 62
-   Approximated contour size: 5
-4) Contour size: 125
+2) Contour size: 88
    Approximated contour size: 6
-   Elements: 4
-N. contours: 3
-1) Contour size: 73
+3) Contour size: 112
+   Approximated contour size: 6
+4) Contour size: 67
+   Approximated contour size: 5
+5) Contour size: 71
    Approximated contour size: 4
-2) Contour size: 146
-3) Contour size: 144
+   Elements: 5
+N. contours: 4
+1) Contour size: 155
+2) Contour size: 167
+3) Contour size: 132
+4) Contour size: 76
+   Approximated contour size: 4
    Elements: 4
 Best fitting template: 1
+Best fitting template: 4
 Best fitting template: 3
-   Elements: 2
+   Elements: 3
 Mission -> 0
 border size : 4
 b_x_max : 1560
 b_y_max : 1060
-clipper1: 4
-clipper2: 4
-clipper3: 2
-clipper4: 4
-obsvertx: 418,860
-obsvertx: 291,1112
-obsvertx: 176,1118
-obsvertx: 14,870
-obsvertx: 70,765
-obsvertx: 360,765
-obsvertx: 963,0
-obsvertx: 1041,140
-obsvertx: 1041,193
-obsvertx: 964,322
-obsvertx: 942,335
-obsvertx: 942,336
-obsvertx: 926,393
-obsvertx: 923,395
-obsvertx: 982,451
-obsvertx: 986,679
-obsvertx: 927,739
-obsvertx: 705,739
-obsvertx: 647,682
-obsvertx: 641,463
-obsvertx: 679,422
-obsvertx: 661,412
-obsvertx: 635,347
-obsvertx: 671,232
-obsvertx: 640,169
-obsvertx: 642,118
-obsvertx: 715,0
-obsvertx: 759,0
-obsvertx: 915,0
-### contours: 2
-### contours[0] : 6
-### contours[1] : 23
-hash 29
+clipper1: 5
+clipper2: 5
+clipper3: 1
+clipper4: 5
+obsvertx: 1358,515
+obsvertx: 1509,502
+obsvertx: 1560,528
+obsvertx: 1633,651
+obsvertx: 1635,700
+obsvertx: 1572,833
+obsvertx: 1527,864
+obsvertx: 1358,876
+obsvertx: 1306,847
+obsvertx: 1283,804
+obsvertx: 1250,838
+obsvertx: 1029,843
+obsvertx: 1008,823
+obsvertx: 995,845
+obsvertx: 883,847
+obsvertx: 861,812
+obsvertx: 832,829
+obsvertx: 708,829
+obsvertx: 661,802
+obsvertx: 598,689
+obsvertx: 598,635
+obsvertx: 663,526
+obsvertx: 711,499
+obsvertx: 828,503
+obsvertx: 847,514
+obsvertx: 1074,498
+obsvertx: 1079,505
+obsvertx: 1243,498
+obsvertx: 1248,503
+obsvertx: 1331,495
+### contours: 1
+### contours[0] : 30
+hash 30
 bordivertxf: 0.000000,0.000000
 bordivertx: 0,0
 bordivertxf: 1.560000,0.000000
@@ -68,2146 +72,2260 @@ bordivertxf: 1.560000,1.060000
 bordivertx: 1560,1060
 bordivertxf: 0.000000,1.060000
 bordivertx: 0,1060
-size: 33 
-size2: 33 
+size: 34 
+size2: 34 
 pippo c'è 
 Traversing Voronoi graph.
 pippo c'è 
-OUTSIDE -768.196 punto <0, 0> -> 0
-OUTSIDE -652.754 punto <0, 0> -> 0
-OUTSIDE -115.629 punto <0, 1060> -> 0
-OUTSIDE -749.328 punto <0, 1060> -> 0
-OUTSIDE 0 punto <14, 870> -> 0
-OUTSIDE -660.328 punto <14, 870> -> 0
-OUTSIDE -8.05882 punto <7, 866> -> 0
-OUTSIDE -665.925 punto <7, 866> -> 0
-OUTSIDE -8.05882 punto <7, 866> -> 0
-OUTSIDE -665.925 punto <7, 866> -> 0
-OUTSIDE -8.06226 punto <7, 874> -> 0
-OUTSIDE -668.18 punto <7, 874> -> 0
-OUTSIDE -8.06226 punto <7, 874> -> 0
-OUTSIDE -668.18 punto <7, 874> -> 0
-OUTSIDE 0 punto <70, 765> -> 0
-OUTSIDE -582.939 punto <70, 765> -> 0
-OUTSIDE -37.5899 punto <37, 747> -> 0
-OUTSIDE -613.453 punto <37, 747> -> 0
-OUTSIDE -37.5899 punto <37, 747> -> 0
-OUTSIDE -613.453 punto <37, 747> -> 0
-OUTSIDE -48.6458 punto <48, 1011> -> 0
-OUTSIDE -683.405 punto <48, 1011> -> 0
-OUTSIDE -48.6458 punto <48, 1011> -> 0
-OUTSIDE -683.405 punto <48, 1011> -> 0
-OUTSIDE -48.6458 punto <48, 1011> -> 0
-OUTSIDE -683.405 punto <48, 1011> -> 0
-OUTSIDE -70 punto <70, 695> -> 0
-OUTSIDE -577.14 punto <70, 695> -> 0
-OUTSIDE -70 punto <70, 695> -> 0
-OUTSIDE -577.14 punto <70, 695> -> 0
-INSIDE!!! 14.1853 ->  punto <174, 1089> -> 1
-INSIDE!!! 14.1853 ->  punto <174, 1089> -> 1
-INSIDE!!! 98.6471 ->  punto <129, 864> -> 1
-INSIDE!!! 98.6471 ->  punto <129, 864> -> 1
-INSIDE!!! 98.6471 ->  punto <129, 864> -> 1
-OUTSIDE -0 punto <291, 1112> -> 0
-OUTSIDE -556.22 punto <291, 1112> -> 0
-OUTSIDE -296.007 punto <0, 1356> -> 0
-OUTSIDE -934.219 punto <0, 1356> -> 0
-INSIDE!!! 26.8504 ->  punto <274, 1086> -> 1
-INSIDE!!! 26.8504 ->  punto <274, 1086> -> 1
-INSIDE!!! 26.8504 ->  punto <274, 1086> -> 1
-OUTSIDE -0 punto <360, 765> -> 0
-OUTSIDE -298.761 punto <360, 765> -> 0
-INSIDE!!! 146.984 ->  punto <217, 912> -> 1
-INSIDE!!! 146.984 ->  punto <217, 912> -> 1
-INSIDE!!! 146.984 ->  punto <217, 912> -> 1
-INSIDE!!! 102.511 ->  punto <277, 912> -> 1
-INSIDE!!! 102.511 ->  punto <277, 912> -> 1
-INSIDE!!! 102.511 ->  punto <277, 912> -> 1
-INSIDE!!! 70.3064 ->  punto <305, 928> -> 1
-INSIDE!!! 70.3064 ->  punto <305, 928> -> 1
-OUTSIDE -500.349 punto <635, 347> -> 0
-OUTSIDE 0 punto <635, 347> -> 0
-OUTSIDE -447 punto <318, 318> -> 0
-OUTSIDE -318.324 punto <318, 318> -> 0
-OUTSIDE -447 punto <318, 318> -> 0
-OUTSIDE -318.324 punto <318, 318> -> 0
-OUTSIDE -447 punto <318, 318> -> 0
-OUTSIDE -318.324 punto <318, 318> -> 0
-OUTSIDE -658.495 punto <640, 169> -> 0
-OUTSIDE 0 punto <640, 169> -> 0
-OUTSIDE -614.246 punto <477, 162> -> 0
-OUTSIDE -163.149 punto <477, 162> -> 0
-OUTSIDE -614.246 punto <477, 162> -> 0
-OUTSIDE -163.149 punto <477, 162> -> 0
-OUTSIDE -412.511 punto <641, 463> -> 0
-OUTSIDE 0 punto <641, 463> -> 0
-OUTSIDE -294 punto <347, 471> -> 0
-OUTSIDE -294.109 punto <347, 471> -> 0
-OUTSIDE -294 punto <347, 471> -> 0
-OUTSIDE -294.109 punto <347, 471> -> 0
-OUTSIDE -282 punto <360, 483> -> 0
-OUTSIDE -281.442 punto <360, 483> -> 0
-OUTSIDE -282 punto <360, 483> -> 0
-OUTSIDE -281.442 punto <360, 483> -> 0
-OUTSIDE -321 punto <320, 444> -> 0
-OUTSIDE -321.562 punto <320, 444> -> 0
-OUTSIDE -321 punto <320, 444> -> 0
-OUTSIDE -321.562 punto <320, 444> -> 0
-OUTSIDE -321 punto <320, 444> -> 0
-OUTSIDE -321.562 punto <320, 444> -> 0
-OUTSIDE -705.785 punto <642, 118> -> 0
-OUTSIDE 0 punto <642, 118> -> 0
-OUTSIDE -673.296 punto <528, 113> -> 0
-OUTSIDE -114.11 punto <528, 113> -> 0
-OUTSIDE -673.296 punto <528, 113> -> 0
-OUTSIDE -114.11 punto <528, 113> -> 0
-OUTSIDE -344 punto <321, 421> -> 0
-OUTSIDE -322.602 punto <321, 421> -> 0
-OUTSIDE -344 punto <321, 421> -> 0
-OUTSIDE -322.602 punto <321, 421> -> 0
-OUTSIDE -344 punto <321, 421> -> 0
-OUTSIDE -322.602 punto <321, 421> -> 0
-OUTSIDE -288.206 punto <647, 682> -> 0
-OUTSIDE 0 punto <647, 682> -> 0
-OUTSIDE -154.871 punto <492, 684> -> 0
-OUTSIDE -154.997 punto <492, 684> -> 0
-OUTSIDE -154.871 punto <492, 684> -> 0
-OUTSIDE -154.997 punto <492, 684> -> 0
-OUTSIDE -153.828 punto <492, 686> -> 0
-OUTSIDE -155.051 punto <492, 686> -> 0
-OUTSIDE -153.828 punto <492, 686> -> 0
-OUTSIDE -155.051 punto <492, 686> -> 0
-OUTSIDE -498.401 punto <380, 267> -> 0
-OUTSIDE -267.255 punto <380, 267> -> 0
-OUTSIDE -498.401 punto <380, 267> -> 0
-OUTSIDE -267.255 punto <380, 267> -> 0
-OUTSIDE -368.196 punto <468, 413> -> 0
-OUTSIDE -179.569 punto <468, 413> -> 0
-OUTSIDE -368.196 punto <468, 413> -> 0
-OUTSIDE -179.569 punto <468, 413> -> 0
-OUTSIDE -517.789 punto <403, 249> -> 0
-OUTSIDE -250.138 punto <403, 249> -> 0
-OUTSIDE -517.789 punto <403, 249> -> 0
-OUTSIDE -250.138 punto <403, 249> -> 0
-OUTSIDE -517.789 punto <403, 249> -> 0
-OUTSIDE -250.138 punto <403, 249> -> 0
-OUTSIDE -721.11 punto <576, 77> -> 0
-OUTSIDE -77.698 punto <576, 77> -> 0
-OUTSIDE -721.11 punto <576, 77> -> 0
-OUTSIDE -77.698 punto <576, 77> -> 0
-OUTSIDE -533.146 punto <482, 246> -> 0
-OUTSIDE -175.764 punto <482, 246> -> 0
-OUTSIDE -533.146 punto <482, 246> -> 0
-OUTSIDE -175.764 punto <482, 246> -> 0
-OUTSIDE -417.412 punto <592, 418> -> 0
-OUTSIDE -66.2932 punto <592, 418> -> 0
-OUTSIDE -417.412 punto <592, 418> -> 0
-OUTSIDE -66.2932 punto <592, 418> -> 0
-OUTSIDE -463.907 punto <661, 412> -> 0
-OUTSIDE 0 punto <661, 412> -> 0
-OUTSIDE -433.711 punto <628, 424> -> 0
-OUTSIDE -35.0964 punto <628, 424> -> 0
-OUTSIDE -433.711 punto <628, 424> -> 0
-OUTSIDE -35.0964 punto <628, 424> -> 0
-OUTSIDE -448.074 punto <653, 426> -> 0
-OUTSIDE -16.1245 punto <653, 426> -> 0
-OUTSIDE -448.074 punto <653, 426> -> 0
-OUTSIDE -16.1245 punto <653, 426> -> 0
-OUTSIDE -617.098 punto <671, 232> -> 0
-OUTSIDE 0 punto <671, 232> -> 0
-OUTSIDE -468.412 punto <679, 422> -> 0
-OUTSIDE 0 punto <679, 422> -> 0
-OUTSIDE -145.958 punto <542, 783> -> 0
-OUTSIDE -145.691 punto <542, 783> -> 0
-OUTSIDE -145.958 punto <542, 783> -> 0
-OUTSIDE -145.691 punto <542, 783> -> 0
-OUTSIDE -146.123 punto <544, 786> -> 0
-OUTSIDE -146.373 punto <544, 786> -> 0
-OUTSIDE -146.123 punto <544, 786> -> 0
-OUTSIDE -146.373 punto <544, 786> -> 0
-OUTSIDE -311.464 punto <705, 739> -> 0
-OUTSIDE -0 punto <705, 739> -> 0
-OUTSIDE -843.356 punto <715, 0> -> 0
-OUTSIDE 0 punto <715, 0> -> 0
-OUTSIDE -843.356 punto <715, 0> -> 0
-OUTSIDE 0 punto <715, 0> -> 0
-OUTSIDE -168.003 punto <586, 859> -> 0
-OUTSIDE -168.998 punto <586, 859> -> 0
-OUTSIDE -168.003 punto <586, 859> -> 0
-OUTSIDE -168.998 punto <586, 859> -> 0
-OUTSIDE -862.801 punto <759, 0> -> 0
-OUTSIDE 0 punto <759, 0> -> 0
-OUTSIDE -862.801 punto <759, 0> -> 0
-OUTSIDE 0 punto <759, 0> -> 0
-OUTSIDE -525.019 punto <707, 371> -> 0
-INSIDE!!! 57.9369 ->  punto <707, 371> -> 1
-OUTSIDE -525.019 punto <707, 371> -> 0
-INSIDE!!! 57.9369 ->  punto <707, 371> -> 1
-OUTSIDE -178.126 punto <595, 880> -> 0
-OUTSIDE -178.832 punto <595, 880> -> 0
-OUTSIDE -178.126 punto <595, 880> -> 0
-OUTSIDE -178.832 punto <595, 880> -> 0
-OUTSIDE -178.126 punto <595, 880> -> 0
-OUTSIDE -178.832 punto <595, 880> -> 0
-OUTSIDE -724.959 punto <739, 147> -> 0
-INSIDE!!! 97.7477 ->  punto <739, 147> -> 1
-OUTSIDE -724.959 punto <739, 147> -> 0
-INSIDE!!! 97.7477 ->  punto <739, 147> -> 1
-OUTSIDE -724.959 punto <739, 147> -> 0
-INSIDE!!! 97.7477 ->  punto <739, 147> -> 1
-OUTSIDE -569.959 punto <742, 342> -> 0
-INSIDE!!! 100.62 ->  punto <742, 342> -> 1
-OUTSIDE -569.959 punto <742, 342> -> 0
-INSIDE!!! 100.62 ->  punto <742, 342> -> 1
-OUTSIDE -569.959 punto <742, 342> -> 0
-INSIDE!!! 100.62 ->  punto <742, 342> -> 1
-OUTSIDE -394.777 punto <745, 638> -> 0
-INSIDE!!! 99.1683 ->  punto <745, 638> -> 1
-OUTSIDE -394.777 punto <745, 638> -> 0
-INSIDE!!! 99.1683 ->  punto <745, 638> -> 1
-OUTSIDE -394.777 punto <745, 638> -> 0
-INSIDE!!! 99.1683 ->  punto <745, 638> -> 1
-OUTSIDE -289.638 punto <705, 899> -> 0
-OUTSIDE -160 punto <705, 899> -> 0
-OUTSIDE -289.638 punto <705, 899> -> 0
-OUTSIDE -160 punto <705, 899> -> 0
-OUTSIDE -945.119 punto <915, 0> -> 0
-OUTSIDE -0 punto <915, 0> -> 0
-OUTSIDE -945.119 punto <915, 0> -> 0
-OUTSIDE -0 punto <915, 0> -> 0
-OUTSIDE -487.89 punto <779, 515> -> 0
-INSIDE!!! 136.524 ->  punto <779, 515> -> 1
-OUTSIDE -487.89 punto <779, 515> -> 0
-INSIDE!!! 136.524 ->  punto <779, 515> -> 1
-OUTSIDE -677.303 punto <926, 393> -> 0
-OUTSIDE -0 punto <926, 393> -> 0
-OUTSIDE -523.184 punto <927, 739> -> 0
-OUTSIDE -0 punto <927, 739> -> 0
-OUTSIDE -673.714 punto <917, 386> -> 0
-INSIDE!!! 10.5569 ->  punto <917, 386> -> 1
-OUTSIDE -673.714 punto <917, 386> -> 0
-INSIDE!!! 10.5569 ->  punto <917, 386> -> 1
-OUTSIDE -612.356 punto <792, 331> -> 0
-INSIDE!!! 145.05 ->  punto <792, 331> -> 1
-OUTSIDE -612.356 punto <792, 331> -> 0
-INSIDE!!! 145.05 ->  punto <792, 331> -> 1
-OUTSIDE -612.356 punto <792, 331> -> 0
-INSIDE!!! 145.05 ->  punto <792, 331> -> 1
-OUTSIDE -613.065 punto <792, 330> -> 0
-INSIDE!!! 144.751 ->  punto <792, 330> -> 1
-OUTSIDE -613.065 punto <792, 330> -> 0
-INSIDE!!! 144.751 ->  punto <792, 330> -> 1
-OUTSIDE -613.065 punto <792, 330> -> 0
-INSIDE!!! 144.751 ->  punto <792, 330> -> 1
-OUTSIDE -717.2 punto <934, 335> -> 0
-INSIDE!!! 7.97256 ->  punto <934, 335> -> 1
-OUTSIDE -717.2 punto <934, 335> -> 0
-INSIDE!!! 7.97256 ->  punto <934, 335> -> 1
-OUTSIDE -723.025 punto <942, 336> -> 0
-OUTSIDE -0 punto <942, 336> -> 0
-OUTSIDE -723.619 punto <942, 335> -> 0
-OUTSIDE -0 punto <942, 335> -> 0
-OUTSIDE -637.276 punto <800, 304> -> 0
-INSIDE!!! 144.619 ->  punto <800, 304> -> 1
-OUTSIDE -637.276 punto <800, 304> -> 0
-INSIDE!!! 144.619 ->  punto <800, 304> -> 1
-OUTSIDE -637.276 punto <800, 304> -> 0
-INSIDE!!! 144.619 ->  punto <800, 304> -> 1
-OUTSIDE -723.83 punto <943, 336> -> 0
-OUTSIDE -1 punto <943, 336> -> 0
-OUTSIDE -723.83 punto <943, 336> -> 0
-OUTSIDE -1 punto <943, 336> -> 0
-OUTSIDE -724.636 punto <944, 336> -> 0
-OUTSIDE -1.87839 punto <944, 336> -> 0
-OUTSIDE -724.636 punto <944, 336> -> 0
-OUTSIDE -1.87839 punto <944, 336> -> 0
-OUTSIDE -755.029 punto <798, 150> -> 0
-INSIDE!!! 149.501 ->  punto <798, 150> -> 1
-OUTSIDE -755.029 punto <798, 150> -> 0
-INSIDE!!! 149.501 ->  punto <798, 150> -> 1
-OUTSIDE -755.029 punto <798, 150> -> 0
-INSIDE!!! 149.501 ->  punto <798, 150> -> 1
-OUTSIDE -664.606 punto <809, 275> -> 0
-INSIDE!!! 144.544 ->  punto <809, 275> -> 1
-OUTSIDE -664.606 punto <809, 275> -> 0
-INSIDE!!! 144.544 ->  punto <809, 275> -> 1
-OUTSIDE -974.081 punto <963, 0> -> 0
-OUTSIDE -0 punto <963, 0> -> 0
-OUTSIDE -974.081 punto <963, 0> -> 0
-OUTSIDE -0 punto <963, 0> -> 0
-OUTSIDE -749.043 punto <964, 322> -> 0
-OUTSIDE -0 punto <964, 322> -> 0
-OUTSIDE -518.14 punto <812, 511> -> 0
-INSIDE!!! 160.031 ->  punto <812, 511> -> 1
-OUTSIDE -518.14 punto <812, 511> -> 0
-INSIDE!!! 160.031 ->  punto <812, 511> -> 1
-OUTSIDE -757.001 punto <815, 160> -> 0
-INSIDE!!! 160 ->  punto <815, 160> -> 1
-OUTSIDE -757.001 punto <815, 160> -> 0
-INSIDE!!! 160 ->  punto <815, 160> -> 1
-OUTSIDE -694.501 punto <982, 451> -> 0
-OUTSIDE -0 punto <982, 451> -> 0
-OUTSIDE -511.698 punto <813, 525> -> 0
-INSIDE!!! 169.012 ->  punto <813, 525> -> 1
-OUTSIDE -511.698 punto <813, 525> -> 0
-INSIDE!!! 169.012 ->  punto <813, 525> -> 1
-OUTSIDE -511.698 punto <813, 525> -> 0
-INSIDE!!! 169.012 ->  punto <813, 525> -> 1
-OUTSIDE -511.177 punto <813, 526> -> 0
-INSIDE!!! 169.623 ->  punto <813, 526> -> 1
-OUTSIDE -511.177 punto <813, 526> -> 0
-INSIDE!!! 169.623 ->  punto <813, 526> -> 1
-OUTSIDE -511.177 punto <813, 526> -> 0
-INSIDE!!! 169.623 ->  punto <813, 526> -> 1
-OUTSIDE -490.145 punto <814, 568> -> 0
-INSIDE!!! 170.026 ->  punto <814, 568> -> 1
-OUTSIDE -490.145 punto <814, 568> -> 0
-INSIDE!!! 170.026 ->  punto <814, 568> -> 1
-OUTSIDE -490.145 punto <814, 568> -> 0
-INSIDE!!! 170.026 ->  punto <814, 568> -> 1
-OUTSIDE -516.178 punto <884, 638> -> 0
-INSIDE!!! 101 ->  punto <884, 638> -> 1
-OUTSIDE -516.178 punto <884, 638> -> 0
-INSIDE!!! 101 ->  punto <884, 638> -> 1
-OUTSIDE -516.178 punto <884, 638> -> 0
-INSIDE!!! 101 ->  punto <884, 638> -> 1
-OUTSIDE -596.142 punto <986, 679> -> 0
-OUTSIDE -0 punto <986, 679> -> 0
-OUTSIDE -740.398 punto <890, 248> -> 0
-INSIDE!!! 101.356 ->  punto <890, 248> -> 1
-OUTSIDE -740.398 punto <890, 248> -> 0
-INSIDE!!! 101.356 ->  punto <890, 248> -> 1
-OUTSIDE -740.837 punto <838, 199> -> 0
-INSIDE!!! 170.229 ->  punto <838, 199> -> 1
-OUTSIDE -740.837 punto <838, 199> -> 0
-INSIDE!!! 170.229 ->  punto <838, 199> -> 1
-OUTSIDE -740.837 punto <838, 199> -> 0
-INSIDE!!! 170.229 ->  punto <838, 199> -> 1
-OUTSIDE -758.901 punto <841, 178> -> 0
-INSIDE!!! 178 ->  punto <841, 178> -> 1
-OUTSIDE -758.901 punto <841, 178> -> 0
-INSIDE!!! 178 ->  punto <841, 178> -> 1
-OUTSIDE -758.901 punto <841, 178> -> 0
-INSIDE!!! 178 ->  punto <841, 178> -> 1
-OUTSIDE -673.698 punto <923, 395> -> 0
-OUTSIDE -0 punto <923, 395> -> 0
-OUTSIDE -677.044 punto <927, 395> -> 0
-OUTSIDE -2.2188 punto <927, 395> -> 0
-OUTSIDE -677.044 punto <927, 395> -> 0
-OUTSIDE -2.2188 punto <927, 395> -> 0
-OUTSIDE -681.781 punto <932, 394> -> 0
-OUTSIDE -6.04699 punto <932, 394> -> 0
-OUTSIDE -681.781 punto <932, 394> -> 0
-OUTSIDE -6.04699 punto <932, 394> -> 0
-OUTSIDE -811.865 punto <890, 150> -> 0
-INSIDE!!! 136.776 ->  punto <890, 150> -> 1
-OUTSIDE -811.865 punto <890, 150> -> 0
-INSIDE!!! 136.776 ->  punto <890, 150> -> 1
-OUTSIDE -811.865 punto <890, 150> -> 0
-INSIDE!!! 136.776 ->  punto <890, 150> -> 1
-OUTSIDE -745.201 punto <995, 375> -> 0
-OUTSIDE -61.3997 punto <995, 375> -> 0
-OUTSIDE -745.201 punto <995, 375> -> 0
-OUTSIDE -61.3997 punto <995, 375> -> 0
-OUTSIDE -792.95 punto <848, 140> -> 0
-INSIDE!!! 140 ->  punto <848, 140> -> 1
-OUTSIDE -792.95 punto <848, 140> -> 0
-INSIDE!!! 140 ->  punto <848, 140> -> 1
-OUTSIDE -889.351 punto <1041, 193> -> 0
-OUTSIDE -0 punto <1041, 193> -> 0
-OUTSIDE -746.385 punto <997, 376> -> 0
-OUTSIDE -63.2851 punto <997, 376> -> 0
-OUTSIDE -746.385 punto <997, 376> -> 0
-OUTSIDE -63.2851 punto <997, 376> -> 0
-OUTSIDE -746.385 punto <997, 376> -> 0
-OUTSIDE -63.2851 punto <997, 376> -> 0
-OUTSIDE -510.492 punto <927, 899> -> 0
-OUTSIDE -160 punto <927, 899> -> 0
-OUTSIDE -510.492 punto <927, 899> -> 0
-OUTSIDE -160 punto <927, 899> -> 0
-OUTSIDE -794.702 punto <1053, 375> -> 0
-OUTSIDE -103.586 punto <1053, 375> -> 0
-OUTSIDE -794.702 punto <1053, 375> -> 0
-OUTSIDE -103.586 punto <1053, 375> -> 0
-OUTSIDE -794.702 punto <1053, 375> -> 0
-OUTSIDE -103.586 punto <1053, 375> -> 0
-OUTSIDE -794.702 punto <1053, 375> -> 0
-OUTSIDE -103.586 punto <1053, 375> -> 0
-OUTSIDE -643.094 punto <1061, 871> -> 0
-OUTSIDE -188.096 punto <1061, 871> -> 0
-OUTSIDE -643.094 punto <1061, 871> -> 0
-OUTSIDE -188.096 punto <1061, 871> -> 0
-OUTSIDE -1031.83 punto <1181, 140> -> 0
-OUTSIDE -140 punto <1181, 140> -> 0
-OUTSIDE -1031.83 punto <1181, 140> -> 0
-OUTSIDE -140 punto <1181, 140> -> 0
-OUTSIDE -727.396 punto <1145, 836> -> 0
-OUTSIDE -223.45 punto <1145, 836> -> 0
-OUTSIDE -727.396 punto <1145, 836> -> 0
-OUTSIDE -223.45 punto <1145, 836> -> 0
-OUTSIDE -1044.54 punto <1234, 193> -> 0
-OUTSIDE -193 punto <1234, 193> -> 0
-OUTSIDE -1044.54 punto <1234, 193> -> 0
-OUTSIDE -193 punto <1234, 193> -> 0
-OUTSIDE -1295.59 punto <1261, -166> -> 0
-OUTSIDE -341.116 punto <1261, -166> -> 0
-OUTSIDE -725.833 punto <939, 1439> -> 0
-OUTSIDE -700.103 punto <939, 1439> -> 0
-OUTSIDE -725.833 punto <939, 1439> -> 0
-OUTSIDE -700.103 punto <939, 1439> -> 0
-OUTSIDE -973.329 punto <1373, 672> -> 0
-OUTSIDE -387.063 punto <1373, 672> -> 0
-OUTSIDE -973.329 punto <1373, 672> -> 0
-OUTSIDE -387.063 punto <1373, 672> -> 0
-OUTSIDE -467.649 punto <577, 1482> -> 0
-OUTSIDE -753.945 punto <577, 1482> -> 0
-OUTSIDE -467.649 punto <577, 1482> -> 0
-OUTSIDE -753.945 punto <577, 1482> -> 0
-OUTSIDE -467.649 punto <577, 1482> -> 0
-OUTSIDE -753.945 punto <577, 1482> -> 0
-OUTSIDE -549.225 punto <812, 453> -> 0
-INSIDE!!! 125.24 ->  punto <812, 453> -> 1
-OUTSIDE -549.225 punto <812, 453> -> 0
-INSIDE!!! 125.24 ->  punto <812, 453> -> 1
-OUTSIDE -588.106 punto <981, 1030> -> 0
-OUTSIDE -295.968 punto <981, 1030> -> 0
-OUTSIDE -588.106 punto <981, 1030> -> 0
-OUTSIDE -295.968 punto <981, 1030> -> 0
-OUTSIDE -588.106 punto <981, 1030> -> 0
-OUTSIDE -295.968 punto <981, 1030> -> 0
-OUTSIDE -1068.49 punto <1380, 395> -> 0
-OUTSIDE -394.62 punto <1380, 395> -> 0
-OUTSIDE -1068.49 punto <1380, 395> -> 0
-OUTSIDE -394.62 punto <1380, 395> -> 0
-OUTSIDE -1166.2 punto <1061, -167> -> 0
-OUTSIDE -193.631 punto <1061, -167> -> 0
-OUTSIDE -1166.2 punto <1061, -167> -> 0
-OUTSIDE -193.631 punto <1061, -167> -> 0
-OUTSIDE -1166.2 punto <1061, -167> -> 0
-OUTSIDE -193.631 punto <1061, -167> -> 0
-OUTSIDE -794.702 punto <1053, 375> -> 0
-OUTSIDE -103.586 punto <1053, 375> -> 0
-OUTSIDE -794.702 punto <1053, 375> -> 0
-OUTSIDE -103.586 punto <1053, 375> -> 0
-OUTSIDE -794.702 punto <1053, 375> -> 0
-OUTSIDE -103.586 punto <1053, 375> -> 0
-OUTSIDE -56840.2 punto <3252, 57875> -> 0
-OUTSIDE -57183.3 punto <3252, 57875> -> 0
-OUTSIDE -56840.2 punto <3252, 57875> -> 0
-OUTSIDE -57183.3 punto <3252, 57875> -> 0
-OUTSIDE -3.037e+09 punto <-2147483648, -2147483648> -> 0
-OUTSIDE -3.037e+09 punto <-2147483648, -2147483648> -> 0
-OUTSIDE -5335.76 punto <5684, 0> -> 0
-OUTSIDE -4645.11 punto <5684, 0> -> 0
-OUTSIDE -5335.76 punto <5684, 0> -> 0
-OUTSIDE -4645.11 punto <5684, 0> -> 0
-OUTSIDE -67613.8 punto <3698, 68640> -> 0
-OUTSIDE -67957.5 punto <3698, 68640> -> 0
-OUTSIDE -3.037e+09 punto <-2147483648, -2147483648> -> 0
-OUTSIDE -3.037e+09 punto <-2147483648, -2147483648> -> 0
-OUTSIDE -3.037e+09 punto <-2147483648, -2147483648> -> 0
-OUTSIDE -3.037e+09 punto <-2147483648, -2147483648> -> 0
-OUTSIDE -3.037e+09 punto <-2147483648, -2147483648> -> 0
-OUTSIDE -3.037e+09 punto <-2147483648, -2147483648> -> 0
-OUTSIDE -1138.86 punto <1508, 530> -> 0
-OUTSIDE -524.533 punto <1508, 530> -> 0
-OUTSIDE -1138.86 punto <1508, 530> -> 0
-OUTSIDE -524.533 punto <1508, 530> -> 0
-OUTSIDE -3.037e+09 punto <-2147483648, -2147483648> -> 0
-OUTSIDE -3.037e+09 punto <-2147483648, -2147483648> -> 0
-Number of visited primary edges using vertex iterator: 233
-before points size: 122 
-before edge size: 122 
-edgesAfterVoronoi: 122
-pointsAfterVoronoi: 122
-x: 0, 0
-OUTSIDE -768.196 punto <0, 0> -> 0
-OUTSIDE -652.754 punto <0, 0> -> 0
-x: 0, 1060
-OUTSIDE -115.629 punto <0, 1060> -> 0
-OUTSIDE -749.328 punto <0, 1060> -> 0
-x: 14, 870
-OUTSIDE 0 punto <14, 870> -> 0
-OUTSIDE -660.328 punto <14, 870> -> 0
-x: 7, 866
-OUTSIDE -8.05882 punto <7, 866> -> 0
-OUTSIDE -665.925 punto <7, 866> -> 0
-x: 7, 866
-OUTSIDE -8.05882 punto <7, 866> -> 0
-OUTSIDE -665.925 punto <7, 866> -> 0
-x: 7, 874
-OUTSIDE -8.06226 punto <7, 874> -> 0
-OUTSIDE -668.18 punto <7, 874> -> 0
-x: 7, 874
-OUTSIDE -8.06226 punto <7, 874> -> 0
-OUTSIDE -668.18 punto <7, 874> -> 0
-x: 70, 765
-OUTSIDE 0 punto <70, 765> -> 0
-OUTSIDE -582.939 punto <70, 765> -> 0
-x: 37, 747
-OUTSIDE -37.5899 punto <37, 747> -> 0
-OUTSIDE -613.453 punto <37, 747> -> 0
-x: 37, 747
-OUTSIDE -37.5899 punto <37, 747> -> 0
-OUTSIDE -613.453 punto <37, 747> -> 0
-x: 48, 1011
-OUTSIDE -48.6458 punto <48, 1011> -> 0
-OUTSIDE -683.405 punto <48, 1011> -> 0
-x: 48, 1011
-OUTSIDE -48.6458 punto <48, 1011> -> 0
-OUTSIDE -683.405 punto <48, 1011> -> 0
-x: 48, 1011
-OUTSIDE -48.6458 punto <48, 1011> -> 0
-OUTSIDE -683.405 punto <48, 1011> -> 0
-x: 70, 695
-OUTSIDE -70 punto <70, 695> -> 0
-OUTSIDE -577.14 punto <70, 695> -> 0
-x: 70, 695
-OUTSIDE -70 punto <70, 695> -> 0
-OUTSIDE -577.14 punto <70, 695> -> 0
-x: 360, 765
-OUTSIDE -0 punto <360, 765> -> 0
-OUTSIDE -298.761 punto <360, 765> -> 0
-x: 635, 347
-OUTSIDE -500.349 punto <635, 347> -> 0
-OUTSIDE 0 punto <635, 347> -> 0
-x: 318, 318
-OUTSIDE -447 punto <318, 318> -> 0
-OUTSIDE -318.324 punto <318, 318> -> 0
-x: 318, 318
-OUTSIDE -447 punto <318, 318> -> 0
-OUTSIDE -318.324 punto <318, 318> -> 0
-x: 318, 318
-OUTSIDE -447 punto <318, 318> -> 0
-OUTSIDE -318.324 punto <318, 318> -> 0
-x: 640, 169
-OUTSIDE -658.495 punto <640, 169> -> 0
-OUTSIDE 0 punto <640, 169> -> 0
-x: 477, 162
-OUTSIDE -614.246 punto <477, 162> -> 0
-OUTSIDE -163.149 punto <477, 162> -> 0
-x: 477, 162
-OUTSIDE -614.246 punto <477, 162> -> 0
-OUTSIDE -163.149 punto <477, 162> -> 0
-x: 641, 463
-OUTSIDE -412.511 punto <641, 463> -> 0
-OUTSIDE 0 punto <641, 463> -> 0
-x: 347, 471
-OUTSIDE -294 punto <347, 471> -> 0
-OUTSIDE -294.109 punto <347, 471> -> 0
-x: 347, 471
-OUTSIDE -294 punto <347, 471> -> 0
-OUTSIDE -294.109 punto <347, 471> -> 0
-x: 360, 483
-OUTSIDE -282 punto <360, 483> -> 0
-OUTSIDE -281.442 punto <360, 483> -> 0
-x: 360, 483
-OUTSIDE -282 punto <360, 483> -> 0
-OUTSIDE -281.442 punto <360, 483> -> 0
-x: 320, 444
-OUTSIDE -321 punto <320, 444> -> 0
-OUTSIDE -321.562 punto <320, 444> -> 0
-x: 320, 444
-OUTSIDE -321 punto <320, 444> -> 0
-OUTSIDE -321.562 punto <320, 444> -> 0
-x: 320, 444
-OUTSIDE -321 punto <320, 444> -> 0
-OUTSIDE -321.562 punto <320, 444> -> 0
-x: 642, 118
-OUTSIDE -705.785 punto <642, 118> -> 0
-OUTSIDE 0 punto <642, 118> -> 0
-x: 528, 113
-OUTSIDE -673.296 punto <528, 113> -> 0
-OUTSIDE -114.11 punto <528, 113> -> 0
-x: 528, 113
-OUTSIDE -673.296 punto <528, 113> -> 0
-OUTSIDE -114.11 punto <528, 113> -> 0
-x: 321, 421
-OUTSIDE -344 punto <321, 421> -> 0
-OUTSIDE -322.602 punto <321, 421> -> 0
-x: 321, 421
-OUTSIDE -344 punto <321, 421> -> 0
-OUTSIDE -322.602 punto <321, 421> -> 0
-x: 321, 421
-OUTSIDE -344 punto <321, 421> -> 0
-OUTSIDE -322.602 punto <321, 421> -> 0
-x: 647, 682
-OUTSIDE -288.206 punto <647, 682> -> 0
-OUTSIDE 0 punto <647, 682> -> 0
-x: 492, 684
-OUTSIDE -154.871 punto <492, 684> -> 0
-OUTSIDE -154.997 punto <492, 684> -> 0
-x: 492, 684
-OUTSIDE -154.871 punto <492, 684> -> 0
-OUTSIDE -154.997 punto <492, 684> -> 0
-x: 492, 686
-OUTSIDE -153.828 punto <492, 686> -> 0
-OUTSIDE -155.051 punto <492, 686> -> 0
-x: 492, 686
-OUTSIDE -153.828 punto <492, 686> -> 0
-OUTSIDE -155.051 punto <492, 686> -> 0
-x: 380, 267
-OUTSIDE -498.401 punto <380, 267> -> 0
-OUTSIDE -267.255 punto <380, 267> -> 0
-x: 380, 267
-OUTSIDE -498.401 punto <380, 267> -> 0
-OUTSIDE -267.255 punto <380, 267> -> 0
-x: 468, 413
-OUTSIDE -368.196 punto <468, 413> -> 0
-OUTSIDE -179.569 punto <468, 413> -> 0
-x: 468, 413
-OUTSIDE -368.196 punto <468, 413> -> 0
-OUTSIDE -179.569 punto <468, 413> -> 0
-x: 403, 249
-OUTSIDE -517.789 punto <403, 249> -> 0
-OUTSIDE -250.138 punto <403, 249> -> 0
-x: 403, 249
-OUTSIDE -517.789 punto <403, 249> -> 0
-OUTSIDE -250.138 punto <403, 249> -> 0
-x: 403, 249
-OUTSIDE -517.789 punto <403, 249> -> 0
-OUTSIDE -250.138 punto <403, 249> -> 0
-x: 576, 77
-OUTSIDE -721.11 punto <576, 77> -> 0
-OUTSIDE -77.698 punto <576, 77> -> 0
-x: 576, 77
-OUTSIDE -721.11 punto <576, 77> -> 0
-OUTSIDE -77.698 punto <576, 77> -> 0
-x: 482, 246
-OUTSIDE -533.146 punto <482, 246> -> 0
-OUTSIDE -175.764 punto <482, 246> -> 0
-x: 482, 246
-OUTSIDE -533.146 punto <482, 246> -> 0
-OUTSIDE -175.764 punto <482, 246> -> 0
-x: 592, 418
-OUTSIDE -417.412 punto <592, 418> -> 0
-OUTSIDE -66.2932 punto <592, 418> -> 0
-x: 592, 418
-OUTSIDE -417.412 punto <592, 418> -> 0
-OUTSIDE -66.2932 punto <592, 418> -> 0
-x: 661, 412
-OUTSIDE -463.907 punto <661, 412> -> 0
-OUTSIDE 0 punto <661, 412> -> 0
-x: 628, 424
-OUTSIDE -433.711 punto <628, 424> -> 0
-OUTSIDE -35.0964 punto <628, 424> -> 0
-x: 628, 424
-OUTSIDE -433.711 punto <628, 424> -> 0
-OUTSIDE -35.0964 punto <628, 424> -> 0
-x: 653, 426
-OUTSIDE -448.074 punto <653, 426> -> 0
-OUTSIDE -16.1245 punto <653, 426> -> 0
-x: 653, 426
-OUTSIDE -448.074 punto <653, 426> -> 0
-OUTSIDE -16.1245 punto <653, 426> -> 0
-x: 671, 232
-OUTSIDE -617.098 punto <671, 232> -> 0
-OUTSIDE 0 punto <671, 232> -> 0
-x: 679, 422
-OUTSIDE -468.412 punto <679, 422> -> 0
-OUTSIDE 0 punto <679, 422> -> 0
-x: 542, 783
-OUTSIDE -145.958 punto <542, 783> -> 0
-OUTSIDE -145.691 punto <542, 783> -> 0
-x: 542, 783
-OUTSIDE -145.958 punto <542, 783> -> 0
-OUTSIDE -145.691 punto <542, 783> -> 0
-x: 544, 786
-OUTSIDE -146.123 punto <544, 786> -> 0
-OUTSIDE -146.373 punto <544, 786> -> 0
-x: 544, 786
-OUTSIDE -146.123 punto <544, 786> -> 0
-OUTSIDE -146.373 punto <544, 786> -> 0
-x: 705, 739
-OUTSIDE -311.464 punto <705, 739> -> 0
-OUTSIDE -0 punto <705, 739> -> 0
-x: 715, 0
-OUTSIDE -843.356 punto <715, 0> -> 0
-OUTSIDE 0 punto <715, 0> -> 0
-x: 586, 859
-OUTSIDE -168.003 punto <586, 859> -> 0
-OUTSIDE -168.998 punto <586, 859> -> 0
-x: 586, 859
-OUTSIDE -168.003 punto <586, 859> -> 0
-OUTSIDE -168.998 punto <586, 859> -> 0
-x: 759, 0
-OUTSIDE -862.801 punto <759, 0> -> 0
-OUTSIDE 0 punto <759, 0> -> 0
-x: 759, 0
-OUTSIDE -862.801 punto <759, 0> -> 0
-OUTSIDE 0 punto <759, 0> -> 0
-x: 595, 880
-OUTSIDE -178.126 punto <595, 880> -> 0
-OUTSIDE -178.832 punto <595, 880> -> 0
-x: 595, 880
-OUTSIDE -178.126 punto <595, 880> -> 0
-OUTSIDE -178.832 punto <595, 880> -> 0
-x: 595, 880
-OUTSIDE -178.126 punto <595, 880> -> 0
-OUTSIDE -178.832 punto <595, 880> -> 0
-x: 705, 899
-OUTSIDE -289.638 punto <705, 899> -> 0
-OUTSIDE -160 punto <705, 899> -> 0
-x: 705, 899
-OUTSIDE -289.638 punto <705, 899> -> 0
-OUTSIDE -160 punto <705, 899> -> 0
-x: 915, 0
-OUTSIDE -945.119 punto <915, 0> -> 0
-OUTSIDE -0 punto <915, 0> -> 0
-x: 915, 0
-OUTSIDE -945.119 punto <915, 0> -> 0
-OUTSIDE -0 punto <915, 0> -> 0
-x: 926, 393
-OUTSIDE -677.303 punto <926, 393> -> 0
-OUTSIDE -0 punto <926, 393> -> 0
-x: 927, 739
-OUTSIDE -523.184 punto <927, 739> -> 0
-OUTSIDE -0 punto <927, 739> -> 0
-x: 942, 336
-OUTSIDE -723.025 punto <942, 336> -> 0
-OUTSIDE -0 punto <942, 336> -> 0
-x: 942, 335
-OUTSIDE -723.619 punto <942, 335> -> 0
-OUTSIDE -0 punto <942, 335> -> 0
-x: 943, 336
-OUTSIDE -723.83 punto <943, 336> -> 0
-OUTSIDE -1 punto <943, 336> -> 0
-x: 943, 336
-OUTSIDE -723.83 punto <943, 336> -> 0
-OUTSIDE -1 punto <943, 336> -> 0
-x: 944, 336
-OUTSIDE -724.636 punto <944, 336> -> 0
-OUTSIDE -1.87839 punto <944, 336> -> 0
-x: 944, 336
-OUTSIDE -724.636 punto <944, 336> -> 0
-OUTSIDE -1.87839 punto <944, 336> -> 0
-x: 963, 0
-OUTSIDE -974.081 punto <963, 0> -> 0
-OUTSIDE -0 punto <963, 0> -> 0
-x: 964, 322
-OUTSIDE -749.043 punto <964, 322> -> 0
-OUTSIDE -0 punto <964, 322> -> 0
-x: 982, 451
-OUTSIDE -694.501 punto <982, 451> -> 0
-OUTSIDE -0 punto <982, 451> -> 0
-x: 986, 679
-OUTSIDE -596.142 punto <986, 679> -> 0
-OUTSIDE -0 punto <986, 679> -> 0
-x: 923, 395
-OUTSIDE -673.698 punto <923, 395> -> 0
-OUTSIDE -0 punto <923, 395> -> 0
-x: 927, 395
-OUTSIDE -677.044 punto <927, 395> -> 0
-OUTSIDE -2.2188 punto <927, 395> -> 0
-x: 927, 395
-OUTSIDE -677.044 punto <927, 395> -> 0
-OUTSIDE -2.2188 punto <927, 395> -> 0
-x: 932, 394
-OUTSIDE -681.781 punto <932, 394> -> 0
-OUTSIDE -6.04699 punto <932, 394> -> 0
-x: 932, 394
-OUTSIDE -681.781 punto <932, 394> -> 0
-OUTSIDE -6.04699 punto <932, 394> -> 0
-x: 995, 375
-OUTSIDE -745.201 punto <995, 375> -> 0
-OUTSIDE -61.3997 punto <995, 375> -> 0
-x: 995, 375
-OUTSIDE -745.201 punto <995, 375> -> 0
-OUTSIDE -61.3997 punto <995, 375> -> 0
-x: 1041, 193
-OUTSIDE -889.351 punto <1041, 193> -> 0
-OUTSIDE -0 punto <1041, 193> -> 0
-x: 997, 376
-OUTSIDE -746.385 punto <997, 376> -> 0
-OUTSIDE -63.2851 punto <997, 376> -> 0
-x: 997, 376
-OUTSIDE -746.385 punto <997, 376> -> 0
-OUTSIDE -63.2851 punto <997, 376> -> 0
-x: 997, 376
-OUTSIDE -746.385 punto <997, 376> -> 0
-OUTSIDE -63.2851 punto <997, 376> -> 0
-x: 927, 899
-OUTSIDE -510.492 punto <927, 899> -> 0
-OUTSIDE -160 punto <927, 899> -> 0
-x: 927, 899
-OUTSIDE -510.492 punto <927, 899> -> 0
-OUTSIDE -160 punto <927, 899> -> 0
-x: 1053, 375
-OUTSIDE -794.702 punto <1053, 375> -> 0
-OUTSIDE -103.586 punto <1053, 375> -> 0
-x: 1053, 375
-OUTSIDE -794.702 punto <1053, 375> -> 0
-OUTSIDE -103.586 punto <1053, 375> -> 0
-x: 1053, 375
-OUTSIDE -794.702 punto <1053, 375> -> 0
-OUTSIDE -103.586 punto <1053, 375> -> 0
-x: 1053, 375
-OUTSIDE -794.702 punto <1053, 375> -> 0
-OUTSIDE -103.586 punto <1053, 375> -> 0
-x: 1061, 871
-OUTSIDE -643.094 punto <1061, 871> -> 0
-OUTSIDE -188.096 punto <1061, 871> -> 0
-x: 1061, 871
-OUTSIDE -643.094 punto <1061, 871> -> 0
-OUTSIDE -188.096 punto <1061, 871> -> 0
-x: 1181, 140
-OUTSIDE -1031.83 punto <1181, 140> -> 0
-OUTSIDE -140 punto <1181, 140> -> 0
-x: 1181, 140
-OUTSIDE -1031.83 punto <1181, 140> -> 0
-OUTSIDE -140 punto <1181, 140> -> 0
-x: 1145, 836
-OUTSIDE -727.396 punto <1145, 836> -> 0
-OUTSIDE -223.45 punto <1145, 836> -> 0
-x: 1145, 836
-OUTSIDE -727.396 punto <1145, 836> -> 0
-OUTSIDE -223.45 punto <1145, 836> -> 0
-x: 1234, 193
-OUTSIDE -1044.54 punto <1234, 193> -> 0
-OUTSIDE -193 punto <1234, 193> -> 0
-x: 1234, 193
-OUTSIDE -1044.54 punto <1234, 193> -> 0
-OUTSIDE -193 punto <1234, 193> -> 0
-x: 1373, 672
-OUTSIDE -973.329 punto <1373, 672> -> 0
-OUTSIDE -387.063 punto <1373, 672> -> 0
-x: 981, 1030
-OUTSIDE -588.106 punto <981, 1030> -> 0
-OUTSIDE -295.968 punto <981, 1030> -> 0
-x: 981, 1030
-OUTSIDE -588.106 punto <981, 1030> -> 0
-OUTSIDE -295.968 punto <981, 1030> -> 0
-x: 1380, 395
-OUTSIDE -1068.49 punto <1380, 395> -> 0
-OUTSIDE -394.62 punto <1380, 395> -> 0
-x: 1053, 375
-OUTSIDE -794.702 punto <1053, 375> -> 0
-OUTSIDE -103.586 punto <1053, 375> -> 0
-x: 1508, 530
-OUTSIDE -1138.86 punto <1508, 530> -> 0
-OUTSIDE -524.533 punto <1508, 530> -> 0
-start id 154203
+Number of visited primary edges using vertex iterator: 183
+before points size: 88 
+before edge size: 176 
+edgesAfterVoronoi: 176
+pointsAfterVoronoi: 88
+x: 299, 662
+x: 299, 662
+x: 299, 662
+x: 302, 757
+x: 302, 757
+x: 302, 757
+x: 450, 845
+x: 450, 845
+x: 450, 845
+x: 341, 408
+x: 341, 408
+x: 341, 408
+x: 353, 353
+x: 353, 353
+x: 353, 353
+x: 620, 927
+x: 620, 927
+x: 620, 927
+x: 553, 274
+x: 553, 274
+x: 553, 274
+x: 857, 838
+x: 857, 838
+x: 857, 838
+x: 770, 936
+x: 770, 936
+x: 770, 936
+x: 820, 944
+x: 820, 944
+x: 820, 944
+x: 1011, 840
+x: 1011, 840
+x: 1011, 840
+x: 777, 253
+x: 777, 253
+x: 777, 253
+x: 940, 945
+x: 940, 945
+x: 940, 945
+x: 1018, 951
+x: 1018, 951
+x: 1018, 951
+x: 947, 318
+x: 947, 318
+x: 947, 318
+x: 946, 265
+x: 946, 265
+x: 946, 265
+x: 1158, 442
+x: 1158, 442
+x: 1158, 442
+x: 1141, 922
+x: 1141, 922
+x: 1141, 922
+x: 1279, 833
+x: 1279, 833
+x: 1279, 833
+x: 1285, 460
+x: 1285, 460
+x: 1285, 460
+x: 1260, 948
+x: 1260, 948
+x: 1260, 948
+x: 1281, 952
+x: 1281, 952
+x: 1281, 952
+x: 1158, 256
+x: 1158, 256
+x: 1158, 256
+x: 1278, 250
+x: 1278, 250
+x: 1278, 250
+x: 1426, 423
+x: 1426, 423
+x: 1312, 247
+x: 1312, 247
+x: 1312, 247
+x: 1416, 379
+x: 1416, 379
+x: 1424, 396
+x: 1424, 396
+x: 1424, 396
+x: 1447, 943
+x: 1447, 943
+x: 1447, 943
+x: 1446, 946
+x: 1446, 946
+x: 1446, 946
+p1: 0 ->(299, 662) - p2: 1 ->(765, 662) - lenght: 466.000000
+p1: 1 ->(765, 662) - p2: 0 ->(299, 662) - lenght: 466.000000
+p1: 0 ->(299, 662) - p2: 2 ->(302, 757) - lenght: 95.047357
+p1: 2 ->(302, 757) - p2: 0 ->(299, 662) - lenght: 95.047357
+p1: 0 ->(299, 662) - p2: 3 ->(341, 408) - lenght: 257.449024
+p1: 3 ->(341, 408) - p2: 0 ->(299, 662) - lenght: 257.449024
+p1: 2 ->(302, 757) - p2: 4 ->(450, 845) - lenght: 172.185946
+p1: 4 ->(450, 845) - p2: 2 ->(302, 757) - lenght: 172.185946
+p1: 2 ->(302, 757) - p2: 5 ->(0, 1060) - lenght: 427.800187
+p1: 5 ->(0, 1060) - p2: 2 ->(302, 757) - lenght: 427.800187
+p1: 2 ->(302, 757) - p2: 0 ->(299, 662) - lenght: 95.047357
+p1: 0 ->(299, 662) - p2: 2 ->(302, 757) - lenght: 95.047357
+p1: 4 ->(450, 845) - p2: 6 ->(620, 927) - lenght: 188.743212
+p1: 6 ->(620, 927) - p2: 4 ->(450, 845) - lenght: 188.743212
+p1: 4 ->(450, 845) - p2: 2 ->(302, 757) - lenght: 172.185946
+p1: 2 ->(302, 757) - p2: 4 ->(450, 845) - lenght: 172.185946
+p1: 4 ->(450, 845) - p2: 7 ->(767, 668) - lenght: 363.067487
+p1: 7 ->(767, 668) - p2: 4 ->(450, 845) - lenght: 363.067487
+p1: 3 ->(341, 408) - p2: 8 ->(353, 353) - lenght: 56.293872
+p1: 8 ->(353, 353) - p2: 3 ->(341, 408) - lenght: 56.293872
+p1: 3 ->(341, 408) - p2: 9 ->(764, 660) - lenght: 492.374857
+p1: 9 ->(764, 660) - p2: 3 ->(341, 408) - lenght: 492.374857
+p1: 3 ->(341, 408) - p2: 0 ->(299, 662) - lenght: 257.449024
+p1: 0 ->(299, 662) - p2: 3 ->(341, 408) - lenght: 257.449024
+p1: 8 ->(353, 353) - p2: 10 ->(553, 274) - lenght: 215.037206
+p1: 10 ->(553, 274) - p2: 8 ->(353, 353) - lenght: 215.037206
+p1: 8 ->(353, 353) - p2: 3 ->(341, 408) - lenght: 56.293872
+p1: 3 ->(341, 408) - p2: 8 ->(353, 353) - lenght: 56.293872
+p1: 8 ->(353, 353) - p2: 11 ->(0, 0) - lenght: 499.217388
+p1: 11 ->(0, 0) - p2: 8 ->(353, 353) - lenght: 499.217388
+p1: 6 ->(620, 927) - p2: 12 ->(770, 936) - lenght: 150.269757
+p1: 12 ->(770, 936) - p2: 6 ->(620, 927) - lenght: 150.269757
+p1: 6 ->(620, 927) - p2: 4 ->(450, 845) - lenght: 188.743212
+p1: 4 ->(450, 845) - p2: 6 ->(620, 927) - lenght: 188.743212
+p1: 6 ->(620, 927) - p2: 13 ->(767, 670) - lenght: 296.070937
+p1: 13 ->(767, 670) - p2: 6 ->(620, 927) - lenght: 296.070937
+p1: 10 ->(553, 274) - p2: 14 ->(777, 253) - lenght: 224.982222
+p1: 14 ->(777, 253) - p2: 10 ->(553, 274) - lenght: 224.982222
+p1: 10 ->(553, 274) - p2: 15 ->(763, 648) - lenght: 428.924236
+p1: 15 ->(763, 648) - p2: 10 ->(553, 274) - lenght: 428.924236
+p1: 10 ->(553, 274) - p2: 8 ->(353, 353) - lenght: 215.037206
+p1: 8 ->(353, 353) - p2: 10 ->(553, 274) - lenght: 215.037206
+p1: 16 ->(857, 838) - p2: 17 ->(936, 788) - lenght: 93.493315
+p1: 17 ->(936, 788) - p2: 16 ->(857, 838) - lenght: 93.493315
+p1: 16 ->(857, 838) - p2: 18 ->(820, 944) - lenght: 112.271991
+p1: 18 ->(820, 944) - p2: 16 ->(857, 838) - lenght: 112.271991
+p1: 16 ->(857, 838) - p2: 19 ->(770, 690) - lenght: 171.677022
+p1: 19 ->(770, 690) - p2: 16 ->(857, 838) - lenght: 171.677022
+p1: 12 ->(770, 936) - p2: 18 ->(820, 944) - lenght: 50.635956
+p1: 18 ->(820, 944) - p2: 12 ->(770, 936) - lenght: 50.635956
+p1: 12 ->(770, 936) - p2: 6 ->(620, 927) - lenght: 150.269757
+p1: 6 ->(620, 927) - p2: 12 ->(770, 936) - lenght: 150.269757
+p1: 12 ->(770, 936) - p2: 19 ->(770, 690) - lenght: 246.000000
+p1: 19 ->(770, 690) - p2: 12 ->(770, 936) - lenght: 246.000000
+p1: 18 ->(820, 944) - p2: 20 ->(940, 945) - lenght: 120.004167
+p1: 20 ->(940, 945) - p2: 18 ->(820, 944) - lenght: 120.004167
+p1: 18 ->(820, 944) - p2: 12 ->(770, 936) - lenght: 50.635956
+p1: 12 ->(770, 936) - p2: 18 ->(820, 944) - lenght: 50.635956
+p1: 18 ->(820, 944) - p2: 16 ->(857, 838) - lenght: 112.271991
+p1: 16 ->(857, 838) - p2: 18 ->(820, 944) - lenght: 112.271991
+p1: 21 ->(1011, 840) - p2: 22 ->(1136, 709) - lenght: 181.069048
+p1: 22 ->(1136, 709) - p2: 21 ->(1011, 840) - lenght: 181.069048
+p1: 21 ->(1011, 840) - p2: 23 ->(1018, 951) - lenght: 111.220502
+p1: 23 ->(1018, 951) - p2: 21 ->(1011, 840) - lenght: 111.220502
+p1: 21 ->(1011, 840) - p2: 24 ->(938, 796) - lenght: 85.234969
+p1: 24 ->(938, 796) - p2: 21 ->(1011, 840) - lenght: 85.234969
+p1: 14 ->(777, 253) - p2: 25 ->(946, 265) - lenght: 169.425500
+p1: 25 ->(946, 265) - p2: 14 ->(777, 253) - lenght: 169.425500
+p1: 14 ->(777, 253) - p2: 26 ->(764, 633) - lenght: 380.222303
+p1: 26 ->(764, 633) - p2: 14 ->(777, 253) - lenght: 380.222303
+p1: 14 ->(777, 253) - p2: 10 ->(553, 274) - lenght: 224.982222
+p1: 10 ->(553, 274) - p2: 14 ->(777, 253) - lenght: 224.982222
+p1: 20 ->(940, 945) - p2: 23 ->(1018, 951) - lenght: 78.230429
+p1: 23 ->(1018, 951) - p2: 20 ->(940, 945) - lenght: 78.230429
+p1: 20 ->(940, 945) - p2: 18 ->(820, 944) - lenght: 120.004167
+p1: 18 ->(820, 944) - p2: 20 ->(940, 945) - lenght: 120.004167
+p1: 20 ->(940, 945) - p2: 24 ->(938, 796) - lenght: 149.013422
+p1: 24 ->(938, 796) - p2: 20 ->(940, 945) - lenght: 149.013422
+p1: 23 ->(1018, 951) - p2: 27 ->(1141, 922) - lenght: 126.372465
+p1: 27 ->(1141, 922) - p2: 23 ->(1018, 951) - lenght: 126.372465
+p1: 23 ->(1018, 951) - p2: 20 ->(940, 945) - lenght: 78.230429
+p1: 20 ->(940, 945) - p2: 23 ->(1018, 951) - lenght: 78.230429
+p1: 23 ->(1018, 951) - p2: 21 ->(1011, 840) - lenght: 111.220502
+p1: 21 ->(1011, 840) - p2: 23 ->(1018, 951) - lenght: 111.220502
+p1: 28 ->(947, 318) - p2: 25 ->(946, 265) - lenght: 53.009433
+p1: 25 ->(946, 265) - p2: 28 ->(947, 318) - lenght: 53.009433
+p1: 28 ->(947, 318) - p2: 29 ->(965, 580) - lenght: 262.617593
+p1: 29 ->(965, 580) - p2: 28 ->(947, 318) - lenght: 262.617593
+p1: 28 ->(947, 318) - p2: 26 ->(764, 633) - lenght: 364.299327
+p1: 26 ->(764, 633) - p2: 28 ->(947, 318) - lenght: 364.299327
+p1: 25 ->(946, 265) - p2: 30 ->(1158, 256) - lenght: 212.190952
+p1: 30 ->(1158, 256) - p2: 25 ->(946, 265) - lenght: 212.190952
+p1: 25 ->(946, 265) - p2: 28 ->(947, 318) - lenght: 53.009433
+p1: 28 ->(947, 318) - p2: 25 ->(946, 265) - lenght: 53.009433
+p1: 25 ->(946, 265) - p2: 14 ->(777, 253) - lenght: 169.425500
+p1: 14 ->(777, 253) - p2: 25 ->(946, 265) - lenght: 169.425500
+p1: 31 ->(1158, 442) - p2: 30 ->(1158, 256) - lenght: 186.000000
+p1: 30 ->(1158, 256) - p2: 31 ->(1158, 442) - lenght: 186.000000
+p1: 31 ->(1158, 442) - p2: 32 ->(1164, 581) - lenght: 139.129436
+p1: 32 ->(1164, 581) - p2: 31 ->(1158, 442) - lenght: 139.129436
+p1: 31 ->(1158, 442) - p2: 29 ->(965, 580) - lenght: 237.261459
+p1: 29 ->(965, 580) - p2: 31 ->(1158, 442) - lenght: 237.261459
+p1: 27 ->(1141, 922) - p2: 33 ->(1260, 948) - lenght: 121.807225
+p1: 33 ->(1260, 948) - p2: 27 ->(1141, 922) - lenght: 121.807225
+p1: 27 ->(1141, 922) - p2: 23 ->(1018, 951) - lenght: 126.372465
+p1: 23 ->(1018, 951) - p2: 27 ->(1141, 922) - lenght: 126.372465
+p1: 27 ->(1141, 922) - p2: 22 ->(1136, 709) - lenght: 213.058677
+p1: 22 ->(1136, 709) - p2: 27 ->(1141, 922) - lenght: 213.058677
+p1: 34 ->(1279, 833) - p2: 35 ->(1376, 781) - lenght: 110.059075
+p1: 35 ->(1376, 781) - p2: 34 ->(1279, 833) - lenght: 110.059075
+p1: 34 ->(1279, 833) - p2: 33 ->(1260, 948) - lenght: 116.558998
+p1: 33 ->(1260, 948) - p2: 34 ->(1279, 833) - lenght: 116.558998
+p1: 34 ->(1279, 833) - p2: 36 ->(1137, 695) - lenght: 198.010101
+p1: 36 ->(1137, 695) - p2: 34 ->(1279, 833) - lenght: 198.010101
+p1: 37 ->(1285, 460) - p2: 38 ->(1278, 250) - lenght: 210.116634
+p1: 38 ->(1278, 250) - p2: 37 ->(1285, 460) - lenght: 210.116634
+p1: 37 ->(1285, 460) - p2: 39 ->(1293, 545) - lenght: 85.375641
+p1: 39 ->(1293, 545) - p2: 37 ->(1285, 460) - lenght: 85.375641
+p1: 37 ->(1285, 460) - p2: 32 ->(1164, 581) - lenght: 171.119841
+p1: 32 ->(1164, 581) - p2: 37 ->(1285, 460) - lenght: 171.119841
+p1: 33 ->(1260, 948) - p2: 40 ->(1281, 952) - lenght: 21.377558
+p1: 40 ->(1281, 952) - p2: 33 ->(1260, 948) - lenght: 21.377558
+p1: 33 ->(1260, 948) - p2: 27 ->(1141, 922) - lenght: 121.807225
+p1: 27 ->(1141, 922) - p2: 33 ->(1260, 948) - lenght: 121.807225
+p1: 33 ->(1260, 948) - p2: 34 ->(1279, 833) - lenght: 116.558998
+p1: 34 ->(1279, 833) - p2: 33 ->(1260, 948) - lenght: 116.558998
+p1: 40 ->(1281, 952) - p2: 41 ->(1446, 946) - lenght: 165.109055
+p1: 41 ->(1446, 946) - p2: 40 ->(1281, 952) - lenght: 165.109055
+p1: 40 ->(1281, 952) - p2: 33 ->(1260, 948) - lenght: 21.377558
+p1: 33 ->(1260, 948) - p2: 40 ->(1281, 952) - lenght: 21.377558
+p1: 40 ->(1281, 952) - p2: 35 ->(1376, 781) - lenght: 195.616973
+p1: 35 ->(1376, 781) - p2: 40 ->(1281, 952) - lenght: 195.616973
+p1: 30 ->(1158, 256) - p2: 38 ->(1278, 250) - lenght: 120.149906
+p1: 38 ->(1278, 250) - p2: 30 ->(1158, 256) - lenght: 120.149906
+p1: 30 ->(1158, 256) - p2: 31 ->(1158, 442) - lenght: 186.000000
+p1: 31 ->(1158, 442) - p2: 30 ->(1158, 256) - lenght: 186.000000
+p1: 30 ->(1158, 256) - p2: 25 ->(946, 265) - lenght: 212.190952
+p1: 25 ->(946, 265) - p2: 30 ->(1158, 256) - lenght: 212.190952
+p1: 38 ->(1278, 250) - p2: 42 ->(1312, 247) - lenght: 34.132096
+p1: 42 ->(1312, 247) - p2: 38 ->(1278, 250) - lenght: 34.132096
+p1: 38 ->(1278, 250) - p2: 37 ->(1285, 460) - lenght: 210.116634
+p1: 37 ->(1285, 460) - p2: 38 ->(1278, 250) - lenght: 210.116634
+p1: 38 ->(1278, 250) - p2: 30 ->(1158, 256) - lenght: 120.149906
+p1: 30 ->(1158, 256) - p2: 38 ->(1278, 250) - lenght: 120.149906
+p1: 43 ->(1426, 423) - p2: 44 ->(1424, 396) - lenght: 27.073973
+p1: 44 ->(1424, 396) - p2: 43 ->(1426, 423) - lenght: 27.073973
+p1: 43 ->(1426, 423) - p2: 45 ->(1441, 599) - lenght: 176.638048
+p1: 45 ->(1441, 599) - p2: 43 ->(1426, 423) - lenght: 176.638048
+p1: 42 ->(1312, 247) - p2: 46 ->(1416, 379) - lenght: 168.047612
+p1: 46 ->(1416, 379) - p2: 42 ->(1312, 247) - lenght: 168.047612
+p1: 42 ->(1312, 247) - p2: 38 ->(1278, 250) - lenght: 34.132096
+p1: 38 ->(1278, 250) - p2: 42 ->(1312, 247) - lenght: 34.132096
+p1: 42 ->(1312, 247) - p2: 47 ->(1560, 0) - lenght: 350.018571
+p1: 47 ->(1560, 0) - p2: 42 ->(1312, 247) - lenght: 350.018571
+p1: 46 ->(1416, 379) - p2: 44 ->(1424, 396) - lenght: 18.788294
+p1: 44 ->(1424, 396) - p2: 46 ->(1416, 379) - lenght: 18.788294
+p1: 46 ->(1416, 379) - p2: 42 ->(1312, 247) - lenght: 168.047612
+p1: 42 ->(1312, 247) - p2: 46 ->(1416, 379) - lenght: 168.047612
+p1: 44 ->(1424, 396) - p2: 45 ->(1441, 599) - lenght: 203.710579
+p1: 45 ->(1441, 599) - p2: 44 ->(1424, 396) - lenght: 203.710579
+p1: 44 ->(1424, 396) - p2: 43 ->(1426, 423) - lenght: 27.073973
+p1: 43 ->(1426, 423) - p2: 44 ->(1424, 396) - lenght: 27.073973
+p1: 44 ->(1424, 396) - p2: 46 ->(1416, 379) - lenght: 18.788294
+p1: 46 ->(1416, 379) - p2: 44 ->(1424, 396) - lenght: 18.788294
+p1: 48 ->(1447, 943) - p2: 41 ->(1446, 946) - lenght: 3.162278
+p1: 41 ->(1446, 946) - p2: 48 ->(1447, 943) - lenght: 3.162278
+p1: 48 ->(1447, 943) - p2: 49 ->(1436, 779) - lenght: 164.368488
+p1: 49 ->(1436, 779) - p2: 48 ->(1447, 943) - lenght: 164.368488
+p1: 48 ->(1447, 943) - p2: 49 ->(1436, 779) - lenght: 164.368488
+p1: 49 ->(1436, 779) - p2: 48 ->(1447, 943) - lenght: 164.368488
+p1: 41 ->(1446, 946) - p2: 50 ->(1027, 528) - lenght: 591.848798
+p1: 50 ->(1027, 528) - p2: 41 ->(1446, 946) - lenght: 591.848798
+p1: 41 ->(1446, 946) - p2: 40 ->(1281, 952) - lenght: 165.109055
+p1: 40 ->(1281, 952) - p2: 41 ->(1446, 946) - lenght: 165.109055
+p1: 41 ->(1446, 946) - p2: 48 ->(1447, 943) - lenght: 3.162278
+p1: 48 ->(1447, 943) - p2: 41 ->(1446, 946) - lenght: 3.162278
+start id 13070932    size : 56
 start Size ingress 0
-end id 1502812
+end id 13250072    size : 57
 end Size ingress0
 Step 20
 Step 30size: 0 0
-Step 40size: 0 0
-Step 50size: 0 0
-Step 60size: 0 0
-Step 70size: 0 0
-Step 80size: 0 0
-Step 90size: 0 0
-Step 100size: 0 0
-Step 110size: 0 0
-Step 120size: 0 0
-Step 130size: 0 0
-Step 140size: 0 0
-Step 150size: 0 0
-connect points (1373,672) and (1502,812)
------- n samples 17
------- sample 0 coord(1437,742)
------- sample 1 coord(1469,777)
------- sample 2 coord(1405,707)
------- sample 3 coord(1485,794)
------- sample 4 coord(1389,689)
------- sample 5 coord(1453,759)
------- sample 6 coord(1421,724)
------- sample 7 coord(1493,803)
------- sample 8 coord(1381,680)
------- sample 9 coord(1477,785)
------- sample 10 coord(1397,698)
------- sample 11 coord(1461,768)
------- sample 12 coord(1413,715)
------- sample 13 coord(1445,750)
------- sample 14 coord(1429,733)
------- sample 15 coord(1502,812)
------- sample 16 coord(1373,672)
-longId 1373672
-id1 89
-Step 160size: 0 1
-connect points (1373,672) and (1502,812)
------- n samples 17
------- sample 0 coord(1437,742)
------- sample 1 coord(1469,777)
------- sample 2 coord(1405,707)
------- sample 3 coord(1485,794)
------- sample 4 coord(1389,689)
------- sample 5 coord(1453,759)
------- sample 6 coord(1421,724)
------- sample 7 coord(1493,803)
------- sample 8 coord(1381,680)
------- sample 9 coord(1477,785)
------- sample 10 coord(1397,698)
------- sample 11 coord(1461,768)
------- sample 12 coord(1413,715)
------- sample 13 coord(1445,750)
------- sample 14 coord(1429,733)
------- sample 15 coord(1502,812)
------- sample 16 coord(1373,672)
-longId 1373672
-id1 89
-Step 170size: 0 1
-connect points (318,318) and (154,203)
------- n samples 17
------- sample 0 coord(236,260)
------- sample 1 coord(195,231)
------- sample 2 coord(277,289)
------- sample 3 coord(174,217)
------- sample 4 coord(297,303)
------- sample 5 coord(215,245)
------- sample 6 coord(256,274)
------- sample 7 coord(164,210)
------- sample 8 coord(307,310)
------- sample 9 coord(184,224)
------- sample 10 coord(287,296)
------- sample 11 coord(205,238)
------- sample 12 coord(266,281)
------- sample 13 coord(225,252)
------- sample 14 coord(246,267)
------- sample 15 coord(154,203)
------- sample 16 coord(318,318)
-longId 318318
-id1 1
-connect points (1373,672) and (1502,812)
------- n samples 17
------- sample 0 coord(1437,742)
------- sample 1 coord(1469,777)
------- sample 2 coord(1405,707)
------- sample 3 coord(1485,794)
------- sample 4 coord(1389,689)
------- sample 5 coord(1453,759)
------- sample 6 coord(1421,724)
------- sample 7 coord(1493,803)
------- sample 8 coord(1381,680)
------- sample 9 coord(1477,785)
------- sample 10 coord(1397,698)
------- sample 11 coord(1461,768)
------- sample 12 coord(1413,715)
------- sample 13 coord(1445,750)
------- sample 14 coord(1429,733)
------- sample 15 coord(1502,812)
------- sample 16 coord(1373,672)
-longId 1373672
-id1 89
-Step 180size: 1 1
-connect points (318,318) and (154,203)
------- n samples 17
------- sample 0 coord(236,260)
------- sample 1 coord(195,231)
------- sample 2 coord(277,289)
------- sample 3 coord(174,217)
------- sample 4 coord(297,303)
------- sample 5 coord(215,245)
------- sample 6 coord(256,274)
------- sample 7 coord(164,210)
------- sample 8 coord(307,310)
------- sample 9 coord(184,224)
------- sample 10 coord(287,296)
------- sample 11 coord(205,238)
------- sample 12 coord(266,281)
------- sample 13 coord(225,252)
------- sample 14 coord(246,267)
------- sample 15 coord(154,203)
------- sample 16 coord(318,318)
-longId 318318
-id1 1
-connect points (1373,672) and (1502,812)
------- n samples 17
------- sample 0 coord(1437,742)
------- sample 1 coord(1469,777)
------- sample 2 coord(1405,707)
------- sample 3 coord(1485,794)
------- sample 4 coord(1389,689)
------- sample 5 coord(1453,759)
------- sample 6 coord(1421,724)
------- sample 7 coord(1493,803)
------- sample 8 coord(1381,680)
------- sample 9 coord(1477,785)
------- sample 10 coord(1397,698)
------- sample 11 coord(1461,768)
------- sample 12 coord(1413,715)
------- sample 13 coord(1445,750)
------- sample 14 coord(1429,733)
------- sample 15 coord(1502,812)
------- sample 16 coord(1373,672)
-longId 1373672
-id1 89
-Step 190size: 1 1
-connect points (318,318) and (154,203)
------- n samples 17
------- sample 0 coord(236,260)
------- sample 1 coord(195,231)
------- sample 2 coord(277,289)
------- sample 3 coord(174,217)
------- sample 4 coord(297,303)
------- sample 5 coord(215,245)
------- sample 6 coord(256,274)
------- sample 7 coord(164,210)
------- sample 8 coord(307,310)
------- sample 9 coord(184,224)
------- sample 10 coord(287,296)
------- sample 11 coord(205,238)
------- sample 12 coord(266,281)
------- sample 13 coord(225,252)
------- sample 14 coord(246,267)
------- sample 15 coord(154,203)
------- sample 16 coord(318,318)
-longId 318318
-id1 1
-connect points (1373,672) and (1502,812)
------- n samples 17
------- sample 0 coord(1437,742)
------- sample 1 coord(1469,777)
------- sample 2 coord(1405,707)
------- sample 3 coord(1485,794)
------- sample 4 coord(1389,689)
------- sample 5 coord(1453,759)
------- sample 6 coord(1421,724)
------- sample 7 coord(1493,803)
------- sample 8 coord(1381,680)
------- sample 9 coord(1477,785)
------- sample 10 coord(1397,698)
------- sample 11 coord(1461,768)
------- sample 12 coord(1413,715)
------- sample 13 coord(1445,750)
------- sample 14 coord(1429,733)
------- sample 15 coord(1502,812)
------- sample 16 coord(1373,672)
-longId 1373672
-id1 89
-Step 200size: 1 1
-connect points (318,318) and (154,203)
------- n samples 17
------- sample 0 coord(236,260)
------- sample 1 coord(195,231)
------- sample 2 coord(277,289)
------- sample 3 coord(174,217)
------- sample 4 coord(297,303)
------- sample 5 coord(215,245)
------- sample 6 coord(256,274)
------- sample 7 coord(164,210)
------- sample 8 coord(307,310)
------- sample 9 coord(184,224)
------- sample 10 coord(287,296)
------- sample 11 coord(205,238)
------- sample 12 coord(266,281)
------- sample 13 coord(225,252)
------- sample 14 coord(246,267)
------- sample 15 coord(154,203)
------- sample 16 coord(318,318)
-longId 318318
-id1 1
-connect points (1373,672) and (1502,812)
------- n samples 17
------- sample 0 coord(1437,742)
------- sample 1 coord(1469,777)
------- sample 2 coord(1405,707)
------- sample 3 coord(1485,794)
------- sample 4 coord(1389,689)
------- sample 5 coord(1453,759)
------- sample 6 coord(1421,724)
------- sample 7 coord(1493,803)
------- sample 8 coord(1381,680)
------- sample 9 coord(1477,785)
------- sample 10 coord(1397,698)
------- sample 11 coord(1461,768)
------- sample 12 coord(1413,715)
------- sample 13 coord(1445,750)
------- sample 14 coord(1429,733)
------- sample 15 coord(1502,812)
------- sample 16 coord(1373,672)
-longId 1373672
-id1 89
-Step 210size: 1 1
-connect points (0,0) and (154,203)
------- n samples 17
------- sample 0 coord(77,101)
------- sample 1 coord(115,152)
------- sample 2 coord(38,50)
------- sample 3 coord(134,177)
------- sample 4 coord(19,25)
------- sample 5 coord(96,126)
------- sample 6 coord(57,75)
------- sample 7 coord(144,190)
------- sample 8 coord(9,12)
------- sample 9 coord(124,164)
------- sample 10 coord(28,37)
------- sample 11 coord(105,139)
------- sample 12 coord(47,62)
------- sample 13 coord(86,113)
------- sample 14 coord(67,88)
------- sample 15 coord(154,203)
------- sample 16 coord(0,0)
-longId 0
-id1 0
-connect points (318,318) and (154,203)
------- n samples 17
------- sample 0 coord(236,260)
------- sample 1 coord(195,231)
------- sample 2 coord(277,289)
------- sample 3 coord(174,217)
------- sample 4 coord(297,303)
------- sample 5 coord(215,245)
------- sample 6 coord(256,274)
------- sample 7 coord(164,210)
------- sample 8 coord(307,310)
------- sample 9 coord(184,224)
------- sample 10 coord(287,296)
------- sample 11 coord(205,238)
------- sample 12 coord(266,281)
------- sample 13 coord(225,252)
------- sample 14 coord(246,267)
------- sample 15 coord(154,203)
------- sample 16 coord(318,318)
-longId 318318
-id1 1
-connect points (1373,672) and (1502,812)
------- n samples 17
------- sample 0 coord(1437,742)
------- sample 1 coord(1469,777)
------- sample 2 coord(1405,707)
------- sample 3 coord(1485,794)
------- sample 4 coord(1389,689)
------- sample 5 coord(1453,759)
------- sample 6 coord(1421,724)
------- sample 7 coord(1493,803)
------- sample 8 coord(1381,680)
------- sample 9 coord(1477,785)
------- sample 10 coord(1397,698)
------- sample 11 coord(1461,768)
------- sample 12 coord(1413,715)
------- sample 13 coord(1445,750)
------- sample 14 coord(1429,733)
------- sample 15 coord(1502,812)
------- sample 16 coord(1373,672)
-longId 1373672
-id1 89
-start Size exit2
-end Size exit1
-V 102
-(pathfinder) x = 0
-(pathfinder) y = 0
-(pathfinder) encodedCoord = 1000
+connect points (1281,952) and (1307,932)
+Tratto 1307, 932  ->  1281, 952
+Lunghezza : 32.8024
+Distanza sample : 5
+Soluzione 1 : 1310, 930
+Soluzione 2 : 1302, 936
+Sample : 1302, 936 == 1302, 936
+Distanza sample : 10
+Soluzione 1 : 1314, 927
+Soluzione 2 : 1298, 939
+Sample : 1298, 939 == 1298, 939
+Distanza sample : 15
+Soluzione 1 : 1318, 924
+Soluzione 2 : 1294, 942
+Sample : 1294, 942 == 1294, 942
+Distanza sample : 20
+Soluzione 1 : 1322, 921
+Soluzione 2 : 1291, 944
+Sample : 1291, 944 == 1291, 944
+Distanza sample : 25
+Soluzione 1 : 1326, 917
+Soluzione 2 : 1286, 948
+Sample : 1286, 948 == 1286, 948
+Distanza sample : 30
+Soluzione 1 : 1330, 914
+Soluzione 2 : 1283, 951
+Sample : 1283, 951 == 1283, 951
+------ n samples 8
+id 40  -  longId 12810952  -  pointLongId 13070932  -  PointId 55
+Step 40size: 2 0
+connect points (1281,952) and (1307,932)
+Tratto 1307, 932  ->  1281, 952
+Lunghezza : 32.8024
+Distanza sample : 5
+Soluzione 1 : 1310, 930
+Soluzione 2 : 1302, 936
+Sample : 1302, 936 == 1302, 936
+Distanza sample : 10
+Soluzione 1 : 1314, 927
+Soluzione 2 : 1298, 939
+Sample : 1298, 939 == 1298, 939
+Distanza sample : 15
+Soluzione 1 : 1318, 924
+Soluzione 2 : 1294, 942
+Sample : 1294, 942 == 1294, 942
+Distanza sample : 20
+Soluzione 1 : 1322, 921
+Soluzione 2 : 1291, 944
+Sample : 1291, 944 == 1291, 944
+Distanza sample : 25
+Soluzione 1 : 1326, 917
+Soluzione 2 : 1286, 948
+Sample : 1286, 948 == 1286, 948
+Distanza sample : 30
+Soluzione 1 : 1330, 914
+Soluzione 2 : 1283, 951
+Sample : 1283, 951 == 1283, 951
+------ n samples 8
+id 40  -  longId 12810952  -  pointLongId 13070932  -  PointId 55
+Step 50size: 2 0
+connect points (1260,948) and (1307,932)
+Tratto 1307, 932  ->  1260, 948
+Lunghezza : 49.6488
+Distanza sample : 5
+Soluzione 1 : 1311, 930
+Soluzione 2 : 1302, 933
+Sample : 1302, 933 == 1302, 933
+Distanza sample : 10
+Soluzione 1 : 1316, 928
+Soluzione 2 : 1297, 935
+Sample : 1297, 935 == 1297, 935
+Distanza sample : 15
+Soluzione 1 : 1320, 927
+Soluzione 2 : 1292, 937
+Sample : 1292, 937 == 1292, 937
+Distanza sample : 20
+Soluzione 1 : 1325, 925
+Soluzione 2 : 1287, 938
+Sample : 1287, 938 == 1287, 938
+Distanza sample : 25
+Soluzione 1 : 1330, 924
+Soluzione 2 : 1283, 940
+Sample : 1283, 940 == 1283, 940
+Distanza sample : 30
+Soluzione 1 : 1335, 922
+Soluzione 2 : 1278, 941
+Sample : 1278, 941 == 1278, 941
+Distanza sample : 35
+Soluzione 1 : 1339, 921
+Soluzione 2 : 1273, 943
+Sample : 1273, 943 == 1273, 943
+Distanza sample : 40
+Soluzione 1 : 1344, 919
+Soluzione 2 : 1268, 945
+Sample : 1268, 945 == 1268, 945
+Distanza sample : 45
+Soluzione 1 : 1349, 917
+Soluzione 2 : 1264, 946
+Sample : 1264, 946 == 1264, 946
+------ n samples 11
+id 33  -  longId 12600948  -  pointLongId 13070932  -  PointId 55
+connect points (1281,952) and (1307,932)
+Tratto 1307, 932  ->  1281, 952
+Lunghezza : 32.8024
+Distanza sample : 5
+Soluzione 1 : 1310, 930
+Soluzione 2 : 1302, 936
+Sample : 1302, 936 == 1302, 936
+Distanza sample : 10
+Soluzione 1 : 1314, 927
+Soluzione 2 : 1298, 939
+Sample : 1298, 939 == 1298, 939
+Distanza sample : 15
+Soluzione 1 : 1318, 924
+Soluzione 2 : 1294, 942
+Sample : 1294, 942 == 1294, 942
+Distanza sample : 20
+Soluzione 1 : 1322, 921
+Soluzione 2 : 1291, 944
+Sample : 1291, 944 == 1291, 944
+Distanza sample : 25
+Soluzione 1 : 1326, 917
+Soluzione 2 : 1286, 948
+Sample : 1286, 948 == 1286, 948
+Distanza sample : 30
+Soluzione 1 : 1330, 914
+Soluzione 2 : 1283, 951
+Sample : 1283, 951 == 1283, 951
+------ n samples 8
+id 40  -  longId 12810952  -  pointLongId 13070932  -  PointId 55
+connect points (1260,948) and (1307,932)
+Tratto 1307, 932  ->  1260, 948
+Lunghezza : 49.6488
+Distanza sample : 5
+Soluzione 1 : 1311, 930
+Soluzione 2 : 1302, 933
+Sample : 1302, 933 == 1302, 933
+Distanza sample : 10
+Soluzione 1 : 1316, 928
+Soluzione 2 : 1297, 935
+Sample : 1297, 935 == 1297, 935
+Distanza sample : 15
+Soluzione 1 : 1320, 927
+Soluzione 2 : 1292, 937
+Sample : 1292, 937 == 1292, 937
+Distanza sample : 20
+Soluzione 1 : 1325, 925
+Soluzione 2 : 1287, 938
+Sample : 1287, 938 == 1287, 938
+Distanza sample : 25
+Soluzione 1 : 1330, 924
+Soluzione 2 : 1283, 940
+Sample : 1283, 940 == 1283, 940
+Distanza sample : 30
+Soluzione 1 : 1335, 922
+Soluzione 2 : 1278, 941
+Sample : 1278, 941 == 1278, 941
+Distanza sample : 35
+Soluzione 1 : 1339, 921
+Soluzione 2 : 1273, 943
+Sample : 1273, 943 == 1273, 943
+Distanza sample : 40
+Soluzione 1 : 1344, 919
+Soluzione 2 : 1268, 945
+Sample : 1268, 945 == 1268, 945
+Distanza sample : 45
+Soluzione 1 : 1349, 917
+Soluzione 2 : 1264, 946
+Sample : 1264, 946 == 1264, 946
+------ n samples 11
+id 33  -  longId 12600948  -  pointLongId 13070932  -  PointId 55
+connect points (1281,952) and (1307,932)
+Tratto 1307, 932  ->  1281, 952
+Lunghezza : 32.8024
+Distanza sample : 5
+Soluzione 1 : 1310, 930
+Soluzione 2 : 1302, 936
+Sample : 1302, 936 == 1302, 936
+Distanza sample : 10
+Soluzione 1 : 1314, 927
+Soluzione 2 : 1298, 939
+Sample : 1298, 939 == 1298, 939
+Distanza sample : 15
+Soluzione 1 : 1318, 924
+Soluzione 2 : 1294, 942
+Sample : 1294, 942 == 1294, 942
+Distanza sample : 20
+Soluzione 1 : 1322, 921
+Soluzione 2 : 1291, 944
+Sample : 1291, 944 == 1291, 944
+Distanza sample : 25
+Soluzione 1 : 1326, 917
+Soluzione 2 : 1286, 948
+Sample : 1286, 948 == 1286, 948
+Distanza sample : 30
+Soluzione 1 : 1330, 914
+Soluzione 2 : 1283, 951
+Sample : 1283, 951 == 1283, 951
+------ n samples 8
+id 40  -  longId 12810952  -  pointLongId 13070932  -  PointId 55
+connect points (1260,948) and (1307,932)
+Tratto 1307, 932  ->  1260, 948
+Lunghezza : 49.6488
+Distanza sample : 5
+Soluzione 1 : 1311, 930
+Soluzione 2 : 1302, 933
+Sample : 1302, 933 == 1302, 933
+Distanza sample : 10
+Soluzione 1 : 1316, 928
+Soluzione 2 : 1297, 935
+Sample : 1297, 935 == 1297, 935
+Distanza sample : 15
+Soluzione 1 : 1320, 927
+Soluzione 2 : 1292, 937
+Sample : 1292, 937 == 1292, 937
+Distanza sample : 20
+Soluzione 1 : 1325, 925
+Soluzione 2 : 1287, 938
+Sample : 1287, 938 == 1287, 938
+Distanza sample : 25
+Soluzione 1 : 1330, 924
+Soluzione 2 : 1283, 940
+Sample : 1283, 940 == 1283, 940
+Distanza sample : 30
+Soluzione 1 : 1335, 922
+Soluzione 2 : 1278, 941
+Sample : 1278, 941 == 1278, 941
+Distanza sample : 35
+Soluzione 1 : 1339, 921
+Soluzione 2 : 1273, 943
+Sample : 1273, 943 == 1273, 943
+Distanza sample : 40
+Soluzione 1 : 1344, 919
+Soluzione 2 : 1268, 945
+Sample : 1268, 945 == 1268, 945
+Distanza sample : 45
+Soluzione 1 : 1349, 917
+Soluzione 2 : 1264, 946
+Sample : 1264, 946 == 1264, 946
+------ n samples 11
+id 33  -  longId 12600948  -  pointLongId 13070932  -  PointId 55
+connect points (1281,952) and (1307,932)
+Tratto 1307, 932  ->  1281, 952
+Lunghezza : 32.8024
+Distanza sample : 5
+Soluzione 1 : 1310, 930
+Soluzione 2 : 1302, 936
+Sample : 1302, 936 == 1302, 936
+Distanza sample : 10
+Soluzione 1 : 1314, 927
+Soluzione 2 : 1298, 939
+Sample : 1298, 939 == 1298, 939
+Distanza sample : 15
+Soluzione 1 : 1318, 924
+Soluzione 2 : 1294, 942
+Sample : 1294, 942 == 1294, 942
+Distanza sample : 20
+Soluzione 1 : 1322, 921
+Soluzione 2 : 1291, 944
+Sample : 1291, 944 == 1291, 944
+Distanza sample : 25
+Soluzione 1 : 1326, 917
+Soluzione 2 : 1286, 948
+Sample : 1286, 948 == 1286, 948
+Distanza sample : 30
+Soluzione 1 : 1330, 914
+Soluzione 2 : 1283, 951
+Sample : 1283, 951 == 1283, 951
+------ n samples 8
+id 40  -  longId 12810952  -  pointLongId 13070932  -  PointId 55
+Step 60size: 12 0
+Step 70size: 12 0
+Step 80size: 12 0
+Step 90size: 12 0
+Step 100size: 12 0
+Step 110size: 12 0
+Step 120size: 12 0
+Step 130size: 12 0
+Step 140size: 12 0
+Step 150size: 12 0
+Step 160size: 12 0
+Step 170size: 12 0
+Step 180size: 12 0
+connect points (1278,250) and (1325,72)
+Tratto 1325, 72  ->  1278, 250
+Lunghezza : 184.101
+Distanza sample : 5
+Soluzione 1 : 1326, 69
+Soluzione 2 : 1323, 80
+Sample : 1323, 80 == 1323, 80
+Distanza sample : 10
+Soluzione 1 : 1327, 65
+Soluzione 2 : 1322, 84
+Sample : 1322, 84 == 1322, 84
+Distanza sample : 15
+Soluzione 1 : 1328, 61
+Soluzione 2 : 1321, 88
+Sample : 1321, 88 == 1321, 88
+Distanza sample : 20
+Soluzione 1 : 1330, 53
+Soluzione 2 : 1319, 95
+Sample : 1319, 95 == 1319, 95
+Distanza sample : 25
+Soluzione 1 : 1331, 50
+Soluzione 2 : 1318, 99
+Sample : 1318, 99 == 1318, 99
+Distanza sample : 30
+Soluzione 1 : 1332, 46
+Soluzione 2 : 1317, 103
+Sample : 1317, 103 == 1317, 103
+Distanza sample : 35
+Soluzione 1 : 1333, 42
+Soluzione 2 : 1316, 106
+Sample : 1316, 106 == 1316, 106
+Distanza sample : 40
+Soluzione 1 : 1335, 35
+Soluzione 2 : 1314, 114
+Sample : 1314, 114 == 1314, 114
+Distanza sample : 45
+Soluzione 1 : 1336, 31
+Soluzione 2 : 1313, 118
+Sample : 1313, 118 == 1313, 118
+Distanza sample : 50
+Soluzione 1 : 1337, 27
+Soluzione 2 : 1312, 122
+Sample : 1312, 122 == 1312, 122
+Distanza sample : 55
+Soluzione 1 : 1339, 19
+Soluzione 2 : 1310, 129
+Sample : 1310, 129 == 1310, 129
+Distanza sample : 60
+Soluzione 1 : 1340, 16
+Soluzione 2 : 1309, 133
+Sample : 1309, 133 == 1309, 133
+Distanza sample : 65
+Soluzione 1 : 1341, 12
+Soluzione 2 : 1308, 137
+Sample : 1308, 137 == 1308, 137
+Distanza sample : 70
+Soluzione 1 : 1342, 8
+Soluzione 2 : 1307, 141
+Sample : 1307, 141 == 1307, 141
+Distanza sample : 75
+Soluzione 1 : 1344, 0
+Soluzione 2 : 1305, 148
+Sample : 1305, 148 == 1305, 148
+Distanza sample : 80
+Soluzione 1 : 1345, -2
+Soluzione 2 : 1304, 152
+Sample : 1304, 152 == 1304, 152
+Distanza sample : 85
+Soluzione 1 : 1346, -6
+Soluzione 2 : 1303, 156
+Sample : 1303, 156 == 1303, 156
+Distanza sample : 90
+Soluzione 1 : 1347, -10
+Soluzione 2 : 1302, 160
+Sample : 1302, 160 == 1302, 160
+Distanza sample : 95
+Soluzione 1 : 1349, -17
+Soluzione 2 : 1300, 167
+Sample : 1300, 167 == 1300, 167
+Distanza sample : 100
+Soluzione 1 : 1350, -21
+Soluzione 2 : 1299, 171
+Sample : 1299, 171 == 1299, 171
+Distanza sample : 105
+Soluzione 1 : 1351, -25
+Soluzione 2 : 1298, 175
+Sample : 1298, 175 == 1298, 175
+Distanza sample : 110
+Soluzione 1 : 1353, -33
+Soluzione 2 : 1296, 182
+Sample : 1296, 182 == 1296, 182
+Distanza sample : 115
+Soluzione 1 : 1354, -36
+Soluzione 2 : 1295, 186
+Sample : 1295, 186 == 1295, 186
+Distanza sample : 120
+Soluzione 1 : 1355, -40
+Soluzione 2 : 1294, 190
+Sample : 1294, 190 == 1294, 190
+Distanza sample : 125
+Soluzione 1 : 1356, -44
+Soluzione 2 : 1293, 194
+Sample : 1293, 194 == 1293, 194
+Distanza sample : 130
+Soluzione 1 : 1358, -52
+Soluzione 2 : 1291, 201
+Sample : 1291, 201 == 1291, 201
+Distanza sample : 135
+Soluzione 1 : 1359, -55
+Soluzione 2 : 1290, 205
+Sample : 1290, 205 == 1290, 205
+Distanza sample : 140
+Soluzione 1 : 1360, -59
+Soluzione 2 : 1289, 209
+Sample : 1289, 209 == 1289, 209
+Distanza sample : 145
+Soluzione 1 : 1362, -67
+Soluzione 2 : 1287, 216
+Sample : 1287, 216 == 1287, 216
+Distanza sample : 150
+Soluzione 1 : 1363, -71
+Soluzione 2 : 1286, 220
+Sample : 1286, 220 == 1286, 220
+Distanza sample : 155
+Soluzione 1 : 1364, -74
+Soluzione 2 : 1285, 224
+Sample : 1285, 224 == 1285, 224
+Distanza sample : 160
+Soluzione 1 : 1365, -78
+Soluzione 2 : 1284, 228
+Sample : 1284, 228 == 1284, 228
+Distanza sample : 165
+Soluzione 1 : 1367, -86
+Soluzione 2 : 1282, 235
+Sample : 1282, 235 == 1282, 235
+Distanza sample : 170
+Soluzione 1 : 1368, -89
+Soluzione 2 : 1281, 239
+Sample : 1281, 239 == 1281, 239
+Distanza sample : 175
+Soluzione 1 : 1369, -93
+Soluzione 2 : 1280, 243
+Sample : 1280, 243 == 1280, 243
+Distanza sample : 180
+Soluzione 1 : 1370, -97
+Soluzione 2 : 1279, 247
+Sample : 1279, 247 == 1279, 247
+------ n samples 38
+id 38  -  longId 12780250  -  pointLongId 13250072  -  PointId 56
+connect points (1312,247) and (1325,72)
+Tratto 1325, 72  ->  1312, 247
+Lunghezza : 175.482
+Distanza sample : 5
+Soluzione 1 : 1325, 72
+Soluzione 2 : 1324, 85
+Sample : 1324, 85 == 1324, 85
+Distanza sample : 10
+Soluzione 1 : 1325, 72
+Soluzione 2 : 1324, 85
+Sample : 1324, 85 == 1324, 85
+Distanza sample : 15
+Soluzione 1 : 1326, 58
+Soluzione 2 : 1323, 99
+Sample : 1323, 99 == 1323, 99
+Distanza sample : 20
+Soluzione 1 : 1326, 58
+Soluzione 2 : 1323, 99
+Sample : 1323, 99 == 1323, 99
+Distanza sample : 25
+Soluzione 1 : 1326, 58
+Soluzione 2 : 1323, 99
+Sample : 1323, 99 == 1323, 99
+Distanza sample : 30
+Soluzione 1 : 1327, 45
+Soluzione 2 : 1322, 112
+Sample : 1322, 112 == 1322, 112
+Distanza sample : 35
+Soluzione 1 : 1327, 45
+Soluzione 2 : 1322, 112
+Sample : 1322, 112 == 1322, 112
+Distanza sample : 40
+Soluzione 1 : 1327, 45
+Soluzione 2 : 1322, 112
+Sample : 1322, 112 == 1322, 112
+Distanza sample : 45
+Soluzione 1 : 1328, 32
+Soluzione 2 : 1321, 126
+Sample : 1321, 126 == 1321, 126
+Distanza sample : 50
+Soluzione 1 : 1328, 32
+Soluzione 2 : 1321, 126
+Sample : 1321, 126 == 1321, 126
+Distanza sample : 55
+Soluzione 1 : 1329, 18
+Soluzione 2 : 1320, 139
+Sample : 1320, 139 == 1320, 139
+Distanza sample : 60
+Soluzione 1 : 1329, 18
+Soluzione 2 : 1320, 139
+Sample : 1320, 139 == 1320, 139
+Distanza sample : 65
+Soluzione 1 : 1329, 18
+Soluzione 2 : 1320, 139
+Sample : 1320, 139 == 1320, 139
+Distanza sample : 70
+Soluzione 1 : 1330, 5
+Soluzione 2 : 1319, 153
+Sample : 1319, 153 == 1319, 153
+Distanza sample : 75
+Soluzione 1 : 1330, 5
+Soluzione 2 : 1319, 153
+Sample : 1319, 153 == 1319, 153
+Distanza sample : 80
+Soluzione 1 : 1330, 5
+Soluzione 2 : 1319, 153
+Sample : 1319, 153 == 1319, 153
+Distanza sample : 85
+Soluzione 1 : 1331, -8
+Soluzione 2 : 1318, 166
+Sample : 1318, 166 == 1318, 166
+Distanza sample : 90
+Soluzione 1 : 1331, -8
+Soluzione 2 : 1318, 166
+Sample : 1318, 166 == 1318, 166
+Distanza sample : 95
+Soluzione 1 : 1332, -21
+Soluzione 2 : 1317, 180
+Sample : 1317, 180 == 1317, 180
+Distanza sample : 100
+Soluzione 1 : 1332, -21
+Soluzione 2 : 1317, 180
+Sample : 1317, 180 == 1317, 180
+Distanza sample : 105
+Soluzione 1 : 1332, -21
+Soluzione 2 : 1317, 180
+Sample : 1317, 180 == 1317, 180
+Distanza sample : 110
+Soluzione 1 : 1333, -35
+Soluzione 2 : 1316, 193
+Sample : 1316, 193 == 1316, 193
+Distanza sample : 115
+Soluzione 1 : 1333, -35
+Soluzione 2 : 1316, 193
+Sample : 1316, 193 == 1316, 193
+Distanza sample : 120
+Soluzione 1 : 1333, -35
+Soluzione 2 : 1316, 193
+Sample : 1316, 193 == 1316, 193
+Distanza sample : 125
+Soluzione 1 : 1334, -48
+Soluzione 2 : 1315, 207
+Sample : 1315, 207 == 1315, 207
+Distanza sample : 130
+Soluzione 1 : 1334, -48
+Soluzione 2 : 1315, 207
+Sample : 1315, 207 == 1315, 207
+Distanza sample : 135
+Soluzione 1 : 1335, -62
+Soluzione 2 : 1314, 220
+Sample : 1314, 220 == 1314, 220
+Distanza sample : 140
+Soluzione 1 : 1335, -62
+Soluzione 2 : 1314, 220
+Sample : 1314, 220 == 1314, 220
+Distanza sample : 145
+Soluzione 1 : 1335, -62
+Soluzione 2 : 1314, 220
+Sample : 1314, 220 == 1314, 220
+Distanza sample : 150
+Soluzione 1 : 1336, -75
+Soluzione 2 : 1313, 233
+Sample : 1313, 233 == 1313, 233
+Distanza sample : 155
+Soluzione 1 : 1336, -75
+Soluzione 2 : 1313, 233
+Sample : 1313, 233 == 1313, 233
+Distanza sample : 160
+Soluzione 1 : 1336, -75
+Soluzione 2 : 1313, 233
+Sample : 1313, 233 == 1313, 233
+Distanza sample : 165
+Soluzione 1 : 1337, -89
+Soluzione 2 : 1312, 247
+Sample : 1312, 247 == 1312, 247
+Distanza sample : 170
+Soluzione 1 : 1337, -89
+Soluzione 2 : 1312, 247
+Sample : 1312, 247 == 1312, 247
+Distanza sample : 175
+Soluzione 1 : 1337, -89
+Soluzione 2 : 1312, 247
+Sample : 1312, 247 == 1312, 247
+------ n samples 37
+id 42  -  longId 13120247  -  pointLongId 13250072  -  PointId 56
+connect points (1278,250) and (1325,72)
+Tratto 1325, 72  ->  1278, 250
+Lunghezza : 184.101
+Distanza sample : 5
+Soluzione 1 : 1326, 69
+Soluzione 2 : 1323, 80
+Sample : 1323, 80 == 1323, 80
+Distanza sample : 10
+Soluzione 1 : 1327, 65
+Soluzione 2 : 1322, 84
+Sample : 1322, 84 == 1322, 84
+Distanza sample : 15
+Soluzione 1 : 1328, 61
+Soluzione 2 : 1321, 88
+Sample : 1321, 88 == 1321, 88
+Distanza sample : 20
+Soluzione 1 : 1330, 53
+Soluzione 2 : 1319, 95
+Sample : 1319, 95 == 1319, 95
+Distanza sample : 25
+Soluzione 1 : 1331, 50
+Soluzione 2 : 1318, 99
+Sample : 1318, 99 == 1318, 99
+Distanza sample : 30
+Soluzione 1 : 1332, 46
+Soluzione 2 : 1317, 103
+Sample : 1317, 103 == 1317, 103
+Distanza sample : 35
+Soluzione 1 : 1333, 42
+Soluzione 2 : 1316, 106
+Sample : 1316, 106 == 1316, 106
+Distanza sample : 40
+Soluzione 1 : 1335, 35
+Soluzione 2 : 1314, 114
+Sample : 1314, 114 == 1314, 114
+Distanza sample : 45
+Soluzione 1 : 1336, 31
+Soluzione 2 : 1313, 118
+Sample : 1313, 118 == 1313, 118
+Distanza sample : 50
+Soluzione 1 : 1337, 27
+Soluzione 2 : 1312, 122
+Sample : 1312, 122 == 1312, 122
+Distanza sample : 55
+Soluzione 1 : 1339, 19
+Soluzione 2 : 1310, 129
+Sample : 1310, 129 == 1310, 129
+Distanza sample : 60
+Soluzione 1 : 1340, 16
+Soluzione 2 : 1309, 133
+Sample : 1309, 133 == 1309, 133
+Distanza sample : 65
+Soluzione 1 : 1341, 12
+Soluzione 2 : 1308, 137
+Sample : 1308, 137 == 1308, 137
+Distanza sample : 70
+Soluzione 1 : 1342, 8
+Soluzione 2 : 1307, 141
+Sample : 1307, 141 == 1307, 141
+Distanza sample : 75
+Soluzione 1 : 1344, 0
+Soluzione 2 : 1305, 148
+Sample : 1305, 148 == 1305, 148
+Distanza sample : 80
+Soluzione 1 : 1345, -2
+Soluzione 2 : 1304, 152
+Sample : 1304, 152 == 1304, 152
+Distanza sample : 85
+Soluzione 1 : 1346, -6
+Soluzione 2 : 1303, 156
+Sample : 1303, 156 == 1303, 156
+Distanza sample : 90
+Soluzione 1 : 1347, -10
+Soluzione 2 : 1302, 160
+Sample : 1302, 160 == 1302, 160
+Distanza sample : 95
+Soluzione 1 : 1349, -17
+Soluzione 2 : 1300, 167
+Sample : 1300, 167 == 1300, 167
+Distanza sample : 100
+Soluzione 1 : 1350, -21
+Soluzione 2 : 1299, 171
+Sample : 1299, 171 == 1299, 171
+Distanza sample : 105
+Soluzione 1 : 1351, -25
+Soluzione 2 : 1298, 175
+Sample : 1298, 175 == 1298, 175
+Distanza sample : 110
+Soluzione 1 : 1353, -33
+Soluzione 2 : 1296, 182
+Sample : 1296, 182 == 1296, 182
+Distanza sample : 115
+Soluzione 1 : 1354, -36
+Soluzione 2 : 1295, 186
+Sample : 1295, 186 == 1295, 186
+Distanza sample : 120
+Soluzione 1 : 1355, -40
+Soluzione 2 : 1294, 190
+Sample : 1294, 190 == 1294, 190
+Distanza sample : 125
+Soluzione 1 : 1356, -44
+Soluzione 2 : 1293, 194
+Sample : 1293, 194 == 1293, 194
+Distanza sample : 130
+Soluzione 1 : 1358, -52
+Soluzione 2 : 1291, 201
+Sample : 1291, 201 == 1291, 201
+Distanza sample : 135
+Soluzione 1 : 1359, -55
+Soluzione 2 : 1290, 205
+Sample : 1290, 205 == 1290, 205
+Distanza sample : 140
+Soluzione 1 : 1360, -59
+Soluzione 2 : 1289, 209
+Sample : 1289, 209 == 1289, 209
+Distanza sample : 145
+Soluzione 1 : 1362, -67
+Soluzione 2 : 1287, 216
+Sample : 1287, 216 == 1287, 216
+Distanza sample : 150
+Soluzione 1 : 1363, -71
+Soluzione 2 : 1286, 220
+Sample : 1286, 220 == 1286, 220
+Distanza sample : 155
+Soluzione 1 : 1364, -74
+Soluzione 2 : 1285, 224
+Sample : 1285, 224 == 1285, 224
+Distanza sample : 160
+Soluzione 1 : 1365, -78
+Soluzione 2 : 1284, 228
+Sample : 1284, 228 == 1284, 228
+Distanza sample : 165
+Soluzione 1 : 1367, -86
+Soluzione 2 : 1282, 235
+Sample : 1282, 235 == 1282, 235
+Distanza sample : 170
+Soluzione 1 : 1368, -89
+Soluzione 2 : 1281, 239
+Sample : 1281, 239 == 1281, 239
+Distanza sample : 175
+Soluzione 1 : 1369, -93
+Soluzione 2 : 1280, 243
+Sample : 1280, 243 == 1280, 243
+Distanza sample : 180
+Soluzione 1 : 1370, -97
+Soluzione 2 : 1279, 247
+Sample : 1279, 247 == 1279, 247
+------ n samples 38
+id 38  -  longId 12780250  -  pointLongId 13250072  -  PointId 56
+connect points (1312,247) and (1325,72)
+Tratto 1325, 72  ->  1312, 247
+Lunghezza : 175.482
+Distanza sample : 5
+Soluzione 1 : 1325, 72
+Soluzione 2 : 1324, 85
+Sample : 1324, 85 == 1324, 85
+Distanza sample : 10
+Soluzione 1 : 1325, 72
+Soluzione 2 : 1324, 85
+Sample : 1324, 85 == 1324, 85
+Distanza sample : 15
+Soluzione 1 : 1326, 58
+Soluzione 2 : 1323, 99
+Sample : 1323, 99 == 1323, 99
+Distanza sample : 20
+Soluzione 1 : 1326, 58
+Soluzione 2 : 1323, 99
+Sample : 1323, 99 == 1323, 99
+Distanza sample : 25
+Soluzione 1 : 1326, 58
+Soluzione 2 : 1323, 99
+Sample : 1323, 99 == 1323, 99
+Distanza sample : 30
+Soluzione 1 : 1327, 45
+Soluzione 2 : 1322, 112
+Sample : 1322, 112 == 1322, 112
+Distanza sample : 35
+Soluzione 1 : 1327, 45
+Soluzione 2 : 1322, 112
+Sample : 1322, 112 == 1322, 112
+Distanza sample : 40
+Soluzione 1 : 1327, 45
+Soluzione 2 : 1322, 112
+Sample : 1322, 112 == 1322, 112
+Distanza sample : 45
+Soluzione 1 : 1328, 32
+Soluzione 2 : 1321, 126
+Sample : 1321, 126 == 1321, 126
+Distanza sample : 50
+Soluzione 1 : 1328, 32
+Soluzione 2 : 1321, 126
+Sample : 1321, 126 == 1321, 126
+Distanza sample : 55
+Soluzione 1 : 1329, 18
+Soluzione 2 : 1320, 139
+Sample : 1320, 139 == 1320, 139
+Distanza sample : 60
+Soluzione 1 : 1329, 18
+Soluzione 2 : 1320, 139
+Sample : 1320, 139 == 1320, 139
+Distanza sample : 65
+Soluzione 1 : 1329, 18
+Soluzione 2 : 1320, 139
+Sample : 1320, 139 == 1320, 139
+Distanza sample : 70
+Soluzione 1 : 1330, 5
+Soluzione 2 : 1319, 153
+Sample : 1319, 153 == 1319, 153
+Distanza sample : 75
+Soluzione 1 : 1330, 5
+Soluzione 2 : 1319, 153
+Sample : 1319, 153 == 1319, 153
+Distanza sample : 80
+Soluzione 1 : 1330, 5
+Soluzione 2 : 1319, 153
+Sample : 1319, 153 == 1319, 153
+Distanza sample : 85
+Soluzione 1 : 1331, -8
+Soluzione 2 : 1318, 166
+Sample : 1318, 166 == 1318, 166
+Distanza sample : 90
+Soluzione 1 : 1331, -8
+Soluzione 2 : 1318, 166
+Sample : 1318, 166 == 1318, 166
+Distanza sample : 95
+Soluzione 1 : 1332, -21
+Soluzione 2 : 1317, 180
+Sample : 1317, 180 == 1317, 180
+Distanza sample : 100
+Soluzione 1 : 1332, -21
+Soluzione 2 : 1317, 180
+Sample : 1317, 180 == 1317, 180
+Distanza sample : 105
+Soluzione 1 : 1332, -21
+Soluzione 2 : 1317, 180
+Sample : 1317, 180 == 1317, 180
+Distanza sample : 110
+Soluzione 1 : 1333, -35
+Soluzione 2 : 1316, 193
+Sample : 1316, 193 == 1316, 193
+Distanza sample : 115
+Soluzione 1 : 1333, -35
+Soluzione 2 : 1316, 193
+Sample : 1316, 193 == 1316, 193
+Distanza sample : 120
+Soluzione 1 : 1333, -35
+Soluzione 2 : 1316, 193
+Sample : 1316, 193 == 1316, 193
+Distanza sample : 125
+Soluzione 1 : 1334, -48
+Soluzione 2 : 1315, 207
+Sample : 1315, 207 == 1315, 207
+Distanza sample : 130
+Soluzione 1 : 1334, -48
+Soluzione 2 : 1315, 207
+Sample : 1315, 207 == 1315, 207
+Distanza sample : 135
+Soluzione 1 : 1335, -62
+Soluzione 2 : 1314, 220
+Sample : 1314, 220 == 1314, 220
+Distanza sample : 140
+Soluzione 1 : 1335, -62
+Soluzione 2 : 1314, 220
+Sample : 1314, 220 == 1314, 220
+Distanza sample : 145
+Soluzione 1 : 1335, -62
+Soluzione 2 : 1314, 220
+Sample : 1314, 220 == 1314, 220
+Distanza sample : 150
+Soluzione 1 : 1336, -75
+Soluzione 2 : 1313, 233
+Sample : 1313, 233 == 1313, 233
+Distanza sample : 155
+Soluzione 1 : 1336, -75
+Soluzione 2 : 1313, 233
+Sample : 1313, 233 == 1313, 233
+Distanza sample : 160
+Soluzione 1 : 1336, -75
+Soluzione 2 : 1313, 233
+Sample : 1313, 233 == 1313, 233
+Distanza sample : 165
+Soluzione 1 : 1337, -89
+Soluzione 2 : 1312, 247
+Sample : 1312, 247 == 1312, 247
+Distanza sample : 170
+Soluzione 1 : 1337, -89
+Soluzione 2 : 1312, 247
+Sample : 1312, 247 == 1312, 247
+Distanza sample : 175
+Soluzione 1 : 1337, -89
+Soluzione 2 : 1312, 247
+Sample : 1312, 247 == 1312, 247
+------ n samples 37
+id 42  -  longId 13120247  -  pointLongId 13250072  -  PointId 56
+connect points (1278,250) and (1325,72)
+Tratto 1325, 72  ->  1278, 250
+Lunghezza : 184.101
+Distanza sample : 5
+Soluzione 1 : 1326, 69
+Soluzione 2 : 1323, 80
+Sample : 1323, 80 == 1323, 80
+Distanza sample : 10
+Soluzione 1 : 1327, 65
+Soluzione 2 : 1322, 84
+Sample : 1322, 84 == 1322, 84
+Distanza sample : 15
+Soluzione 1 : 1328, 61
+Soluzione 2 : 1321, 88
+Sample : 1321, 88 == 1321, 88
+Distanza sample : 20
+Soluzione 1 : 1330, 53
+Soluzione 2 : 1319, 95
+Sample : 1319, 95 == 1319, 95
+Distanza sample : 25
+Soluzione 1 : 1331, 50
+Soluzione 2 : 1318, 99
+Sample : 1318, 99 == 1318, 99
+Distanza sample : 30
+Soluzione 1 : 1332, 46
+Soluzione 2 : 1317, 103
+Sample : 1317, 103 == 1317, 103
+Distanza sample : 35
+Soluzione 1 : 1333, 42
+Soluzione 2 : 1316, 106
+Sample : 1316, 106 == 1316, 106
+Distanza sample : 40
+Soluzione 1 : 1335, 35
+Soluzione 2 : 1314, 114
+Sample : 1314, 114 == 1314, 114
+Distanza sample : 45
+Soluzione 1 : 1336, 31
+Soluzione 2 : 1313, 118
+Sample : 1313, 118 == 1313, 118
+Distanza sample : 50
+Soluzione 1 : 1337, 27
+Soluzione 2 : 1312, 122
+Sample : 1312, 122 == 1312, 122
+Distanza sample : 55
+Soluzione 1 : 1339, 19
+Soluzione 2 : 1310, 129
+Sample : 1310, 129 == 1310, 129
+Distanza sample : 60
+Soluzione 1 : 1340, 16
+Soluzione 2 : 1309, 133
+Sample : 1309, 133 == 1309, 133
+Distanza sample : 65
+Soluzione 1 : 1341, 12
+Soluzione 2 : 1308, 137
+Sample : 1308, 137 == 1308, 137
+Distanza sample : 70
+Soluzione 1 : 1342, 8
+Soluzione 2 : 1307, 141
+Sample : 1307, 141 == 1307, 141
+Distanza sample : 75
+Soluzione 1 : 1344, 0
+Soluzione 2 : 1305, 148
+Sample : 1305, 148 == 1305, 148
+Distanza sample : 80
+Soluzione 1 : 1345, -2
+Soluzione 2 : 1304, 152
+Sample : 1304, 152 == 1304, 152
+Distanza sample : 85
+Soluzione 1 : 1346, -6
+Soluzione 2 : 1303, 156
+Sample : 1303, 156 == 1303, 156
+Distanza sample : 90
+Soluzione 1 : 1347, -10
+Soluzione 2 : 1302, 160
+Sample : 1302, 160 == 1302, 160
+Distanza sample : 95
+Soluzione 1 : 1349, -17
+Soluzione 2 : 1300, 167
+Sample : 1300, 167 == 1300, 167
+Distanza sample : 100
+Soluzione 1 : 1350, -21
+Soluzione 2 : 1299, 171
+Sample : 1299, 171 == 1299, 171
+Distanza sample : 105
+Soluzione 1 : 1351, -25
+Soluzione 2 : 1298, 175
+Sample : 1298, 175 == 1298, 175
+Distanza sample : 110
+Soluzione 1 : 1353, -33
+Soluzione 2 : 1296, 182
+Sample : 1296, 182 == 1296, 182
+Distanza sample : 115
+Soluzione 1 : 1354, -36
+Soluzione 2 : 1295, 186
+Sample : 1295, 186 == 1295, 186
+Distanza sample : 120
+Soluzione 1 : 1355, -40
+Soluzione 2 : 1294, 190
+Sample : 1294, 190 == 1294, 190
+Distanza sample : 125
+Soluzione 1 : 1356, -44
+Soluzione 2 : 1293, 194
+Sample : 1293, 194 == 1293, 194
+Distanza sample : 130
+Soluzione 1 : 1358, -52
+Soluzione 2 : 1291, 201
+Sample : 1291, 201 == 1291, 201
+Distanza sample : 135
+Soluzione 1 : 1359, -55
+Soluzione 2 : 1290, 205
+Sample : 1290, 205 == 1290, 205
+Distanza sample : 140
+Soluzione 1 : 1360, -59
+Soluzione 2 : 1289, 209
+Sample : 1289, 209 == 1289, 209
+Distanza sample : 145
+Soluzione 1 : 1362, -67
+Soluzione 2 : 1287, 216
+Sample : 1287, 216 == 1287, 216
+Distanza sample : 150
+Soluzione 1 : 1363, -71
+Soluzione 2 : 1286, 220
+Sample : 1286, 220 == 1286, 220
+Distanza sample : 155
+Soluzione 1 : 1364, -74
+Soluzione 2 : 1285, 224
+Sample : 1285, 224 == 1285, 224
+Distanza sample : 160
+Soluzione 1 : 1365, -78
+Soluzione 2 : 1284, 228
+Sample : 1284, 228 == 1284, 228
+Distanza sample : 165
+Soluzione 1 : 1367, -86
+Soluzione 2 : 1282, 235
+Sample : 1282, 235 == 1282, 235
+Distanza sample : 170
+Soluzione 1 : 1368, -89
+Soluzione 2 : 1281, 239
+Sample : 1281, 239 == 1281, 239
+Distanza sample : 175
+Soluzione 1 : 1369, -93
+Soluzione 2 : 1280, 243
+Sample : 1280, 243 == 1280, 243
+Distanza sample : 180
+Soluzione 1 : 1370, -97
+Soluzione 2 : 1279, 247
+Sample : 1279, 247 == 1279, 247
+------ n samples 38
+id 38  -  longId 12780250  -  pointLongId 13250072  -  PointId 56
+connect points (1312,247) and (1325,72)
+Tratto 1325, 72  ->  1312, 247
+Lunghezza : 175.482
+Distanza sample : 5
+Soluzione 1 : 1325, 72
+Soluzione 2 : 1324, 85
+Sample : 1324, 85 == 1324, 85
+Distanza sample : 10
+Soluzione 1 : 1325, 72
+Soluzione 2 : 1324, 85
+Sample : 1324, 85 == 1324, 85
+Distanza sample : 15
+Soluzione 1 : 1326, 58
+Soluzione 2 : 1323, 99
+Sample : 1323, 99 == 1323, 99
+Distanza sample : 20
+Soluzione 1 : 1326, 58
+Soluzione 2 : 1323, 99
+Sample : 1323, 99 == 1323, 99
+Distanza sample : 25
+Soluzione 1 : 1326, 58
+Soluzione 2 : 1323, 99
+Sample : 1323, 99 == 1323, 99
+Distanza sample : 30
+Soluzione 1 : 1327, 45
+Soluzione 2 : 1322, 112
+Sample : 1322, 112 == 1322, 112
+Distanza sample : 35
+Soluzione 1 : 1327, 45
+Soluzione 2 : 1322, 112
+Sample : 1322, 112 == 1322, 112
+Distanza sample : 40
+Soluzione 1 : 1327, 45
+Soluzione 2 : 1322, 112
+Sample : 1322, 112 == 1322, 112
+Distanza sample : 45
+Soluzione 1 : 1328, 32
+Soluzione 2 : 1321, 126
+Sample : 1321, 126 == 1321, 126
+Distanza sample : 50
+Soluzione 1 : 1328, 32
+Soluzione 2 : 1321, 126
+Sample : 1321, 126 == 1321, 126
+Distanza sample : 55
+Soluzione 1 : 1329, 18
+Soluzione 2 : 1320, 139
+Sample : 1320, 139 == 1320, 139
+Distanza sample : 60
+Soluzione 1 : 1329, 18
+Soluzione 2 : 1320, 139
+Sample : 1320, 139 == 1320, 139
+Distanza sample : 65
+Soluzione 1 : 1329, 18
+Soluzione 2 : 1320, 139
+Sample : 1320, 139 == 1320, 139
+Distanza sample : 70
+Soluzione 1 : 1330, 5
+Soluzione 2 : 1319, 153
+Sample : 1319, 153 == 1319, 153
+Distanza sample : 75
+Soluzione 1 : 1330, 5
+Soluzione 2 : 1319, 153
+Sample : 1319, 153 == 1319, 153
+Distanza sample : 80
+Soluzione 1 : 1330, 5
+Soluzione 2 : 1319, 153
+Sample : 1319, 153 == 1319, 153
+Distanza sample : 85
+Soluzione 1 : 1331, -8
+Soluzione 2 : 1318, 166
+Sample : 1318, 166 == 1318, 166
+Distanza sample : 90
+Soluzione 1 : 1331, -8
+Soluzione 2 : 1318, 166
+Sample : 1318, 166 == 1318, 166
+Distanza sample : 95
+Soluzione 1 : 1332, -21
+Soluzione 2 : 1317, 180
+Sample : 1317, 180 == 1317, 180
+Distanza sample : 100
+Soluzione 1 : 1332, -21
+Soluzione 2 : 1317, 180
+Sample : 1317, 180 == 1317, 180
+Distanza sample : 105
+Soluzione 1 : 1332, -21
+Soluzione 2 : 1317, 180
+Sample : 1317, 180 == 1317, 180
+Distanza sample : 110
+Soluzione 1 : 1333, -35
+Soluzione 2 : 1316, 193
+Sample : 1316, 193 == 1316, 193
+Distanza sample : 115
+Soluzione 1 : 1333, -35
+Soluzione 2 : 1316, 193
+Sample : 1316, 193 == 1316, 193
+Distanza sample : 120
+Soluzione 1 : 1333, -35
+Soluzione 2 : 1316, 193
+Sample : 1316, 193 == 1316, 193
+Distanza sample : 125
+Soluzione 1 : 1334, -48
+Soluzione 2 : 1315, 207
+Sample : 1315, 207 == 1315, 207
+Distanza sample : 130
+Soluzione 1 : 1334, -48
+Soluzione 2 : 1315, 207
+Sample : 1315, 207 == 1315, 207
+Distanza sample : 135
+Soluzione 1 : 1335, -62
+Soluzione 2 : 1314, 220
+Sample : 1314, 220 == 1314, 220
+Distanza sample : 140
+Soluzione 1 : 1335, -62
+Soluzione 2 : 1314, 220
+Sample : 1314, 220 == 1314, 220
+Distanza sample : 145
+Soluzione 1 : 1335, -62
+Soluzione 2 : 1314, 220
+Sample : 1314, 220 == 1314, 220
+Distanza sample : 150
+Soluzione 1 : 1336, -75
+Soluzione 2 : 1313, 233
+Sample : 1313, 233 == 1313, 233
+Distanza sample : 155
+Soluzione 1 : 1336, -75
+Soluzione 2 : 1313, 233
+Sample : 1313, 233 == 1313, 233
+Distanza sample : 160
+Soluzione 1 : 1336, -75
+Soluzione 2 : 1313, 233
+Sample : 1313, 233 == 1313, 233
+Distanza sample : 165
+Soluzione 1 : 1337, -89
+Soluzione 2 : 1312, 247
+Sample : 1312, 247 == 1312, 247
+Distanza sample : 170
+Soluzione 1 : 1337, -89
+Soluzione 2 : 1312, 247
+Sample : 1312, 247 == 1312, 247
+Distanza sample : 175
+Soluzione 1 : 1337, -89
+Soluzione 2 : 1312, 247
+Sample : 1312, 247 == 1312, 247
+------ n samples 37
+id 42  -  longId 13120247  -  pointLongId 13250072  -  PointId 56
+start Size exit12
+end Size exit12
+V 57  start (1307, 932) -2 - end (1325, 72) -1
+(pathfinder) x = 299
+(pathfinder) y = 662
+0 (pathfinder) encodedCoord = 2990662
+(pathfinder) x = 765
+(pathfinder) y = 662
+1 (pathfinder) encodedCoord = 7650662
+(pathfinder) x = 299
+(pathfinder) y = 662
+0 (pathfinder) encodedCoord = 2990662
+(pathfinder) x = 302
+(pathfinder) y = 757
+2 (pathfinder) encodedCoord = 3020757
+(pathfinder) x = 299
+(pathfinder) y = 662
+0 (pathfinder) encodedCoord = 2990662
+(pathfinder) x = 341
+(pathfinder) y = 408
+3 (pathfinder) encodedCoord = 3410408
+(pathfinder) x = 302
+(pathfinder) y = 757
+2 (pathfinder) encodedCoord = 3020757
+(pathfinder) x = 450
+(pathfinder) y = 845
+4 (pathfinder) encodedCoord = 4500845
+(pathfinder) x = 302
+(pathfinder) y = 757
+2 (pathfinder) encodedCoord = 3020757
 (pathfinder) x = 0
 (pathfinder) y = 1060
-(pathfinder) encodedCoord = 11060
-(pathfinder) x = 14
-(pathfinder) y = 870
-(pathfinder) encodedCoord = 14870
-(pathfinder) x = 7
-(pathfinder) y = 866
-(pathfinder) encodedCoord = 7866
-(pathfinder) x = 7
-(pathfinder) y = 866
-(pathfinder) encodedCoord = 7866
-(pathfinder) x = 7
-(pathfinder) y = 874
-(pathfinder) encodedCoord = 7874
-(pathfinder) x = 7
-(pathfinder) y = 874
-(pathfinder) encodedCoord = 7874
-(pathfinder) x = 70
-(pathfinder) y = 765
-(pathfinder) encodedCoord = 70765
-(pathfinder) x = 37
-(pathfinder) y = 747
-(pathfinder) encodedCoord = 37747
-(pathfinder) x = 37
-(pathfinder) y = 747
-(pathfinder) encodedCoord = 37747
-(pathfinder) x = 48
-(pathfinder) y = 1011
-(pathfinder) encodedCoord = 481011
-(pathfinder) x = 48
-(pathfinder) y = 1011
-(pathfinder) encodedCoord = 481011
-(pathfinder) x = 48
-(pathfinder) y = 1011
-(pathfinder) encodedCoord = 481011
-(pathfinder) x = 70
-(pathfinder) y = 695
-(pathfinder) encodedCoord = 70695
-(pathfinder) x = 70
-(pathfinder) y = 695
-(pathfinder) encodedCoord = 70695
-(pathfinder) x = 360
-(pathfinder) y = 765
-(pathfinder) encodedCoord = 360765
-(pathfinder) x = 635
-(pathfinder) y = 347
-(pathfinder) encodedCoord = 635347
-(pathfinder) x = 318
-(pathfinder) y = 318
-(pathfinder) encodedCoord = 318318
-(pathfinder) x = 318
-(pathfinder) y = 318
-(pathfinder) encodedCoord = 318318
-(pathfinder) x = 318
-(pathfinder) y = 318
-(pathfinder) encodedCoord = 318318
-(pathfinder) x = 640
-(pathfinder) y = 169
-(pathfinder) encodedCoord = 640169
-(pathfinder) x = 477
-(pathfinder) y = 162
-(pathfinder) encodedCoord = 477162
-(pathfinder) x = 477
-(pathfinder) y = 162
-(pathfinder) encodedCoord = 477162
-(pathfinder) x = 641
-(pathfinder) y = 463
-(pathfinder) encodedCoord = 641463
-(pathfinder) x = 347
-(pathfinder) y = 471
-(pathfinder) encodedCoord = 347471
-(pathfinder) x = 347
-(pathfinder) y = 471
-(pathfinder) encodedCoord = 347471
-(pathfinder) x = 360
-(pathfinder) y = 483
-(pathfinder) encodedCoord = 360483
-(pathfinder) x = 360
-(pathfinder) y = 483
-(pathfinder) encodedCoord = 360483
-(pathfinder) x = 320
-(pathfinder) y = 444
-(pathfinder) encodedCoord = 320444
-(pathfinder) x = 320
-(pathfinder) y = 444
-(pathfinder) encodedCoord = 320444
-(pathfinder) x = 320
-(pathfinder) y = 444
-(pathfinder) encodedCoord = 320444
-(pathfinder) x = 642
-(pathfinder) y = 118
-(pathfinder) encodedCoord = 642118
-(pathfinder) x = 528
-(pathfinder) y = 113
-(pathfinder) encodedCoord = 528113
-(pathfinder) x = 528
-(pathfinder) y = 113
-(pathfinder) encodedCoord = 528113
-(pathfinder) x = 321
-(pathfinder) y = 421
-(pathfinder) encodedCoord = 321421
-(pathfinder) x = 321
-(pathfinder) y = 421
-(pathfinder) encodedCoord = 321421
-(pathfinder) x = 321
-(pathfinder) y = 421
-(pathfinder) encodedCoord = 321421
-(pathfinder) x = 647
-(pathfinder) y = 682
-(pathfinder) encodedCoord = 647682
-(pathfinder) x = 492
-(pathfinder) y = 684
-(pathfinder) encodedCoord = 492684
-(pathfinder) x = 492
-(pathfinder) y = 684
-(pathfinder) encodedCoord = 492684
-(pathfinder) x = 492
-(pathfinder) y = 686
-(pathfinder) encodedCoord = 492686
-(pathfinder) x = 492
-(pathfinder) y = 686
-(pathfinder) encodedCoord = 492686
-(pathfinder) x = 380
-(pathfinder) y = 267
-(pathfinder) encodedCoord = 380267
-(pathfinder) x = 380
-(pathfinder) y = 267
-(pathfinder) encodedCoord = 380267
-(pathfinder) x = 468
-(pathfinder) y = 413
-(pathfinder) encodedCoord = 468413
-(pathfinder) x = 468
-(pathfinder) y = 413
-(pathfinder) encodedCoord = 468413
-(pathfinder) x = 403
-(pathfinder) y = 249
-(pathfinder) encodedCoord = 403249
-(pathfinder) x = 403
-(pathfinder) y = 249
-(pathfinder) encodedCoord = 403249
-(pathfinder) x = 403
-(pathfinder) y = 249
-(pathfinder) encodedCoord = 403249
-(pathfinder) x = 576
-(pathfinder) y = 77
-(pathfinder) encodedCoord = 576077
-(pathfinder) x = 576
-(pathfinder) y = 77
-(pathfinder) encodedCoord = 576077
-(pathfinder) x = 482
-(pathfinder) y = 246
-(pathfinder) encodedCoord = 482246
-(pathfinder) x = 482
-(pathfinder) y = 246
-(pathfinder) encodedCoord = 482246
-(pathfinder) x = 592
-(pathfinder) y = 418
-(pathfinder) encodedCoord = 592418
-(pathfinder) x = 592
-(pathfinder) y = 418
-(pathfinder) encodedCoord = 592418
-(pathfinder) x = 661
-(pathfinder) y = 412
-(pathfinder) encodedCoord = 661412
-(pathfinder) x = 628
-(pathfinder) y = 424
-(pathfinder) encodedCoord = 628424
-(pathfinder) x = 628
-(pathfinder) y = 424
-(pathfinder) encodedCoord = 628424
-(pathfinder) x = 653
-(pathfinder) y = 426
-(pathfinder) encodedCoord = 653426
-(pathfinder) x = 653
-(pathfinder) y = 426
-(pathfinder) encodedCoord = 653426
-(pathfinder) x = 671
-(pathfinder) y = 232
-(pathfinder) encodedCoord = 671232
-(pathfinder) x = 679
-(pathfinder) y = 422
-(pathfinder) encodedCoord = 679422
-(pathfinder) x = 542
-(pathfinder) y = 783
-(pathfinder) encodedCoord = 542783
-(pathfinder) x = 542
-(pathfinder) y = 783
-(pathfinder) encodedCoord = 542783
-(pathfinder) x = 544
-(pathfinder) y = 786
-(pathfinder) encodedCoord = 544786
-(pathfinder) x = 544
-(pathfinder) y = 786
-(pathfinder) encodedCoord = 544786
-(pathfinder) x = 705
-(pathfinder) y = 739
-(pathfinder) encodedCoord = 705739
-(pathfinder) x = 715
-(pathfinder) y = 0
-(pathfinder) encodedCoord = 715000
-(pathfinder) x = 586
-(pathfinder) y = 859
-(pathfinder) encodedCoord = 586859
-(pathfinder) x = 586
-(pathfinder) y = 859
-(pathfinder) encodedCoord = 586859
-(pathfinder) x = 759
-(pathfinder) y = 0
-(pathfinder) encodedCoord = 759000
-(pathfinder) x = 759
-(pathfinder) y = 0
-(pathfinder) encodedCoord = 759000
-(pathfinder) x = 595
-(pathfinder) y = 880
-(pathfinder) encodedCoord = 595880
-(pathfinder) x = 595
-(pathfinder) y = 880
-(pathfinder) encodedCoord = 595880
-(pathfinder) x = 595
-(pathfinder) y = 880
-(pathfinder) encodedCoord = 595880
-(pathfinder) x = 705
-(pathfinder) y = 899
-(pathfinder) encodedCoord = 705899
-(pathfinder) x = 705
-(pathfinder) y = 899
-(pathfinder) encodedCoord = 705899
-(pathfinder) x = 915
-(pathfinder) y = 0
-(pathfinder) encodedCoord = 915000
-(pathfinder) x = 915
-(pathfinder) y = 0
-(pathfinder) encodedCoord = 915000
-(pathfinder) x = 926
-(pathfinder) y = 393
-(pathfinder) encodedCoord = 926393
-(pathfinder) x = 927
-(pathfinder) y = 739
-(pathfinder) encodedCoord = 927739
-(pathfinder) x = 942
-(pathfinder) y = 336
-(pathfinder) encodedCoord = 942336
-(pathfinder) x = 942
-(pathfinder) y = 335
-(pathfinder) encodedCoord = 942335
-(pathfinder) x = 943
-(pathfinder) y = 336
-(pathfinder) encodedCoord = 943336
-(pathfinder) x = 943
-(pathfinder) y = 336
-(pathfinder) encodedCoord = 943336
-(pathfinder) x = 944
-(pathfinder) y = 336
-(pathfinder) encodedCoord = 944336
-(pathfinder) x = 944
-(pathfinder) y = 336
-(pathfinder) encodedCoord = 944336
-(pathfinder) x = 963
-(pathfinder) y = 0
-(pathfinder) encodedCoord = 963000
-(pathfinder) x = 964
-(pathfinder) y = 322
-(pathfinder) encodedCoord = 964322
-(pathfinder) x = 982
-(pathfinder) y = 451
-(pathfinder) encodedCoord = 982451
-(pathfinder) x = 986
-(pathfinder) y = 679
-(pathfinder) encodedCoord = 986679
-(pathfinder) x = 923
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 923395
-(pathfinder) x = 927
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 927395
-(pathfinder) x = 927
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 927395
-(pathfinder) x = 932
-(pathfinder) y = 394
-(pathfinder) encodedCoord = 932394
-(pathfinder) x = 932
-(pathfinder) y = 394
-(pathfinder) encodedCoord = 932394
-(pathfinder) x = 995
-(pathfinder) y = 375
-(pathfinder) encodedCoord = 995375
-(pathfinder) x = 995
-(pathfinder) y = 375
-(pathfinder) encodedCoord = 995375
-(pathfinder) x = 1041
-(pathfinder) y = 193
-(pathfinder) encodedCoord = 1041193
-(pathfinder) x = 997
-(pathfinder) y = 376
-(pathfinder) encodedCoord = 997376
-(pathfinder) x = 997
-(pathfinder) y = 376
-(pathfinder) encodedCoord = 997376
-(pathfinder) x = 997
-(pathfinder) y = 376
-(pathfinder) encodedCoord = 997376
-(pathfinder) x = 927
-(pathfinder) y = 899
-(pathfinder) encodedCoord = 927899
-(pathfinder) x = 927
-(pathfinder) y = 899
-(pathfinder) encodedCoord = 927899
-(pathfinder) x = 1053
-(pathfinder) y = 375
-(pathfinder) encodedCoord = 1053375
-(pathfinder) x = 1053
-(pathfinder) y = 375
-(pathfinder) encodedCoord = 1053375
-(pathfinder) x = 1053
-(pathfinder) y = 375
-(pathfinder) encodedCoord = 1053375
-(pathfinder) x = 1053
-(pathfinder) y = 375
-(pathfinder) encodedCoord = 1053375
-(pathfinder) x = 1061
-(pathfinder) y = 871
-(pathfinder) encodedCoord = 1061871
-(pathfinder) x = 1061
-(pathfinder) y = 871
-(pathfinder) encodedCoord = 1061871
-(pathfinder) x = 1181
-(pathfinder) y = 140
-(pathfinder) encodedCoord = 1181140
-(pathfinder) x = 1181
-(pathfinder) y = 140
-(pathfinder) encodedCoord = 1181140
-(pathfinder) x = 1145
-(pathfinder) y = 836
-(pathfinder) encodedCoord = 1145836
-(pathfinder) x = 1145
-(pathfinder) y = 836
-(pathfinder) encodedCoord = 1145836
-(pathfinder) x = 1234
-(pathfinder) y = 193
-(pathfinder) encodedCoord = 1234193
-(pathfinder) x = 1234
-(pathfinder) y = 193
-(pathfinder) encodedCoord = 1234193
-(pathfinder) x = 1373
-(pathfinder) y = 672
-(pathfinder) encodedCoord = 1373672
-(pathfinder) x = 981
-(pathfinder) y = 1030
-(pathfinder) encodedCoord = 9811030
-(pathfinder) x = 981
-(pathfinder) y = 1030
-(pathfinder) encodedCoord = 9811030
-(pathfinder) x = 1380
-(pathfinder) y = 395
-(pathfinder) encodedCoord = 1380395
-(pathfinder) x = 1053
-(pathfinder) y = 375
-(pathfinder) encodedCoord = 1053375
-(pathfinder) x = 1508
-(pathfinder) y = 530
-(pathfinder) encodedCoord = 1508530
+5 (pathfinder) encodedCoord = 1060
+(pathfinder) x = 302
+(pathfinder) y = 757
+2 (pathfinder) encodedCoord = 3020757
+(pathfinder) x = 299
+(pathfinder) y = 662
+0 (pathfinder) encodedCoord = 2990662
+(pathfinder) x = 450
+(pathfinder) y = 845
+4 (pathfinder) encodedCoord = 4500845
+(pathfinder) x = 620
+(pathfinder) y = 927
+6 (pathfinder) encodedCoord = 6200927
+(pathfinder) x = 450
+(pathfinder) y = 845
+4 (pathfinder) encodedCoord = 4500845
+(pathfinder) x = 302
+(pathfinder) y = 757
+2 (pathfinder) encodedCoord = 3020757
+(pathfinder) x = 450
+(pathfinder) y = 845
+4 (pathfinder) encodedCoord = 4500845
+(pathfinder) x = 767
+(pathfinder) y = 668
+7 (pathfinder) encodedCoord = 7670668
+(pathfinder) x = 341
+(pathfinder) y = 408
+3 (pathfinder) encodedCoord = 3410408
+(pathfinder) x = 353
+(pathfinder) y = 353
+8 (pathfinder) encodedCoord = 3530353
+(pathfinder) x = 341
+(pathfinder) y = 408
+3 (pathfinder) encodedCoord = 3410408
+(pathfinder) x = 764
+(pathfinder) y = 660
+9 (pathfinder) encodedCoord = 7640660
+(pathfinder) x = 341
+(pathfinder) y = 408
+3 (pathfinder) encodedCoord = 3410408
+(pathfinder) x = 299
+(pathfinder) y = 662
+0 (pathfinder) encodedCoord = 2990662
+(pathfinder) x = 353
+(pathfinder) y = 353
+8 (pathfinder) encodedCoord = 3530353
+(pathfinder) x = 553
+(pathfinder) y = 274
+10 (pathfinder) encodedCoord = 5530274
+(pathfinder) x = 353
+(pathfinder) y = 353
+8 (pathfinder) encodedCoord = 3530353
+(pathfinder) x = 341
+(pathfinder) y = 408
+3 (pathfinder) encodedCoord = 3410408
+(pathfinder) x = 353
+(pathfinder) y = 353
+8 (pathfinder) encodedCoord = 3530353
 (pathfinder) x = 0
 (pathfinder) y = 0
-(pathfinder) encodedCoord = 1000
-(pathfinder) x = 318
+11 (pathfinder) encodedCoord = 0
+(pathfinder) x = 620
+(pathfinder) y = 927
+6 (pathfinder) encodedCoord = 6200927
+(pathfinder) x = 770
+(pathfinder) y = 936
+12 (pathfinder) encodedCoord = 7700936
+(pathfinder) x = 620
+(pathfinder) y = 927
+6 (pathfinder) encodedCoord = 6200927
+(pathfinder) x = 450
+(pathfinder) y = 845
+4 (pathfinder) encodedCoord = 4500845
+(pathfinder) x = 620
+(pathfinder) y = 927
+6 (pathfinder) encodedCoord = 6200927
+(pathfinder) x = 767
+(pathfinder) y = 670
+13 (pathfinder) encodedCoord = 7670670
+(pathfinder) x = 553
+(pathfinder) y = 274
+10 (pathfinder) encodedCoord = 5530274
+(pathfinder) x = 777
+(pathfinder) y = 253
+14 (pathfinder) encodedCoord = 7770253
+(pathfinder) x = 553
+(pathfinder) y = 274
+10 (pathfinder) encodedCoord = 5530274
+(pathfinder) x = 763
+(pathfinder) y = 648
+15 (pathfinder) encodedCoord = 7630648
+(pathfinder) x = 553
+(pathfinder) y = 274
+10 (pathfinder) encodedCoord = 5530274
+(pathfinder) x = 353
+(pathfinder) y = 353
+8 (pathfinder) encodedCoord = 3530353
+(pathfinder) x = 857
+(pathfinder) y = 838
+16 (pathfinder) encodedCoord = 8570838
+(pathfinder) x = 936
+(pathfinder) y = 788
+17 (pathfinder) encodedCoord = 9360788
+(pathfinder) x = 857
+(pathfinder) y = 838
+16 (pathfinder) encodedCoord = 8570838
+(pathfinder) x = 820
+(pathfinder) y = 944
+18 (pathfinder) encodedCoord = 8200944
+(pathfinder) x = 857
+(pathfinder) y = 838
+16 (pathfinder) encodedCoord = 8570838
+(pathfinder) x = 770
+(pathfinder) y = 690
+19 (pathfinder) encodedCoord = 7700690
+(pathfinder) x = 770
+(pathfinder) y = 936
+12 (pathfinder) encodedCoord = 7700936
+(pathfinder) x = 820
+(pathfinder) y = 944
+18 (pathfinder) encodedCoord = 8200944
+(pathfinder) x = 770
+(pathfinder) y = 936
+12 (pathfinder) encodedCoord = 7700936
+(pathfinder) x = 620
+(pathfinder) y = 927
+6 (pathfinder) encodedCoord = 6200927
+(pathfinder) x = 770
+(pathfinder) y = 936
+12 (pathfinder) encodedCoord = 7700936
+(pathfinder) x = 770
+(pathfinder) y = 690
+19 (pathfinder) encodedCoord = 7700690
+(pathfinder) x = 820
+(pathfinder) y = 944
+18 (pathfinder) encodedCoord = 8200944
+(pathfinder) x = 940
+(pathfinder) y = 945
+20 (pathfinder) encodedCoord = 9400945
+(pathfinder) x = 820
+(pathfinder) y = 944
+18 (pathfinder) encodedCoord = 8200944
+(pathfinder) x = 770
+(pathfinder) y = 936
+12 (pathfinder) encodedCoord = 7700936
+(pathfinder) x = 820
+(pathfinder) y = 944
+18 (pathfinder) encodedCoord = 8200944
+(pathfinder) x = 857
+(pathfinder) y = 838
+16 (pathfinder) encodedCoord = 8570838
+(pathfinder) x = 1011
+(pathfinder) y = 840
+21 (pathfinder) encodedCoord = 10110840
+(pathfinder) x = 1136
+(pathfinder) y = 709
+22 (pathfinder) encodedCoord = 11360709
+(pathfinder) x = 1011
+(pathfinder) y = 840
+21 (pathfinder) encodedCoord = 10110840
+(pathfinder) x = 1018
+(pathfinder) y = 951
+23 (pathfinder) encodedCoord = 10180951
+(pathfinder) x = 1011
+(pathfinder) y = 840
+21 (pathfinder) encodedCoord = 10110840
+(pathfinder) x = 938
+(pathfinder) y = 796
+24 (pathfinder) encodedCoord = 9380796
+(pathfinder) x = 777
+(pathfinder) y = 253
+14 (pathfinder) encodedCoord = 7770253
+(pathfinder) x = 946
+(pathfinder) y = 265
+25 (pathfinder) encodedCoord = 9460265
+(pathfinder) x = 777
+(pathfinder) y = 253
+14 (pathfinder) encodedCoord = 7770253
+(pathfinder) x = 764
+(pathfinder) y = 633
+26 (pathfinder) encodedCoord = 7640633
+(pathfinder) x = 777
+(pathfinder) y = 253
+14 (pathfinder) encodedCoord = 7770253
+(pathfinder) x = 553
+(pathfinder) y = 274
+10 (pathfinder) encodedCoord = 5530274
+(pathfinder) x = 940
+(pathfinder) y = 945
+20 (pathfinder) encodedCoord = 9400945
+(pathfinder) x = 1018
+(pathfinder) y = 951
+23 (pathfinder) encodedCoord = 10180951
+(pathfinder) x = 940
+(pathfinder) y = 945
+20 (pathfinder) encodedCoord = 9400945
+(pathfinder) x = 820
+(pathfinder) y = 944
+18 (pathfinder) encodedCoord = 8200944
+(pathfinder) x = 940
+(pathfinder) y = 945
+20 (pathfinder) encodedCoord = 9400945
+(pathfinder) x = 938
+(pathfinder) y = 796
+24 (pathfinder) encodedCoord = 9380796
+(pathfinder) x = 1018
+(pathfinder) y = 951
+23 (pathfinder) encodedCoord = 10180951
+(pathfinder) x = 1141
+(pathfinder) y = 922
+27 (pathfinder) encodedCoord = 11410922
+(pathfinder) x = 1018
+(pathfinder) y = 951
+23 (pathfinder) encodedCoord = 10180951
+(pathfinder) x = 940
+(pathfinder) y = 945
+20 (pathfinder) encodedCoord = 9400945
+(pathfinder) x = 1018
+(pathfinder) y = 951
+23 (pathfinder) encodedCoord = 10180951
+(pathfinder) x = 1011
+(pathfinder) y = 840
+21 (pathfinder) encodedCoord = 10110840
+(pathfinder) x = 947
 (pathfinder) y = 318
-(pathfinder) encodedCoord = 318318
-(pathfinder) x = 1373
-(pathfinder) y = 672
-(pathfinder) encodedCoord = 1373672
-Dijkstra 100 101 - 154203 1502812
+28 (pathfinder) encodedCoord = 9470318
+(pathfinder) x = 946
+(pathfinder) y = 265
+25 (pathfinder) encodedCoord = 9460265
+(pathfinder) x = 947
+(pathfinder) y = 318
+28 (pathfinder) encodedCoord = 9470318
+(pathfinder) x = 965
+(pathfinder) y = 580
+29 (pathfinder) encodedCoord = 9650580
+(pathfinder) x = 947
+(pathfinder) y = 318
+28 (pathfinder) encodedCoord = 9470318
+(pathfinder) x = 764
+(pathfinder) y = 633
+26 (pathfinder) encodedCoord = 7640633
+(pathfinder) x = 946
+(pathfinder) y = 265
+25 (pathfinder) encodedCoord = 9460265
+(pathfinder) x = 1158
+(pathfinder) y = 256
+30 (pathfinder) encodedCoord = 11580256
+(pathfinder) x = 946
+(pathfinder) y = 265
+25 (pathfinder) encodedCoord = 9460265
+(pathfinder) x = 947
+(pathfinder) y = 318
+28 (pathfinder) encodedCoord = 9470318
+(pathfinder) x = 946
+(pathfinder) y = 265
+25 (pathfinder) encodedCoord = 9460265
+(pathfinder) x = 777
+(pathfinder) y = 253
+14 (pathfinder) encodedCoord = 7770253
+(pathfinder) x = 1158
+(pathfinder) y = 442
+31 (pathfinder) encodedCoord = 11580442
+(pathfinder) x = 1158
+(pathfinder) y = 256
+30 (pathfinder) encodedCoord = 11580256
+(pathfinder) x = 1158
+(pathfinder) y = 442
+31 (pathfinder) encodedCoord = 11580442
+(pathfinder) x = 1164
+(pathfinder) y = 581
+32 (pathfinder) encodedCoord = 11640581
+(pathfinder) x = 1158
+(pathfinder) y = 442
+31 (pathfinder) encodedCoord = 11580442
+(pathfinder) x = 965
+(pathfinder) y = 580
+29 (pathfinder) encodedCoord = 9650580
+(pathfinder) x = 1141
+(pathfinder) y = 922
+27 (pathfinder) encodedCoord = 11410922
+(pathfinder) x = 1260
+(pathfinder) y = 948
+33 (pathfinder) encodedCoord = 12600948
+(pathfinder) x = 1141
+(pathfinder) y = 922
+27 (pathfinder) encodedCoord = 11410922
+(pathfinder) x = 1018
+(pathfinder) y = 951
+23 (pathfinder) encodedCoord = 10180951
+(pathfinder) x = 1141
+(pathfinder) y = 922
+27 (pathfinder) encodedCoord = 11410922
+(pathfinder) x = 1136
+(pathfinder) y = 709
+22 (pathfinder) encodedCoord = 11360709
+(pathfinder) x = 1279
+(pathfinder) y = 833
+34 (pathfinder) encodedCoord = 12790833
+(pathfinder) x = 1376
+(pathfinder) y = 781
+35 (pathfinder) encodedCoord = 13760781
+(pathfinder) x = 1279
+(pathfinder) y = 833
+34 (pathfinder) encodedCoord = 12790833
+(pathfinder) x = 1260
+(pathfinder) y = 948
+33 (pathfinder) encodedCoord = 12600948
+(pathfinder) x = 1279
+(pathfinder) y = 833
+34 (pathfinder) encodedCoord = 12790833
+(pathfinder) x = 1137
+(pathfinder) y = 695
+36 (pathfinder) encodedCoord = 11370695
+(pathfinder) x = 1285
+(pathfinder) y = 460
+37 (pathfinder) encodedCoord = 12850460
+(pathfinder) x = 1278
+(pathfinder) y = 250
+38 (pathfinder) encodedCoord = 12780250
+(pathfinder) x = 1285
+(pathfinder) y = 460
+37 (pathfinder) encodedCoord = 12850460
+(pathfinder) x = 1293
+(pathfinder) y = 545
+39 (pathfinder) encodedCoord = 12930545
+(pathfinder) x = 1285
+(pathfinder) y = 460
+37 (pathfinder) encodedCoord = 12850460
+(pathfinder) x = 1164
+(pathfinder) y = 581
+32 (pathfinder) encodedCoord = 11640581
+(pathfinder) x = 1260
+(pathfinder) y = 948
+33 (pathfinder) encodedCoord = 12600948
+(pathfinder) x = 1281
+(pathfinder) y = 952
+40 (pathfinder) encodedCoord = 12810952
+(pathfinder) x = 1260
+(pathfinder) y = 948
+33 (pathfinder) encodedCoord = 12600948
+(pathfinder) x = 1141
+(pathfinder) y = 922
+27 (pathfinder) encodedCoord = 11410922
+(pathfinder) x = 1260
+(pathfinder) y = 948
+33 (pathfinder) encodedCoord = 12600948
+(pathfinder) x = 1279
+(pathfinder) y = 833
+34 (pathfinder) encodedCoord = 12790833
+(pathfinder) x = 1281
+(pathfinder) y = 952
+40 (pathfinder) encodedCoord = 12810952
+(pathfinder) x = 1446
+(pathfinder) y = 946
+41 (pathfinder) encodedCoord = 14460946
+(pathfinder) x = 1281
+(pathfinder) y = 952
+40 (pathfinder) encodedCoord = 12810952
+(pathfinder) x = 1260
+(pathfinder) y = 948
+33 (pathfinder) encodedCoord = 12600948
+(pathfinder) x = 1281
+(pathfinder) y = 952
+40 (pathfinder) encodedCoord = 12810952
+(pathfinder) x = 1376
+(pathfinder) y = 781
+35 (pathfinder) encodedCoord = 13760781
+(pathfinder) x = 1158
+(pathfinder) y = 256
+30 (pathfinder) encodedCoord = 11580256
+(pathfinder) x = 1278
+(pathfinder) y = 250
+38 (pathfinder) encodedCoord = 12780250
+(pathfinder) x = 1158
+(pathfinder) y = 256
+30 (pathfinder) encodedCoord = 11580256
+(pathfinder) x = 1158
+(pathfinder) y = 442
+31 (pathfinder) encodedCoord = 11580442
+(pathfinder) x = 1158
+(pathfinder) y = 256
+30 (pathfinder) encodedCoord = 11580256
+(pathfinder) x = 946
+(pathfinder) y = 265
+25 (pathfinder) encodedCoord = 9460265
+(pathfinder) x = 1278
+(pathfinder) y = 250
+38 (pathfinder) encodedCoord = 12780250
+(pathfinder) x = 1312
+(pathfinder) y = 247
+42 (pathfinder) encodedCoord = 13120247
+(pathfinder) x = 1278
+(pathfinder) y = 250
+38 (pathfinder) encodedCoord = 12780250
+(pathfinder) x = 1285
+(pathfinder) y = 460
+37 (pathfinder) encodedCoord = 12850460
+(pathfinder) x = 1278
+(pathfinder) y = 250
+38 (pathfinder) encodedCoord = 12780250
+(pathfinder) x = 1158
+(pathfinder) y = 256
+30 (pathfinder) encodedCoord = 11580256
+(pathfinder) x = 1426
+(pathfinder) y = 423
+43 (pathfinder) encodedCoord = 14260423
+(pathfinder) x = 1424
+(pathfinder) y = 396
+44 (pathfinder) encodedCoord = 14240396
+(pathfinder) x = 1426
+(pathfinder) y = 423
+43 (pathfinder) encodedCoord = 14260423
+(pathfinder) x = 1441
+(pathfinder) y = 599
+45 (pathfinder) encodedCoord = 14410599
+(pathfinder) x = 1312
+(pathfinder) y = 247
+42 (pathfinder) encodedCoord = 13120247
+(pathfinder) x = 1416
+(pathfinder) y = 379
+46 (pathfinder) encodedCoord = 14160379
+(pathfinder) x = 1312
+(pathfinder) y = 247
+42 (pathfinder) encodedCoord = 13120247
+(pathfinder) x = 1278
+(pathfinder) y = 250
+38 (pathfinder) encodedCoord = 12780250
+(pathfinder) x = 1312
+(pathfinder) y = 247
+42 (pathfinder) encodedCoord = 13120247
+(pathfinder) x = 1560
+(pathfinder) y = 0
+47 (pathfinder) encodedCoord = 15600000
+(pathfinder) x = 1416
+(pathfinder) y = 379
+46 (pathfinder) encodedCoord = 14160379
+(pathfinder) x = 1424
+(pathfinder) y = 396
+44 (pathfinder) encodedCoord = 14240396
+(pathfinder) x = 1416
+(pathfinder) y = 379
+46 (pathfinder) encodedCoord = 14160379
+(pathfinder) x = 1312
+(pathfinder) y = 247
+42 (pathfinder) encodedCoord = 13120247
+(pathfinder) x = 1424
+(pathfinder) y = 396
+44 (pathfinder) encodedCoord = 14240396
+(pathfinder) x = 1441
+(pathfinder) y = 599
+45 (pathfinder) encodedCoord = 14410599
+(pathfinder) x = 1424
+(pathfinder) y = 396
+44 (pathfinder) encodedCoord = 14240396
+(pathfinder) x = 1426
+(pathfinder) y = 423
+43 (pathfinder) encodedCoord = 14260423
+(pathfinder) x = 1424
+(pathfinder) y = 396
+44 (pathfinder) encodedCoord = 14240396
+(pathfinder) x = 1416
+(pathfinder) y = 379
+46 (pathfinder) encodedCoord = 14160379
+(pathfinder) x = 1447
+(pathfinder) y = 943
+48 (pathfinder) encodedCoord = 14470943
+(pathfinder) x = 1446
+(pathfinder) y = 946
+41 (pathfinder) encodedCoord = 14460946
+(pathfinder) x = 1447
+(pathfinder) y = 943
+48 (pathfinder) encodedCoord = 14470943
+(pathfinder) x = 1436
+(pathfinder) y = 779
+49 (pathfinder) encodedCoord = 14360779
+(pathfinder) x = 1447
+(pathfinder) y = 943
+48 (pathfinder) encodedCoord = 14470943
+(pathfinder) x = 1436
+(pathfinder) y = 779
+49 (pathfinder) encodedCoord = 14360779
+(pathfinder) x = 1446
+(pathfinder) y = 946
+41 (pathfinder) encodedCoord = 14460946
+(pathfinder) x = 1027
+(pathfinder) y = 528
+50 (pathfinder) encodedCoord = 10270528
+(pathfinder) x = 1446
+(pathfinder) y = 946
+41 (pathfinder) encodedCoord = 14460946
+(pathfinder) x = 1281
+(pathfinder) y = 952
+40 (pathfinder) encodedCoord = 12810952
+(pathfinder) x = 1446
+(pathfinder) y = 946
+41 (pathfinder) encodedCoord = 14460946
+(pathfinder) x = 1447
+(pathfinder) y = 943
+48 (pathfinder) encodedCoord = 14470943
+(pathfinder) x = 1260
+(pathfinder) y = 948
+33 (pathfinder) encodedCoord = 12600948
+(pathfinder) x = 1307
+(pathfinder) y = 932
+55 (pathfinder) encodedCoord = 13070932
+(pathfinder) x = 1281
+(pathfinder) y = 952
+40 (pathfinder) encodedCoord = 12810952
+(pathfinder) x = 1307
+(pathfinder) y = 932
+55 (pathfinder) encodedCoord = 13070932
+(pathfinder) x = 1260
+(pathfinder) y = 948
+33 (pathfinder) encodedCoord = 12600948
+(pathfinder) x = 1307
+(pathfinder) y = 932
+55 (pathfinder) encodedCoord = 13070932
+(pathfinder) x = 1281
+(pathfinder) y = 952
+40 (pathfinder) encodedCoord = 12810952
+(pathfinder) x = 1307
+(pathfinder) y = 932
+55 (pathfinder) encodedCoord = 13070932
+(pathfinder) x = 1260
+(pathfinder) y = 948
+33 (pathfinder) encodedCoord = 12600948
+(pathfinder) x = 1307
+(pathfinder) y = 932
+55 (pathfinder) encodedCoord = 13070932
+(pathfinder) x = 1281
+(pathfinder) y = 952
+40 (pathfinder) encodedCoord = 12810952
+(pathfinder) x = 1307
+(pathfinder) y = 932
+55 (pathfinder) encodedCoord = 13070932
+(pathfinder) x = 1278
+(pathfinder) y = 250
+38 (pathfinder) encodedCoord = 12780250
+(pathfinder) x = 1325
+(pathfinder) y = 72
+56 (pathfinder) encodedCoord = 13250072
+(pathfinder) x = 1312
+(pathfinder) y = 247
+42 (pathfinder) encodedCoord = 13120247
+(pathfinder) x = 1325
+(pathfinder) y = 72
+56 (pathfinder) encodedCoord = 13250072
+(pathfinder) x = 1278
+(pathfinder) y = 250
+38 (pathfinder) encodedCoord = 12780250
+(pathfinder) x = 1325
+(pathfinder) y = 72
+56 (pathfinder) encodedCoord = 13250072
+(pathfinder) x = 1312
+(pathfinder) y = 247
+42 (pathfinder) encodedCoord = 13120247
+(pathfinder) x = 1325
+(pathfinder) y = 72
+56 (pathfinder) encodedCoord = 13250072
+(pathfinder) x = 1278
+(pathfinder) y = 250
+38 (pathfinder) encodedCoord = 12780250
+(pathfinder) x = 1325
+(pathfinder) y = 72
+56 (pathfinder) encodedCoord = 13250072
+(pathfinder) x = 1312
+(pathfinder) y = 247
+42 (pathfinder) encodedCoord = 13120247
+(pathfinder) x = 1325
+(pathfinder) y = 72
+56 (pathfinder) encodedCoord = 13250072
+Dijkstra 55 56 - 13070932 13250072
+Dijkstra 55 56 - 13070932 13250072
 
 
 
 
-right path  100 1 22 12 30 31 32 38 39 49 50 55 57 59 84 85 89 101
+right path -1 startEndPath[0] : 55
+(pathfinder) mapposition : 13070932
+voronoiPaths->ids.size()+idStart : 55
 
-(pathfider) mapPosition[voronoiPaths->resultEdges[startEndPath[i]].idFirstNode] : 11060
-node: 1 318318 x,y (318,318)
-(pathfider) mapPosition[voronoiPaths->resultEdges[startEndPath[i]].idFirstNode] : 477162
-node: 22 321421 x,y (321,421)
-(pathfider) mapPosition[voronoiPaths->resultEdges[startEndPath[i]].idFirstNode] : 481011
-node: 12 320444 x,y (320,444)
-(pathfider) mapPosition[voronoiPaths->resultEdges[startEndPath[i]].idFirstNode] : 320444
-node: 30 347471 x,y (347,471)
-(pathfider) mapPosition[voronoiPaths->resultEdges[startEndPath[i]].idFirstNode] : 642118
-node: 31 360483 x,y (360,483)
-(pathfider) mapPosition[voronoiPaths->resultEdges[startEndPath[i]].idFirstNode] : 528113
-node: 32 492684 x,y (492,684)
-(pathfider) mapPosition[voronoiPaths->resultEdges[startEndPath[i]].idFirstNode] : 492684
-node: 38 492686 x,y (492,686)
-(pathfider) mapPosition[voronoiPaths->resultEdges[startEndPath[i]].idFirstNode] : 492684
-node: 39 542783 x,y (542,783)
-(pathfider) mapPosition[voronoiPaths->resultEdges[startEndPath[i]].idFirstNode] : 576077
-node: 49 544786 x,y (544,786)
-(pathfider) mapPosition[voronoiPaths->resultEdges[startEndPath[i]].idFirstNode] : 576077
-node: 50 586859 x,y (586,859)
-(pathfider) mapPosition[voronoiPaths->resultEdges[startEndPath[i]].idFirstNode] : 661412
-node: 55 595880 x,y (595,880)
-(pathfider) mapPosition[voronoiPaths->resultEdges[startEndPath[i]].idFirstNode] : 628424
-node: 57 705899 x,y (705,899)
-(pathfider) mapPosition[voronoiPaths->resultEdges[startEndPath[i]].idFirstNode] : 653426
-node: 59 927899 x,y (927,899)
-(pathfider) mapPosition[voronoiPaths->resultEdges[startEndPath[i]].idFirstNode] : 943336
-node: 84 1061871 x,y (1061,871)
-(pathfider) mapPosition[voronoiPaths->resultEdges[startEndPath[i]].idFirstNode] : 944336
-node: 85 1145836 x,y (1145,836)
-(pathfider) mapPosition[voronoiPaths->resultEdges[startEndPath[i]].idFirstNode] : 982451
-node: 89 1373672 x,y (1373,672)
---- terzultimo punto : 1145, 836
---- penultimo punto : 1373, 672
---- ultimo punto : 1502, 812
-??????????????????????????????????????????? > 318, 318
-??????????????????????????????????????????? > 321, 421
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 321, 421
-??????????????????????????????????????????? > 320, 444
-??????????????????????????????????????????? > 347, 471
-??????????????????????????????????????????? > 360, 483
-??????????????????????????????????????????? > 492, 684
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 492, 684
-??????????????????????????????????????????? > 492, 686
-??????????????????????????????????????????? > 542, 783
-??????????????????????????????????????????? > 544, 786
-??????????????????????????????????????????? > 586, 859
-??????????????????????????????????????????? > 595, 880
-??????????????????????????????????????????? > 705, 899
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 705, 899
-??????????????????????????????????????????? > 927, 899
-??????????????????????????????????????????? > 1061, 871
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 1061, 871
-??????????????????????????????????????????? > 1145, 836
-??????????????????????????????????????????? > 1373, 672
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 1373, 672
--------Path 18 => 7: 
+right path  55(pathfinder) mapposition : 13070932
+ 33(pathfinder) mapposition : 12600948
+ 27(pathfinder) mapposition : 11410922
+ 23(pathfinder) mapposition : 10180951
+ 20(pathfinder) mapposition : 9400945
+ 18(pathfinder) mapposition : 8200944
+ 12(pathfinder) mapposition : 7700936
+ 6(pathfinder) mapposition : 6200927
+ 4(pathfinder) mapposition : 4500845
+ 2(pathfinder) mapposition : 3020757
+ 0(pathfinder) mapposition : 2990662
+ 3(pathfinder) mapposition : 3410408
+ 8(pathfinder) mapposition : 3530353
+ 10(pathfinder) mapposition : 5530274
+ 14(pathfinder) mapposition : 7770253
+ 25(pathfinder) mapposition : 9460265
+ 30(pathfinder) mapposition : 11580256
+ 38(pathfinder) mapposition : 12780250
+ 56(pathfinder) mapposition : 13250072
+
+
+startNew inside
+node start: 55 13070932
+(pathfider) startEndPath[1] : 33
+node: 33 12600948 x,y (1260,948)
+(pathfider) startEndPath[2] : 27
+node: 27 11410922 x,y (1141,922)
+(pathfider) startEndPath[3] : 23
+node: 23 10180951 x,y (1018,951)
+(pathfider) startEndPath[4] : 20
+node: 20 9400945 x,y (940,945)
+(pathfider) startEndPath[5] : 18
+node: 18 8200944 x,y (820,944)
+(pathfider) startEndPath[6] : 12
+node: 12 7700936 x,y (770,936)
+(pathfider) startEndPath[7] : 6
+node: 6 6200927 x,y (620,927)
+(pathfider) startEndPath[8] : 4
+node: 4 4500845 x,y (450,845)
+(pathfider) startEndPath[9] : 2
+node: 2 3020757 x,y (302,757)
+(pathfider) startEndPath[10] : 0
+node: 0 2990662 x,y (299,662)
+(pathfider) startEndPath[11] : 3
+node: 3 3410408 x,y (341,408)
+(pathfider) startEndPath[12] : 8
+node: 8 3530353 x,y (353,353)
+(pathfider) startEndPath[13] : 10
+node: 10 5530274 x,y (553,274)
+(pathfider) startEndPath[14] : 14
+node: 14 7770253 x,y (777,253)
+(pathfider) startEndPath[15] : 25
+node: 25 9460265 x,y (946,265)
+(pathfider) startEndPath[16] : 30
+node: 30 11580256 x,y (1158,256)
+(pathfider) startEndPath[17] : 38
+node: 38 12780250 x,y (1278,250)
+endNew inside
+node end: 56 13250072
+
+right path 2  1307,932
+ 1260,948
+ 1141,922
+ 1018,951
+ 940,945
+ 820,944
+ 770,936
+ 620,927
+ 450,845
+ 302,757
+ 299,662
+ 341,408
+ 353,353
+ 553,274
+ 777,253
+ 946,265
+ 1158,256
+ 1278,250
+ 1325,72
+--- terzultimo punto : 1158, 256
+--- penultimo punto : 1278, 250
+--- ultimo punto : 1325, 72
+??????????????????????????????????????????? > 1260, 948
+??????????????????????????????????????????? > 1141, 922
+??????????????????????????????????????????? > 1018, 951
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 1018, 951
+??????????????????????????????????????????? > 940, 945
+??????????????????????????????????????????? > 820, 944
+??????????????????????????????????????????? > 770, 936
+??????????????????????????????????????????? > 620, 927
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 620, 927
+??????????????????????????????????????????? > 450, 845
+??????????????????????????????????????????? > 302, 757
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 302, 757
+??????????????????????????????????????????? > 299, 662
+??????????????????????????????????????????? > 341, 408
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 341, 408
+??????????????????????????????????????????? > 353, 353
+??????????????????????????????????????????? > 553, 274
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 553, 274
+??????????????????????????????????????????? > 777, 253
+??????????????????????????????????????????? > 946, 265
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 946, 265
+??????????????????????????????????????????? > 1158, 256
+??????????????????????????????????????????? > 1278, 250
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 1278, 250
+-------Path 19 => 9: 
 PRIMA
---- terzultimo punto : 1061, 871
---- penultimo punto : 1373, 672
---- ultimo punto : 1502, 812
---- CENTRO GATE : 1502, 812
---- PUNTO BORDO GATE : 1452, 812
---- terzultimo punto : 1373, 672
---- penultimo punto : 1452, 812
---- ultimo punto : 1502, 812
-Angoli!! 8
---------angolo: -0.012345
+--- terzultimo punto : 946, 265
+--- penultimo punto : 1278, 250
+--- ultimo punto : 1325, 72
+--- CENTRO GATE : 1325, 72
+--- PUNTO BORDO GATE : 1325, 121
+--- terzultimo punto : 1278, 250
+--- penultimo punto : 1325, 121
+--- ultimo punto : 1325, 72
+Angoli!! 10
+--------angolo: -3.128606
 Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm correct
-Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-kappa: 0.010000, 0.000000, -0.010000 
-OUTSIDE -561.624 punto <163.989, 203.376> -> 0
-OUTSIDE -477.251 punto <163.989, 203.376> -> 0
-OUTSIDE -560.252 punto <173.89, 204.748> -> 0
-OUTSIDE -467.479 punto <173.89, 204.748> -> 0
-OUTSIDE -557.899 punto <183.605, 207.101> -> 0
-OUTSIDE -457.983 punto <183.605, 207.101> -> 0
-OUTSIDE -554.587 punto <193.036, 210.413> -> 0
-OUTSIDE -448.878 punto <193.036, 210.413> -> 0
-OUTSIDE -550.351 punto <202.09, 214.649> -> 0
-OUTSIDE -440.283 punto <202.09, 214.649> -> 0
-OUTSIDE -545.232 punto <210.676, 219.768> -> 0
-OUTSIDE -432.316 punto <210.676, 219.768> -> 0
-OUTSIDE -539.281 punto <218.707, 225.719> -> 0
-OUTSIDE -425.094 punto <218.707, 225.719> -> 0
-OUTSIDE -532.558 punto <226.105, 232.441> -> 0
-OUTSIDE -418.729 punto <226.105, 232.441> -> 0
-OUTSIDE -525.131 punto <232.794, 239.869> -> 0
-OUTSIDE -413.327 punto <232.794, 239.869> -> 0
-OUTSIDE -517.072 punto <238.708, 247.928> -> 0
-OUTSIDE -408.488 punto <238.708, 247.928> -> 0
-OUTSIDE -508.464 punto <243.789, 256.536> -> 0
-OUTSIDE -401.534 punto <243.789, 256.536> -> 0
-OUTSIDE -500.533 punto <247.516, 264.467> -> 0
-OUTSIDE -396.176 punto <247.516, 264.467> -> 0
-OUTSIDE -491.305 punto <251.369, 273.695> -> 0
-OUTSIDE -390.572 punto <251.369, 273.695> -> 0
-OUTSIDE -482.077 punto <255.221, 282.923> -> 0
-OUTSIDE -385.146 punto <255.221, 282.923> -> 0
-OUTSIDE -472.849 punto <259.074, 292.151> -> 0
-OUTSIDE -379.906 punto <259.074, 292.151> -> 0
-OUTSIDE -463.621 punto <262.927, 301.379> -> 0
-OUTSIDE -374.86 punto <262.927, 301.379> -> 0
-OUTSIDE -454.393 punto <266.779, 310.607> -> 0
-OUTSIDE -370.015 punto <266.779, 310.607> -> 0
-OUTSIDE -445.165 punto <270.632, 319.835> -> 0
-OUTSIDE -365.379 punto <270.632, 319.835> -> 0
-OUTSIDE -435.937 punto <274.484, 329.063> -> 0
-OUTSIDE -360.962 punto <274.484, 329.063> -> 0
-OUTSIDE -426.709 punto <278.337, 338.291> -> 0
-OUTSIDE -356.769 punto <278.337, 338.291> -> 0
-OUTSIDE -417.481 punto <282.19, 347.519> -> 0
-OUTSIDE -352.811 punto <282.19, 347.519> -> 0
-OUTSIDE -408.253 punto <286.042, 356.747> -> 0
-OUTSIDE -349.094 punto <286.042, 356.747> -> 0
-OUTSIDE -399.025 punto <289.895, 365.975> -> 0
-OUTSIDE -345.626 punto <289.895, 365.975> -> 0
-OUTSIDE -389.797 punto <293.748, 375.203> -> 0
-OUTSIDE -342.416 punto <293.748, 375.203> -> 0
-OUTSIDE -380.569 punto <297.6, 384.431> -> 0
-OUTSIDE -339.47 punto <297.6, 384.431> -> 0
-OUTSIDE -376.184 punto <299.431, 388.816> -> 0
-OUTSIDE -338.165 punto <299.431, 388.816> -> 0
-OUTSIDE -367.164 punto <303.738, 397.836> -> 0
-OUTSIDE -335.14 punto <303.738, 397.836> -> 0
-OUTSIDE -358.618 punto <308.924, 406.382> -> 0
-OUTSIDE -331.439 punto <308.924, 406.382> -> 0
-OUTSIDE -350.634 punto <314.938, 414.366> -> 0
-OUTSIDE -327.075 punto <314.938, 414.366> -> 0
-OUTSIDE -343.999 punto <321.001, 421.001> -> 0
-OUTSIDE -322.601 punto <321.001, 421.001> -> 0
---------angolo: 0.785398
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
 Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
 Algorithm correct
 Algorithm INcorrect
-Algorithm correct
 Algorithm INcorrect
-Algorithm correct
 Algorithm INcorrect
-Algorithm correct
 Algorithm correct
 Algorithm INcorrect
 Algorithm correct
 Algorithm INcorrect
 Algorithm correct
-Algorithm INcorrect
 Algorithm correct
 Algorithm INcorrect
-Algorithm correct
-Algorithm correct
 Algorithm INcorrect
-kappa: 0.010000, 0.000000, -0.010000 
-OUTSIDE -336.587 punto <327.706, 428.413> -> 0
-OUTSIDE -315.197 punto <327.706, 428.413> -> 0
-OUTSIDE -328.542 punto <333.639, 436.458> -> 0
-OUTSIDE -308.505 punto <333.639, 436.458> -> 0
-OUTSIDE -326.446 punto <334.991, 438.554> -> 0
-OUTSIDE -306.984 punto <334.991, 438.554> -> 0
-OUTSIDE -317.975 punto <340.307, 447.025> -> 0
-OUTSIDE -301.117 punto <340.307, 447.025> -> 0
-OUTSIDE -309.505 punto <345.622, 455.495> -> 0
-OUTSIDE -295.473 punto <345.622, 455.495> -> 0
-OUTSIDE -301.035 punto <350.938, 463.965> -> 0
-OUTSIDE -290.064 punto <350.938, 463.965> -> 0
-OUTSIDE -292.565 punto <356.254, 472.435> -> 0
-OUTSIDE -284.898 punto <356.254, 472.435> -> 0
-OUTSIDE -284.099 punto <361.569, 480.905> -> 0
-OUTSIDE -279.816 punto <361.569, 480.905> -> 0
-OUTSIDE -275.71 punto <366.885, 489.375> -> 0
-OUTSIDE -274.735 punto <366.885, 489.375> -> 0
-OUTSIDE -267.433 punto <372.201, 497.846> -> 0
-OUTSIDE -269.653 punto <372.201, 497.846> -> 0
-OUTSIDE -259.277 punto <377.516, 506.316> -> 0
-OUTSIDE -264.571 punto <377.516, 506.316> -> 0
-OUTSIDE -251.253 punto <382.832, 514.786> -> 0
-OUTSIDE -259.49 punto <382.832, 514.786> -> 0
-OUTSIDE -243.377 punto <388.148, 523.256> -> 0
-OUTSIDE -254.408 punto <388.148, 523.256> -> 0
-OUTSIDE -235.661 punto <393.463, 531.726> -> 0
-OUTSIDE -249.326 punto <393.463, 531.726> -> 0
-OUTSIDE -228.124 punto <398.779, 540.197> -> 0
-OUTSIDE -244.245 punto <398.779, 540.197> -> 0
-OUTSIDE -220.781 punto <404.094, 548.667> -> 0
-OUTSIDE -239.163 punto <404.094, 548.667> -> 0
-OUTSIDE -213.655 punto <409.41, 557.137> -> 0
-OUTSIDE -234.081 punto <409.41, 557.137> -> 0
-OUTSIDE -206.767 punto <414.726, 565.607> -> 0
-OUTSIDE -229 punto <414.726, 565.607> -> 0
-OUTSIDE -200.141 punto <420.041, 574.077> -> 0
-OUTSIDE -223.918 punto <420.041, 574.077> -> 0
-OUTSIDE -193.805 punto <425.357, 582.548> -> 0
-OUTSIDE -218.836 punto <425.357, 582.548> -> 0
-OUTSIDE -187.788 punto <430.673, 591.018> -> 0
-OUTSIDE -213.755 punto <430.673, 591.018> -> 0
-OUTSIDE -182.122 punto <435.988, 599.488> -> 0
-OUTSIDE -208.673 punto <435.988, 599.488> -> 0
-OUTSIDE -176.84 punto <441.304, 607.958> -> 0
-OUTSIDE -203.591 punto <441.304, 607.958> -> 0
-OUTSIDE -171.978 punto <446.619, 616.428> -> 0
-OUTSIDE -198.51 punto <446.619, 616.428> -> 0
-OUTSIDE -167.572 punto <451.935, 624.898> -> 0
-OUTSIDE -193.428 punto <451.935, 624.898> -> 0
-OUTSIDE -163.66 punto <457.251, 633.369> -> 0
-OUTSIDE -188.346 punto <457.251, 633.369> -> 0
-OUTSIDE -160.276 punto <462.566, 641.839> -> 0
-OUTSIDE -183.265 punto <462.566, 641.839> -> 0
-OUTSIDE -157.456 punto <467.882, 650.309> -> 0
-OUTSIDE -178.183 punto <467.882, 650.309> -> 0
-OUTSIDE -155.231 punto <473.198, 658.779> -> 0
-OUTSIDE -173.101 punto <473.198, 658.779> -> 0
-OUTSIDE -153.75 punto <478.009, 666.446> -> 0
-OUTSIDE -168.502 punto <478.009, 666.446> -> 0
-OUTSIDE -153.222 punto <483.739, 674.636> -> 0
-OUTSIDE -162.998 punto <483.739, 674.636> -> 0
-OUTSIDE -154.339 punto <490.258, 682.214> -> 0
-OUTSIDE -156.689 punto <490.258, 682.214> -> 0
-OUTSIDE -154.871 punto <492, 684> -> 0
-OUTSIDE -154.997 punto <492, 684> -> 0
---------angolo: 0.785398
 Algorithm INcorrect
 Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
 Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
 Algorithm correct
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
-Algorithm correct
 Algorithm INcorrect
-Algorithm correct
-Algorithm correct
-Algorithm correct
 Algorithm INcorrect
-Algorithm correct
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
-Algorithm correct
-Algorithm correct
-Algorithm correct
 Algorithm INcorrect
-Algorithm correct
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
-Algorithm correct
 Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-kappa: 0.010000, 0.000000, -0.010000 
-OUTSIDE -156.732 punto <498.706, 691.413> -> 0
-OUTSIDE -148.592 punto <498.706, 691.413> -> 0
-OUTSIDE -157.199 punto <501.174, 694.557> -> 0
-OUTSIDE -146.366 punto <501.174, 694.557> -> 0
-OUTSIDE -158.171 punto <507.189, 702.546> -> 0
-OUTSIDE -141.312 punto <507.189, 702.546> -> 0
-OUTSIDE -159.142 punto <513.205, 710.534> -> 0
-OUTSIDE -136.804 punto <513.205, 710.534> -> 0
-OUTSIDE -160.114 punto <519.22, 718.523> -> 0
-OUTSIDE -132.897 punto <519.22, 718.523> -> 0
-OUTSIDE -161.085 punto <525.235, 726.511> -> 0
-OUTSIDE -129.645 punto <525.235, 726.511> -> 0
-OUTSIDE -162.056 punto <531.251, 734.5> -> 0
-OUTSIDE -127.099 punto <531.251, 734.5> -> 0
-OUTSIDE -163.028 punto <537.266, 742.488> -> 0
-OUTSIDE -125.301 punto <537.266, 742.488> -> 0
-OUTSIDE -163.999 punto <543.281, 750.477> -> 0
-OUTSIDE -124.284 punto <543.281, 750.477> -> 0
-OUTSIDE -164.971 punto <549.297, 758.465> -> 0
-OUTSIDE -124.068 punto <549.297, 758.465> -> 0
-OUTSIDE -165.942 punto <555.312, 766.454> -> 0
-OUTSIDE -124.656 punto <555.312, 766.454> -> 0
-OUTSIDE -166.922 punto <561.327, 774.442> -> 0
-OUTSIDE -125.983 punto <561.327, 774.442> -> 0
-OUTSIDE -168.286 punto <567.343, 782.431> -> 0
-OUTSIDE -127.464 punto <567.343, 782.431> -> 0
-OUTSIDE -170.228 punto <573.358, 790.419> -> 0
-OUTSIDE -128.945 punto <573.358, 790.419> -> 0
-OUTSIDE -172.728 punto <579.373, 798.407> -> 0
-OUTSIDE -130.427 punto <579.373, 798.407> -> 0
-OUTSIDE -175.762 punto <585.389, 806.396> -> 0
-OUTSIDE -131.908 punto <585.389, 806.396> -> 0
-OUTSIDE -179.304 punto <591.404, 814.384> -> 0
-OUTSIDE -133.389 punto <591.404, 814.384> -> 0
-OUTSIDE -183.322 punto <597.419, 822.373> -> 0
-OUTSIDE -134.871 punto <597.419, 822.373> -> 0
-OUTSIDE -187.789 punto <603.435, 830.361> -> 0
-OUTSIDE -136.352 punto <603.435, 830.361> -> 0
-OUTSIDE -192.67 punto <609.45, 838.35> -> 0
-OUTSIDE -137.841 punto <609.45, 838.35> -> 0
-OUTSIDE -197.937 punto <615.465, 846.338> -> 0
-OUTSIDE -139.778 punto <615.465, 846.338> -> 0
-OUTSIDE -203.56 punto <621.481, 854.327> -> 0
-OUTSIDE -142.393 punto <621.481, 854.327> -> 0
-OUTSIDE -207.117 punto <625.115, 859.153> -> 0
-OUTSIDE -144.286 punto <625.115, 859.153> -> 0
-OUTSIDE -213.629 punto <631.52, 866.828> -> 0
-OUTSIDE -147.443 punto <631.52, 866.828> -> 0
-OUTSIDE -221.091 punto <638.658, 873.825> -> 0
-OUTSIDE -150.263 punto <638.658, 873.825> -> 0
-OUTSIDE -229.34 punto <646.46, 880.074> -> 0
-OUTSIDE -152.738 punto <646.46, 880.074> -> 0
-OUTSIDE -238.216 punto <654.846, 885.514> -> 0
-OUTSIDE -154.86 punto <654.846, 885.514> -> 0
-OUTSIDE -247.569 punto <663.734, 890.088> -> 0
-OUTSIDE -156.622 punto <663.734, 890.088> -> 0
-OUTSIDE -257.257 punto <673.033, 893.753> -> 0
-OUTSIDE -158.02 punto <673.033, 893.753> -> 0
-OUTSIDE -267.154 punto <682.653, 896.471> -> 0
-OUTSIDE -159.049 punto <682.653, 896.471> -> 0
-OUTSIDE -277.143 punto <692.495, 898.215> -> 0
-OUTSIDE -159.705 punto <692.495, 898.215> -> 0
-OUTSIDE -287.119 punto <702.463, 898.968> -> 0
-OUTSIDE -159.988 punto <702.463, 898.968> -> 0
-OUTSIDE -289.638 punto <705, 899> -> 0
-OUTSIDE -160 punto <705, 899> -> 0
---------angolo: 0.000000
 Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
-Algorithm correct
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
 Algorithm correct
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
 Algorithm correct
-Algorithm INcorrect
 Algorithm correct
-Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
-Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
 Algorithm INcorrect
 Algorithm correct
 Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
 Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
 Algorithm correct
 Algorithm INcorrect
-Algorithm correct
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
-Algorithm correct
-Algorithm correct
 Algorithm correct
 kappa: -0.010000, 0.000000, 0.010000 
-OUTSIDE -297.545 punto <713.021, 898.678> -> 0
-OUTSIDE -159.678 punto <713.021, 898.678> -> 0
-OUTSIDE -307.331 punto <722.989, 897.876> -> 0
-OUTSIDE -158.876 punto <722.989, 897.876> -> 0
-OUTSIDE -317.131 punto <732.956, 897.074> -> 0
-OUTSIDE -158.074 punto <732.956, 897.074> -> 0
-OUTSIDE -326.942 punto <742.924, 896.272> -> 0
-OUTSIDE -157.272 punto <742.924, 896.272> -> 0
-OUTSIDE -336.765 punto <752.892, 895.469> -> 0
-OUTSIDE -156.469 punto <752.892, 895.469> -> 0
-OUTSIDE -346.598 punto <762.86, 894.667> -> 0
-OUTSIDE -155.667 punto <762.86, 894.667> -> 0
-OUTSIDE -356.44 punto <772.828, 893.865> -> 0
-OUTSIDE -154.865 punto <772.828, 893.865> -> 0
-OUTSIDE -366.291 punto <782.795, 893.063> -> 0
-OUTSIDE -154.063 punto <782.795, 893.063> -> 0
-OUTSIDE -376.149 punto <792.763, 892.261> -> 0
-OUTSIDE -153.261 punto <792.763, 892.261> -> 0
-OUTSIDE -386.015 punto <802.731, 891.459> -> 0
-OUTSIDE -152.459 punto <802.731, 891.459> -> 0
-OUTSIDE -395.887 punto <812.699, 890.657> -> 0
-OUTSIDE -151.657 punto <812.699, 890.657> -> 0
-OUTSIDE -405.766 punto <822.666, 889.855> -> 0
-OUTSIDE -150.855 punto <822.666, 889.855> -> 0
-OUTSIDE -415.651 punto <832.634, 889.053> -> 0
-OUTSIDE -150.053 punto <832.634, 889.053> -> 0
-OUTSIDE -425.541 punto <842.602, 888.251> -> 0
-OUTSIDE -149.251 punto <842.602, 888.251> -> 0
-OUTSIDE -435.436 punto <852.57, 887.449> -> 0
-OUTSIDE -148.449 punto <852.57, 887.449> -> 0
-OUTSIDE -445.335 punto <862.538, 886.647> -> 0
-OUTSIDE -147.647 punto <862.538, 886.647> -> 0
-OUTSIDE -455.24 punto <872.505, 885.844> -> 0
-OUTSIDE -146.844 punto <872.505, 885.844> -> 0
-OUTSIDE -465.148 punto <882.473, 885.042> -> 0
-OUTSIDE -146.042 punto <882.473, 885.042> -> 0
-OUTSIDE -475.06 punto <892.441, 884.24> -> 0
-OUTSIDE -145.24 punto <892.441, 884.24> -> 0
-OUTSIDE -484.975 punto <902.409, 883.438> -> 0
-OUTSIDE -144.438 punto <902.409, 883.438> -> 0
-OUTSIDE -494.894 punto <912.376, 882.636> -> 0
-OUTSIDE -143.636 punto <912.376, 882.636> -> 0
-OUTSIDE -504.817 punto <922.344, 881.834> -> 0
-OUTSIDE -142.834 punto <922.344, 881.834> -> 0
-OUTSIDE -514.742 punto <932.312, 881.032> -> 0
-OUTSIDE -142.131 punto <932.312, 881.032> -> 0
-OUTSIDE -524.67 punto <942.28, 880.23> -> 0
-OUTSIDE -142.054 punto <942.28, 880.23> -> 0
-OUTSIDE -534.601 punto <952.248, 879.428> -> 0
-OUTSIDE -142.679 punto <952.248, 879.428> -> 0
-OUTSIDE -544.534 punto <962.215, 878.626> -> 0
-OUTSIDE -143.998 punto <962.215, 878.626> -> 0
-OUTSIDE -554.47 punto <972.183, 877.824> -> 0
-OUTSIDE -145.992 punto <972.183, 877.824> -> 0
-OUTSIDE -564.408 punto <982.151, 877.022> -> 0
-OUTSIDE -148.632 punto <982.151, 877.022> -> 0
-OUTSIDE -574.348 punto <992.119, 876.219> -> 0
-OUTSIDE -151.887 punto <992.119, 876.219> -> 0
-OUTSIDE -584.29 punto <1002.09, 875.417> -> 0
-OUTSIDE -155.717 punto <1002.09, 875.417> -> 0
-OUTSIDE -594.234 punto <1012.05, 874.615> -> 0
-OUTSIDE -160.08 punto <1012.05, 874.615> -> 0
-OUTSIDE -604.18 punto <1022.02, 873.813> -> 0
-OUTSIDE -164.936 punto <1022.02, 873.813> -> 0
-OUTSIDE -614.128 punto <1031.99, 873.011> -> 0
-OUTSIDE -170.241 punto <1031.99, 873.011> -> 0
-OUTSIDE -624.077 punto <1041.96, 872.209> -> 0
-OUTSIDE -175.954 punto <1041.96, 872.209> -> 0
-OUTSIDE -634.028 punto <1051.93, 871.407> -> 0
-OUTSIDE -182.038 punto <1051.93, 871.407> -> 0
-OUTSIDE -635.08 punto <1052.98, 871.322> -> 0
-OUTSIDE -182.702 punto <1052.98, 871.322> -> 0
-OUTSIDE -643.094 punto <1061, 871> -> 0
-OUTSIDE -188.096 punto <1061, 871> -> 0
---------angolo: 0.000000
-Algorithm INcorrect
-Algorithm INcorrect
+--------angolo: 3.141593
 Algorithm INcorrect
 Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
+Algorithm correct
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm correct
@@ -2218,277 +2336,295 @@ Algorithm INcorrect
 Algorithm correct
 Algorithm correct
 Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
 Algorithm correct
-kappa: -0.010000, 0.000000, -0.010000 
-OUTSIDE -653.068 punto <1070.98, 870.5> -> 0
-OUTSIDE -194.864 punto <1070.98, 870.5> -> 0
-OUTSIDE -654.726 punto <1072.64, 870.32> -> 0
-OUTSIDE -195.921 punto <1072.64, 870.32> -> 0
-OUTSIDE -664.639 punto <1082.58, 869.155> -> 0
-OUTSIDE -202.187 punto <1082.58, 869.155> -> 0
-OUTSIDE -674.556 punto <1092.51, 867.991> -> 0
-OUTSIDE -208.452 punto <1092.51, 867.991> -> 0
-OUTSIDE -684.474 punto <1102.44, 866.826> -> 0
-OUTSIDE -214.717 punto <1102.44, 866.826> -> 0
-OUTSIDE -694.395 punto <1112.37, 865.662> -> 0
-OUTSIDE -220.983 punto <1112.37, 865.662> -> 0
-OUTSIDE -704.319 punto <1122.3, 864.497> -> 0
-OUTSIDE -227.248 punto <1122.3, 864.497> -> 0
-OUTSIDE -714.244 punto <1132.24, 863.333> -> 0
-OUTSIDE -233.513 punto <1132.24, 863.333> -> 0
-OUTSIDE -724.172 punto <1142.17, 862.169> -> 0
-OUTSIDE -239.779 punto <1142.17, 862.169> -> 0
-OUTSIDE -734.101 punto <1152.1, 861.004> -> 0
-OUTSIDE -246.044 punto <1152.1, 861.004> -> 0
-OUTSIDE -744.032 punto <1162.03, 859.84> -> 0
-OUTSIDE -252.309 punto <1162.03, 859.84> -> 0
-OUTSIDE -753.965 punto <1171.96, 858.675> -> 0
-OUTSIDE -258.584 punto <1171.96, 858.675> -> 0
-OUTSIDE -763.9 punto <1181.9, 857.511> -> 0
-OUTSIDE -265.031 punto <1181.9, 857.511> -> 0
-OUTSIDE -773.837 punto <1191.83, 856.346> -> 0
-OUTSIDE -271.693 punto <1191.83, 856.346> -> 0
-OUTSIDE -783.775 punto <1201.76, 855.182> -> 0
-OUTSIDE -278.554 punto <1201.76, 855.182> -> 0
-OUTSIDE -793.715 punto <1211.69, 854.017> -> 0
-OUTSIDE -285.601 punto <1211.69, 854.017> -> 0
-OUTSIDE -803.656 punto <1221.62, 852.853> -> 0
-OUTSIDE -292.82 punto <1221.62, 852.853> -> 0
-OUTSIDE -813.598 punto <1231.56, 851.689> -> 0
-OUTSIDE -300.198 punto <1231.56, 851.689> -> 0
-OUTSIDE -823.543 punto <1241.49, 850.524> -> 0
-OUTSIDE -307.725 punto <1241.49, 850.524> -> 0
-OUTSIDE -833.488 punto <1251.42, 849.36> -> 0
-OUTSIDE -315.389 punto <1251.42, 849.36> -> 0
-OUTSIDE -843.435 punto <1261.35, 848.195> -> 0
-OUTSIDE -323.181 punto <1261.35, 848.195> -> 0
-OUTSIDE -853.382 punto <1271.28, 847.031> -> 0
-OUTSIDE -331.091 punto <1271.28, 847.031> -> 0
-OUTSIDE -863.332 punto <1281.22, 845.866> -> 0
-OUTSIDE -339.112 punto <1281.22, 845.866> -> 0
-OUTSIDE -873.282 punto <1291.15, 844.702> -> 0
-OUTSIDE -347.235 punto <1291.15, 844.702> -> 0
-OUTSIDE -883.233 punto <1301.08, 843.537> -> 0
-OUTSIDE -355.454 punto <1301.08, 843.537> -> 0
-OUTSIDE -893.186 punto <1311.01, 842.373> -> 0
-OUTSIDE -363.763 punto <1311.01, 842.373> -> 0
-OUTSIDE -896.114 punto <1313.93, 842.03> -> 0
-OUTSIDE -366.223 punto <1313.93, 842.03> -> 0
-OUTSIDE -906.004 punto <1323.79, 840.372> -> 0
-OUTSIDE -374.358 punto <1323.79, 840.372> -> 0
-OUTSIDE -915.704 punto <1333.43, 837.737> -> 0
-OUTSIDE -381.978 punto <1333.43, 837.737> -> 0
-OUTSIDE -925.126 punto <1342.76, 834.153> -> 0
-OUTSIDE -389.042 punto <1342.76, 834.153> -> 0
-OUTSIDE -934.184 punto <1351.69, 829.656> -> 0
-OUTSIDE -395.509 punto <1351.69, 829.656> -> 0
-OUTSIDE -942.801 punto <1360.12, 824.289> -> 0
-OUTSIDE -401.346 punto <1360.12, 824.289> -> 0
-OUTSIDE -950.903 punto <1367.98, 818.108> -> 0
-OUTSIDE -406.522 punto <1367.98, 818.108> -> 0
-OUTSIDE -958.424 punto <1375.18, 811.173> -> 0
-OUTSIDE -411.011 punto <1375.18, 811.173> -> 0
-OUTSIDE -965.302 punto <1381.65, 803.554> -> 0
-OUTSIDE -414.792 punto <1381.65, 803.554> -> 0
-OUTSIDE -971.483 punto <1387.33, 795.327> -> 0
-OUTSIDE -417.847 punto <1387.33, 795.327> -> 0
-OUTSIDE -976.919 punto <1392.16, 786.575> -> 0
-OUTSIDE -420.16 punto <1392.16, 786.575> -> 0
-OUTSIDE -981.569 punto <1396.09, 777.384> -> 0
-OUTSIDE -421.723 punto <1396.09, 777.384> -> 0
-OUTSIDE -985.398 punto <1399.08, 767.846> -> 0
-OUTSIDE -422.526 punto <1399.08, 767.846> -> 0
-OUTSIDE -988.377 punto <1401.11, 758.057> -> 0
-OUTSIDE -422.567 punto <1401.11, 758.057> -> 0
-OUTSIDE -990.485 punto <1402.15, 748.114> -> 0
-OUTSIDE -421.846 punto <1402.15, 748.114> -> 0
-OUTSIDE -991.706 punto <1402.19, 738.117> -> 0
-OUTSIDE -420.365 punto <1402.19, 738.117> -> 0
-OUTSIDE -992.031 punto <1401.23, 728.165> -> 0
-OUTSIDE -418.132 punto <1401.23, 728.165> -> 0
-OUTSIDE -991.458 punto <1399.29, 718.356> -> 0
-OUTSIDE -415.158 punto <1399.29, 718.356> -> 0
-OUTSIDE -989.992 punto <1396.38, 708.789> -> 0
-OUTSIDE -411.456 punto <1396.38, 708.789> -> 0
-OUTSIDE -987.643 punto <1392.52, 699.559> -> 0
-OUTSIDE -407.044 punto <1392.52, 699.559> -> 0
-OUTSIDE -984.406 punto <1387.75, 690.791> -> 0
-OUTSIDE -401.928 punto <1387.75, 690.791> -> 0
-OUTSIDE -980.344 punto <1382.14, 682.518> -> 0
-OUTSIDE -396.16 punto <1382.14, 682.518> -> 0
-OUTSIDE -975.469 punto <1375.74, 674.846> -> 0
-OUTSIDE -389.758 punto <1375.74, 674.846> -> 0
-OUTSIDE -973.329 punto <1373, 672> -> 0
-OUTSIDE -387.063 punto <1373, 672> -> 0
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+kappa: 0.010000, 0.000000, -0.010000 
+--------angolo: 3.141593
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+kappa: 0.010000, 0.000000, 0.010000 
 --------angolo: -2.356194
 Algorithm INcorrect
-kappa: -0.010000, 0.000000, 0.010000 
-OUTSIDE -967.384 punto <1365.59, 665.294> -> 0
-OUTSIDE -379.769 punto <1365.59, 665.294> -> 0
-OUTSIDE -960.727 punto <1357.54, 659.361> -> 0
-OUTSIDE -371.83 punto <1357.54, 659.361> -> 0
-OUTSIDE -953.408 punto <1348.95, 654.262> -> 0
-OUTSIDE -363.324 punto <1348.95, 654.262> -> 0
-OUTSIDE -945.488 punto <1339.88, 650.046> -> 0
-OUTSIDE -354.336 punto <1339.88, 650.046> -> 0
-OUTSIDE -937.03 punto <1330.44, 646.756> -> 0
-OUTSIDE -344.956 punto <1330.44, 646.756> -> 0
-OUTSIDE -928.107 punto <1320.72, 644.424> -> 0
-OUTSIDE -335.278 punto <1320.72, 644.424> -> 0
-OUTSIDE -918.794 punto <1310.82, 643.075> -> 0
-OUTSIDE -325.399 punto <1310.82, 643.075> -> 0
-OUTSIDE -909.174 punto <1300.83, 642.721> -> 0
-OUTSIDE -315.417 punto <1300.83, 642.721> -> 0
-OUTSIDE -899.336 punto <1290.85, 643.367> -> 0
-OUTSIDE -305.432 punto <1290.85, 643.367> -> 0
-OUTSIDE -889.371 punto <1280.99, 645.004> -> 0
-OUTSIDE -295.544 punto <1280.99, 645.004> -> 0
-OUTSIDE -879.377 punto <1271.34, 647.619> -> 0
-OUTSIDE -285.852 punto <1271.34, 647.619> -> 0
-OUTSIDE -869.454 punto <1262.01, 651.183> -> 0
-OUTSIDE -276.451 punto <1262.01, 651.183> -> 0
-OUTSIDE -859.706 punto <1253.07, 655.662> -> 0
-OUTSIDE -267.437 punto <1253.07, 655.662> -> 0
-OUTSIDE -850.237 punto <1244.62, 661.01> -> 0
-OUTSIDE -258.899 punto <1244.62, 661.01> -> 0
-OUTSIDE -841.152 punto <1236.75, 667.175> -> 0
-OUTSIDE -250.921 punto <1236.75, 667.175> -> 0
-OUTSIDE -832.557 punto <1229.54, 674.095> -> 0
-OUTSIDE -243.584 punto <1229.54, 674.095> -> 0
-OUTSIDE -824.553 punto <1223.04, 681.701> -> 0
-OUTSIDE -237.06 punto <1223.04, 681.701> -> 0
-OUTSIDE -817.238 punto <1217.34, 689.917> -> 0
-OUTSIDE -231.601 punto <1217.34, 689.917> -> 0
-OUTSIDE -810.705 punto <1212.49, 698.662> -> 0
-OUTSIDE -227.341 punto <1212.49, 698.662> -> 0
-OUTSIDE -805.076 punto <1208.57, 707.84> -> 0
-OUTSIDE -224.427 punto <1208.57, 707.84> -> 0
-OUTSIDE -800.364 punto <1205.55, 717.371> -> 0
-OUTSIDE -222.881 punto <1205.55, 717.371> -> 0
-OUTSIDE -796.661 punto <1203.51, 727.155> -> 0
-OUTSIDE -222.774 punto <1203.51, 727.155> -> 0
-OUTSIDE -794.017 punto <1202.45, 737.094> -> 0
-OUTSIDE -224.108 punto <1202.45, 737.094> -> 0
-OUTSIDE -792.47 punto <1202.39, 747.09> -> 0
-OUTSIDE -226.845 punto <1202.39, 747.09> -> 0
-OUTSIDE -792.042 punto <1203.32, 757.042> -> 0
-OUTSIDE -230.909 punto <1203.32, 757.042> -> 0
-OUTSIDE -792.738 punto <1205.25, 766.85> -> 0
-OUTSIDE -236.192 punto <1205.25, 766.85> -> 0
-OUTSIDE -794.55 punto <1208.14, 776.418> -> 0
-OUTSIDE -242.564 punto <1208.14, 776.418> -> 0
-OUTSIDE -797.451 punto <1211.98, 785.649> -> 0
-OUTSIDE -249.879 punto <1211.98, 785.649> -> 0
-OUTSIDE -801.4 punto <1216.71, 794.45> -> 0
-OUTSIDE -257.988 punto <1216.71, 794.45> -> 0
-OUTSIDE -806.344 punto <1222.31, 802.735> -> 0
-OUTSIDE -266.743 punto <1222.31, 802.735> -> 0
-OUTSIDE -812.214 punto <1228.7, 810.42> -> 0
-OUTSIDE -275.997 punto <1228.7, 810.42> -> 0
-OUTSIDE -818.934 punto <1235.83, 817.428> -> 0
-OUTSIDE -285.615 punto <1235.83, 817.428> -> 0
-OUTSIDE -826.416 punto <1243.62, 823.69> -> 0
-OUTSIDE -295.47 punto <1243.62, 823.69> -> 0
-OUTSIDE -834.566 punto <1252, 829.143> -> 0
-OUTSIDE -305.445 punto <1252, 829.143> -> 0
-OUTSIDE -843.285 punto <1260.88, 833.732> -> 0
-OUTSIDE -315.434 punto <1260.88, 833.732> -> 0
-OUTSIDE -852.469 punto <1270.17, 837.412> -> 0
-OUTSIDE -325.341 punto <1270.17, 837.412> -> 0
-OUTSIDE -862.013 punto <1279.78, 840.145> -> 0
-OUTSIDE -335.078 punto <1279.78, 840.145> -> 0
-OUTSIDE -871.812 punto <1289.62, 841.905> -> 0
-OUTSIDE -344.566 punto <1289.62, 841.905> -> 0
-OUTSIDE -881.761 punto <1299.59, 842.674> -> 0
-OUTSIDE -353.735 punto <1299.59, 842.674> -> 0
-OUTSIDE -891.757 punto <1309.58, 842.444> -> 0
-OUTSIDE -362.52 punto <1309.58, 842.444> -> 0
-OUTSIDE -901.7 punto <1319.5, 841.218> -> 0
-OUTSIDE -370.863 punto <1319.5, 841.218> -> 0
-OUTSIDE -908.261 punto <1326.04, 839.85> -> 0
-OUTSIDE -376.163 punto <1326.04, 839.85> -> 0
-OUTSIDE -918.028 punto <1335.75, 837.475> -> 0
-OUTSIDE -383.98 punto <1335.75, 837.475> -> 0
-OUTSIDE -927.8 punto <1345.47, 835.1> -> 0
-OUTSIDE -391.896 punto <1345.47, 835.1> -> 0
-OUTSIDE -937.576 punto <1355.18, 832.725> -> 0
-OUTSIDE -399.906 punto <1355.18, 832.725> -> 0
-OUTSIDE -947.357 punto <1364.89, 830.351> -> 0
-OUTSIDE -408.004 punto <1364.89, 830.351> -> 0
-OUTSIDE -957.143 punto <1374.61, 827.976> -> 0
-OUTSIDE -416.184 punto <1374.61, 827.976> -> 0
-OUTSIDE -966.933 punto <1384.32, 825.601> -> 0
-OUTSIDE -424.443 punto <1384.32, 825.601> -> 0
-OUTSIDE -976.728 punto <1394.04, 823.226> -> 0
-OUTSIDE -432.774 punto <1394.04, 823.226> -> 0
-OUTSIDE -986.526 punto <1403.75, 820.851> -> 0
-OUTSIDE -441.176 punto <1403.75, 820.851> -> 0
-OUTSIDE -996.329 punto <1413.46, 818.476> -> 0
-OUTSIDE -449.642 punto <1413.46, 818.476> -> 0
-OUTSIDE -1006.13 punto <1423.18, 816.102> -> 0
-OUTSIDE -458.171 punto <1423.18, 816.102> -> 0
-OUTSIDE -1011.26 punto <1428.25, 814.861> -> 0
-OUTSIDE -462.65 punto <1428.25, 814.861> -> 0
-OUTSIDE -1021.15 punto <1438.07, 812.975> -> 0
-OUTSIDE -471.503 punto <1438.07, 812.975> -> 0
-OUTSIDE -1031.14 punto <1448.02, 812.079> -> 0
-OUTSIDE -480.808 punto <1448.02, 812.079> -> 0
-OUTSIDE -1035.11 punto <1452, 812> -> 0
-OUTSIDE -484.608 punto <1452, 812> -> 0
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+kappa: 0.010000, 0.000000, 0.010000 
+--------angolo: -0.785398
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+kappa: 0.010000, 0.000000, 0.010000 
 --------angolo: 0.000000
 Algorithm correct
 Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm correct
-Algorithm correct
-Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm correct
-Algorithm correct
-Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm correct
-Algorithm correct
-Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm correct
-Algorithm correct
-Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm correct
-Algorithm correct
-Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
@@ -2501,6 +2637,57 @@ Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
 Algorithm correct
 Algorithm INcorrect
 Algorithm correct
@@ -2509,24 +2696,113 @@ Algorithm correct
 Algorithm correct
 Algorithm correct
 Algorithm correct
-kappa: 0.010000, 0.000000, 0.010000 
-OUTSIDE -1045.1 punto <1462, 812> -> 0
-OUTSIDE -494.232 punto <1462, 812> -> 0
-OUTSIDE -1055.09 punto <1472, 812> -> 0
-OUTSIDE -503.87 punto <1472, 812> -> 0
-OUTSIDE -1065.08 punto <1482, 812> -> 0
-OUTSIDE -513.522 punto <1482, 812> -> 0
-OUTSIDE -1075.07 punto <1492, 812> -> 0
-OUTSIDE -523.187 punto <1492, 812> -> 0
-OUTSIDE -1085.06 punto <1502, 812> -> 0
-OUTSIDE -532.865 punto <1502, 812> -> 0
+kappa: -0.010000, 0.000000, 0.010000 
+--------angolo: 0.000000
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+kappa: 0.010000, 0.000000, -0.010000 
+--------angolo: -0.785398
+Algorithm INcorrect
+kappa: -0.010000, 0.000000, -0.010000 
+--------angolo: -1.570796
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+kappa: 0.010000, 0.000000, -0.010000 
 --- START rightPathNew --- 
---> 1: (154, 203)
---> 2: (321, 421)
---> 3: (492, 684)
---> 4: (705, 899)
---> 5: (1061, 871)
---> 6: (1373, 672)
---> 7: (1452, 812)
---> 8: (1502, 812)
+--> 1: (1307, 932)
+--> 2: (1018, 951)
+--> 3: (620, 927)
+--> 4: (302, 757)
+--> 5: (341, 408)
+--> 6: (553, 274)
+--> 7: (946, 265)
+--> 8: (1278, 250)
+--> 9: (1325, 121)
+--> 10: (1325, 72)
 --- END rightPathNew --- 
