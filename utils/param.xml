@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <opencv_storage>
 
-<mission_type>0</mission_type>
+<mission_type>2</mission_type>
 
-<victimGain>50</victimGain>
+<victimGain>500</victimGain>
 
 <max_offset>500</max_offset>
 
@@ -11,6 +11,6 @@
 
 <nConnections>20</nConnections>
 
-<step>10</step>
+<step>30</step>
 
 </opencv_storage>

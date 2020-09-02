@@ -39,7 +39,7 @@ struct VoronoiResults {
 };
 
 //void Voronoi(std::vector<VoronoiPoint>,std::vector<Segment>,std::unordered_map<int,VoronoiPoint>, VoronoiResults*);
-void Voronoi(std::vector<VoronoiPoint>,std::vector<Segment>,std::unordered_map<int,VoronoiPoint>, const std::vector<std::vector<cv::Point>>&, VoronoiResults*, const std::string&);
+void Voronoi(std::vector<VoronoiPoint>,std::vector<Segment>,std::unordered_map<int,VoronoiPoint>, const std::vector<std::vector<cv::Point>>&, float, float, VoronoiResults*, const std::string&);
 int encoder(int, int);
 void decoder(int, int &, int &);
 

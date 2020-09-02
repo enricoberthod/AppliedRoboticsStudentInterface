@@ -31,6 +31,8 @@ void remove(std::vector<VoronoiPoint>, VoronoiResults*);
 int visited(std::vector<int>, int);
 
 int victimGain;
+int max_X;
+int max_Y;
 //int encoder(int, int);
 //void decoder(int, int &, int &);
 
@@ -114,8 +116,6 @@ int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::unordered_map
 	double prev_ya=-1;
 	int id1,id2,longId=0;
 	std::vector<int> visitedIds;
-	int max_X = 1560;
-	int max_Y = 1060;
 	
     	const voronoi_diagram<double>::edge_type* edge;
 	
@@ -219,7 +219,7 @@ int visited(std::vector<int> visitedIds, int num)
 }
 
 //void Voronoi(std::vector<VoronoiPoint>points, std::vector<Segment> segments, std::unordered_map<int,VoronoiPoint>points_map, VoronoiResults *results)
-void Voronoi(std::vector<VoronoiPoint>points, std::vector<Segment> segments, std::unordered_map<int,VoronoiPoint>points_map, const std::vector<std::vector<cv::Point>>& contours, VoronoiResults *results, const std::string& config_folder)
+void Voronoi(std::vector<VoronoiPoint>points, std::vector<Segment> segments, std::unordered_map<int,VoronoiPoint>points_map, const std::vector<std::vector<cv::Point>>& contours, float b_x_max, float b_y_max, VoronoiResults *results, const std::string& config_folder)
 // si può aggiungere un flag isObstaclePoint alla struttura di GraphEdge così da marchiare subito i vertici da togliere
 {
 
@@ -232,6 +232,9 @@ void Voronoi(std::vector<VoronoiPoint>points, std::vector<Segment> segments, std
 	std::cout << "victimGain -> " << victimGain << std::endl;
 	
 //--
+
+	max_X = (int)b_x_max;
+	max_Y = (int)b_y_max;
 
 	//printf("pppp %i\n",p.size());
   // Construction of the Voronoi Diagram.
@@ -297,7 +300,7 @@ bool isObstaclePoint(int x, int y, const std::vector<std::vector<cv::Point>>& co
 	double res;
 	for (int i = 0; i < contours.size() && !r; i++) {
 		res = cv::pointPolygonTest(contours[i] , cv::Point2f(x,y) , true);
-		if(res >= 0 || x <= 0 || x >= 1560 || y <= 0 || y >= 1060) {
+		if(res >= 0 || x <= 0 || x >= max_X || y <= 0 || y >= max_Y) {
 			r = true;
 			//std::cout << "INSIDE!!! " << res << " -> " << " punto <" << x << ", " << y << ">" << " -> " << r << std::endl;
 		}

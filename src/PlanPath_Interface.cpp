@@ -367,7 +367,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 
 	//Creates the Voronoi map
 	//Voronoi(inputPoints, obstacles_edges, obstaclesVertexes, &voronoiPaths);
-	Voronoi(inputPoints, obstacles_edges, obstaclesVertexes, contours, &voronoiPaths, config_folder);
+	Voronoi(inputPoints, obstacles_edges, obstaclesVertexes, contours, b_x_max, b_y_max, &voronoiPaths, config_folder);
 		
 
 
