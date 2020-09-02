@@ -3,6 +3,7 @@
 int i_gate;
 std::vector<std::vector<cv::Point>> contours;
 std::vector<cv::Point> bordi;
+std::vector<cv::Point> arrivo;
 //int encoder(int, int);
 //void decoder(int, int &, int &);
 
@@ -52,7 +53,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	//path.points.emplace_back(1,2,3,1,2);
 
 	
-	
+	int margine = 50; //offset per il bordo
 	
 	
 	
@@ -68,8 +69,8 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		b_x_max = std::max(b_x_max, borders[i].x);
 		b_y_max = std::max(b_y_max, borders[i].y);
 	}
-	b_x_max = b_x_max * floatToInt;
-	b_y_max = b_y_max * floatToInt;
+	b_x_max = (b_x_max * floatToInt) - margine;
+	b_y_max = (b_y_max * floatToInt) - margine;
 	std::cout << "b_x_max : " << b_x_max << std::endl;
 	std::cout << "b_y_max : " << b_y_max << std::endl;
 
@@ -330,16 +331,16 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 			longId=(xa*floatToInt*10)+ya;
 		*/
 		if(xa < 500) {
-			xa = xa + 40;
+			xa = xa + margine;
 		}
 		else {
-			xa = xa - 40;
+			xa = xa - margine;
 		}
 		if(ya < 500) {
-			ya = ya + 40;
+			ya = ya + margine;
 		}
 		else {
-			ya = ya - 40;
+			ya = ya - margine;
 		}
 		longId=encoder(xa,ya);
 		p=VoronoiPoint(xa,ya);
@@ -348,16 +349,16 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		xb=(int)((borders[i+1].x*floatToInt)>0?(borders[i+1].x*floatToInt):0);
 		yb=(int)((borders[i+1].y*floatToInt)>0?(borders[i+1].y*floatToInt):0);
 		if(xb < 500) {
-			xb = xb + 40;
+			xb = xb + margine;
 		}
 		else {
-			xb = xb - 40;
+			xb = xb - margine;
 		}
 		if(yb < 500) {
-			yb = yb + 40;
+			yb = yb + margine;
 		}
 		else {
-			yb = yb - 40;
+			yb = yb - margine;
 		}
 		printf("bordivertxf: %f,%f\n",borders[i].x,borders[i].y);
 		printf("bordivertx: %i,%i\n",xa,ya);
@@ -374,16 +375,16 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		longId=(xa*floatToInt*10)+ya;
 	*/
 	if(xa < 500) {
-			xa = xa + 40;
+			xa = xa + margine;
 		}
 		else {
-			xa = xa - 40;
+			xa = xa - margine;
 		}
 		if(ya < 500) {
-			ya = ya + 40;
+			ya = ya + margine;
 		}
 		else {
-			ya = ya - 40;
+			ya = ya - margine;
 		}
 	longId=encoder(xa,ya);
 	p=VoronoiPoint(xa,ya);
@@ -392,16 +393,16 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	xb=(int)((borders[0].x*floatToInt)>0?(borders[0].x*floatToInt):0);
 	yb=(int)((borders[0].y*floatToInt)>0?(borders[0].y*floatToInt):0);	
 	if(xb < 500) {
-			xb = xb + 40;
+			xb = xb + margine;
 		}
 		else {
-			xb = xb - 40;
+			xb = xb - margine;
 		}
 		if(yb < 500) {
-			yb = yb + 40;
+			yb = yb + margine;
 		}
 		else {
-			yb = yb - 40;
+			yb = yb - margine;
 		}
 	printf("bordivertxf: %f,%f\n",borders[3].x,borders[3].y);
 	printf("bordivertx: %i,%i\n",xa,ya);
@@ -436,7 +437,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	{
 		printf("x: %i",voronoiPaths.resultPoints[j].a);
 		printf(", %i\n",voronoiPaths.resultPoints[j].b);
-		collision_detection((double)voronoiPaths.resultPoints[j].a, (double)voronoiPaths.resultPoints[j].b, contours);
+		//collision_detection((double)voronoiPaths.resultPoints[j].a, (double)voronoiPaths.resultPoints[j].b, contours);
 	}
 	
 	for(int j=0;j<voronoiPaths.resultEdges.size();j++)
@@ -457,8 +458,14 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	
 	for(int i=0;i<gate.size();i++)
 	{
+		arrivo.push_back(cv::Point((int)(gate[i].x * floatToInt), (int)(gate[i].y * floatToInt)));
 		x_tot+=gate[i].x;
 		y_tot+=gate[i].y;
+	}
+
+	std::cout << "ARRIVO : " << arrivo.size() << std::endl;
+	for (int bb = 0; bb < arrivo.size(); bb++) {
+		std::cout << "	" << arrivo[bb].x << ", " << arrivo[bb].y << std::endl;
 	}
 
 	//Robot center
@@ -887,10 +894,12 @@ bool collision_detection(double x, double y, const std::vector<std::vector<cv::P
 	bool r = false;
 	double res;
 	res = cv::pointPolygonTest(bordi , cv::Point2f(x,y) , true);
-	if(res <= 0) {
-			r = true;
-			//std::cout << "OUTSIDE bordo!!! " << res << " -> " << " punto <" << x << ", " << y << ">" << " -> " << r << std::endl;
-		}
+	double in_gate = cv::pointPolygonTest(arrivo , cv::Point2f(x,y) , true);
+	std::cout << "FUORI BORDO? " << res << std::endl;
+	if(res <= 0 && in_gate <= 0) {
+		r = true;
+		//std::cout << "OUTSIDE bordo!!! " << res << " -> " << " punto <" << x << ", " << y << ">" << " -> " << r << std::endl;
+	}
 	for (int i = 0; i < contours.size() && !r; i++) {
 		res = cv::pointPolygonTest(contours[i] , cv::Point2f(x,y) , true);
 		if(res > 0) {
