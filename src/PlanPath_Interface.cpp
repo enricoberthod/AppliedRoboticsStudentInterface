@@ -423,7 +423,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	case 1: //Path from robot to victim 1, victim 1 to victim 2, victim n to gate position (Mission 1)
 		
 		//find shortest path from robot to 1, 1 to 2, 2 to n, n to gate  
-		for(int i=1; i<=5; i++)
+		for(int i=1; i<=(victim_list.size()+5); i++)
 		{
 			//search for the next victim 
 			for(int j=0; j<victim_list.size() && !find; j++)
@@ -448,7 +448,10 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		}
 		//last call for connect the last victims with the gate
 		piecePath.clear();
-		PathFinder(start, false, gate_pos, true, &voronoiPaths, &piecePath, 0, contours, NULL, config_folder);
+		if(victim_list.size()>0)
+			PathFinder(start, false, gate_pos, true, &voronoiPaths, &piecePath, 0, contours, NULL, config_folder);
+		else
+			PathFinder(start, true, gate_pos, true, &voronoiPaths, &piecePath, 0, contours, NULL, config_folder);
 		rightPath.insert(rightPath.end(),piecePath.begin(),piecePath.end()); 
 	break;
 	case 2: //Path which minimize the time for exit from the arena (Mission 2)

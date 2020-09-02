@@ -79,7 +79,7 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 		if(netRadius>0)
 		{	
 			
-			if(victim_list == NULL)
+			if(victim_list == NULL)				
 				connector_netpoints(end, offset, step, max_offset, nConnections, victimGain, voronoiPaths, netRadius, obsContours);
 			else
 			{
@@ -87,7 +87,8 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 				for(int j=0; j<victim_list->size(); j++)
 				{
 					p=VoronoiPoint((int)(victim_list->at(j).second[0].x*1000),(int)(victim_list->at(j).second[0].y*1000));
-					connector_netpoints(p, offset, step, max_offset, nConnections, 0, voronoiPaths, netRadius, obsContours);
+					//connector_netpoints(p, offset, step, max_offset, nConnections, 0, voronoiPaths, netRadius, obsContours);
+					connector_singlepoint(p, offset, step, max_offset, nConnections, 0, voronoiPaths, obsContours);
 				}
 				connector_singlepoint(end, offset, step, max_offset, nConnections, victimGain, voronoiPaths, obsContours);
 			}
@@ -213,7 +214,7 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 			if(victim_list == NULL)
 				posStart=(netPointsNumber+2)*(-1);
 			else
-				posStart=(((1+victim_list->size())*(netPointsNumber)))*(-1);
+				posStart=(2+victim_list->size())*(-1);	//posStart=(((1+victim_list->size())*(netPointsNumber)))*(-1);
 			std::cout << "NO SKIP - id: " << (voronoiPaths->ids.size()+posStart) << " -> " << start.a << "," << start.b << " " << startNew <<" - id:" << (voronoiPaths->ids.size()-1) << " -> " << end.a << "," << end.b << " " << endNew << std::endl;
 			shortestPath(start, startNew, posStart, end, endNew, -1, voronoiPaths, rightPath); //!!! se aggiungo punti, l id si sposta a -netvertex posizioni
 		}
@@ -265,7 +266,7 @@ void shortestPath(VoronoiPoint start, bool startNew, int idStart, VoronoiPoint e
 			//encodedCoord=(x*10000)+y;
 			encodedCoord=( (x!=0?x:1) *10000)+y;*/
 		encodedCoord=encoder(x,y);	
-		std::cout << voronoiPaths->resultEdges[i].idFirstNode << " (pathfinder) encodedCoord = " << encodedCoord << std::endl;
+		std::cout << voronoiPaths->resultEdges[i].idFirstNode << " (pathfinder) encodedCoord = " << encodedCoord << " - edgelen: " << voronoiPaths->resultEdges[i].length << std::endl;
 		//Save the coordinates in the array, each encoded coordinates in position using the id of the first node (edge A-B, take A id) 
 		mapPosition[voronoiPaths->resultEdges[i].idFirstNode]=encodedCoord;
 		//std::cout << "id " << voronoiPaths->resultEdges[i].idFirstNode << " coo " << encodedCoord << " coo2 " << mapPosition[voronoiPaths->resultEdges[i].idFirstNode] <<  std::endl; 
@@ -305,6 +306,9 @@ void shortestPath(VoronoiPoint start, bool startNew, int idStart, VoronoiPoint e
 		std::cout << " " << startEndPath[j];
 		std::cout << "(pathfinder) mapposition : " << mapPosition[startEndPath[j]] << std::endl;
 	}
+
+	if(startEndPath.size()<2)
+		throw std::logic_error("STOP_possible_path_not_found");
 	std::cout << std::endl;
 	std::cout << std::endl;
 	//std::cout << "map " << mapPosition[111] << std::endl;
