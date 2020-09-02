@@ -208,7 +208,7 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 	std::cout << std::endl;
 	std::cout << std::endl;
 	//Check if there is an obstacle between start and end, if not connect directly the two points without using the roadMap, if so call the shirtestPath function
-	if(edgeOnObstacle(start,end,obsContours) || victim_list == NULL)
+	if(edgeOnObstacle(start,end,obsContours) || victim_list != NULL)
 	{
 		if(netRadius==0)
 		{
