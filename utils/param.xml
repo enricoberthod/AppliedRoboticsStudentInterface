@@ -3,10 +3,14 @@
 
 <mission_type>0</mission_type>
 
-<bonus_vittima>5</bonus_vittima>
+<victimGain>50</victimGain>
 
-<n_neighbours>4</n_neighbours>
+<max_offset>500</max_offset>
 
-<max_dist>100</max_dist>
+<offset>20</offset>
+
+<nConnections>20</nConnections>
+
+<step>10</step>
 
 </opencv_storage>

@@ -30,7 +30,7 @@ void removeObstacles(std::vector<VoronoiPoint>, VoronoiResults*);
 void remove(std::vector<VoronoiPoint>, VoronoiResults*);
 int visited(std::vector<int>, int);
 
-double const victimGain = 50;
+int victimGain;
 //int encoder(int, int);
 //void decoder(int, int &, int &);
 
@@ -218,10 +218,20 @@ int visited(std::vector<int> visitedIds, int num)
 }
 
 //void Voronoi(std::vector<VoronoiPoint>points, std::vector<Segment> segments, std::unordered_map<int,VoronoiPoint>points_map, VoronoiResults *results)
-void Voronoi(std::vector<VoronoiPoint>points, std::vector<Segment> segments, std::unordered_map<int,VoronoiPoint>points_map, const std::vector<std::vector<cv::Point>>& contours, VoronoiResults *results)
+void Voronoi(std::vector<VoronoiPoint>points, std::vector<Segment> segments, std::unordered_map<int,VoronoiPoint>points_map, const std::vector<std::vector<cv::Point>>& contours, VoronoiResults *results, const std::string& config_folder)
 // si può aggiungere un flag isObstaclePoint alla struttura di GraphEdge così da marchiare subito i vertici da togliere
 {
-  
+
+//--lettura file parametri
+	
+	std::string file = config_folder+"/param.xml";
+	cv::FileStorage param(file, cv::FileStorage::READ);
+	
+	victimGain = (int)param["victimGain"];
+	std::cout << "victimGain -> " << victimGain << std::endl;
+	
+//--
+
 	//printf("pppp %i\n",p.size());
   // Construction of the Voronoi Diagram.
   voronoi_diagram<double> vd;

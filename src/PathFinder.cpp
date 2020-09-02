@@ -22,21 +22,41 @@ void connector_singlepoint(VoronoiPoint, int, int, int, int, double, VoronoiResu
 //int encoder(int, int);
 //void decoder(int, int &, int &);
 
-void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew, VoronoiResults *voronoiPaths, std::vector<VoronoiPoint> *rightPath, int netRadius, const std::vector<std::vector<cv::Point>>& obsContours)
+void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew, VoronoiResults *voronoiPaths, std::vector<VoronoiPoint> *rightPath, int netRadius, const std::vector<std::vector<cv::Point>>& obsContours, const std::vector<std::pair<int,Polygon>> *victim_list, const std::string& config_folder)
 {
-	int offset=20;
+	int offset;
 	int offset_2;
-	int max_offset = 300;
+	int max_offset;
 	int offset_3;
-	int step=10;
-	int nConnections=8;
+	int step;
+	int nConnections;
 	int idPos;
-	double const victimGain=50;
+	int victimGain;
 	int const netPointsNumber = 4;
 	std::vector<GraphEdge> start_connection, end_connection;
 	std::vector<VoronoiPoint> netVertex;
 
-	bool is_victim_list_null = true; //to delete
+	//--lettura file parametri
+	
+	std::string file = config_folder+"/param.xml";
+	cv::FileStorage param(file, cv::FileStorage::READ);
+
+	victimGain = (int)param["victimGain"];
+	std::cout << "victimGain -> " << victimGain << std::endl;
+	
+	max_offset = (int)param["max_offset"];
+	std::cout << "max_offset -> " << max_offset << std::endl;
+
+	offset = (int)param["offset"];
+	std::cout << "offset -> " << offset << std::endl;
+
+	nConnections = (int)param["nConnections"];
+	std::cout << "nConnections -> " << nConnections << std::endl;
+
+	step = (int)param["step"];
+	std::cout << "step -> " << step << std::endl;
+	
+	//--
 
 	//std::vector<GraphEdge> point_connections
 	
@@ -59,16 +79,16 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 		if(netRadius>0)
 		{	
 			
-			if(is_victim_list_null) //modify with if(victim_list == NULL)
+			if(victim_list == NULL)
 				connector_netpoints(end, offset, step, max_offset, nConnections, victimGain, voronoiPaths, netRadius, obsContours);
 			else
 			{
 				VoronoiPoint p;
-				/*for(int j=0; j<victim_list.size(); j++)
+				for(int j=0; j<victim_list->size(); j++)
 				{
-					p=VoronoiPoint((int)(victim_list[j].second[0].x*1000),(int)(victim_list[j].second[0].y*1000));
+					p=VoronoiPoint((int)(victim_list->at(j).second[0].x*1000),(int)(victim_list->at(j).second[0].y*1000));
 					connector_netpoints(p, offset, step, max_offset, nConnections, 0, voronoiPaths, netRadius, obsContours);
-				}*/
+				}
 				connector_singlepoint(end, offset, step, max_offset, nConnections, victimGain, voronoiPaths, obsContours);
 			}
 			/*
@@ -190,10 +210,10 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 		else
 		{
 			int posStart;
-			if(is_victim_list_null) //modify with if(victim_list == NULL)
+			if(victim_list == NULL)
 				posStart=(netPointsNumber+2)*(-1);
 			else
-				posStart=0; //posStart=(((1+victim_list->size())*(netPointsNumber+1))+1)*(-1);
+				posStart=(((1+victim_list->size())*(netPointsNumber+1))+1)*(-1);
 			std::cout << "NO SKIP - id: " << (voronoiPaths->ids.size()+posStart) << " -> " << start.a << "," << start.b << " " << startNew <<" - id:" << (voronoiPaths->ids.size()-1) << " -> " << end.a << "," << end.b << " " << endNew << std::endl;
 			shortestPath(start, startNew, posStart, end, endNew, -1, voronoiPaths, rightPath); //!!! se aggiungo punti, l id si sposta a -netvertex posizioni
 		}
