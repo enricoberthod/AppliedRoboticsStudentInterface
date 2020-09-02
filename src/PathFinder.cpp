@@ -200,7 +200,7 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 	std::cout << std::endl;
 	std::cout << std::endl;
 	//Check if there is an obstacle between start and end, if not connect directly the two points without using the roadMap, if so call the shirtestPath function
-	if(edgeOnObstacle(start,end,obsContours))
+	if(edgeOnObstacle(start,end,obsContours) || victim_list == NULL)
 	{
 		if(netRadius==0)
 		{
@@ -213,7 +213,7 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 			if(victim_list == NULL)
 				posStart=(netPointsNumber+2)*(-1);
 			else
-				posStart=(((1+victim_list->size())*(netPointsNumber+1))+1)*(-1);
+				posStart=(((1+victim_list->size())*(netPointsNumber)))*(-1);
 			std::cout << "NO SKIP - id: " << (voronoiPaths->ids.size()+posStart) << " -> " << start.a << "," << start.b << " " << startNew <<" - id:" << (voronoiPaths->ids.size()-1) << " -> " << end.a << "," << end.b << " " << endNew << std::endl;
 			shortestPath(start, startNew, posStart, end, endNew, -1, voronoiPaths, rightPath); //!!! se aggiungo punti, l id si sposta a -netvertex posizioni
 		}
@@ -364,7 +364,7 @@ void decoder(int encoded, int &x, int &y)
 
 //////////////////////////////////////
 //void connect(int offset, VoronoiPoint startP, VoronoiPoint endP, VoronoiResults *voronoiPaths, bool startOk, bool endOk, std::vector<GraphEdge> *start, std::vector<GraphEdge> *end)
-void connect(int offset, VoronoiPoint pointP, VoronoiResults *voronoiPaths, bool pointOK, double victimGain, std::vector<GraphEdge> *pointEdges, int IDpos, const std::vector<std::vector<cv::Point>>& obsContours)
+void connect(int offset, VoronoiPoint pointP, VoronoiResults *voronoiPaths, bool pointOK, double vGain, std::vector<GraphEdge> *pointEdges, int IDpos, const std::vector<std::vector<cv::Point>>& obsContours)
 {
 	int a,b,c,d,o,x,y,endId,startId,id1;
 	int prev_x,prev_y=-1;
@@ -406,7 +406,7 @@ void connect(int offset, VoronoiPoint pointP, VoronoiResults *voronoiPaths, bool
 		if(pointOK && (a<x) && (x<(a+o)) && ((b<y) && (y<(b+o))))
 		{
 			len=sqrt(pow((x-pointP.a),2)+pow((y-pointP.b),2));
-			len=len+victimGain;
+			len=len+vGain;
 			//if(len<(offset*1.0))
 			{
 				std::cout << "at the beginningof connect _ 1 (" << pointP.a << "," << pointP.b << ") - len: " << len << std::endl;

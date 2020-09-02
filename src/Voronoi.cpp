@@ -149,6 +149,7 @@ int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::unordered_map
 						yb = (int)endVertex->y();
 						len=sqrt(pow((xa-xb),2)+pow((ya-yb),2));
 						len=len+victimGain;
+						 printf("len in voronoi: %f \n",len);
 						if(xa!=prev_xa || ya!=prev_ya)
 						{
 						/*
