@@ -3,14 +3,16 @@
 
 <mission_type>2</mission_type>
 
-<victimGain>500</victimGain>
+<victimGain>1000</victimGain>
 
 <max_offset>500</max_offset>
 
+<max_offset_vic>800</max_offset_vic>
+
 <offset>20</offset>
 
-<nConnections>20</nConnections>
+<nConnections>30</nConnections>
 
-<step>30</step>
+<step>10</step>
 
 </opencv_storage>
