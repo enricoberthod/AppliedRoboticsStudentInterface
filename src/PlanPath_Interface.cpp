@@ -684,6 +684,9 @@ void function_L(int j, float theta_j, std::vector<VoronoiPoint> &rightPath, std:
 */
 
 
+std::vector<std::vector<float>> angoli_scartati;
+std::vector<int> punti_inseriti;
+
 void function_L_doppio(int j, float theta_j, std::vector<VoronoiPoint> &rightPath, std::vector<float> &angoli, Path &path, bool finito){
 	float min_length = 999999999.0;	
 	int best_pidx;
