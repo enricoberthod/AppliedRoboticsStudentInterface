@@ -2,6 +2,7 @@
 
 int i_gate;
 std::vector<std::vector<cv::Point>> contours;
+std::vector<cv::Point> bordi;
 //int encoder(int, int);
 //void decoder(int, int &, int &);
 
@@ -328,12 +329,36 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 		else
 			longId=(xa*floatToInt*10)+ya;
 		*/
+		if(xa < 500) {
+			xa = xa + 40;
+		}
+		else {
+			xa = xa - 40;
+		}
+		if(ya < 500) {
+			ya = ya + 40;
+		}
+		else {
+			ya = ya - 40;
+		}
 		longId=encoder(xa,ya);
 		p=VoronoiPoint(xa,ya);
 		obstaclesVertexes[longId]=p;
+		bordi.push_back(cv::Point(xa, ya));
 		xb=(int)((borders[i+1].x*floatToInt)>0?(borders[i+1].x*floatToInt):0);
 		yb=(int)((borders[i+1].y*floatToInt)>0?(borders[i+1].y*floatToInt):0);
-		
+		if(xb < 500) {
+			xb = xb + 40;
+		}
+		else {
+			xb = xb - 40;
+		}
+		if(yb < 500) {
+			yb = yb + 40;
+		}
+		else {
+			yb = yb - 40;
+		}
 		printf("bordivertxf: %f,%f\n",borders[i].x,borders[i].y);
 		printf("bordivertx: %i,%i\n",xa,ya);
 		inputPoints.push_back(VoronoiPoint(xa,ya));
@@ -348,12 +373,36 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	else
 		longId=(xa*floatToInt*10)+ya;
 	*/
+	if(xa < 500) {
+			xa = xa + 40;
+		}
+		else {
+			xa = xa - 40;
+		}
+		if(ya < 500) {
+			ya = ya + 40;
+		}
+		else {
+			ya = ya - 40;
+		}
 	longId=encoder(xa,ya);
 	p=VoronoiPoint(xa,ya);
 	obstaclesVertexes[longId]=p;
+	bordi.push_back(cv::Point(xa, ya));
 	xb=(int)((borders[0].x*floatToInt)>0?(borders[0].x*floatToInt):0);
 	yb=(int)((borders[0].y*floatToInt)>0?(borders[0].y*floatToInt):0);	
-	
+	if(xb < 500) {
+			xb = xb + 40;
+		}
+		else {
+			xb = xb - 40;
+		}
+		if(yb < 500) {
+			yb = yb + 40;
+		}
+		else {
+			yb = yb - 40;
+		}
 	printf("bordivertxf: %f,%f\n",borders[3].x,borders[3].y);
 	printf("bordivertx: %i,%i\n",xa,ya);
 	inputPoints.push_back(VoronoiPoint(xa,ya));
@@ -361,6 +410,11 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 
 	printf("size: %i \n", inputPoints.size());
 	printf("size2: %i \n",obstacles_edges.size());	
+
+	std::cout << "BORDI : " << std::endl;
+	for (int bb = 0; bb < bordi.size(); bb++) {
+		std::cout << "	" << bordi[bb].x << ", " << bordi[bb].y << std::endl;
+	}	
 
 
 	//throw std::logic_error( "STOP" );
@@ -576,7 +630,7 @@ std::vector<float> IDP(float angolo_start_robot, std::vector<VoronoiPoint> &righ
 	angoli.resize(rightPath.size());
 	printf("Angoli!! %i\n",angoli.size());
 	angoli[0]=angolo_start_robot;
-	function_L_doppio(0,angoli.at(0), rightPath, angoli, path);
+	function_L_doppio(0,angoli.at(0), rightPath, angoli, path, false);
 	
 	return angoli;
 }
@@ -630,51 +684,134 @@ void function_L(int j, float theta_j, std::vector<VoronoiPoint> &rightPath, std:
 */
 
 
-void function_L_doppio(int j, float theta_j, std::vector<VoronoiPoint> &rightPath, std::vector<float> &angoli, Path &path){
+void function_L_doppio(int j, float theta_j, std::vector<VoronoiPoint> &rightPath, std::vector<float> &angoli, Path &path, bool finito){
 	float min_length = 999999999.0;	
 	int best_pidx;
 	D best_curve;	
+	bool collision;
+	bool salta = false;
+	bool fase_1_finita = false;
+	bool init = false;
+	//bool finito = false;
+	//std::vector<float> angoli_scartati;
 	printf("--------angolo: %f\n",theta_j);
-	if(j==rightPath.size()-3) {
-		angoli[j+1] = theta[i_gate];
-		angoli[j+2] = theta[i_gate];
+	if(finito) {
+		angoli_scartati[j].emplace_back(angoli[j+1]);
+		for (int e = 0; e < punti_inseriti[j]; e++) {
+			std::cout << "Rimozione di 1 elemento (caso backtrack) \n"; 
+			path.points.pop_back();
+		}
+		punti_inseriti[j] = 0;
 	}
-	else {
-		for(int i=0; i<8; i++) {
-			//Dubins function (the given matlab code)  
-			Dubins(rightPath[j].a,rightPath[j].b,rightPath[j+1].a,rightPath[j+1].b, theta_j, theta[i], &curve_1, &pidx_1);
-			if(j==rightPath.size()-4) {
-				Dubins(rightPath[j+1].a,rightPath[j+1].b,rightPath[j+2].a,rightPath[j+2].b, theta[i], theta[i_gate], &curve_2, &pidx_2);
-				if((curve_1.L + curve_2.L) < min_length) {
-					min_length = curve_1.L + curve_2.L;
-					angoli[j+1] = theta[i];
-					//angoli[j+2] = theta[w];
-				}
-			}
-			else {
-				for(int w=0; w<8; w++) {
-					Dubins(rightPath[j+1].a,rightPath[j+1].b,rightPath[j+2].a,rightPath[j+2].b, theta[i], theta[w], &curve_2, &pidx_2);
-					if((curve_1.L + curve_2.L) < min_length) {
-						min_length = curve_1.L + curve_2.L;
-						angoli[j+1] = theta[i];
-						//angoli[j+2] = theta[w];
+	do {
+		if(j==rightPath.size()-3) {
+			angoli[j+1] = theta[i_gate];
+			angoli[j+2] = theta[i_gate];
+		}
+		else {
+			for(int i=0; i<8; i++) {
+				printf("--------angolo da provare : %f\n",theta[i]);
+				salta = false;
+				if(init || finito) {
+					for(int h = 0; h < angoli_scartati[j].size(); h++) {
+						if(theta[i] == angoli_scartati[j][h]) {
+							salta = true;
+						}
 					}
 				}
+				if(!salta) {
+					//Dubins function (the given matlab code)
+					Dubins(rightPath[j].a,rightPath[j].b,rightPath[j+1].a,rightPath[j+1].b, theta_j, theta[i], &curve_1, &pidx_1);
+					if(j==rightPath.size()-4) {
+						Dubins(rightPath[j+1].a,rightPath[j+1].b,rightPath[j+2].a,rightPath[j+2].b, theta[i], theta[i_gate], &curve_2, &pidx_2);
+						if((curve_1.L + curve_2.L) < min_length) {
+							min_length = curve_1.L + curve_2.L;
+							angoli[j+1] = theta[i];
+							//angoli[j+2] = theta[w];
+						}
+					}
+					else {
+						for(int w=0; w<8; w++) {
+							Dubins(rightPath[j+1].a,rightPath[j+1].b,rightPath[j+2].a,rightPath[j+2].b, theta[i], theta[w], &curve_2, &pidx_2);
+							if((curve_1.L + curve_2.L) < min_length) {
+								min_length = curve_1.L + curve_2.L;
+								angoli[j+1] = theta[i];
+								//angoli[j+2] = theta[w];
+							}
+						}
+					}
+					printf("--------angolo scelto: %f\n",angoli[j+1]);
+				}
+				else {
+					std::cout << "(function_L) angolo saltato \n";
+				}
+			}	
+		}
+		Dubins(rightPath[j].a,rightPath[j].b,rightPath[j+1].a,rightPath[j+1].b, theta_j, angoli[j+1], &best_curve, &best_pidx); 
+		printf("kappa: %f, %f, %f \n", best_curve.a1.k,best_curve.a2.k,best_curve.a3.k);
+		if(finito == false && init == false) {
+			punti_inseriti.emplace_back(0);
+			std::vector<float> tmp;
+			tmp.emplace_back(0.0);
+			angoli_scartati.emplace_back(tmp);
+		}
+		if(best_curve.a1.L!=0)		//if the first arc is not 0 length
+			collision = sample(best_curve.a1, path, punti_inseriti[j]);
+			std::cout << "Punti inseriti : " << punti_inseriti[j] << std::endl;
+		if(best_curve.a2.L!=0 && !collision)	//if the second arc is not 0 length
+			collision = sample(best_curve.a2, path, punti_inseriti[j]);
+			std::cout << "Punti inseriti : " << punti_inseriti[j] << std::endl;
+		if(best_curve.a3.L!=0 && !collision)	//if the third arc is not 0 length
+			collision = sample(best_curve.a3, path, punti_inseriti[j]);
+			std::cout << "Punti inseriti : " << punti_inseriti[j] << std::endl;
+		std::cout << "(function_L) " << collision << std::endl;
+		if(collision) {
+			for (int e = 0; e < punti_inseriti[j]; e++) {
+				std::cout << "Rimozione di 1 elemento \n"; 
+				path.points.pop_back();
 			}
-		}	
-	}
-	Dubins(rightPath[j].a,rightPath[j].b,rightPath[j+1].a,rightPath[j+1].b, theta_j, angoli[j+1], &best_curve, &best_pidx); 
-	printf("kappa: %f, %f, %f \n", best_curve.a1.k,best_curve.a2.k,best_curve.a3.k);
-	if(best_curve.a1.L!=0)//if the first arc is not 0 length
-		sample(best_curve.a1, path);
-	if(best_curve.a2.L!=0)//if the second arc is not 0 length
-		sample(best_curve.a2, path);
-	if(best_curve.a3.L!=0)//if the third arc is not 0 length
-		sample(best_curve.a3, path);
+			punti_inseriti[j] = 0;
+			std::cout << "HERE \n"; 
+			if(!finito && !init) {
+				std::vector<float> tmp;
+				tmp.emplace_back(angoli[j+1]);
+				std::cout << "HERE 1\n"; 
+				angoli_scartati.at(j) = tmp; 
+				init = true;
+				std::cout << "HERE 2\n"; 
+			}
+			else {
+				angoli_scartati[j].emplace_back(angoli[j+1]);
+			}
+			std::cout << "HERE 3 " << angoli_scartati.size() << " " << angoli_scartati[j].size() << std::endl; 
+			std::cout << "HERE 3.1 " << punti_inseriti.size() << std::endl; 
+			if (angoli_scartati[j].size() >= 8) {
+				std::cout << "Angoli scartati : ";
+				for(int fff = 0; fff < 8; fff++) {
+					std::cout << angoli_scartati[j][fff] << " ";
+				}
+				std::cout << std::endl;
+				fase_1_finita = true;
+				//angoli_scartati.clear();
+				std::cout << "chiamo passo precedente" << std::endl;
+				function_L_doppio(j-1, angoli.at(j-1), rightPath, angoli, path, fase_1_finita);
+				theta_j = angoli.at(j);
+				std::cout << "torna il controllo con nuovo theta : " << theta_j << std::endl;
+				fase_1_finita = false;
+				angoli_scartati[j].clear();
+			}
+			std::cout << "HERE 4\n"; 
+			min_length = 999999999.0;	
+			//aggiungere controllo se tutti gli angoli vanno scartati
+		}
+	} while(collision);
 	
-	if(j < (rightPath.size()-2)){			//controllare estremi j +/- 1
+	if(j < (rightPath.size()-2) && !finito){			//controllare estremi j +/- 1
 		//angle=(angoli.at(j+1)+M_PI)<(2*M_PI)?(angoli.at(j+1)+M_PI):(angoli.at(j+1)-M_PI);
-		function_L_doppio(j+1, angoli.at(j+1), rightPath, angoli, path);
+		function_L_doppio(j+1, angoli.at(j+1), rightPath, angoli, path, fase_1_finita);
+	}
+	else if(finito) {
+		return;
 	}
 	else //not our problem now 
 	{
@@ -685,7 +822,7 @@ void function_L_doppio(int j, float theta_j, std::vector<VoronoiPoint> &rightPat
 }
 
 
-void sample(C arc, Path& path) {
+bool sample(C arc, Path& path, int &punti_inseriti) {
 	double pt_x,pt_y,pt_theta,kappa, x, y, th, s_tot=0;
 	int step;
 	bool collision = false;
@@ -694,6 +831,8 @@ void sample(C arc, Path& path) {
 	pt_theta = arc.th0;
 	kappa = arc.k;
 	int inserts = 0;
+
+	std::cout << "(sample) start \n";
 
 	if(path.points.size()==0) { 	//the first point is the robot position 
 		path.points.emplace_back(0, pt_x/1000.0, pt_y/1000.0, pt_theta, (kappa*1000));
@@ -706,7 +845,7 @@ void sample(C arc, Path& path) {
 		//else
 		
 	s_tot= path.points.back().s; //(residual_s/1000.0); //start from the last point in simulator path + the new step
-	while(step<arc.L /*&& !collision*/) {		
+	while(step<arc.L && !collision) {		
 		circline(step, pt_x, pt_y, pt_theta, kappa, &x, &y, &th); 	//use the function defined in Dubins (the given matlab code) to compute x,y,theta
 				//s_tot=s_tot+(step/1000.0);
 
@@ -716,19 +855,39 @@ void sample(C arc, Path& path) {
 		inserts++;
 		step=step+10;
 	}	
-	circline(arc.L, pt_x, pt_y, pt_theta, kappa, &x, &y, &th); 		//use the function defined in Dubins (the given matlab code) to compute x,y,theta
+	if(!collision) {
+		circline(arc.L, pt_x, pt_y, pt_theta, kappa, &x, &y, &th); 		//use the function defined in Dubins (the given matlab code) to compute x,y,theta
 
-	collision = collision_detection(x, y, contours);
+		collision = collision_detection(x, y, contours);
+		path.points.emplace_back(s_tot+((arc.L)/1000.0),x/1000.0,y/1000.0,th,(kappa*1000));		//add to the simulator path a new point
+		inserts++;
+	}
+	if(collision) {
+		for (int i = 0; i < inserts; i++) {
+			std::cout << "Rimozione di 1 elemento \n"; 
+			path.points.pop_back();
+		}
+	}
+	else {
+		punti_inseriti = punti_inseriti + inserts;
+	}
 
-	path.points.emplace_back(s_tot+((arc.L)/1000.0),x/1000.0,y/1000.0,th,(kappa*1000));		//add to the simulator path a new point
+	std::cout << "(sample) end \n";
 
 	//residual_s=((arc.L)-(s-10)); //calcolo il residual tra s e il nodo successivo (useles if we use s_tot=...+0.01)	
+
+	return collision;
 }
 
 
 bool collision_detection(double x, double y, const std::vector<std::vector<cv::Point>>& contours) {
 	bool r = false;
 	double res;
+	res = cv::pointPolygonTest(bordi , cv::Point2f(x,y) , true);
+	if(res <= 0) {
+			r = true;
+			//std::cout << "OUTSIDE bordo!!! " << res << " -> " << " punto <" << x << ", " << y << ">" << " -> " << r << std::endl;
+		}
 	for (int i = 0; i < contours.size() && !r; i++) {
 		res = cv::pointPolygonTest(contours[i] , cv::Point2f(x,y) , true);
 		if(res > 0) {

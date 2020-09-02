@@ -1,22 +1,24 @@
 
 RED MASK
 N. contours (Elements): 4
-1) Contour size: 102
-   Approximated contour size: 3
-2) Contour size: 71
-   Approximated contour size: 4
-3) Contour size: 62
-   Approximated contour size: 5
-4) Contour size: 125
+1) Contour size: 123
    Approximated contour size: 6
-   Elements: 4
-N. contours: 3
-1) Contour size: 73
+2) Contour size: 60
+   Approximated contour size: 5
+3) Contour size: 102
+   Approximated contour size: 3
+4) Contour size: 64
    Approximated contour size: 4
-2) Contour size: 146
-3) Contour size: 144
+   Elements: 4
+N. contours: 4
+1) Contour size: 161
+2) Contour size: 167
+3) Contour size: 162
+4) Contour size: 76
+   Approximated contour size: 4
    Elements: 4
 Best fitting template: 1
+Best fitting template: 4
 Best fitting template: 3
    Elements: 2
 Mission -> 0
@@ -25,41 +27,35 @@ b_x_max : 1560
 b_y_max : 1060
 clipper1: 4
 clipper2: 4
-clipper3: 2
+clipper3: 1
 clipper4: 4
-obsvertx: 418,860
-obsvertx: 291,1112
-obsvertx: 176,1118
-obsvertx: 14,870
-obsvertx: 70,765
-obsvertx: 360,765
-obsvertx: 963,-3
-obsvertx: 1041,140
-obsvertx: 1041,193
-obsvertx: 964,322
-obsvertx: 942,335
-obsvertx: 942,336
-obsvertx: 926,393
-obsvertx: 923,395
-obsvertx: 982,451
-obsvertx: 986,679
-obsvertx: 927,739
-obsvertx: 705,739
-obsvertx: 647,682
-obsvertx: 641,463
-obsvertx: 679,422
-obsvertx: 661,412
-obsvertx: 635,347
-obsvertx: 671,232
-obsvertx: 640,169
-obsvertx: 642,118
-obsvertx: 715,-2
-obsvertx: 759,-27
-obsvertx: 915,-31
-### contours: 2
-### contours[0] : 6
-### contours[1] : 23
-hash 29
+obsvertx: 1083,344
+obsvertx: 1094,530
+obsvertx: 1138,600
+obsvertx: 1062,730
+obsvertx: 1067,732
+obsvertx: 1153,861
+obsvertx: 1155,918
+obsvertx: 1075,1057
+obsvertx: 1029,1084
+obsvertx: 875,1084
+obsvertx: 828,1056
+obsvertx: 752,918
+obsvertx: 752,865
+obsvertx: 758,855
+obsvertx: 711,826
+obsvertx: 688,755
+obsvertx: 740,633
+obsvertx: 744,631
+obsvertx: 737,620
+obsvertx: 756,582
+obsvertx: 748,575
+obsvertx: 748,349
+obsvertx: 807,290
+obsvertx: 1026,290
+### contours: 1
+### contours[0] : 24
+hash 24
 bordivertxf: 0.000000,0.000000
 bordivertx: 0,0
 bordivertxf: 1.560000,0.000000
@@ -498,29 +494,29 @@ Soluzione 1 : 166, 211
 Soluzione 2 : 141, 193
 Sample : 166, 211 == 166, 211
 Distanza sample : 20
-Soluzione 1 : 170, 214
-Soluzione 2 : 137, 191
-Sample : 170, 214 == 170, 214
+Soluzione 1 : 1316, 913
+Soluzione 2 : 1301, 950
+Sample : 1316, 913 == 1316, 913
 Distanza sample : 25
-Soluzione 1 : 174, 217
-Soluzione 2 : 133, 188
-Sample : 174, 217 == 174, 217
+Soluzione 1 : 1318, 908
+Soluzione 2 : 1299, 955
+Sample : 1318, 908 == 1318, 908
 Distanza sample : 30
-Soluzione 1 : 178, 219
-Soluzione 2 : 129, 185
-Sample : 178, 219 == 178, 219
+Soluzione 1 : 1320, 903
+Soluzione 2 : 1297, 960
+Sample : 1320, 903 == 1320, 903
 Distanza sample : 35
-Soluzione 1 : 182, 222
-Soluzione 2 : 125, 182
-Sample : 182, 222 == 182, 222
+Soluzione 1 : 1322, 898
+Soluzione 2 : 1295, 965
+Sample : 1322, 898 == 1322, 898
 Distanza sample : 40
-Soluzione 1 : 186, 225
-Soluzione 2 : 121, 179
-Sample : 186, 225 == 186, 225
+Soluzione 1 : 1323, 896
+Soluzione 2 : 1293, 970
+Sample : 1323, 896 == 1323, 896
 Distanza sample : 45
-Soluzione 1 : 190, 228
-Soluzione 2 : 116, 176
-Sample : 190, 228 == 190, 228
+Soluzione 1 : 1325, 891
+Soluzione 2 : 1292, 972
+Sample : 1325, 891 == 1325, 891
 Distanza sample : 50
 Soluzione 1 : 194, 231
 Soluzione 2 : 112, 173
@@ -668,29 +664,29 @@ Soluzione 1 : 166, 211
 Soluzione 2 : 141, 193
 Sample : 166, 211 == 166, 211
 Distanza sample : 20
-Soluzione 1 : 170, 214
-Soluzione 2 : 137, 191
-Sample : 170, 214 == 170, 214
+Soluzione 1 : 1316, 913
+Soluzione 2 : 1301, 950
+Sample : 1316, 913 == 1316, 913
 Distanza sample : 25
-Soluzione 1 : 174, 217
-Soluzione 2 : 133, 188
-Sample : 174, 217 == 174, 217
+Soluzione 1 : 1318, 908
+Soluzione 2 : 1299, 955
+Sample : 1318, 908 == 1318, 908
 Distanza sample : 30
-Soluzione 1 : 178, 219
-Soluzione 2 : 129, 185
-Sample : 178, 219 == 178, 219
+Soluzione 1 : 1320, 903
+Soluzione 2 : 1297, 960
+Sample : 1320, 903 == 1320, 903
 Distanza sample : 35
-Soluzione 1 : 182, 222
-Soluzione 2 : 125, 182
-Sample : 182, 222 == 182, 222
+Soluzione 1 : 1322, 898
+Soluzione 2 : 1295, 965
+Sample : 1322, 898 == 1322, 898
 Distanza sample : 40
-Soluzione 1 : 186, 225
-Soluzione 2 : 121, 179
-Sample : 186, 225 == 186, 225
+Soluzione 1 : 1323, 896
+Soluzione 2 : 1293, 970
+Sample : 1323, 896 == 1323, 896
 Distanza sample : 45
-Soluzione 1 : 190, 228
-Soluzione 2 : 116, 176
-Sample : 190, 228 == 190, 228
+Soluzione 1 : 1325, 891
+Soluzione 2 : 1292, 972
+Sample : 1325, 891 == 1325, 891
 Distanza sample : 50
 Soluzione 1 : 194, 231
 Soluzione 2 : 112, 173
@@ -838,29 +834,29 @@ Soluzione 1 : 166, 211
 Soluzione 2 : 141, 193
 Sample : 166, 211 == 166, 211
 Distanza sample : 20
-Soluzione 1 : 170, 214
-Soluzione 2 : 137, 191
-Sample : 170, 214 == 170, 214
+Soluzione 1 : 1316, 913
+Soluzione 2 : 1301, 950
+Sample : 1316, 913 == 1316, 913
 Distanza sample : 25
-Soluzione 1 : 174, 217
-Soluzione 2 : 133, 188
-Sample : 174, 217 == 174, 217
+Soluzione 1 : 1318, 908
+Soluzione 2 : 1299, 955
+Sample : 1318, 908 == 1318, 908
 Distanza sample : 30
-Soluzione 1 : 178, 219
-Soluzione 2 : 129, 185
-Sample : 178, 219 == 178, 219
+Soluzione 1 : 1320, 903
+Soluzione 2 : 1297, 960
+Sample : 1320, 903 == 1320, 903
 Distanza sample : 35
-Soluzione 1 : 182, 222
-Soluzione 2 : 125, 182
-Sample : 182, 222 == 182, 222
+Soluzione 1 : 1322, 898
+Soluzione 2 : 1295, 965
+Sample : 1322, 898 == 1322, 898
 Distanza sample : 40
-Soluzione 1 : 186, 225
-Soluzione 2 : 121, 179
-Sample : 186, 225 == 186, 225
+Soluzione 1 : 1323, 896
+Soluzione 2 : 1293, 970
+Sample : 1323, 896 == 1323, 896
 Distanza sample : 45
-Soluzione 1 : 190, 228
-Soluzione 2 : 116, 176
-Sample : 190, 228 == 190, 228
+Soluzione 1 : 1325, 891
+Soluzione 2 : 1292, 972
+Sample : 1325, 891 == 1325, 891
 Distanza sample : 50
 Soluzione 1 : 194, 231
 Soluzione 2 : 112, 173
@@ -1008,29 +1004,29 @@ Soluzione 1 : 166, 211
 Soluzione 2 : 141, 193
 Sample : 166, 211 == 166, 211
 Distanza sample : 20
-Soluzione 1 : 170, 214
-Soluzione 2 : 137, 191
-Sample : 170, 214 == 170, 214
+Soluzione 1 : 1316, 913
+Soluzione 2 : 1301, 950
+Sample : 1316, 913 == 1316, 913
 Distanza sample : 25
-Soluzione 1 : 174, 217
-Soluzione 2 : 133, 188
-Sample : 174, 217 == 174, 217
+Soluzione 1 : 1318, 908
+Soluzione 2 : 1299, 955
+Sample : 1318, 908 == 1318, 908
 Distanza sample : 30
-Soluzione 1 : 178, 219
-Soluzione 2 : 129, 185
-Sample : 178, 219 == 178, 219
+Soluzione 1 : 1320, 903
+Soluzione 2 : 1297, 960
+Sample : 1320, 903 == 1320, 903
 Distanza sample : 35
-Soluzione 1 : 182, 222
-Soluzione 2 : 125, 182
-Sample : 182, 222 == 182, 222
+Soluzione 1 : 1322, 898
+Soluzione 2 : 1295, 965
+Sample : 1322, 898 == 1322, 898
 Distanza sample : 40
-Soluzione 1 : 186, 225
-Soluzione 2 : 121, 179
-Sample : 186, 225 == 186, 225
+Soluzione 1 : 1323, 896
+Soluzione 2 : 1293, 970
+Sample : 1323, 896 == 1323, 896
 Distanza sample : 45
-Soluzione 1 : 190, 228
-Soluzione 2 : 116, 176
-Sample : 190, 228 == 190, 228
+Soluzione 1 : 1325, 891
+Soluzione 2 : 1292, 972
+Sample : 1325, 891 == 1325, 891
 Distanza sample : 50
 Soluzione 1 : 194, 231
 Soluzione 2 : 112, 173
@@ -1178,57 +1174,57 @@ Soluzione 1 : 166, 211
 Soluzione 2 : 141, 193
 Sample : 166, 211 == 166, 211
 Distanza sample : 20
-Soluzione 1 : 170, 214
-Soluzione 2 : 137, 191
-Sample : 170, 214 == 170, 214
+Soluzione 1 : 1319, 914
+Soluzione 2 : 1298, 947
+Sample : 1319, 914 == 1319, 914
 Distanza sample : 25
-Soluzione 1 : 174, 217
-Soluzione 2 : 133, 188
-Sample : 174, 217 == 174, 217
+Soluzione 1 : 1322, 909
+Soluzione 2 : 1295, 952
+Sample : 1322, 909 == 1322, 909
 Distanza sample : 30
-Soluzione 1 : 178, 219
-Soluzione 2 : 129, 185
-Sample : 178, 219 == 178, 219
+Soluzione 1 : 1324, 906
+Soluzione 2 : 1292, 956
+Sample : 1324, 906 == 1324, 906
 Distanza sample : 35
-Soluzione 1 : 182, 222
-Soluzione 2 : 125, 182
-Sample : 182, 222 == 182, 222
+Soluzione 1 : 1327, 901
+Soluzione 2 : 1290, 959
+Sample : 1327, 901 == 1327, 901
 Distanza sample : 40
-Soluzione 1 : 186, 225
-Soluzione 2 : 121, 179
-Sample : 186, 225 == 186, 225
+Soluzione 1 : 1330, 896
+Soluzione 2 : 1287, 964
+Sample : 1330, 896 == 1330, 896
 Distanza sample : 45
-Soluzione 1 : 190, 228
-Soluzione 2 : 116, 176
-Sample : 190, 228 == 190, 228
+Soluzione 1 : 1333, 892
+Soluzione 2 : 1284, 969
+Sample : 1333, 892 == 1333, 892
 Distanza sample : 50
-Soluzione 1 : 194, 231
-Soluzione 2 : 112, 173
-Sample : 194, 231 == 194, 231
+Soluzione 1 : 1335, 889
+Soluzione 2 : 1282, 972
+Sample : 1335, 889 == 1335, 889
 Distanza sample : 55
-Soluzione 1 : 198, 233
-Soluzione 2 : 108, 170
-Sample : 198, 233 == 198, 233
+Soluzione 1 : 1338, 884
+Soluzione 2 : 1279, 977
+Sample : 1338, 884 == 1338, 884
 Distanza sample : 60
-Soluzione 1 : 203, 237
-Soluzione 2 : 104, 167
-Sample : 203, 237 == 203, 237
+Soluzione 1 : 1341, 879
+Soluzione 2 : 1276, 981
+Sample : 1341, 879 == 1341, 879
 Distanza sample : 65
-Soluzione 1 : 207, 240
-Soluzione 2 : 100, 165
-Sample : 207, 240 == 207, 240
+Soluzione 1 : 1343, 876
+Soluzione 2 : 1274, 985
+Sample : 1343, 876 == 1343, 876
 Distanza sample : 70
-Soluzione 1 : 211, 242
-Soluzione 2 : 96, 162
-Sample : 211, 242 == 211, 242
+Soluzione 1 : 1346, 871
+Soluzione 2 : 1271, 989
+Sample : 1346, 871 == 1346, 871
 Distanza sample : 75
-Soluzione 1 : 215, 245
-Soluzione 2 : 92, 159
-Sample : 215, 245 == 215, 245
+Soluzione 1 : 1349, 867
+Soluzione 2 : 1268, 994
+Sample : 1349, 867 == 1349, 867
 Distanza sample : 80
-Soluzione 1 : 219, 248
-Soluzione 2 : 88, 156
-Sample : 219, 248 == 219, 248
+Soluzione 1 : 1351, 863
+Soluzione 2 : 1266, 997
+Sample : 1351, 863 == 1351, 863
 Distanza sample : 85
 Soluzione 1 : 223, 251
 Soluzione 2 : 84, 153
@@ -1571,57 +1567,57 @@ Soluzione 1 : 166, 211
 Soluzione 2 : 141, 193
 Sample : 166, 211 == 166, 211
 Distanza sample : 20
-Soluzione 1 : 170, 214
-Soluzione 2 : 137, 191
-Sample : 170, 214 == 170, 214
+Soluzione 1 : 1319, 914
+Soluzione 2 : 1298, 947
+Sample : 1319, 914 == 1319, 914
 Distanza sample : 25
-Soluzione 1 : 174, 217
-Soluzione 2 : 133, 188
-Sample : 174, 217 == 174, 217
+Soluzione 1 : 1322, 909
+Soluzione 2 : 1295, 952
+Sample : 1322, 909 == 1322, 909
 Distanza sample : 30
-Soluzione 1 : 178, 219
-Soluzione 2 : 129, 185
-Sample : 178, 219 == 178, 219
+Soluzione 1 : 1324, 906
+Soluzione 2 : 1292, 956
+Sample : 1324, 906 == 1324, 906
 Distanza sample : 35
-Soluzione 1 : 182, 222
-Soluzione 2 : 125, 182
-Sample : 182, 222 == 182, 222
+Soluzione 1 : 1327, 901
+Soluzione 2 : 1290, 959
+Sample : 1327, 901 == 1327, 901
 Distanza sample : 40
-Soluzione 1 : 186, 225
-Soluzione 2 : 121, 179
-Sample : 186, 225 == 186, 225
+Soluzione 1 : 1330, 896
+Soluzione 2 : 1287, 964
+Sample : 1330, 896 == 1330, 896
 Distanza sample : 45
-Soluzione 1 : 190, 228
-Soluzione 2 : 116, 176
-Sample : 190, 228 == 190, 228
+Soluzione 1 : 1333, 892
+Soluzione 2 : 1284, 969
+Sample : 1333, 892 == 1333, 892
 Distanza sample : 50
-Soluzione 1 : 194, 231
-Soluzione 2 : 112, 173
-Sample : 194, 231 == 194, 231
+Soluzione 1 : 1335, 889
+Soluzione 2 : 1282, 972
+Sample : 1335, 889 == 1335, 889
 Distanza sample : 55
-Soluzione 1 : 198, 233
-Soluzione 2 : 108, 170
-Sample : 198, 233 == 198, 233
+Soluzione 1 : 1338, 884
+Soluzione 2 : 1279, 977
+Sample : 1338, 884 == 1338, 884
 Distanza sample : 60
-Soluzione 1 : 203, 237
-Soluzione 2 : 104, 167
-Sample : 203, 237 == 203, 237
+Soluzione 1 : 1341, 879
+Soluzione 2 : 1276, 981
+Sample : 1341, 879 == 1341, 879
 Distanza sample : 65
-Soluzione 1 : 207, 240
-Soluzione 2 : 100, 165
-Sample : 207, 240 == 207, 240
+Soluzione 1 : 1343, 876
+Soluzione 2 : 1274, 985
+Sample : 1343, 876 == 1343, 876
 Distanza sample : 70
-Soluzione 1 : 211, 242
-Soluzione 2 : 96, 162
-Sample : 211, 242 == 211, 242
+Soluzione 1 : 1346, 871
+Soluzione 2 : 1271, 989
+Sample : 1346, 871 == 1346, 871
 Distanza sample : 75
-Soluzione 1 : 215, 245
-Soluzione 2 : 92, 159
-Sample : 215, 245 == 215, 245
+Soluzione 1 : 1349, 867
+Soluzione 2 : 1268, 994
+Sample : 1349, 867 == 1349, 867
 Distanza sample : 80
-Soluzione 1 : 219, 248
-Soluzione 2 : 88, 156
-Sample : 219, 248 == 219, 248
+Soluzione 1 : 1351, 863
+Soluzione 2 : 1266, 997
+Sample : 1351, 863 == 1351, 863
 Distanza sample : 85
 Soluzione 1 : 223, 251
 Soluzione 2 : 84, 153
@@ -43444,6 +43440,131 @@ PRIMA
 --- ultimo punto : 1502, 812
 Angoli!! 7
 --------angolo: -0.012345
+>>>>>>>>>>>>>>>> > 813 -- 813
+??????????????????????????????????????????? > 269, 813
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 269, 813
+??????????????????????????????????????????? > 269, 803
+??????????????????????????????????????????? > 345, 714
+??????????????????????????????????????????? > 370, 563
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 370, 563
+??????????????????????????????????????????? > 376, 508
+??????????????????????????????????????????? > 382, 462
+??????????????????????????????????????????? > 374, 374
+??????????????????????????????????????????? > 647, 189
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 647, 189
+??????????????????????????????????????????? > 688, 189
+>>>>>>>>>>>>>>>> 688 -- 688
+>>>>>>>>>>>>>>>> > 179 -- 179
+??????????????????????????????????????????? > 688, 179
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 688, 179
+??????????????????????????????????????????? > 688, 189
+??????????????????????????????????????????? > 647, 189
+??????????????????????????????????????????? > 374, 374
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 374, 374
+??????????????????????????????????????????? > 382, 462
+>>>>>>>>>>>>>>>> 374 -- 374
+>>>>>>>>>>>>>>>> > 444 -- 444
+??????????????????????????????????????????? > 374, 444
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 374, 444
+??????????????????????????????????????????? > 382, 462
+??????????????????????????????????????????? > 374, 374
+??????????????????????????????????????????? > 647, 189
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 647, 189
+??????????????????????????????????????????? > 916, 165
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 916, 165
+??????????????????????????????????????????? > 1141, 168
+??????????????????????????????????????????? > 1220, 199
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! > 1220, 199
+-------Path 38 => 17: 
+PRIMA
+--- terzultimo punto : 916, 165
+--- penultimo punto : 1220, 199
+--- ultimo punto : 1325, 72
+--- CENTRO GATE : 1325, 72
+--- PUNTO BORDO GATE : 1325, 121
+--- terzultimo punto : 1220, 199
+--- penultimo punto : 1325, 121
+--- ultimo punto : 1325, 72
+Angoli!! 18
+--------angolo: -2.325367
+--------angolo da provare : 0.000000
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 0.785398
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 1.570796
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 2.356194
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 3.141593
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: 3.141593
+--------angolo da provare : -0.785398
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+--------angolo scelto: -0.785398
+--------angolo da provare : -1.570796
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: -1.570796
+--------angolo da provare : -2.356194
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
@@ -43453,153 +43574,43 @@ Algorithm correct
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm correct
+--------angolo scelto: -1.570796
 Algorithm INcorrect
 kappa: 0.010000, 0.000000, -0.010000 
---------angolo: 0.785398
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
+(sample) start 
+(sample) end 
+Punti inseriti : 10
+(sample) start 
+(sample) end 
+Punti inseriti : 51
+(sample) start 
+(sample) end 
+Punti inseriti : 52
+(function_L) 0
+--------angolo: -1.570796
+--------angolo da provare : 0.000000
 Algorithm INcorrect
 Algorithm correct
 Algorithm correct
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
-Algorithm INcorrect
 Algorithm correct
 Algorithm INcorrect
 Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 0.785398
 Algorithm INcorrect
 Algorithm correct
 Algorithm correct
 Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
+Algorithm correct
 Algorithm INcorrect
 Algorithm correct
 Algorithm INcorrect
-Algorithm INcorrect
 Algorithm correct
-Algorithm correct
-kappa: 0.010000, 0.000000, -0.010000 
---------angolo: 0.785398
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
+--------angolo scelto: 0.785398
+--------angolo da provare : 1.570796
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
@@ -43609,51 +43620,19 @@ Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm correct
+--------angolo scelto: 1.570796
+--------angolo da provare : 2.356194
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm correct
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
 Algorithm correct
 Algorithm INcorrect
 Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
+--------angolo scelto: 2.356194
+--------angolo da provare : 3.141593
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
@@ -43661,14 +43640,967 @@ Algorithm INcorrect
 Algorithm INcorrect
 Algorithm correct
 Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 3.141593
+--------angolo da provare : -0.785398
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: 3.141593
+--------angolo da provare : -1.570796
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 3.141593
+--------angolo da provare : -2.356194
+Algorithm INcorrect
+Algorithm correct
 Algorithm correct
 Algorithm correct
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: -2.356194
 Algorithm INcorrect
 kappa: -0.010000, 0.000000, -0.010000 
---------angolo: 0.000000
+(sample) start 
+(sample) end 
+Punti inseriti : 4
+(sample) start 
+(sample) end 
+Punti inseriti : 23
+(sample) start 
+(sample) end 
+Punti inseriti : 28
+(function_L) 0
+--------angolo: -2.356194
+--------angolo da provare : 0.000000
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: 0.000000
+--------angolo da provare : 0.785398
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: 0.785398
+--------angolo da provare : 1.570796
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 1.570796
+--------angolo da provare : 2.356194
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+--------angolo scelto: 2.356194
+--------angolo da provare : 3.141593
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 3.141593
+--------angolo da provare : -0.785398
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 3.141593
+--------angolo da provare : -1.570796
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 3.141593
+--------angolo da provare : -2.356194
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 3.141593
+Algorithm INcorrect
+kappa: -0.010000, 0.000000, -0.010000 
+(sample) start 
+(sample) end 
+Punti inseriti : 8
+(sample) start 
+(sample) end 
+Punti inseriti : 32
+(sample) start 
+(sample) end 
+Punti inseriti : 33
+(function_L) 0
+--------angolo: 3.141593
+--------angolo da provare : 0.000000
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 0.785398
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.785398
+--------angolo da provare : 1.570796
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 1.570796
+--------angolo da provare : 2.356194
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 2.356194
+--------angolo da provare : 3.141593
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+--------angolo scelto: 3.141593
+--------angolo da provare : -0.785398
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+--------angolo scelto: 3.141593
+--------angolo da provare : -1.570796
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+--------angolo scelto: 3.141593
+--------angolo da provare : -2.356194
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 3.141593
+Algorithm correct
+kappa: -0.010000, 0.000000, 0.010000 
+(sample) start 
+(sample) end 
+Punti inseriti : 1
+(sample) start 
+(sample) end 
+Punti inseriti : 27
+(sample) start 
+(sample) end 
+Punti inseriti : 28
+(function_L) 0
+--------angolo: 3.141593
+--------angolo da provare : 0.000000
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 0.785398
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.785398
+--------angolo da provare : 1.570796
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 1.570796
+--------angolo da provare : 2.356194
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+--------angolo scelto: 2.356194
+--------angolo da provare : 3.141593
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: 2.356194
+--------angolo da provare : -0.785398
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+--------angolo scelto: 2.356194
+--------angolo da provare : -1.570796
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+--------angolo scelto: 2.356194
+--------angolo da provare : -2.356194
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+--------angolo scelto: 2.356194
+Algorithm INcorrect
+kappa: -0.010000, 0.000000, -0.010000 
+(sample) start 
+(sample) end 
+Punti inseriti : 7
+(sample) start 
+(sample) end 
+Punti inseriti : 33
+(sample) start 
+(sample) end 
+Punti inseriti : 35
+(function_L) 0
+--------angolo: 2.356194
+--------angolo da provare : 0.000000
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 0.785398
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.785398
+--------angolo da provare : 1.570796
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.785398
+--------angolo da provare : 2.356194
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 2.356194
+--------angolo da provare : 3.141593
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+--------angolo scelto: 2.356194
+--------angolo da provare : -0.785398
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+--------angolo scelto: 2.356194
+--------angolo da provare : -1.570796
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+--------angolo scelto: 2.356194
+--------angolo da provare : -2.356194
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 2.356194
+Algorithm INcorrect
+kappa: -0.010000, 0.000000, 0.010000 
+(sample) start 
+(sample) end 
+Punti inseriti : 10
+(sample) start 
+(sample) end 
+Punti inseriti : 27
+(sample) start 
+(sample) end 
+Punti inseriti : 37
+(function_L) 0
+--------angolo: 2.356194
+--------angolo da provare : 0.000000
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 0.785398
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 1.570796
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 2.356194
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 2.356194
+--------angolo da provare : 3.141593
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 2.356194
+--------angolo da provare : -0.785398
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 2.356194
+--------angolo da provare : -1.570796
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 2.356194
+--------angolo da provare : -2.356194
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 2.356194
+Algorithm correct
+kappa: -0.010000, 0.000000, 0.010000 
+(sample) start 
+(sample) end 
+Punti inseriti : 2
+(sample) start 
+(sample) end 
+Punti inseriti : 12
+(sample) start 
+(sample) end 
+Punti inseriti : 14
+(function_L) 0
+--------angolo: 2.356194
+--------angolo da provare : 0.000000
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 0.785398
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 1.570796
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 2.356194
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 3.141593
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: 0.000000
+--------angolo da provare : -0.785398
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: -0.785398
+--------angolo da provare : -1.570796
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: -0.785398
+--------angolo da provare : -2.356194
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: -0.785398
+Algorithm INcorrect
+kappa: 0.010000, 0.000000, -0.010000 
+(sample) start 
+(sample) end 
+Punti inseriti : 36
+(sample) start 
+(sample) end 
+Punti inseriti : 55
+(sample) start 
+(sample) end 
+Punti inseriti : 60
+(function_L) 0
+--------angolo: -0.785398
+--------angolo da provare : 0.000000
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 0.785398
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 1.570796
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 2.356194
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 3.141593
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: 0.000000
+--------angolo da provare : -0.785398
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+--------angolo scelto: -0.785398
+--------angolo da provare : -1.570796
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: -1.570796
+--------angolo da provare : -2.356194
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+--------angolo scelto: -1.570796
+Algorithm INcorrect
+kappa: -0.010000, 0.000000, -0.010000 
+(sample) start 
+(sample) end 
+Punti inseriti : 2
+(sample) start 
+(sample) end 
+Punti inseriti : 42
+(sample) start 
+(sample) end 
+Punti inseriti : 49
+(function_L) 0
+--------angolo: -1.570796
+--------angolo da provare : 0.000000
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 0.785398
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+>>>>>>> new_collision
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.785398
+--------angolo da provare : 1.570796
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 3.141593
+--------angolo da provare : -1.570796
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+--------angolo scelto: 3.141593
+--------angolo da provare : -2.356194
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+--------angolo scelto: 2.356194
+--------angolo da provare : -1.570796
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+--------angolo scelto: 2.356194
+--------angolo da provare : -2.356194
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+kappa: 0.010000, 0.000000, -0.010000 
+--------angolo: 0.785398
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 1.570796
+--------angolo da provare : 2.356194
+(function_L) angolo saltato 
+--------angolo da provare : 3.141593
+(function_L) angolo saltato 
+--------angolo da provare : -0.785398
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 1.570796
+--------angolo da provare : -1.570796
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+--------angolo scelto: 1.570796
+--------angolo da provare : -2.356194
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+--------angolo scelto: -2.356194
+Algorithm correct
+kappa: 0.010000, 0.000000, 0.010000 
+(sample) start 
+(sample) end 
+Punti inseriti : 2
+(sample) start 
+(sample) end 
+Punti inseriti : 11
+(sample) start 
+(sample) end 
+Punti inseriti : 65
+(function_L) 0
+--------angolo: -2.356194
+--------angolo da provare : 0.000000
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.785398
+--------angolo da provare : 1.570796
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 1.570796
+--------angolo da provare : 2.356194
+Algorithm INcorrect
 Algorithm correct
 Algorithm correct
 Algorithm INcorrect
@@ -43679,6 +44611,120 @@ Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+kappa: 0.010000, 0.000000, -0.010000 
+--------angolo: 0.785398
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 1.570796
+--------angolo da provare : -0.785398
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 1.570796
+--------angolo da provare : -1.570796
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+--------angolo scelto: 1.570796
+--------angolo da provare : -2.356194
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: 1.570796
+Algorithm INcorrect
+kappa: -0.010000, 0.000000, -0.010000 
+(sample) start 
+(sample) end 
+Punti inseriti : 15
+(sample) start 
+(sample) end 
+Punti inseriti : 34
+(sample) start 
+(sample) end 
+Punti inseriti : 43
+(function_L) 0
+--------angolo: 1.570796
+--------angolo da provare : 0.000000
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 0.785398
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 0.000000
+--------angolo da provare : 1.570796
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 1.570796
+--------angolo da provare : 2.356194
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 1.570796
+--------angolo da provare : 3.141593
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 1.570796
+--------angolo da provare : -0.785398
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
@@ -43696,6 +44742,95 @@ Algorithm correct
 Algorithm correct
 Algorithm correct
 Algorithm INcorrect
+--------angolo scelto: 1.570796
+--------angolo da provare : -2.356194
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: 0.000000
+--------angolo da provare : 1.570796
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: -0.785398
+--------angolo da provare : -2.356194
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: 0.000000
+--------angolo da provare : 3.141593
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: 0.000000
+--------angolo da provare : -0.785398
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: 0.000000
+--------angolo da provare : -1.570796
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 1.570796
+--------angolo da provare : 3.141593
+Algorithm INcorrect
+Algorithm correct
+--------angolo scelto: 1.570796
+--------angolo da provare : -0.785398
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 1.570796
+--------angolo da provare : -1.570796
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 1.570796
+--------angolo da provare : -2.356194
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm correct
+Algorithm INcorrect
+Algorithm INcorrect
+--------angolo scelto: 1.570796
+--------angolo da provare : 2.356194
+Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
@@ -43706,60 +44841,9 @@ Algorithm correct
 Algorithm correct
 Algorithm INcorrect
 Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
+--------angolo scelto: 3.141593
+--------angolo da provare : -1.570796
 Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm correct
-Algorithm correct
-Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm INcorrect
-Algorithm correct
-Algorithm INcorrect
-Algorithm correct
-Algorithm correct
-Algorithm correct
-Algorithm INcorrect
-Algorithm INcorrect
 Algorithm INcorrect
 Algorithm INcorrect
 Algorithm correct
