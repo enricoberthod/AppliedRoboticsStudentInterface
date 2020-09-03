@@ -290,6 +290,7 @@ bool isObstaclePoint(int x, int y, const std::vector<std::vector<cv::Point>>& co
 		res = cv::pointPolygonTest(contours[i] , cv::Point2f(x,y) , true);
 		if(res >= 0 || x <= margine || x >= max_X || y <= margine || y >= max_Y) {		
 			r = true;		
-	}
+		}
 	return r;
+	}
 }
