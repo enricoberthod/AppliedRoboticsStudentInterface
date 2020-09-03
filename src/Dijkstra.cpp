@@ -1,12 +1,15 @@
-/////////////////////////////////////////////////
-	// C / C++ program for Dijkstra's shortest path algorithm for adjacency 
-// list representation of graph 
+// C / C++ program for Dijkstra's shortest path algorithm for adjacency, thanks to https://www.geeksforgeeks.org/
 
 #include "Dijkstra.h"
 #include <stdio.h>
 #include <limits.h>
 
-// A utility function to create a new adjacency list node 
+/* function newAdjListNode: utility function to create a new adjacency list node 
+   -parameters:
+   	dest: destination node
+	wejght: weight of the edge
+    -return: the new AdjListNode 
+*/
 struct AdjListNode* newAdjListNode(int dest, int weight) 
 { 
     struct AdjListNode* newNode = 
@@ -17,54 +20,72 @@ struct AdjListNode* newAdjListNode(int dest, int weight)
     return newNode; 
 } 
   
-// A utility function that creates a graph of V vertices 
+
+/* function createGraph: utility function that creates a graph of V vertices 
+   -parameters:
+   	V: number of vertices of the graph
+    -return: the new graph
+*/
 struct Graph* createGraph(int V) 
 { 
     struct Graph* graph = (struct Graph*) malloc(sizeof(struct Graph)); 
     graph->V = V; 
   
-    // Create an array of adjacency lists.  Size of array will be V 
+    //create an array of adjacency lists. Size of array will be V 
     graph->array = (struct AdjList*) malloc(V * sizeof(struct AdjList)); 
   
-     // Initialize each adjacency list as empty by making head as NULL 
+    //initialize each adjacency list as empty by making head as NULL 
     for (int i = 0; i < V; ++i) 
         graph->array[i].head = NULL; 
   
     return graph; 
 };
-  
-// Adds an edge to an undirected graph 
+ 
+
+/* function addEdge: adds an edge to an undirected graph 
+   -parameters:
+   	graph: the graph
+	src: source 
+	dest: destination
+	weight: edge weight from src to dest	
+    -return: none
+*/
 void addEdge(struct Graph* graph, int src, int dest, int weight) 
 { 
-    // Add an edge from src to dest.  A new node is added to the adjacency 
-    // list of src.  The node is added at the begining 
+    //add an edge from src to dest.  A new node is added to the adjacency list of src.  The node is added at the begining 
     struct AdjListNode* newNode = newAdjListNode(dest, weight); 
     newNode->next = graph->array[src].head; 
     graph->array[src].head = newNode; 
   
-    // Since graph is undirected, add an edge from dest to src also 
+    //since graph is undirected, add an edge from dest to src also 
     newNode = newAdjListNode(src, weight); 
     newNode->next = graph->array[dest].head; 
     graph->array[dest].head = newNode; 
 } 
   
-// Structure to represent a min heap node 
+//structure to represent a min heap node 
 struct MinHeapNode 
 { 
     int  v; 
     int dist; 
 }; 
   
-// Structure to represent a min heap 
+//structure to represent a min heap 
 struct MinHeap 
 { 
-    int size;      // Number of heap nodes present currently 
-    int capacity;  // Capacity of min heap 
-    int *pos;     // This is needed for decreaseKey() 
+    int size;      //number of heap nodes present currently 
+    int capacity;  //capacity of min heap 
+    int *pos;     // this is needed for decreaseKey() 
     struct MinHeapNode **array; 
 }; 
   
-// A utility function to create a new Min Heap Node 
+
+/* function MinHeapNode: utility function to create a new Min Heap Node 
+   -parameters:
+   	v: the vertex
+	dist: distance
+    -return: minHeapNode
+*/
 struct MinHeapNode* newMinHeapNode(int v, int dist) 
 { 
     struct MinHeapNode* minHeapNode = 
@@ -74,7 +95,12 @@ struct MinHeapNode* newMinHeapNode(int v, int dist)
     return minHeapNode; 
 } 
   
-// A utility function to create a Min Heap 
+
+/* function createMinHeap: utility function to create a Min Heap 
+   -parameters:
+   	capacity: the cpacity
+    -return: minHeap
+*/
 struct MinHeap* createMinHeap(int capacity) 
 { 
     struct MinHeap* minHeap = 
@@ -87,7 +113,13 @@ struct MinHeap* createMinHeap(int capacity)
     return minHeap; 
 } 
   
-// A utility function to swap two nodes of min heap. Needed for min heapify 
+
+/* function swapMinHeapNode: utility function to swap two nodes of min heap. Needed for min heapify 
+   -parameters:
+   	a: first MinHeapNode
+	b: second MinHeapNode
+    -return: minHeap
+*/
 void swapMinHeapNode(struct MinHeapNode** a, struct MinHeapNode** b) 
 { 
     struct MinHeapNode* t = *a; 
@@ -115,15 +147,15 @@ void minHeapify(struct MinHeap* minHeap, int idx)
   
     if (smallest != idx) 
     { 
-        // The nodes to be swapped in min heap 
+        //the nodes to be swapped in min heap 
         MinHeapNode *smallestNode = minHeap->array[smallest]; 
         MinHeapNode *idxNode = minHeap->array[idx]; 
   
-        // Swap positions 
+        //swap positions 
         minHeap->pos[smallestNode->v] = idx; 
         minHeap->pos[idxNode->v] = smallest; 
   
-        // Swap nodes 
+        //swap nodes 
         swapMinHeapNode(&minHeap->array[smallest], &minHeap->array[idx]); 
   
         minHeapify(minHeap, smallest); 
@@ -193,52 +225,43 @@ bool isInMinHeap(struct MinHeap *minHeap, int v)
    return false; 
 } 
   
+/* function storePath: function that stores the best path start to end using the paths computed in Dijkstra
+   -parameters:
+   	path: the path computed by Dijkstra 
+	j: the destination node
+	startEndPath: the path from start to end
+    -return: none
+*/
 void storePath(int path[],int j,std::vector<int> startEndPath[])
 {
 	if(path[j]==-1)
 		return;
 	storePath(path,path[j],startEndPath);
-		//std::cout << " " << j;
 	startEndPath->push_back(j);
 }
-
-/*
-void printPath(int path[],int j)
-{
-	if(path[j]==-1)
-		return;
-	printPath(path,path[j]);
-		std::cout << " " << j;
-}
-*/
-/*
-// A utility function used to print the solution 
-void printArr(int dist[], int n, int path[]) 
-{ 
-    printf("Vertex   Distance from Source          Path\n"); 
-    for (int i = 0; i < n; ++i) 
-    {
-        printf("\n%d \t\t %d \t\t", i, dist[i]); 
-	printPath(path,i);
-    }
-}
-*/
   
+
+/* function dijkstra: function that calulates distances of shortest paths from src to all vertices 
+   -parameters:
+   	graph: the graph representing the road map 
+	src: source node
+	dest: destination node
+	path: array where to store the solution of the Dijkstra algorithm
+	j: the destination node
+	startEndPath: the path from start to end
+    -return: none
+*/
 // The main function that calulates distances of shortest paths from src to all 
 // vertices. It is a O(ELogV) function 
 void dijkstra(struct Graph* graph, int src, int dest, int path[]) 
 { 
-    int V = graph->V;// Get the number of vertices in graph 
-    int dist[V];      // dist values used to pick minimum weight edge in cut 
-
-    bool pathFound=false;
+    int V = graph->V; //get the number of vertices in graph 
+    int dist[V];      //dist values used to pick minimum weight edge in cut 
   
-    // minHeap represents set E 
+    //minHeap represents set E 
     struct MinHeap* minHeap = createMinHeap(V); 
   
-   //std::cout << "V2: " << V << std::endl;
-
-    // Initialize min heap with all vertices. dist value of all vertices  
+    //initialize min heap with all vertices. dist value of all vertices  
     for (int v = 0; v < V; ++v) 
     { 
         dist[v] = INT_MAX; 
@@ -247,48 +270,37 @@ void dijkstra(struct Graph* graph, int src, int dest, int path[])
 	 	path[v]=-1;
     } 
   
-    // Make dist value of src vertex as 0 so that it is extracted first 
+    //make dist value of src vertex as 0 so that it is extracted first 
     minHeap->array[src] = newMinHeapNode(src, dist[src]); 
     minHeap->pos[src]   = src; 
     dist[src] = 0; 
     decreaseKey(minHeap, src, dist[src]); 
   
-    // Initially size of min heap is equal to V 
+    //initially size of min heap is equal to V 
     minHeap->size = V; 
   
-    // In the followin loop, min heap contains all nodes 
-    // whose shortest distance is not yet finalized. 
+    //in the followin loop, min heap contains all nodes whose shortest distance is not yet finalized. 
     while (!isEmpty(minHeap)) 
     { 
-        // Extract the vertex with minimum distance value 
+        //extract the vertex with minimum distance value 
         struct MinHeapNode* minHeapNode = extractMin(minHeap); 
         int u = minHeapNode->v; // Store the extracted vertex number 
   
-        // Traverse through all adjacent vertices of u (the extracted 
-        // vertex) and update their distance values 
+        //traverse through all adjacent vertices of u (the extracted vertex) and update their distance values 
         struct AdjListNode* pCrawl = graph->array[u].head; 
         while (pCrawl != NULL) 
         { 
             int v = pCrawl->dest; 
-  
-            // If shortest distance to v is not finalized yet, and distance to v 
-            // through u is less than its previously calculated distance 
-            if (isInMinHeap(minHeap, v) && dist[u] != INT_MAX &&  
-                                          pCrawl->weight + dist[u] < dist[v]) 
+
+            //if shortest distance to v is not finalized yet, and distance to v through u is less than its previously calculated distance 
+            if (isInMinHeap(minHeap, v) && dist[u] != INT_MAX && pCrawl->weight + dist[u] < dist[v]) 
             { 
                 dist[v] = dist[u] + pCrawl->weight; 
-  				path[v]=u;
-                // update distance value in min heap also 
+  		path[v]=u;
+                //update distance value in min heap also 
                 decreaseKey(minHeap, v, dist[v]); 
             } 
             pCrawl = pCrawl->next; 
         } 
     } 
-   
-    // print the calculated shortest distances 
-    //printArr(dist, V, path); 
-	//std::cout  << std::endl;
-
 } 
-
-//////////////////////////////////////////////////
