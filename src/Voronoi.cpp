@@ -291,6 +291,6 @@ bool isObstaclePoint(int x, int y, const std::vector<std::vector<cv::Point>>& co
 		if(res >= 0 || x <= margine || x >= max_X || y <= margine || y >= max_Y) {		
 			r = true;		
 		}
-	return r;
 	}
+	return r;
 }
