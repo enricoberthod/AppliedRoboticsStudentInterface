@@ -49,7 +49,7 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 	std::cout << "max_offset -> " << max_offset << std::endl;
 
 	max_offset_vic = (int)param["max_offset_vic"];
-	std::cout << "max_offset -> " << max_offset << std::endl;
+	std::cout << "max_offset_vic -> " << max_offset_vic << std::endl;
 
 	offset = (int)param["offset"];
 	std::cout << "offset -> " << offset << std::endl;

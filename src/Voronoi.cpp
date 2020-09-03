@@ -177,7 +177,7 @@ int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::unordered_map
 							visitedIds.push_back(longId);
 							id2=(visitedIds.size()-1);
 						}
-						if(xa>50 && xa<max_X && ya>50 && ya<max_Y && xb>50 && xb<max_X && yb>50 && yb<max_Y)	//limite inferiore
+						if(xa>margine && xa<max_X && ya>margine && ya<max_Y && xb>margine && xb<max_X && yb>margine && yb<max_Y)	//limite inferiore
 						{
 							GraphEdge e(xa,ya,xb,yb,len,id1,id2);
 							GraphEdge e1(xb,yb,xa,ya,len,id2,id1);
@@ -199,7 +199,7 @@ int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::unordered_map
 	//Add the last node to the result points array
 	if(!isObstaclePoint(xb,yb,contours))
 	{
-		if(xb>50 && xb<max_X && yb>50 && yb<max_Y)		//limite inferiore
+		if(xb>margine && xb<max_X && yb>margine && yb<max_Y)		//limite inferiore
 		{
 			VoronoiPoint p(xb,yb);
 			results->resultPoints.push_back(p);
@@ -300,7 +300,7 @@ bool isObstaclePoint(int x, int y, const std::vector<std::vector<cv::Point>>& co
 	double res;
 	for (int i = 0; i < contours.size() && !r; i++) {
 		res = cv::pointPolygonTest(contours[i] , cv::Point2f(x,y) , true);
-		if(res >= 0 || x <= 50 || x >= max_X || y <= 50 || y >= max_Y) {		//da mettere limite inferiore
+		if(res >= 0 || x <= margine || x >= max_X || y <= margine || y >= max_Y) {		//da mettere limite inferiore
 			r = true;
 			//std::cout << "INSIDE!!! " << res << " -> " << " punto <" << x << ", " << y << ">" << " -> " << r << std::endl;
 		}

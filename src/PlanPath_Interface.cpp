@@ -53,7 +53,7 @@ void plan_Path123(const Polygon& borders, const std::vector<Polygon>& obstacle_l
 	//path.points.emplace_back(1,2,3,1,2);
 
 	
-	int margine = 50; //offset per il bordo
+	//int margine = 50; //offset per il bordo
 	
 	
 	

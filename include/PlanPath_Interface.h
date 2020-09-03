@@ -27,5 +27,7 @@ std::vector<float> IDP(float, std::vector<VoronoiPoint> &, Path &);
 void function_L_doppio(int, float, std::vector<VoronoiPoint> &, std::vector<float> &, Path &, bool);
 bool collision_detection(double, double, const std::vector<std::vector<cv::Point>> &);
 
+//const int margine = 50; //offset per il bordo
+
 #endif
 

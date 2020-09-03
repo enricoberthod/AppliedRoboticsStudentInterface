@@ -43,4 +43,6 @@ void Voronoi(std::vector<VoronoiPoint>,std::vector<Segment>,std::unordered_map<i
 int encoder(int, int);
 void decoder(int, int &, int &);
 
+const int margine = 50; //offset per il bordo
+
 #endif
