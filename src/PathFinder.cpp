@@ -19,68 +19,65 @@ bool edgeOnObstacle(VoronoiPoint, VoronoiPoint, const std::vector<std::vector<cv
 bool findCollision(double, double, const std::vector<std::vector<cv::Point>>&); 
 void connector_netpoints(VoronoiPoint, int, int, int, int, double, VoronoiResults *, int, const std::vector<std::vector<cv::Point>>&);
 void connector_singlepoint(VoronoiPoint, int, int, int, int, double, VoronoiResults *, const std::vector<std::vector<cv::Point>>&);
-//int encoder(int, int);
-//void decoder(int, int &, int &);
 
+/* function PathFinder: function which computes the best path from the start point to the end point given the road map and the following parameters
+   -parameters:
+   	start: starting point of the path 
+	startNew: boolean which indicates if the start point is already in the road map (false) or not (true)
+	end: ending point of the path
+	endNew: boolean which indicates if the end point is already in the road map (false) or not (true)
+	voronoiPaths: the road map
+	rightPath: the solution vector which contains the points to follow from start to end
+	netRadius: indicates the distance from the end point to the cloud of points generated around it (m1 porpouses)
+	obsContours: vector which contains the expanded obstacles points 
+	victim_list: vector which contains the victims
+	config_folder: path to reach the param.xml config file
+    -return: no retun 
+*/
 void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew, VoronoiResults *voronoiPaths, std::vector<VoronoiPoint> *rightPath, int netRadius, const std::vector<std::vector<cv::Point>>& obsContours, const std::vector<std::pair<int,Polygon>> *victim_list, const std::string& config_folder)
 {
-	int offset;
-	int offset_2;
-	int max_offset;
-	int max_offset_vic;
-	int offset_3;
-	int step;
-	int nConnections;
-	int idPos;
-	int victimGain;
-	int const netPointsNumber = 4;
-	std::vector<GraphEdge> start_connection, end_connection;
-	std::vector<VoronoiPoint> netVertex;
+	int offset; //offset indicates the initial offset in which a point (start or end or victim) can connect itself to the road map points
+	int offset_2; //offset_2 indicates the initial offset in which a point (start or end or victim) can connect itself to the road map points (m1 porpouses)
+	int max_offset; //max_offset indicates the max distance in which a point (start or end) can connect itself to the road map points
+	int max_offset_vic; //max_offset_vic indicates the max distance in which a point (victim) can connect itself to the road map points
+	int step; //step indicate sthe amount to add to offset each time until to reach the max_offset or max_offset_vic
+	int nConnections; //nConnections indicate sthe max number of road map points that can be connected to the point (estart or end or victim)
+	int idPos;//TODO MAYBE TO DELETE
+	int victimGain; //victimGain indicates the gain in seconds the robot earns if it saves a victim (m2 porpuses) 
+	int const netPointsNumber = 4; //netPointsNumber indicates the number of points which compose the cloud of points around a point (victim) (m1 porpouses)
+	std::vector<GraphEdge> start_connection, end_connection;//TODO MAYBE TO DELETE
+	std::vector<VoronoiPoint> netVertex; //vector which contains the cloud of points around a point (victim) and point itself (m1 porpouses)
 
-	//--lettura file parametri
-	
+	//read parameter from param.xml	
 	std::string file = config_folder+"/param.xml";
 	cv::FileStorage param(file, cv::FileStorage::READ);
 
+	//victimGain indicates the gain in seconds the robot earns if it saves a victim (m2 porpuses) 
 	victimGain = (int)param["victimGain"];
-	std::cout << "victimGain -> " << victimGain << std::endl;
 	
-	max_offset = (int)param["max_offset"];
-	std::cout << "max_offset -> " << max_offset << std::endl;
-
-	max_offset_vic = (int)param["max_offset_vic"];
-	std::cout << "max_offset_vic -> " << max_offset_vic << std::endl;
-
+	//offset indicates the initial offset in which a point (start or end or victim) can connect itself to the road map points
 	offset = (int)param["offset"];
-	std::cout << "offset -> " << offset << std::endl;
-
-	nConnections = (int)param["nConnections"];
-	std::cout << "nConnections -> " << nConnections << std::endl;
-
+	
+	//step indicate sthe amount to add to offset each time until to reach the max_offset or max_offset_vic
 	step = (int)param["step"];
-	std::cout << "step -> " << step << std::endl;
 	
-	//--
+	//max_offset indicates the max distance in which a point (start or end) can connect itself to the road map points
+	max_offset = (int)param["max_offset"];
 
-	//std::vector<GraphEdge> point_connections
-	
-	//connect(offset, start, end, voronoiPaths, true, true, &start_connection, &end_connection);
-	
+	//max_offset_vic indicates the max distance in which a point (victim) can connect itself to the road map points
+	max_offset_vic = (int)param["max_offset_vic"];
+
+	//nConnections indicate sthe max number of road map points that can be connected to the point (estart or end or victim)
+	nConnections = (int)param["nConnections"];
+
+	//if start point is not alredy in the road map (true)	
 	if(startNew)
 	{
-		//if(victim_list == NULL)	
-			connector_singlepoint(start, offset, step, max_offset, nConnections, victimGain, voronoiPaths, obsContours);
-		//else
-		//	connector_singlepoint(start, offset, step, max_offset, nConnections, 0, voronoiPaths, obsContours);
-		/*startLongId=encoder(start.a, start.b);	
-		voronoiPaths->ids.push_back(startLongId);
-		std::cout << "start id " <<  startLongId << "    size : " << voronoiPaths->ids.size() << std::endl;
-
-		connect(offset, start, voronoiPaths, true, &start_connection, -1, obsContours); //-1 indicate sthe right id is the last in ids vector
-		startSize=start_connection.size();
-		std::cout << "start Size ingress " <<  startSize << std::endl; */	
+		//connect the start point to the road map 
+		connector_singlepoint(start, offset, step, max_offset, nConnections, victimGain, voronoiPaths, obsContours);
 	}
 	
+	//if end point is not alredy in the road map (true)
 	if(endNew)
 	{
 		if(netRadius>0)
