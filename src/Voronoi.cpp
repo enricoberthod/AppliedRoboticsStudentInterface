@@ -24,7 +24,6 @@ using boost::polygon::y;
 using boost::polygon::low;
 using boost::polygon::high;
 
-//bool isObstaclePoint(double, double, std::unordered_map<int,VoronoiPoint>);
 bool isObstaclePoint(int, int, const std::vector<std::vector<cv::Point>>& contours);
 void removeObstacles(std::vector<VoronoiPoint>, VoronoiResults*);
 void remove(std::vector<VoronoiPoint>, VoronoiResults*);
@@ -33,10 +32,6 @@ int visited(std::vector<int>, int);
 int victimGain;
 int max_X;
 int max_Y;
-//int encoder(int, int);
-//void decoder(int, int &, int &);
-
-//#include "voronoi_visual_utils.hpp"
 
 namespace boost {
 namespace polygon {
@@ -74,7 +69,7 @@ struct segment_traits<Segment> {
 }  // polygon
 }  // boost
 
-// Traversing Voronoi edges using edge iterator.
+//traversing Voronoi edges using edge iterator.
 int iterate_primary_edges1(const voronoi_diagram<double>& vd) {
   int result = 0;
   for (voronoi_diagram<double>::const_edge_iterator it = vd.edges().begin();
@@ -85,7 +80,7 @@ int iterate_primary_edges1(const voronoi_diagram<double>& vd) {
   return result;
 }
 
-// Traversing Voronoi edges using cell iterator.
+//traversing Voronoi edges using cell iterator.
 int iterate_primary_edges2(const voronoi_diagram<double> &vd) {
   int result = 0;
   for (voronoi_diagram<double>::const_cell_iterator it = vd.cells().begin();
@@ -107,7 +102,8 @@ int iterate_primary_edges2(const voronoi_diagram<double> &vd) {
 // edges without finite endpoints and will iterate only once through edges
 // with single finite endpoint.
 //int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::unordered_map<int,VoronoiPoint>*points_map, VoronoiResults *results) {
-int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::unordered_map<int,VoronoiPoint>*points_map, const std::vector<std::vector<cv::Point>>& contours, VoronoiResults *results) {
+int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::unordered_map<int,VoronoiPoint>*points_map, const std::vector<std::vector<cv::Point>>& contours, VoronoiResults *results) 
+{
   	int result = 0;
 	const voronoi_diagram<double>::vertex_type* startVertex;
 	const voronoi_diagram<double>::vertex_type* endVertex;
@@ -127,11 +123,7 @@ int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::unordered_map
 		double y = vertex.y();
 		double len;
 		
-		//VoronoiPoint point(x,y);
-		//results->resultPoints.push_back(point);
-    // This is convenient way to iterate edges around Voronoi vertex.
-		
-		
+    		// This is convenient way to iterate edges around Voronoi vertex.	
     		do {
       			if (edge->is_primary())
 			{
@@ -142,43 +134,41 @@ int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::unordered_map
 				{
 					xa = (int)startVertex->x();
 					ya = (int)startVertex->y();
-					//if(!isObstaclePoint(xa,ya,*points_map))
+					
+					//if the point is not an obstacle 
 					if(!isObstaclePoint(xa,ya,contours))
 					{
 						xb = (int)endVertex->x();  
 						yb = (int)endVertex->y();
+						//compute the distance between A e B
 						len=sqrt(pow((xa-xb),2)+pow((ya-yb),2));
+						//add the space gain that the robot ears if it saves a victim 
 						len=len+victimGain;
-						 printf("len in voronoi: %f \n",len);
+						
 						if(xa!=prev_xa || ya!=prev_ya)
 						{
-						/*
-							if(ya<1000)
-								longId=(xa*1000)+ya;
-							else
-								longId=(xa*10000)+ya;*/
 							longId=encoder(xa,ya);
 							id1=visited(visitedIds,longId);
+							//if not already visited, mark as visited node
 							if(id1==-1)
 							{
 								visitedIds.push_back(longId);
 								id1=(visitedIds.size()-1);
 							}
 						}
-						/*
-						if(yb<1000)
-							longId=(xb*1000)+yb;
-						else
-							longId=(xb*10000)+yb;*/
+					
 						longId=encoder(xb,yb);
 						id2=visited(visitedIds,longId);
+						//if not already visited, mark as visited node
 						if(id2==-1)
 						{
 							visitedIds.push_back(longId);
 							id2=(visitedIds.size()-1);
 						}
-						if(xa>margine && xa<max_X && ya>margine && ya<max_Y && xb>margine && xb<max_X && yb>margine && yb<max_Y)	//limite inferiore
+						//if is inside the arena
+						if(xa>margine && xa<max_X && ya>margine && ya<max_Y && xb>margine && xb<max_X && yb>margine && yb<max_Y)	
 						{
+							//add at the result edges the edge between A e B and viceversa
 							GraphEdge e(xa,ya,xb,yb,len,id1,id2);
 							GraphEdge e1(xb,yb,xa,ya,len,id2,id1);
 							results->resultEdges.push_back(e);
@@ -189,17 +179,18 @@ int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::unordered_map
 					}
 					prev_xa=xa;
 					prev_ya=ya;
-					//printf("vertex (%i, %i): (%i,%i),(%i,%i)  \n", id1,id2,xa,ya,xb,yb);
 				}
 			}
       			edge = edge->rot_next();
 		} while (edge != vertex.incident_edge());
   	}
-	//if(!isObstaclePoint(xb,yb,*points_map))
-	//Add the last node to the result points array
+	
+	//add the last node to the result points array
+	//if the point is not an obstacle 
 	if(!isObstaclePoint(xb,yb,contours))
 	{
-		if(xb>margine && xb<max_X && yb>margine && yb<max_Y)		//limite inferiore
+		//if is inside the arena
+		if(xb>margine && xb<max_X && yb>margine && yb<max_Y)		
 		{
 			VoronoiPoint p(xb,yb);
 			results->resultPoints.push_back(p);
@@ -210,6 +201,13 @@ int iterate_primary_edges3(const voronoi_diagram<double> &vd, std::unordered_map
   	return result;
 }
 
+
+/* function visited: function which returns if a node is new or not
+   -parameters:
+   	visitedIds: array of visited nodes
+	num: node number to check 
+    -return: the position in the visited array or -1 if not found 
+*/
 int visited(std::vector<int> visitedIds, int num)
 {
 	for(int i=0; i<visitedIds.size(); i++)
@@ -218,95 +216,80 @@ int visited(std::vector<int> visitedIds, int num)
 	return -1;
 }
 
-//void Voronoi(std::vector<VoronoiPoint>points, std::vector<Segment> segments, std::unordered_map<int,VoronoiPoint>points_map, VoronoiResults *results)
+/* function Voronoi: function which returns if a node is new or not //TODO MAYBE SOME PARAMETER ARE USELESS NOW ???
+   -parameters:
+   	points: obstacles points
+	segments: obstacles segments
+	points_map: obstacles verteces
+	contours: obstacle contours
+	b_x_max: //TODO
+	b_y_max: //TODO
+	results: the structure to store the road map
+	config_folder: path to reach the param.xml config file
+    -return: none
+*/
 void Voronoi(std::vector<VoronoiPoint>points, std::vector<Segment> segments, std::unordered_map<int,VoronoiPoint>points_map, const std::vector<std::vector<cv::Point>>& contours, float b_x_max, float b_y_max, VoronoiResults *results, const std::string& config_folder)
-// si può aggiungere un flag isObstaclePoint alla struttura di GraphEdge così da marchiare subito i vertici da togliere
 {
+  //read parameter from param.xml	
+  std::string file = config_folder+"/param.xml";
+  cv::FileStorage param(file, cv::FileStorage::READ);
 
-//--lettura file parametri
-	
-	std::string file = config_folder+"/param.xml";
-	cv::FileStorage param(file, cv::FileStorage::READ);
-	
-	victimGain = (int)param["victimGain"];
-	std::cout << "victimGain -> " << victimGain << std::endl;
-	
-//--
+  //victimGain indicates the gain in space the robot earns if it saves a victim (m2 porpuses) 
+  victimGain = (int)param["victimGain"]; //TODO add * spead_robot	
 
-	max_X = (int)b_x_max;
-	max_Y = (int)b_y_max;
+  max_X = (int)b_x_max;
+  max_Y = (int)b_y_max;
 
-	//printf("pppp %i\n",p.size());
-  // Construction of the Voronoi Diagram.
+  //construction of the Voronoi Diagram.
   voronoi_diagram<double> vd;
   construct_voronoi(points.begin(), points.end(), segments.begin(), segments.end(), &vd); 
-	printf("pippo c'è \n");
-  // Traversing Voronoi Graph.
-  {
-    printf("Traversing Voronoi graph.\n");
-    //printf("Number of visited primary edges using edge iterator: %d\n", iterate_primary_edges1(vd));
-		printf("pippo c'è \n");
-    //printf("Number of visited primary edges using cell iterator: %d\n", iterate_primary_edges2(vd));
-	//printf("Number of visited primary edges using vertex iterator: %d\n", iterate_primary_edges3(vd, &points_map, results));
-    printf("Number of visited primary edges using vertex iterator: %d\n", iterate_primary_edges3(vd, &points_map, contours, results));
-    printf("before points size: %i \n",results->resultPoints.size());
-    printf("before edge size: %i \n",results->resultEdges.size());
-
-	//removeObstacles(points,results);
-
-    //printf("after edge size: %i \n",results->resultEdges.size());
-  }
 	
-	
+  //traversing Voronoi Graph.
+  iterate_primary_edges3(vd, &points_map, contours, results);	
 }
-/*
-bool isObstaclePoint(double x, double y, std::unordered_map<int,VoronoiPoint>points_map)
-{
-	*//*
-	for(int i=0; i<points.size();i++)
-	{
-		if(x==points[i].a && y==points[i].b)
-			return true;
-	} *//*
-	//return false;
-	VoronoiPoint p;
-	int longId;
-	if(y<1000)
-		longId=(x*1000)+y;
-	else
-		longId=(x*10000)+y;
-	if(points_map.find(longId)==points_map.end())
-		return false;
-	else
-		return true;
-	//return points_map.contains(longId);
-	
-}
+
+/* function Voronoi: function which computes the encoded sequence x y 
+   -parameters:
+   	x: x coordinate
+	y: y coordinate
+    -return: the encoded sequence x y 
 */
-
 int encoder(int x, int y)
 {
 	return (x*10000)+y;
 }
 
+
+/* function Voronoi: function which computes x, y from the encoded sequence x y 
+   -parameters:
+   	encoded: the encoded sequence x y 
+   	x: solution x coordinate
+	y: solution y coordinate
+    -return: none
+*/
 void decoder(int encoded, int &x, int &y)    
 {
 	x=encoded/10000;
 	y=encoded-(x*10000);
 }
 
+
+/* function isObstaclePoint: function which computes if a point is on the obstacle
+   -parameters:
+   	x: x coordinate
+	y: y coordinate
+	contours: vectors of obstacles 
+    -return: true if the point is on the obstacle, false if not
+*/
 bool isObstaclePoint(int x, int y, const std::vector<std::vector<cv::Point>>& contours) {
 	bool r = false;
 	double res;
+	//for each obstacle
 	for (int i = 0; i < contours.size() && !r; i++) {
+		//check if the point is inside the obstacle
 		res = cv::pointPolygonTest(contours[i] , cv::Point2f(x,y) , true);
-		if(res >= 0 || x <= margine || x >= max_X || y <= margine || y >= max_Y) {		//da mettere limite inferiore
-			r = true;
-			//std::cout << "INSIDE!!! " << res << " -> " << " punto <" << x << ", " << y << ">" << " -> " << r << std::endl;
-		}
-		//else {
-			//std::cout << "OUTSIDE " << res << " punto <" << x << ", " << y << ">" << " -> " << r << std::endl;
-		//}
+		if(res >= 0 || x <= margine || x >= max_X || y <= margine || y >= max_Y) {		
+			r = true;		
 	}
 	return r;
 }
