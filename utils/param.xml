@@ -1,18 +1,28 @@
 <?xml version="1.0"?>
 <opencv_storage>
 
+<!--Integer-->
 <mission_type>1</mission_type>
 
+<!--Integer, in seconds-->
 <victimGain>50</victimGain>
+  
+<!--Float, in meter/seconds-->
+<robotSpeed>0.1</robotSpeed>
 
+<!--Integer, in millimeters-->
 <max_offset>500</max_offset>
 
+<!--Integer, in millimeters-->
 <max_offset_vic>1000</max_offset_vic>
 
+<!--Integer, in millimeters-->
 <offset>20</offset>
 
+<!--Integer-->
 <nConnections>30</nConnections>
 
+<!--Integer, in millimeters-->
 <step>100</step>
 
 </opencv_storage>
