@@ -36,7 +36,8 @@ bool PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 	int max_offset_vic; //max_offset_vic indicates the max distance in which a point (victim) can connect itself to the road map points
 	int step; //step indicate sthe amount to add to offset each time until to reach the max_offset or max_offset_vic
 	int nConnections; //nConnections indicate sthe max number of road map points that can be connected to the point (estart or end or victim)
-	int victimGain; //victimGain indicates the gain in seconds the robot earns if it saves a victim (m2 porpuses) 
+	int victimGain; //victimGain indicates the gain in space (mm) the robot earns if it saves a victim (m2 porpuses) 
+	float robotSpeed; //robotSpeed indicates the robot velocity
 	int const netPointsNumber = 4; //netPointsNumber indicates the number of points which compose the cloud of points around a point (victim) (m1 porpouses)
 	std::vector<VoronoiPoint> netVertex; //vector which contains the cloud of points around a point (victim) and point itself (m1 porpouses)
 	bool result = true; //variable become false if doesn't exist a path
@@ -44,9 +45,16 @@ bool PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 	//read parameter from param.xml	
 	std::string file = config_folder+"/param.xml";
 	cv::FileStorage param(file, cv::FileStorage::READ);
+	
+	//robotSpeed indicates the speds of the robot in m/s
+	robotSpeed = (float)param["robotSpeed"];
+	//convert m/s in mm/s
+	robotSpeed*1000;
 
 	//victimGain indicates the gain in space the robot earns if it saves a victim (m2 porpuses) 
-	victimGain = (int)param["victimGain"]; //TODO add * spead_robot
+	victimGain = (int)param["victimGain"];
+	//computes the gain in space (mm) given the gain in seconds and the robot velocity
+	victimGain = (int)(victimGain*robotSpeed)/2;
 	
 	//offset indicates the initial offset in which a point (start or end or victim) can connect itself to the road map points
 	offset = (int)param["offset"];
