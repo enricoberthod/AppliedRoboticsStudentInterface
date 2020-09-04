@@ -7,7 +7,7 @@
 #include "Voronoi.h"
 #include <opencv2/imgproc/imgproc.hpp>
 
-void PathFinder(VoronoiPoint, bool, VoronoiPoint, bool, VoronoiResults*, std::vector<VoronoiPoint> *, int, const std::vector<std::vector<cv::Point>>&, const std::vector<std::pair<int,Polygon>> *, const std::string&);
+bool PathFinder(VoronoiPoint, bool, VoronoiPoint, bool, VoronoiResults*, std::vector<VoronoiPoint> *, int, const std::vector<std::vector<cv::Point>>&, const std::vector<std::pair<int,Polygon>> *, const std::string&);
 void sampleSegment2(VoronoiPoint, VoronoiPoint, std::vector<VoronoiPoint>&);
 bool edgeOnObstacle(VoronoiPoint, VoronoiPoint, const std::vector<std::vector<cv::Point>>&);
 

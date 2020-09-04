@@ -8,7 +8,7 @@
 #include <stdio.h> 
 
 void connect(int, VoronoiPoint, VoronoiResults*, bool, double, std::vector<GraphEdge>*, int, const std::vector<std::vector<cv::Point>>&);
-void shortestPath(VoronoiPoint, bool, int, VoronoiPoint, bool, int, VoronoiResults *, std::vector<VoronoiPoint> *);
+bool shortestPath(VoronoiPoint, bool, int, VoronoiPoint, bool, int, VoronoiResults *, std::vector<VoronoiPoint> *);
 bool edgeOnObstacle(VoronoiPoint, VoronoiPoint, const std::vector<std::vector<cv::Point>>&);
 bool findCollision(double, double, const std::vector<std::vector<cv::Point>>&); 
 void connector_netpoints(VoronoiPoint, int, int, int, int, double, VoronoiResults *, int, const std::vector<std::vector<cv::Point>>&);
@@ -26,9 +26,9 @@ void connector_singlepoint(VoronoiPoint, int, int, int, int, double, VoronoiResu
 	obsContours: vector which contains the expanded obstacles points 
 	victim_list: vector which contains the victims
 	config_folder: path to reach the param.xml config file
-    -return: no retun 
+    -return: true if a path is found, false otherwise
 */
-void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew, VoronoiResults *voronoiPaths, std::vector<VoronoiPoint> *rightPath, int netRadius, const std::vector<std::vector<cv::Point>>& obsContours, const std::vector<std::pair<int,Polygon>> *victim_list, const std::string& config_folder)
+bool PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew, VoronoiResults *voronoiPaths, std::vector<VoronoiPoint> *rightPath, int netRadius, const std::vector<std::vector<cv::Point>>& obsContours, const std::vector<std::pair<int,Polygon>> *victim_list, const std::string& config_folder)
 {
 	int offset; //offset indicates the initial offset in which a point (start or end or victim) can connect itself to the road map points
 	int offset_2; //offset_2 indicates the initial offset in which a point (start or end or victim) can connect itself to the road map points (m1 porpouses)
@@ -39,6 +39,7 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 	int victimGain; //victimGain indicates the gain in seconds the robot earns if it saves a victim (m2 porpuses) 
 	int const netPointsNumber = 4; //netPointsNumber indicates the number of points which compose the cloud of points around a point (victim) (m1 porpouses)
 	std::vector<VoronoiPoint> netVertex; //vector which contains the cloud of points around a point (victim) and point itself (m1 porpouses)
+	bool result = true; //variable become false if doesn't exist a path
 
 	//read parameter from param.xml	
 	std::string file = config_folder+"/param.xml";
@@ -107,7 +108,7 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 		if(netRadius==0)
 		{
 			//call the shortestPath function (mission 0), -2 and -1 because the start is the second-last element and the gate is the last (but arrays are from 0 to size-1) 
-			shortestPath(start, startNew, -2, end, endNew, -1, voronoiPaths, rightPath);		
+			result = shortestPath(start, startNew, -2, end, endNew, -1, voronoiPaths, rightPath);		
 		}
 		else
 		{
@@ -126,7 +127,7 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 				posEnd=(1+victim_list->size())*(-1);
 			}
 			//call the shortestPath function
-			shortestPath(start, startNew, posStart, end, endNew, posEnd, voronoiPaths, rightPath);
+			result = shortestPath(start, startNew, posStart, end, endNew, posEnd, voronoiPaths, rightPath);
 		}
 	}
 	//if not mission 2 or there are no obstacles between start point and end point
@@ -145,6 +146,7 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 			rightPath->push_back(end);
 		}
 	}
+	return result;
 }
 
 /* function shortestPath: function which practically computes the best path from the start point to the end point 
@@ -157,9 +159,9 @@ void PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 	idEnd: the position of the end point in the ids array 
 	voronoiPaths: the road map
 	rightPath: the solution vector which contains the points to follow from start to end
-    -return: no retun 
+    -return: true if a path is found, false otherwise
 */
-void shortestPath(VoronoiPoint start, bool startNew, int idStart, VoronoiPoint end, bool endNew, int idEnd, VoronoiResults *voronoiPaths, std::vector<VoronoiPoint> *rightPath)
+bool shortestPath(VoronoiPoint start, bool startNew, int idStart, VoronoiPoint end, bool endNew, int idEnd, VoronoiResults *voronoiPaths, std::vector<VoronoiPoint> *rightPath)
 {
 	//V is the number of vertices of the graph
 	int V = voronoiPaths->ids.size(); 
@@ -199,9 +201,11 @@ void shortestPath(VoronoiPoint start, bool startNew, int idStart, VoronoiPoint e
 	//add the best path found using Dijkstra using the storePath function (see Dijkstra.cpp)
 	storePath(path,voronoiPaths->ids.size()+idEnd,&startEndPath);
 
-	//throw an error if there is no path from start point to end point
-	if(startEndPath.size()<2)
-		throw std::logic_error("STOP_possible_path_not_found");
+	//retirn false if there is no path from start point to end point
+	if(startEndPath.size()<2){
+		return false;
+		// TODO throw std::logic_error("STOP_possible_path_not_found");
+	}
 	
 	//if the start point is not in existing best path (chek due to mission 1)
 	if(startNew) {	
@@ -221,6 +225,7 @@ void shortestPath(VoronoiPoint start, bool startNew, int idStart, VoronoiPoint e
 		//if the end point is not in existing best path (chek due to mission 1)
 		rightPath->push_back(end);
 	}
+	return true;
 }
 
 

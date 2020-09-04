@@ -17,6 +17,7 @@ float angle;																						//
 float residual_s=0;																					// 
 std::vector<std::vector<float>> angoli_scartati;													// discarded angles
 std::vector<int> punti_inseriti;																	// keep track of the number of insertions in path
+bool result;																						// variable become false if doesn't exist a path
 
 /* function plan_Path_2: TODO
    -parameters:
@@ -53,7 +54,7 @@ bool plan_Path_2(const Polygon& borders, const std::vector<Polygon>& obstacle_li
 	b_x_max = (b_x_max * floatToInt) - margine;
 	b_y_max = (b_y_max * floatToInt) - margine;
 
-	// CLIPPER library to expand obstacles			TODO (clippper non comleta)
+	// CLIPPER library to expand obstacles			TODO (clippper non completa)
 	ClipperLib::Paths subj(obstacle_list.size());
 	ClipperLib::Paths solution(obstacle_list.size());
 
@@ -214,7 +215,7 @@ bool plan_Path_2(const Polygon& borders, const std::vector<Polygon>& obstacle_li
 	switch(mission_type) // 0 for robot-gate		1 for robot-victims_in_right_order-gate			2 for robot-victims-gate in min time
 	{
 	case 0: 
-		PathFinder(start, true, end, true, &voronoiPaths, &rightPath, 0, contours, NULL, config_folder);	// calculate the path
+		result = PathFinder(start, true, end, true, &voronoiPaths, &rightPath, 0, contours, NULL, config_folder);	// calculate the path
 	break;
 	case 1:
 		//find shortest path from robot to 1, 1 to 2, 2 to n, n to gate  (Mission 1)
@@ -230,7 +231,7 @@ bool plan_Path_2(const Polygon& borders, const std::vector<Polygon>& obstacle_li
 					end=VoronoiPoint((int)(victim_list[j].second[0].x*floatToInt),(int)(victim_list[j].second[0].y*floatToInt));
 					//find the shortest path
 					piecePath.clear();
-					PathFinder(start, firstTime, end, true, &voronoiPaths, &piecePath, 10, contours, NULL, config_folder); 
+					result = PathFinder(start, firstTime, end, true, &voronoiPaths, &piecePath, 10, contours, NULL, config_folder); 
 					//connect the piece of the path (victim to next victim) to the total one
 					rightPath.insert(rightPath.end(),piecePath.begin(),piecePath.end());
 					//the victim became the next starting point
@@ -243,16 +244,21 @@ bool plan_Path_2(const Polygon& borders, const std::vector<Polygon>& obstacle_li
 		//last call for connect the last victims with the gate
 		piecePath.clear();
 		if(victim_list.size()>0)
-			PathFinder(start, false, gate_pos, true, &voronoiPaths, &piecePath, 0, contours, NULL, config_folder);
+			result = PathFinder(start, false, gate_pos, true, &voronoiPaths, &piecePath, 0, contours, NULL, config_folder);
 		else
-			PathFinder(start, true, gate_pos, true, &voronoiPaths, &piecePath, 0, contours, NULL, config_folder);	// if there isn't victims
+			result = PathFinder(start, true, gate_pos, true, &voronoiPaths, &piecePath, 0, contours, NULL, config_folder);	// if there isn't victims
 		rightPath.insert(rightPath.end(),piecePath.begin(),piecePath.end()); 										// complete the path
 	break;
 	case 2: //Path which minimize the time for exit from the arena (Mission 2)
-		PathFinder(start, true, end, true, &voronoiPaths, &rightPath, 10, contours, &victim_list, config_folder);
+		result = PathFinder(start, true, end, true, &voronoiPaths, &rightPath, 10, contours, &victim_list, config_folder);
 	break;
 	default: throw std::logic_error("STOP_mission_type different from [0-2]"); break;
 	}	
+
+	// if PathFinder didn't find a path
+	if(!result) {
+		return result;
+	}
 
 	std::vector<VoronoiPoint> rightPathNew;									// optimized path
 	VoronoiPoint p1 = VoronoiPoint(rightPath[0].a,rightPath[0].b);
@@ -310,13 +316,13 @@ bool plan_Path_2(const Polygon& borders, const std::vector<Polygon>& obstacle_li
 	}
 	rightPathNew.insert(rightPathNew.end()-1, border_gate_pos);			// add the point to the path
 
-	IDP(theta, rightPathNew, path); 									// function to add the sample points to the simulator path
-	
+	result = IDP(theta, rightPathNew, path); 									// function to add the sample points to the simulator path
+	std::cout << "--- result --- " << result << std::endl;
 	std::cout << "--- START PATH --- " << std::endl;
 	for(int i=0; i<rightPathNew.size(); i++)
 		std::cout << "--> " << (i+1) << ": (" << rightPathNew[i].a << ", " << rightPathNew[i].b << ")" << std::endl;
 	std::cout << "--- END PATH --- " << std::endl;
-	return true;	
+	return result;	
 }
 
 /* function IDP: wrapper function for the first call of function_L_doppio() 
@@ -324,14 +330,14 @@ bool plan_Path_2(const Polygon& borders, const std::vector<Polygon>& obstacle_li
    	angolo_start_robot: angle of the robot at the beginning
 	rightPath: vector of path's points that the robot will reach
 	path: struct that will contain the path to follow
-    -return: vector of the angle of the robot in each rightPath's point
+    -return: true if a path is possible, false otherwise
 */
-std::vector<float> IDP(float angolo_start_robot, std::vector<VoronoiPoint> &rightPath, Path &path){
+bool IDP(float angolo_start_robot, std::vector<VoronoiPoint> &rightPath, Path &path){
 	std::vector<float> angoli;
 	angoli.resize(rightPath.size());
 	angoli[0]=angolo_start_robot;
-	function_L_doppio(0,angoli.at(0), rightPath, angoli, path, false);			// first call
-	return angoli;
+	bool r = function_L_doppio(0,angoli.at(0), rightPath, angoli, path, false);			// first call
+	return r;
 }
 
 /* function function_L_doppio: function that canclulate the entry angles for all points of the rightPath, call Dubins() and sample()  
@@ -343,9 +349,9 @@ std::vector<float> IDP(float angolo_start_robot, std::vector<VoronoiPoint> &righ
 	angoli: vector with all angles
 	path: struct that will contain the path to follow
 	finito: true if the program already compute the angle for this point, false otherwise
-    -return: no retun 
+    -return: true if a path is possible without collisions, false otherwise
 */
-void function_L_doppio(int j, float theta_j, std::vector<VoronoiPoint> &rightPath, std::vector<float> &angoli, Path &path, bool finito){
+bool function_L_doppio(int j, float theta_j, std::vector<VoronoiPoint> &rightPath, std::vector<float> &angoli, Path &path, bool finito){
 	float min_length = 999999999.0;	
 	int best_pidx;
 	D best_curve;	
@@ -353,6 +359,7 @@ void function_L_doppio(int j, float theta_j, std::vector<VoronoiPoint> &rightPat
 	bool salta = false;
 	bool fase_1_finita = false;
 	bool init = false;
+	bool r;
 
 	// when backtrack, discard the previous angle and remove the inserted points in path
 	if(finito) {
@@ -432,24 +439,34 @@ void function_L_doppio(int j, float theta_j, std::vector<VoronoiPoint> &rightPat
 			else {
 				angoli_scartati[j].emplace_back(angoli[j+1]);				// insert an angle to discard
 			}
-			// if all angles are discarded -> backtrack step
-			if (angoli_scartati[j].size() >= 8) {
+			// if all angles are discarded and it's not the bininning -> backtrack step
+			if (angoli_scartati[j].size() >= 8 && j>0) {
 				std::cout << std::endl;
 				fase_1_finita = true;
-				function_L_doppio(j-1, angoli.at(j-1), rightPath, angoli, path, fase_1_finita);			// backtrack step
-				theta_j = angoli.at(j);																	// new value for theta_j
+				r = function_L_doppio(j-1, angoli.at(j-1), rightPath, angoli, path, fase_1_finita);			// backtrack step
+				if (!r) {
+					return r;
+				}
+				theta_j = angoli.at(j);																		// new value for theta_j
 				fase_1_finita = false;
 				angoli_scartati[j].clear();
+			}
+			// if all angles are discarded and it's the bininning -> no path
+			else if (angoli_scartati[j].size() >= 8 && j==0) {
+				return false;
 			}
 			min_length = 999999999.0;	
 		}
 	} while(collision);
 	
 	if(j < (rightPath.size()-2) && !finito) {		
-		function_L_doppio(j+1, angoli.at(j+1), rightPath, angoli, path, fase_1_finita);			// call for the next point
+		return function_L_doppio(j+1, angoli.at(j+1), rightPath, angoli, path, fase_1_finita);				// call for the next point
 	}
 	else if(finito) {		// backtrack case, return the control to the right point
-		return;
+		return true;
+	}
+	else {
+		return true;
 	}
 }
 
