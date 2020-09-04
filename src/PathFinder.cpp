@@ -49,7 +49,7 @@ bool PathFinder(VoronoiPoint start, bool startNew, VoronoiPoint end, bool endNew
 	//robotSpeed indicates the speds of the robot in m/s
 	robotSpeed = (float)param["robotSpeed"];
 	//convert m/s in mm/s
-	robotSpeed*1000;
+	robotSpeed = robotSpeed*1000;
 
 	//victimGain indicates the gain in space the robot earns if it saves a victim (m2 porpuses) 
 	victimGain = (int)param["victimGain"];

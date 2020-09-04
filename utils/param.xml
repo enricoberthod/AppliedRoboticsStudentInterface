@@ -5,7 +5,7 @@
 <mission_type>1</mission_type>
 
 <!--Integer, in seconds-->
-<victimGain>50</victimGain>
+<victimGain>10</victimGain>
   
 <!--Float, in meter/seconds-->
 <robotSpeed>0.1</robotSpeed>

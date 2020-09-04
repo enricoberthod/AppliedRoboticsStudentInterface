@@ -22,10 +22,10 @@ bool process_Map(const cv::Mat& img_in, const double scale, std::vector<Polygon>
 	cv::Mat kernel = cv::getStructuringElement(cv::MORPH_RECT, cv::Size((1*2) + 1, (1*2)+1));			//TODO
 
 	redRegions(hsv_img, img_in, kernel, scale, obstacle_list);			// search obstacles
-	findGate(hsv_img,img_in, kernel, scale, gate);						// search the gate
+	bool res = findGate(hsv_img,img_in, kernel, scale, gate);			// search the gate
 	findVictim(hsv_img,img_in, kernel, scale, victim_list);				// search victims
 	
-	return true;
+	return res;
 }
 
 
@@ -84,9 +84,9 @@ void redRegions(cv::Mat hsv_img, cv::Mat img_in, cv::Mat kernel, const double sc
 	kernel: TODO
 	scale: TODO
 	gate: struct with the points of the gate
-    -return: none
+    -return: true il a gate is found, false otherwise
 */
-void findGate(cv::Mat hsv_img, cv::Mat img_in, cv::Mat kernel, const double scale, Polygon& gate) {
+bool findGate(cv::Mat hsv_img, cv::Mat img_in, cv::Mat kernel, const double scale, Polygon& gate) {
 	
 	cv::Mat contours_img;
 	std::vector<std::vector<cv::Point>> contours, contours_approx;
@@ -123,7 +123,13 @@ void findGate(cv::Mat hsv_img, cv::Mat img_in, cv::Mat kernel, const double scal
 			std::cout << "   Approximated contour size: " << approx_curve.size() << std::endl;
 		}
 	}
-	std::cout << "   Elements: " << gate.size() << std::endl;
+	std::cout << "   Elements(gate): " << gate.size() << std::endl;
+	if(gate.size()==4) {
+		return true;
+	}
+	else {
+		return false;
+	}
 }
 
 /* function findVictim: search victims and recognize their numbers
