@@ -212,7 +212,6 @@ bool shortestPath(VoronoiPoint start, bool startNew, int idStart, VoronoiPoint e
 	//return false if there is no path from start point to end point
 	if(startEndPath.size()<2){
 		return false;
-		// TODO throw std::logic_error("STOP_possible_path_not_found");
 	}
 	
 	//if the start point is not in existing best path (chek due to mission 1)
