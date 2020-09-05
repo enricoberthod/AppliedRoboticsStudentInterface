@@ -7,7 +7,7 @@ std::vector<cv::Point> bordi;																		// list of the verteces of the ed
 std::vector<cv::Point> arrivo;																		// list of the verteces of the gate
 const int floatToInt=1000;																			// factor to convert m in mm
 const int offset = 100;																				// offset of obstacle's expansion with clipper 
-int pidx_1;																							// TODO
+int pidx_1;																						// 
 int pidx_2;  																						// 
 D curve_1;																							// line drawn by Dubins
 D curve_2;																							// line drawn by Dubins
