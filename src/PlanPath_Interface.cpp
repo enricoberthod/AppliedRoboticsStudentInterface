@@ -50,7 +50,7 @@ bool plan_Path_2(const Polygon& borders, const std::vector<Polygon>& obstacle_li
 	b_x_max = (b_x_max * floatToInt) - margine;
 	b_y_max = (b_y_max * floatToInt) - margine;
 
-	// CLIPPER library to expand obstacles			TODO (clippper non completa)
+	// CLIPPER library to expand obstacles			
 	ClipperLib::Paths subj(obstacle_list.size());
 	ClipperLib::Paths solution(obstacle_list.size());
 
@@ -66,8 +66,10 @@ bool plan_Path_2(const Polygon& borders, const std::vector<Polygon>& obstacle_li
 	co.AddPaths(subj, ClipperLib::jtSquare, ClipperLib::etClosedPolygon);
 	co.Execute(solution, offset);						 				// calculate the final expansion of obstacles
 
-	std::vector<VoronoiPoint> inputPoints;								// TODO
-	std::vector<Segment> obstacles_edges;								// 
+	//vector where to store the verteces of the obstacles and border
+	std::vector<VoronoiPoint> inputPoints;	
+	//vector where to store the edges of the obstacles and border
+	std::vector<Segment> obstacles_edges;								
 
 	int xa,xb,ya,yb,longId,vertexNumber;
 	VoronoiPoint p;
