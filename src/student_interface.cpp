@@ -11,12 +11,11 @@
 #include <cstring>
 #include <experimental/filesystem>
 
-
 using namespace cv;
 using namespace std;
 
 const double MIN_AREA_SIZE_ST = 1000;
-/////BLACK_MASK
+//BLACK_MASK
 const int Nlr = 0, Nlg = 0, Nlb = 0;
 const int Nhr = 180, Nhg = 255, Nhb = 30; 
 
@@ -35,17 +34,21 @@ namespace student {
 		std::cout << config_folder+"/img-saved"+to_string(id)+".jpg"<< std::endl;
 		id++;
 	}
-	//throw std::logic_error( "STUDENT FUNCTION NOT IMPLEMENTED" );
   }
 
 
-//--Autodetection border's points
+// Autodetection border's points
+/* function detectBorder: Autodetection border's points
+   -parameters:
+   	img_in: image of the map
+    -return: true if there is a path from the starting point and the gate, false otherwise 
+*/
   vector<cv::Point2f> detectBorder(const cv::Mat &img_in){
 	cv::namedWindow("BORDER_filter", cv::WINDOW_NORMAL);
 	cv::resizeWindow("BORDER_filter", 467, 350);
 	
 	cv::Mat hsv_img;
-	cv::cvtColor(img_in, hsv_img, cv::COLOR_BGR2HSV);
+	cv::cvtColor(img_in, hsv_img, cv::COLOR_BGR2HSV);				// convert color of the imge to HSV
 	cv::Mat kernel = cv::getStructuringElement(cv::MORPH_RECT, cv::Size((1*2) + 1, (1*2)+1));
 	vector<cv::Point> bordo;
 	
@@ -53,7 +56,7 @@ namespace student {
 	std::vector<std::vector<cv::Point>> contours, contours_approx;
 	std::vector<cv::Point> approx_curve;
 	cv::Mat border_mask;
-	cv::inRange(hsv_img, cv::Scalar(Nlr, Nlg, Nlb), cv::Scalar(Nhr, Nhg, Nhb), border_mask);
+	cv::inRange(hsv_img, cv::Scalar(Nlr, Nlg, Nlb), cv::Scalar(Nhr, Nhg, Nhb), border_mask);		// mask to find black borders
 	
 	// Filter (applying erosion and dilation) GATE
 	kernel = cv::getStructuringElement(cv::MORPH_RECT , cv::Size((2*2) + 1, (2*2)+1));
@@ -71,14 +74,14 @@ namespace student {
 
 	for (int i=0; i<contours.size(); ++i) {
 		std::cout << (i+1) << ") Contour size: " << contours[i].size() << std::endl;
-		double area = cv::contourArea(contours[i]);
+		double area = cv::contourArea(contours[i]);			// calculate the area
 		std::cout << "---- area = " << area << std::endl;
-		if (area < MIN_AREA_SIZE_ST) continue; // filter too small contours to remove false positives
+		if (area < MIN_AREA_SIZE_ST) continue; 				// filter too small contours to remove false positives
 		approxPolyDP(contours[i], approx_curve, 20, true);
-		if(approx_curve.size() == 4) {
+		if(approx_curve.size() == 4) {						// approximate the number of edges
 			contours_approx = {approx_curve};
 			for (const auto& pt: approx_curve) {        
-				bordo.emplace_back(pt.x, pt.y);
+				bordo.emplace_back(pt.x, pt.y);				// save border's points
 			}
 			cv::drawContours(contours_img, contours_approx, -1, cv::Scalar(0,170,220), 3, cv::LINE_AA);
 			std::cout << "   Approximated contour size: " << approx_curve.size() << std::endl;
@@ -86,6 +89,7 @@ namespace student {
 		}
 	}
 	
+	// find the center of the map
 	cv::Point centro = cv::Point(boundRect.x+(boundRect.width/2),boundRect.y+(boundRect.height/2));
 	cv::circle( contours_img, centro, 8, cv::Scalar(0,170,220), -1, 8, 0 );
 	cout << "circle -> " << centro << endl;
@@ -94,30 +98,27 @@ namespace student {
 
 	vector<cv::Point2f> b;
 	
+	// calculate the central point on the border vertex and save them
 	int x_min = centro.x;
 	int	y_min = centro.y;
 	for(int i =0; i<bordo.size(); i++) {
 		if(bordo[i].x <= x_min &&  bordo[i].y >= x_min) {
 			b.emplace_back(bordo[i].x+15, bordo[i].y-15);
-			//bordo.erase(i);
 		}
 	}
 	for(int i =0; i<bordo.size(); i++) {
 		if(bordo[i].x >= x_min &&  bordo[i].y >= x_min) {
 			b.emplace_back(bordo[i].x-15, bordo[i].y-15);
-			//bordo.erase(i);
 		}
 	}
 	for(int i =0; i<bordo.size(); i++) {
 		if(bordo[i].x >= x_min &&  bordo[i].y <= x_min) {
 			b.emplace_back(bordo[i].x-15, bordo[i].y+15);
-			//bordo.erase(i);
 		}
 	}
 	for(int i =0; i<bordo.size(); i++) {
 		if(bordo[i].x <= x_min &&  bordo[i].y <= x_min) {
 			b.emplace_back(bordo[i].x+15, bordo[i].y+15);
-			//bordo.erase(i);
 		}
 	}
 	
@@ -127,18 +128,11 @@ namespace student {
 		cv::imshow("BORDER_filter", contours_img);
 		cv::waitKey(0);
 	}
-	
-	//bordo.size();
-	//std::cout << "   Elements: " << gate.size() << std::endl;
-  
-	//cv::imshow("BORDER_filter", contours_img);
-	//cv::waitKey(0);
 	return b; 
   }
 
 
   bool extrinsicCalib(const cv::Mat& img_in, std::vector<cv::Point3f> object_points, const cv::Mat& camera_matrix, cv::Mat& rvec, cv::Mat& tvec, const std::string& config_folder){
-    //throw std::logic_error( "STUDENT FUNCTION NOT IMPLEMENTED" ); 
 
 	std::string file_path = config_folder + "/extrinsicCalib.csv";
 
@@ -149,11 +143,7 @@ namespace student {
       std::experimental::filesystem::create_directories(config_folder);
       
       image_points = detectBorder(img_in);
-      // SAVE POINT TO FILE
-      // std::cout << "IMAGE POINTS: " << std::endl;
-      // for (const auto pt: image_points) {
-      //   std::cout << pt << std::endl;
-      // }
+      
       std::ofstream output(file_path);
       if (!output.is_open()){
         throw std::runtime_error("Cannot write file: " + file_path);
@@ -180,7 +170,6 @@ namespace student {
       }
       input.close();
     }
-    
 	
     cv::Mat dist_coeffs;
 	
@@ -188,10 +177,6 @@ namespace student {
 	
     bool ok = cv::solvePnP(object_points, image_points, camera_matrix, dist_coeffs, rvec, tvec);
 	
-    // cv::Mat Rt;
-    // cv::Rodrigues(rvec_, Rt);
-    // auto R = Rt.t();
-    // auto pos = -R * tvec_;
 	
     if (!ok) {
       std::cerr << "FAILED SOLVE_PNP" << std::endl;
@@ -231,20 +216,14 @@ namespace student {
   }
 
   bool processMap(const cv::Mat& img_in, const double scale, std::vector<Polygon>& obstacle_list, std::vector<std::pair<int,Polygon>>& victim_list, Polygon& gate, const std::string& config_folder){
-    //throw std::logic_error( "STUDENT FUNCTION NOT IMPLEMENTED" );   
 	return process_Map(img_in, scale, obstacle_list, victim_list, gate, config_folder);
   }
 
   bool findRobot(const cv::Mat& img_in, const double scale, Polygon& triangle, double& x, double& y, double& theta, const std::string& config_folder){
-    //std::cout << "siamo qui 1" << std::endl;
-	
-	//throw std::logic_error( "STUDENT FUNCTION NOT IMPLEMENTED" );    
-	//std::cout << "siamo qui" << std::endl;
 	return find_Robot(img_in, scale, triangle, x, y, theta, config_folder);
   }
 
   bool planPath(const Polygon& borders, const std::vector<Polygon>& obstacle_list, const std::vector<std::pair<int,Polygon>>& victim_list, const Polygon& gate, const float x, const float y, const float theta, Path& path, const std::string& config_folder){
-    //throw std::logic_error( "STUDENT FUNCTION NOT IMPLEMENTED" );     
     return plan_Path_2(borders, obstacle_list, victim_list, gate, x, y, theta, path, config_folder);
   }
 

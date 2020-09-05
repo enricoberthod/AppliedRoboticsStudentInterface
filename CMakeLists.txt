@@ -55,10 +55,6 @@ add_library(find_robot SHARED
    src/find_robot.cpp
 )
 
-add_library(Bellman-Ford SHARED
-   src/Bellman-Ford.cpp
-)
-
 
 ## Add executables
 add_executable(calibrate
@@ -73,7 +69,6 @@ add_executable(calibrate
   src/PathFinder.cpp
   src/find_robot.cpp
   src/clipper.cpp
-  src/Bellman-Ford.cpp
   )
 
 ## Add shared library
@@ -96,7 +91,6 @@ target_link_libraries(student
   Dubins
   find_robot
   clipper
-  Bellman-Ford
 )
 
 target_link_libraries(calibrate

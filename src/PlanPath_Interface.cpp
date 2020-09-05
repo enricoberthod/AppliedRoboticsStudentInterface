@@ -7,19 +7,15 @@ std::vector<cv::Point> bordi;																		// list of the verteces of the ed
 std::vector<cv::Point> arrivo;																		// list of the verteces of the gate
 const int floatToInt=1000;																			// factor to convert m in mm
 const int offset = 100;																				// offset of obstacle's expansion with clipper 
-int pidx;																							// TODO
-int pidx_1;																							// 
+int pidx_1;																							// TODO
 int pidx_2;  																						// 
-D curve;																							// 
-D curve_1;																							// 
-D curve_2;																							// 
-float angle;																						// 
-float residual_s=0;																					// 
+D curve_1;																							// line drawn by Dubins
+D curve_2;																							// line drawn by Dubins
 std::vector<std::vector<float>> angoli_scartati;													// discarded angles
 std::vector<int> punti_inseriti;																	// keep track of the number of insertions in path
 bool result;																						// variable become false if doesn't exist a path
 
-/* function plan_Path_2: TODO
+/* function plan_Path_2: call pathFinder() and sample the path checking collisions
    -parameters:
    	borders: struct with the points of the edges of the map
 	obstacle_list: vector that contains all obstacles

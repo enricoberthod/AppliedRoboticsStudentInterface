@@ -19,7 +19,7 @@ bool process_Map(const cv::Mat& img_in, const double scale, std::vector<Polygon>
 	cv::Mat hsv_img;
 	cv::cvtColor(img_in, hsv_img, cv::COLOR_BGR2HSV);					// convert color of the imge to HSV
 	
-	cv::Mat kernel = cv::getStructuringElement(cv::MORPH_RECT, cv::Size((1*2) + 1, (1*2)+1));			//TODO
+	cv::Mat kernel = cv::getStructuringElement(cv::MORPH_RECT, cv::Size((1*2) + 1, (1*2)+1));			// crate a kernel 3x3
 
 	redRegions(hsv_img, img_in, kernel, scale, obstacle_list);			// search obstacles
 	bool res = findGate(hsv_img,img_in, kernel, scale, gate);			// search the gate

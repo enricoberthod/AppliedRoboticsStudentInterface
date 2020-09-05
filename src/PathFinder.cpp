@@ -209,7 +209,7 @@ bool shortestPath(VoronoiPoint start, bool startNew, int idStart, VoronoiPoint e
 	//add the best path found using Dijkstra using the storePath function (see Dijkstra.cpp)
 	storePath(path,voronoiPaths->ids.size()+idEnd,&startEndPath);
 
-	//retirn false if there is no path from start point to end point
+	//return false if there is no path from start point to end point
 	if(startEndPath.size()<2){
 		return false;
 		// TODO throw std::logic_error("STOP_possible_path_not_found");

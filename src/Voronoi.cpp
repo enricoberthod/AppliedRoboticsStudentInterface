@@ -216,14 +216,14 @@ int visited(std::vector<int> visitedIds, int num)
 	return -1;
 }
 
-/* function Voronoi: function which returns if a node is new or not //TODO MAYBE SOME PARAMETER ARE USELESS NOW ???
+/* function Voronoi: function which returns if a node is new or not 
    -parameters:
    	points: obstacles points
 	segments: obstacles segments
 	points_map: obstacles verteces
 	contours: obstacle contours
-	b_x_max: //TODO
-	b_y_max: //TODO
+	b_x_max: maximum x to stay inside the border without collisions
+	b_y_max: maximum y to stay inside the border without collisions
 	results: the structure to store the road map
 	config_folder: path to reach the param.xml config file
     -return: none
