@@ -29,7 +29,7 @@ void removeObstacles(std::vector<VoronoiPoint>, VoronoiResults*);
 void remove(std::vector<VoronoiPoint>, VoronoiResults*);
 int visited(std::vector<int>, int);
 
-int victimGain;
+int victimGain; //victimGain indicates the gain in space (mm) the robot earns if it saves a victim (m2 porpuses) 
 int max_X;
 int max_Y;
 
@@ -230,12 +230,21 @@ int visited(std::vector<int> visitedIds, int num)
 */
 void Voronoi(std::vector<VoronoiPoint>points, std::vector<Segment> segments, std::unordered_map<int,VoronoiPoint>points_map, const std::vector<std::vector<cv::Point>>& contours, float b_x_max, float b_y_max, VoronoiResults *results, const std::string& config_folder)
 {
+  float robotSpeed; //robotSpeed indicates the robot velocity
+	
   //read parameter from param.xml	
   std::string file = config_folder+"/param.xml";
   cv::FileStorage param(file, cv::FileStorage::READ);
 
+  //robotSpeed indicates the speds of the robot in m/s
+  robotSpeed = (float)param["robotSpeed"];
+  //convert m/s in mm/s
+  robotSpeed = robotSpeed*1000;	
+	
   //victimGain indicates the gain in space the robot earns if it saves a victim (m2 porpuses) 
-  victimGain = (int)param["victimGain"]; //TODO add * spead_robot	
+  victimGain = (int)param["victimGain"];
+  //computes the gain in space (mm) given the gain in seconds and the robot velocity
+  victimGain = (int)(victimGain*robotSpeed)/2;
 
   max_X = (int)b_x_max;
   max_Y = (int)b_y_max;
